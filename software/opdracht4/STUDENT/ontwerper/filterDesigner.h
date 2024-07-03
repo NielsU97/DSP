@@ -408,7 +408,7 @@ private:
 	 * For students: The minimum and maximum H (omega) response. Note H (omega) always 0 or smaller!
 	 * Use these values to scale.
 	 */
-	double H_Omega_min, H_Omega_max;
+	double H_Omega_min,H_Omega_max;
 
 	FilterFirInt16 *filter;
 

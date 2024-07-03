@@ -74,8 +74,12 @@ FilterFirInt16::FilterFirInt16(const FilterRingBuffer &coeffs,
 
 void FilterFirInt16::reset()
 {
+    //for (size_t i = 0; i < filterMemory.geefAantal(); ++i) {
+    //    filterMemory.schrijf(0);
+    //}
+
     int i = scaleFactor;
-    if(i > 1)
+    if (i > 1)
         return;
 
     filterMemory.reset();
@@ -83,17 +87,31 @@ void FilterFirInt16::reset()
 }
 
 /* Implementatie van het filter */
-Int16 FilterFirInt16::filter(const Int16 input)
-{
+Int16 FilterFirInt16::filter(const Int16 input) {
+   /* filterMemory.schrijf(input);
+    Int64 som = 0;
+
+    size_t aantalCoeffs = filterCoeffs.geefAantal();
+
+    for (size_t i = 0; i < aantalCoeffs; i++) {
+        const int16_t coeff = filterCoeffs[i];
+        const int16_t current_value = filterMemory.lees();
+        som += static_cast<Int64>(coeff) * current_value;
+    }
+
+    Int64 metScale = som / scaleFactor;
+    Int16 result = static_cast<Int16>(metScale);
+
+    return result;*/
 
     filterMemory.schrijf(input);
-    Int64 som=0;
+    Int64 som = 0;
     /* Start of student code */
     for (size_t i = 0; i < filterCoeffs.geefAantal(); i++)
     {
         const float coeff = filterCoeffs[i];
         const int16_t current_value = filterMemory.lees();
-        som = som + coeff*current_value;
+        som = som + coeff * current_value;
     }
     som /= scaleFactor;
 
@@ -101,6 +119,3 @@ Int16 FilterFirInt16::filter(const Int16 input)
 
     return result;
 }
-
-
-

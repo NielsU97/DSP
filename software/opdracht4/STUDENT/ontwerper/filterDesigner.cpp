@@ -1,10 +1,10 @@
 /////////////////////////////////////////////////////////////////////////////
 // Name:        filterDesigner.cpp
-// Purpose:
+// Purpose:     
 // Author:      Ewout Boks
-// Modified by:
+// Modified by: 
 // Created:     Thursday, 24 June 2021 at 15:51:14
-// RCS-ID:
+// RCS-ID:      
 // Copyright:   (c)2012-2021 ir drs E.J Boks, Hogeschool van Arnhem en Nijmegen
 // Licence:
 /////////////////////////////////////////////////////////////////////////////
@@ -24,8 +24,17 @@ $URL: https://ese.han.nl/svn/dsbpracticum/trunk/2022/software/opdracht4/STUDENT/
 $Id: filterDesigner.cpp 313 2023-01-30 13:54:35Z ewout $
 ************************************************************************/
 
-/********  Naam/name     : Niels Urgert   ******/
-/********  Studentnummer : 1654746              ******/
+#ifndef OnderwijsOntwikkeling
+#if defined(InterfaceTaalNederlands)
+/* Verwijder dit directief na het invullen van de naam en het studentnummer hieronder. */
+#elif defined (InterfaceTaalEnglish)
+/* Remove this directive after filling out name and student number below. */
+#error  "Student name and number must be entered into the fields below."
+#endif
+#endif
+
+/********  Naam/name     :  Niels Urgert             ******/
+/********  Studentnummer :  1654746             ******/
 
 // For compilers that support precompilation, includes "wx/wx.h".
 
@@ -54,213 +63,248 @@ $Id: filterDesigner.cpp 313 2023-01-30 13:54:35Z ewout $
 #include <wx/txtstrm.h>
 #include <wx/numdlg.h>
 #include <wx/filename.h>
+#include <cmath>
 
 #ifdef InterfaceTaalNederlands
 double FilterVenster::driehoek(const Int32 n ) const
 {
-    assert(-taps <= n <= taps);
-    double out = 1.0f - fabs((n - (taps/2.0f)) / (taps/2.0f));
-    return out;
+	// Implementatie van de driehoek functie (N = taps/orde, L = N + 1 or N + 2)
+
+	//barlett
+	double denominator = (orde + 1) * (orde + 1);
+	return ((orde + 1) - fabs(n)) / denominator;
+
+	/*assert(-taps <= n <= taps);
+	double out = 1.0f - fabs((n - (taps / 2.0f)) / (taps / 2.0f));
+	return out;*/
 }
 
 
 double FilterVenster::hamming(const Int32 n ) const
 {
-    assert(-taps <= n <= taps);
+	// Implementatie van de Hamming functie
+	return 0.54 + 0.46 * cos((n * Pi) / orde); //orde or taps
+
+	/* assert(-taps <= n <= taps);
     double out;
     out = 0.54f + 0.46f * cos((2.0f * PI * n) / (taps));
-    return out;
+    return out;*/
 }
 
 
 double FilterVenster::sinc(const double hoek )
 {
-    if(hoek == 0.0)
-    {
-        return 1.0;
-    }
-    return (sin(hoek) / hoek);
+	// Implementatie van de sinc functie
+	if (hoek == 0.0) {
+		return 1.0;
+	}
+	return sin(hoek * Pi) / (hoek * Pi);
 }
-
-void FilterVenster::berekenFilter(wxCommandEvent &event)
+void FilterVenster::berekenFilter(wxCommandEvent& event)
 {
-    PuntLijst impulsResponsie;
+	/*! @note Nederlands : schrijf in deze funktie de code om de tijddomeincoefficienten
+	 * van het filter te bereken.
+	  * Maak hier voor gebruik van de Fourier ontwerp methode (Lynn & Fürst §5.3)
+	  * voor een bandfilter:
+	  * h[n] = (Omega1/pi)*sinc(Omega1*n) : Dit is een laagdoorlaatfilter
+	  * vermenigvuldig dit in tijddomein met cos(Omega0*n) -->
+	  * in frequentiedomein convolueer met delta(Omega0) -->
+	  * verschuiving van begin LDF van 0 naar Omega0 */
 
-    filterCoeffs.Clear();
-    impulsResponsie.Clear();
+	  /* filter maakt gebruik van Hamming Venster :
+	   * Zie boek Andriessen / Lynn & Fürst, blz 156
+	   * of Lynn & Fürst, blz 150.
+	   */
 
-    wxLogDebug(_("filter berekening start."));
-    wxBusyCursor bezig;
+	   /* een array van wxPoints die je kunt gebruiken om de impulsresponsie te tekenen. */
+	PuntLijst impulsResponsie;
 
-    const auto versterkingsFactor = compute_Linear(maxVersterkingSpinCtrl->GetValue());
-    const auto omega0 = static_cast<double>(bandBeginSlider->GetValue()) * 2.0 * Pi / static_cast<double>(sampFreq);
-    const auto omega1 = static_cast<double>(bandEindeSlider->GetValue()) * 2.0 * Pi / static_cast<double>(sampFreq);
+	/* Verwijder oude filter coefficienten voor de berekening begint. */
+	filterCoeffs.Clear();
+	impulsResponsie.Clear();
 
-    for(auto index = 0, n = -1*orde; n <= orde; n++, index++) {
-        if(n == 0) {
-            const auto coff = ((omega1 - omega0) / Pi)  * versterkingsFactor;
-            if(vensterChoice->GetSelection() == 0)
-                filterCoeffs.Add(berekenFixedPoint(coff));
-            else if(vensterChoice->GetSelection() == 1)
-                filterCoeffs.Add(berekenFixedPoint(coff * driehoek(n)));
-            else
-                filterCoeffs.Add(berekenFixedPoint(coff * hamming(n)));
+	wxLogDebug(_("filter berekening start."));
+	wxBusyCursor bezig;
 
-            wxLogDebug("h[%d] = %.6f Int = %d", n, coff, berekenFixedPoint(coff));
-        }
-        else {
-            const auto coff = (sin(omega1 * n) / (n * Pi)) - (sin(omega0 * n) / (n * Pi))  * versterkingsFactor;
-            if(vensterChoice->GetSelection() == 0)
-                filterCoeffs.Add(berekenFixedPoint(coff));
-            else if(vensterChoice->GetSelection() == 1)
-                filterCoeffs.Add(berekenFixedPoint(coff * driehoek(n)));
-            else
-                filterCoeffs.Add(berekenFixedPoint(coff * hamming(n)));
+	// Bereken de filtercoëfficiënten
+	const float omega0 = ((bandBeginSlider->GetValue() + bandEindeSlider->GetValue()) / 2.0) / sampFreq * 2.0 * Pi;
+	const float omega1 = ((bandEindeSlider->GetValue() - bandBeginSlider->GetValue()) / 2.0) / sampFreq * 2.0 * Pi;
 
-            wxLogDebug("h[%d] = %.6f Int = %d", n, coff, berekenFixedPoint(coff));
-        }
-        impulsResponsie.Add(wxPoint(n, filterCoeffs.Item(index)));
-    }
+	filterCoeffs.reserve(taps);
+	filterCoeffs.resize(taps);
 
-    tijdDomeinGrafiek->maakSchoon();
-    tijdDomeinGrafiek->zetTekenPen(axisPen);
-    tijdDomeinGrafiek->tekenAssenstelsel();
-    tijdDomeinGrafiek->zetTekenPen(timeDomainPen);
-    tijdDomeinGrafiek->tekenStaven(impulsResponsie, true, true);
+	auto choice = vensterChoice->GetString(vensterChoice->GetSelection());
 
-    berekenFreqResponsie();
-    tekenFreqSpectrum();
+	for (int n = -orde; n <= orde; n++) {
+		
+		float result = 0.0f;
+		
+		if (n == 0) {
+			result = omega1 / Pi;
+		}
+		else {
+			result = (1 / (n * Pi)) * sin(omega1 * n) * cos(n * omega0);
+			//result = (omega1 / Pi) * sinc(omega1 * n) * cos(omega0 * n);
+		}
 
-    /* schakel ook de test knop nu in */
-    berekeningKlaar = true;
+		if (choice == "Rechthoek") {
+			// Geen extra bewerking
+			result *= 1.0;
+		}
+		else if (choice == "Driehoek") {
+			result *= (driehoek(n) * 8.7);
+		}
+		else if (choice == "Hamming") {
+			result *= hamming(n);
+		}
+
+		filterCoeffs[orde + n] = berekenFixedPoint(result * 2.0); // * 2.0?
+		filterCoeffs[orde - n] = berekenFixedPoint(result * 2.0);
+
+		impulsResponsie.Add(wxPoint(n, filterCoeffs[orde + n]));
+		impulsResponsie.Add(wxPoint(-n, filterCoeffs[orde + n]));
+
+		if (toonfilterCoeffsCB->IsChecked()) {
+			//wxLogMessage(std::to_string(n) + wxT(" ") + std::to_string(filterCoeffs[orde + n]));
+		}
+	}
+
+	tijdDomeinGrafiek->maakSchoon();
+	tijdDomeinGrafiek->tekenAssenstelsel();
+	tijdDomeinGrafiek->zetTekenPen(wxPen(wxColour("RED"), 1));
+	tijdDomeinGrafiek->tekenStaven(impulsResponsie, true);
+
+	/* test button */
+	berekeningKlaar = true;
+	berekenFreqResponsie();
+	tekenFreqSpectrum();
 }
 
 
 void FilterVenster::berekenFreqResponsie()
 {
-    H_Omega.Clear();
+	/*! @note schrijf in deze funktie de code om het  frequentiebeeld te bereken op
+	 * basis van de tijddomeincoefficienten. */
 
-    const auto MaxFreq = FreqSpectrumPunten(taps);
-    const auto StapGrotte = Pi / MaxFreq;
-    const auto Omega1 = static_cast<double>(bandEindeSlider->GetValue()) * 2 * Pi / static_cast<double>(sampFreq);
-    double H_Omega_MagnitudeDB = 0.0;
+	H_Omega.Clear();
 
-    H_Omega.Clear();
+	//omega 1 wordt weer in de formule gebruikt formule(5.14)
+	const auto omega1 = 2.0 * ((bandEindeSlider->GetValue() - bandBeginSlider->GetValue()) / 2.0) / sampFreq * 2.0 * Pi;
 
-    for(auto n = 0; n < MaxFreq; n++) {
-        const auto Omega = n * StapGrotte;
-        auto Summation = 0.0;
-        for(auto K = 1; K < orde; K++) {
-            Summation += berekenFloatingPoint(filterCoeffs[orde + K]) * cos(K * Omega);
-        }
-        auto H_Omega_Magnitude = (Omega1 / Pi) + 2 * Summation;
-        H_Omega_MagnitudeDB = compute_dB(H_Omega_Magnitude);
-        H_Omega.Add(H_Omega_MagnitudeDB);
-        wxLogDebug("|H_Omega(%d)| = %.6f", n, H_Omega_Magnitude);
-        wxLogDebug("|H_Omega(%d)|db = %.6f", n, H_Omega_MagnitudeDB);
-    }
+	const auto freqSpectrumGrootte = FreqSpectrumPunten(taps);
+	const auto stapGrootte = Pi / freqSpectrumGrootte;
 
-    H_Omega_min = H_Omega[0];
-    H_Omega_max = H_Omega[0];
+	H_Omega.reserve(freqSpectrumGrootte);
+	//H_Omega.resize(freqSpectrumGrootte);
 
-    for(auto it = H_Omega.begin(); it <= H_Omega.end(); it++) {
-        if(*it > H_Omega_max)
-            H_Omega_max = *it;
-        else if(*it < H_Omega_min)
-            H_Omega_min = *it;
-    }
+	//Formula from the book
+	for (auto i = 0; i < freqSpectrumGrootte; i++) { //voor elk punt in het spectrum
+		const auto omega = i * stapGrootte;
+		double somFunction = 0.0; // berekenFloatingPoint(filterCoeffs[orde]);
+		for (auto k = 1; k <= orde; k++) { //Somfunction
+			const auto flp = berekenFloatingPoint(filterCoeffs[orde + static_cast<wxVector<short>::size_type>(k)]);
+			somFunction += (flp * cos(k * omega));
+		}
+		somFunction = ((somFunction * 2.0) + (omega1 / Pi));
+
+		if (somFunction == 0.0) {
+			wxLogDebug(wxT("hallo"));
+		}
+		const auto somFunctieDB = ((somFunction == 0.0) ? -100.0 : compute_dB(somFunction)) + maxVersterkingSpinCtrl->GetValue(); //zet waarde om naar db's omdat dat de waarde op de y as is
+		wxLogDebug(wxT("h[%lf] = %lf dB"), omega, somFunctieDB);
+		H_Omega.Add(somFunctieDB);
+
+
+	}
+	H_Omega_min = *(std::min_element(H_Omega.begin(), H_Omega.end()));
+
+	H_Omega_max = *(std::max_element(H_Omega.begin(), H_Omega.end()));
 }
-
 
 void FilterVenster::tekenFreqSpectrum() const
 {
-    /*! @note schrijf in deze funktie de code om het berekende frequentiebeeld in het
-     * venster freqDomeinGrafiek te tekenen. */
-    const wxSize veld(freqDomeinGrafiek->geefTekenVeldGrootte());
-    const unsigned int aantalPunten = FreqSpectrumPunten(taps);
-    const auto stapGrootte = (Pi/aantalPunten);
+	/*! @note schrijf in deze funktie de code om het berekende frequentiebeeld in het
+	 * venster freqDomeinGrafiek te tekenen. */
+	const wxSize veld(freqDomeinGrafiek->geefTekenVeldGrootte());
+	const unsigned int aantalPunten = FreqSpectrumPunten(taps);
+	const auto stapGrootte = (Pi/aantalPunten);
+	
+	/* teken de lijnen van het freqdomein filter */
+	/* toon het berekende venster in het frequentiedomein */
 
-    /* teken de lijnen van het freqdomein filter */
+	freqDomeinGrafiek->maakSchoon();
+	freqDomeinGrafiek->tekenAssenstelsel();
+	
+	const wxCoord veldEinde(-3*veld.GetHeight()/4);
+	
+	const double schaalx = (1.0*veld.GetWidth())/(Pi);
+	const double schaaly = (3*veld.GetHeight()/(4*fabs(H_Omega_max-H_Omega_min)));
+	
+	freqDomeinGrafiek->zetTekenPen(wxPen( wxColour(wxT("BLUE")), 2, wxPENSTYLE_SOLID));
+	
+	/* Teken de spectrale componenten */
+	double omega=0;
+	for(Teller index=0;index<aantalPunten;index++)
+	{
+		const auto xcoord = (wxCoord)(omega*schaalx);
+		const wxPoint begin(xcoord,veldEinde);
+		const wxPoint einde(xcoord,(wxCoord)(schaaly*H_Omega[index]));
+		const LijnStuk lijn(begin, einde);
+		freqDomeinGrafiek->tekenLijn(lijn);
+		omega+=stapGrootte;
+	}
+	
+	freqDomeinGrafiek->zetTekenPen(wxPen( wxColour(wxT("GREEN")), 3, wxPENSTYLE_SOLID));
+	
+	/* teken verticale lijnen op pi/6 */
+	UInt32 omnummer=0;
+	for(omega=0;omega<Pi;omega+=(Pi/6),omnummer++)
+	{
+		const auto xcoord = (wxCoord)(omega*schaalx);
+		freqDomeinGrafiek->tekenVerticaleLijn(xcoord);
+		const wxPoint tekstpunt(xcoord, freqDomeinGrafiek->geefMaxY());
+		freqDomeinGrafiek->zetKleineTekst(wxString::Format(wxT("%dpi/6"),omnummer), tekstpunt);
+	}
+	
+	freqDomeinGrafiek->zetTekenPen(wxPen( wxColour(wxT("GREY")), 3, wxPENSTYLE_SOLID));
 
-    /* toon het berekende venster in het frequentiedomein */
-    freqDomeinGrafiek->maakSchoon();
+	/* teken horizontale lijnen op -10 db afstand */
+	for (auto dblijn=0;dblijn>H_Omega_min;dblijn-=10)
+	{
+		const auto ycoord = static_cast<wxCoord>(dblijn*schaaly);
+		freqDomeinGrafiek->tekenHorizontaleLijn(ycoord);
+		const wxPoint tekstpunt(freqDomeinGrafiek->geefMaxX()-30,ycoord);
+		freqDomeinGrafiek->zetKleineTekst(wxString::Format(wxT("%d dB"),
+		                                                   static_cast<Int32>(dblijn)), tekstpunt);
+	}
 
-    freqDomeinGrafiek->tekenAssenstelsel();
+	/* Band */
+	freqDomeinGrafiek->zetTekenPen(wxPen( wxColour(wxT("PINK")), 3, wxPENSTYLE_SHORT_DASH));
+	
+	/* Start Band */
+	omega = 2*Pi*filterBegin/sampFreq;
+	freqDomeinGrafiek->tekenVerticaleLijn((wxCoord)(omega*schaalx));
 
-    const wxCoord veldEinde(-3*veld.GetHeight()/4);
-
-    const double schaalx = (1.0*veld.GetWidth())/(Pi);
-    const double schaaly = (3*veld.GetHeight()/(4*fabs(H_Omega_max-H_Omega_min)));
-
-    freqDomeinGrafiek->zetTekenPen(wxPen( wxColour(wxT("BLUE")), 2, wxPENSTYLE_SOLID));
-
-    /* Teken de spectrale componenten */
-    double omega=0;
-    for(Teller index=0;index<aantalPunten;index++)
-    {
-        const auto xcoord = (wxCoord)(omega*schaalx);
-        const wxPoint begin(xcoord,veldEinde);
-        const wxPoint einde(xcoord,(wxCoord)(schaaly*H_Omega[index]));
-        const LijnStuk lijn(begin, einde);
-//		wxLogDebug(wxT("H(%.2lf) = %lf"),omega,schaaly*(*(H_Omega+index)));
-        freqDomeinGrafiek->tekenLijn(lijn);
-        omega+=stapGrootte;
-    }
-
-    freqDomeinGrafiek->zetTekenPen(wxPen( wxColour(wxT("GREEN")), 3, wxPENSTYLE_SOLID));
-
-    /* teken verticale lijnen op pi/6 */
-    UInt32 omnummer=0;
-    for(omega=0;omega<Pi;omega+=(Pi/6),omnummer++)
-    {
-        const auto xcoord = (wxCoord)(omega*schaalx);
-        freqDomeinGrafiek->tekenVerticaleLijn(xcoord);
-        const wxPoint tekstpunt(xcoord, freqDomeinGrafiek->geefMaxY());
-        freqDomeinGrafiek->zetKleineTekst(wxString::Format(wxT("%dpi/6"),omnummer), tekstpunt);
-    }
-
-    freqDomeinGrafiek->zetTekenPen(wxPen( wxColour(wxT("GREY")), 3, wxPENSTYLE_SOLID));
-    /* teken horizontale lijnen op -10 db afstand */
-    for (auto dblijn=0;dblijn>H_Omega_min;dblijn-=10)
-    {
-        const auto ycoord = static_cast<wxCoord>(dblijn*schaaly);
-        freqDomeinGrafiek->tekenHorizontaleLijn(ycoord);
-        const wxPoint tekstpunt(freqDomeinGrafiek->geefMaxX()-30,ycoord);
-        freqDomeinGrafiek->zetKleineTekst(wxString::Format(wxT("%d dB"),
-                                                           static_cast<Int32>(dblijn)), tekstpunt);
-    }
-    /* teken beginband en stopband */
-    freqDomeinGrafiek->zetTekenPen(wxPen( wxColour(wxT("PINK")), 3, wxPENSTYLE_SHORT_DASH));
-
-    /* begin vd band */
-    omega = 2*Pi*filterBegin/sampFreq;
-    freqDomeinGrafiek->tekenVerticaleLijn((wxCoord)(omega*schaalx));
-    /* eind vd band */
-    omega = 2*Pi*filterEind/sampFreq;
-    freqDomeinGrafiek->tekenVerticaleLijn((wxCoord)(omega*schaalx));
-
-    const auto freqGrootte(freqDomeinGrafiek->GetClientSize());
-    freqDomeinGrafiek->zetNormaleTekst(DemoTekst,wxPoint(freqGrootte.GetWidth()/16, -20));
-
-
+	/* Stop band*/
+	omega = 2*Pi*filterEind/sampFreq;
+	freqDomeinGrafiek->tekenVerticaleLijn((wxCoord)(omega*schaalx));
+	
+	const auto freqGrootte(freqDomeinGrafiek->GetClientSize());
+	freqDomeinGrafiek->zetNormaleTekst(DemoTekst,wxPoint(freqGrootte.GetWidth()/16, -20));
 }
 
 Int16 FilterVenster::berekenFixedPoint(const float flp) const
 {
-    Int16 out;
-    auto test = (1 << (fipBitsSpinCtrl->GetValue()-1));
-    out = round(flp * test);
-
-    return out;
+	// Perform fixed-point calculation based on the given floating-point value and convert the floating-point value to fixed-point
+	const Int16 fixp = static_cast<int16_t>(flp * (1 << (fipBitsSpinCtrl->GetValue() - 1)));
+	return fixp;
 }
 
 float FilterVenster::berekenFloatingPoint(const Int16 fixp) const
 {
-    float out;
-
-    out = (float)fixp / (float)(1 << fipBitsSpinCtrl->GetValue()-1);
-
-    return out;
+	// Perform floating-point calculation based on the given fixed-point value and convert the fixed-point value to floating-point 
+	const float flp = static_cast<float>(fixp) / (1 << (fipBitsSpinCtrl->GetValue() - 1));
+	return flp;
 }
 
 
@@ -271,7 +315,7 @@ double FilterVenster::triangle(const Int32 n ) const
 	/*! @note Write in this function the code to implement the triangle function.
 	 * Note the formula in Lynn & Fürst is not good.*/
 #error “Dit deel van de software ontbreekt — this part of the software is missing.”
-/* Beste leerling, dit deel van de software ontbreekt. Vul dit deel aan volgens de opdracht.
+/* Beste leerling, dit deel van de software ontbreekt. Vul dit deel aan volgens de opdracht.  
    Dear student, this part of the software is missing. Complete this part accoording to the assignment.
 */
 }
@@ -281,7 +325,7 @@ double FilterVenster::hamming(const Int32 n ) const
 {
 	/*! @note Write in this function the code to implement the Hamming function.*/
 #error “Dit deel van de software ontbreekt — this part of the software is missing.”
-/* Beste leerling, dit deel van de software ontbreekt. Vul dit deel aan volgens de opdracht.
+/* Beste leerling, dit deel van de software ontbreekt. Vul dit deel aan volgens de opdracht.  
    Dear student, this part of the software is missing. Complete this part accoording to the assignment.
 */
 }
@@ -291,7 +335,7 @@ double FilterVenster::sinc(const double angle ) const
 {
 	/*! @note Write the code in this function to implement the sinc () function. */
 #error “Dit deel van de software ontbreekt — this part of the software is missing.”
-/* Beste leerling, dit deel van de software ontbreekt. Vul dit deel aan volgens de opdracht.
+/* Beste leerling, dit deel van de software ontbreekt. Vul dit deel aan volgens de opdracht.  
    Dear student, this part of the software is missing. Complete this part accoording to the assignment.
 */
 }
@@ -321,7 +365,7 @@ void FilterVenster::computeFilter(wxCommandEvent &event)
 	wxBusyCursor busy;
 
 #error “Dit deel van de software ontbreekt — this part of the software is missing.”
-/* Beste leerling, dit deel van de software ontbreekt. Vul dit deel aan volgens de opdracht.
+/* Beste leerling, dit deel van de software ontbreekt. Vul dit deel aan volgens de opdracht.  
    Dear student, this part of the software is missing. Complete this part accoording to the assignment.
 */
 	/* switch on the test button*/
@@ -337,7 +381,7 @@ void FilterVenster::computeFreqResponse()
 	H_Omega.Clear();
 
 #error “Dit deel van de software ontbreekt — this part of the software is missing.”
-/* Beste leerling, dit deel van de software ontbreekt. Vul dit deel aan volgens de opdracht.
+/* Beste leerling, dit deel van de software ontbreekt. Vul dit deel aan volgens de opdracht.  
    Dear student, this part of the software is missing. Complete this part accoording to the assignment.
 */
 }
@@ -419,7 +463,7 @@ Int16 FilterVenster::computeFixedPoint(const float flp) const
 	 * based on the setting in fipBitsSpinCtrl. */
 
 #error “Dit deel van de software ontbreekt — this part of the software is missing.”
-/* Beste leerling, dit deel van de software ontbreekt. Vul dit deel aan volgens de opdracht.
+/* Beste leerling, dit deel van de software ontbreekt. Vul dit deel aan volgens de opdracht.  
    Dear student, this part of the software is missing. Complete this part accoording to the assignment.
 */
 	return(-1);
@@ -431,7 +475,7 @@ float FilterVenster::computeFloatingPoint(const Int16 fixp) const
      * based on the setting in fipBitsSpinCtrl.*/
 
 #error “Dit deel van de software ontbreekt — this part of the software is missing.”
-/* Beste leerling, dit deel van de software ontbreekt. Vul dit deel aan volgens de opdracht.
+/* Beste leerling, dit deel van de software ontbreekt. Vul dit deel aan volgens de opdracht.  
    Dear student, this part of the software is missing. Complete this part accoording to the assignment.
 */
 	return(-1);
@@ -445,80 +489,120 @@ float FilterVenster::computeFloatingPoint(const Int16 fixp) const
 void FilterVenster::tijdViewMuisBewegingHandler(wxMouseEvent &event)
 {
 #ifndef ExtraOpties
-    event.Skip();
+	event.Skip();
 #else
-    if (true == tijdDomeinCoords->IsEnabled())
-    {
+	if (true == tijdDomeinCoords->IsEnabled())
+	{
+		// Get the mouse coordinates
+		const wxPoint mouseCoord(tijdDomeinGrafiek->converteerMuisPositie(const_cast<wxMouseEvent &>(event)));
+		
+		// Calculate the filter effect at a certain frequency
+		int n = mouseCoord.x;
 
-        //const wxPoint mouseCoord(tijdDomeinGrafiek->converteerMuisPositie(const_cast<wxMouseEvent &>(event)));
-//#error “Dit deel van de software ontbreekt — this part of the software is missing.”
-/* Beste leerling, dit deel van de software ontbreekt. Vul dit deel aan volgens de opdracht.
-   Dear student, this part of the software is missing. Complete this part accoording to the assignment.
-*/
-    }
+		// Calculate the value of an impulse response sample
+		if (n >= -orde && n <= orde)
+		{
+			// Calculate the value of the impulse response sample
+			float sampleValue = berekenFloatingPoint(filterCoeffs[orde + n]);
+
+			// Display the information
+			wxString info = wxString::Format("Coefficient h[%d] = %.4f", n, sampleValue);
+			tijdDomeinCoords->SetLabel(info);
+		}
+		else
+		{
+			tijdDomeinCoords->SetLabel("Outside range");
+		}
+	}
 #endif
 }
 
 void FilterVenster::freqViewMuisBewegingHandler(wxMouseEvent &event)
 {
 #ifndef ExtraOpties
-    event.Skip();
+	event.Skip();
 #else
-    if (true == freqDomeinCoords->IsEnabled())
-    {
+	if (true == freqDomeinCoords->IsEnabled())
+	{
+		// Get the mouse coordinates
+		const wxPoint muiscoord(freqDomeinGrafiek->converteerMuisPositie(const_cast<wxMouseEvent &>(event)));
+		 
+		// Calculate the filter effect at a certain frequency
+		double omega = muiscoord.x * (Pi / freqDomeinGrafiek->GetClientSize().GetWidth());
 
-        //const wxPoint muiscoord(freqDomeinGrafiek->converteerMuisPositie(const_cast<wxMouseEvent &>(event)));
-//#error “Dit deel van de software ontbreekt — this part of the software is missing.”
-/* Beste leerling, dit deel van de software ontbreekt. Vul dit deel aan volgens de opdracht.
-   Dear student, this part of the software is missing. Complete this part accoording to the assignment.
-*/
-    }
+		double dB = muiscoord.y * (H_Omega_max - H_Omega_min) / freqDomeinGrafiek->GetClientSize().GetHeight();
+
+		if(omega >= 0 && omega <= Pi)
+		{
+			// Calculate the index in the frequency response array
+			int index = static_cast<int>((omega / Pi) * FreqSpectrumPunten(taps));
+
+			// Ensure the index is within bounds
+			if (index >= 0 && index < H_Omega.size())
+			{
+				// Calculate the filter effect at the given frequency
+				double filterEffect = H_Omega[index];
+
+				// Display the information
+				wxString info = wxString::Format("|H(%.4f*pi)| = %.2f dB at [%.4f*pi, %.2f dB]", omega / Pi, filterEffect, omega / Pi, dB);
+				freqDomeinCoords->SetLabel(info);
+			}
+			else
+			{
+				freqDomeinCoords->SetLabel("Outside range");
+			}
+		}
+		else
+		{
+			freqDomeinCoords->SetLabel("Outside range");
+		}
+	}
 #endif
 }
 
 
 void FilterVenster::tijdViewBinnenkomstHandler(wxMouseEvent &event)
 {
-    const bool conditie = ((beginPuntBepaald == true) &&
-                           (eindPuntBepaald == true) &&
-                           (testSituatie != true) &&
-                           (berekeningKlaar == true));
-
-    if (true == conditie)
-    {
-        wxLogDebug(_("Time graph entry."));
-    }
-    FindWindowById(BandBeginSliderID,this);
-    tijdDomeinCoords->Enable(conditie);
+	const bool conditie = ((beginPuntBepaald == true) &&
+	                       (eindPuntBepaald == true) &&
+	                       (testSituatie != true) &&
+	                       (berekeningKlaar == true));
+	
+	if (true == conditie)
+	{
+		wxLogDebug(_("Time graph entry."));
+	}
+	FindWindowById(BandBeginSliderID,this);
+	tijdDomeinCoords->Enable(conditie);
 }
 
 void FilterVenster::tijdViewBuitengangHandler(wxMouseEvent &event)
 {
-    wxLogDebug(_("Time graph exit."));
-    tijdDomeinCoords->Enable(false);
-    tijdDomeinCoords->SetLabel(_("No coordinates"));
+	wxLogDebug(_("Time graph exit."));
+	tijdDomeinCoords->Enable(false);
+	tijdDomeinCoords->SetLabel(_("No coordinates"));
 }
 
 void FilterVenster::freqViewBinnenkomstHandler(wxMouseEvent &event)
 {
-    const bool conditie = ((beginPuntBepaald == true) &&
-                           (eindPuntBepaald == true) &&
-                           (testSituatie != true) &&
-                           (berekeningKlaar == true));
-
-    if (true == conditie)
-    {
-        wxLogDebug(_("Freq graph entry."));
-    }
-
-    freqDomeinCoords->Enable(conditie);
+	const bool conditie = ((beginPuntBepaald == true) &&
+	                       (eindPuntBepaald == true) &&
+	                       (testSituatie != true) &&
+	                       (berekeningKlaar == true));
+	
+	if (true == conditie)
+	{
+		wxLogDebug(_("Freq graph entry."));
+	}
+	
+	freqDomeinCoords->Enable(conditie);
 }
 
 void FilterVenster::freqViewBuitengangHandler(wxMouseEvent &event)
 {
-    wxLogDebug(_("Freq graph exit."));
-    freqDomeinCoords->Enable(false);
-    freqDomeinCoords->SetLabel(_("No coordinates"));
+	wxLogDebug(_("Freq graph exit."));
+	freqDomeinCoords->Enable(false);
+	freqDomeinCoords->SetLabel(_("No coordinates"));
 }
 
 
@@ -539,48 +623,48 @@ IMPLEMENT_CLASS( FilterVenster, wxFrame )
 BEGIN_EVENT_TABLE( FilterVenster, wxFrame )
 
 ////@begin FilterVenster event table entries
-                EVT_MENU( wxID_ABOUT, FilterVenster::OnAboutClick )
-                EVT_MENU( wxID_SAVE, FilterVenster::OnSaveClick )
-                EVT_UPDATE_UI( wxID_SAVE, FilterVenster::OnSaveUpdate )
-                EVT_MENU( wxID_EXIT, FilterVenster::OnExitClick )
-                EVT_UPDATE_UI( wxID_EXIT, FilterVenster::OnExitUpdate )
-                EVT_MENU( BerekenFilterAktieID, FilterVenster::OnBerekenFilterAktieIDClick )
-                EVT_UPDATE_UI( BerekenFilterAktieID, FilterVenster::OnBerekenFilterAktieIDUpdate )
-                EVT_MENU( ExporteerFilterImpulseBeeldID, FilterVenster::OnExporteerFilterImpulseBeeldIDClick )
-                EVT_UPDATE_UI( ExporteerFilterImpulseBeeldID, FilterVenster::OnExporteerFilterImpulseBeeldIDUpdate )
-                EVT_MENU( ExporteerFreqBeeldID, FilterVenster::OnExporteerFreqBeeldIDClick )
-                EVT_UPDATE_UI( ExporteerFreqBeeldID, FilterVenster::OnExporteerFreqBeeldIDUpdate )
-                EVT_UPDATE_UI( ToonAnalogeFrekID, FilterVenster::OnToonAnalogeFrekIDUpdate )
-                EVT_BUTTON( HANLogoID, FilterVenster::OnHANLogoIDClick )
-                EVT_BUTTON( SampFreqID, FilterVenster::OnSampFreqIDClick )
-                EVT_UPDATE_UI( SampFreqID, FilterVenster::OnSampFreqIDUpdate )
-                EVT_BUTTON( FilterOrdeID, FilterVenster::OnFilterOrdeIDClick )
-                EVT_UPDATE_UI( FilterOrdeID, FilterVenster::OnFilterOrdeIDUpdate )
-                EVT_SPINCTRL( MaxVersterkingID, FilterVenster::OnMaxVersterkingIDUpdated )
-                EVT_UPDATE_UI( MaxVersterkingID, FilterVenster::OnMaxVersterkingIDUpdate )
-                EVT_CHOICE( VensterChoiceID, FilterVenster::OnVensterChoiceIDSelected )
-                EVT_UPDATE_UI( VensterChoiceID, FilterVenster::OnVensterChoiceIDUpdate )
-                EVT_SPINCTRL( BitKoderingID, FilterVenster::OnBitKoderingIDUpdated )
-                EVT_UPDATE_UI( BitKoderingID, FilterVenster::OnBitKoderingIDUpdate )
-                EVT_BUTTON( BerekenFilterID, FilterVenster::OnBerekenFilterAktieIDClick )
-                EVT_UPDATE_UI( BerekenFilterID, FilterVenster::OnBerekenFilterAktieIDUpdate )
-                EVT_CHECKBOX( ToonFilterKoeffsID, FilterVenster::OnToonFilterKoeffsIDClick )
-                EVT_UPDATE_UI( ToonFilterKoeffsID, FilterVenster::OnToonFilterKoeffsIDUpdate )
-                EVT_BUTTON( wxID_EXIT, FilterVenster::OnExitClick )
-                EVT_UPDATE_UI( wxID_EXIT, FilterVenster::OnExitUpdate )
-                EVT_SLIDER( BandBeginSliderID, FilterVenster::OnBandBeginSliderIDUpdated )
-                EVT_UPDATE_UI( BandBeginSliderID, FilterVenster::OnBandBeginSliderIDUpdate )
-                EVT_SLIDER( BandEindeSliderID, FilterVenster::OnBandEindeSliderIDUpdated )
-                EVT_UPDATE_UI( BandEindeSliderID, FilterVenster::OnBandEindeSliderIDUpdate )
-                EVT_UPDATE_UI( TestSignaalKeuzeID, FilterVenster::OnTestSignaalKeuzeIDUpdate )
-                EVT_SLIDER( TestSignaalFrekID, FilterVenster::OnTestSignaalFrekIDUpdated )
-                EVT_UPDATE_UI( TestSignaalFrekID, FilterVenster::OnTestSignaalFrekIDUpdate )
-                EVT_SLIDER( TestSignaalAmplitudeID, FilterVenster::OnTestSignaalAmplitudeIDUpdated )
-                EVT_UPDATE_UI( TestSignaalAmplitudeID, FilterVenster::OnTestSignaalAmplitudeIDUpdate )
-                EVT_UPDATE_UI( TekenOrigSignaalID, FilterVenster::OnTekenOrigSignaalIDUpdate )
-                EVT_UPDATE_UI( TekenSplineID, FilterVenster::OnTekenSplineIDUpdate )
-                EVT_TOGGLEBUTTON( FilterTestID, FilterVenster::OnFilterTestIDClick )
-                EVT_UPDATE_UI( FilterTestID, FilterVenster::OnFilterTestIDUpdate )
+				EVT_MENU( wxID_ABOUT, FilterVenster::OnAboutClick )
+				EVT_MENU( wxID_SAVE, FilterVenster::OnSaveClick )
+				EVT_UPDATE_UI( wxID_SAVE, FilterVenster::OnSaveUpdate )
+				EVT_MENU( wxID_EXIT, FilterVenster::OnExitClick )
+				EVT_UPDATE_UI( wxID_EXIT, FilterVenster::OnExitUpdate )
+				EVT_MENU( BerekenFilterAktieID, FilterVenster::OnBerekenFilterAktieIDClick )
+				EVT_UPDATE_UI( BerekenFilterAktieID, FilterVenster::OnBerekenFilterAktieIDUpdate )
+				EVT_MENU( ExporteerFilterImpulseBeeldID, FilterVenster::OnExporteerFilterImpulseBeeldIDClick )
+				EVT_UPDATE_UI( ExporteerFilterImpulseBeeldID, FilterVenster::OnExporteerFilterImpulseBeeldIDUpdate )
+				EVT_MENU( ExporteerFreqBeeldID, FilterVenster::OnExporteerFreqBeeldIDClick )
+				EVT_UPDATE_UI( ExporteerFreqBeeldID, FilterVenster::OnExporteerFreqBeeldIDUpdate )
+				EVT_UPDATE_UI( ToonAnalogeFrekID, FilterVenster::OnToonAnalogeFrekIDUpdate )
+				EVT_BUTTON( HANLogoID, FilterVenster::OnHANLogoIDClick )
+				EVT_BUTTON( SampFreqID, FilterVenster::OnSampFreqIDClick )
+				EVT_UPDATE_UI( SampFreqID, FilterVenster::OnSampFreqIDUpdate )
+				EVT_BUTTON( FilterOrdeID, FilterVenster::OnFilterOrdeIDClick )
+				EVT_UPDATE_UI( FilterOrdeID, FilterVenster::OnFilterOrdeIDUpdate )
+				EVT_SPINCTRL( MaxVersterkingID, FilterVenster::OnMaxVersterkingIDUpdated )
+				EVT_UPDATE_UI( MaxVersterkingID, FilterVenster::OnMaxVersterkingIDUpdate )
+				EVT_CHOICE( VensterChoiceID, FilterVenster::OnVensterChoiceIDSelected )
+				EVT_UPDATE_UI( VensterChoiceID, FilterVenster::OnVensterChoiceIDUpdate )
+				EVT_SPINCTRL( BitKoderingID, FilterVenster::OnBitKoderingIDUpdated )
+				EVT_UPDATE_UI( BitKoderingID, FilterVenster::OnBitKoderingIDUpdate )
+				EVT_BUTTON( BerekenFilterID, FilterVenster::OnBerekenFilterAktieIDClick )
+				EVT_UPDATE_UI( BerekenFilterID, FilterVenster::OnBerekenFilterAktieIDUpdate )
+				EVT_CHECKBOX( ToonFilterKoeffsID, FilterVenster::OnToonFilterKoeffsIDClick )
+				EVT_UPDATE_UI( ToonFilterKoeffsID, FilterVenster::OnToonFilterKoeffsIDUpdate )
+				EVT_BUTTON( wxID_EXIT, FilterVenster::OnExitClick )
+				EVT_UPDATE_UI( wxID_EXIT, FilterVenster::OnExitUpdate )
+				EVT_SLIDER( BandBeginSliderID, FilterVenster::OnBandBeginSliderIDUpdated )
+				EVT_UPDATE_UI( BandBeginSliderID, FilterVenster::OnBandBeginSliderIDUpdate )
+				EVT_SLIDER( BandEindeSliderID, FilterVenster::OnBandEindeSliderIDUpdated )
+				EVT_UPDATE_UI( BandEindeSliderID, FilterVenster::OnBandEindeSliderIDUpdate )
+				EVT_UPDATE_UI( TestSignaalKeuzeID, FilterVenster::OnTestSignaalKeuzeIDUpdate )
+				EVT_SLIDER( TestSignaalFrekID, FilterVenster::OnTestSignaalFrekIDUpdated )
+				EVT_UPDATE_UI( TestSignaalFrekID, FilterVenster::OnTestSignaalFrekIDUpdate )
+				EVT_SLIDER( TestSignaalAmplitudeID, FilterVenster::OnTestSignaalAmplitudeIDUpdated )
+				EVT_UPDATE_UI( TestSignaalAmplitudeID, FilterVenster::OnTestSignaalAmplitudeIDUpdate )
+				EVT_UPDATE_UI( TekenOrigSignaalID, FilterVenster::OnTekenOrigSignaalIDUpdate )
+				EVT_UPDATE_UI( TekenSplineID, FilterVenster::OnTekenSplineIDUpdate )
+				EVT_TOGGLEBUTTON( FilterTestID, FilterVenster::OnFilterTestIDClick )
+				EVT_UPDATE_UI( FilterTestID, FilterVenster::OnFilterTestIDUpdate )
 ////@end FilterVenster event table entries
 
 END_EVENT_TABLE()
@@ -591,116 +675,116 @@ END_EVENT_TABLE()
  */
 FilterVenster::FilterVenster()
 {
-    Init();
-    wxASSERT(0);
+	Init();
+	wxASSERT(0);
 }
 
 FilterVenster::FilterVenster(DesktopApp &app, wxWindowID id,
                              const wxString& caption,
                              const wxPoint& pos,
                              const wxSize& size, long style) :
-        FilterDesignerBasis(),
-        filterConfig(app.geefAppConfig()),    /* verkrijg de globale config pointer */
-        klok(this, KlokVerlopenID),
-        DemoTekst(
+		FilterDesignerBasis(),
+		filterConfig(app.geefAppConfig()),    /* verkrijg de globale config pointer */
+		klok(this, KlokVerlopenID),
+		DemoTekst(
 #ifndef OnderwijsOntwikkeling
-                _("Developer")+wxT(": ")+wxT(GebruikerNaam))
+				_("Developer")+wxT(": ")+wxT(GebruikerNaam))
 #else
-_("Demo version"))
+				_("Demo version"))
 #endif
 {
-    Init();
-    Create(nullptr, id, caption, pos, size, style);
-
-    /* koppel de timer event handmatig. */
-    Connect(KlokVerlopenID, wxEVT_TIMER,
-            wxTimerEventHandler(FilterVenster::klokVerlopenHandler),
-            nullptr, this);
-
-    wxASSERT(nullptr != filterConfig);
-
-    /* lees filter voorkeurswaarden in */
-    filterConfig->SetPath(wxT("/Configuratie/Filter"));
-
-    int leeswaarde;
-
-    filterConfig->Read(wxT("Sampling_Frequentie"), (int*)&sampFreq, 500);
-    filterConfig->Read(wxT("Startband"), (int*)&filterBegin, 100);
-    filterConfig->Read(wxT("Stopband"), (int*)&filterEind, 140);
-
-    filterConfig->Read(wxT("AantalTaps"), &leeswaarde, 61);
-    taps = leeswaarde;
-    filterConfig->Read(wxT("Filterorde"), &leeswaarde, 30);
-    orde = leeswaarde;
-    filterConfig->Read(wxT("MaxVersterking"), &leeswaarde, 0);
-    maxVersterkingSpinCtrl->SetValue(leeswaarde);
-
-    filterConfig->Read(wxT("VensterKeuze"), &leeswaarde, 0);
-    vensterChoice->SetSelection(leeswaarde);
-    filterConfig->Read(wxT("FixedPointBits"), &leeswaarde, 5);
-    fipBitsSpinCtrl->SetValue(leeswaarde);
-
-    filterConfig->Read(wxT("TestSignaal"), (int*)&leeswaarde, 0);
-    testSignaalChoice->SetSelection(leeswaarde);
-
-    filterConfig->Read(wxT("Testfreq"), (int*)&testFreq, 20);
-    filterConfig->Read(wxT("Testampl"), (int*)&leeswaarde, 1024);
-    testAmplitude = leeswaarde;
-    filterConfig->Read(wxT("TestOrig"), (bool*)&testOrig, false);
-    filterConfig->Read(wxT("TestSpline"), (bool*)&testSpline, false);
-    filterConfig->Read(wxT("Tooncoefficienten"), (bool*)&toonCoeffs, false);
-
-    filterConfig->SetPath(wxT("/Configuratie/Paden"));
-
-    const wxFileName standaard(wxGetHomeDir(), wxT("filter.h"));
-
-    filterConfig->Read(wxT("DataPad"), &dataPad, standaard.GetFullPath());
-
-    auto* label = dynamic_cast<wxStaticText*>(FindWindowById(SampFreqTextID, this));
-    wxString tekst = wxString::Format(wxT("%d Hz"), sampFreq);
-    auto* check = dynamic_cast<wxCheckBox*>(FindWindowById(TekenOrigSignaalID, this));
-
-
-    label->SetLabel(tekst);
-
-    bandBeginSlider->SetRange(0, (sampFreq / 2));
-    wxLogDebug(wxT("Begin=%d"), filterBegin);
-    bandBeginSlider->SetValue(filterBegin);
-
-    bandEindeSlider->SetRange(1, (sampFreq / 2));
-    wxLogDebug(wxT("Begin=%d"), filterEind);
-    bandEindeSlider->SetValue(filterEind);
-
-    label = static_cast<wxStaticText*>(FindWindowById(FilterOrdeTextID, this));
-    tekst = wxString::Format(wxT("%d taps"), taps);
-    label->SetLabel(tekst);
-
-    testSignaalSlider->SetRange(1, 4 * sampFreq);
-    testSignaalSlider->SetValue(testFreq);
-    testSignaalAmplitudeSlider->SetValue(testAmplitude);
-
-    check->SetValue(testOrig);
-    check = static_cast<wxCheckBox*>(FindWindowById(TekenSplineID, this));
-    check->SetValue(testSpline);
-    check = static_cast<wxCheckBox*>(FindWindowById(ToonFilterKoeffsID, this));
-    check->SetValue(toonCoeffs);
-
-    label = static_cast<wxStaticText*>(FindWindowById(FilterOrdeTextID, this));
-    tekst = wxString::Format(_("Orde = %d (%d taps)"), orde, taps);
-    label->SetLabel(tekst);
-
-    tijdDomeinGrafiek->zetAssenPen(axisPen);
-    tijdDomeinGrafiek->zetTekenPen(timeDomainPen);
-
-    freqDomeinGrafiek->zetAssenPen(axisPen);
-    freqDomeinGrafiek->zetTekenPen(freqDomainPen);
-
-    tijdDomeinGrafiek->zetOorsprongMidden();
-    freqDomeinGrafiek->zetOorsprong(wxRealPoint(0, 0.75));
-    testGrafiek->zetOorsprong(wxRealPoint(0, 0.5));
-
-    const auto testGrootte(testGrafiek->GetClientSize());
-    testGrafiek->zetGroteTekst(DemoTekst, wxPoint(0, testGrootte.GetHeight() / 2));
+	Init();
+	Create(nullptr, id, caption, pos, size, style);
+	
+	/* koppel de timer event handmatig. */
+	Connect(KlokVerlopenID, wxEVT_TIMER,
+	        wxTimerEventHandler(FilterVenster::klokVerlopenHandler),
+	        nullptr, this);
+	
+	wxASSERT(nullptr != filterConfig);
+	
+	/* lees filter voorkeurswaarden in */
+	filterConfig->SetPath(wxT("/Configuratie/Filter"));
+	
+	int leeswaarde;
+	
+	filterConfig->Read(wxT("Sampling_Frequentie"), (int*)&sampFreq, 500);
+	filterConfig->Read(wxT("Startband"), (int*)&filterBegin, 100);
+	filterConfig->Read(wxT("Stopband"), (int*)&filterEind, 140);
+	
+	filterConfig->Read(wxT("AantalTaps"), &leeswaarde, 61);
+	taps = leeswaarde;
+	filterConfig->Read(wxT("Filterorde"), &leeswaarde, 30);
+	orde = leeswaarde;
+	filterConfig->Read(wxT("MaxVersterking"), &leeswaarde, 0);
+	maxVersterkingSpinCtrl->SetValue(leeswaarde);
+	
+	filterConfig->Read(wxT("VensterKeuze"), &leeswaarde, 0);
+	vensterChoice->SetSelection(leeswaarde);
+	filterConfig->Read(wxT("FixedPointBits"), &leeswaarde, 5);
+	fipBitsSpinCtrl->SetValue(leeswaarde);
+	
+	filterConfig->Read(wxT("TestSignaal"), (int*)&leeswaarde, 0);
+	testSignaalChoice->SetSelection(leeswaarde);
+	
+	filterConfig->Read(wxT("Testfreq"), (int*)&testFreq, 20);
+	filterConfig->Read(wxT("Testampl"), (int*)&leeswaarde, 1024);
+	testAmplitude = leeswaarde;
+	filterConfig->Read(wxT("TestOrig"), (bool*)&testOrig, false);
+	filterConfig->Read(wxT("TestSpline"), (bool*)&testSpline, false);
+	filterConfig->Read(wxT("Tooncoefficienten"), (bool*)&toonCoeffs, false);
+	
+	filterConfig->SetPath(wxT("/Configuratie/Paden"));
+	
+	const wxFileName standaard(wxGetHomeDir(), wxT("filter.h"));
+	
+	filterConfig->Read(wxT("DataPad"), &dataPad, standaard.GetFullPath());
+	
+	auto* label = dynamic_cast<wxStaticText*>(FindWindowById(SampFreqTextID, this));
+	wxString tekst = wxString::Format(wxT("%d Hz"), sampFreq);
+	auto* check = dynamic_cast<wxCheckBox*>(FindWindowById(TekenOrigSignaalID, this));
+	
+	
+	label->SetLabel(tekst);
+	
+	bandBeginSlider->SetRange(0, (sampFreq / 2));
+	wxLogDebug(wxT("Begin=%d"), filterBegin);
+	bandBeginSlider->SetValue(filterBegin);
+	
+	bandEindeSlider->SetRange(1, (sampFreq / 2));
+	wxLogDebug(wxT("Begin=%d"), filterEind);
+	bandEindeSlider->SetValue(filterEind);
+	
+	label = static_cast<wxStaticText*>(FindWindowById(FilterOrdeTextID, this));
+	tekst = wxString::Format(wxT("%d taps"), taps);
+	label->SetLabel(tekst);
+	
+	testSignaalSlider->SetRange(1, 4 * sampFreq);
+	testSignaalSlider->SetValue(testFreq);
+	testSignaalAmplitudeSlider->SetValue(testAmplitude);
+	
+	check->SetValue(testOrig);
+	check = static_cast<wxCheckBox*>(FindWindowById(TekenSplineID, this));
+	check->SetValue(testSpline);
+	check = static_cast<wxCheckBox*>(FindWindowById(ToonFilterKoeffsID, this));
+	check->SetValue(toonCoeffs);
+	
+	label = static_cast<wxStaticText*>(FindWindowById(FilterOrdeTextID, this));
+	tekst = wxString::Format(_("Orde = %d (%d taps)"), orde, taps);
+	label->SetLabel(tekst);
+	
+	tijdDomeinGrafiek->zetAssenPen(axisPen);
+	tijdDomeinGrafiek->zetTekenPen(timeDomainPen);
+	
+	freqDomeinGrafiek->zetAssenPen(axisPen);
+	freqDomeinGrafiek->zetTekenPen(freqDomainPen);
+	
+	tijdDomeinGrafiek->zetOorsprongMidden();
+	freqDomeinGrafiek->zetOorsprong(wxRealPoint(0, 0.75));
+	testGrafiek->zetOorsprong(wxRealPoint(0, 0.5));
+	
+	const auto testGrootte(testGrafiek->GetClientSize());
+	testGrafiek->zetGroteTekst(DemoTekst, wxPoint(0, testGrootte.GetHeight() / 2));
 }
 
 
@@ -711,33 +795,33 @@ _("Demo version"))
 
 FilterVenster::~FilterVenster()
 {
-    auto applikatie = reinterpret_cast<FirFilterKlasse *>(wxTheApp);
-    applikatie->bewaarHoofdVensterGrootte();
-
-    /* Initialiseer de configuratie */
-    /* lees filter voorkeurswaarden in */
-    filterConfig->SetPath(wxT("/Configuratie/Filter"));
-
-    filterConfig->Write(wxT("Sampling_Frequentie"),sampFreq);
-    filterConfig->Write(wxT("Startband"),filterBegin);
-    filterConfig->Write(wxT("Stopband"),filterEind);
-    filterConfig->Write(wxT("AantalTaps"),static_cast<int>(taps));
-    filterConfig->Write(wxT("Filterorde"),static_cast<int>(orde));
-    filterConfig->Write(wxT("MaxVersterking"),maxVersterkingSpinCtrl->GetValue());
-    filterConfig->Write(wxT("VensterKeuze"),vensterChoice->GetSelection());
-    filterConfig->Write(wxT("FixedPointBits"),fipBitsSpinCtrl->GetValue());
-
-    filterConfig->Write(wxT("TestSignaal"),testSignaalChoice->GetSelection());
-    filterConfig->Write(wxT("Testfreq"),(int )testFreq);
-    filterConfig->Write(wxT("Testampl"),static_cast<int>(testAmplitude));
-
-    filterConfig->Write(wxT("TestOrig"),(bool )testOrig);
-    filterConfig->Write(wxT("TestSpline"),(bool )testSpline);
-    filterConfig->Write(wxT("Tooncoefficienten"),toonCoeffs);
-
-    filterConfig->SetPath(wxT("/Configuratie/Paden"));
-
-    filterConfig->Write(wxT("DataPad"),dataPad);
+	auto applikatie = reinterpret_cast<FirFilterKlasse *>(wxTheApp);
+	applikatie->bewaarHoofdVensterGrootte();
+	
+	/* Initialiseer de configuratie */
+	/* lees filter voorkeurswaarden in */
+	filterConfig->SetPath(wxT("/Configuratie/Filter"));
+	
+	filterConfig->Write(wxT("Sampling_Frequentie"),sampFreq);
+	filterConfig->Write(wxT("Startband"),filterBegin);
+	filterConfig->Write(wxT("Stopband"),filterEind);
+	filterConfig->Write(wxT("AantalTaps"),static_cast<int>(taps));
+	filterConfig->Write(wxT("Filterorde"),static_cast<int>(orde));
+	filterConfig->Write(wxT("MaxVersterking"),maxVersterkingSpinCtrl->GetValue());
+	filterConfig->Write(wxT("VensterKeuze"),vensterChoice->GetSelection());
+	filterConfig->Write(wxT("FixedPointBits"),fipBitsSpinCtrl->GetValue());
+	
+	filterConfig->Write(wxT("TestSignaal"),testSignaalChoice->GetSelection());
+	filterConfig->Write(wxT("Testfreq"),(int )testFreq);
+	filterConfig->Write(wxT("Testampl"),static_cast<int>(testAmplitude));
+	
+	filterConfig->Write(wxT("TestOrig"),(bool )testOrig);
+	filterConfig->Write(wxT("TestSpline"),(bool )testSpline);
+	filterConfig->Write(wxT("Tooncoefficienten"),toonCoeffs);
+	
+	filterConfig->SetPath(wxT("/Configuratie/Paden"));
+	
+	filterConfig->Write(wxT("DataPad"),dataPad);
 }
 
 /*
@@ -747,15 +831,15 @@ FilterVenster::~FilterVenster()
 bool FilterVenster::Create( wxWindow* parent, wxWindowID id, const wxString& caption, const wxPoint& pos, const wxSize& size, long style )
 {
 ////@begin FilterVenster creation
-    wxFrame::Create( parent, id, caption, pos, size, style );
-
-    CreateControls();
-    if (GetSizer())
-    {
-        GetSizer()->SetSizeHints(this);
-    }
+	wxFrame::Create( parent, id, caption, pos, size, style );
+	
+	CreateControls();
+	if (GetSizer())
+	{
+		GetSizer()->SetSizeHints(this);
+	}
 ////@end FilterVenster creation
-    return true;
+	return true;
 }
 
 
@@ -767,29 +851,29 @@ bool FilterVenster::Create( wxWindow* parent, wxWindowID id, const wxString& cap
 void FilterVenster::Init()
 {
 ////@begin FilterVenster member initialisation
-    tijdDomeinGrafiek = NULL;
-    tijdDomeinCoords = NULL;
-    freqDomeinGrafiek = NULL;
-    freqDomeinCoords = NULL;
-    toonAnalogeFrequentiesCheckBox = NULL;
-    testGrafiek = NULL;
-    sampFreqButton = NULL;
-    sampFreqText = NULL;
-    ordeButton = NULL;
-    filterOrdeText = NULL;
-    maxVersterkingSpinCtrl = NULL;
-    vensterChoice = NULL;
-    fipBitsSpinCtrl = NULL;
-    berekenFilterKnop = NULL;
-    toonfilterCoeffsCB = NULL;
-    bandBeginSlider = NULL;
-    bandEindeSlider = NULL;
-    testSignaalChoice = NULL;
-    testSignaalSlider = NULL;
-    testSignaalAmplitudeSlider = NULL;
-    tekenOrigineelCheckBox = NULL;
-    tekenSplineCheckBox = NULL;
-    filterTestButton = NULL;
+	tijdDomeinGrafiek = NULL;
+	tijdDomeinCoords = NULL;
+	freqDomeinGrafiek = NULL;
+	freqDomeinCoords = NULL;
+	toonAnalogeFrequentiesCheckBox = NULL;
+	testGrafiek = NULL;
+	sampFreqButton = NULL;
+	sampFreqText = NULL;
+	ordeButton = NULL;
+	filterOrdeText = NULL;
+	maxVersterkingSpinCtrl = NULL;
+	vensterChoice = NULL;
+	fipBitsSpinCtrl = NULL;
+	berekenFilterKnop = NULL;
+	toonfilterCoeffsCB = NULL;
+	bandBeginSlider = NULL;
+	bandEindeSlider = NULL;
+	testSignaalChoice = NULL;
+	testSignaalSlider = NULL;
+	testSignaalAmplitudeSlider = NULL;
+	tekenOrigineelCheckBox = NULL;
+	tekenSplineCheckBox = NULL;
+	filterTestButton = NULL;
 ////@end FilterVenster member initialisation
 }
 
@@ -801,227 +885,227 @@ void FilterVenster::Init()
 void FilterVenster::CreateControls()
 {
 ////@begin FilterVenster content construction
-    FilterVenster* itemFrame1 = this;
-
-    wxMenuBar* menuBar = new wxMenuBar;
-    wxMenu* itemMenu3 = new wxMenu;
-    itemMenu3->Append(wxID_ABOUT, _("About"), wxEmptyString, wxITEM_NORMAL);
-    itemMenu3->Append(wxID_SAVE, _("Write a C/CPP Header file"), wxEmptyString, wxITEM_NORMAL);
-    itemMenu3->Append(wxID_EXIT, _("Quit\tCtrl+Q"), wxEmptyString, wxITEM_NORMAL);
-    menuBar->Append(itemMenu3, _("Bestand"));
-    wxMenu* itemMenu6 = new wxMenu;
-    itemMenu6->Append(BerekenFilterAktieID, _("Calculate Filter\tCtrl+B"), wxEmptyString, wxITEM_NORMAL);
-    itemMenu6->Append(ExporteerFilterImpulseBeeldID, _("Export the time domain image\tCtrl+R"), wxEmptyString, wxITEM_NORMAL);
-    itemMenu6->Append(ExporteerFreqBeeldID, _("Export the frequency domain image\tCtrl+E"), wxEmptyString, wxITEM_NORMAL);
-    menuBar->Append(itemMenu6, _("Filter"));
-    itemFrame1->SetMenuBar(menuBar);
-
-    wxBoxSizer* itemBoxSizer11 = new wxBoxSizer(wxHORIZONTAL);
-    itemFrame1->SetSizer(itemBoxSizer11);
-
-    wxPanel* itemPanel12 = new wxPanel( itemFrame1, hoofdPaneel, wxDefaultPosition, wxDefaultSize, wxTAB_TRAVERSAL );
-    itemPanel12->SetExtraStyle(wxWS_EX_VALIDATE_RECURSIVELY);
-    itemPanel12->SetBackgroundColour(wxColour(47, 180, 255));
-    itemBoxSizer11->Add(itemPanel12, 1, wxGROW|wxALL, 0);
-
-    wxBoxSizer* itemBoxSizer1 = new wxBoxSizer(wxVERTICAL);
-    itemPanel12->SetSizer(itemBoxSizer1);
-
-    wxBoxSizer* itemBoxSizer2 = new wxBoxSizer(wxHORIZONTAL);
-    itemBoxSizer1->Add(itemBoxSizer2, 0, wxALIGN_CENTER_HORIZONTAL, 0);
-
-    wxStaticBox* itemStaticBoxSizer3Static = new wxStaticBox(itemPanel12, wxID_ANY, _("Time domain filter impulse response"));
-    wxStaticBoxSizer* itemStaticBoxSizer3 = new wxStaticBoxSizer(itemStaticBoxSizer3Static, wxVERTICAL);
-    itemBoxSizer2->Add(itemStaticBoxSizer3, 1, wxGROW, 0);
-
-    tijdDomeinGrafiek = new GrafiekVenster( itemStaticBoxSizer3->GetStaticBox(), TijdDomeinGrafiekID, wxDefaultPosition, wxSize(400, 199), 0 );
-    itemStaticBoxSizer3->Add(tijdDomeinGrafiek, 0, wxGROW|wxALL, 2);
-
-    tijdDomeinCoords = new wxStaticText( itemStaticBoxSizer3->GetStaticBox(), TijdDomeinKoordsID, _("Time domain coordinates (Mouse over window)"), wxDefaultPosition, wxDefaultSize, 0 );
-    tijdDomeinCoords->Enable(false);
-    itemStaticBoxSizer3->Add(tijdDomeinCoords, 0, wxGROW|wxALL, 3);
-
-    wxStaticBox* itemStaticBoxSizer7Static = new wxStaticBox(itemPanel12, wxID_ANY, _("Frequency domain representation"));
-    wxStaticBoxSizer* itemStaticBoxSizer7 = new wxStaticBoxSizer(itemStaticBoxSizer7Static, wxVERTICAL);
-    itemBoxSizer2->Add(itemStaticBoxSizer7, 1, wxGROW, 0);
-
-    freqDomeinGrafiek = new GrafiekVenster( itemStaticBoxSizer7->GetStaticBox(), FreqDomeinGrafiekID, wxDefaultPosition, wxSize(400, 199), 0 );
-    itemStaticBoxSizer7->Add(freqDomeinGrafiek, 0, wxGROW|wxALL, 2);
-
-    wxBoxSizer* itemBoxSizer9 = new wxBoxSizer(wxVERTICAL);
-    itemStaticBoxSizer7->Add(itemBoxSizer9, 0, wxGROW, 0);
-
-    freqDomeinCoords = new wxStaticText( itemStaticBoxSizer7->GetStaticBox(), FrekDomeinKoordsID, _("Frequency domain coordinates (Mouse over window)"), wxDefaultPosition, wxDefaultSize, 0 );
-    freqDomeinCoords->Enable(false);
-    itemBoxSizer9->Add(freqDomeinCoords, 0, wxGROW|wxALL, 3);
-
-    toonAnalogeFrequentiesCheckBox = new wxCheckBox( itemStaticBoxSizer7->GetStaticBox(), ToonAnalogeFrekID, _("Show analogue frequencies"), wxDefaultPosition, wxDefaultSize, 0 );
-    toonAnalogeFrequentiesCheckBox->SetValue(false);
-    itemBoxSizer9->Add(toonAnalogeFrequentiesCheckBox, 0, wxALIGN_LEFT|wxALL, 3);
-
-    wxBoxSizer* itemBoxSizer4 = new wxBoxSizer(wxHORIZONTAL);
-    itemBoxSizer1->Add(itemBoxSizer4, 0, wxALIGN_CENTER_HORIZONTAL|wxALL, 5);
-
-    wxBitmapButton* itemBitmapButton5 = new wxBitmapButton( itemPanel12, HANLogoID, itemFrame1->GetBitmapResource(wxT("../../../DesktopBasis/gemeenschappelijk/logos/hanlogo_klein.png")), wxDefaultPosition, wxDefaultSize, wxBU_AUTODRAW );
-    if (FilterVenster::ShowToolTips())
-        itemBitmapButton5->SetToolTip(_("Discover HAN Embedded Systems Engineering!"));
-    itemBoxSizer4->Add(itemBitmapButton5, 0, wxALIGN_CENTER_VERTICAL|wxALL, 0);
-
-    wxStaticBox* itemStaticBoxSizer6Static = new wxStaticBox(itemPanel12, wxID_ANY, _("Test results visualization"));
-    wxStaticBoxSizer* itemStaticBoxSizer6 = new wxStaticBoxSizer(itemStaticBoxSizer6Static, wxHORIZONTAL);
-    itemBoxSizer4->Add(itemStaticBoxSizer6, 0, wxALIGN_CENTER_VERTICAL|wxALL, 5);
-
-    testGrafiek = new GrafiekVenster( itemStaticBoxSizer6->GetStaticBox(), TestGrafiekID, wxDefaultPosition, wxSize(800, 199), 0 );
-    itemStaticBoxSizer6->Add(testGrafiek, 1, wxGROW|wxALL, 0);
-
-    wxBoxSizer* itemBoxSizer19 = new wxBoxSizer(wxHORIZONTAL);
-    itemBoxSizer1->Add(itemBoxSizer19, 0, wxALIGN_CENTER_HORIZONTAL, 0);
-
-    wxStaticBox* itemStaticBoxSizer4Static = new wxStaticBox(itemPanel12, wxID_ANY, _("Filter parameters"));
-    wxStaticBoxSizer* itemStaticBoxSizer4 = new wxStaticBoxSizer(itemStaticBoxSizer4Static, wxVERTICAL);
-    itemBoxSizer19->Add(itemStaticBoxSizer4, 0, wxGROW, 0);
-
-    wxBoxSizer* itemBoxSizer7 = new wxBoxSizer(wxHORIZONTAL);
-    itemStaticBoxSizer4->Add(itemBoxSizer7, 1, wxGROW, 0);
-
-    wxBoxSizer* itemBoxSizer8 = new wxBoxSizer(wxVERTICAL);
-    itemBoxSizer7->Add(itemBoxSizer8, 1, wxGROW, 0);
-
-    wxFlexGridSizer* itemFlexGridSizer9 = new wxFlexGridSizer(5, 2, 3, 3);
-    itemBoxSizer8->Add(itemFlexGridSizer9, 0, wxGROW|wxALL, 1);
-
-    sampFreqButton = new wxButton( itemStaticBoxSizer4->GetStaticBox(), SampFreqID, _("Sampling frequency (Hz)"), wxDefaultPosition, wxDefaultSize, 0 );
-    sampFreqButton->SetDefault();
-    itemFlexGridSizer9->Add(sampFreqButton, 0, wxALIGN_LEFT|wxALIGN_CENTER_VERTICAL, 0);
-
-    sampFreqText = new wxStaticText( itemStaticBoxSizer4->GetStaticBox(), SampFreqTextID, _("undetermined"), wxDefaultPosition, wxDefaultSize, 0 );
-    itemFlexGridSizer9->Add(sampFreqText, 0, wxALIGN_LEFT|wxALIGN_CENTER_VERTICAL, 0);
-
-    ordeButton = new wxButton( itemStaticBoxSizer4->GetStaticBox(), FilterOrdeID, _("Filter order"), wxDefaultPosition, wxDefaultSize, 0 );
-    itemFlexGridSizer9->Add(ordeButton, 0, wxALIGN_LEFT|wxALIGN_CENTER_VERTICAL, 0);
-
-    filterOrdeText = new wxStaticText( itemStaticBoxSizer4->GetStaticBox(), FilterOrdeTextID, _("undetermined"), wxDefaultPosition, wxDefaultSize, 0 );
-    itemFlexGridSizer9->Add(filterOrdeText, 0, wxALIGN_LEFT|wxALIGN_CENTER_VERTICAL, 0);
-
-    wxStaticText* itemStaticText15 = new wxStaticText( itemStaticBoxSizer4->GetStaticBox(), wxID_STATIC, _("Supplemental filter amplification (dB) :"), wxDefaultPosition, wxDefaultSize, 0 );
-    itemFlexGridSizer9->Add(itemStaticText15, 0, wxALIGN_LEFT|wxALIGN_CENTER_VERTICAL|wxALL, 0);
-
-    maxVersterkingSpinCtrl = new wxSpinCtrl( itemStaticBoxSizer4->GetStaticBox(), MaxVersterkingID, wxT("0"), wxDefaultPosition, wxDefaultSize, 0, -30, 30, 0 );
-    itemFlexGridSizer9->Add(maxVersterkingSpinCtrl, 0, wxALIGN_LEFT|wxALIGN_CENTER_VERTICAL, 0);
-
-    wxStaticText* itemStaticText17 = new wxStaticText( itemStaticBoxSizer4->GetStaticBox(), wxID_ANY, _("Window applied :"), wxDefaultPosition, wxDefaultSize, 0 );
-    itemFlexGridSizer9->Add(itemStaticText17, 0, wxALIGN_LEFT|wxALIGN_TOP, 0);
-
-    wxArrayString vensterChoiceStrings;
-    vensterChoiceStrings.Add(_("Rectangle"));
-    vensterChoiceStrings.Add(_("Triangle"));
-    vensterChoiceStrings.Add(_("Hamming"));
-    vensterChoice = new wxChoice( itemStaticBoxSizer4->GetStaticBox(), VensterChoiceID, wxDefaultPosition, wxDefaultSize, vensterChoiceStrings, 0 );
-    vensterChoice->SetStringSelection(_("Rectangle"));
-    itemFlexGridSizer9->Add(vensterChoice, 0, wxGROW|wxALIGN_CENTER_VERTICAL, 0);
-
-    wxStaticText* itemStaticText19 = new wxStaticText( itemStaticBoxSizer4->GetStaticBox(), wxID_ANY, _("Number of bits in coding :"), wxDefaultPosition, wxDefaultSize, 0 );
-    itemFlexGridSizer9->Add(itemStaticText19, 0, wxALIGN_LEFT|wxALIGN_TOP, 0);
-
-    fipBitsSpinCtrl = new wxSpinCtrl( itemStaticBoxSizer4->GetStaticBox(), BitKoderingID, wxT("3"), wxDefaultPosition, wxDefaultSize, 0, 3, 16, 3 );
-    itemFlexGridSizer9->Add(fipBitsSpinCtrl, 0, wxALIGN_LEFT|wxALIGN_CENTER_VERTICAL, 0);
-
-    wxBoxSizer* itemBoxSizer21 = new wxBoxSizer(wxHORIZONTAL);
-    itemBoxSizer8->Add(itemBoxSizer21, 0, wxGROW|wxALL, 2);
-
-    berekenFilterKnop = new wxButton( itemStaticBoxSizer4->GetStaticBox(), BerekenFilterID, _("Calculate filter"), wxDefaultPosition, wxDefaultSize, 0 );
-    berekenFilterKnop->SetDefault();
-    berekenFilterKnop->SetFont(wxFont(16, wxFONTFAMILY_SWISS, wxFONTSTYLE_NORMAL, wxFONTWEIGHT_NORMAL, false, wxT("Tahoma")));
-    berekenFilterKnop->Enable(false);
-    itemBoxSizer21->Add(berekenFilterKnop, 0, wxGROW|wxALL, 3);
-
-    toonfilterCoeffsCB = new wxCheckBox( itemStaticBoxSizer4->GetStaticBox(), ToonFilterKoeffsID, _("Dump coefficients"), wxDefaultPosition, wxDefaultSize, 0 );
-    toonfilterCoeffsCB->SetValue(true);
-    itemBoxSizer21->Add(toonfilterCoeffsCB, 0, wxALIGN_CENTER_VERTICAL|wxALL, 3);
-
-    wxButton* itemButton1 = new wxButton( itemStaticBoxSizer4->GetStaticBox(), wxID_EXIT, _("&Quit"), wxDefaultPosition, wxDefaultSize, 0 );
-    itemBoxSizer8->Add(itemButton1, 0, wxGROW|wxALL, 2);
-
-    wxBoxSizer* itemBoxSizer24 = new wxBoxSizer(wxVERTICAL);
-    itemBoxSizer7->Add(itemBoxSizer24, 0, wxGROW, 0);
-
-    wxStaticBox* itemStaticBoxSizer25Static = new wxStaticBox(itemStaticBoxSizer4->GetStaticBox(), wxID_ANY, _("Band pass begin (Hz)"));
-    wxStaticBoxSizer* itemStaticBoxSizer25 = new wxStaticBoxSizer(itemStaticBoxSizer25Static, wxVERTICAL);
-    itemBoxSizer24->Add(itemStaticBoxSizer25, 0, wxGROW|wxALL, 6);
-
-    bandBeginSlider = new wxSlider( itemStaticBoxSizer25->GetStaticBox(), BandBeginSliderID, 600, 400, 800, wxDefaultPosition, wxDefaultSize, wxSL_HORIZONTAL|wxSL_AUTOTICKS|wxSL_LABELS );
-    bandBeginSlider->Enable(false);
-    itemStaticBoxSizer25->Add(bandBeginSlider, 1, wxGROW, 0);
-
-    wxStaticBox* itemStaticBoxSizer27Static = new wxStaticBox(itemStaticBoxSizer4->GetStaticBox(), wxID_ANY, _("Band pass end (Hz)"));
-    wxStaticBoxSizer* itemStaticBoxSizer27 = new wxStaticBoxSizer(itemStaticBoxSizer27Static, wxVERTICAL);
-    itemBoxSizer24->Add(itemStaticBoxSizer27, 0, wxGROW|wxALL, 6);
-
-    bandEindeSlider = new wxSlider( itemStaticBoxSizer27->GetStaticBox(), BandEindeSliderID, 600, 400, 800, wxDefaultPosition, wxDefaultSize, wxSL_HORIZONTAL|wxSL_AUTOTICKS|wxSL_LABELS );
-    bandEindeSlider->Enable(false);
-    itemStaticBoxSizer27->Add(bandEindeSlider, 1, wxGROW, 0);
-
-    wxStaticBox* itemStaticBoxSizer1Static = new wxStaticBox(itemPanel12, wxID_ANY, _("Filter test"));
-    wxStaticBoxSizer* itemStaticBoxSizer1 = new wxStaticBoxSizer(itemStaticBoxSizer1Static, wxVERTICAL);
-    itemBoxSizer19->Add(itemStaticBoxSizer1, 0, wxGROW, 0);
-
-    wxBoxSizer* itemBoxSizer3 = new wxBoxSizer(wxHORIZONTAL);
-    itemStaticBoxSizer1->Add(itemBoxSizer3, 0, wxGROW, 0);
-
-    wxArrayString testSignaalChoiceStrings;
-    testSignaalChoiceStrings.Add(_("Cosine"));
-    testSignaalChoiceStrings.Add(_("Square wave"));
-    testSignaalChoiceStrings.Add(_("Impulse"));
-    testSignaalChoiceStrings.Add(_("Step"));
-    testSignaalChoice = new wxChoice( itemStaticBoxSizer1->GetStaticBox(), TestSignaalKeuzeID, wxDefaultPosition, wxDefaultSize, testSignaalChoiceStrings, 0 );
-    testSignaalChoice->SetStringSelection(_("Cosine"));
-    itemBoxSizer3->Add(testSignaalChoice, 1, wxGROW|wxALL, 6);
-
-    wxBoxSizer* itemBoxSizer5 = new wxBoxSizer(wxVERTICAL);
-    itemStaticBoxSizer1->Add(itemBoxSizer5, 0, wxALIGN_LEFT, 0);
-
-    wxBoxSizer* itemBoxSizer6 = new wxBoxSizer(wxHORIZONTAL);
-    itemBoxSizer5->Add(itemBoxSizer6, 0, wxALIGN_LEFT, 0);
-
-    wxStaticBox* itemStaticBoxSizer8Static = new wxStaticBox(itemStaticBoxSizer1->GetStaticBox(), wxID_ANY, _("Test Signal frequency"));
-    wxStaticBoxSizer* itemStaticBoxSizer8 = new wxStaticBoxSizer(itemStaticBoxSizer8Static, wxVERTICAL);
-    itemBoxSizer6->Add(itemStaticBoxSizer8, 0, wxALIGN_TOP|wxALL, 6);
-
-    testSignaalSlider = new wxSlider( itemStaticBoxSizer8->GetStaticBox(), TestSignaalFrekID, 500, 0, 1600, wxDefaultPosition, wxDefaultSize, wxSL_HORIZONTAL|wxSL_AUTOTICKS|wxSL_LABELS );
-    itemStaticBoxSizer8->Add(testSignaalSlider, 1, wxGROW|wxBOTTOM, 10);
-
-    wxBoxSizer* itemBoxSizer10 = new wxBoxSizer(wxHORIZONTAL);
-    itemBoxSizer6->Add(itemBoxSizer10, 0, wxALIGN_TOP, 0);
-
-    wxStaticBox* itemStaticBoxSizer11Static = new wxStaticBox(itemStaticBoxSizer1->GetStaticBox(), wxID_ANY, _("Test Signal amplitude"));
-    wxStaticBoxSizer* itemStaticBoxSizer11 = new wxStaticBoxSizer(itemStaticBoxSizer11Static, wxVERTICAL);
-    itemBoxSizer10->Add(itemStaticBoxSizer11, 1, wxALIGN_TOP|wxALL, 6);
-
-    testSignaalAmplitudeSlider = new wxSlider( itemStaticBoxSizer11->GetStaticBox(), TestSignaalAmplitudeID, 1000, 0, 32767, wxDefaultPosition, wxDefaultSize, wxSL_HORIZONTAL|wxSL_AUTOTICKS|wxSL_LABELS );
-    itemStaticBoxSizer11->Add(testSignaalAmplitudeSlider, 1, wxGROW|wxBOTTOM, 10);
-
-    wxBoxSizer* itemBoxSizer13 = new wxBoxSizer(wxHORIZONTAL);
-    itemBoxSizer5->Add(itemBoxSizer13, 0, wxGROW, 0);
-
-    tekenOrigineelCheckBox = new wxCheckBox( itemStaticBoxSizer1->GetStaticBox(), TekenOrigSignaalID, _("Show test signal"), wxDefaultPosition, wxDefaultSize, 0 );
-    tekenOrigineelCheckBox->SetValue(false);
-    itemBoxSizer13->Add(tekenOrigineelCheckBox, 0, wxALIGN_TOP|wxALL, 2);
-
-    tekenSplineCheckBox = new wxCheckBox( itemStaticBoxSizer1->GetStaticBox(), TekenSplineID, _("Draw interpolation spline"), wxDefaultPosition, wxDefaultSize, 0 );
-    tekenSplineCheckBox->SetValue(true);
-    itemBoxSizer13->Add(tekenSplineCheckBox, 0, wxALIGN_TOP|wxALL, 2);
-
-    filterTestButton = new wxToggleButton( itemStaticBoxSizer1->GetStaticBox(), FilterTestID, _("Start Filter Test"), wxDefaultPosition, wxDefaultSize, 0 );
-    filterTestButton->SetValue(false);
-    itemStaticBoxSizer1->Add(filterTestButton, 0, wxGROW|wxALL, 2);
-
-    // Connect events and objects
-    tijdDomeinGrafiek->Connect(TijdDomeinGrafiekID, wxEVT_MOTION, wxMouseEventHandler(FilterVenster::OnMotion), NULL, this);
-    tijdDomeinGrafiek->Connect(TijdDomeinGrafiekID, wxEVT_ENTER_WINDOW, wxMouseEventHandler(FilterVenster::OnEnterWindow), NULL, this);
-    tijdDomeinGrafiek->Connect(TijdDomeinGrafiekID, wxEVT_LEAVE_WINDOW, wxMouseEventHandler(FilterVenster::OnLeaveWindow), NULL, this);
-    freqDomeinGrafiek->Connect(FreqDomeinGrafiekID, wxEVT_MOTION, wxMouseEventHandler(FilterVenster::OnMotion), NULL, this);
-    freqDomeinGrafiek->Connect(FreqDomeinGrafiekID, wxEVT_ENTER_WINDOW, wxMouseEventHandler(FilterVenster::OnEnterWindow), NULL, this);
-    freqDomeinGrafiek->Connect(FreqDomeinGrafiekID, wxEVT_LEAVE_WINDOW, wxMouseEventHandler(FilterVenster::OnLeaveWindow), NULL, this);
+	FilterVenster* itemFrame1 = this;
+	
+	wxMenuBar* menuBar = new wxMenuBar;
+	wxMenu* itemMenu3 = new wxMenu;
+	itemMenu3->Append(wxID_ABOUT, _("About"), wxEmptyString, wxITEM_NORMAL);
+	itemMenu3->Append(wxID_SAVE, _("Write a C/CPP Header file"), wxEmptyString, wxITEM_NORMAL);
+	itemMenu3->Append(wxID_EXIT, _("Quit\tCtrl+Q"), wxEmptyString, wxITEM_NORMAL);
+	menuBar->Append(itemMenu3, _("Bestand"));
+	wxMenu* itemMenu6 = new wxMenu;
+	itemMenu6->Append(BerekenFilterAktieID, _("Calculate Filter\tCtrl+B"), wxEmptyString, wxITEM_NORMAL);
+	itemMenu6->Append(ExporteerFilterImpulseBeeldID, _("Export the time domain image\tCtrl+R"), wxEmptyString, wxITEM_NORMAL);
+	itemMenu6->Append(ExporteerFreqBeeldID, _("Export the frequency domain image\tCtrl+E"), wxEmptyString, wxITEM_NORMAL);
+	menuBar->Append(itemMenu6, _("Filter"));
+	itemFrame1->SetMenuBar(menuBar);
+	
+	wxBoxSizer* itemBoxSizer11 = new wxBoxSizer(wxHORIZONTAL);
+	itemFrame1->SetSizer(itemBoxSizer11);
+	
+	wxPanel* itemPanel12 = new wxPanel( itemFrame1, hoofdPaneel, wxDefaultPosition, wxDefaultSize, wxTAB_TRAVERSAL );
+	itemPanel12->SetExtraStyle(wxWS_EX_VALIDATE_RECURSIVELY);
+	itemPanel12->SetBackgroundColour(wxColour(47, 180, 255));
+	itemBoxSizer11->Add(itemPanel12, 1, wxGROW|wxALL, 0);
+	
+	wxBoxSizer* itemBoxSizer1 = new wxBoxSizer(wxVERTICAL);
+	itemPanel12->SetSizer(itemBoxSizer1);
+	
+	wxBoxSizer* itemBoxSizer2 = new wxBoxSizer(wxHORIZONTAL);
+	itemBoxSizer1->Add(itemBoxSizer2, 0, wxALIGN_CENTER_HORIZONTAL, 0);
+	
+	wxStaticBox* itemStaticBoxSizer3Static = new wxStaticBox(itemPanel12, wxID_ANY, _("Time domain filter impulse response"));
+	wxStaticBoxSizer* itemStaticBoxSizer3 = new wxStaticBoxSizer(itemStaticBoxSizer3Static, wxVERTICAL);
+	itemBoxSizer2->Add(itemStaticBoxSizer3, 1, wxGROW, 0);
+	
+	tijdDomeinGrafiek = new GrafiekVenster( itemStaticBoxSizer3->GetStaticBox(), TijdDomeinGrafiekID, wxDefaultPosition, wxSize(400, 199), 0 );
+	itemStaticBoxSizer3->Add(tijdDomeinGrafiek, 0, wxGROW|wxALL, 2);
+	
+	tijdDomeinCoords = new wxStaticText( itemStaticBoxSizer3->GetStaticBox(), TijdDomeinKoordsID, _("Time domain coordinates (Mouse over window)"), wxDefaultPosition, wxDefaultSize, 0 );
+	tijdDomeinCoords->Enable(false);
+	itemStaticBoxSizer3->Add(tijdDomeinCoords, 0, wxGROW|wxALL, 3);
+	
+	wxStaticBox* itemStaticBoxSizer7Static = new wxStaticBox(itemPanel12, wxID_ANY, _("Frequency domain representation"));
+	wxStaticBoxSizer* itemStaticBoxSizer7 = new wxStaticBoxSizer(itemStaticBoxSizer7Static, wxVERTICAL);
+	itemBoxSizer2->Add(itemStaticBoxSizer7, 1, wxGROW, 0);
+	
+	freqDomeinGrafiek = new GrafiekVenster( itemStaticBoxSizer7->GetStaticBox(), FreqDomeinGrafiekID, wxDefaultPosition, wxSize(400, 199), 0 );
+	itemStaticBoxSizer7->Add(freqDomeinGrafiek, 0, wxGROW|wxALL, 2);
+	
+	wxBoxSizer* itemBoxSizer9 = new wxBoxSizer(wxVERTICAL);
+	itemStaticBoxSizer7->Add(itemBoxSizer9, 0, wxGROW, 0);
+	
+	freqDomeinCoords = new wxStaticText( itemStaticBoxSizer7->GetStaticBox(), FrekDomeinKoordsID, _("Frequency domain coordinates (Mouse over window)"), wxDefaultPosition, wxDefaultSize, 0 );
+	freqDomeinCoords->Enable(false);
+	itemBoxSizer9->Add(freqDomeinCoords, 0, wxGROW|wxALL, 3);
+	
+	toonAnalogeFrequentiesCheckBox = new wxCheckBox( itemStaticBoxSizer7->GetStaticBox(), ToonAnalogeFrekID, _("Show analogue frequencies"), wxDefaultPosition, wxDefaultSize, 0 );
+	toonAnalogeFrequentiesCheckBox->SetValue(false);
+	itemBoxSizer9->Add(toonAnalogeFrequentiesCheckBox, 0, wxALIGN_LEFT|wxALL, 3);
+	
+	wxBoxSizer* itemBoxSizer4 = new wxBoxSizer(wxHORIZONTAL);
+	itemBoxSizer1->Add(itemBoxSizer4, 0, wxALIGN_CENTER_HORIZONTAL|wxALL, 5);
+	
+	wxBitmapButton* itemBitmapButton5 = new wxBitmapButton( itemPanel12, HANLogoID, itemFrame1->GetBitmapResource(wxT("../../../DesktopBasis/gemeenschappelijk/logos/hanlogo_klein.png")), wxDefaultPosition, wxDefaultSize, wxBU_AUTODRAW );
+	if (FilterVenster::ShowToolTips())
+		itemBitmapButton5->SetToolTip(_("Discover HAN Embedded Systems Engineering!"));
+	itemBoxSizer4->Add(itemBitmapButton5, 0, wxALIGN_CENTER_VERTICAL|wxALL, 0);
+	
+	wxStaticBox* itemStaticBoxSizer6Static = new wxStaticBox(itemPanel12, wxID_ANY, _("Test results visualization"));
+	wxStaticBoxSizer* itemStaticBoxSizer6 = new wxStaticBoxSizer(itemStaticBoxSizer6Static, wxHORIZONTAL);
+	itemBoxSizer4->Add(itemStaticBoxSizer6, 0, wxALIGN_CENTER_VERTICAL|wxALL, 5);
+	
+	testGrafiek = new GrafiekVenster( itemStaticBoxSizer6->GetStaticBox(), TestGrafiekID, wxDefaultPosition, wxSize(800, 199), 0 );
+	itemStaticBoxSizer6->Add(testGrafiek, 1, wxGROW|wxALL, 0);
+	
+	wxBoxSizer* itemBoxSizer19 = new wxBoxSizer(wxHORIZONTAL);
+	itemBoxSizer1->Add(itemBoxSizer19, 0, wxALIGN_CENTER_HORIZONTAL, 0);
+	
+	wxStaticBox* itemStaticBoxSizer4Static = new wxStaticBox(itemPanel12, wxID_ANY, _("Filter parameters"));
+	wxStaticBoxSizer* itemStaticBoxSizer4 = new wxStaticBoxSizer(itemStaticBoxSizer4Static, wxVERTICAL);
+	itemBoxSizer19->Add(itemStaticBoxSizer4, 0, wxGROW, 0);
+	
+	wxBoxSizer* itemBoxSizer7 = new wxBoxSizer(wxHORIZONTAL);
+	itemStaticBoxSizer4->Add(itemBoxSizer7, 1, wxGROW, 0);
+	
+	wxBoxSizer* itemBoxSizer8 = new wxBoxSizer(wxVERTICAL);
+	itemBoxSizer7->Add(itemBoxSizer8, 1, wxGROW, 0);
+	
+	wxFlexGridSizer* itemFlexGridSizer9 = new wxFlexGridSizer(5, 2, 3, 3);
+	itemBoxSizer8->Add(itemFlexGridSizer9, 0, wxGROW|wxALL, 1);
+	
+	sampFreqButton = new wxButton( itemStaticBoxSizer4->GetStaticBox(), SampFreqID, _("Sampling frequency (Hz)"), wxDefaultPosition, wxDefaultSize, 0 );
+	sampFreqButton->SetDefault();
+	itemFlexGridSizer9->Add(sampFreqButton, 0, wxALIGN_LEFT|wxALIGN_CENTER_VERTICAL, 0);
+	
+	sampFreqText = new wxStaticText( itemStaticBoxSizer4->GetStaticBox(), SampFreqTextID, _("undetermined"), wxDefaultPosition, wxDefaultSize, 0 );
+	itemFlexGridSizer9->Add(sampFreqText, 0, wxALIGN_LEFT|wxALIGN_CENTER_VERTICAL, 0);
+	
+	ordeButton = new wxButton( itemStaticBoxSizer4->GetStaticBox(), FilterOrdeID, _("Filter order"), wxDefaultPosition, wxDefaultSize, 0 );
+	itemFlexGridSizer9->Add(ordeButton, 0, wxALIGN_LEFT|wxALIGN_CENTER_VERTICAL, 0);
+	
+	filterOrdeText = new wxStaticText( itemStaticBoxSizer4->GetStaticBox(), FilterOrdeTextID, _("undetermined"), wxDefaultPosition, wxDefaultSize, 0 );
+	itemFlexGridSizer9->Add(filterOrdeText, 0, wxALIGN_LEFT|wxALIGN_CENTER_VERTICAL, 0);
+	
+	wxStaticText* itemStaticText15 = new wxStaticText( itemStaticBoxSizer4->GetStaticBox(), wxID_STATIC, _("Supplemental filter amplification (dB) :"), wxDefaultPosition, wxDefaultSize, 0 );
+	itemFlexGridSizer9->Add(itemStaticText15, 0, wxALIGN_LEFT|wxALIGN_CENTER_VERTICAL|wxALL, 0);
+	
+	maxVersterkingSpinCtrl = new wxSpinCtrl( itemStaticBoxSizer4->GetStaticBox(), MaxVersterkingID, wxT("0"), wxDefaultPosition, wxDefaultSize, 0, -30, 30, 0 );
+	itemFlexGridSizer9->Add(maxVersterkingSpinCtrl, 0, wxALIGN_LEFT|wxALIGN_CENTER_VERTICAL, 0);
+	
+	wxStaticText* itemStaticText17 = new wxStaticText( itemStaticBoxSizer4->GetStaticBox(), wxID_ANY, _("Window applied :"), wxDefaultPosition, wxDefaultSize, 0 );
+	itemFlexGridSizer9->Add(itemStaticText17, 0, wxALIGN_LEFT|wxALIGN_TOP, 0);
+	
+	wxArrayString vensterChoiceStrings;
+	vensterChoiceStrings.Add(_("Rectangle"));
+	vensterChoiceStrings.Add(_("Triangle"));
+	vensterChoiceStrings.Add(_("Hamming"));
+	vensterChoice = new wxChoice( itemStaticBoxSizer4->GetStaticBox(), VensterChoiceID, wxDefaultPosition, wxDefaultSize, vensterChoiceStrings, 0 );
+	vensterChoice->SetStringSelection(_("Rectangle"));
+	itemFlexGridSizer9->Add(vensterChoice, 0, wxGROW|wxALIGN_CENTER_VERTICAL, 0);
+	
+	wxStaticText* itemStaticText19 = new wxStaticText( itemStaticBoxSizer4->GetStaticBox(), wxID_ANY, _("Number of bits in coding :"), wxDefaultPosition, wxDefaultSize, 0 );
+	itemFlexGridSizer9->Add(itemStaticText19, 0, wxALIGN_LEFT|wxALIGN_TOP, 0);
+	
+	fipBitsSpinCtrl = new wxSpinCtrl( itemStaticBoxSizer4->GetStaticBox(), BitKoderingID, wxT("3"), wxDefaultPosition, wxDefaultSize, 0, 3, 16, 3 );
+	itemFlexGridSizer9->Add(fipBitsSpinCtrl, 0, wxALIGN_LEFT|wxALIGN_CENTER_VERTICAL, 0);
+	
+	wxBoxSizer* itemBoxSizer21 = new wxBoxSizer(wxHORIZONTAL);
+	itemBoxSizer8->Add(itemBoxSizer21, 0, wxGROW|wxALL, 2);
+	
+	berekenFilterKnop = new wxButton( itemStaticBoxSizer4->GetStaticBox(), BerekenFilterID, _("Calculate filter"), wxDefaultPosition, wxDefaultSize, 0 );
+	berekenFilterKnop->SetDefault();
+	berekenFilterKnop->SetFont(wxFont(16, wxFONTFAMILY_SWISS, wxFONTSTYLE_NORMAL, wxFONTWEIGHT_NORMAL, false, wxT("Tahoma")));
+	berekenFilterKnop->Enable(false);
+	itemBoxSizer21->Add(berekenFilterKnop, 0, wxGROW|wxALL, 3);
+	
+	toonfilterCoeffsCB = new wxCheckBox( itemStaticBoxSizer4->GetStaticBox(), ToonFilterKoeffsID, _("Dump coefficients"), wxDefaultPosition, wxDefaultSize, 0 );
+	toonfilterCoeffsCB->SetValue(true);
+	itemBoxSizer21->Add(toonfilterCoeffsCB, 0, wxALIGN_CENTER_VERTICAL|wxALL, 3);
+	
+	wxButton* itemButton1 = new wxButton( itemStaticBoxSizer4->GetStaticBox(), wxID_EXIT, _("&Quit"), wxDefaultPosition, wxDefaultSize, 0 );
+	itemBoxSizer8->Add(itemButton1, 0, wxGROW|wxALL, 2);
+	
+	wxBoxSizer* itemBoxSizer24 = new wxBoxSizer(wxVERTICAL);
+	itemBoxSizer7->Add(itemBoxSizer24, 0, wxGROW, 0);
+	
+	wxStaticBox* itemStaticBoxSizer25Static = new wxStaticBox(itemStaticBoxSizer4->GetStaticBox(), wxID_ANY, _("Band pass begin (Hz)"));
+	wxStaticBoxSizer* itemStaticBoxSizer25 = new wxStaticBoxSizer(itemStaticBoxSizer25Static, wxVERTICAL);
+	itemBoxSizer24->Add(itemStaticBoxSizer25, 0, wxGROW|wxALL, 6);
+	
+	bandBeginSlider = new wxSlider( itemStaticBoxSizer25->GetStaticBox(), BandBeginSliderID, 600, 400, 800, wxDefaultPosition, wxDefaultSize, wxSL_HORIZONTAL|wxSL_AUTOTICKS|wxSL_LABELS );
+	bandBeginSlider->Enable(false);
+	itemStaticBoxSizer25->Add(bandBeginSlider, 1, wxGROW, 0);
+	
+	wxStaticBox* itemStaticBoxSizer27Static = new wxStaticBox(itemStaticBoxSizer4->GetStaticBox(), wxID_ANY, _("Band pass end (Hz)"));
+	wxStaticBoxSizer* itemStaticBoxSizer27 = new wxStaticBoxSizer(itemStaticBoxSizer27Static, wxVERTICAL);
+	itemBoxSizer24->Add(itemStaticBoxSizer27, 0, wxGROW|wxALL, 6);
+	
+	bandEindeSlider = new wxSlider( itemStaticBoxSizer27->GetStaticBox(), BandEindeSliderID, 600, 400, 800, wxDefaultPosition, wxDefaultSize, wxSL_HORIZONTAL|wxSL_AUTOTICKS|wxSL_LABELS );
+	bandEindeSlider->Enable(false);
+	itemStaticBoxSizer27->Add(bandEindeSlider, 1, wxGROW, 0);
+	
+	wxStaticBox* itemStaticBoxSizer1Static = new wxStaticBox(itemPanel12, wxID_ANY, _("Filter test"));
+	wxStaticBoxSizer* itemStaticBoxSizer1 = new wxStaticBoxSizer(itemStaticBoxSizer1Static, wxVERTICAL);
+	itemBoxSizer19->Add(itemStaticBoxSizer1, 0, wxGROW, 0);
+	
+	wxBoxSizer* itemBoxSizer3 = new wxBoxSizer(wxHORIZONTAL);
+	itemStaticBoxSizer1->Add(itemBoxSizer3, 0, wxGROW, 0);
+	
+	wxArrayString testSignaalChoiceStrings;
+	testSignaalChoiceStrings.Add(_("Cosine"));
+	testSignaalChoiceStrings.Add(_("Square wave"));
+	testSignaalChoiceStrings.Add(_("Impulse"));
+	testSignaalChoiceStrings.Add(_("Step"));
+	testSignaalChoice = new wxChoice( itemStaticBoxSizer1->GetStaticBox(), TestSignaalKeuzeID, wxDefaultPosition, wxDefaultSize, testSignaalChoiceStrings, 0 );
+	testSignaalChoice->SetStringSelection(_("Cosine"));
+	itemBoxSizer3->Add(testSignaalChoice, 1, wxGROW|wxALL, 6);
+	
+	wxBoxSizer* itemBoxSizer5 = new wxBoxSizer(wxVERTICAL);
+	itemStaticBoxSizer1->Add(itemBoxSizer5, 0, wxALIGN_LEFT, 0);
+	
+	wxBoxSizer* itemBoxSizer6 = new wxBoxSizer(wxHORIZONTAL);
+	itemBoxSizer5->Add(itemBoxSizer6, 0, wxALIGN_LEFT, 0);
+	
+	wxStaticBox* itemStaticBoxSizer8Static = new wxStaticBox(itemStaticBoxSizer1->GetStaticBox(), wxID_ANY, _("Test Signal frequency"));
+	wxStaticBoxSizer* itemStaticBoxSizer8 = new wxStaticBoxSizer(itemStaticBoxSizer8Static, wxVERTICAL);
+	itemBoxSizer6->Add(itemStaticBoxSizer8, 0, wxALIGN_TOP|wxALL, 6);
+	
+	testSignaalSlider = new wxSlider( itemStaticBoxSizer8->GetStaticBox(), TestSignaalFrekID, 500, 0, 1600, wxDefaultPosition, wxDefaultSize, wxSL_HORIZONTAL|wxSL_AUTOTICKS|wxSL_LABELS );
+	itemStaticBoxSizer8->Add(testSignaalSlider, 1, wxGROW|wxBOTTOM, 10);
+	
+	wxBoxSizer* itemBoxSizer10 = new wxBoxSizer(wxHORIZONTAL);
+	itemBoxSizer6->Add(itemBoxSizer10, 0, wxALIGN_TOP, 0);
+	
+	wxStaticBox* itemStaticBoxSizer11Static = new wxStaticBox(itemStaticBoxSizer1->GetStaticBox(), wxID_ANY, _("Test Signal amplitude"));
+	wxStaticBoxSizer* itemStaticBoxSizer11 = new wxStaticBoxSizer(itemStaticBoxSizer11Static, wxVERTICAL);
+	itemBoxSizer10->Add(itemStaticBoxSizer11, 1, wxALIGN_TOP|wxALL, 6);
+	
+	testSignaalAmplitudeSlider = new wxSlider( itemStaticBoxSizer11->GetStaticBox(), TestSignaalAmplitudeID, 1000, 0, 32767, wxDefaultPosition, wxDefaultSize, wxSL_HORIZONTAL|wxSL_AUTOTICKS|wxSL_LABELS );
+	itemStaticBoxSizer11->Add(testSignaalAmplitudeSlider, 1, wxGROW|wxBOTTOM, 10);
+	
+	wxBoxSizer* itemBoxSizer13 = new wxBoxSizer(wxHORIZONTAL);
+	itemBoxSizer5->Add(itemBoxSizer13, 0, wxGROW, 0);
+	
+	tekenOrigineelCheckBox = new wxCheckBox( itemStaticBoxSizer1->GetStaticBox(), TekenOrigSignaalID, _("Show test signal"), wxDefaultPosition, wxDefaultSize, 0 );
+	tekenOrigineelCheckBox->SetValue(false);
+	itemBoxSizer13->Add(tekenOrigineelCheckBox, 0, wxALIGN_TOP|wxALL, 2);
+	
+	tekenSplineCheckBox = new wxCheckBox( itemStaticBoxSizer1->GetStaticBox(), TekenSplineID, _("Draw interpolation spline"), wxDefaultPosition, wxDefaultSize, 0 );
+	tekenSplineCheckBox->SetValue(true);
+	itemBoxSizer13->Add(tekenSplineCheckBox, 0, wxALIGN_TOP|wxALL, 2);
+	
+	filterTestButton = new wxToggleButton( itemStaticBoxSizer1->GetStaticBox(), FilterTestID, _("Start Filter Test"), wxDefaultPosition, wxDefaultSize, 0 );
+	filterTestButton->SetValue(false);
+	itemStaticBoxSizer1->Add(filterTestButton, 0, wxGROW|wxALL, 2);
+	
+	// Connect events and objects
+	tijdDomeinGrafiek->Connect(TijdDomeinGrafiekID, wxEVT_MOTION, wxMouseEventHandler(FilterVenster::OnMotion), NULL, this);
+	tijdDomeinGrafiek->Connect(TijdDomeinGrafiekID, wxEVT_ENTER_WINDOW, wxMouseEventHandler(FilterVenster::OnEnterWindow), NULL, this);
+	tijdDomeinGrafiek->Connect(TijdDomeinGrafiekID, wxEVT_LEAVE_WINDOW, wxMouseEventHandler(FilterVenster::OnLeaveWindow), NULL, this);
+	freqDomeinGrafiek->Connect(FreqDomeinGrafiekID, wxEVT_MOTION, wxMouseEventHandler(FilterVenster::OnMotion), NULL, this);
+	freqDomeinGrafiek->Connect(FreqDomeinGrafiekID, wxEVT_ENTER_WINDOW, wxMouseEventHandler(FilterVenster::OnEnterWindow), NULL, this);
+	freqDomeinGrafiek->Connect(FreqDomeinGrafiekID, wxEVT_LEAVE_WINDOW, wxMouseEventHandler(FilterVenster::OnLeaveWindow), NULL, this);
 ////@end FilterVenster content construction
 }
 
@@ -1032,7 +1116,7 @@ void FilterVenster::CreateControls()
 
 bool FilterVenster::ShowToolTips()
 {
-    return true;
+	return true;
 }
 
 /*
@@ -1041,16 +1125,16 @@ bool FilterVenster::ShowToolTips()
 
 wxBitmap FilterVenster::GetBitmapResource( const wxString& name )
 {
-    // Bitmap retrieval
+	// Bitmap retrieval
 ////@begin FilterVenster bitmap retrieval
-    wxUnusedVar(name);
-    if (name == wxT("../../../DesktopBasis/gemeenschappelijk/logos/hanlogo_klein.png"))
-    {
-        wxMemoryInputStream memStream(hanlogo_klein_png, sizeof(hanlogo_klein_png));
-        wxBitmap bitmap(wxImage(memStream, wxBITMAP_TYPE_ANY, -1), -1);
-        return bitmap;
-    }
-    return wxNullBitmap;
+	wxUnusedVar(name);
+	if (name == wxT("../../../DesktopBasis/gemeenschappelijk/logos/hanlogo_klein.png"))
+	{
+		wxMemoryInputStream memStream(hanlogo_klein_png, sizeof(hanlogo_klein_png));
+		wxBitmap bitmap(wxImage(memStream, wxBITMAP_TYPE_ANY, -1), -1);
+		return bitmap;
+	}
+	return wxNullBitmap;
 ////@end FilterVenster bitmap retrieval
 }
 
@@ -1060,10 +1144,10 @@ wxBitmap FilterVenster::GetBitmapResource( const wxString& name )
 
 wxIcon FilterVenster::GetIconResource( const wxString& name )
 {
-    // Icon retrieval
+	// Icon retrieval
 ////@begin FilterVenster icon retrieval
-    wxUnusedVar(name);
-    return wxNullIcon;
+	wxUnusedVar(name);
+	return wxNullIcon;
 ////@end FilterVenster icon retrieval
 }
 
@@ -1075,9 +1159,9 @@ wxIcon FilterVenster::GetIconResource( const wxString& name )
 void FilterVenster::OnBerekenFilterAktieIDClick( wxCommandEvent& event )
 {
 #ifdef InterfaceTaalNederlands
-    berekenFilter(event);
+	berekenFilter(event);
 #else
-    computeFilter(event);
+	computeFilter(event);
 #endif
 }
 
@@ -1088,13 +1172,13 @@ void FilterVenster::OnBerekenFilterAktieIDClick( wxCommandEvent& event )
 
 void FilterVenster::OnBerekenFilterAktieIDUpdate( wxUpdateUIEvent& event )
 {
-    /* Deze event handler zorgt er voor dat de knop pas zichtbaar wordt */
-    const bool conditie = ((beginPuntBepaald == true) &&
-                           (eindPuntBepaald == true) &&
-                           (testSituatie != true) &&
-                           (berekeningKlaar != true));
-
-    event.Enable(conditie);
+	/* Deze event handler zorgt er voor dat de knop pas zichtbaar wordt */
+	const bool conditie = ((beginPuntBepaald == true) &&
+	                       (eindPuntBepaald == true) &&
+	                       (testSituatie != true) &&
+	                       (berekeningKlaar != true));
+	
+	event.Enable(conditie);
 }
 
 
@@ -1104,49 +1188,49 @@ void FilterVenster::OnBerekenFilterAktieIDUpdate( wxUpdateUIEvent& event )
 
 void FilterVenster::OnSampFreqIDClick( wxCommandEvent& event )
 {
-    wxNumberEntryDialog dialoog(this,
-                                _("Specify the sampling frequency in Hz."),
-                                _("Frequency:"),
-                                _("The FIR filter system sampling frequency"),
-                                (int)sampFreq,
-                                1,
-                                64000);
-
-    if (wxID_OK == dialoog.ShowModal())
-    {
-        wxStaticText *label = static_cast<wxStaticText*>(FindWindowById(SampFreqTextID, this));
-        wxSlider *slider;
-
-        sampFreq = dialoog.GetValue();
-        wxString tekst = wxString::Format(wxT("%d Hz"),sampFreq);
-        label->SetLabel(tekst);
-
-        /* reset begin en eind van de band als de frequenties niet meer passen */
-        if (filterEind > sampFreq)
-        {
-            filterBegin = sampFreq / 8;
-            filterEind = 3 * sampFreq / 8;
-        }
-
-        slider = static_cast<wxSlider*>(FindWindowById(BandBeginSliderID, this));
-        slider->SetRange(0,(sampFreq/2));
-        slider->SetValue(filterBegin);
-
-        slider = static_cast<wxSlider*>(FindWindowById(BandEindeSliderID, this));
-        slider->SetRange(1,(sampFreq/2));
-        slider->SetValue(filterEind);
-
-        slider = static_cast<wxSlider*>(FindWindowById(TestSignaalFrekID, this));
-        slider->SetRange(1,sampFreq);
-
-        /* reset test freq als deze buiten het bereik valt */
-        if (testFreq>(sampFreq))
-            testFreq = sampFreq/4;
-
-        slider->SetValue(testFreq);
-
-        berekeningKlaar = false;
-    }
+	wxNumberEntryDialog dialoog(this,
+	                            _("Specify the sampling frequency in Hz."),
+	                            _("Frequency:"),
+	                            _("The FIR filter system sampling frequency"),
+	                            (int)sampFreq,
+	                            1,
+	                            64000);
+	
+	if (wxID_OK == dialoog.ShowModal())
+	{
+		wxStaticText *label = static_cast<wxStaticText*>(FindWindowById(SampFreqTextID, this));
+		wxSlider *slider;
+		
+		sampFreq = dialoog.GetValue();
+		wxString tekst = wxString::Format(wxT("%d Hz"),sampFreq);
+		label->SetLabel(tekst);
+		
+		/* reset begin en eind van de band als de frequenties niet meer passen */
+		if (filterEind > sampFreq)
+		{
+			filterBegin = sampFreq / 8;
+			filterEind = 3 * sampFreq / 8;
+		}
+		
+		slider = static_cast<wxSlider*>(FindWindowById(BandBeginSliderID, this));
+		slider->SetRange(0,(sampFreq/2));
+		slider->SetValue(filterBegin);
+		
+		slider = static_cast<wxSlider*>(FindWindowById(BandEindeSliderID, this));
+		slider->SetRange(1,(sampFreq/2));
+		slider->SetValue(filterEind);
+		
+		slider = static_cast<wxSlider*>(FindWindowById(TestSignaalFrekID, this));
+		slider->SetRange(1,sampFreq);
+		
+		/* reset test freq als deze buiten het bereik valt */
+		if (testFreq>(sampFreq))
+			testFreq = sampFreq/4;
+		
+		slider->SetValue(testFreq);
+		
+		berekeningKlaar = false;
+	}
 }
 
 
@@ -1156,8 +1240,8 @@ void FilterVenster::OnSampFreqIDClick( wxCommandEvent& event )
 
 void FilterVenster::OnSampFreqIDUpdate( wxUpdateUIEvent& event )
 {
-    const bool nietInTest = (testSituatie==false);
-    event.Enable(true==nietInTest);
+	const bool nietInTest = (testSituatie==false);
+	event.Enable(true==nietInTest);
 }
 
 
@@ -1167,25 +1251,25 @@ void FilterVenster::OnSampFreqIDUpdate( wxUpdateUIEvent& event )
 
 void FilterVenster::OnFilterOrdeIDClick( wxCommandEvent& event )
 {
-
-    wxNumberEntryDialog dialoog(this,
-                                _("Specify the order of the filter in number of taps."),
-                                _("Filter order:"),
-                                _("Taps in the FIR filter system"),
-                                ((taps-1)/2),1,200);
-
-    if (wxID_OK == dialoog.ShowModal())
-    {
-        auto * const label = static_cast<wxStaticText*>(FindWindowById(FilterOrdeTextID, this));
-
-        orde = static_cast<UInt16>(dialoog.GetValue());
-        taps = 2*orde + 1;
-
-        const wxString tekst = wxString::Format(_("Orde = %d (%d taps)"),orde,taps);
-        label->SetLabel(tekst);
-
-        berekeningKlaar = false;
-    }
+	
+	wxNumberEntryDialog dialoog(this,
+	                            _("Specify the order of the filter in number of taps."),
+	                            _("Filter order:"),
+	                            _("Taps in the FIR filter system"),
+	                            ((taps-1)/2),1,200);
+	
+	if (wxID_OK == dialoog.ShowModal())
+	{
+		auto * const label = static_cast<wxStaticText*>(FindWindowById(FilterOrdeTextID, this));
+		
+		orde = static_cast<UInt16>(dialoog.GetValue());
+		taps = 2*orde + 1;
+		
+		const wxString tekst = wxString::Format(_("Orde = %d (%d taps)"),orde,taps);
+		label->SetLabel(tekst);
+		
+		berekeningKlaar = false;
+	}
 }
 
 
@@ -1195,8 +1279,8 @@ void FilterVenster::OnFilterOrdeIDClick( wxCommandEvent& event )
 
 void FilterVenster::OnFilterOrdeIDUpdate( wxUpdateUIEvent& event )
 {
-    const bool nietInTest = (testSituatie==false);
-    event.Enable(true==nietInTest);
+	const bool nietInTest = (testSituatie==false);
+	event.Enable(true==nietInTest);
 }
 
 
@@ -1206,7 +1290,7 @@ void FilterVenster::OnFilterOrdeIDUpdate( wxUpdateUIEvent& event )
 
 void FilterVenster::OnMaxVersterkingIDUpdated( wxSpinEvent& event )
 {
-    berekeningKlaar = false;
+	berekeningKlaar = false;
 }
 
 
@@ -1216,8 +1300,8 @@ void FilterVenster::OnMaxVersterkingIDUpdated( wxSpinEvent& event )
 
 void FilterVenster::OnMaxVersterkingIDUpdate( wxUpdateUIEvent& event )
 {
-    const bool nietInTest = (testSituatie==false);
-    event.Enable(true==nietInTest);
+	const bool nietInTest = (testSituatie==false);
+	event.Enable(true==nietInTest);
 }
 
 
@@ -1227,7 +1311,7 @@ void FilterVenster::OnMaxVersterkingIDUpdate( wxUpdateUIEvent& event )
 
 void FilterVenster::OnVensterChoiceIDSelected( wxCommandEvent& event )
 {
-    berekeningKlaar = false;
+	berekeningKlaar = false;
 }
 
 
@@ -1237,8 +1321,8 @@ void FilterVenster::OnVensterChoiceIDSelected( wxCommandEvent& event )
 
 void FilterVenster::OnVensterChoiceIDUpdate( wxUpdateUIEvent& event )
 {
-    const bool nietInTest = (testSituatie==false);
-    event.Enable(true==nietInTest);
+	const bool nietInTest = (testSituatie==false);
+	event.Enable(true==nietInTest);
 }
 
 
@@ -1248,7 +1332,7 @@ void FilterVenster::OnVensterChoiceIDUpdate( wxUpdateUIEvent& event )
 
 void FilterVenster::OnBitKoderingIDUpdated( wxSpinEvent& event )
 {
-    berekeningKlaar = false;
+	berekeningKlaar = false;
 }
 
 
@@ -1258,8 +1342,8 @@ void FilterVenster::OnBitKoderingIDUpdated( wxSpinEvent& event )
 
 void FilterVenster::OnBitKoderingIDUpdate( wxUpdateUIEvent& event )
 {
-    const bool nietInTest = (testSituatie==false);
-    event.Enable(true==nietInTest);
+	const bool nietInTest = (testSituatie==false);
+	event.Enable(true==nietInTest);
 }
 
 
@@ -1271,16 +1355,16 @@ void FilterVenster::OnBitKoderingIDUpdate( wxUpdateUIEvent& event )
 
 void FilterVenster::OnBandBeginSliderIDUpdated( wxCommandEvent& event )
 {
-    if (false == bandControleRoutine(event))
-    {
-        auto * slider = reinterpret_cast<wxSlider *>(FindWindowById(BandBeginSliderID,this));
-
-        const Frequentie freq = slider->GetValue();
-
-        filterBegin = freq;
-        beginPuntBepaald = true;
-        berekeningKlaar = false;
-    }
+	if (false == bandControleRoutine(event))
+	{
+		auto * slider = reinterpret_cast<wxSlider *>(FindWindowById(BandBeginSliderID,this));
+		
+		const Frequentie freq = slider->GetValue();
+		
+		filterBegin = freq;
+		beginPuntBepaald = true;
+		berekeningKlaar = false;
+	}
 }
 
 
@@ -1290,9 +1374,9 @@ void FilterVenster::OnBandBeginSliderIDUpdated( wxCommandEvent& event )
 
 void FilterVenster::OnBandBeginSliderIDUpdate( wxUpdateUIEvent& event )
 {
-    const bool bandMag = ((testSituatie != true) && (sampFreq != 0) && (taps != 0));
-
-    event.Enable(true == bandMag);
+	const bool bandMag = ((testSituatie != true) && (sampFreq != 0) && (taps != 0));
+	
+	event.Enable(true == bandMag);
 }
 
 
@@ -1302,16 +1386,16 @@ void FilterVenster::OnBandBeginSliderIDUpdate( wxUpdateUIEvent& event )
 
 void FilterVenster::OnBandEindeSliderIDUpdated( wxCommandEvent& event )
 {
-    if (false == bandControleRoutine(event))
-    {
-        auto * slider = reinterpret_cast<wxSlider *>(FindWindowById(BandEindeSliderID,this));
-
-        const Frequentie freq = slider->GetValue();
-
-        filterEind = freq;
-        eindPuntBepaald = true;
-        berekeningKlaar = false;
-    }
+	if (false == bandControleRoutine(event))
+	{
+		auto * slider = reinterpret_cast<wxSlider *>(FindWindowById(BandEindeSliderID,this));
+		
+		const Frequentie freq = slider->GetValue();
+		
+		filterEind = freq;
+		eindPuntBepaald = true;
+		berekeningKlaar = false;
+	}
 }
 
 
@@ -1321,29 +1405,29 @@ void FilterVenster::OnBandEindeSliderIDUpdated( wxCommandEvent& event )
 
 void FilterVenster::OnBandEindeSliderIDUpdate( wxUpdateUIEvent& event )
 {
-    const bool bandMag = ((testSituatie != true) && (sampFreq != 0) && (taps != 0));
-
-    event.Enable(true == bandMag);
+	const bool bandMag = ((testSituatie != true) && (sampFreq != 0) && (taps != 0));
+	
+	event.Enable(true == bandMag);
 }
 
 bool FilterVenster::bandControleRoutine(wxCommandEvent &event) const
 {
-    auto * const beginSlider = dynamic_cast<wxSlider *>(FindWindowById(BandBeginSliderID,this));
-    auto * eindeSlider = dynamic_cast<wxSlider *>(FindWindowById(BandEindeSliderID, this));
-
-    const bool fout = (beginSlider->GetValue() >= eindeSlider->GetValue());
-    if (true == fout)
-    {
-        const auto id = event.GetId();
-        wxLogError(_("The start of the pass band must be smaller than the end."));
-
-        if (id == BandBeginSliderID)
-            beginSlider->SetValue(eindeSlider->GetValue()-1);
-        else
-            eindeSlider->SetValue(beginSlider->GetValue()+1);
-    }
-
-    return(fout);
+	auto * const beginSlider = dynamic_cast<wxSlider *>(FindWindowById(BandBeginSliderID,this));
+	auto * eindeSlider = dynamic_cast<wxSlider *>(FindWindowById(BandEindeSliderID, this));
+	
+	const bool fout = (beginSlider->GetValue() >= eindeSlider->GetValue());
+	if (true == fout)
+	{
+		const auto id = event.GetId();
+		wxLogError(_("The start of the pass band must be smaller than the end."));
+		
+		if (id == BandBeginSliderID)
+			beginSlider->SetValue(eindeSlider->GetValue()-1);
+		else
+			eindeSlider->SetValue(beginSlider->GetValue()+1);
+	}
+	
+	return(fout);
 }
 
 /*
@@ -1352,8 +1436,8 @@ bool FilterVenster::bandControleRoutine(wxCommandEvent &event) const
 
 void FilterVenster::OnTestSignaalKeuzeIDUpdate( wxUpdateUIEvent& event )
 {
-    const bool filterIsKlaar = (berekeningKlaar == true) && (testSituatie==false);
-    event.Enable(true == filterIsKlaar);
+	const bool filterIsKlaar = (berekeningKlaar == true) && (testSituatie==false);
+	event.Enable(true == filterIsKlaar);
 }
 
 
@@ -1363,18 +1447,18 @@ void FilterVenster::OnTestSignaalKeuzeIDUpdate( wxUpdateUIEvent& event )
 
 void FilterVenster::OnFilterTestIDClick( wxCommandEvent& event )
 {
-    auto *  knop = reinterpret_cast<wxToggleButton *>(FindWindowById(FilterTestID, this));
-
-    const bool knopStand = knop->GetValue();
-
-    if (knopStand == true)
-    {
-        filterStart();
-    }
-    else
-    {
-        filterStop();
-    }
+	auto *  knop = reinterpret_cast<wxToggleButton *>(FindWindowById(FilterTestID, this));
+	
+	const bool knopStand = knop->GetValue();
+	
+	if (knopStand == true)
+	{
+		filterStart();
+	}
+	else
+	{
+		filterStop();
+	}
 }
 
 
@@ -1384,130 +1468,130 @@ void FilterVenster::OnFilterTestIDClick( wxCommandEvent& event )
 
 void FilterVenster::OnFilterTestIDUpdate( wxUpdateUIEvent& event )
 {
-    const bool filterIsKlaar = (berekeningKlaar == true);
-    event.Enable(true == filterIsKlaar);
+	const bool filterIsKlaar = (berekeningKlaar == true);
+	event.Enable(true == filterIsKlaar);
 }
 
 void FilterVenster::filterStart()
 {
-    auto * knop = reinterpret_cast<wxToggleButton *>(FindWindowById(FilterTestID, this));
-    auto * origBox = reinterpret_cast<wxCheckBox *>(FindWindowById(TekenOrigSignaalID, this));
-    auto * splineBox = reinterpret_cast<wxCheckBox *>(FindWindowById(TekenSplineID, this));
-
-    testOrig = origBox->GetValue();
-    testSpline = splineBox->GetValue();
-
-    knop->SetLabel(wxT("Stop FilterTest"));
-
-    const RingBuffer<Int16> coeffs(filterCoeffs.Count(), &filterCoeffs[0]);
+	auto * knop = reinterpret_cast<wxToggleButton *>(FindWindowById(FilterTestID, this));
+	auto * origBox = reinterpret_cast<wxCheckBox *>(FindWindowById(TekenOrigSignaalID, this));
+	auto * splineBox = reinterpret_cast<wxCheckBox *>(FindWindowById(TekenSplineID, this));
+	
+	testOrig = origBox->GetValue();
+	testSpline = splineBox->GetValue();
+	
+	knop->SetLabel(wxT("Stop FilterTest"));
+	
+	const RingBuffer<Int16> coeffs(filterCoeffs.Count(), &filterCoeffs[0]);
 
 #ifdef InterfaceTaalNederlands
-    const auto precisie = berekenFixedPoint(1.0f);
+	const auto precisie = berekenFixedPoint(1.0f);
 #elif defined(InterfaceTaalEnglish)
-    const auto precisie = computeFixedPoint(1.0f);
+	const auto precisie = computeFixedPoint(1.0f);
 #endif
-
-    filter = new FilterFirInt16(coeffs,precisie);
-    testSituatie = true;
-    testIndex = testTekenIndex = 0;
-    testGrafiek->maakSchoon();
-    filter->reset();
-    filterSignaalLijst.Empty();
-    klok.Start(100);
-
-    /* als "coeffs" uit skoop gaat, dan blijven de pointers toch geldig omdat deze aan filterCoeffs hangen. */
+	
+	filter = new FilterFirInt16(coeffs,precisie);
+	testSituatie = true;
+	testIndex = testTekenIndex = 0;
+	testGrafiek->maakSchoon();
+	filter->reset();
+	filterSignaalLijst.Empty();
+	klok.Start(100);
+	
+	/* als "coeffs" uit skoop gaat, dan blijven de pointers toch geldig omdat deze aan filterCoeffs hangen. */
 }
 
 void FilterVenster::filterStop()
 {
-    auto * const knop = dynamic_cast<wxToggleButton *>(FindWindowById(FilterTestID, this));
-
-    knop->SetValue(false);
-    knop->SetLabel(wxT("Start FilterTest"));
-
-    klok.Stop();
-
-    testSituatie = false;
-
-    /* voor demoversie */
-    const auto testGrootte(testGrafiek->GetClientSize());
-    testGrafiek->zetGroteTekst(DemoTekst, wxPoint(100, testGrootte.GetHeight() / 2));
-
-    delete filter;
+	auto * const knop = dynamic_cast<wxToggleButton *>(FindWindowById(FilterTestID, this));
+	
+	knop->SetValue(false);
+	knop->SetLabel(wxT("Start FilterTest"));
+	
+	klok.Stop();
+	
+	testSituatie = false;
+	
+	/* voor demoversie */
+	const auto testGrootte(testGrafiek->GetClientSize());
+	testGrafiek->zetGroteTekst(DemoTekst, wxPoint(100, testGrootte.GetHeight() / 2));
+	
+	delete filter;
 }
 
 void FilterVenster::klokVerlopenHandler(wxTimerEvent &event)
 {
-    const auto testGrootte(testGrafiek->GetClientSize()); // (TestGrafiekBreedte, TestGrafiekHoogte);
-    //const Int16 fipSchaal = ; //  testAmplitude; //(MaximumBereikSignedInt(sizeof(Int16))-100)/64;
-    const auto schaaly = testGrootte.GetHeight() / (2.0 * testSignaalAmplitudeSlider->GetMax());
-
-    Int16 orig;
-
-    switch(testSignaalChoice->GetSelection())
-    {
-        case 0:  /* cosinus */
-            orig = static_cast<Int16>(testAmplitude*cos(2*Pi*testIndex*testFreq/sampFreq));
-            break;
-        case 1: /* blokgolf */
-            orig = static_cast<Int16>(testAmplitude*cos(2*Pi*testIndex*testFreq/sampFreq));
-            orig = ((orig > 0) ? testAmplitude : -1* testAmplitude);
-            break;
-        case 2: /* impuls */
-            orig = ((testIndex==4) ? testAmplitude : 0);
-            break;
-        case 3: /* stap */
-            orig = ((testIndex<4) ? 0 : testAmplitude);
-            break;
-        default:
-            orig=0;
-            wxFAIL_MSG(wxT("Mag hier niet komen !!"));
-            break;
-    }
-
-    const Int16 filterOutput = filter->filter(orig);
-    wxLogDebug(wxString::Format(wxT("orig=%d,filter=%d"),orig,filterOutput));
-
-    testIndex++;
-
-    const wxPoint filterPunt(testTekenIndex+4, static_cast<int>(filterOutput*schaaly));
-
-    /* voeg punt toe om aan het eind tekensessie de spline mee te tekenen */
-    if (testSpline==true)
-        filterSignaalLijst.Add(filterPunt);
-
-    if (testTekenIndex == 0)
-    {
-        static const wxString studentTekst(_("Student version"));
-        testGrafiek->maakSchoon();
-        testGrafiek->zetGroteTekst(DemoTekst,wxPoint(100, testGrootte.GetHeight() / 2));
-    }
-
-    if (true == testOrig)  /* teken ook het originele signaal */
-    {
-        const wxPoint origPunt(testTekenIndex,static_cast<int>(orig*schaaly));
-        testGrafiek->zetTekenPen(originalSignalPen);
-        testGrafiek->tekenStaaf(origPunt);
-    }
-
-    testGrafiek->zetTekenPen(filterdSignalPen);
-    testGrafiek->tekenStaaf(filterPunt);
-
-    testTekenIndex+=8;
-
-    if (testTekenIndex>testGrootte.GetWidth())
-    {
-        if ((testSpline==false) && (testSignaalChoice->GetSelection() < 2))
-            testTekenIndex=0;  /* bij cosinus en blokgolf, keer om */
-        else
-        {
-            if (testSpline == true)
-                testGrafiek->tekenSpline(filterSignaalLijst);
-
-            /* stop de test */
-            filterStop();
-        }
-    }
+	const auto testGrootte(testGrafiek->GetClientSize()); // (TestGrafiekBreedte, TestGrafiekHoogte);
+	//const Int16 fipSchaal = ; //  testAmplitude; //(MaximumBereikSignedInt(sizeof(Int16))-100)/64;
+	const auto schaaly = testGrootte.GetHeight() / (2.0 * testSignaalAmplitudeSlider->GetMax());
+	
+	Int16 orig;
+	
+	switch(testSignaalChoice->GetSelection())
+	{
+		case 0:  /* cosinus */
+			orig = static_cast<Int16>(testAmplitude*cos(2*Pi*testIndex*testFreq/sampFreq));
+			break;
+		case 1: /* blokgolf */
+			orig = static_cast<Int16>(testAmplitude*cos(2*Pi*testIndex*testFreq/sampFreq));
+			orig = ((orig > 0) ? testAmplitude : -1* testAmplitude);
+			break;
+		case 2: /* impuls */
+			orig = ((testIndex==4) ? testAmplitude : 0);
+			break;
+		case 3: /* stap */
+			orig = ((testIndex<4) ? 0 : testAmplitude);
+			break;
+		default:
+			orig=0;
+			wxFAIL_MSG(wxT("Mag hier niet komen !!"));
+			break;
+	}
+	
+	const Int16 filterOutput = filter->filter(orig);
+	wxLogDebug(wxString::Format(wxT("orig=%d,filter=%d"),orig,filterOutput));
+	
+	testIndex++;
+	
+	const wxPoint filterPunt(testTekenIndex+4, static_cast<int>(filterOutput*schaaly));
+	
+	/* voeg punt toe om aan het eind tekensessie de spline mee te tekenen */
+	if (testSpline==true)
+		filterSignaalLijst.Add(filterPunt);
+	
+	if (testTekenIndex == 0)
+	{
+		static const wxString studentTekst(_("Student version"));
+		testGrafiek->maakSchoon();
+		testGrafiek->zetGroteTekst(DemoTekst,wxPoint(100, testGrootte.GetHeight() / 2));
+	}
+	
+	if (true == testOrig)  /* teken ook het originele signaal */
+	{
+		const wxPoint origPunt(testTekenIndex,static_cast<int>(orig*schaaly));
+		testGrafiek->zetTekenPen(originalSignalPen);
+		testGrafiek->tekenStaaf(origPunt);
+	}
+	
+	testGrafiek->zetTekenPen(filterdSignalPen);
+	testGrafiek->tekenStaaf(filterPunt);
+	
+	testTekenIndex+=8;
+	
+	if (static_cast<int>(testTekenIndex) > testGrootte.GetWidth())
+	{
+		if ((testSpline==false) && (testSignaalChoice->GetSelection() < 2))
+			testTekenIndex=0;  /* bij cosinus en blokgolf, keer om */
+		else
+		{
+			if (testSpline == true)
+				testGrafiek->tekenSpline(filterSignaalLijst);
+			
+			/* stop de test */
+			filterStop();
+		}
+	}
 }
 
 /*
@@ -1516,8 +1600,8 @@ void FilterVenster::klokVerlopenHandler(wxTimerEvent &event)
 
 void FilterVenster::OnTestSignaalFrekIDUpdated( wxCommandEvent& event )
 {
-    auto * slider = reinterpret_cast<wxSlider *>( FindWindowById(TestSignaalFrekID,this));
-    testFreq = slider->GetValue();
+	auto * slider = reinterpret_cast<wxSlider *>( FindWindowById(TestSignaalFrekID,this));
+	testFreq = slider->GetValue();
 }
 
 
@@ -1527,10 +1611,10 @@ void FilterVenster::OnTestSignaalFrekIDUpdated( wxCommandEvent& event )
 
 void FilterVenster::OnTestSignaalFrekIDUpdate( wxUpdateUIEvent& event )
 {
-    wxChoice const * const choice = reinterpret_cast<wxChoice *>(FindWindowById(TestSignaalKeuzeID,this));
-    /* Deze event handler zorgt er voor dat de knop pas zichtbaar wordt */
-    /* wanneer berekeningKlaar op true wordt gezet */
-    event.Enable(((testSituatie == true) || (berekeningKlaar == true)) &&(choice->GetSelection() < 2));
+	wxChoice const * const choice = reinterpret_cast<wxChoice *>(FindWindowById(TestSignaalKeuzeID,this));
+	/* Deze event handler zorgt er voor dat de knop pas zichtbaar wordt */
+	/* wanneer berekeningKlaar op true wordt gezet */
+	event.Enable(((testSituatie == true) || (berekeningKlaar == true)) &&(choice->GetSelection() < 2));
 }
 
 
@@ -1540,8 +1624,8 @@ void FilterVenster::OnTestSignaalFrekIDUpdate( wxUpdateUIEvent& event )
 
 void FilterVenster::OnTestSignaalAmplitudeIDUpdated( wxCommandEvent& event )
 {
-    auto * slider = reinterpret_cast<wxSlider *>( FindWindowById(TestSignaalAmplitudeID,this));
-    testAmplitude = static_cast<Int16>(slider->GetValue());
+	auto * slider = reinterpret_cast<wxSlider *>( FindWindowById(TestSignaalAmplitudeID,this));
+	testAmplitude = static_cast<Int16>(slider->GetValue());
 }
 
 
@@ -1551,8 +1635,8 @@ void FilterVenster::OnTestSignaalAmplitudeIDUpdated( wxCommandEvent& event )
 
 void FilterVenster::OnTestSignaalAmplitudeIDUpdate( wxUpdateUIEvent& event )
 {
-    const bool filterIsKlaar = (berekeningKlaar == true);
-    event.Enable(true == filterIsKlaar);
+	const bool filterIsKlaar = (berekeningKlaar == true);
+	event.Enable(true == filterIsKlaar);
 }
 
 
@@ -1562,8 +1646,8 @@ void FilterVenster::OnTestSignaalAmplitudeIDUpdate( wxUpdateUIEvent& event )
 
 void FilterVenster::OnTekenOrigSignaalIDUpdate( wxUpdateUIEvent& event )
 {
-    const bool filterIsKlaar = (berekeningKlaar == true);
-    event.Enable(true == filterIsKlaar);
+	const bool filterIsKlaar = (berekeningKlaar == true);
+	event.Enable(true == filterIsKlaar);
 }
 
 
@@ -1573,9 +1657,9 @@ void FilterVenster::OnTekenOrigSignaalIDUpdate( wxUpdateUIEvent& event )
 
 void FilterVenster::OnTekenSplineIDUpdate( wxUpdateUIEvent& event )
 {
-    /* Deze event handler zorgt er voor dat de knop pas zichtbaar wordt */
-    /* wanneer berekeningKlaar op true wordt gezet */
-    event.Enable(( (berekeningKlaar == true)&& (testSituatie != true)));
+	/* Deze event handler zorgt er voor dat de knop pas zichtbaar wordt */
+	/* wanneer berekeningKlaar op true wordt gezet */
+	event.Enable(( (berekeningKlaar == true)&& (testSituatie != true)));
 }
 
 
@@ -1585,7 +1669,7 @@ void FilterVenster::OnTekenSplineIDUpdate( wxUpdateUIEvent& event )
 
 void FilterVenster::OnExitClick( wxCommandEvent& event )
 {
-    Close();
+	Close();
 }
 
 
@@ -1595,7 +1679,7 @@ void FilterVenster::OnExitClick( wxCommandEvent& event )
 
 void FilterVenster::OnExitUpdate( wxUpdateUIEvent& event )
 {
-    event.Enable((testSituatie != true) );
+	event.Enable((testSituatie != true) );
 }
 
 
@@ -1605,9 +1689,9 @@ void FilterVenster::OnExitUpdate( wxUpdateUIEvent& event )
 
 void FilterVenster::OnAboutClick( wxCommandEvent& event )
 {
-    auto applikatie = reinterpret_cast<FirFilterKlasse *>(wxTheApp);
-    applikatie->geefCopyright(_("Assignment 4 DSB Practicum"),
-                              _("Design and implement a FIR filter design tool based on the sinc() function."));
+	auto applikatie = reinterpret_cast<FirFilterKlasse *>(wxTheApp);
+	applikatie->geefCopyright(_("Assignment 4 DSB Practicum"),
+	                          _("Design and implement a FIR filter design tool based on the sinc() function."));
 }
 
 
@@ -1617,7 +1701,7 @@ void FilterVenster::OnAboutClick( wxCommandEvent& event )
 
 void FilterVenster::OnExporteerFilterImpulseBeeldIDClick( wxCommandEvent& event )
 {
-    tijdDomeinGrafiek->slaOpVeld();
+	tijdDomeinGrafiek->slaOpVeld();
 }
 
 
@@ -1627,7 +1711,7 @@ void FilterVenster::OnExporteerFilterImpulseBeeldIDClick( wxCommandEvent& event 
 
 void FilterVenster::OnExporteerFilterImpulseBeeldIDUpdate( wxUpdateUIEvent& event )
 {
-    event.Enable( (berekeningKlaar == true));
+	event.Enable( (berekeningKlaar == true));
 }
 
 
@@ -1637,7 +1721,7 @@ void FilterVenster::OnExporteerFilterImpulseBeeldIDUpdate( wxUpdateUIEvent& even
 
 void FilterVenster::OnExporteerFreqBeeldIDClick( wxCommandEvent& event )
 {
-    freqDomeinGrafiek->slaOpVeld();
+	freqDomeinGrafiek->slaOpVeld();
 }
 
 
@@ -1647,8 +1731,8 @@ void FilterVenster::OnExporteerFreqBeeldIDClick( wxCommandEvent& event )
 
 void FilterVenster::OnExporteerFreqBeeldIDUpdate( wxUpdateUIEvent& event )
 {
-    /* Dit mag pas als berekening klaar is en geen test wordt gedaan. */
-    event.Enable((testSituatie == false) && (berekeningKlaar == true));
+	/* Dit mag pas als berekening klaar is en geen test wordt gedaan. */
+	event.Enable((testSituatie == false) && (berekeningKlaar == true));
 }
 
 
@@ -1658,122 +1742,122 @@ void FilterVenster::OnExporteerFreqBeeldIDUpdate( wxUpdateUIEvent& event )
 
 void FilterVenster::OnSaveClick( wxCommandEvent& event )
 {
-    wxFileName bestand(dataPad);
-
-    wxFileDialog dialoog(this,
-                         _("Save the filter design as a C or CPP header file"),
-                         bestand.GetPath(),
-                         bestand.GetFullName(),
-                         wxT("header file (*.h)|*.h"),
-                         wxFD_SAVE|wxFD_OVERWRITE_PROMPT|wxFD_CHANGE_DIR);
-
-    if (wxID_OK == dialoog.ShowModal())
-    {
-        bestand = wxFileName(dataPad = dialoog.GetPath());
-
-        if (wxString(wxT("h")) != bestand.GetExt())
-        {
-            bestand.SetExt(wxT("h"));
-        }
-
-        /* schrijf het bestand met deze bestandnaam */
-        wxFileOutputStream stroom(bestand.GetFullPath());
-
-        if (true != stroom.IsOk())
-        {
-            wxString fout = _("Could not open:") + bestand.GetFullName();
-            wxLogError(fout);
-        }
-
-        else
-        {
-            wxTextOutputStream headerBestand( stroom );
-            const wxDateTime nu(wxDateTime::Now());
-            const auto ditjaar = DitJaar;
-            headerBestand.WriteString(wxT("/* Dit is een C/C++ Header bestand                                                                        */\n"));
-            headerBestand.WriteString(wxT("/* Opdracht 4 Digitale Signaalbewerking/Digital Signal Processing  ESEDSP                                 */\n"));
-            headerBestand.WriteString(wxString::Format(wxT("/* Copyright 2006-%d Opleiding Embedded Systems Engineering, Hogeschool van Arnhem en Nijmegen          */\n"),ditjaar));
-            headerBestand.WriteString(wxT("/* Tijdstempel/Time Stamp : ")+nu.FormatISOCombined(' ')+wxT(" */\n"));
-            headerBestand.WriteString(wxT("#ifndef FilterCoeffsExport_ESE_H\n"));
-            headerBestand.WriteString(wxT("#define FilterCoeffsExport_ESE_H\n"));
+	wxFileName bestand(dataPad);
+	
+	wxFileDialog dialoog(this,
+	                     _("Save the filter design as a C or CPP header file"),
+	                     bestand.GetPath(),
+	                     bestand.GetFullName(),
+	                     wxT("header file (*.h)|*.h"),
+	                     wxFD_SAVE|wxFD_OVERWRITE_PROMPT|wxFD_CHANGE_DIR);
+	
+	if (wxID_OK == dialoog.ShowModal())
+	{
+		bestand = wxFileName(dataPad = dialoog.GetPath());
+		
+		if (wxString(wxT("h")) != bestand.GetExt())
+		{
+			bestand.SetExt(wxT("h"));
+		}
+		
+		/* schrijf het bestand met deze bestandnaam */
+		wxFileOutputStream stroom(bestand.GetFullPath());
+		
+		if (true != stroom.IsOk())
+		{
+			wxString fout = _("Could not open:") + bestand.GetFullName();
+			wxLogError(fout);
+		}
+		
+		else
+		{
+			wxTextOutputStream headerBestand( stroom );
+			const wxDateTime nu(wxDateTime::Now());
+			const auto ditjaar = DitJaar;
+			headerBestand.WriteString(wxT("/* Dit is een C/C++ Header bestand                                                                        */\n"));
+			headerBestand.WriteString(wxT("/* Opdracht 4 Digitale Signaalbewerking/Digital Signal Processing  ESEDSP                                 */\n"));
+			headerBestand.WriteString(wxString::Format(wxT("/* Copyright 2006-%d Opleiding Embedded Systems Engineering, Hogeschool van Arnhem en Nijmegen          */\n"),ditjaar));
+			headerBestand.WriteString(wxT("/* Tijdstempel/Time Stamp : ")+nu.FormatISOCombined(' ')+wxT(" */\n"));
+			headerBestand.WriteString(wxT("#ifndef FilterCoeffsExport_ESE_H\n"));
+			headerBestand.WriteString(wxT("#define FilterCoeffsExport_ESE_H\n"));
 #ifdef InterfaceTaalNederlands
-            headerBestand.WriteString(wxString::Format(wxT("/* Onderstaande coefficienten zijn voor een bandpass Q%d fixed-point implementatie FIR filter */\n"), fipBitsSpinCtrl->GetValue()-1));
+			headerBestand.WriteString(wxString::Format(wxT("/* Onderstaande coefficienten zijn voor een bandpass Q%d fixed-point implementatie FIR filter */\n"), fipBitsSpinCtrl->GetValue()-1));
 #elif defined(InterfaceTaalEnglish)
-            headerBestand.WriteString(wxString::Format(wxT("/* The following coefficients are for a bandpass Q%d fixed-point implementation FIR filter */\n"), fipBitsSpinCtrl->GetValue()-1));
+			headerBestand.WriteString(wxString::Format(wxT("/* The following coefficients are for a bandpass Q%d fixed-point implementation FIR filter */\n"), fipBitsSpinCtrl->GetValue()-1));
 #endif
-            headerBestand.WriteString(wxString::Format(wxT("/* Start vd band : %lf*PI (%d Hz @ fs=%d Hz) */\n"),(1.0f*filterBegin)/sampFreq,
-                                                       static_cast<UInt32>(filterBegin), static_cast<UInt32>(sampFreq)));
-            headerBestand.WriteString(wxString::Format(wxT("/* Eind vd band : %lf*PI (%d Hz @ fs=%d Hz) */\n"),(1.0f*filterEind)/sampFreq,
-                                                       static_cast<UInt32>(filterEind), static_cast<UInt32>(sampFreq)));
-            headerBestand.WriteString(wxString::Format(wxT("/* Taps : %d */\n\n"),taps));
-
-            headerBestand.WriteString(wxT("\n\ntypedef signed short Int16;\n\n"));
+			headerBestand.WriteString(wxString::Format(wxT("/* Start vd band : %lf*PI (%d Hz @ fs=%d Hz) */\n"),(1.0f*filterBegin)/sampFreq,
+			                                           static_cast<UInt32>(filterBegin), static_cast<UInt32>(sampFreq)));
+			headerBestand.WriteString(wxString::Format(wxT("/* Eind vd band : %lf*PI (%d Hz @ fs=%d Hz) */\n"),(1.0f*filterEind)/sampFreq,
+			                                           static_cast<UInt32>(filterEind), static_cast<UInt32>(sampFreq)));
+			headerBestand.WriteString(wxString::Format(wxT("/* Taps : %d */\n\n"),taps));
+			
+			headerBestand.WriteString(wxT("\n\ntypedef signed short Int16;\n\n"));
 #ifdef InterfaceTaalNederlands
-            headerBestand.WriteString(wxString::Format(wxT("static constexpr auto AantalTaps=%d;\n"), taps));
-            headerBestand.WriteString(wxString::Format(wxT("static constexpr auto SchaalFaktor=%d;\n\n"), berekenFixedPoint(0.5f)));
-            headerBestand.WriteString(wxT("const Int16 filterFixedCoeffs[AantalTaps] = \n{\n"));
+			headerBestand.WriteString(wxString::Format(wxT("static constexpr auto AantalTaps=%d;\n"), taps));
+			headerBestand.WriteString(wxString::Format(wxT("static constexpr auto SchaalFaktor=%d;\n\n"), berekenFixedPoint(0.5f)));
+			headerBestand.WriteString(wxT("const Int16 filterFixedCoeffs[AantalTaps] = \n{\n"));
 #elif defined(InterfaceTaalEnglish)
-            headerBestand.WriteString(wxString::Format(wxT("static constexpr auto NumberOfTaps=%d;\n"), taps));
+			headerBestand.WriteString(wxString::Format(wxT("static constexpr auto NumberOfTaps=%d;\n"), taps));
 			headerBestand.WriteString(wxString::Format(wxT("static constexpr auto ScaleFactor=%d;\n\n"), computeFixedPoint(1.0f)));
 			headerBestand.WriteString(wxT("const Int16 filterFixedCoeffs[NumberOfTaps] = \n{\n"));
 #endif
-            /* sla de fixed point coefficienten op. */
-
-            for (unsigned int i=0;i<taps;i++)
-            {
-                const Int16 coeff = filterCoeffs[i];
-
-                if (i == taps/2)
-                    headerBestand.WriteString(wxT("\n/* ===centrum coefficient=== */\n"));
-
-                const wxString coeffString(wxString::Format(wxT("%d,"), coeff));
-
-                headerBestand.WriteString(coeffString);
-
-                if (i == taps / 2)
-                    headerBestand.WriteString(wxT("\n/* ===centrum coefficient=== */\n"));
-
-                if ((0 != i) && (0 == i%5))
-                    headerBestand.WriteString(wxT("\n"));
-            }
-
-            headerBestand.WriteString(wxT("\n};\n\n"));
-
-            /* sla de floating point coefficienten op. */
+			/* sla de fixed point coefficienten op. */
+			
+			for (unsigned int i=0;i<taps;i++)
+			{
+				const Int16 coeff = filterCoeffs[i];
+				
+				if (i == taps/2)
+					headerBestand.WriteString(wxT("\n/* ===centrum coefficient=== */\n"));
+				
+				const wxString coeffString(wxString::Format(wxT("%d,"), coeff));
+				
+				headerBestand.WriteString(coeffString);
+				
+				if (i == taps / 2)
+					headerBestand.WriteString(wxT("\n/* ===centrum coefficient=== */\n"));
+				
+				if ((0 != i) && (0 == i%5))
+					headerBestand.WriteString(wxT("\n"));
+			}
+			
+			headerBestand.WriteString(wxT("\n};\n\n"));
+			
+			/* sla de floating point coefficienten op. */
 #ifdef InterfaceTaalNederlands
-            headerBestand.WriteString(wxT("const float filterFloatCoeffs[AantalTaps] = \n{\n"));
+			headerBestand.WriteString(wxT("const float filterFloatCoeffs[AantalTaps] = \n{\n"));
 #elif defined(InterfaceTaalEnglish)
-            headerBestand.WriteString(wxT("const float filterFloatCoeffs[NumberOfTaps] = \n{\n"));
+			headerBestand.WriteString(wxT("const float filterFloatCoeffs[NumberOfTaps] = \n{\n"));
 #endif
-            for (unsigned int i = 0; i<taps; i++)
-            {
+			for (unsigned int i = 0; i<taps; i++)
+			{
 #ifdef InterfaceTaalNederlands
-                const float coeff = berekenFloatingPoint(filterCoeffs[i]);
+				const float coeff = berekenFloatingPoint(filterCoeffs[i]);
 #elif defined(InterfaceTaalEnglish)
-                const float coeff = computeFloatingPoint(filterCoeffs[i]);
+				const float coeff = computeFloatingPoint(filterCoeffs[i]);
 #endif
-                if (i == taps / 2)
-                    headerBestand.WriteString(wxT("\n/* ===centrum coefficient=== */\n"));
-
-                wxString coeffString(wxString::Format(wxT("%ff#"), coeff));
-                /* vervang alle , door een .*/
-                coeffString.Replace(wxT(","), wxT("."));
-                coeffString.Replace(wxT("#"), wxT(","));
-                headerBestand.WriteString(coeffString);
-
-                if (i == taps / 2)
-                    headerBestand.WriteString(wxT("\n/* ===centrum coefficient=== */\n"));
-
-                if ((0 != i) && (0 == i % 5))
-                    headerBestand.WriteString(wxT("\n"));
-            }
-
-            headerBestand.WriteString(wxT("\n};\n\n"));
-            headerBestand.WriteString(wxT("#endif /* FilterCoeffsExport_ESE_H */\n\n"));
-
-            wxLogMessage(_("Header file written succesfully."));
-        }
-    }
+				if (i == taps / 2)
+					headerBestand.WriteString(wxT("\n/* ===centrum coefficient=== */\n"));
+				
+				wxString coeffString(wxString::Format(wxT("%ff#"), coeff));
+				/* vervang alle , door een .*/
+				coeffString.Replace(wxT(","), wxT("."));
+				coeffString.Replace(wxT("#"), wxT(","));
+				headerBestand.WriteString(coeffString);
+				
+				if (i == taps / 2)
+					headerBestand.WriteString(wxT("\n/* ===centrum coefficient=== */\n"));
+				
+				if ((0 != i) && (0 == i % 5))
+					headerBestand.WriteString(wxT("\n"));
+			}
+			
+			headerBestand.WriteString(wxT("\n};\n\n"));
+			headerBestand.WriteString(wxT("#endif /* FilterCoeffsExport_ESE_H */\n\n"));
+			
+			wxLogMessage(_("Header file written succesfully."));
+		}
+	}
 }
 
 
@@ -1783,8 +1867,8 @@ void FilterVenster::OnSaveClick( wxCommandEvent& event )
 
 void FilterVenster::OnSaveUpdate( wxUpdateUIEvent& event )
 {
-    /* Dit mag pas als berekening klaar is en geen test wordt gedaan. */
-    event.Enable((testSituatie == false) && (berekeningKlaar == true));
+	/* Dit mag pas als berekening klaar is en geen test wordt gedaan. */
+	event.Enable((testSituatie == false) && (berekeningKlaar == true));
 }
 
 
@@ -1794,8 +1878,8 @@ void FilterVenster::OnSaveUpdate( wxUpdateUIEvent& event )
 
 void FilterVenster::OnToonAnalogeFrekIDUpdate( wxUpdateUIEvent& event )
 {
-    /* Dit mag pas als berekening klaar is en geen test wordt gedaan. */
-    event.Enable((testSituatie == false) && (berekeningKlaar == true));
+	/* Dit mag pas als berekening klaar is en geen test wordt gedaan. */
+	event.Enable((testSituatie == false) && (berekeningKlaar == true));
 }
 
 
@@ -1805,12 +1889,12 @@ void FilterVenster::OnToonAnalogeFrekIDUpdate( wxUpdateUIEvent& event )
 
 void FilterVenster::OnEnterWindow( wxMouseEvent& event )
 {
-    const auto winid = event.GetId();
-
-    if (FreqDomeinGrafiekID == winid)
-        freqViewBinnenkomstHandler(event);
-    else if (TijdDomeinGrafiekID == winid)
-        tijdViewBinnenkomstHandler(event);
+	const auto winid = event.GetId();
+	
+	if (FreqDomeinGrafiekID == winid)
+		freqViewBinnenkomstHandler(event);
+	else if (TijdDomeinGrafiekID == winid)
+		tijdViewBinnenkomstHandler(event);
 }
 
 
@@ -1820,12 +1904,12 @@ void FilterVenster::OnEnterWindow( wxMouseEvent& event )
 
 void FilterVenster::OnLeaveWindow( wxMouseEvent& event )
 {
-    const auto winid = event.GetId();
-
-    if (FreqDomeinGrafiekID == winid)
-        freqViewBuitengangHandler(event);
-    else if (TijdDomeinGrafiekID == winid)
-        tijdViewBuitengangHandler(event);
+	const auto winid = event.GetId();
+	
+	if (FreqDomeinGrafiekID == winid)
+		freqViewBuitengangHandler(event);
+	else if (TijdDomeinGrafiekID == winid)
+		tijdViewBuitengangHandler(event);
 }
 
 /*
@@ -1833,12 +1917,12 @@ void FilterVenster::OnLeaveWindow( wxMouseEvent& event )
  */
 void FilterVenster::OnMotion( wxMouseEvent& event )
 {
-    const auto winid = event.GetId();
-
-    if (FreqDomeinGrafiekID == winid)
-        freqViewMuisBewegingHandler(event);
-    else if (TijdDomeinGrafiekID == winid)
-        tijdViewMuisBewegingHandler(event);
+	const auto winid = event.GetId();
+	
+	if (FreqDomeinGrafiekID == winid)
+		freqViewMuisBewegingHandler(event);
+	else if (TijdDomeinGrafiekID == winid)
+		tijdViewMuisBewegingHandler(event);
 }
 /*
  * wxEVT_COMMAND_CHECKBOX_CLICKED event handler for ToonFilterKoeffsID
@@ -1846,22 +1930,22 @@ void FilterVenster::OnMotion( wxMouseEvent& event )
 
 void FilterVenster::OnToonFilterKoeffsIDClick( wxCommandEvent& event )
 {
-    auto const * const cb = static_cast<wxCheckBox*>(FindWindowById(ToonFilterKoeffsID, this));
-
-    toonCoeffs = cb->GetValue();
-
-    if ((0 != filterCoeffs.GetCount()) && (true == cb->IsChecked()))
-    {
-        for(signed int n=-1*orde;n<orde+1;n++)
-        {
-            const Int16 coeff = filterCoeffs[n+orde];
+	auto const * const cb = static_cast<wxCheckBox*>(FindWindowById(ToonFilterKoeffsID, this));
+	
+	toonCoeffs = cb->GetValue();
+	
+	if ((0 != filterCoeffs.GetCount()) && (true == cb->IsChecked()))
+	{
+		for(signed int n=-1*orde;n<orde+1;n++)
+		{
+			const Int16 coeff = filterCoeffs[n+orde];
 #ifdef InterfaceTaalNederlands
-            wxLogMessage(wxString::Format(_("Coefficient[%d] = %d (float:%f)"),n,coeff,berekenFloatingPoint(coeff)));
+			wxLogMessage(wxString::Format(_("Coefficient[%d] = %d (float:%f)"),n,coeff,berekenFloatingPoint(coeff)));
 #else
-            wxLogMessage(wxString::Format(_("Coefficient[%d] = %d (float:%f)"), n, coeff, computeFloatingPoint(coeff)));
+			wxLogMessage(wxString::Format(_("Coefficient[%d] = %d (float:%f)"), n, coeff, computeFloatingPoint(coeff)));
 #endif
-        }
-    }
+		}
+	}
 }
 
 /*
@@ -1870,8 +1954,8 @@ void FilterVenster::OnToonFilterKoeffsIDClick( wxCommandEvent& event )
 
 void FilterVenster::OnToonFilterKoeffsIDUpdate( wxUpdateUIEvent& event )
 {
-    /* Dit mag pas als berekening klaar is en geen test wordt gedaan. */
-    event.Enable((testSituatie == false) && (berekeningKlaar == true));
+	/* Dit mag pas als berekening klaar is en geen test wordt gedaan. */
+	event.Enable((testSituatie == false) && (berekeningKlaar == true));
 }
 
 /*
@@ -1880,7 +1964,7 @@ void FilterVenster::OnToonFilterKoeffsIDUpdate( wxUpdateUIEvent& event )
 
 void FilterVenster::OnHANLogoIDClick( wxCommandEvent& event )
 {
-    static const wxString eseURL(wxT("https://www.han.nl/opleidingen/hbo/embedded-systems-engineering/voltijd/index.xml"));
-    wxLaunchDefaultBrowser(eseURL);
+	static const wxString eseURL(wxT("https://www.han.nl/opleidingen/hbo/embedded-systems-engineering/voltijd/index.xml"));
+	wxLaunchDefaultBrowser(eseURL);
 }
 
