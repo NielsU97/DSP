@@ -1,12 +1,54 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\niels\\Documents\\GitHub\\DSP\\software\\opdracht1\\VisualStudio_x64\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{6FB43E6E-A254-358F-BADE-AC23A6F01E1E}|DSPESEL1.vcxproj|C:\\Users\\niels\\Documents\\GitHub\\DSP\\software\\opdracht1\\STUDENT\\dsbComplex.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\niels\\Documents\\GitHub\\DSP\\software\\opdracht1\\STUDENT\\h\\dsbRingBuffer.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "dsbComplex.cpp",
+              "DocumentMoniker": "C:\\Users\\niels\\Documents\\GitHub\\DSP\\software\\opdracht1\\STUDENT\\dsbComplex.cpp",
+              "RelativeDocumentMoniker": "..\\STUDENT\\dsbComplex.cpp",
+              "ToolTip": "C:\\Users\\niels\\Documents\\GitHub\\DSP\\software\\opdracht1\\STUDENT\\dsbComplex.cpp",
+              "RelativeToolTip": "..\\STUDENT\\dsbComplex.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-02-05T21:04:47.491Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "dsbRingBuffer.h",
+              "DocumentMoniker": "C:\\Users\\niels\\Documents\\GitHub\\DSP\\software\\opdracht1\\STUDENT\\h\\dsbRingBuffer.h",
+              "RelativeDocumentMoniker": "..\\STUDENT\\h\\dsbRingBuffer.h",
+              "ToolTip": "C:\\Users\\niels\\Documents\\GitHub\\DSP\\software\\opdracht1\\STUDENT\\h\\dsbRingBuffer.h",
+              "RelativeToolTip": "..\\STUDENT\\h\\dsbRingBuffer.h",
+              "ViewState": "AQIAADkAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-02-05T21:05:19.46Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }
