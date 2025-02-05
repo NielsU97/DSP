@@ -1,6 +1,6 @@
-^C:\USERS\NIELS\DOCUMENTS\ELEKTROTECHNIEK\JAAR 3\DSPL\SOFTWARE\OPDRACHT2\VISUALSTUDIO_X64\CMAKEFILES\A7CDC2085A3D4FC9D4206353DECA024D\GENERATE.STAMP.RULE
+^C:\USERS\NIELS\DOCUMENTS\GITHUB\DSP\SOFTWARE\OPDRACHT2\VISUALSTUDIO_X64\CMAKEFILES\E7FBBA7D1D2BAF5724FA1DF017A83F24\GENERATE.STAMP.RULE
 setlocal
-"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Users/niels/Documents/Elektrotechniek/Jaar 3/dspl/software/opdracht2" "-BC:/Users/niels/Documents/Elektrotechniek/Jaar 3/dspl/software/opdracht2/VisualStudio_x64" --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file "C:/Users/niels/Documents/Elektrotechniek/Jaar 3/dspl/software/opdracht2/VisualStudio_x64/DSPESEL2.sln"
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/niels/Documents/GitHub/DSP/software/opdracht2 -BC:/Users/niels/Documents/GitHub/DSP/software/opdracht2/VisualStudio_x64 --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/niels/Documents/GitHub/DSP/software/opdracht2/VisualStudio_x64/DSPESEL2.sln
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone

@@ -1,13 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <CustomBuild Include="C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\opdracht3\VisualStudio_x64\CMakeFiles\8ba29860f899751d7f0c373e8dc5ccce\PACKAGE_force.rule">
+    <CustomBuild Include="C:\Users\niels\Documents\GitHub\DSP\software\opdracht3\VisualStudio_x64\CMakeFiles\f1d0ab28fab4621ce9826942b8577b83\PACKAGE_force.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="CMake Rules">
-      <UniqueIdentifier>{E2198D30-E663-38C8-8F31-3525531E8D1F}</UniqueIdentifier>
+      <UniqueIdentifier>{B868378F-0AD1-3370-9AA6-9B4740F66D83}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

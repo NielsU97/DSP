@@ -22,7 +22,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{CF197CC1-0D06-3A9D-B6C5-2A6A104B3D2A}</ProjectGuid>
+    <ProjectGuid>{A26539CB-6F8C-346F-9762-F0885AA694BA}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <WindowsTargetPlatformVersion>10.0.22621.0</WindowsTargetPlatformVersion>
     <Platform>x64</Platform>
@@ -59,26 +59,26 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup>
     <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\opdracht4\VisualStudio_x64\wxBasis\Debug\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\niels\Documents\GitHub\DSP\software\opdracht4\VisualStudio_x64\wxBasis\Debug\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">wxBasis.dir\Debug\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">wxBasis</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.lib</TargetExt>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\opdracht4\VisualStudio_x64\wxBasis\Release\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\niels\Documents\GitHub\DSP\software\opdracht4\VisualStudio_x64\wxBasis\Release\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">wxBasis.dir\Release\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">wxBasis</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.lib</TargetExt>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\opdracht4\VisualStudio_x64\wxBasis\MinSizeRel\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\niels\Documents\GitHub\DSP\software\opdracht4\VisualStudio_x64\wxBasis\MinSizeRel\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">wxBasis.dir\MinSizeRel\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">wxBasis</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.lib</TargetExt>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\opdracht4\VisualStudio_x64\wxBasis\RelWithDebInfo\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\niels\Documents\GitHub\DSP\software\opdracht4\VisualStudio_x64\wxBasis\RelWithDebInfo\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">wxBasis.dir\RelWithDebInfo\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">wxBasis</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.lib</TargetExt>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\DesktopBasis\gemeenschappelijk\h;C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\DesktopBasis\gemeenschappelijk\logos;C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\opdracht4\VisualStudio_x64\gegenereerd;C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\DesktopBasis\gemeenschappelijk\wxBasis\h;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\niels\Documents\GitHub\DSP\software\DesktopBasis\gemeenschappelijk\h;C:\Users\niels\Documents\GitHub\DSP\software\DesktopBasis\gemeenschappelijk\logos;C:\Users\niels\Documents\GitHub\DSP\software\opdracht4\VisualStudio_x64\gegenereerd;C:\Users\niels\Documents\GitHub\DSP\software\DesktopBasis\gemeenschappelijk\wxBasis\h;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AdditionalOptions>%(AdditionalOptions) /external:I "C:/wxWidgets-3.2.1/lib/vc_x64_lib/mswud" /external:I "C:/wxWidgets-3.2.1/include"</AdditionalOptions>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
@@ -97,10 +97,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;InterfaceTaalNederlands;BouwDesktopApp;_CRT_SECURE_NO_WARNINGS;MSWindows;wxDEBUG_LEVEL=1;wxUSE_DPI_AWARE_MANIFEST=2;UNICODE;_UNICODE;CMAKE_INTDIR=\"Debug\"</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\DesktopBasis\gemeenschappelijk\h;C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\DesktopBasis\gemeenschappelijk\logos;C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\opdracht4\VisualStudio_x64\gegenereerd;C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\DesktopBasis\gemeenschappelijk\wxBasis\h;C:\wxWidgets-3.2.1\lib\vc_x64_lib\mswud;C:\wxWidgets-3.2.1\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\niels\Documents\GitHub\DSP\software\DesktopBasis\gemeenschappelijk\h;C:\Users\niels\Documents\GitHub\DSP\software\DesktopBasis\gemeenschappelijk\logos;C:\Users\niels\Documents\GitHub\DSP\software\opdracht4\VisualStudio_x64\gegenereerd;C:\Users\niels\Documents\GitHub\DSP\software\DesktopBasis\gemeenschappelijk\wxBasis\h;C:\wxWidgets-3.2.1\lib\vc_x64_lib\mswud;C:\wxWidgets-3.2.1\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\DesktopBasis\gemeenschappelijk\h;C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\DesktopBasis\gemeenschappelijk\logos;C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\opdracht4\VisualStudio_x64\gegenereerd;C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\DesktopBasis\gemeenschappelijk\wxBasis\h;C:\wxWidgets-3.2.1\lib\vc_x64_lib\mswud;C:\wxWidgets-3.2.1\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\niels\Documents\GitHub\DSP\software\DesktopBasis\gemeenschappelijk\h;C:\Users\niels\Documents\GitHub\DSP\software\DesktopBasis\gemeenschappelijk\logos;C:\Users\niels\Documents\GitHub\DSP\software\opdracht4\VisualStudio_x64\gegenereerd;C:\Users\niels\Documents\GitHub\DSP\software\DesktopBasis\gemeenschappelijk\wxBasis\h;C:\wxWidgets-3.2.1\lib\vc_x64_lib\mswud;C:\wxWidgets-3.2.1\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -113,7 +113,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\DesktopBasis\gemeenschappelijk\h;C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\DesktopBasis\gemeenschappelijk\logos;C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\opdracht4\VisualStudio_x64\gegenereerd;C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\DesktopBasis\gemeenschappelijk\wxBasis\h;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\niels\Documents\GitHub\DSP\software\DesktopBasis\gemeenschappelijk\h;C:\Users\niels\Documents\GitHub\DSP\software\DesktopBasis\gemeenschappelijk\logos;C:\Users\niels\Documents\GitHub\DSP\software\opdracht4\VisualStudio_x64\gegenereerd;C:\Users\niels\Documents\GitHub\DSP\software\DesktopBasis\gemeenschappelijk\wxBasis\h;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AdditionalOptions>%(AdditionalOptions) /external:I "C:/wxWidgets-3.2.1/lib/vc_x64_lib/mswud" /external:I "C:/wxWidgets-3.2.1/include"</AdditionalOptions>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <ExceptionHandling>Sync</ExceptionHandling>
@@ -132,10 +132,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;InterfaceTaalNederlands;BouwDesktopApp;_CRT_SECURE_NO_WARNINGS;MSWindows;wxDEBUG_LEVEL=1;wxUSE_DPI_AWARE_MANIFEST=2;UNICODE;_UNICODE;CMAKE_INTDIR=\"Release\"</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\DesktopBasis\gemeenschappelijk\h;C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\DesktopBasis\gemeenschappelijk\logos;C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\opdracht4\VisualStudio_x64\gegenereerd;C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\DesktopBasis\gemeenschappelijk\wxBasis\h;C:\wxWidgets-3.2.1\lib\vc_x64_lib\mswud;C:\wxWidgets-3.2.1\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\niels\Documents\GitHub\DSP\software\DesktopBasis\gemeenschappelijk\h;C:\Users\niels\Documents\GitHub\DSP\software\DesktopBasis\gemeenschappelijk\logos;C:\Users\niels\Documents\GitHub\DSP\software\opdracht4\VisualStudio_x64\gegenereerd;C:\Users\niels\Documents\GitHub\DSP\software\DesktopBasis\gemeenschappelijk\wxBasis\h;C:\wxWidgets-3.2.1\lib\vc_x64_lib\mswud;C:\wxWidgets-3.2.1\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\DesktopBasis\gemeenschappelijk\h;C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\DesktopBasis\gemeenschappelijk\logos;C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\opdracht4\VisualStudio_x64\gegenereerd;C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\DesktopBasis\gemeenschappelijk\wxBasis\h;C:\wxWidgets-3.2.1\lib\vc_x64_lib\mswud;C:\wxWidgets-3.2.1\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\niels\Documents\GitHub\DSP\software\DesktopBasis\gemeenschappelijk\h;C:\Users\niels\Documents\GitHub\DSP\software\DesktopBasis\gemeenschappelijk\logos;C:\Users\niels\Documents\GitHub\DSP\software\opdracht4\VisualStudio_x64\gegenereerd;C:\Users\niels\Documents\GitHub\DSP\software\DesktopBasis\gemeenschappelijk\wxBasis\h;C:\wxWidgets-3.2.1\lib\vc_x64_lib\mswud;C:\wxWidgets-3.2.1\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -148,7 +148,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\DesktopBasis\gemeenschappelijk\h;C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\DesktopBasis\gemeenschappelijk\logos;C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\opdracht4\VisualStudio_x64\gegenereerd;C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\DesktopBasis\gemeenschappelijk\wxBasis\h;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\niels\Documents\GitHub\DSP\software\DesktopBasis\gemeenschappelijk\h;C:\Users\niels\Documents\GitHub\DSP\software\DesktopBasis\gemeenschappelijk\logos;C:\Users\niels\Documents\GitHub\DSP\software\opdracht4\VisualStudio_x64\gegenereerd;C:\Users\niels\Documents\GitHub\DSP\software\DesktopBasis\gemeenschappelijk\wxBasis\h;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AdditionalOptions>%(AdditionalOptions) /external:I "C:/wxWidgets-3.2.1/lib/vc_x64_lib/mswud" /external:I "C:/wxWidgets-3.2.1/include"</AdditionalOptions>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <ExceptionHandling>Sync</ExceptionHandling>
@@ -167,10 +167,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;InterfaceTaalNederlands;BouwDesktopApp;_CRT_SECURE_NO_WARNINGS;MSWindows;wxDEBUG_LEVEL=1;wxUSE_DPI_AWARE_MANIFEST=2;UNICODE;_UNICODE;CMAKE_INTDIR=\"MinSizeRel\"</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\DesktopBasis\gemeenschappelijk\h;C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\DesktopBasis\gemeenschappelijk\logos;C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\opdracht4\VisualStudio_x64\gegenereerd;C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\DesktopBasis\gemeenschappelijk\wxBasis\h;C:\wxWidgets-3.2.1\lib\vc_x64_lib\mswud;C:\wxWidgets-3.2.1\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\niels\Documents\GitHub\DSP\software\DesktopBasis\gemeenschappelijk\h;C:\Users\niels\Documents\GitHub\DSP\software\DesktopBasis\gemeenschappelijk\logos;C:\Users\niels\Documents\GitHub\DSP\software\opdracht4\VisualStudio_x64\gegenereerd;C:\Users\niels\Documents\GitHub\DSP\software\DesktopBasis\gemeenschappelijk\wxBasis\h;C:\wxWidgets-3.2.1\lib\vc_x64_lib\mswud;C:\wxWidgets-3.2.1\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\DesktopBasis\gemeenschappelijk\h;C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\DesktopBasis\gemeenschappelijk\logos;C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\opdracht4\VisualStudio_x64\gegenereerd;C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\DesktopBasis\gemeenschappelijk\wxBasis\h;C:\wxWidgets-3.2.1\lib\vc_x64_lib\mswud;C:\wxWidgets-3.2.1\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\niels\Documents\GitHub\DSP\software\DesktopBasis\gemeenschappelijk\h;C:\Users\niels\Documents\GitHub\DSP\software\DesktopBasis\gemeenschappelijk\logos;C:\Users\niels\Documents\GitHub\DSP\software\opdracht4\VisualStudio_x64\gegenereerd;C:\Users\niels\Documents\GitHub\DSP\software\DesktopBasis\gemeenschappelijk\wxBasis\h;C:\wxWidgets-3.2.1\lib\vc_x64_lib\mswud;C:\wxWidgets-3.2.1\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -183,7 +183,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\DesktopBasis\gemeenschappelijk\h;C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\DesktopBasis\gemeenschappelijk\logos;C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\opdracht4\VisualStudio_x64\gegenereerd;C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\DesktopBasis\gemeenschappelijk\wxBasis\h;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\niels\Documents\GitHub\DSP\software\DesktopBasis\gemeenschappelijk\h;C:\Users\niels\Documents\GitHub\DSP\software\DesktopBasis\gemeenschappelijk\logos;C:\Users\niels\Documents\GitHub\DSP\software\opdracht4\VisualStudio_x64\gegenereerd;C:\Users\niels\Documents\GitHub\DSP\software\DesktopBasis\gemeenschappelijk\wxBasis\h;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AdditionalOptions>%(AdditionalOptions) /external:I "C:/wxWidgets-3.2.1/lib/vc_x64_lib/mswud" /external:I "C:/wxWidgets-3.2.1/include"</AdditionalOptions>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
@@ -201,10 +201,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;InterfaceTaalNederlands;BouwDesktopApp;_CRT_SECURE_NO_WARNINGS;MSWindows;wxDEBUG_LEVEL=1;wxUSE_DPI_AWARE_MANIFEST=2;UNICODE;_UNICODE;CMAKE_INTDIR=\"RelWithDebInfo\"</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\DesktopBasis\gemeenschappelijk\h;C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\DesktopBasis\gemeenschappelijk\logos;C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\opdracht4\VisualStudio_x64\gegenereerd;C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\DesktopBasis\gemeenschappelijk\wxBasis\h;C:\wxWidgets-3.2.1\lib\vc_x64_lib\mswud;C:\wxWidgets-3.2.1\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\niels\Documents\GitHub\DSP\software\DesktopBasis\gemeenschappelijk\h;C:\Users\niels\Documents\GitHub\DSP\software\DesktopBasis\gemeenschappelijk\logos;C:\Users\niels\Documents\GitHub\DSP\software\opdracht4\VisualStudio_x64\gegenereerd;C:\Users\niels\Documents\GitHub\DSP\software\DesktopBasis\gemeenschappelijk\wxBasis\h;C:\wxWidgets-3.2.1\lib\vc_x64_lib\mswud;C:\wxWidgets-3.2.1\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\DesktopBasis\gemeenschappelijk\h;C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\DesktopBasis\gemeenschappelijk\logos;C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\opdracht4\VisualStudio_x64\gegenereerd;C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\DesktopBasis\gemeenschappelijk\wxBasis\h;C:\wxWidgets-3.2.1\lib\vc_x64_lib\mswud;C:\wxWidgets-3.2.1\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\niels\Documents\GitHub\DSP\software\DesktopBasis\gemeenschappelijk\h;C:\Users\niels\Documents\GitHub\DSP\software\DesktopBasis\gemeenschappelijk\logos;C:\Users\niels\Documents\GitHub\DSP\software\opdracht4\VisualStudio_x64\gegenereerd;C:\Users\niels\Documents\GitHub\DSP\software\DesktopBasis\gemeenschappelijk\wxBasis\h;C:\wxWidgets-3.2.1\lib\vc_x64_lib\mswud;C:\wxWidgets-3.2.1\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -216,11 +216,11 @@
     </Lib>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <CustomBuild Include="C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\DesktopBasis\gemeenschappelijk\wxBasis\CMakeLists.txt">
+    <CustomBuild Include="C:\Users\niels\Documents\GitHub\DSP\software\DesktopBasis\gemeenschappelijk\wxBasis\CMakeLists.txt">
       <UseUtf8Encoding>Always</UseUtf8Encoding>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Users/niels/Documents/Elektrotechniek/Jaar 3/dspl/software/DesktopBasis/gemeenschappelijk/wxBasis/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Users/niels/Documents/GitHub/DSP/software/DesktopBasis/gemeenschappelijk/wxBasis/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Users/niels/Documents/Elektrotechniek/Jaar 3/dspl/software/opdracht4" "-BC:/Users/niels/Documents/Elektrotechniek/Jaar 3/dspl/software/opdracht4/VisualStudio_x64" --check-stamp-file "C:/Users/niels/Documents/Elektrotechniek/Jaar 3/dspl/software/opdracht4/VisualStudio_x64/wxBasis/CMakeFiles/generate.stamp"
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/niels/Documents/GitHub/DSP/software/opdracht4 -BC:/Users/niels/Documents/GitHub/DSP/software/opdracht4/VisualStudio_x64 --check-stamp-file C:/Users/niels/Documents/GitHub/DSP/software/opdracht4/VisualStudio_x64/wxBasis/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -228,12 +228,12 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\DesktopBasis\gemeenschappelijk\wxBasis\h\desktopAppVersie.h.in;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\opdracht4\VisualStudio_x64\wxBasis\CMakeFiles\generate.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\niels\Documents\GitHub\DSP\software\DesktopBasis\gemeenschappelijk\wxBasis\h\desktopAppVersie.h.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\niels\Documents\GitHub\DSP\software\opdracht4\VisualStudio_x64\wxBasis\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Users/niels/Documents/Elektrotechniek/Jaar 3/dspl/software/DesktopBasis/gemeenschappelijk/wxBasis/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Users/niels/Documents/GitHub/DSP/software/DesktopBasis/gemeenschappelijk/wxBasis/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Users/niels/Documents/Elektrotechniek/Jaar 3/dspl/software/opdracht4" "-BC:/Users/niels/Documents/Elektrotechniek/Jaar 3/dspl/software/opdracht4/VisualStudio_x64" --check-stamp-file "C:/Users/niels/Documents/Elektrotechniek/Jaar 3/dspl/software/opdracht4/VisualStudio_x64/wxBasis/CMakeFiles/generate.stamp"
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/niels/Documents/GitHub/DSP/software/opdracht4 -BC:/Users/niels/Documents/GitHub/DSP/software/opdracht4/VisualStudio_x64 --check-stamp-file C:/Users/niels/Documents/GitHub/DSP/software/opdracht4/VisualStudio_x64/wxBasis/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -241,12 +241,12 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\DesktopBasis\gemeenschappelijk\wxBasis\h\desktopAppVersie.h.in;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\opdracht4\VisualStudio_x64\wxBasis\CMakeFiles\generate.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\niels\Documents\GitHub\DSP\software\DesktopBasis\gemeenschappelijk\wxBasis\h\desktopAppVersie.h.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\niels\Documents\GitHub\DSP\software\opdracht4\VisualStudio_x64\wxBasis\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/Users/niels/Documents/Elektrotechniek/Jaar 3/dspl/software/DesktopBasis/gemeenschappelijk/wxBasis/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/Users/niels/Documents/GitHub/DSP/software/DesktopBasis/gemeenschappelijk/wxBasis/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Users/niels/Documents/Elektrotechniek/Jaar 3/dspl/software/opdracht4" "-BC:/Users/niels/Documents/Elektrotechniek/Jaar 3/dspl/software/opdracht4/VisualStudio_x64" --check-stamp-file "C:/Users/niels/Documents/Elektrotechniek/Jaar 3/dspl/software/opdracht4/VisualStudio_x64/wxBasis/CMakeFiles/generate.stamp"
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/niels/Documents/GitHub/DSP/software/opdracht4 -BC:/Users/niels/Documents/GitHub/DSP/software/opdracht4/VisualStudio_x64 --check-stamp-file C:/Users/niels/Documents/GitHub/DSP/software/opdracht4/VisualStudio_x64/wxBasis/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -254,12 +254,12 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\DesktopBasis\gemeenschappelijk\wxBasis\h\desktopAppVersie.h.in;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\opdracht4\VisualStudio_x64\wxBasis\CMakeFiles\generate.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\niels\Documents\GitHub\DSP\software\DesktopBasis\gemeenschappelijk\wxBasis\h\desktopAppVersie.h.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\niels\Documents\GitHub\DSP\software\opdracht4\VisualStudio_x64\wxBasis\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/Users/niels/Documents/Elektrotechniek/Jaar 3/dspl/software/DesktopBasis/gemeenschappelijk/wxBasis/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/Users/niels/Documents/GitHub/DSP/software/DesktopBasis/gemeenschappelijk/wxBasis/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Users/niels/Documents/Elektrotechniek/Jaar 3/dspl/software/opdracht4" "-BC:/Users/niels/Documents/Elektrotechniek/Jaar 3/dspl/software/opdracht4/VisualStudio_x64" --check-stamp-file "C:/Users/niels/Documents/Elektrotechniek/Jaar 3/dspl/software/opdracht4/VisualStudio_x64/wxBasis/CMakeFiles/generate.stamp"
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/niels/Documents/GitHub/DSP/software/opdracht4 -BC:/Users/niels/Documents/GitHub/DSP/software/opdracht4/VisualStudio_x64 --check-stamp-file C:/Users/niels/Documents/GitHub/DSP/software/opdracht4/VisualStudio_x64/wxBasis/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -267,20 +267,20 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\DesktopBasis\gemeenschappelijk\wxBasis\h\desktopAppVersie.h.in;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\opdracht4\VisualStudio_x64\wxBasis\CMakeFiles\generate.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\niels\Documents\GitHub\DSP\software\DesktopBasis\gemeenschappelijk\wxBasis\h\desktopAppVersie.h.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\niels\Documents\GitHub\DSP\software\opdracht4\VisualStudio_x64\wxBasis\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\DesktopBasis\gemeenschappelijk\wxBasis\algemeen.cpp" />
-    <ClCompile Include="C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\DesktopBasis\gemeenschappelijk\wxBasis\desktopApp.cpp" />
-    <ClCompile Include="C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\DesktopBasis\gemeenschappelijk\wxBasis\grafiekVenster.cpp" />
-    <ClCompile Include="C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\DesktopBasis\gemeenschappelijk\wxBasis\tinyexpr.c" />
+    <ClCompile Include="C:\Users\niels\Documents\GitHub\DSP\software\DesktopBasis\gemeenschappelijk\wxBasis\algemeen.cpp" />
+    <ClCompile Include="C:\Users\niels\Documents\GitHub\DSP\software\DesktopBasis\gemeenschappelijk\wxBasis\desktopApp.cpp" />
+    <ClCompile Include="C:\Users\niels\Documents\GitHub\DSP\software\DesktopBasis\gemeenschappelijk\wxBasis\grafiekVenster.cpp" />
+    <ClCompile Include="C:\Users\niels\Documents\GitHub\DSP\software\DesktopBasis\gemeenschappelijk\wxBasis\tinyexpr.c" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\opdracht4\VisualStudio_x64\ZERO_CHECK.vcxproj">
-      <Project>{B168E3D9-C1F6-3FAF-8AE6-9CD617E136D3}</Project>
+    <ProjectReference Include="C:\Users\niels\Documents\GitHub\DSP\software\opdracht4\VisualStudio_x64\ZERO_CHECK.vcxproj">
+      <Project>{3585D95F-7EC2-3800-86A5-6DCDDEEA9167}</Project>
       <Name>ZERO_CHECK</Name>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>

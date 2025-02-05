@@ -1,25 +1,25 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <ClCompile Include="C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\DesktopBasis\gemeenschappelijk\wxBasis\algemeen.cpp">
+    <ClCompile Include="C:\Users\niels\Documents\GitHub\DSP\software\DesktopBasis\gemeenschappelijk\wxBasis\algemeen.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\DesktopBasis\gemeenschappelijk\wxBasis\desktopApp.cpp">
+    <ClCompile Include="C:\Users\niels\Documents\GitHub\DSP\software\DesktopBasis\gemeenschappelijk\wxBasis\desktopApp.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\DesktopBasis\gemeenschappelijk\wxBasis\grafiekVenster.cpp">
+    <ClCompile Include="C:\Users\niels\Documents\GitHub\DSP\software\DesktopBasis\gemeenschappelijk\wxBasis\grafiekVenster.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\DesktopBasis\gemeenschappelijk\wxBasis\tinyexpr.c">
+    <ClCompile Include="C:\Users\niels\Documents\GitHub\DSP\software\DesktopBasis\gemeenschappelijk\wxBasis\tinyexpr.c">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\DesktopBasis\gemeenschappelijk\wxBasis\CMakeLists.txt" />
+    <CustomBuild Include="C:\Users\niels\Documents\GitHub\DSP\software\DesktopBasis\gemeenschappelijk\wxBasis\CMakeLists.txt" />
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Source Files">
-      <UniqueIdentifier>{24026FAF-29B5-3B8F-8F4D-EE1BC3C41172}</UniqueIdentifier>
+      <UniqueIdentifier>{B49B134F-9774-3077-A3FB-32F7988461BC}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

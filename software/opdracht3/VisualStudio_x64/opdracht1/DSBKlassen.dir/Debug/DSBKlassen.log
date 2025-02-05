@@ -1,2 +1,5 @@
-﻿  dsbComplex.cpp
-  DSBKlassen.vcxproj -> C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\opdracht3\VisualStudio_x64\opdracht1\DSBKlassen.dir\Debug\DSBKlassen.lib
+﻿  Building Custom Rule C:/Users/niels/Documents/GitHub/DSP/software/opdracht1/CMakeLists.txt
+  dsbComplex.cpp
+  dsbComplexBasis.cpp
+  Generating Code...
+  DSBKlassen.vcxproj -> C:\Users\niels\Documents\GitHub\DSP\software\opdracht3\VisualStudio_x64\Opdracht1\DSBKlassen.dir\Debug\DSBKlassen.lib

@@ -25,7 +25,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{616534ED-B3AA-37CA-8D0E-C8970377E91C}</ProjectGuid>
+    <ProjectGuid>{C4FA0153-551F-305E-B760-E8983117791B}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <WindowsTargetPlatformVersion>10.0.22621.0</WindowsTargetPlatformVersion>
     <Platform>x64</Platform>
@@ -71,7 +71,7 @@
     <PostBuildEvent>
       <Message></Message>
       <Command>setlocal
-cd "C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\opdracht3\VisualStudio_x64"
+cd C:\Users\niels\Documents\GitHub\DSP\software\opdracht3\VisualStudio_x64
 if %errorlevel% neq 0 goto :cmEnd
 C:
 if %errorlevel% neq 0 goto :cmEnd
@@ -89,7 +89,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <PostBuildEvent>
       <Message></Message>
       <Command>setlocal
-cd "C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\opdracht3\VisualStudio_x64"
+cd C:\Users\niels\Documents\GitHub\DSP\software\opdracht3\VisualStudio_x64
 if %errorlevel% neq 0 goto :cmEnd
 C:
 if %errorlevel% neq 0 goto :cmEnd
@@ -107,7 +107,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <PostBuildEvent>
       <Message></Message>
       <Command>setlocal
-cd "C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\opdracht3\VisualStudio_x64"
+cd C:\Users\niels\Documents\GitHub\DSP\software\opdracht3\VisualStudio_x64
 if %errorlevel% neq 0 goto :cmEnd
 C:
 if %errorlevel% neq 0 goto :cmEnd
@@ -125,7 +125,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <PostBuildEvent>
       <Message></Message>
       <Command>setlocal
-cd "C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\opdracht3\VisualStudio_x64"
+cd C:\Users\niels\Documents\GitHub\DSP\software\opdracht3\VisualStudio_x64
 if %errorlevel% neq 0 goto :cmEnd
 C:
 if %errorlevel% neq 0 goto :cmEnd
@@ -140,7 +140,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <CustomBuild Include="C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\opdracht3\VisualStudio_x64\CMakeFiles\8ba29860f899751d7f0c373e8dc5ccce\PACKAGE_force.rule">
+    <CustomBuild Include="C:\Users\niels\Documents\GitHub\DSP\software\opdracht3\VisualStudio_x64\CMakeFiles\f1d0ab28fab4621ce9826942b8577b83\PACKAGE_force.rule">
       <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'"> </Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
 cd .
@@ -152,7 +152,7 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\opdracht3\VisualStudio_x64\opdracht1\CMakeFiles\PACKAGE_force</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\niels\Documents\GitHub\DSP\software\opdracht3\VisualStudio_x64\Opdracht1\CMakeFiles\PACKAGE_force</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
       <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</VerifyInputsAndOutputsExist>
       <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'"> </Message>
@@ -166,7 +166,7 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\opdracht3\VisualStudio_x64\opdracht1\CMakeFiles\PACKAGE_force</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\niels\Documents\GitHub\DSP\software\opdracht3\VisualStudio_x64\Opdracht1\CMakeFiles\PACKAGE_force</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
       <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</VerifyInputsAndOutputsExist>
       <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'"> </Message>
@@ -180,7 +180,7 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\opdracht3\VisualStudio_x64\opdracht1\CMakeFiles\PACKAGE_force</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\niels\Documents\GitHub\DSP\software\opdracht3\VisualStudio_x64\Opdracht1\CMakeFiles\PACKAGE_force</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
       <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</VerifyInputsAndOutputsExist>
       <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'"> </Message>
@@ -194,20 +194,20 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\opdracht3\VisualStudio_x64\opdracht1\CMakeFiles\PACKAGE_force</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\niels\Documents\GitHub\DSP\software\opdracht3\VisualStudio_x64\Opdracht1\CMakeFiles\PACKAGE_force</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
       <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</VerifyInputsAndOutputsExist>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\opdracht3\VisualStudio_x64\ZERO_CHECK.vcxproj">
-      <Project>{3F84306F-8871-3FBE-8813-70101EEC8F69}</Project>
+    <ProjectReference Include="C:\Users\niels\Documents\GitHub\DSP\software\opdracht3\VisualStudio_x64\ZERO_CHECK.vcxproj">
+      <Project>{AE1A0CAB-37E8-39B2-B010-8224181A9FD0}</Project>
       <Name>ZERO_CHECK</Name>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </ProjectReference>
-    <ProjectReference Include="C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\opdracht3\VisualStudio_x64\ALL_BUILD.vcxproj">
-      <Project>{2E778889-8607-352F-894F-A48FF4115CE9}</Project>
+    <ProjectReference Include="C:\Users\niels\Documents\GitHub\DSP\software\opdracht3\VisualStudio_x64\ALL_BUILD.vcxproj">
+      <Project>{6E275E11-8F95-397A-B9EF-91BD7A356488}</Project>
       <Name>ALL_BUILD</Name>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>

@@ -1,2 +1,3 @@
-﻿  firfilter.cpp
-  FirFilterLib.vcxproj -> C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\opdracht4\VisualStudio_x64\STUDENT\filter\Debug\FirFilterLib.lib
+﻿  Building Custom Rule C:/Users/niels/Documents/GitHub/DSP/software/opdracht4/STUDENT/filter/CMakeLists.txt
+  firfilter.cpp
+  FirFilterLib.vcxproj -> C:\Users\niels\Documents\GitHub\DSP\software\opdracht4\VisualStudio_x64\STUDENT\filter\Debug\FirFilterLib.lib

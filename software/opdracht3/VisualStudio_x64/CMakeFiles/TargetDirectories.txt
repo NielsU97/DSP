@@ -1,11 +1,11 @@
-C:/Users/niels/Documents/Elektrotechniek/Jaar 3/dspl/software/opdracht3/VisualStudio_x64/CMakeFiles/DSPESEL3.dir
-C:/Users/niels/Documents/Elektrotechniek/Jaar 3/dspl/software/opdracht3/VisualStudio_x64/CMakeFiles/PACKAGE.dir
-C:/Users/niels/Documents/Elektrotechniek/Jaar 3/dspl/software/opdracht3/VisualStudio_x64/CMakeFiles/INSTALL.dir
-C:/Users/niels/Documents/Elektrotechniek/Jaar 3/dspl/software/opdracht3/VisualStudio_x64/CMakeFiles/ALL_BUILD.dir
-C:/Users/niels/Documents/Elektrotechniek/Jaar 3/dspl/software/opdracht3/VisualStudio_x64/CMakeFiles/ZERO_CHECK.dir
-C:/Users/niels/Documents/Elektrotechniek/Jaar 3/dspl/software/opdracht3/VisualStudio_x64/wxBasis/CMakeFiles/wxBasis.dir
-C:/Users/niels/Documents/Elektrotechniek/Jaar 3/dspl/software/opdracht3/VisualStudio_x64/wxBasis/CMakeFiles/PACKAGE.dir
-C:/Users/niels/Documents/Elektrotechniek/Jaar 3/dspl/software/opdracht3/VisualStudio_x64/wxBasis/CMakeFiles/INSTALL.dir
-C:/Users/niels/Documents/Elektrotechniek/Jaar 3/dspl/software/opdracht3/VisualStudio_x64/opdracht1/CMakeFiles/DSBKlassen.dir
-C:/Users/niels/Documents/Elektrotechniek/Jaar 3/dspl/software/opdracht3/VisualStudio_x64/opdracht1/CMakeFiles/PACKAGE.dir
-C:/Users/niels/Documents/Elektrotechniek/Jaar 3/dspl/software/opdracht3/VisualStudio_x64/opdracht1/CMakeFiles/INSTALL.dir
+C:/Users/niels/Documents/GitHub/DSP/software/opdracht3/VisualStudio_x64/CMakeFiles/DSPESEL3.dir
+C:/Users/niels/Documents/GitHub/DSP/software/opdracht3/VisualStudio_x64/CMakeFiles/PACKAGE.dir
+C:/Users/niels/Documents/GitHub/DSP/software/opdracht3/VisualStudio_x64/CMakeFiles/INSTALL.dir
+C:/Users/niels/Documents/GitHub/DSP/software/opdracht3/VisualStudio_x64/CMakeFiles/ALL_BUILD.dir
+C:/Users/niels/Documents/GitHub/DSP/software/opdracht3/VisualStudio_x64/CMakeFiles/ZERO_CHECK.dir
+C:/Users/niels/Documents/GitHub/DSP/software/opdracht3/VisualStudio_x64/wxBasis/CMakeFiles/wxBasis.dir
+C:/Users/niels/Documents/GitHub/DSP/software/opdracht3/VisualStudio_x64/wxBasis/CMakeFiles/PACKAGE.dir
+C:/Users/niels/Documents/GitHub/DSP/software/opdracht3/VisualStudio_x64/wxBasis/CMakeFiles/INSTALL.dir
+C:/Users/niels/Documents/GitHub/DSP/software/opdracht3/VisualStudio_x64/Opdracht1/CMakeFiles/DSBKlassen.dir
+C:/Users/niels/Documents/GitHub/DSP/software/opdracht3/VisualStudio_x64/Opdracht1/CMakeFiles/PACKAGE.dir
+C:/Users/niels/Documents/GitHub/DSP/software/opdracht3/VisualStudio_x64/Opdracht1/CMakeFiles/INSTALL.dir

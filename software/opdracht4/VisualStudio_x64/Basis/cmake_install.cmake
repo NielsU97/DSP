@@ -1,8 +1,8 @@
-# Install script for directory: C:/Users/niels/Documents/Elektrotechniek/Jaar 3/dspl/software/opdracht4/Basis
+# Install script for directory: C:/Users/niels/Documents/GitHub/DSP/software/opdracht4/Basis
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "C:/Users/niels/Documents/Elektrotechniek/Jaar 3/dspl/software/opdracht4/Executable/x86_64/Debug")
+  set(CMAKE_INSTALL_PREFIX "C:/Users/niels/Documents/GitHub/DSP/software/opdracht4/Executable/x86_64/Debug")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 

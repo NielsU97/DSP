@@ -1,6 +1,6 @@
-^C:\USERS\NIELS\DOCUMENTS\ELEKTROTECHNIEK\JAAR 3\DSPL\SOFTWARE\DESKTOPBASIS\GEMEENSCHAPPELIJK\WXBASIS\CMAKELISTS.TXT
+^C:\USERS\NIELS\DOCUMENTS\GITHUB\DSP\SOFTWARE\DESKTOPBASIS\GEMEENSCHAPPELIJK\WXBASIS\CMAKELISTS.TXT
 setlocal
-"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Users/niels/Documents/Elektrotechniek/Jaar 3/dspl/software/opdracht1" "-BC:/Users/niels/Documents/Elektrotechniek/Jaar 3/dspl/software/opdracht1/VisualStudio_x64" --check-stamp-file "C:/Users/niels/Documents/Elektrotechniek/Jaar 3/dspl/software/opdracht1/VisualStudio_x64/wxBasis/CMakeFiles/generate.stamp"
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/niels/Documents/GitHub/DSP/software/opdracht1 -BC:/Users/niels/Documents/GitHub/DSP/software/opdracht1/VisualStudio_x64 --check-stamp-file C:/Users/niels/Documents/GitHub/DSP/software/opdracht1/VisualStudio_x64/wxBasis/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone

@@ -2,13 +2,13 @@
 <Project>
   <ProjectOutputs>
     <ProjectOutput>
-      <FullPath>C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\opdracht3\VisualStudio_x64\x64\Debug\ZERO_CHECK</FullPath>
+      <FullPath>C:\Users\niels\Documents\GitHub\DSP\software\opdracht3\VisualStudio_x64\x64\Debug\ZERO_CHECK</FullPath>
     </ProjectOutput>
     <ProjectOutput>
-      <FullPath>C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\opdracht3\Executable\x86_64\Debug\bin\DSPESEL3.exe</FullPath>
+      <FullPath>C:\Users\niels\Documents\GitHub\DSP\software\opdracht3\Executable\x86_64\Debug\bin\DSPESEL3.exe</FullPath>
     </ProjectOutput>
     <ProjectOutput>
-      <FullPath>C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\opdracht3\VisualStudio_x64\x64\Debug\ALL_BUILD</FullPath>
+      <FullPath>C:\Users\niels\Documents\GitHub\DSP\software\opdracht3\VisualStudio_x64\x64\Debug\ALL_BUILD</FullPath>
     </ProjectOutput>
   </ProjectOutputs>
   <ContentFiles />
