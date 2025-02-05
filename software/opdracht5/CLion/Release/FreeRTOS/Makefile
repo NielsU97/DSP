@@ -56,10 +56,10 @@ RM = "C:\Program Files\JetBrains\CLion 2024.1.4\bin\cmake\win\x64\bin\cmake.exe"
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\opdracht5"
+CMAKE_SOURCE_DIR = C:\Users\niels\Documents\GitHub\DSP\software\opdracht5
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\opdracht5\CLion\Release"
+CMAKE_BINARY_DIR = C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -86,14 +86,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\opdracht5\CLion\Release\CMakeFiles" "C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\opdracht5\CLion\Release\FreeRTOS\\CMakeFiles\progress.marks"
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 FreeRTOS/all
-	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\opdracht5\CLion\Release\CMakeFiles" 0
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(CMAKE_COMMAND) -E cmake_progress_start C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release\CMakeFiles C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release\FreeRTOS\\CMakeFiles\progress.marks
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 FreeRTOS/all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 FreeRTOS/clean
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 FreeRTOS/clean
 .PHONY : clean
 
 # The main clean target
@@ -102,22 +102,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 FreeRTOS/preinstall
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 FreeRTOS/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 FreeRTOS/preinstall
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 FreeRTOS/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 1
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 FreeRTOS/CMakeFiles/FreeRTOSLib.dir/rule:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 FreeRTOS/CMakeFiles/FreeRTOSLib.dir/rule
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 FreeRTOS/CMakeFiles/FreeRTOSLib.dir/rule
 .PHONY : FreeRTOS/CMakeFiles/FreeRTOSLib.dir/rule
 
 # Convenience name for target.
@@ -126,7 +126,7 @@ FreeRTOSLib: FreeRTOS/CMakeFiles/FreeRTOSLib.dir/rule
 
 # fast build rule for target.
 FreeRTOSLib/fast:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f FreeRTOS\CMakeFiles\FreeRTOSLib.dir\build.make FreeRTOS/CMakeFiles/FreeRTOSLib.dir/build
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f FreeRTOS\CMakeFiles\FreeRTOSLib.dir\build.make FreeRTOS/CMakeFiles/FreeRTOSLib.dir/build
 .PHONY : FreeRTOSLib/fast
 
 Source/CMSIS_RTOS/cmsis_os.obj: Source/CMSIS_RTOS/cmsis_os.c.obj
@@ -134,7 +134,7 @@ Source/CMSIS_RTOS/cmsis_os.obj: Source/CMSIS_RTOS/cmsis_os.c.obj
 
 # target to build an object file
 Source/CMSIS_RTOS/cmsis_os.c.obj:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f FreeRTOS\CMakeFiles\FreeRTOSLib.dir\build.make FreeRTOS/CMakeFiles/FreeRTOSLib.dir/Source/CMSIS_RTOS/cmsis_os.c.obj
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f FreeRTOS\CMakeFiles\FreeRTOSLib.dir\build.make FreeRTOS/CMakeFiles/FreeRTOSLib.dir/Source/CMSIS_RTOS/cmsis_os.c.obj
 .PHONY : Source/CMSIS_RTOS/cmsis_os.c.obj
 
 Source/CMSIS_RTOS/cmsis_os.i: Source/CMSIS_RTOS/cmsis_os.c.i
@@ -142,7 +142,7 @@ Source/CMSIS_RTOS/cmsis_os.i: Source/CMSIS_RTOS/cmsis_os.c.i
 
 # target to preprocess a source file
 Source/CMSIS_RTOS/cmsis_os.c.i:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f FreeRTOS\CMakeFiles\FreeRTOSLib.dir\build.make FreeRTOS/CMakeFiles/FreeRTOSLib.dir/Source/CMSIS_RTOS/cmsis_os.c.i
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f FreeRTOS\CMakeFiles\FreeRTOSLib.dir\build.make FreeRTOS/CMakeFiles/FreeRTOSLib.dir/Source/CMSIS_RTOS/cmsis_os.c.i
 .PHONY : Source/CMSIS_RTOS/cmsis_os.c.i
 
 Source/CMSIS_RTOS/cmsis_os.s: Source/CMSIS_RTOS/cmsis_os.c.s
@@ -150,7 +150,7 @@ Source/CMSIS_RTOS/cmsis_os.s: Source/CMSIS_RTOS/cmsis_os.c.s
 
 # target to generate assembly for a file
 Source/CMSIS_RTOS/cmsis_os.c.s:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f FreeRTOS\CMakeFiles\FreeRTOSLib.dir\build.make FreeRTOS/CMakeFiles/FreeRTOSLib.dir/Source/CMSIS_RTOS/cmsis_os.c.s
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f FreeRTOS\CMakeFiles\FreeRTOSLib.dir\build.make FreeRTOS/CMakeFiles/FreeRTOSLib.dir/Source/CMSIS_RTOS/cmsis_os.c.s
 .PHONY : Source/CMSIS_RTOS/cmsis_os.c.s
 
 Source/croutine.obj: Source/croutine.c.obj
@@ -158,7 +158,7 @@ Source/croutine.obj: Source/croutine.c.obj
 
 # target to build an object file
 Source/croutine.c.obj:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f FreeRTOS\CMakeFiles\FreeRTOSLib.dir\build.make FreeRTOS/CMakeFiles/FreeRTOSLib.dir/Source/croutine.c.obj
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f FreeRTOS\CMakeFiles\FreeRTOSLib.dir\build.make FreeRTOS/CMakeFiles/FreeRTOSLib.dir/Source/croutine.c.obj
 .PHONY : Source/croutine.c.obj
 
 Source/croutine.i: Source/croutine.c.i
@@ -166,7 +166,7 @@ Source/croutine.i: Source/croutine.c.i
 
 # target to preprocess a source file
 Source/croutine.c.i:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f FreeRTOS\CMakeFiles\FreeRTOSLib.dir\build.make FreeRTOS/CMakeFiles/FreeRTOSLib.dir/Source/croutine.c.i
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f FreeRTOS\CMakeFiles\FreeRTOSLib.dir\build.make FreeRTOS/CMakeFiles/FreeRTOSLib.dir/Source/croutine.c.i
 .PHONY : Source/croutine.c.i
 
 Source/croutine.s: Source/croutine.c.s
@@ -174,7 +174,7 @@ Source/croutine.s: Source/croutine.c.s
 
 # target to generate assembly for a file
 Source/croutine.c.s:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f FreeRTOS\CMakeFiles\FreeRTOSLib.dir\build.make FreeRTOS/CMakeFiles/FreeRTOSLib.dir/Source/croutine.c.s
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f FreeRTOS\CMakeFiles\FreeRTOSLib.dir\build.make FreeRTOS/CMakeFiles/FreeRTOSLib.dir/Source/croutine.c.s
 .PHONY : Source/croutine.c.s
 
 Source/event_groups.obj: Source/event_groups.c.obj
@@ -182,7 +182,7 @@ Source/event_groups.obj: Source/event_groups.c.obj
 
 # target to build an object file
 Source/event_groups.c.obj:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f FreeRTOS\CMakeFiles\FreeRTOSLib.dir\build.make FreeRTOS/CMakeFiles/FreeRTOSLib.dir/Source/event_groups.c.obj
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f FreeRTOS\CMakeFiles\FreeRTOSLib.dir\build.make FreeRTOS/CMakeFiles/FreeRTOSLib.dir/Source/event_groups.c.obj
 .PHONY : Source/event_groups.c.obj
 
 Source/event_groups.i: Source/event_groups.c.i
@@ -190,7 +190,7 @@ Source/event_groups.i: Source/event_groups.c.i
 
 # target to preprocess a source file
 Source/event_groups.c.i:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f FreeRTOS\CMakeFiles\FreeRTOSLib.dir\build.make FreeRTOS/CMakeFiles/FreeRTOSLib.dir/Source/event_groups.c.i
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f FreeRTOS\CMakeFiles\FreeRTOSLib.dir\build.make FreeRTOS/CMakeFiles/FreeRTOSLib.dir/Source/event_groups.c.i
 .PHONY : Source/event_groups.c.i
 
 Source/event_groups.s: Source/event_groups.c.s
@@ -198,7 +198,7 @@ Source/event_groups.s: Source/event_groups.c.s
 
 # target to generate assembly for a file
 Source/event_groups.c.s:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f FreeRTOS\CMakeFiles\FreeRTOSLib.dir\build.make FreeRTOS/CMakeFiles/FreeRTOSLib.dir/Source/event_groups.c.s
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f FreeRTOS\CMakeFiles\FreeRTOSLib.dir\build.make FreeRTOS/CMakeFiles/FreeRTOSLib.dir/Source/event_groups.c.s
 .PHONY : Source/event_groups.c.s
 
 Source/list.obj: Source/list.c.obj
@@ -206,7 +206,7 @@ Source/list.obj: Source/list.c.obj
 
 # target to build an object file
 Source/list.c.obj:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f FreeRTOS\CMakeFiles\FreeRTOSLib.dir\build.make FreeRTOS/CMakeFiles/FreeRTOSLib.dir/Source/list.c.obj
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f FreeRTOS\CMakeFiles\FreeRTOSLib.dir\build.make FreeRTOS/CMakeFiles/FreeRTOSLib.dir/Source/list.c.obj
 .PHONY : Source/list.c.obj
 
 Source/list.i: Source/list.c.i
@@ -214,7 +214,7 @@ Source/list.i: Source/list.c.i
 
 # target to preprocess a source file
 Source/list.c.i:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f FreeRTOS\CMakeFiles\FreeRTOSLib.dir\build.make FreeRTOS/CMakeFiles/FreeRTOSLib.dir/Source/list.c.i
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f FreeRTOS\CMakeFiles\FreeRTOSLib.dir\build.make FreeRTOS/CMakeFiles/FreeRTOSLib.dir/Source/list.c.i
 .PHONY : Source/list.c.i
 
 Source/list.s: Source/list.c.s
@@ -222,7 +222,7 @@ Source/list.s: Source/list.c.s
 
 # target to generate assembly for a file
 Source/list.c.s:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f FreeRTOS\CMakeFiles\FreeRTOSLib.dir\build.make FreeRTOS/CMakeFiles/FreeRTOSLib.dir/Source/list.c.s
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f FreeRTOS\CMakeFiles\FreeRTOSLib.dir\build.make FreeRTOS/CMakeFiles/FreeRTOSLib.dir/Source/list.c.s
 .PHONY : Source/list.c.s
 
 Source/portable/GCC/ARM_CM4F/port.obj: Source/portable/GCC/ARM_CM4F/port.cpp.obj
@@ -230,7 +230,7 @@ Source/portable/GCC/ARM_CM4F/port.obj: Source/portable/GCC/ARM_CM4F/port.cpp.obj
 
 # target to build an object file
 Source/portable/GCC/ARM_CM4F/port.cpp.obj:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f FreeRTOS\CMakeFiles\FreeRTOSLib.dir\build.make FreeRTOS/CMakeFiles/FreeRTOSLib.dir/Source/portable/GCC/ARM_CM4F/port.cpp.obj
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f FreeRTOS\CMakeFiles\FreeRTOSLib.dir\build.make FreeRTOS/CMakeFiles/FreeRTOSLib.dir/Source/portable/GCC/ARM_CM4F/port.cpp.obj
 .PHONY : Source/portable/GCC/ARM_CM4F/port.cpp.obj
 
 Source/portable/GCC/ARM_CM4F/port.i: Source/portable/GCC/ARM_CM4F/port.cpp.i
@@ -238,7 +238,7 @@ Source/portable/GCC/ARM_CM4F/port.i: Source/portable/GCC/ARM_CM4F/port.cpp.i
 
 # target to preprocess a source file
 Source/portable/GCC/ARM_CM4F/port.cpp.i:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f FreeRTOS\CMakeFiles\FreeRTOSLib.dir\build.make FreeRTOS/CMakeFiles/FreeRTOSLib.dir/Source/portable/GCC/ARM_CM4F/port.cpp.i
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f FreeRTOS\CMakeFiles\FreeRTOSLib.dir\build.make FreeRTOS/CMakeFiles/FreeRTOSLib.dir/Source/portable/GCC/ARM_CM4F/port.cpp.i
 .PHONY : Source/portable/GCC/ARM_CM4F/port.cpp.i
 
 Source/portable/GCC/ARM_CM4F/port.s: Source/portable/GCC/ARM_CM4F/port.cpp.s
@@ -246,7 +246,7 @@ Source/portable/GCC/ARM_CM4F/port.s: Source/portable/GCC/ARM_CM4F/port.cpp.s
 
 # target to generate assembly for a file
 Source/portable/GCC/ARM_CM4F/port.cpp.s:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f FreeRTOS\CMakeFiles\FreeRTOSLib.dir\build.make FreeRTOS/CMakeFiles/FreeRTOSLib.dir/Source/portable/GCC/ARM_CM4F/port.cpp.s
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f FreeRTOS\CMakeFiles\FreeRTOSLib.dir\build.make FreeRTOS/CMakeFiles/FreeRTOSLib.dir/Source/portable/GCC/ARM_CM4F/port.cpp.s
 .PHONY : Source/portable/GCC/ARM_CM4F/port.cpp.s
 
 Source/portable/MemMang/heap_4.obj: Source/portable/MemMang/heap_4.c.obj
@@ -254,7 +254,7 @@ Source/portable/MemMang/heap_4.obj: Source/portable/MemMang/heap_4.c.obj
 
 # target to build an object file
 Source/portable/MemMang/heap_4.c.obj:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f FreeRTOS\CMakeFiles\FreeRTOSLib.dir\build.make FreeRTOS/CMakeFiles/FreeRTOSLib.dir/Source/portable/MemMang/heap_4.c.obj
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f FreeRTOS\CMakeFiles\FreeRTOSLib.dir\build.make FreeRTOS/CMakeFiles/FreeRTOSLib.dir/Source/portable/MemMang/heap_4.c.obj
 .PHONY : Source/portable/MemMang/heap_4.c.obj
 
 Source/portable/MemMang/heap_4.i: Source/portable/MemMang/heap_4.c.i
@@ -262,7 +262,7 @@ Source/portable/MemMang/heap_4.i: Source/portable/MemMang/heap_4.c.i
 
 # target to preprocess a source file
 Source/portable/MemMang/heap_4.c.i:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f FreeRTOS\CMakeFiles\FreeRTOSLib.dir\build.make FreeRTOS/CMakeFiles/FreeRTOSLib.dir/Source/portable/MemMang/heap_4.c.i
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f FreeRTOS\CMakeFiles\FreeRTOSLib.dir\build.make FreeRTOS/CMakeFiles/FreeRTOSLib.dir/Source/portable/MemMang/heap_4.c.i
 .PHONY : Source/portable/MemMang/heap_4.c.i
 
 Source/portable/MemMang/heap_4.s: Source/portable/MemMang/heap_4.c.s
@@ -270,7 +270,7 @@ Source/portable/MemMang/heap_4.s: Source/portable/MemMang/heap_4.c.s
 
 # target to generate assembly for a file
 Source/portable/MemMang/heap_4.c.s:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f FreeRTOS\CMakeFiles\FreeRTOSLib.dir\build.make FreeRTOS/CMakeFiles/FreeRTOSLib.dir/Source/portable/MemMang/heap_4.c.s
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f FreeRTOS\CMakeFiles\FreeRTOSLib.dir\build.make FreeRTOS/CMakeFiles/FreeRTOSLib.dir/Source/portable/MemMang/heap_4.c.s
 .PHONY : Source/portable/MemMang/heap_4.c.s
 
 Source/queue.obj: Source/queue.c.obj
@@ -278,7 +278,7 @@ Source/queue.obj: Source/queue.c.obj
 
 # target to build an object file
 Source/queue.c.obj:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f FreeRTOS\CMakeFiles\FreeRTOSLib.dir\build.make FreeRTOS/CMakeFiles/FreeRTOSLib.dir/Source/queue.c.obj
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f FreeRTOS\CMakeFiles\FreeRTOSLib.dir\build.make FreeRTOS/CMakeFiles/FreeRTOSLib.dir/Source/queue.c.obj
 .PHONY : Source/queue.c.obj
 
 Source/queue.i: Source/queue.c.i
@@ -286,7 +286,7 @@ Source/queue.i: Source/queue.c.i
 
 # target to preprocess a source file
 Source/queue.c.i:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f FreeRTOS\CMakeFiles\FreeRTOSLib.dir\build.make FreeRTOS/CMakeFiles/FreeRTOSLib.dir/Source/queue.c.i
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f FreeRTOS\CMakeFiles\FreeRTOSLib.dir\build.make FreeRTOS/CMakeFiles/FreeRTOSLib.dir/Source/queue.c.i
 .PHONY : Source/queue.c.i
 
 Source/queue.s: Source/queue.c.s
@@ -294,7 +294,7 @@ Source/queue.s: Source/queue.c.s
 
 # target to generate assembly for a file
 Source/queue.c.s:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f FreeRTOS\CMakeFiles\FreeRTOSLib.dir\build.make FreeRTOS/CMakeFiles/FreeRTOSLib.dir/Source/queue.c.s
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f FreeRTOS\CMakeFiles\FreeRTOSLib.dir\build.make FreeRTOS/CMakeFiles/FreeRTOSLib.dir/Source/queue.c.s
 .PHONY : Source/queue.c.s
 
 Source/tasks.obj: Source/tasks.c.obj
@@ -302,7 +302,7 @@ Source/tasks.obj: Source/tasks.c.obj
 
 # target to build an object file
 Source/tasks.c.obj:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f FreeRTOS\CMakeFiles\FreeRTOSLib.dir\build.make FreeRTOS/CMakeFiles/FreeRTOSLib.dir/Source/tasks.c.obj
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f FreeRTOS\CMakeFiles\FreeRTOSLib.dir\build.make FreeRTOS/CMakeFiles/FreeRTOSLib.dir/Source/tasks.c.obj
 .PHONY : Source/tasks.c.obj
 
 Source/tasks.i: Source/tasks.c.i
@@ -310,7 +310,7 @@ Source/tasks.i: Source/tasks.c.i
 
 # target to preprocess a source file
 Source/tasks.c.i:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f FreeRTOS\CMakeFiles\FreeRTOSLib.dir\build.make FreeRTOS/CMakeFiles/FreeRTOSLib.dir/Source/tasks.c.i
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f FreeRTOS\CMakeFiles\FreeRTOSLib.dir\build.make FreeRTOS/CMakeFiles/FreeRTOSLib.dir/Source/tasks.c.i
 .PHONY : Source/tasks.c.i
 
 Source/tasks.s: Source/tasks.c.s
@@ -318,7 +318,7 @@ Source/tasks.s: Source/tasks.c.s
 
 # target to generate assembly for a file
 Source/tasks.c.s:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f FreeRTOS\CMakeFiles\FreeRTOSLib.dir\build.make FreeRTOS/CMakeFiles/FreeRTOSLib.dir/Source/tasks.c.s
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f FreeRTOS\CMakeFiles\FreeRTOSLib.dir\build.make FreeRTOS/CMakeFiles/FreeRTOSLib.dir/Source/tasks.c.s
 .PHONY : Source/tasks.c.s
 
 Source/timers.obj: Source/timers.c.obj
@@ -326,7 +326,7 @@ Source/timers.obj: Source/timers.c.obj
 
 # target to build an object file
 Source/timers.c.obj:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f FreeRTOS\CMakeFiles\FreeRTOSLib.dir\build.make FreeRTOS/CMakeFiles/FreeRTOSLib.dir/Source/timers.c.obj
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f FreeRTOS\CMakeFiles\FreeRTOSLib.dir\build.make FreeRTOS/CMakeFiles/FreeRTOSLib.dir/Source/timers.c.obj
 .PHONY : Source/timers.c.obj
 
 Source/timers.i: Source/timers.c.i
@@ -334,7 +334,7 @@ Source/timers.i: Source/timers.c.i
 
 # target to preprocess a source file
 Source/timers.c.i:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f FreeRTOS\CMakeFiles\FreeRTOSLib.dir\build.make FreeRTOS/CMakeFiles/FreeRTOSLib.dir/Source/timers.c.i
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f FreeRTOS\CMakeFiles\FreeRTOSLib.dir\build.make FreeRTOS/CMakeFiles/FreeRTOSLib.dir/Source/timers.c.i
 .PHONY : Source/timers.c.i
 
 Source/timers.s: Source/timers.c.s
@@ -342,7 +342,7 @@ Source/timers.s: Source/timers.c.s
 
 # target to generate assembly for a file
 Source/timers.c.s:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f FreeRTOS\CMakeFiles\FreeRTOSLib.dir\build.make FreeRTOS/CMakeFiles/FreeRTOSLib.dir/Source/timers.c.s
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f FreeRTOS\CMakeFiles\FreeRTOSLib.dir\build.make FreeRTOS/CMakeFiles/FreeRTOSLib.dir/Source/timers.c.s
 .PHONY : Source/timers.c.s
 
 # Help Target
@@ -392,6 +392,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 0
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

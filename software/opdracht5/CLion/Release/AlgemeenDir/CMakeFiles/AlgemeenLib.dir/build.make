@@ -52,10 +52,10 @@ RM = "C:\Program Files\JetBrains\CLion 2024.1.4\bin\cmake\win\x64\bin\cmake.exe"
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\opdracht5"
+CMAKE_SOURCE_DIR = C:\Users\niels\Documents\GitHub\DSP\software\opdracht5
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\opdracht5\CLion\Release"
+CMAKE_BINARY_DIR = C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release
 
 # Include any dependencies generated for this target.
 include AlgemeenDir/CMakeFiles/AlgemeenLib.dir/depend.make
@@ -70,18 +70,18 @@ include AlgemeenDir/CMakeFiles/AlgemeenLib.dir/flags.make
 
 AlgemeenDir/CMakeFiles/AlgemeenLib.dir/algdef.cpp.obj: AlgemeenDir/CMakeFiles/AlgemeenLib.dir/flags.make
 AlgemeenDir/CMakeFiles/AlgemeenLib.dir/algdef.cpp.obj: AlgemeenDir/CMakeFiles/AlgemeenLib.dir/includes_CXX.rsp
-AlgemeenDir/CMakeFiles/AlgemeenLib.dir/algdef.cpp.obj: C:/Users/niels/Documents/Elektrotechniek/Jaar\ 3/dspl/software/algemeen/algdef.cpp
+AlgemeenDir/CMakeFiles/AlgemeenLib.dir/algdef.cpp.obj: C:/Users/niels/Documents/GitHub/DSP/software/algemeen/algdef.cpp
 AlgemeenDir/CMakeFiles/AlgemeenLib.dir/algdef.cpp.obj: AlgemeenDir/CMakeFiles/AlgemeenLib.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\opdracht5\CLion\Release\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object AlgemeenDir/CMakeFiles/AlgemeenLib.dir/algdef.cpp.obj"
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release\ALGEME~1 && C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR10B2~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Wa,-ahl="C:/Users/niels/Documents/Elektrotechniek/Jaar 3/dspl/software/opdracht5/CLion/Release/AlgemeenDir/algdef.cpp.lst" -MD -MT AlgemeenDir/CMakeFiles/AlgemeenLib.dir/algdef.cpp.obj -MF CMakeFiles\AlgemeenLib.dir\algdef.cpp.obj.d -o CMakeFiles\AlgemeenLib.dir\algdef.cpp.obj -c "C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\algemeen\algdef.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object AlgemeenDir/CMakeFiles/AlgemeenLib.dir/algdef.cpp.obj"
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release\AlgemeenDir && C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR10B2~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Wa,-ahl="C:/Users/niels/Documents/GitHub/DSP/software/opdracht5/CLion/Release/AlgemeenDir/algdef.cpp.lst" -MD -MT AlgemeenDir/CMakeFiles/AlgemeenLib.dir/algdef.cpp.obj -MF CMakeFiles\AlgemeenLib.dir\algdef.cpp.obj.d -o CMakeFiles\AlgemeenLib.dir\algdef.cpp.obj -c C:\Users\niels\Documents\GitHub\DSP\software\algemeen\algdef.cpp
 
 AlgemeenDir/CMakeFiles/AlgemeenLib.dir/algdef.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/AlgemeenLib.dir/algdef.cpp.i"
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release\ALGEME~1 && C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR10B2~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Wa,-ahl="C:/Users/niels/Documents/Elektrotechniek/Jaar 3/dspl/software/opdracht5/CLion/Release/AlgemeenDir/algdef.cpp.lst" -E "C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\algemeen\algdef.cpp" > CMakeFiles\AlgemeenLib.dir\algdef.cpp.i
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release\AlgemeenDir && C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR10B2~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Wa,-ahl="C:/Users/niels/Documents/GitHub/DSP/software/opdracht5/CLion/Release/AlgemeenDir/algdef.cpp.lst" -E C:\Users\niels\Documents\GitHub\DSP\software\algemeen\algdef.cpp > CMakeFiles\AlgemeenLib.dir\algdef.cpp.i
 
 AlgemeenDir/CMakeFiles/AlgemeenLib.dir/algdef.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/AlgemeenLib.dir/algdef.cpp.s"
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release\ALGEME~1 && C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR10B2~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Wa,-ahl="C:/Users/niels/Documents/Elektrotechniek/Jaar 3/dspl/software/opdracht5/CLion/Release/AlgemeenDir/algdef.cpp.lst" -S "C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\algemeen\algdef.cpp" -o CMakeFiles\AlgemeenLib.dir\algdef.cpp.s
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release\AlgemeenDir && C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR10B2~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Wa,-ahl="C:/Users/niels/Documents/GitHub/DSP/software/opdracht5/CLion/Release/AlgemeenDir/algdef.cpp.lst" -S C:\Users\niels\Documents\GitHub\DSP\software\algemeen\algdef.cpp -o CMakeFiles\AlgemeenLib.dir\algdef.cpp.s
 
 # Object files for target AlgemeenLib
 AlgemeenLib_OBJECTS = \
@@ -93,19 +93,19 @@ AlgemeenLib_EXTERNAL_OBJECTS =
 AlgemeenDir/libAlgemeenLib.a: AlgemeenDir/CMakeFiles/AlgemeenLib.dir/algdef.cpp.obj
 AlgemeenDir/libAlgemeenLib.a: AlgemeenDir/CMakeFiles/AlgemeenLib.dir/build.make
 AlgemeenDir/libAlgemeenLib.a: AlgemeenDir/CMakeFiles/AlgemeenLib.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir="C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\opdracht5\CLion\Release\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library libAlgemeenLib.a"
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release\ALGEME~1 && $(CMAKE_COMMAND) -P CMakeFiles\AlgemeenLib.dir\cmake_clean_target.cmake
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release\ALGEME~1 && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\AlgemeenLib.dir\link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library libAlgemeenLib.a"
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release\AlgemeenDir && $(CMAKE_COMMAND) -P CMakeFiles\AlgemeenLib.dir\cmake_clean_target.cmake
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release\AlgemeenDir && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\AlgemeenLib.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 AlgemeenDir/CMakeFiles/AlgemeenLib.dir/build: AlgemeenDir/libAlgemeenLib.a
 .PHONY : AlgemeenDir/CMakeFiles/AlgemeenLib.dir/build
 
 AlgemeenDir/CMakeFiles/AlgemeenLib.dir/clean:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release\ALGEME~1 && $(CMAKE_COMMAND) -P CMakeFiles\AlgemeenLib.dir\cmake_clean.cmake
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release\AlgemeenDir && $(CMAKE_COMMAND) -P CMakeFiles\AlgemeenLib.dir\cmake_clean.cmake
 .PHONY : AlgemeenDir/CMakeFiles/AlgemeenLib.dir/clean
 
 AlgemeenDir/CMakeFiles/AlgemeenLib.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" "C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\opdracht5" "C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\algemeen" "C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\opdracht5\CLion\Release" "C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\opdracht5\CLion\Release\AlgemeenDir" "C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\opdracht5\CLion\Release\AlgemeenDir\CMakeFiles\AlgemeenLib.dir\DependInfo.cmake" "--color=$(COLOR)"
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\niels\Documents\GitHub\DSP\software\opdracht5 C:\Users\niels\Documents\GitHub\DSP\software\algemeen C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release\AlgemeenDir C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release\AlgemeenDir\CMakeFiles\AlgemeenLib.dir\DependInfo.cmake "--color=$(COLOR)"
 .PHONY : AlgemeenDir/CMakeFiles/AlgemeenLib.dir/depend
 

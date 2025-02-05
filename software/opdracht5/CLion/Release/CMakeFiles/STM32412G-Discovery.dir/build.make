@@ -52,10 +52,10 @@ RM = "C:\Program Files\JetBrains\CLion 2024.1.4\bin\cmake\win\x64\bin\cmake.exe"
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\opdracht5"
+CMAKE_SOURCE_DIR = C:\Users\niels\Documents\GitHub\DSP\software\opdracht5
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\opdracht5\CLion\Release"
+CMAKE_BINARY_DIR = C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release
 
 # Include any dependencies generated for this target.
 include CMakeFiles/STM32412G-Discovery.dir/depend.make
@@ -73,35 +73,35 @@ STM32412G__Discovery_OBJECTS =
 
 # External object files for target STM32412G-Discovery
 STM32412G__Discovery_EXTERNAL_OBJECTS = \
-"C:/Users/niels/Documents/Elektrotechniek/Jaar 3/dspl/software/opdracht5/CLion/Release/Components/CMakeFiles/ComponentsLib.dir/cs43l22/cs43l22.c.obj" \
-"C:/Users/niels/Documents/Elektrotechniek/Jaar 3/dspl/software/opdracht5/CLion/Release/Components/CMakeFiles/ComponentsLib.dir/exc7200/exc7200.c.obj" \
-"C:/Users/niels/Documents/Elektrotechniek/Jaar 3/dspl/software/opdracht5/CLion/Release/Components/CMakeFiles/ComponentsLib.dir/ft6x06/ft6x06.c.obj" \
-"C:/Users/niels/Documents/Elektrotechniek/Jaar 3/dspl/software/opdracht5/CLion/Release/Components/CMakeFiles/ComponentsLib.dir/ili9325/ili9325.c.obj" \
-"C:/Users/niels/Documents/Elektrotechniek/Jaar 3/dspl/software/opdracht5/CLion/Release/Components/CMakeFiles/ComponentsLib.dir/ili9341/ili9341.c.obj" \
-"C:/Users/niels/Documents/Elektrotechniek/Jaar 3/dspl/software/opdracht5/CLion/Release/Components/CMakeFiles/ComponentsLib.dir/l3gd20/l3gd20.c.obj" \
-"C:/Users/niels/Documents/Elektrotechniek/Jaar 3/dspl/software/opdracht5/CLion/Release/Components/CMakeFiles/ComponentsLib.dir/lis302dl/lis302dl.c.obj" \
-"C:/Users/niels/Documents/Elektrotechniek/Jaar 3/dspl/software/opdracht5/CLion/Release/Components/CMakeFiles/ComponentsLib.dir/lis3dsh/lis3dsh.c.obj" \
-"C:/Users/niels/Documents/Elektrotechniek/Jaar 3/dspl/software/opdracht5/CLion/Release/Components/CMakeFiles/ComponentsLib.dir/ls016b8uy/ls016b8uy.c.obj" \
-"C:/Users/niels/Documents/Elektrotechniek/Jaar 3/dspl/software/opdracht5/CLion/Release/Components/CMakeFiles/ComponentsLib.dir/lsm303dlhc/lsm303dlhc.c.obj" \
-"C:/Users/niels/Documents/Elektrotechniek/Jaar 3/dspl/software/opdracht5/CLion/Release/Components/CMakeFiles/ComponentsLib.dir/mfxstm32l152/mfxstm32l152.c.obj" \
-"C:/Users/niels/Documents/Elektrotechniek/Jaar 3/dspl/software/opdracht5/CLion/Release/Components/CMakeFiles/ComponentsLib.dir/otm8009a/otm8009a.c.obj" \
-"C:/Users/niels/Documents/Elektrotechniek/Jaar 3/dspl/software/opdracht5/CLion/Release/Components/CMakeFiles/ComponentsLib.dir/ov2640/ov2640.c.obj" \
-"C:/Users/niels/Documents/Elektrotechniek/Jaar 3/dspl/software/opdracht5/CLion/Release/Components/CMakeFiles/ComponentsLib.dir/s5k5cag/s5k5cag.c.obj" \
-"C:/Users/niels/Documents/Elektrotechniek/Jaar 3/dspl/software/opdracht5/CLion/Release/Components/CMakeFiles/ComponentsLib.dir/st7735/st7735.c.obj" \
-"C:/Users/niels/Documents/Elektrotechniek/Jaar 3/dspl/software/opdracht5/CLion/Release/Components/CMakeFiles/ComponentsLib.dir/st7789h2/st7789h2.c.obj" \
-"C:/Users/niels/Documents/Elektrotechniek/Jaar 3/dspl/software/opdracht5/CLion/Release/Components/CMakeFiles/ComponentsLib.dir/stmpe1600/stmpe1600.c.obj" \
-"C:/Users/niels/Documents/Elektrotechniek/Jaar 3/dspl/software/opdracht5/CLion/Release/Components/CMakeFiles/ComponentsLib.dir/stmpe811/stmpe811.c.obj" \
-"C:/Users/niels/Documents/Elektrotechniek/Jaar 3/dspl/software/opdracht5/CLion/Release/Components/CMakeFiles/ComponentsLib.dir/ts3510/ts3510.c.obj" \
-"C:/Users/niels/Documents/Elektrotechniek/Jaar 3/dspl/software/opdracht5/CLion/Release/Components/CMakeFiles/ComponentsLib.dir/wm8994/wm8994.c.obj" \
-"C:/Users/niels/Documents/Elektrotechniek/Jaar 3/dspl/software/opdracht5/CLion/Release/F412GDiscoveryLib/CMakeFiles/STM32412G-DiscoveryBasis.dir/STM32412gDiscovery.cpp.obj" \
-"C:/Users/niels/Documents/Elektrotechniek/Jaar 3/dspl/software/opdracht5/CLion/Release/F412GDiscoveryLib/CMakeFiles/STM32412G-DiscoveryBasis.dir/STM32412gDiscoveryGUI.cpp.obj" \
-"C:/Users/niels/Documents/Elektrotechniek/Jaar 3/dspl/software/opdracht5/CLion/Release/F412GDiscoveryLib/CMakeFiles/STM32412G-DiscoveryBasis.dir/stm32412g_discovery.c.obj" \
-"C:/Users/niels/Documents/Elektrotechniek/Jaar 3/dspl/software/opdracht5/CLion/Release/F412GDiscoveryLib/CMakeFiles/STM32412G-DiscoveryBasis.dir/stm32412g_discovery_audio.c.obj" \
-"C:/Users/niels/Documents/Elektrotechniek/Jaar 3/dspl/software/opdracht5/CLion/Release/F412GDiscoveryLib/CMakeFiles/STM32412G-DiscoveryBasis.dir/stm32412g_discovery_eeprom.c.obj" \
-"C:/Users/niels/Documents/Elektrotechniek/Jaar 3/dspl/software/opdracht5/CLion/Release/F412GDiscoveryLib/CMakeFiles/STM32412G-DiscoveryBasis.dir/stm32412g_discovery_lcd.c.obj" \
-"C:/Users/niels/Documents/Elektrotechniek/Jaar 3/dspl/software/opdracht5/CLion/Release/F412GDiscoveryLib/CMakeFiles/STM32412G-DiscoveryBasis.dir/stm32412g_discovery_qspi.c.obj" \
-"C:/Users/niels/Documents/Elektrotechniek/Jaar 3/dspl/software/opdracht5/CLion/Release/F412GDiscoveryLib/CMakeFiles/STM32412G-DiscoveryBasis.dir/stm32412g_discovery_sd.c.obj" \
-"C:/Users/niels/Documents/Elektrotechniek/Jaar 3/dspl/software/opdracht5/CLion/Release/F412GDiscoveryLib/CMakeFiles/STM32412G-DiscoveryBasis.dir/stm32412g_discovery_ts.c.obj"
+"C:/Users/niels/Documents/GitHub/DSP/software/opdracht5/CLion/Release/Components/CMakeFiles/ComponentsLib.dir/cs43l22/cs43l22.c.obj" \
+"C:/Users/niels/Documents/GitHub/DSP/software/opdracht5/CLion/Release/Components/CMakeFiles/ComponentsLib.dir/exc7200/exc7200.c.obj" \
+"C:/Users/niels/Documents/GitHub/DSP/software/opdracht5/CLion/Release/Components/CMakeFiles/ComponentsLib.dir/ft6x06/ft6x06.c.obj" \
+"C:/Users/niels/Documents/GitHub/DSP/software/opdracht5/CLion/Release/Components/CMakeFiles/ComponentsLib.dir/ili9325/ili9325.c.obj" \
+"C:/Users/niels/Documents/GitHub/DSP/software/opdracht5/CLion/Release/Components/CMakeFiles/ComponentsLib.dir/ili9341/ili9341.c.obj" \
+"C:/Users/niels/Documents/GitHub/DSP/software/opdracht5/CLion/Release/Components/CMakeFiles/ComponentsLib.dir/l3gd20/l3gd20.c.obj" \
+"C:/Users/niels/Documents/GitHub/DSP/software/opdracht5/CLion/Release/Components/CMakeFiles/ComponentsLib.dir/lis302dl/lis302dl.c.obj" \
+"C:/Users/niels/Documents/GitHub/DSP/software/opdracht5/CLion/Release/Components/CMakeFiles/ComponentsLib.dir/lis3dsh/lis3dsh.c.obj" \
+"C:/Users/niels/Documents/GitHub/DSP/software/opdracht5/CLion/Release/Components/CMakeFiles/ComponentsLib.dir/ls016b8uy/ls016b8uy.c.obj" \
+"C:/Users/niels/Documents/GitHub/DSP/software/opdracht5/CLion/Release/Components/CMakeFiles/ComponentsLib.dir/lsm303dlhc/lsm303dlhc.c.obj" \
+"C:/Users/niels/Documents/GitHub/DSP/software/opdracht5/CLion/Release/Components/CMakeFiles/ComponentsLib.dir/mfxstm32l152/mfxstm32l152.c.obj" \
+"C:/Users/niels/Documents/GitHub/DSP/software/opdracht5/CLion/Release/Components/CMakeFiles/ComponentsLib.dir/otm8009a/otm8009a.c.obj" \
+"C:/Users/niels/Documents/GitHub/DSP/software/opdracht5/CLion/Release/Components/CMakeFiles/ComponentsLib.dir/ov2640/ov2640.c.obj" \
+"C:/Users/niels/Documents/GitHub/DSP/software/opdracht5/CLion/Release/Components/CMakeFiles/ComponentsLib.dir/s5k5cag/s5k5cag.c.obj" \
+"C:/Users/niels/Documents/GitHub/DSP/software/opdracht5/CLion/Release/Components/CMakeFiles/ComponentsLib.dir/st7735/st7735.c.obj" \
+"C:/Users/niels/Documents/GitHub/DSP/software/opdracht5/CLion/Release/Components/CMakeFiles/ComponentsLib.dir/st7789h2/st7789h2.c.obj" \
+"C:/Users/niels/Documents/GitHub/DSP/software/opdracht5/CLion/Release/Components/CMakeFiles/ComponentsLib.dir/stmpe1600/stmpe1600.c.obj" \
+"C:/Users/niels/Documents/GitHub/DSP/software/opdracht5/CLion/Release/Components/CMakeFiles/ComponentsLib.dir/stmpe811/stmpe811.c.obj" \
+"C:/Users/niels/Documents/GitHub/DSP/software/opdracht5/CLion/Release/Components/CMakeFiles/ComponentsLib.dir/ts3510/ts3510.c.obj" \
+"C:/Users/niels/Documents/GitHub/DSP/software/opdracht5/CLion/Release/Components/CMakeFiles/ComponentsLib.dir/wm8994/wm8994.c.obj" \
+"C:/Users/niels/Documents/GitHub/DSP/software/opdracht5/CLion/Release/F412GDiscoveryLib/CMakeFiles/STM32412G-DiscoveryBasis.dir/STM32412gDiscovery.cpp.obj" \
+"C:/Users/niels/Documents/GitHub/DSP/software/opdracht5/CLion/Release/F412GDiscoveryLib/CMakeFiles/STM32412G-DiscoveryBasis.dir/STM32412gDiscoveryGUI.cpp.obj" \
+"C:/Users/niels/Documents/GitHub/DSP/software/opdracht5/CLion/Release/F412GDiscoveryLib/CMakeFiles/STM32412G-DiscoveryBasis.dir/stm32412g_discovery.c.obj" \
+"C:/Users/niels/Documents/GitHub/DSP/software/opdracht5/CLion/Release/F412GDiscoveryLib/CMakeFiles/STM32412G-DiscoveryBasis.dir/stm32412g_discovery_audio.c.obj" \
+"C:/Users/niels/Documents/GitHub/DSP/software/opdracht5/CLion/Release/F412GDiscoveryLib/CMakeFiles/STM32412G-DiscoveryBasis.dir/stm32412g_discovery_eeprom.c.obj" \
+"C:/Users/niels/Documents/GitHub/DSP/software/opdracht5/CLion/Release/F412GDiscoveryLib/CMakeFiles/STM32412G-DiscoveryBasis.dir/stm32412g_discovery_lcd.c.obj" \
+"C:/Users/niels/Documents/GitHub/DSP/software/opdracht5/CLion/Release/F412GDiscoveryLib/CMakeFiles/STM32412G-DiscoveryBasis.dir/stm32412g_discovery_qspi.c.obj" \
+"C:/Users/niels/Documents/GitHub/DSP/software/opdracht5/CLion/Release/F412GDiscoveryLib/CMakeFiles/STM32412G-DiscoveryBasis.dir/stm32412g_discovery_sd.c.obj" \
+"C:/Users/niels/Documents/GitHub/DSP/software/opdracht5/CLion/Release/F412GDiscoveryLib/CMakeFiles/STM32412G-DiscoveryBasis.dir/stm32412g_discovery_ts.c.obj"
 
 libSTM32412G-Discovery.a: Components/CMakeFiles/ComponentsLib.dir/cs43l22/cs43l22.c.obj
 libSTM32412G-Discovery.a: Components/CMakeFiles/ComponentsLib.dir/exc7200/exc7200.c.obj
@@ -134,7 +134,7 @@ libSTM32412G-Discovery.a: F412GDiscoveryLib/CMakeFiles/STM32412G-DiscoveryBasis.
 libSTM32412G-Discovery.a: F412GDiscoveryLib/CMakeFiles/STM32412G-DiscoveryBasis.dir/stm32412g_discovery_ts.c.obj
 libSTM32412G-Discovery.a: CMakeFiles/STM32412G-Discovery.dir/build.make
 libSTM32412G-Discovery.a: CMakeFiles/STM32412G-Discovery.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir="C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\opdracht5\CLion\Release\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Linking CXX static library libSTM32412G-Discovery.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Linking CXX static library libSTM32412G-Discovery.a"
 	$(CMAKE_COMMAND) -P CMakeFiles\STM32412G-Discovery.dir\cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\STM32412G-Discovery.dir\link.txt --verbose=$(VERBOSE)
 
@@ -147,6 +147,6 @@ CMakeFiles/STM32412G-Discovery.dir/clean:
 .PHONY : CMakeFiles/STM32412G-Discovery.dir/clean
 
 CMakeFiles/STM32412G-Discovery.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" "C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\opdracht5" "C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\opdracht5" "C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\opdracht5\CLion\Release" "C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\opdracht5\CLion\Release" "C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\opdracht5\CLion\Release\CMakeFiles\STM32412G-Discovery.dir\DependInfo.cmake" "--color=$(COLOR)"
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\niels\Documents\GitHub\DSP\software\opdracht5 C:\Users\niels\Documents\GitHub\DSP\software\opdracht5 C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release\CMakeFiles\STM32412G-Discovery.dir\DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/STM32412G-Discovery.dir/depend
 

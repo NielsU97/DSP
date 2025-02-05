@@ -56,10 +56,10 @@ RM = "C:\Program Files\JetBrains\CLion 2024.1.4\bin\cmake\win\x64\bin\cmake.exe"
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\opdracht5"
+CMAKE_SOURCE_DIR = C:\Users\niels\Documents\GitHub\DSP\software\opdracht5
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\opdracht5\CLion\Debug"
+CMAKE_BINARY_DIR = C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -86,14 +86,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Debug && $(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\opdracht5\CLion\Debug\CMakeFiles" "C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\opdracht5\CLion\Debug\SeggerRTT\\CMakeFiles\progress.marks"
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Debug && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 SeggerRTT/all
-	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\opdracht5\CLion\Debug\CMakeFiles" 0
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Debug && $(CMAKE_COMMAND) -E cmake_progress_start C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Debug\CMakeFiles C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Debug\SeggerRTT\\CMakeFiles\progress.marks
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Debug && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 SeggerRTT/all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Debug\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Debug && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 SeggerRTT/clean
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Debug && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 SeggerRTT/clean
 .PHONY : clean
 
 # The main clean target
@@ -102,22 +102,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Debug && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 SeggerRTT/preinstall
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Debug && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 SeggerRTT/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Debug && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 SeggerRTT/preinstall
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Debug && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 SeggerRTT/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 1
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 SeggerRTT/CMakeFiles/Segger_RTT.dir/rule:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Debug && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 SeggerRTT/CMakeFiles/Segger_RTT.dir/rule
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Debug && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 SeggerRTT/CMakeFiles/Segger_RTT.dir/rule
 .PHONY : SeggerRTT/CMakeFiles/Segger_RTT.dir/rule
 
 # Convenience name for target.
@@ -126,7 +126,7 @@ Segger_RTT: SeggerRTT/CMakeFiles/Segger_RTT.dir/rule
 
 # fast build rule for target.
 Segger_RTT/fast:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Debug && $(MAKE) $(MAKESILENT) -f SeggerRTT\CMakeFiles\Segger_RTT.dir\build.make SeggerRTT/CMakeFiles/Segger_RTT.dir/build
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Debug && $(MAKE) $(MAKESILENT) -f SeggerRTT\CMakeFiles\Segger_RTT.dir\build.make SeggerRTT/CMakeFiles/Segger_RTT.dir/build
 .PHONY : Segger_RTT/fast
 
 RTT/SEGGER_RTT.obj: RTT/SEGGER_RTT.c.obj
@@ -134,7 +134,7 @@ RTT/SEGGER_RTT.obj: RTT/SEGGER_RTT.c.obj
 
 # target to build an object file
 RTT/SEGGER_RTT.c.obj:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Debug && $(MAKE) $(MAKESILENT) -f SeggerRTT\CMakeFiles\Segger_RTT.dir\build.make SeggerRTT/CMakeFiles/Segger_RTT.dir/RTT/SEGGER_RTT.c.obj
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Debug && $(MAKE) $(MAKESILENT) -f SeggerRTT\CMakeFiles\Segger_RTT.dir\build.make SeggerRTT/CMakeFiles/Segger_RTT.dir/RTT/SEGGER_RTT.c.obj
 .PHONY : RTT/SEGGER_RTT.c.obj
 
 RTT/SEGGER_RTT.i: RTT/SEGGER_RTT.c.i
@@ -142,7 +142,7 @@ RTT/SEGGER_RTT.i: RTT/SEGGER_RTT.c.i
 
 # target to preprocess a source file
 RTT/SEGGER_RTT.c.i:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Debug && $(MAKE) $(MAKESILENT) -f SeggerRTT\CMakeFiles\Segger_RTT.dir\build.make SeggerRTT/CMakeFiles/Segger_RTT.dir/RTT/SEGGER_RTT.c.i
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Debug && $(MAKE) $(MAKESILENT) -f SeggerRTT\CMakeFiles\Segger_RTT.dir\build.make SeggerRTT/CMakeFiles/Segger_RTT.dir/RTT/SEGGER_RTT.c.i
 .PHONY : RTT/SEGGER_RTT.c.i
 
 RTT/SEGGER_RTT.s: RTT/SEGGER_RTT.c.s
@@ -150,7 +150,7 @@ RTT/SEGGER_RTT.s: RTT/SEGGER_RTT.c.s
 
 # target to generate assembly for a file
 RTT/SEGGER_RTT.c.s:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Debug && $(MAKE) $(MAKESILENT) -f SeggerRTT\CMakeFiles\Segger_RTT.dir\build.make SeggerRTT/CMakeFiles/Segger_RTT.dir/RTT/SEGGER_RTT.c.s
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Debug && $(MAKE) $(MAKESILENT) -f SeggerRTT\CMakeFiles\Segger_RTT.dir\build.make SeggerRTT/CMakeFiles/Segger_RTT.dir/RTT/SEGGER_RTT.c.s
 .PHONY : RTT/SEGGER_RTT.c.s
 
 RTT/SEGGER_RTT_printf.obj: RTT/SEGGER_RTT_printf.c.obj
@@ -158,7 +158,7 @@ RTT/SEGGER_RTT_printf.obj: RTT/SEGGER_RTT_printf.c.obj
 
 # target to build an object file
 RTT/SEGGER_RTT_printf.c.obj:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Debug && $(MAKE) $(MAKESILENT) -f SeggerRTT\CMakeFiles\Segger_RTT.dir\build.make SeggerRTT/CMakeFiles/Segger_RTT.dir/RTT/SEGGER_RTT_printf.c.obj
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Debug && $(MAKE) $(MAKESILENT) -f SeggerRTT\CMakeFiles\Segger_RTT.dir\build.make SeggerRTT/CMakeFiles/Segger_RTT.dir/RTT/SEGGER_RTT_printf.c.obj
 .PHONY : RTT/SEGGER_RTT_printf.c.obj
 
 RTT/SEGGER_RTT_printf.i: RTT/SEGGER_RTT_printf.c.i
@@ -166,7 +166,7 @@ RTT/SEGGER_RTT_printf.i: RTT/SEGGER_RTT_printf.c.i
 
 # target to preprocess a source file
 RTT/SEGGER_RTT_printf.c.i:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Debug && $(MAKE) $(MAKESILENT) -f SeggerRTT\CMakeFiles\Segger_RTT.dir\build.make SeggerRTT/CMakeFiles/Segger_RTT.dir/RTT/SEGGER_RTT_printf.c.i
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Debug && $(MAKE) $(MAKESILENT) -f SeggerRTT\CMakeFiles\Segger_RTT.dir\build.make SeggerRTT/CMakeFiles/Segger_RTT.dir/RTT/SEGGER_RTT_printf.c.i
 .PHONY : RTT/SEGGER_RTT_printf.c.i
 
 RTT/SEGGER_RTT_printf.s: RTT/SEGGER_RTT_printf.c.s
@@ -174,7 +174,7 @@ RTT/SEGGER_RTT_printf.s: RTT/SEGGER_RTT_printf.c.s
 
 # target to generate assembly for a file
 RTT/SEGGER_RTT_printf.c.s:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Debug && $(MAKE) $(MAKESILENT) -f SeggerRTT\CMakeFiles\Segger_RTT.dir\build.make SeggerRTT/CMakeFiles/Segger_RTT.dir/RTT/SEGGER_RTT_printf.c.s
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Debug && $(MAKE) $(MAKESILENT) -f SeggerRTT\CMakeFiles\Segger_RTT.dir\build.make SeggerRTT/CMakeFiles/Segger_RTT.dir/RTT/SEGGER_RTT_printf.c.s
 .PHONY : RTT/SEGGER_RTT_printf.c.s
 
 Syscalls/SEGGER_RTT_Syscalls_GCC.obj: Syscalls/SEGGER_RTT_Syscalls_GCC.c.obj
@@ -182,7 +182,7 @@ Syscalls/SEGGER_RTT_Syscalls_GCC.obj: Syscalls/SEGGER_RTT_Syscalls_GCC.c.obj
 
 # target to build an object file
 Syscalls/SEGGER_RTT_Syscalls_GCC.c.obj:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Debug && $(MAKE) $(MAKESILENT) -f SeggerRTT\CMakeFiles\Segger_RTT.dir\build.make SeggerRTT/CMakeFiles/Segger_RTT.dir/Syscalls/SEGGER_RTT_Syscalls_GCC.c.obj
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Debug && $(MAKE) $(MAKESILENT) -f SeggerRTT\CMakeFiles\Segger_RTT.dir\build.make SeggerRTT/CMakeFiles/Segger_RTT.dir/Syscalls/SEGGER_RTT_Syscalls_GCC.c.obj
 .PHONY : Syscalls/SEGGER_RTT_Syscalls_GCC.c.obj
 
 Syscalls/SEGGER_RTT_Syscalls_GCC.i: Syscalls/SEGGER_RTT_Syscalls_GCC.c.i
@@ -190,7 +190,7 @@ Syscalls/SEGGER_RTT_Syscalls_GCC.i: Syscalls/SEGGER_RTT_Syscalls_GCC.c.i
 
 # target to preprocess a source file
 Syscalls/SEGGER_RTT_Syscalls_GCC.c.i:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Debug && $(MAKE) $(MAKESILENT) -f SeggerRTT\CMakeFiles\Segger_RTT.dir\build.make SeggerRTT/CMakeFiles/Segger_RTT.dir/Syscalls/SEGGER_RTT_Syscalls_GCC.c.i
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Debug && $(MAKE) $(MAKESILENT) -f SeggerRTT\CMakeFiles\Segger_RTT.dir\build.make SeggerRTT/CMakeFiles/Segger_RTT.dir/Syscalls/SEGGER_RTT_Syscalls_GCC.c.i
 .PHONY : Syscalls/SEGGER_RTT_Syscalls_GCC.c.i
 
 Syscalls/SEGGER_RTT_Syscalls_GCC.s: Syscalls/SEGGER_RTT_Syscalls_GCC.c.s
@@ -198,7 +198,7 @@ Syscalls/SEGGER_RTT_Syscalls_GCC.s: Syscalls/SEGGER_RTT_Syscalls_GCC.c.s
 
 # target to generate assembly for a file
 Syscalls/SEGGER_RTT_Syscalls_GCC.c.s:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Debug && $(MAKE) $(MAKESILENT) -f SeggerRTT\CMakeFiles\Segger_RTT.dir\build.make SeggerRTT/CMakeFiles/Segger_RTT.dir/Syscalls/SEGGER_RTT_Syscalls_GCC.c.s
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Debug && $(MAKE) $(MAKESILENT) -f SeggerRTT\CMakeFiles\Segger_RTT.dir\build.make SeggerRTT/CMakeFiles/Segger_RTT.dir/Syscalls/SEGGER_RTT_Syscalls_GCC.c.s
 .PHONY : Syscalls/SEGGER_RTT_Syscalls_GCC.c.s
 
 Syscalls/SEGGER_RTT_Syscalls_IAR.obj: Syscalls/SEGGER_RTT_Syscalls_IAR.c.obj
@@ -206,7 +206,7 @@ Syscalls/SEGGER_RTT_Syscalls_IAR.obj: Syscalls/SEGGER_RTT_Syscalls_IAR.c.obj
 
 # target to build an object file
 Syscalls/SEGGER_RTT_Syscalls_IAR.c.obj:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Debug && $(MAKE) $(MAKESILENT) -f SeggerRTT\CMakeFiles\Segger_RTT.dir\build.make SeggerRTT/CMakeFiles/Segger_RTT.dir/Syscalls/SEGGER_RTT_Syscalls_IAR.c.obj
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Debug && $(MAKE) $(MAKESILENT) -f SeggerRTT\CMakeFiles\Segger_RTT.dir\build.make SeggerRTT/CMakeFiles/Segger_RTT.dir/Syscalls/SEGGER_RTT_Syscalls_IAR.c.obj
 .PHONY : Syscalls/SEGGER_RTT_Syscalls_IAR.c.obj
 
 Syscalls/SEGGER_RTT_Syscalls_IAR.i: Syscalls/SEGGER_RTT_Syscalls_IAR.c.i
@@ -214,7 +214,7 @@ Syscalls/SEGGER_RTT_Syscalls_IAR.i: Syscalls/SEGGER_RTT_Syscalls_IAR.c.i
 
 # target to preprocess a source file
 Syscalls/SEGGER_RTT_Syscalls_IAR.c.i:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Debug && $(MAKE) $(MAKESILENT) -f SeggerRTT\CMakeFiles\Segger_RTT.dir\build.make SeggerRTT/CMakeFiles/Segger_RTT.dir/Syscalls/SEGGER_RTT_Syscalls_IAR.c.i
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Debug && $(MAKE) $(MAKESILENT) -f SeggerRTT\CMakeFiles\Segger_RTT.dir\build.make SeggerRTT/CMakeFiles/Segger_RTT.dir/Syscalls/SEGGER_RTT_Syscalls_IAR.c.i
 .PHONY : Syscalls/SEGGER_RTT_Syscalls_IAR.c.i
 
 Syscalls/SEGGER_RTT_Syscalls_IAR.s: Syscalls/SEGGER_RTT_Syscalls_IAR.c.s
@@ -222,7 +222,7 @@ Syscalls/SEGGER_RTT_Syscalls_IAR.s: Syscalls/SEGGER_RTT_Syscalls_IAR.c.s
 
 # target to generate assembly for a file
 Syscalls/SEGGER_RTT_Syscalls_IAR.c.s:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Debug && $(MAKE) $(MAKESILENT) -f SeggerRTT\CMakeFiles\Segger_RTT.dir\build.make SeggerRTT/CMakeFiles/Segger_RTT.dir/Syscalls/SEGGER_RTT_Syscalls_IAR.c.s
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Debug && $(MAKE) $(MAKESILENT) -f SeggerRTT\CMakeFiles\Segger_RTT.dir\build.make SeggerRTT/CMakeFiles/Segger_RTT.dir/Syscalls/SEGGER_RTT_Syscalls_IAR.c.s
 .PHONY : Syscalls/SEGGER_RTT_Syscalls_IAR.c.s
 
 Syscalls/SEGGER_RTT_Syscalls_KEIL.obj: Syscalls/SEGGER_RTT_Syscalls_KEIL.c.obj
@@ -230,7 +230,7 @@ Syscalls/SEGGER_RTT_Syscalls_KEIL.obj: Syscalls/SEGGER_RTT_Syscalls_KEIL.c.obj
 
 # target to build an object file
 Syscalls/SEGGER_RTT_Syscalls_KEIL.c.obj:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Debug && $(MAKE) $(MAKESILENT) -f SeggerRTT\CMakeFiles\Segger_RTT.dir\build.make SeggerRTT/CMakeFiles/Segger_RTT.dir/Syscalls/SEGGER_RTT_Syscalls_KEIL.c.obj
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Debug && $(MAKE) $(MAKESILENT) -f SeggerRTT\CMakeFiles\Segger_RTT.dir\build.make SeggerRTT/CMakeFiles/Segger_RTT.dir/Syscalls/SEGGER_RTT_Syscalls_KEIL.c.obj
 .PHONY : Syscalls/SEGGER_RTT_Syscalls_KEIL.c.obj
 
 Syscalls/SEGGER_RTT_Syscalls_KEIL.i: Syscalls/SEGGER_RTT_Syscalls_KEIL.c.i
@@ -238,7 +238,7 @@ Syscalls/SEGGER_RTT_Syscalls_KEIL.i: Syscalls/SEGGER_RTT_Syscalls_KEIL.c.i
 
 # target to preprocess a source file
 Syscalls/SEGGER_RTT_Syscalls_KEIL.c.i:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Debug && $(MAKE) $(MAKESILENT) -f SeggerRTT\CMakeFiles\Segger_RTT.dir\build.make SeggerRTT/CMakeFiles/Segger_RTT.dir/Syscalls/SEGGER_RTT_Syscalls_KEIL.c.i
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Debug && $(MAKE) $(MAKESILENT) -f SeggerRTT\CMakeFiles\Segger_RTT.dir\build.make SeggerRTT/CMakeFiles/Segger_RTT.dir/Syscalls/SEGGER_RTT_Syscalls_KEIL.c.i
 .PHONY : Syscalls/SEGGER_RTT_Syscalls_KEIL.c.i
 
 Syscalls/SEGGER_RTT_Syscalls_KEIL.s: Syscalls/SEGGER_RTT_Syscalls_KEIL.c.s
@@ -246,7 +246,7 @@ Syscalls/SEGGER_RTT_Syscalls_KEIL.s: Syscalls/SEGGER_RTT_Syscalls_KEIL.c.s
 
 # target to generate assembly for a file
 Syscalls/SEGGER_RTT_Syscalls_KEIL.c.s:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Debug && $(MAKE) $(MAKESILENT) -f SeggerRTT\CMakeFiles\Segger_RTT.dir\build.make SeggerRTT/CMakeFiles/Segger_RTT.dir/Syscalls/SEGGER_RTT_Syscalls_KEIL.c.s
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Debug && $(MAKE) $(MAKESILENT) -f SeggerRTT\CMakeFiles\Segger_RTT.dir\build.make SeggerRTT/CMakeFiles/Segger_RTT.dir/Syscalls/SEGGER_RTT_Syscalls_KEIL.c.s
 .PHONY : Syscalls/SEGGER_RTT_Syscalls_KEIL.c.s
 
 Syscalls/SEGGER_RTT_Syscalls_SES.obj: Syscalls/SEGGER_RTT_Syscalls_SES.c.obj
@@ -254,7 +254,7 @@ Syscalls/SEGGER_RTT_Syscalls_SES.obj: Syscalls/SEGGER_RTT_Syscalls_SES.c.obj
 
 # target to build an object file
 Syscalls/SEGGER_RTT_Syscalls_SES.c.obj:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Debug && $(MAKE) $(MAKESILENT) -f SeggerRTT\CMakeFiles\Segger_RTT.dir\build.make SeggerRTT/CMakeFiles/Segger_RTT.dir/Syscalls/SEGGER_RTT_Syscalls_SES.c.obj
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Debug && $(MAKE) $(MAKESILENT) -f SeggerRTT\CMakeFiles\Segger_RTT.dir\build.make SeggerRTT/CMakeFiles/Segger_RTT.dir/Syscalls/SEGGER_RTT_Syscalls_SES.c.obj
 .PHONY : Syscalls/SEGGER_RTT_Syscalls_SES.c.obj
 
 Syscalls/SEGGER_RTT_Syscalls_SES.i: Syscalls/SEGGER_RTT_Syscalls_SES.c.i
@@ -262,7 +262,7 @@ Syscalls/SEGGER_RTT_Syscalls_SES.i: Syscalls/SEGGER_RTT_Syscalls_SES.c.i
 
 # target to preprocess a source file
 Syscalls/SEGGER_RTT_Syscalls_SES.c.i:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Debug && $(MAKE) $(MAKESILENT) -f SeggerRTT\CMakeFiles\Segger_RTT.dir\build.make SeggerRTT/CMakeFiles/Segger_RTT.dir/Syscalls/SEGGER_RTT_Syscalls_SES.c.i
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Debug && $(MAKE) $(MAKESILENT) -f SeggerRTT\CMakeFiles\Segger_RTT.dir\build.make SeggerRTT/CMakeFiles/Segger_RTT.dir/Syscalls/SEGGER_RTT_Syscalls_SES.c.i
 .PHONY : Syscalls/SEGGER_RTT_Syscalls_SES.c.i
 
 Syscalls/SEGGER_RTT_Syscalls_SES.s: Syscalls/SEGGER_RTT_Syscalls_SES.c.s
@@ -270,7 +270,7 @@ Syscalls/SEGGER_RTT_Syscalls_SES.s: Syscalls/SEGGER_RTT_Syscalls_SES.c.s
 
 # target to generate assembly for a file
 Syscalls/SEGGER_RTT_Syscalls_SES.c.s:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Debug && $(MAKE) $(MAKESILENT) -f SeggerRTT\CMakeFiles\Segger_RTT.dir\build.make SeggerRTT/CMakeFiles/Segger_RTT.dir/Syscalls/SEGGER_RTT_Syscalls_SES.c.s
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Debug && $(MAKE) $(MAKESILENT) -f SeggerRTT\CMakeFiles\Segger_RTT.dir\build.make SeggerRTT/CMakeFiles/Segger_RTT.dir/Syscalls/SEGGER_RTT_Syscalls_SES.c.s
 .PHONY : Syscalls/SEGGER_RTT_Syscalls_SES.c.s
 
 # Help Target
@@ -311,6 +311,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 0
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

@@ -42,10 +42,10 @@ ARM GAS   			page 1
   39 0006 00000000 	 .4byte .Ldebug_abbrev0
   40 000a 04       	 .byte 0x4
   41 000b 01       	 .uleb128 0x1
-  42 000c 1A020000 	 .4byte .LASF50
+  42 000c 6D020000 	 .4byte .LASF50
   43 0010 04       	 .byte 0x4
-  44 0011 F2030000 	 .4byte .LASF51
-  45 0015 94040000 	 .4byte .LASF52
+  44 0011 1B050000 	 .4byte .LASF51
+  45 0015 1A020000 	 .4byte .LASF52
   46 0019 00000000 	 .4byte .Ldebug_line0
   47 001d 02       	 .uleb128 0x2
   48 001e 04       	 .byte 0x4
@@ -54,7 +54,7 @@ ARM GAS   			page 1
   51 0024 03       	 .uleb128 0x3
   52 0025 04       	 .byte 0x4
   53 0026 07       	 .byte 0x7
-  54 0027 03050000 	 .4byte .LASF0
+  54 0027 67040000 	 .4byte .LASF0
   55 002b 03       	 .uleb128 0x3
   56 002c 08       	 .byte 0x8
   57 002d 05       	 .byte 0x5
@@ -65,13 +65,13 @@ ARM GAS   			page 1
   59 0032 03       	 .uleb128 0x3
   60 0033 08       	 .byte 0x8
   61 0034 04       	 .byte 0x4
-  62 0035 C0050000 	 .4byte .LASF2
+  62 0035 AD050000 	 .4byte .LASF2
   63 0039 04       	 .uleb128 0x4
   64 003a 2D010000 	 .4byte .LASF53
   65 003e 03       	 .uleb128 0x3
   66 003f 01       	 .byte 0x1
   67 0040 06       	 .byte 0x6
-  68 0041 6C050000 	 .4byte .LASF3
+  68 0041 D0040000 	 .4byte .LASF3
   69 0045 03       	 .uleb128 0x3
   70 0046 01       	 .byte 0x1
   71 0047 08       	 .byte 0x8
@@ -79,11 +79,11 @@ ARM GAS   			page 1
   73 004c 03       	 .uleb128 0x3
   74 004d 02       	 .byte 0x2
   75 004e 05       	 .byte 0x5
-  76 004f 56060000 	 .4byte .LASF5
+  76 004f 43060000 	 .4byte .LASF5
   77 0053 03       	 .uleb128 0x3
   78 0054 02       	 .byte 0x2
   79 0055 07       	 .byte 0x7
-  80 0056 1C070000 	 .4byte .LASF6
+  80 0056 09070000 	 .4byte .LASF6
   81 005a 03       	 .uleb128 0x3
   82 005b 04       	 .byte 0x4
   83 005c 05       	 .byte 0x5
@@ -95,13 +95,13 @@ ARM GAS   			page 1
   89 0068 03       	 .uleb128 0x3
   90 0069 08       	 .byte 0x8
   91 006a 07       	 .byte 0x7
-  92 006b 3C050000 	 .4byte .LASF9
+  92 006b A0040000 	 .4byte .LASF9
   93 006f 05       	 .uleb128 0x5
   94 0070 04       	 .byte 0x4
   95 0071 03       	 .uleb128 0x3
   96 0072 01       	 .byte 0x1
   97 0073 08       	 .byte 0x8
-  98 0074 12060000 	 .4byte .LASF10
+  98 0074 FF050000 	 .4byte .LASF10
   99 0078 06       	 .uleb128 0x6
  100 0079 73746400 	 .ascii "std\000"
  101 007d 08       	 .byte 0x8
@@ -121,7 +121,7 @@ ARM GAS   			page 1
 ARM GAS   			page 3
 
 
- 115 0096 7F030000 	 .4byte .LASF11
+ 115 0096 D2030000 	 .4byte .LASF11
  116 009a 01       	 .byte 0x1
  117 009b 680A     	 .2byte 0xa68
  118 009d 0D       	 .byte 0xd
@@ -148,7 +148,7 @@ ARM GAS   			page 1
  139 00c7 0D       	 .uleb128 0xd
  140 00c8 9E000000 	 .4byte 0x9e
  141 00cc 0E       	 .uleb128 0xe
- 142 00cd F6060000 	 .4byte .LASF54
+ 142 00cd E3060000 	 .4byte .LASF54
  143 00d1 03       	 .byte 0x3
  144 00d2 53       	 .byte 0x53
  145 00d3 35       	 .byte 0x35
@@ -156,12 +156,12 @@ ARM GAS   			page 1
  147 00d8 01       	 .byte 0x1
  148 00d9 00       	 .byte 0
  149 00da 0F       	 .uleb128 0xf
- 150 00db 14070000 	 .4byte .LASF12
+ 150 00db 01070000 	 .4byte .LASF12
  151 00df 02       	 .byte 0x2
  152 00e0 32       	 .byte 0x32
  153 00e1 0D       	 .byte 0xd
  154 00e2 10       	 .uleb128 0x10
- 155 00e3 5C050000 	 .4byte .LASF39
+ 155 00e3 C0040000 	 .4byte .LASF39
  156 00e7 04       	 .byte 0x4
  157 00e8 35       	 .byte 0x35
  158 00e9 0D       	 .byte 0xd
@@ -174,7 +174,7 @@ ARM GAS   			page 1
  165 00f6 0B       	 .byte 0xb
  166 00f7 CF020000 	 .4byte 0x2cf
  167 00fb 12       	 .uleb128 0x12
- 168 00fc 42060000 	 .4byte .LASF55
+ 168 00fc 2F060000 	 .4byte .LASF55
  169 0100 04       	 .byte 0x4
  170 0101 52       	 .byte 0x52
  171 0102 0D       	 .byte 0xd
@@ -202,7 +202,7 @@ ARM GAS   			page 1
  190 0130 04       	 .byte 0x4
  191 0131 56       	 .byte 0x56
  192 0132 0C       	 .byte 0xc
- 193 0133 C0030000 	 .4byte .LASF19
+ 193 0133 13040000 	 .4byte .LASF19
  194 0137 3F010000 	 .4byte 0x13f
  195 013b 45010000 	 .4byte 0x145
  196 013f 0C       	 .uleb128 0xc
@@ -213,14 +213,14 @@ ARM GAS   			page 1
  201 014a 04       	 .byte 0x4
  202 014b 57       	 .byte 0x57
  203 014c 0C       	 .byte 0xc
- 204 014d C2060000 	 .4byte .LASF20
+ 204 014d AF060000 	 .4byte .LASF20
  205 0151 59010000 	 .4byte 0x159
  206 0155 5F010000 	 .4byte 0x15f
  207 0159 0C       	 .uleb128 0xc
  208 015a 8E030000 	 .4byte 0x38e
  209 015e 00       	 .byte 0
  210 015f 16       	 .uleb128 0x16
- 211 0160 2F070000 	 .4byte .LASF30
+ 211 0160 1C070000 	 .4byte .LASF30
  212 0164 04       	 .byte 0x4
  213 0165 59       	 .byte 0x59
  214 0166 0D       	 .byte 0xd
@@ -236,7 +236,7 @@ ARM GAS   			page 1
  224 0182 04       	 .byte 0x4
  225 0183 61       	 .byte 0x61
  226 0184 07       	 .byte 0x7
- 227 0185 60060000 	 .4byte .LASF21
+ 227 0185 4D060000 	 .4byte .LASF21
  228 0189 8E030000 	 .4byte 0x38e
 ARM GAS   			page 5
 
@@ -267,7 +267,7 @@ ARM GAS   			page 1
  252 01c5 04       	 .byte 0x4
  253 01c6 66       	 .byte 0x66
  254 01c7 07       	 .byte 0x7
- 255 01c8 17060000 	 .4byte .LASF23
+ 255 01c8 04060000 	 .4byte .LASF23
  256 01cc 8E030000 	 .4byte 0x38e
  257 01d0 01       	 .byte 0x1
  258 01d1 D9010000 	 .4byte 0x1d9
@@ -282,7 +282,7 @@ ARM GAS   			page 1
  267 01e9 04       	 .byte 0x4
  268 01ea 6A       	 .byte 0x6a
  269 01eb 07       	 .byte 0x7
- 270 01ec 93030000 	 .4byte .LASF24
+ 270 01ec E6030000 	 .4byte .LASF24
  271 01f0 8E030000 	 .4byte 0x38e
  272 01f4 01       	 .byte 0x1
  273 01f5 FD010000 	 .4byte 0x1fd
@@ -293,11 +293,11 @@ ARM GAS   			page 1
  278 0203 A0030000 	 .4byte 0x3a0
  279 0207 00       	 .byte 0
  280 0208 17       	 .uleb128 0x17
- 281 0209 0A070000 	 .4byte .LASF25
+ 281 0209 F7060000 	 .4byte .LASF25
  282 020d 04       	 .byte 0x4
  283 020e 77       	 .byte 0x77
  284 020f 07       	 .byte 0x7
- 285 0210 8A060000 	 .4byte .LASF26
+ 285 0210 77060000 	 .4byte .LASF26
 ARM GAS   			page 6
 
 
@@ -311,11 +311,11 @@ ARM GAS   			page 1
  293 0227 9A030000 	 .4byte 0x39a
  294 022b 00       	 .byte 0
  295 022c 17       	 .uleb128 0x17
- 296 022d 0A070000 	 .4byte .LASF25
+ 296 022d F7060000 	 .4byte .LASF25
  297 0231 04       	 .byte 0x4
  298 0232 7B       	 .byte 0x7b
  299 0233 07       	 .byte 0x7
- 300 0234 CC050000 	 .4byte .LASF27
+ 300 0234 B9050000 	 .4byte .LASF27
  301 0238 A6030000 	 .4byte 0x3a6
  302 023c 01       	 .byte 0x1
  303 023d 45020000 	 .4byte 0x245
@@ -355,14 +355,14 @@ ARM GAS   			page 1
  337 028f A6030000 	 .4byte 0x3a6
  338 0293 00       	 .byte 0
  339 0294 19       	 .uleb128 0x19
- 340 0295 F5040000 	 .4byte .LASF56
+ 340 0295 59040000 	 .4byte .LASF56
  341 0299 04       	 .byte 0x4
  342 029a 91       	 .byte 0x91
 ARM GAS   			page 7
 
 
  343 029b 10       	 .byte 0x10
- 344 029c 10050000 	 .4byte .LASF57
+ 344 029c 74040000 	 .4byte .LASF57
  345 02a0 52030000 	 .4byte 0x352
  346 02a4 01       	 .byte 0x1
  347 02a5 AD020000 	 .4byte 0x2ad
@@ -375,7 +375,7 @@ ARM GAS   			page 1
  354 02b8 04       	 .byte 0x4
  355 02b9 9A       	 .byte 0x9a
  356 02ba 07       	 .byte 0x7
- 357 02bb 78050000 	 .4byte .LASF35
+ 357 02bb DC040000 	 .4byte .LASF35
  358 02bf AC030000 	 .4byte 0x3ac
  359 02c3 01       	 .byte 0x1
  360 02c4 C8020000 	 .4byte 0x2c8
@@ -413,11 +413,11 @@ ARM GAS   			page 1
  392 0303 1D       	 .byte 0x1d
  393 0304 39000000 	 .4byte 0x39
  394 0308 1E       	 .uleb128 0x1e
- 395 0309 B8060000 	 .4byte .LASF59
+ 395 0309 A5060000 	 .4byte .LASF59
  396 030d 0D       	 .uleb128 0xd
  397 030e 08030000 	 .4byte 0x308
  398 0312 09       	 .uleb128 0x9
- 399 0313 09060000 	 .4byte .LASF38
+ 399 0313 F6050000 	 .4byte .LASF38
 ARM GAS   			page 8
 
 
@@ -426,7 +426,7 @@ ARM GAS   			page 1
  402 031a 0D       	 .byte 0xd
  403 031b 00       	 .byte 0
  404 031c 1F       	 .uleb128 0x1f
- 405 031d FF050000 	 .4byte .LASF40
+ 405 031d EC050000 	 .4byte .LASF40
  406 0321 06       	 .byte 0x6
  407 0322 2001     	 .2byte 0x120
  408 0324 0B       	 .byte 0xb
@@ -442,7 +442,7 @@ ARM GAS   			page 1
  418 0336 41       	 .byte 0x41
  419 0337 29030000 	 .4byte 0x329
  420 033b 0F       	 .uleb128 0xf
- 421 033c F9050000 	 .4byte .LASF42
+ 421 033c E6050000 	 .4byte .LASF42
  422 0340 07       	 .byte 0x7
  423 0341 23       	 .byte 0x23
  424 0342 0B       	 .byte 0xb
@@ -450,7 +450,7 @@ ARM GAS   			page 1
  426 0344 03       	 .uleb128 0x3
  427 0345 08       	 .byte 0x8
  428 0346 04       	 .byte 0x4
- 429 0347 78030000 	 .4byte .LASF43
+ 429 0347 CB030000 	 .4byte .LASF43
  430 034b 03       	 .uleb128 0x3
  431 034c 04       	 .byte 0x4
  432 034d 04       	 .byte 0x4
@@ -462,22 +462,22 @@ ARM GAS   			page 1
  438 0359 03       	 .uleb128 0x3
  439 035a 04       	 .byte 0x4
  440 035b 07       	 .byte 0x7
- 441 035c 8C040000 	 .4byte .LASF46
+ 441 035c 45040000 	 .4byte .LASF46
  442 0360 03       	 .uleb128 0x3
  443 0361 02       	 .byte 0x2
  444 0362 10       	 .byte 0x10
- 445 0363 53050000 	 .4byte .LASF47
+ 445 0363 B7040000 	 .4byte .LASF47
  446 0367 03       	 .uleb128 0x3
  447 0368 04       	 .byte 0x4
  448 0369 10       	 .byte 0x10
- 449 036a B7050000 	 .4byte .LASF48
+ 449 036a A4050000 	 .4byte .LASF48
  450 036e 20       	 .uleb128 0x20
  451 036f 04       	 .byte 0x4
  452 0370 9E000000 	 .4byte 0x9e
  453 0374 21       	 .uleb128 0x21
  454 0375 CC000000 	 .4byte 0xcc
  455 0379 10       	 .uleb128 0x10
- 456 037a E9040000 	 .4byte .LASF49
+ 456 037a 4D040000 	 .4byte .LASF49
 ARM GAS   			page 9
 
 
@@ -1247,244 +1247,240 @@ ARM GAS   			page 1
  1108 0210 6E756C6C 	 .ascii "nullptr_t\000"
  1108      7074725F 
  1108      7400
- 1109              	.LASF50:
- 1110 021a 474E5520 	 .ascii "GNU C++14 10.3.1 20210824 (release) -mcpu=cortex-m4"
- 1110      432B2B31 
- 1110      34203130 
- 1110      2E332E31 
- 1110      20323032 
- 1111 024d 202D6D66 	 .ascii " -mfloat-abi=hard -mfpu=fpv4-sp-d16 -mfix-cortex-m3"
- 1111      6C6F6174 
- 1111      2D616269 
- 1111      3D686172 
- 1111      64202D6D 
+ 1109              	.LASF52:
+ 1110 021a 433A5C55 	 .ascii "C:\\Users\\niels\\Documents\\GitHub\\DSP\\software\\"
+ 1110      73657273 
+ 1110      5C6E6965 
+ 1110      6C735C44 
+ 1110      6F63756D 
+ 1111 0247 6F706472 	 .ascii "opdracht5\\CLion\\Debug\\FreeRTOSOOSchil\000"
+ 1111      61636874 
+ 1111      355C434C 
+ 1111      696F6E5C 
+ 1111      44656275 
 ARM GAS   			page 22
 
 
- 1112 0280 2D6C6472 	 .ascii "-ldrd -mthumb -mno-unaligned-access -mapcs-frame -m"
- 1112      64202D6D 
- 1112      7468756D 
- 1112      62202D6D 
- 1112      6E6F2D75 
- 1113 02b3 61726368 	 .ascii "arch=armv7e-m+fp -g -g -O0 -std=c++14 -std=c++14 -s"
- 1113      3D61726D 
- 1113      7637652D 
- 1113      6D2B6670 
- 1113      202D6720 
- 1114 02e6 74643D67 	 .ascii "td=gnu++11 -std=c++14 -fsingle-precision-constant -"
- 1114      6E752B2B 
- 1114      3131202D 
- 1114      7374643D 
- 1114      632B2B31 
- 1115 0319 66756E73 	 .ascii "funsigned-char -ffunction-sections -fdata-sections "
- 1115      69676E65 
- 1115      642D6368 
- 1115      6172202D 
- 1115      6666756E 
- 1116 034c 2D666E6F 	 .ascii "-fno-rtti -fno-exceptions -finline-limit=20\000"
- 1116      2D727474 
- 1116      69202D66 
- 1116      6E6F2D65 
- 1116      78636570 
- 1117              	.LASF43:
- 1118 0378 646F7562 	 .ascii "double\000"
- 1118      6C6500
- 1119              	.LASF11:
- 1120 037f 5F5F7377 	 .ascii "__swappable_details\000"
- 1120      61707061 
- 1120      626C655F 
- 1120      64657461 
- 1120      696C7300 
- 1121              	.LASF24:
- 1122 0393 5F5A4E53 	 .ascii "_ZNSt15__exception_ptr13exception_ptrC4EOS0_\000"
- 1122      7431355F 
- 1122      5F657863 
- 1122      65707469 
- 1122      6F6E5F70 
- 1123              	.LASF19:
- 1124 03c0 5F5A4E53 	 .ascii "_ZNSt15__exception_ptr13exception_ptr9_M_addrefEv\000"
- 1124      7431355F 
- 1124      5F657863 
- 1124      65707469 
- 1124      6F6E5F70 
- 1125              	.LASF51:
- 1126 03f2 433A5C55 	 .ascii "C:\\Users\\niels\\Documents\\Elektrotechniek\\Jaar "
- 1126      73657273 
- 1126      5C6E6965 
- 1126      6C735C44 
- 1126      6F63756D 
- 1127 0420 335C6473 	 .ascii "3\\dspl\\software\\STM32Basis\\HAL\\gemeenschappeli"
- 1127      706C5C73 
- 1127      6F667477 
- 1127      6172655C 
- 1127      53544D33 
+ 1112              	.LASF50:
+ 1113 026d 474E5520 	 .ascii "GNU C++14 10.3.1 20210824 (release) -mcpu=cortex-m4"
+ 1113      432B2B31 
+ 1113      34203130 
+ 1113      2E332E31 
+ 1113      20323032 
+ 1114 02a0 202D6D66 	 .ascii " -mfloat-abi=hard -mfpu=fpv4-sp-d16 -mfix-cortex-m3"
+ 1114      6C6F6174 
+ 1114      2D616269 
+ 1114      3D686172 
+ 1114      64202D6D 
+ 1115 02d3 2D6C6472 	 .ascii "-ldrd -mthumb -mno-unaligned-access -mapcs-frame -m"
+ 1115      64202D6D 
+ 1115      7468756D 
+ 1115      62202D6D 
+ 1115      6E6F2D75 
+ 1116 0306 61726368 	 .ascii "arch=armv7e-m+fp -g -g -O0 -std=c++14 -std=c++14 -s"
+ 1116      3D61726D 
+ 1116      7637652D 
+ 1116      6D2B6670 
+ 1116      202D6720 
+ 1117 0339 74643D67 	 .ascii "td=gnu++11 -std=c++14 -fsingle-precision-constant -"
+ 1117      6E752B2B 
+ 1117      3131202D 
+ 1117      7374643D 
+ 1117      632B2B31 
+ 1118 036c 66756E73 	 .ascii "funsigned-char -ffunction-sections -fdata-sections "
+ 1118      69676E65 
+ 1118      642D6368 
+ 1118      6172202D 
+ 1118      6666756E 
+ 1119 039f 2D666E6F 	 .ascii "-fno-rtti -fno-exceptions -finline-limit=20\000"
+ 1119      2D727474 
+ 1119      69202D66 
+ 1119      6E6F2D65 
+ 1119      78636570 
+ 1120              	.LASF43:
+ 1121 03cb 646F7562 	 .ascii "double\000"
+ 1121      6C6500
+ 1122              	.LASF11:
+ 1123 03d2 5F5F7377 	 .ascii "__swappable_details\000"
+ 1123      61707061 
+ 1123      626C655F 
+ 1123      64657461 
+ 1123      696C7300 
+ 1124              	.LASF24:
+ 1125 03e6 5F5A4E53 	 .ascii "_ZNSt15__exception_ptr13exception_ptrC4EOS0_\000"
+ 1125      7431355F 
+ 1125      5F657863 
+ 1125      65707469 
+ 1125      6F6E5F70 
+ 1126              	.LASF19:
+ 1127 0413 5F5A4E53 	 .ascii "_ZNSt15__exception_ptr13exception_ptr9_M_addrefEv\000"
+ 1127      7431355F 
+ 1127      5F657863 
+ 1127      65707469 
+ 1127      6F6E5F70 
 ARM GAS   			page 23
 
 
- 1128 044e 6A6B5C54 	 .ascii "jk\\Third_Party\\freertos-addons-1.1.0\\c++\\Source"
- 1128      68697264 
- 1128      5F506172 
- 1128      74795C66 
- 1128      72656572 
- 1129 047d 5C637469 	 .ascii "\\ctickhook.cpp\000"
- 1129      636B686F 
- 1129      6F6B2E63 
- 1129      707000
- 1130              	.LASF46:
- 1131 048c 77636861 	 .ascii "wchar_t\000"
- 1131      725F7400 
- 1132              	.LASF52:
- 1133 0494 433A5C55 	 .ascii "C:\\Users\\niels\\DOCUME~1\\ELEKTR~1\\JAAR3~1\\dspl"
- 1133      73657273 
- 1133      5C6E6965 
- 1133      6C735C44 
- 1133      4F43554D 
- 1134 04c1 5C736F66 	 .ascii "\\software\\OP2A2E~1\\CLion\\Debug\\FREERT~1\000"
- 1134      74776172 
- 1134      655C4F50 
- 1134      32413245 
- 1134      7E315C43 
- 1135              	.LASF49:
- 1136 04e9 5F5F676E 	 .ascii "__gnu_debug\000"
- 1136      755F6465 
- 1136      62756700 
- 1137              	.LASF56:
- 1138 04f5 6F706572 	 .ascii "operator bool\000"
- 1138      61746F72 
- 1138      20626F6F 
- 1138      6C00
- 1139              	.LASF0:
- 1140 0503 756E7369 	 .ascii "unsigned int\000"
- 1140      676E6564 
- 1140      20696E74 
- 1140      00
- 1141              	.LASF57:
- 1142 0510 5F5A4E4B 	 .ascii "_ZNKSt15__exception_ptr13exception_ptrcvbEv\000"
- 1142      53743135 
- 1142      5F5F6578 
- 1142      63657074 
- 1142      696F6E5F 
- 1143              	.LASF9:
- 1144 053c 6C6F6E67 	 .ascii "long long unsigned int\000"
- 1144      206C6F6E 
- 1144      6720756E 
- 1144      7369676E 
- 1144      65642069 
- 1145              	.LASF47:
- 1146 0553 63686172 	 .ascii "char16_t\000"
- 1146      31365F74 
- 1146      00
- 1147              	.LASF39:
- 1148 055c 5F5F6578 	 .ascii "__exception_ptr\000"
- 1148      63657074 
- 1148      696F6E5F 
+ 1128              	.LASF46:
+ 1129 0445 77636861 	 .ascii "wchar_t\000"
+ 1129      725F7400 
+ 1130              	.LASF49:
+ 1131 044d 5F5F676E 	 .ascii "__gnu_debug\000"
+ 1131      755F6465 
+ 1131      62756700 
+ 1132              	.LASF56:
+ 1133 0459 6F706572 	 .ascii "operator bool\000"
+ 1133      61746F72 
+ 1133      20626F6F 
+ 1133      6C00
+ 1134              	.LASF0:
+ 1135 0467 756E7369 	 .ascii "unsigned int\000"
+ 1135      676E6564 
+ 1135      20696E74 
+ 1135      00
+ 1136              	.LASF57:
+ 1137 0474 5F5A4E4B 	 .ascii "_ZNKSt15__exception_ptr13exception_ptrcvbEv\000"
+ 1137      53743135 
+ 1137      5F5F6578 
+ 1137      63657074 
+ 1137      696F6E5F 
+ 1138              	.LASF9:
+ 1139 04a0 6C6F6E67 	 .ascii "long long unsigned int\000"
+ 1139      206C6F6E 
+ 1139      6720756E 
+ 1139      7369676E 
+ 1139      65642069 
+ 1140              	.LASF47:
+ 1141 04b7 63686172 	 .ascii "char16_t\000"
+ 1141      31365F74 
+ 1141      00
+ 1142              	.LASF39:
+ 1143 04c0 5F5F6578 	 .ascii "__exception_ptr\000"
+ 1143      63657074 
+ 1143      696F6E5F 
+ 1143      70747200 
+ 1144              	.LASF3:
+ 1145 04d0 7369676E 	 .ascii "signed char\000"
+ 1145      65642063 
+ 1145      68617200 
+ 1146              	.LASF35:
+ 1147 04dc 5F5A4E4B 	 .ascii "_ZNKSt15__exception_ptr13exception_ptr20__cxa_excep"
+ 1147      53743135 
+ 1147      5F5F6578 
+ 1147      63657074 
+ 1147      696F6E5F 
+ 1148 050f 74696F6E 	 .ascii "tion_typeEv\000"
+ 1148      5F747970 
+ 1148      65457600 
+ 1149              	.LASF51:
+ 1150 051b 433A5C55 	 .ascii "C:\\Users\\niels\\Documents\\GitHub\\DSP\\software\\"
+ 1150      73657273 
+ 1150      5C6E6965 
+ 1150      6C735C44 
+ 1150      6F63756D 
 ARM GAS   			page 24
 
 
- 1148      70747200 
- 1149              	.LASF3:
- 1150 056c 7369676E 	 .ascii "signed char\000"
- 1150      65642063 
- 1150      68617200 
- 1151              	.LASF35:
- 1152 0578 5F5A4E4B 	 .ascii "_ZNKSt15__exception_ptr13exception_ptr20__cxa_excep"
- 1152      53743135 
- 1152      5F5F6578 
- 1152      63657074 
- 1152      696F6E5F 
- 1153 05ab 74696F6E 	 .ascii "tion_typeEv\000"
- 1153      5F747970 
- 1153      65457600 
- 1154              	.LASF48:
- 1155 05b7 63686172 	 .ascii "char32_t\000"
- 1155      33325F74 
- 1155      00
- 1156              	.LASF2:
- 1157 05c0 6C6F6E67 	 .ascii "long double\000"
- 1157      20646F75 
- 1157      626C6500 
- 1158              	.LASF27:
- 1159 05cc 5F5A4E53 	 .ascii "_ZNSt15__exception_ptr13exception_ptraSEOS0_\000"
- 1159      7431355F 
- 1159      5F657863 
- 1159      65707469 
- 1159      6F6E5F70 
- 1160              	.LASF42:
- 1161 05f9 5F5F6F70 	 .ascii "__ops\000"
- 1161      7300
- 1162              	.LASF40:
- 1163 05ff 5F5F676E 	 .ascii "__gnu_cxx\000"
- 1163      755F6378 
- 1163      7800
- 1164              	.LASF38:
- 1165 0609 5F5F6465 	 .ascii "__detail\000"
- 1165      7461696C 
- 1165      00
- 1166              	.LASF10:
- 1167 0612 63686172 	 .ascii "char\000"
- 1167      00
- 1168              	.LASF23:
- 1169 0617 5F5A4E53 	 .ascii "_ZNSt15__exception_ptr13exception_ptrC4EDn\000"
- 1169      7431355F 
- 1169      5F657863 
- 1169      65707469 
- 1169      6F6E5F70 
- 1170              	.LASF55:
- 1171 0642 5F4D5F65 	 .ascii "_M_exception_object\000"
- 1171      78636570 
- 1171      74696F6E 
- 1171      5F6F626A 
- 1171      65637400 
- 1172              	.LASF5:
- 1173 0656 73686F72 	 .ascii "short int\000"
- 1173      7420696E 
+ 1151 0548 53544D33 	 .ascii "STM32Basis\\HAL\\gemeenschappelijk\\Third_Party\\fr"
+ 1151      32426173 
+ 1151      69735C48 
+ 1151      414C5C67 
+ 1151      656D6565 
+ 1152 0577 65657274 	 .ascii "eertos-addons-1.1.0\\c++\\Source\\ctickhook.cpp\000"
+ 1152      6F732D61 
+ 1152      64646F6E 
+ 1152      732D312E 
+ 1152      312E305C 
+ 1153              	.LASF48:
+ 1154 05a4 63686172 	 .ascii "char32_t\000"
+ 1154      33325F74 
+ 1154      00
+ 1155              	.LASF2:
+ 1156 05ad 6C6F6E67 	 .ascii "long double\000"
+ 1156      20646F75 
+ 1156      626C6500 
+ 1157              	.LASF27:
+ 1158 05b9 5F5A4E53 	 .ascii "_ZNSt15__exception_ptr13exception_ptraSEOS0_\000"
+ 1158      7431355F 
+ 1158      5F657863 
+ 1158      65707469 
+ 1158      6F6E5F70 
+ 1159              	.LASF42:
+ 1160 05e6 5F5F6F70 	 .ascii "__ops\000"
+ 1160      7300
+ 1161              	.LASF40:
+ 1162 05ec 5F5F676E 	 .ascii "__gnu_cxx\000"
+ 1162      755F6378 
+ 1162      7800
+ 1163              	.LASF38:
+ 1164 05f6 5F5F6465 	 .ascii "__detail\000"
+ 1164      7461696C 
+ 1164      00
+ 1165              	.LASF10:
+ 1166 05ff 63686172 	 .ascii "char\000"
+ 1166      00
+ 1167              	.LASF23:
+ 1168 0604 5F5A4E53 	 .ascii "_ZNSt15__exception_ptr13exception_ptrC4EDn\000"
+ 1168      7431355F 
+ 1168      5F657863 
+ 1168      65707469 
+ 1168      6F6E5F70 
+ 1169              	.LASF55:
+ 1170 062f 5F4D5F65 	 .ascii "_M_exception_object\000"
+ 1170      78636570 
+ 1170      74696F6E 
+ 1170      5F6F626A 
+ 1170      65637400 
+ 1171              	.LASF5:
+ 1172 0643 73686F72 	 .ascii "short int\000"
+ 1172      7420696E 
+ 1172      7400
+ 1173              	.LASF21:
+ 1174 064d 5F5A4E53 	 .ascii "_ZNSt15__exception_ptr13exception_ptrC4Ev\000"
+ 1174      7431355F 
 ARM GAS   			page 25
 
 
- 1173      7400
- 1174              	.LASF21:
- 1175 0660 5F5A4E53 	 .ascii "_ZNSt15__exception_ptr13exception_ptrC4Ev\000"
- 1175      7431355F 
- 1175      5F657863 
- 1175      65707469 
- 1175      6F6E5F70 
- 1176              	.LASF26:
- 1177 068a 5F5A4E53 	 .ascii "_ZNSt15__exception_ptr13exception_ptraSERKS0_\000"
- 1177      7431355F 
- 1177      5F657863 
- 1177      65707469 
- 1177      6F6E5F70 
- 1178              	.LASF59:
- 1179 06b8 74797065 	 .ascii "type_info\000"
- 1179      5F696E66 
- 1179      6F00
- 1180              	.LASF20:
- 1181 06c2 5F5A4E53 	 .ascii "_ZNSt15__exception_ptr13exception_ptr10_M_releaseEv"
- 1181      7431355F 
- 1181      5F657863 
- 1181      65707469 
- 1181      6F6E5F70 
- 1182 06f5 00       	 .ascii "\000"
- 1183              	.LASF54:
- 1184 06f6 70696563 	 .ascii "piecewise_construct\000"
- 1184      65776973 
- 1184      655F636F 
- 1184      6E737472 
- 1184      75637400 
- 1185              	.LASF25:
- 1186 070a 6F706572 	 .ascii "operator=\000"
- 1186      61746F72 
- 1186      3D00
- 1187              	.LASF12:
- 1188 0714 5F5F6465 	 .ascii "__debug\000"
- 1188      62756700 
- 1189              	.LASF6:
- 1190 071c 73686F72 	 .ascii "short unsigned int\000"
- 1190      7420756E 
- 1190      7369676E 
- 1190      65642069 
- 1190      6E7400
- 1191              	.LASF30:
- 1192 072f 5F4D5F67 	 .ascii "_M_get\000"
- 1192      657400
- 1193              	 .ident "GCC: (GNU Arm Embedded Toolchain 10.3-2021.10) 10.3.1 20210824 (release)"
+ 1174      5F657863 
+ 1174      65707469 
+ 1174      6F6E5F70 
+ 1175              	.LASF26:
+ 1176 0677 5F5A4E53 	 .ascii "_ZNSt15__exception_ptr13exception_ptraSERKS0_\000"
+ 1176      7431355F 
+ 1176      5F657863 
+ 1176      65707469 
+ 1176      6F6E5F70 
+ 1177              	.LASF59:
+ 1178 06a5 74797065 	 .ascii "type_info\000"
+ 1178      5F696E66 
+ 1178      6F00
+ 1179              	.LASF20:
+ 1180 06af 5F5A4E53 	 .ascii "_ZNSt15__exception_ptr13exception_ptr10_M_releaseEv"
+ 1180      7431355F 
+ 1180      5F657863 
+ 1180      65707469 
+ 1180      6F6E5F70 
+ 1181 06e2 00       	 .ascii "\000"
+ 1182              	.LASF54:
+ 1183 06e3 70696563 	 .ascii "piecewise_construct\000"
+ 1183      65776973 
+ 1183      655F636F 
+ 1183      6E737472 
+ 1183      75637400 
+ 1184              	.LASF25:
+ 1185 06f7 6F706572 	 .ascii "operator=\000"
+ 1185      61746F72 
+ 1185      3D00
+ 1186              	.LASF12:
+ 1187 0701 5F5F6465 	 .ascii "__debug\000"
+ 1187      62756700 
+ 1188              	.LASF6:
+ 1189 0709 73686F72 	 .ascii "short unsigned int\000"
+ 1189      7420756E 
+ 1189      7369676E 
+ 1189      65642069 
+ 1189      6E7400
+ 1190              	.LASF30:
+ 1191 071c 5F4D5F67 	 .ascii "_M_get\000"
+ 1191      657400
+ 1192              	 .ident "GCC: (GNU Arm Embedded Toolchain 10.3-2021.10) 10.3.1 20210824 (release)"

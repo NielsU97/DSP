@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "C:/Users/niels/Documents/Elektrotechniek/Jaar 3/dspl/software/opdracht4/STUDENT/filter/firfilter.cpp" "filter/CMakeFiles/FirFilterLib.dir/firfilter.cpp.obj" "gcc" "filter/CMakeFiles/FirFilterLib.dir/firfilter.cpp.obj.d"
+  "C:/Users/niels/Documents/GitHub/DSP/software/opdracht4/STUDENT/filter/firfilter.cpp" "filter/CMakeFiles/FirFilterLib.dir/firfilter.cpp.obj" "gcc" "filter/CMakeFiles/FirFilterLib.dir/firfilter.cpp.obj.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

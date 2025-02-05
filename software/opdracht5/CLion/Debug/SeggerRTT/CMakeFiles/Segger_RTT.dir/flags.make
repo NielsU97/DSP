@@ -8,15 +8,15 @@ C_INCLUDES = @CMakeFiles/Segger_RTT.dir/includes_C.rsp
 
 C_FLAGS = -mcpu=cortex-m4 -mfloat-abi=hard -mfpu=fpv4-sp-d16 -fsingle-precision-constant -mfix-cortex-m3-ldrd --std=c++14 -Wall -Wpointer-arith -Wswitch -Wredundant-decls -Wreturn-type -Wshadow -Wunused -Werror -Wno-psabi -mthumb -mno-unaligned-access -mapcs-frame -pipe -funsigned-char -ffunction-sections -fdata-sections  -g -fdiagnostics-color=always   -O0 -g -fno-default-inline
 
-# Custom flags: SeggerRTT/CMakeFiles/Segger_RTT.dir/RTT/SEGGER_RTT.c.obj_FLAGS = -Wa,-ahl="C:/Users/niels/Documents/Elektrotechniek/Jaar 3/dspl/software/opdracht5/CLion/Debug/SeggerRTT/SEGGER_RTT.c.lst"
+# Custom flags: SeggerRTT/CMakeFiles/Segger_RTT.dir/RTT/SEGGER_RTT.c.obj_FLAGS = -Wa,-ahl="C:/Users/niels/Documents/GitHub/DSP/software/opdracht5/CLion/Debug/SeggerRTT/SEGGER_RTT.c.lst"
 
-# Custom flags: SeggerRTT/CMakeFiles/Segger_RTT.dir/RTT/SEGGER_RTT_printf.c.obj_FLAGS = -Wa,-ahl="C:/Users/niels/Documents/Elektrotechniek/Jaar 3/dspl/software/opdracht5/CLion/Debug/SeggerRTT/SEGGER_RTT_printf.c.lst"
+# Custom flags: SeggerRTT/CMakeFiles/Segger_RTT.dir/RTT/SEGGER_RTT_printf.c.obj_FLAGS = -Wa,-ahl="C:/Users/niels/Documents/GitHub/DSP/software/opdracht5/CLion/Debug/SeggerRTT/SEGGER_RTT_printf.c.lst"
 
-# Custom flags: SeggerRTT/CMakeFiles/Segger_RTT.dir/Syscalls/SEGGER_RTT_Syscalls_GCC.c.obj_FLAGS = -Wa,-ahl="C:/Users/niels/Documents/Elektrotechniek/Jaar 3/dspl/software/opdracht5/CLion/Debug/SeggerRTT/SEGGER_RTT_Syscalls_GCC.c.lst"
+# Custom flags: SeggerRTT/CMakeFiles/Segger_RTT.dir/Syscalls/SEGGER_RTT_Syscalls_GCC.c.obj_FLAGS = -Wa,-ahl="C:/Users/niels/Documents/GitHub/DSP/software/opdracht5/CLion/Debug/SeggerRTT/SEGGER_RTT_Syscalls_GCC.c.lst"
 
-# Custom flags: SeggerRTT/CMakeFiles/Segger_RTT.dir/Syscalls/SEGGER_RTT_Syscalls_IAR.c.obj_FLAGS = -Wa,-ahl="C:/Users/niels/Documents/Elektrotechniek/Jaar 3/dspl/software/opdracht5/CLion/Debug/SeggerRTT/SEGGER_RTT_Syscalls_IAR.c.lst"
+# Custom flags: SeggerRTT/CMakeFiles/Segger_RTT.dir/Syscalls/SEGGER_RTT_Syscalls_IAR.c.obj_FLAGS = -Wa,-ahl="C:/Users/niels/Documents/GitHub/DSP/software/opdracht5/CLion/Debug/SeggerRTT/SEGGER_RTT_Syscalls_IAR.c.lst"
 
-# Custom flags: SeggerRTT/CMakeFiles/Segger_RTT.dir/Syscalls/SEGGER_RTT_Syscalls_KEIL.c.obj_FLAGS = -Wa,-ahl="C:/Users/niels/Documents/Elektrotechniek/Jaar 3/dspl/software/opdracht5/CLion/Debug/SeggerRTT/SEGGER_RTT_Syscalls_KEIL.c.lst"
+# Custom flags: SeggerRTT/CMakeFiles/Segger_RTT.dir/Syscalls/SEGGER_RTT_Syscalls_KEIL.c.obj_FLAGS = -Wa,-ahl="C:/Users/niels/Documents/GitHub/DSP/software/opdracht5/CLion/Debug/SeggerRTT/SEGGER_RTT_Syscalls_KEIL.c.lst"
 
-# Custom flags: SeggerRTT/CMakeFiles/Segger_RTT.dir/Syscalls/SEGGER_RTT_Syscalls_SES.c.obj_FLAGS = -Wa,-ahl="C:/Users/niels/Documents/Elektrotechniek/Jaar 3/dspl/software/opdracht5/CLion/Debug/SeggerRTT/SEGGER_RTT_Syscalls_SES.c.lst"
+# Custom flags: SeggerRTT/CMakeFiles/Segger_RTT.dir/Syscalls/SEGGER_RTT_Syscalls_SES.c.obj_FLAGS = -Wa,-ahl="C:/Users/niels/Documents/GitHub/DSP/software/opdracht5/CLion/Debug/SeggerRTT/SEGGER_RTT_Syscalls_SES.c.lst"
 

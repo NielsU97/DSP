@@ -56,10 +56,10 @@ RM = "C:\Program Files\JetBrains\CLion 2024.1.4\bin\cmake\win\x64\bin\cmake.exe"
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\opdracht5"
+CMAKE_SOURCE_DIR = C:\Users\niels\Documents\GitHub\DSP\software\opdracht5
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\opdracht5\CLion\Debug"
+CMAKE_BINARY_DIR = C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -86,14 +86,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Debug && $(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\opdracht5\CLion\Debug\CMakeFiles" "C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\opdracht5\CLion\Debug\Components\\CMakeFiles\progress.marks"
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Debug && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Components/all
-	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\opdracht5\CLion\Debug\CMakeFiles" 0
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Debug && $(CMAKE_COMMAND) -E cmake_progress_start C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Debug\CMakeFiles C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Debug\Components\\CMakeFiles\progress.marks
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Debug && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Components/all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Debug\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Debug && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Components/clean
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Debug && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Components/clean
 .PHONY : clean
 
 # The main clean target
@@ -102,22 +102,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Debug && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Components/preinstall
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Debug && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Components/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Debug && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Components/preinstall
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Debug && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Components/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 1
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 Components/CMakeFiles/ComponentsLib.dir/rule:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Debug && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Components/CMakeFiles/ComponentsLib.dir/rule
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Debug && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Components/CMakeFiles/ComponentsLib.dir/rule
 .PHONY : Components/CMakeFiles/ComponentsLib.dir/rule
 
 # Convenience name for target.
@@ -126,7 +126,7 @@ ComponentsLib: Components/CMakeFiles/ComponentsLib.dir/rule
 
 # fast build rule for target.
 ComponentsLib/fast:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Debug && $(MAKE) $(MAKESILENT) -f Components\CMakeFiles\ComponentsLib.dir\build.make Components/CMakeFiles/ComponentsLib.dir/build
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Debug && $(MAKE) $(MAKESILENT) -f Components\CMakeFiles\ComponentsLib.dir\build.make Components/CMakeFiles/ComponentsLib.dir/build
 .PHONY : ComponentsLib/fast
 
 cs43l22/cs43l22.obj: cs43l22/cs43l22.c.obj
@@ -134,7 +134,7 @@ cs43l22/cs43l22.obj: cs43l22/cs43l22.c.obj
 
 # target to build an object file
 cs43l22/cs43l22.c.obj:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Debug && $(MAKE) $(MAKESILENT) -f Components\CMakeFiles\ComponentsLib.dir\build.make Components/CMakeFiles/ComponentsLib.dir/cs43l22/cs43l22.c.obj
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Debug && $(MAKE) $(MAKESILENT) -f Components\CMakeFiles\ComponentsLib.dir\build.make Components/CMakeFiles/ComponentsLib.dir/cs43l22/cs43l22.c.obj
 .PHONY : cs43l22/cs43l22.c.obj
 
 cs43l22/cs43l22.i: cs43l22/cs43l22.c.i
@@ -142,7 +142,7 @@ cs43l22/cs43l22.i: cs43l22/cs43l22.c.i
 
 # target to preprocess a source file
 cs43l22/cs43l22.c.i:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Debug && $(MAKE) $(MAKESILENT) -f Components\CMakeFiles\ComponentsLib.dir\build.make Components/CMakeFiles/ComponentsLib.dir/cs43l22/cs43l22.c.i
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Debug && $(MAKE) $(MAKESILENT) -f Components\CMakeFiles\ComponentsLib.dir\build.make Components/CMakeFiles/ComponentsLib.dir/cs43l22/cs43l22.c.i
 .PHONY : cs43l22/cs43l22.c.i
 
 cs43l22/cs43l22.s: cs43l22/cs43l22.c.s
@@ -150,7 +150,7 @@ cs43l22/cs43l22.s: cs43l22/cs43l22.c.s
 
 # target to generate assembly for a file
 cs43l22/cs43l22.c.s:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Debug && $(MAKE) $(MAKESILENT) -f Components\CMakeFiles\ComponentsLib.dir\build.make Components/CMakeFiles/ComponentsLib.dir/cs43l22/cs43l22.c.s
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Debug && $(MAKE) $(MAKESILENT) -f Components\CMakeFiles\ComponentsLib.dir\build.make Components/CMakeFiles/ComponentsLib.dir/cs43l22/cs43l22.c.s
 .PHONY : cs43l22/cs43l22.c.s
 
 exc7200/exc7200.obj: exc7200/exc7200.c.obj
@@ -158,7 +158,7 @@ exc7200/exc7200.obj: exc7200/exc7200.c.obj
 
 # target to build an object file
 exc7200/exc7200.c.obj:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Debug && $(MAKE) $(MAKESILENT) -f Components\CMakeFiles\ComponentsLib.dir\build.make Components/CMakeFiles/ComponentsLib.dir/exc7200/exc7200.c.obj
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Debug && $(MAKE) $(MAKESILENT) -f Components\CMakeFiles\ComponentsLib.dir\build.make Components/CMakeFiles/ComponentsLib.dir/exc7200/exc7200.c.obj
 .PHONY : exc7200/exc7200.c.obj
 
 exc7200/exc7200.i: exc7200/exc7200.c.i
@@ -166,7 +166,7 @@ exc7200/exc7200.i: exc7200/exc7200.c.i
 
 # target to preprocess a source file
 exc7200/exc7200.c.i:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Debug && $(MAKE) $(MAKESILENT) -f Components\CMakeFiles\ComponentsLib.dir\build.make Components/CMakeFiles/ComponentsLib.dir/exc7200/exc7200.c.i
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Debug && $(MAKE) $(MAKESILENT) -f Components\CMakeFiles\ComponentsLib.dir\build.make Components/CMakeFiles/ComponentsLib.dir/exc7200/exc7200.c.i
 .PHONY : exc7200/exc7200.c.i
 
 exc7200/exc7200.s: exc7200/exc7200.c.s
@@ -174,7 +174,7 @@ exc7200/exc7200.s: exc7200/exc7200.c.s
 
 # target to generate assembly for a file
 exc7200/exc7200.c.s:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Debug && $(MAKE) $(MAKESILENT) -f Components\CMakeFiles\ComponentsLib.dir\build.make Components/CMakeFiles/ComponentsLib.dir/exc7200/exc7200.c.s
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Debug && $(MAKE) $(MAKESILENT) -f Components\CMakeFiles\ComponentsLib.dir\build.make Components/CMakeFiles/ComponentsLib.dir/exc7200/exc7200.c.s
 .PHONY : exc7200/exc7200.c.s
 
 ft6x06/ft6x06.obj: ft6x06/ft6x06.c.obj
@@ -182,7 +182,7 @@ ft6x06/ft6x06.obj: ft6x06/ft6x06.c.obj
 
 # target to build an object file
 ft6x06/ft6x06.c.obj:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Debug && $(MAKE) $(MAKESILENT) -f Components\CMakeFiles\ComponentsLib.dir\build.make Components/CMakeFiles/ComponentsLib.dir/ft6x06/ft6x06.c.obj
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Debug && $(MAKE) $(MAKESILENT) -f Components\CMakeFiles\ComponentsLib.dir\build.make Components/CMakeFiles/ComponentsLib.dir/ft6x06/ft6x06.c.obj
 .PHONY : ft6x06/ft6x06.c.obj
 
 ft6x06/ft6x06.i: ft6x06/ft6x06.c.i
@@ -190,7 +190,7 @@ ft6x06/ft6x06.i: ft6x06/ft6x06.c.i
 
 # target to preprocess a source file
 ft6x06/ft6x06.c.i:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Debug && $(MAKE) $(MAKESILENT) -f Components\CMakeFiles\ComponentsLib.dir\build.make Components/CMakeFiles/ComponentsLib.dir/ft6x06/ft6x06.c.i
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Debug && $(MAKE) $(MAKESILENT) -f Components\CMakeFiles\ComponentsLib.dir\build.make Components/CMakeFiles/ComponentsLib.dir/ft6x06/ft6x06.c.i
 .PHONY : ft6x06/ft6x06.c.i
 
 ft6x06/ft6x06.s: ft6x06/ft6x06.c.s
@@ -198,7 +198,7 @@ ft6x06/ft6x06.s: ft6x06/ft6x06.c.s
 
 # target to generate assembly for a file
 ft6x06/ft6x06.c.s:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Debug && $(MAKE) $(MAKESILENT) -f Components\CMakeFiles\ComponentsLib.dir\build.make Components/CMakeFiles/ComponentsLib.dir/ft6x06/ft6x06.c.s
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Debug && $(MAKE) $(MAKESILENT) -f Components\CMakeFiles\ComponentsLib.dir\build.make Components/CMakeFiles/ComponentsLib.dir/ft6x06/ft6x06.c.s
 .PHONY : ft6x06/ft6x06.c.s
 
 ili9325/ili9325.obj: ili9325/ili9325.c.obj
@@ -206,7 +206,7 @@ ili9325/ili9325.obj: ili9325/ili9325.c.obj
 
 # target to build an object file
 ili9325/ili9325.c.obj:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Debug && $(MAKE) $(MAKESILENT) -f Components\CMakeFiles\ComponentsLib.dir\build.make Components/CMakeFiles/ComponentsLib.dir/ili9325/ili9325.c.obj
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Debug && $(MAKE) $(MAKESILENT) -f Components\CMakeFiles\ComponentsLib.dir\build.make Components/CMakeFiles/ComponentsLib.dir/ili9325/ili9325.c.obj
 .PHONY : ili9325/ili9325.c.obj
 
 ili9325/ili9325.i: ili9325/ili9325.c.i
@@ -214,7 +214,7 @@ ili9325/ili9325.i: ili9325/ili9325.c.i
 
 # target to preprocess a source file
 ili9325/ili9325.c.i:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Debug && $(MAKE) $(MAKESILENT) -f Components\CMakeFiles\ComponentsLib.dir\build.make Components/CMakeFiles/ComponentsLib.dir/ili9325/ili9325.c.i
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Debug && $(MAKE) $(MAKESILENT) -f Components\CMakeFiles\ComponentsLib.dir\build.make Components/CMakeFiles/ComponentsLib.dir/ili9325/ili9325.c.i
 .PHONY : ili9325/ili9325.c.i
 
 ili9325/ili9325.s: ili9325/ili9325.c.s
@@ -222,7 +222,7 @@ ili9325/ili9325.s: ili9325/ili9325.c.s
 
 # target to generate assembly for a file
 ili9325/ili9325.c.s:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Debug && $(MAKE) $(MAKESILENT) -f Components\CMakeFiles\ComponentsLib.dir\build.make Components/CMakeFiles/ComponentsLib.dir/ili9325/ili9325.c.s
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Debug && $(MAKE) $(MAKESILENT) -f Components\CMakeFiles\ComponentsLib.dir\build.make Components/CMakeFiles/ComponentsLib.dir/ili9325/ili9325.c.s
 .PHONY : ili9325/ili9325.c.s
 
 ili9341/ili9341.obj: ili9341/ili9341.c.obj
@@ -230,7 +230,7 @@ ili9341/ili9341.obj: ili9341/ili9341.c.obj
 
 # target to build an object file
 ili9341/ili9341.c.obj:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Debug && $(MAKE) $(MAKESILENT) -f Components\CMakeFiles\ComponentsLib.dir\build.make Components/CMakeFiles/ComponentsLib.dir/ili9341/ili9341.c.obj
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Debug && $(MAKE) $(MAKESILENT) -f Components\CMakeFiles\ComponentsLib.dir\build.make Components/CMakeFiles/ComponentsLib.dir/ili9341/ili9341.c.obj
 .PHONY : ili9341/ili9341.c.obj
 
 ili9341/ili9341.i: ili9341/ili9341.c.i
@@ -238,7 +238,7 @@ ili9341/ili9341.i: ili9341/ili9341.c.i
 
 # target to preprocess a source file
 ili9341/ili9341.c.i:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Debug && $(MAKE) $(MAKESILENT) -f Components\CMakeFiles\ComponentsLib.dir\build.make Components/CMakeFiles/ComponentsLib.dir/ili9341/ili9341.c.i
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Debug && $(MAKE) $(MAKESILENT) -f Components\CMakeFiles\ComponentsLib.dir\build.make Components/CMakeFiles/ComponentsLib.dir/ili9341/ili9341.c.i
 .PHONY : ili9341/ili9341.c.i
 
 ili9341/ili9341.s: ili9341/ili9341.c.s
@@ -246,7 +246,7 @@ ili9341/ili9341.s: ili9341/ili9341.c.s
 
 # target to generate assembly for a file
 ili9341/ili9341.c.s:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Debug && $(MAKE) $(MAKESILENT) -f Components\CMakeFiles\ComponentsLib.dir\build.make Components/CMakeFiles/ComponentsLib.dir/ili9341/ili9341.c.s
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Debug && $(MAKE) $(MAKESILENT) -f Components\CMakeFiles\ComponentsLib.dir\build.make Components/CMakeFiles/ComponentsLib.dir/ili9341/ili9341.c.s
 .PHONY : ili9341/ili9341.c.s
 
 l3gd20/l3gd20.obj: l3gd20/l3gd20.c.obj
@@ -254,7 +254,7 @@ l3gd20/l3gd20.obj: l3gd20/l3gd20.c.obj
 
 # target to build an object file
 l3gd20/l3gd20.c.obj:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Debug && $(MAKE) $(MAKESILENT) -f Components\CMakeFiles\ComponentsLib.dir\build.make Components/CMakeFiles/ComponentsLib.dir/l3gd20/l3gd20.c.obj
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Debug && $(MAKE) $(MAKESILENT) -f Components\CMakeFiles\ComponentsLib.dir\build.make Components/CMakeFiles/ComponentsLib.dir/l3gd20/l3gd20.c.obj
 .PHONY : l3gd20/l3gd20.c.obj
 
 l3gd20/l3gd20.i: l3gd20/l3gd20.c.i
@@ -262,7 +262,7 @@ l3gd20/l3gd20.i: l3gd20/l3gd20.c.i
 
 # target to preprocess a source file
 l3gd20/l3gd20.c.i:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Debug && $(MAKE) $(MAKESILENT) -f Components\CMakeFiles\ComponentsLib.dir\build.make Components/CMakeFiles/ComponentsLib.dir/l3gd20/l3gd20.c.i
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Debug && $(MAKE) $(MAKESILENT) -f Components\CMakeFiles\ComponentsLib.dir\build.make Components/CMakeFiles/ComponentsLib.dir/l3gd20/l3gd20.c.i
 .PHONY : l3gd20/l3gd20.c.i
 
 l3gd20/l3gd20.s: l3gd20/l3gd20.c.s
@@ -270,7 +270,7 @@ l3gd20/l3gd20.s: l3gd20/l3gd20.c.s
 
 # target to generate assembly for a file
 l3gd20/l3gd20.c.s:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Debug && $(MAKE) $(MAKESILENT) -f Components\CMakeFiles\ComponentsLib.dir\build.make Components/CMakeFiles/ComponentsLib.dir/l3gd20/l3gd20.c.s
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Debug && $(MAKE) $(MAKESILENT) -f Components\CMakeFiles\ComponentsLib.dir\build.make Components/CMakeFiles/ComponentsLib.dir/l3gd20/l3gd20.c.s
 .PHONY : l3gd20/l3gd20.c.s
 
 lis302dl/lis302dl.obj: lis302dl/lis302dl.c.obj
@@ -278,7 +278,7 @@ lis302dl/lis302dl.obj: lis302dl/lis302dl.c.obj
 
 # target to build an object file
 lis302dl/lis302dl.c.obj:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Debug && $(MAKE) $(MAKESILENT) -f Components\CMakeFiles\ComponentsLib.dir\build.make Components/CMakeFiles/ComponentsLib.dir/lis302dl/lis302dl.c.obj
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Debug && $(MAKE) $(MAKESILENT) -f Components\CMakeFiles\ComponentsLib.dir\build.make Components/CMakeFiles/ComponentsLib.dir/lis302dl/lis302dl.c.obj
 .PHONY : lis302dl/lis302dl.c.obj
 
 lis302dl/lis302dl.i: lis302dl/lis302dl.c.i
@@ -286,7 +286,7 @@ lis302dl/lis302dl.i: lis302dl/lis302dl.c.i
 
 # target to preprocess a source file
 lis302dl/lis302dl.c.i:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Debug && $(MAKE) $(MAKESILENT) -f Components\CMakeFiles\ComponentsLib.dir\build.make Components/CMakeFiles/ComponentsLib.dir/lis302dl/lis302dl.c.i
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Debug && $(MAKE) $(MAKESILENT) -f Components\CMakeFiles\ComponentsLib.dir\build.make Components/CMakeFiles/ComponentsLib.dir/lis302dl/lis302dl.c.i
 .PHONY : lis302dl/lis302dl.c.i
 
 lis302dl/lis302dl.s: lis302dl/lis302dl.c.s
@@ -294,7 +294,7 @@ lis302dl/lis302dl.s: lis302dl/lis302dl.c.s
 
 # target to generate assembly for a file
 lis302dl/lis302dl.c.s:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Debug && $(MAKE) $(MAKESILENT) -f Components\CMakeFiles\ComponentsLib.dir\build.make Components/CMakeFiles/ComponentsLib.dir/lis302dl/lis302dl.c.s
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Debug && $(MAKE) $(MAKESILENT) -f Components\CMakeFiles\ComponentsLib.dir\build.make Components/CMakeFiles/ComponentsLib.dir/lis302dl/lis302dl.c.s
 .PHONY : lis302dl/lis302dl.c.s
 
 lis3dsh/lis3dsh.obj: lis3dsh/lis3dsh.c.obj
@@ -302,7 +302,7 @@ lis3dsh/lis3dsh.obj: lis3dsh/lis3dsh.c.obj
 
 # target to build an object file
 lis3dsh/lis3dsh.c.obj:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Debug && $(MAKE) $(MAKESILENT) -f Components\CMakeFiles\ComponentsLib.dir\build.make Components/CMakeFiles/ComponentsLib.dir/lis3dsh/lis3dsh.c.obj
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Debug && $(MAKE) $(MAKESILENT) -f Components\CMakeFiles\ComponentsLib.dir\build.make Components/CMakeFiles/ComponentsLib.dir/lis3dsh/lis3dsh.c.obj
 .PHONY : lis3dsh/lis3dsh.c.obj
 
 lis3dsh/lis3dsh.i: lis3dsh/lis3dsh.c.i
@@ -310,7 +310,7 @@ lis3dsh/lis3dsh.i: lis3dsh/lis3dsh.c.i
 
 # target to preprocess a source file
 lis3dsh/lis3dsh.c.i:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Debug && $(MAKE) $(MAKESILENT) -f Components\CMakeFiles\ComponentsLib.dir\build.make Components/CMakeFiles/ComponentsLib.dir/lis3dsh/lis3dsh.c.i
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Debug && $(MAKE) $(MAKESILENT) -f Components\CMakeFiles\ComponentsLib.dir\build.make Components/CMakeFiles/ComponentsLib.dir/lis3dsh/lis3dsh.c.i
 .PHONY : lis3dsh/lis3dsh.c.i
 
 lis3dsh/lis3dsh.s: lis3dsh/lis3dsh.c.s
@@ -318,7 +318,7 @@ lis3dsh/lis3dsh.s: lis3dsh/lis3dsh.c.s
 
 # target to generate assembly for a file
 lis3dsh/lis3dsh.c.s:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Debug && $(MAKE) $(MAKESILENT) -f Components\CMakeFiles\ComponentsLib.dir\build.make Components/CMakeFiles/ComponentsLib.dir/lis3dsh/lis3dsh.c.s
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Debug && $(MAKE) $(MAKESILENT) -f Components\CMakeFiles\ComponentsLib.dir\build.make Components/CMakeFiles/ComponentsLib.dir/lis3dsh/lis3dsh.c.s
 .PHONY : lis3dsh/lis3dsh.c.s
 
 ls016b8uy/ls016b8uy.obj: ls016b8uy/ls016b8uy.c.obj
@@ -326,7 +326,7 @@ ls016b8uy/ls016b8uy.obj: ls016b8uy/ls016b8uy.c.obj
 
 # target to build an object file
 ls016b8uy/ls016b8uy.c.obj:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Debug && $(MAKE) $(MAKESILENT) -f Components\CMakeFiles\ComponentsLib.dir\build.make Components/CMakeFiles/ComponentsLib.dir/ls016b8uy/ls016b8uy.c.obj
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Debug && $(MAKE) $(MAKESILENT) -f Components\CMakeFiles\ComponentsLib.dir\build.make Components/CMakeFiles/ComponentsLib.dir/ls016b8uy/ls016b8uy.c.obj
 .PHONY : ls016b8uy/ls016b8uy.c.obj
 
 ls016b8uy/ls016b8uy.i: ls016b8uy/ls016b8uy.c.i
@@ -334,7 +334,7 @@ ls016b8uy/ls016b8uy.i: ls016b8uy/ls016b8uy.c.i
 
 # target to preprocess a source file
 ls016b8uy/ls016b8uy.c.i:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Debug && $(MAKE) $(MAKESILENT) -f Components\CMakeFiles\ComponentsLib.dir\build.make Components/CMakeFiles/ComponentsLib.dir/ls016b8uy/ls016b8uy.c.i
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Debug && $(MAKE) $(MAKESILENT) -f Components\CMakeFiles\ComponentsLib.dir\build.make Components/CMakeFiles/ComponentsLib.dir/ls016b8uy/ls016b8uy.c.i
 .PHONY : ls016b8uy/ls016b8uy.c.i
 
 ls016b8uy/ls016b8uy.s: ls016b8uy/ls016b8uy.c.s
@@ -342,7 +342,7 @@ ls016b8uy/ls016b8uy.s: ls016b8uy/ls016b8uy.c.s
 
 # target to generate assembly for a file
 ls016b8uy/ls016b8uy.c.s:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Debug && $(MAKE) $(MAKESILENT) -f Components\CMakeFiles\ComponentsLib.dir\build.make Components/CMakeFiles/ComponentsLib.dir/ls016b8uy/ls016b8uy.c.s
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Debug && $(MAKE) $(MAKESILENT) -f Components\CMakeFiles\ComponentsLib.dir\build.make Components/CMakeFiles/ComponentsLib.dir/ls016b8uy/ls016b8uy.c.s
 .PHONY : ls016b8uy/ls016b8uy.c.s
 
 lsm303dlhc/lsm303dlhc.obj: lsm303dlhc/lsm303dlhc.c.obj
@@ -350,7 +350,7 @@ lsm303dlhc/lsm303dlhc.obj: lsm303dlhc/lsm303dlhc.c.obj
 
 # target to build an object file
 lsm303dlhc/lsm303dlhc.c.obj:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Debug && $(MAKE) $(MAKESILENT) -f Components\CMakeFiles\ComponentsLib.dir\build.make Components/CMakeFiles/ComponentsLib.dir/lsm303dlhc/lsm303dlhc.c.obj
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Debug && $(MAKE) $(MAKESILENT) -f Components\CMakeFiles\ComponentsLib.dir\build.make Components/CMakeFiles/ComponentsLib.dir/lsm303dlhc/lsm303dlhc.c.obj
 .PHONY : lsm303dlhc/lsm303dlhc.c.obj
 
 lsm303dlhc/lsm303dlhc.i: lsm303dlhc/lsm303dlhc.c.i
@@ -358,7 +358,7 @@ lsm303dlhc/lsm303dlhc.i: lsm303dlhc/lsm303dlhc.c.i
 
 # target to preprocess a source file
 lsm303dlhc/lsm303dlhc.c.i:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Debug && $(MAKE) $(MAKESILENT) -f Components\CMakeFiles\ComponentsLib.dir\build.make Components/CMakeFiles/ComponentsLib.dir/lsm303dlhc/lsm303dlhc.c.i
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Debug && $(MAKE) $(MAKESILENT) -f Components\CMakeFiles\ComponentsLib.dir\build.make Components/CMakeFiles/ComponentsLib.dir/lsm303dlhc/lsm303dlhc.c.i
 .PHONY : lsm303dlhc/lsm303dlhc.c.i
 
 lsm303dlhc/lsm303dlhc.s: lsm303dlhc/lsm303dlhc.c.s
@@ -366,7 +366,7 @@ lsm303dlhc/lsm303dlhc.s: lsm303dlhc/lsm303dlhc.c.s
 
 # target to generate assembly for a file
 lsm303dlhc/lsm303dlhc.c.s:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Debug && $(MAKE) $(MAKESILENT) -f Components\CMakeFiles\ComponentsLib.dir\build.make Components/CMakeFiles/ComponentsLib.dir/lsm303dlhc/lsm303dlhc.c.s
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Debug && $(MAKE) $(MAKESILENT) -f Components\CMakeFiles\ComponentsLib.dir\build.make Components/CMakeFiles/ComponentsLib.dir/lsm303dlhc/lsm303dlhc.c.s
 .PHONY : lsm303dlhc/lsm303dlhc.c.s
 
 mfxstm32l152/mfxstm32l152.obj: mfxstm32l152/mfxstm32l152.c.obj
@@ -374,7 +374,7 @@ mfxstm32l152/mfxstm32l152.obj: mfxstm32l152/mfxstm32l152.c.obj
 
 # target to build an object file
 mfxstm32l152/mfxstm32l152.c.obj:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Debug && $(MAKE) $(MAKESILENT) -f Components\CMakeFiles\ComponentsLib.dir\build.make Components/CMakeFiles/ComponentsLib.dir/mfxstm32l152/mfxstm32l152.c.obj
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Debug && $(MAKE) $(MAKESILENT) -f Components\CMakeFiles\ComponentsLib.dir\build.make Components/CMakeFiles/ComponentsLib.dir/mfxstm32l152/mfxstm32l152.c.obj
 .PHONY : mfxstm32l152/mfxstm32l152.c.obj
 
 mfxstm32l152/mfxstm32l152.i: mfxstm32l152/mfxstm32l152.c.i
@@ -382,7 +382,7 @@ mfxstm32l152/mfxstm32l152.i: mfxstm32l152/mfxstm32l152.c.i
 
 # target to preprocess a source file
 mfxstm32l152/mfxstm32l152.c.i:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Debug && $(MAKE) $(MAKESILENT) -f Components\CMakeFiles\ComponentsLib.dir\build.make Components/CMakeFiles/ComponentsLib.dir/mfxstm32l152/mfxstm32l152.c.i
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Debug && $(MAKE) $(MAKESILENT) -f Components\CMakeFiles\ComponentsLib.dir\build.make Components/CMakeFiles/ComponentsLib.dir/mfxstm32l152/mfxstm32l152.c.i
 .PHONY : mfxstm32l152/mfxstm32l152.c.i
 
 mfxstm32l152/mfxstm32l152.s: mfxstm32l152/mfxstm32l152.c.s
@@ -390,7 +390,7 @@ mfxstm32l152/mfxstm32l152.s: mfxstm32l152/mfxstm32l152.c.s
 
 # target to generate assembly for a file
 mfxstm32l152/mfxstm32l152.c.s:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Debug && $(MAKE) $(MAKESILENT) -f Components\CMakeFiles\ComponentsLib.dir\build.make Components/CMakeFiles/ComponentsLib.dir/mfxstm32l152/mfxstm32l152.c.s
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Debug && $(MAKE) $(MAKESILENT) -f Components\CMakeFiles\ComponentsLib.dir\build.make Components/CMakeFiles/ComponentsLib.dir/mfxstm32l152/mfxstm32l152.c.s
 .PHONY : mfxstm32l152/mfxstm32l152.c.s
 
 otm8009a/otm8009a.obj: otm8009a/otm8009a.c.obj
@@ -398,7 +398,7 @@ otm8009a/otm8009a.obj: otm8009a/otm8009a.c.obj
 
 # target to build an object file
 otm8009a/otm8009a.c.obj:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Debug && $(MAKE) $(MAKESILENT) -f Components\CMakeFiles\ComponentsLib.dir\build.make Components/CMakeFiles/ComponentsLib.dir/otm8009a/otm8009a.c.obj
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Debug && $(MAKE) $(MAKESILENT) -f Components\CMakeFiles\ComponentsLib.dir\build.make Components/CMakeFiles/ComponentsLib.dir/otm8009a/otm8009a.c.obj
 .PHONY : otm8009a/otm8009a.c.obj
 
 otm8009a/otm8009a.i: otm8009a/otm8009a.c.i
@@ -406,7 +406,7 @@ otm8009a/otm8009a.i: otm8009a/otm8009a.c.i
 
 # target to preprocess a source file
 otm8009a/otm8009a.c.i:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Debug && $(MAKE) $(MAKESILENT) -f Components\CMakeFiles\ComponentsLib.dir\build.make Components/CMakeFiles/ComponentsLib.dir/otm8009a/otm8009a.c.i
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Debug && $(MAKE) $(MAKESILENT) -f Components\CMakeFiles\ComponentsLib.dir\build.make Components/CMakeFiles/ComponentsLib.dir/otm8009a/otm8009a.c.i
 .PHONY : otm8009a/otm8009a.c.i
 
 otm8009a/otm8009a.s: otm8009a/otm8009a.c.s
@@ -414,7 +414,7 @@ otm8009a/otm8009a.s: otm8009a/otm8009a.c.s
 
 # target to generate assembly for a file
 otm8009a/otm8009a.c.s:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Debug && $(MAKE) $(MAKESILENT) -f Components\CMakeFiles\ComponentsLib.dir\build.make Components/CMakeFiles/ComponentsLib.dir/otm8009a/otm8009a.c.s
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Debug && $(MAKE) $(MAKESILENT) -f Components\CMakeFiles\ComponentsLib.dir\build.make Components/CMakeFiles/ComponentsLib.dir/otm8009a/otm8009a.c.s
 .PHONY : otm8009a/otm8009a.c.s
 
 ov2640/ov2640.obj: ov2640/ov2640.c.obj
@@ -422,7 +422,7 @@ ov2640/ov2640.obj: ov2640/ov2640.c.obj
 
 # target to build an object file
 ov2640/ov2640.c.obj:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Debug && $(MAKE) $(MAKESILENT) -f Components\CMakeFiles\ComponentsLib.dir\build.make Components/CMakeFiles/ComponentsLib.dir/ov2640/ov2640.c.obj
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Debug && $(MAKE) $(MAKESILENT) -f Components\CMakeFiles\ComponentsLib.dir\build.make Components/CMakeFiles/ComponentsLib.dir/ov2640/ov2640.c.obj
 .PHONY : ov2640/ov2640.c.obj
 
 ov2640/ov2640.i: ov2640/ov2640.c.i
@@ -430,7 +430,7 @@ ov2640/ov2640.i: ov2640/ov2640.c.i
 
 # target to preprocess a source file
 ov2640/ov2640.c.i:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Debug && $(MAKE) $(MAKESILENT) -f Components\CMakeFiles\ComponentsLib.dir\build.make Components/CMakeFiles/ComponentsLib.dir/ov2640/ov2640.c.i
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Debug && $(MAKE) $(MAKESILENT) -f Components\CMakeFiles\ComponentsLib.dir\build.make Components/CMakeFiles/ComponentsLib.dir/ov2640/ov2640.c.i
 .PHONY : ov2640/ov2640.c.i
 
 ov2640/ov2640.s: ov2640/ov2640.c.s
@@ -438,7 +438,7 @@ ov2640/ov2640.s: ov2640/ov2640.c.s
 
 # target to generate assembly for a file
 ov2640/ov2640.c.s:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Debug && $(MAKE) $(MAKESILENT) -f Components\CMakeFiles\ComponentsLib.dir\build.make Components/CMakeFiles/ComponentsLib.dir/ov2640/ov2640.c.s
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Debug && $(MAKE) $(MAKESILENT) -f Components\CMakeFiles\ComponentsLib.dir\build.make Components/CMakeFiles/ComponentsLib.dir/ov2640/ov2640.c.s
 .PHONY : ov2640/ov2640.c.s
 
 s5k5cag/s5k5cag.obj: s5k5cag/s5k5cag.c.obj
@@ -446,7 +446,7 @@ s5k5cag/s5k5cag.obj: s5k5cag/s5k5cag.c.obj
 
 # target to build an object file
 s5k5cag/s5k5cag.c.obj:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Debug && $(MAKE) $(MAKESILENT) -f Components\CMakeFiles\ComponentsLib.dir\build.make Components/CMakeFiles/ComponentsLib.dir/s5k5cag/s5k5cag.c.obj
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Debug && $(MAKE) $(MAKESILENT) -f Components\CMakeFiles\ComponentsLib.dir\build.make Components/CMakeFiles/ComponentsLib.dir/s5k5cag/s5k5cag.c.obj
 .PHONY : s5k5cag/s5k5cag.c.obj
 
 s5k5cag/s5k5cag.i: s5k5cag/s5k5cag.c.i
@@ -454,7 +454,7 @@ s5k5cag/s5k5cag.i: s5k5cag/s5k5cag.c.i
 
 # target to preprocess a source file
 s5k5cag/s5k5cag.c.i:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Debug && $(MAKE) $(MAKESILENT) -f Components\CMakeFiles\ComponentsLib.dir\build.make Components/CMakeFiles/ComponentsLib.dir/s5k5cag/s5k5cag.c.i
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Debug && $(MAKE) $(MAKESILENT) -f Components\CMakeFiles\ComponentsLib.dir\build.make Components/CMakeFiles/ComponentsLib.dir/s5k5cag/s5k5cag.c.i
 .PHONY : s5k5cag/s5k5cag.c.i
 
 s5k5cag/s5k5cag.s: s5k5cag/s5k5cag.c.s
@@ -462,7 +462,7 @@ s5k5cag/s5k5cag.s: s5k5cag/s5k5cag.c.s
 
 # target to generate assembly for a file
 s5k5cag/s5k5cag.c.s:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Debug && $(MAKE) $(MAKESILENT) -f Components\CMakeFiles\ComponentsLib.dir\build.make Components/CMakeFiles/ComponentsLib.dir/s5k5cag/s5k5cag.c.s
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Debug && $(MAKE) $(MAKESILENT) -f Components\CMakeFiles\ComponentsLib.dir\build.make Components/CMakeFiles/ComponentsLib.dir/s5k5cag/s5k5cag.c.s
 .PHONY : s5k5cag/s5k5cag.c.s
 
 st7735/st7735.obj: st7735/st7735.c.obj
@@ -470,7 +470,7 @@ st7735/st7735.obj: st7735/st7735.c.obj
 
 # target to build an object file
 st7735/st7735.c.obj:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Debug && $(MAKE) $(MAKESILENT) -f Components\CMakeFiles\ComponentsLib.dir\build.make Components/CMakeFiles/ComponentsLib.dir/st7735/st7735.c.obj
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Debug && $(MAKE) $(MAKESILENT) -f Components\CMakeFiles\ComponentsLib.dir\build.make Components/CMakeFiles/ComponentsLib.dir/st7735/st7735.c.obj
 .PHONY : st7735/st7735.c.obj
 
 st7735/st7735.i: st7735/st7735.c.i
@@ -478,7 +478,7 @@ st7735/st7735.i: st7735/st7735.c.i
 
 # target to preprocess a source file
 st7735/st7735.c.i:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Debug && $(MAKE) $(MAKESILENT) -f Components\CMakeFiles\ComponentsLib.dir\build.make Components/CMakeFiles/ComponentsLib.dir/st7735/st7735.c.i
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Debug && $(MAKE) $(MAKESILENT) -f Components\CMakeFiles\ComponentsLib.dir\build.make Components/CMakeFiles/ComponentsLib.dir/st7735/st7735.c.i
 .PHONY : st7735/st7735.c.i
 
 st7735/st7735.s: st7735/st7735.c.s
@@ -486,7 +486,7 @@ st7735/st7735.s: st7735/st7735.c.s
 
 # target to generate assembly for a file
 st7735/st7735.c.s:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Debug && $(MAKE) $(MAKESILENT) -f Components\CMakeFiles\ComponentsLib.dir\build.make Components/CMakeFiles/ComponentsLib.dir/st7735/st7735.c.s
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Debug && $(MAKE) $(MAKESILENT) -f Components\CMakeFiles\ComponentsLib.dir\build.make Components/CMakeFiles/ComponentsLib.dir/st7735/st7735.c.s
 .PHONY : st7735/st7735.c.s
 
 st7789h2/st7789h2.obj: st7789h2/st7789h2.c.obj
@@ -494,7 +494,7 @@ st7789h2/st7789h2.obj: st7789h2/st7789h2.c.obj
 
 # target to build an object file
 st7789h2/st7789h2.c.obj:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Debug && $(MAKE) $(MAKESILENT) -f Components\CMakeFiles\ComponentsLib.dir\build.make Components/CMakeFiles/ComponentsLib.dir/st7789h2/st7789h2.c.obj
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Debug && $(MAKE) $(MAKESILENT) -f Components\CMakeFiles\ComponentsLib.dir\build.make Components/CMakeFiles/ComponentsLib.dir/st7789h2/st7789h2.c.obj
 .PHONY : st7789h2/st7789h2.c.obj
 
 st7789h2/st7789h2.i: st7789h2/st7789h2.c.i
@@ -502,7 +502,7 @@ st7789h2/st7789h2.i: st7789h2/st7789h2.c.i
 
 # target to preprocess a source file
 st7789h2/st7789h2.c.i:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Debug && $(MAKE) $(MAKESILENT) -f Components\CMakeFiles\ComponentsLib.dir\build.make Components/CMakeFiles/ComponentsLib.dir/st7789h2/st7789h2.c.i
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Debug && $(MAKE) $(MAKESILENT) -f Components\CMakeFiles\ComponentsLib.dir\build.make Components/CMakeFiles/ComponentsLib.dir/st7789h2/st7789h2.c.i
 .PHONY : st7789h2/st7789h2.c.i
 
 st7789h2/st7789h2.s: st7789h2/st7789h2.c.s
@@ -510,7 +510,7 @@ st7789h2/st7789h2.s: st7789h2/st7789h2.c.s
 
 # target to generate assembly for a file
 st7789h2/st7789h2.c.s:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Debug && $(MAKE) $(MAKESILENT) -f Components\CMakeFiles\ComponentsLib.dir\build.make Components/CMakeFiles/ComponentsLib.dir/st7789h2/st7789h2.c.s
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Debug && $(MAKE) $(MAKESILENT) -f Components\CMakeFiles\ComponentsLib.dir\build.make Components/CMakeFiles/ComponentsLib.dir/st7789h2/st7789h2.c.s
 .PHONY : st7789h2/st7789h2.c.s
 
 stmpe1600/stmpe1600.obj: stmpe1600/stmpe1600.c.obj
@@ -518,7 +518,7 @@ stmpe1600/stmpe1600.obj: stmpe1600/stmpe1600.c.obj
 
 # target to build an object file
 stmpe1600/stmpe1600.c.obj:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Debug && $(MAKE) $(MAKESILENT) -f Components\CMakeFiles\ComponentsLib.dir\build.make Components/CMakeFiles/ComponentsLib.dir/stmpe1600/stmpe1600.c.obj
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Debug && $(MAKE) $(MAKESILENT) -f Components\CMakeFiles\ComponentsLib.dir\build.make Components/CMakeFiles/ComponentsLib.dir/stmpe1600/stmpe1600.c.obj
 .PHONY : stmpe1600/stmpe1600.c.obj
 
 stmpe1600/stmpe1600.i: stmpe1600/stmpe1600.c.i
@@ -526,7 +526,7 @@ stmpe1600/stmpe1600.i: stmpe1600/stmpe1600.c.i
 
 # target to preprocess a source file
 stmpe1600/stmpe1600.c.i:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Debug && $(MAKE) $(MAKESILENT) -f Components\CMakeFiles\ComponentsLib.dir\build.make Components/CMakeFiles/ComponentsLib.dir/stmpe1600/stmpe1600.c.i
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Debug && $(MAKE) $(MAKESILENT) -f Components\CMakeFiles\ComponentsLib.dir\build.make Components/CMakeFiles/ComponentsLib.dir/stmpe1600/stmpe1600.c.i
 .PHONY : stmpe1600/stmpe1600.c.i
 
 stmpe1600/stmpe1600.s: stmpe1600/stmpe1600.c.s
@@ -534,7 +534,7 @@ stmpe1600/stmpe1600.s: stmpe1600/stmpe1600.c.s
 
 # target to generate assembly for a file
 stmpe1600/stmpe1600.c.s:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Debug && $(MAKE) $(MAKESILENT) -f Components\CMakeFiles\ComponentsLib.dir\build.make Components/CMakeFiles/ComponentsLib.dir/stmpe1600/stmpe1600.c.s
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Debug && $(MAKE) $(MAKESILENT) -f Components\CMakeFiles\ComponentsLib.dir\build.make Components/CMakeFiles/ComponentsLib.dir/stmpe1600/stmpe1600.c.s
 .PHONY : stmpe1600/stmpe1600.c.s
 
 stmpe811/stmpe811.obj: stmpe811/stmpe811.c.obj
@@ -542,7 +542,7 @@ stmpe811/stmpe811.obj: stmpe811/stmpe811.c.obj
 
 # target to build an object file
 stmpe811/stmpe811.c.obj:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Debug && $(MAKE) $(MAKESILENT) -f Components\CMakeFiles\ComponentsLib.dir\build.make Components/CMakeFiles/ComponentsLib.dir/stmpe811/stmpe811.c.obj
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Debug && $(MAKE) $(MAKESILENT) -f Components\CMakeFiles\ComponentsLib.dir\build.make Components/CMakeFiles/ComponentsLib.dir/stmpe811/stmpe811.c.obj
 .PHONY : stmpe811/stmpe811.c.obj
 
 stmpe811/stmpe811.i: stmpe811/stmpe811.c.i
@@ -550,7 +550,7 @@ stmpe811/stmpe811.i: stmpe811/stmpe811.c.i
 
 # target to preprocess a source file
 stmpe811/stmpe811.c.i:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Debug && $(MAKE) $(MAKESILENT) -f Components\CMakeFiles\ComponentsLib.dir\build.make Components/CMakeFiles/ComponentsLib.dir/stmpe811/stmpe811.c.i
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Debug && $(MAKE) $(MAKESILENT) -f Components\CMakeFiles\ComponentsLib.dir\build.make Components/CMakeFiles/ComponentsLib.dir/stmpe811/stmpe811.c.i
 .PHONY : stmpe811/stmpe811.c.i
 
 stmpe811/stmpe811.s: stmpe811/stmpe811.c.s
@@ -558,7 +558,7 @@ stmpe811/stmpe811.s: stmpe811/stmpe811.c.s
 
 # target to generate assembly for a file
 stmpe811/stmpe811.c.s:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Debug && $(MAKE) $(MAKESILENT) -f Components\CMakeFiles\ComponentsLib.dir\build.make Components/CMakeFiles/ComponentsLib.dir/stmpe811/stmpe811.c.s
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Debug && $(MAKE) $(MAKESILENT) -f Components\CMakeFiles\ComponentsLib.dir\build.make Components/CMakeFiles/ComponentsLib.dir/stmpe811/stmpe811.c.s
 .PHONY : stmpe811/stmpe811.c.s
 
 ts3510/ts3510.obj: ts3510/ts3510.c.obj
@@ -566,7 +566,7 @@ ts3510/ts3510.obj: ts3510/ts3510.c.obj
 
 # target to build an object file
 ts3510/ts3510.c.obj:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Debug && $(MAKE) $(MAKESILENT) -f Components\CMakeFiles\ComponentsLib.dir\build.make Components/CMakeFiles/ComponentsLib.dir/ts3510/ts3510.c.obj
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Debug && $(MAKE) $(MAKESILENT) -f Components\CMakeFiles\ComponentsLib.dir\build.make Components/CMakeFiles/ComponentsLib.dir/ts3510/ts3510.c.obj
 .PHONY : ts3510/ts3510.c.obj
 
 ts3510/ts3510.i: ts3510/ts3510.c.i
@@ -574,7 +574,7 @@ ts3510/ts3510.i: ts3510/ts3510.c.i
 
 # target to preprocess a source file
 ts3510/ts3510.c.i:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Debug && $(MAKE) $(MAKESILENT) -f Components\CMakeFiles\ComponentsLib.dir\build.make Components/CMakeFiles/ComponentsLib.dir/ts3510/ts3510.c.i
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Debug && $(MAKE) $(MAKESILENT) -f Components\CMakeFiles\ComponentsLib.dir\build.make Components/CMakeFiles/ComponentsLib.dir/ts3510/ts3510.c.i
 .PHONY : ts3510/ts3510.c.i
 
 ts3510/ts3510.s: ts3510/ts3510.c.s
@@ -582,7 +582,7 @@ ts3510/ts3510.s: ts3510/ts3510.c.s
 
 # target to generate assembly for a file
 ts3510/ts3510.c.s:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Debug && $(MAKE) $(MAKESILENT) -f Components\CMakeFiles\ComponentsLib.dir\build.make Components/CMakeFiles/ComponentsLib.dir/ts3510/ts3510.c.s
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Debug && $(MAKE) $(MAKESILENT) -f Components\CMakeFiles\ComponentsLib.dir\build.make Components/CMakeFiles/ComponentsLib.dir/ts3510/ts3510.c.s
 .PHONY : ts3510/ts3510.c.s
 
 wm8994/wm8994.obj: wm8994/wm8994.c.obj
@@ -590,7 +590,7 @@ wm8994/wm8994.obj: wm8994/wm8994.c.obj
 
 # target to build an object file
 wm8994/wm8994.c.obj:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Debug && $(MAKE) $(MAKESILENT) -f Components\CMakeFiles\ComponentsLib.dir\build.make Components/CMakeFiles/ComponentsLib.dir/wm8994/wm8994.c.obj
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Debug && $(MAKE) $(MAKESILENT) -f Components\CMakeFiles\ComponentsLib.dir\build.make Components/CMakeFiles/ComponentsLib.dir/wm8994/wm8994.c.obj
 .PHONY : wm8994/wm8994.c.obj
 
 wm8994/wm8994.i: wm8994/wm8994.c.i
@@ -598,7 +598,7 @@ wm8994/wm8994.i: wm8994/wm8994.c.i
 
 # target to preprocess a source file
 wm8994/wm8994.c.i:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Debug && $(MAKE) $(MAKESILENT) -f Components\CMakeFiles\ComponentsLib.dir\build.make Components/CMakeFiles/ComponentsLib.dir/wm8994/wm8994.c.i
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Debug && $(MAKE) $(MAKESILENT) -f Components\CMakeFiles\ComponentsLib.dir\build.make Components/CMakeFiles/ComponentsLib.dir/wm8994/wm8994.c.i
 .PHONY : wm8994/wm8994.c.i
 
 wm8994/wm8994.s: wm8994/wm8994.c.s
@@ -606,7 +606,7 @@ wm8994/wm8994.s: wm8994/wm8994.c.s
 
 # target to generate assembly for a file
 wm8994/wm8994.c.s:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Debug && $(MAKE) $(MAKESILENT) -f Components\CMakeFiles\ComponentsLib.dir\build.make Components/CMakeFiles/ComponentsLib.dir/wm8994/wm8994.c.s
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Debug && $(MAKE) $(MAKESILENT) -f Components\CMakeFiles\ComponentsLib.dir\build.make Components/CMakeFiles/ComponentsLib.dir/wm8994/wm8994.c.s
 .PHONY : wm8994/wm8994.c.s
 
 # Help Target
@@ -689,6 +689,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 0
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/niels/Documents/Elektrotechniek/Jaar 3/dspl/software/STM32Basis/HAL/gemeenschappelijk/Libraries/CMSIS/Device/ST/STM32F4xx
+# Install script for directory: C:/Users/niels/Documents/GitHub/DSP/software/STM32Basis/HAL/gemeenschappelijk/Libraries/CMSIS/Device/ST/STM32F4xx
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

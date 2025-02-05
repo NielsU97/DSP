@@ -56,10 +56,10 @@ RM = "C:\Program Files\JetBrains\CLion 2024.1.4\bin\cmake\win\x64\bin\cmake.exe"
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\opdracht5"
+CMAKE_SOURCE_DIR = C:\Users\niels\Documents\GitHub\DSP\software\opdracht5
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\opdracht5\CLion\Release"
+CMAKE_BINARY_DIR = C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -86,14 +86,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\opdracht5\CLion\Release\CMakeFiles" "C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\opdracht5\CLion\Release\filter\\CMakeFiles\progress.marks"
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 filter/all
-	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\opdracht5\CLion\Release\CMakeFiles" 0
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(CMAKE_COMMAND) -E cmake_progress_start C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release\CMakeFiles C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release\filter\\CMakeFiles\progress.marks
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 filter/all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 filter/clean
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 filter/clean
 .PHONY : clean
 
 # The main clean target
@@ -102,22 +102,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 filter/preinstall
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 filter/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 filter/preinstall
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 filter/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 1
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 filter/CMakeFiles/FirFilterLib.dir/rule:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 filter/CMakeFiles/FirFilterLib.dir/rule
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 filter/CMakeFiles/FirFilterLib.dir/rule
 .PHONY : filter/CMakeFiles/FirFilterLib.dir/rule
 
 # Convenience name for target.
@@ -126,7 +126,7 @@ FirFilterLib: filter/CMakeFiles/FirFilterLib.dir/rule
 
 # fast build rule for target.
 FirFilterLib/fast:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f filter\CMakeFiles\FirFilterLib.dir\build.make filter/CMakeFiles/FirFilterLib.dir/build
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f filter\CMakeFiles\FirFilterLib.dir\build.make filter/CMakeFiles/FirFilterLib.dir/build
 .PHONY : FirFilterLib/fast
 
 firfilter.obj: firfilter.cpp.obj
@@ -134,7 +134,7 @@ firfilter.obj: firfilter.cpp.obj
 
 # target to build an object file
 firfilter.cpp.obj:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f filter\CMakeFiles\FirFilterLib.dir\build.make filter/CMakeFiles/FirFilterLib.dir/firfilter.cpp.obj
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f filter\CMakeFiles\FirFilterLib.dir\build.make filter/CMakeFiles/FirFilterLib.dir/firfilter.cpp.obj
 .PHONY : firfilter.cpp.obj
 
 firfilter.i: firfilter.cpp.i
@@ -142,7 +142,7 @@ firfilter.i: firfilter.cpp.i
 
 # target to preprocess a source file
 firfilter.cpp.i:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f filter\CMakeFiles\FirFilterLib.dir\build.make filter/CMakeFiles/FirFilterLib.dir/firfilter.cpp.i
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f filter\CMakeFiles\FirFilterLib.dir\build.make filter/CMakeFiles/FirFilterLib.dir/firfilter.cpp.i
 .PHONY : firfilter.cpp.i
 
 firfilter.s: firfilter.cpp.s
@@ -150,7 +150,7 @@ firfilter.s: firfilter.cpp.s
 
 # target to generate assembly for a file
 firfilter.cpp.s:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f filter\CMakeFiles\FirFilterLib.dir\build.make filter/CMakeFiles/FirFilterLib.dir/firfilter.cpp.s
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f filter\CMakeFiles\FirFilterLib.dir\build.make filter/CMakeFiles/FirFilterLib.dir/firfilter.cpp.s
 .PHONY : firfilter.cpp.s
 
 # Help Target
@@ -176,6 +176,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 0
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

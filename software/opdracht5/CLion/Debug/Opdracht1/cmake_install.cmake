@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/niels/Documents/Elektrotechniek/Jaar 3/dspl/software/opdracht1
+# Install script for directory: C:/Users/niels/Documents/GitHub/DSP/software/opdracht1
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

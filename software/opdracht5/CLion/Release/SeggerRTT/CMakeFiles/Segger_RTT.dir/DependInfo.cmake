@@ -8,12 +8,12 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "C:/Users/niels/Documents/Elektrotechniek/Jaar 3/dspl/software/STM32Basis/Segger/Segger_RTT/RTT/SEGGER_RTT.c" "SeggerRTT/CMakeFiles/Segger_RTT.dir/RTT/SEGGER_RTT.c.obj" "gcc" "SeggerRTT/CMakeFiles/Segger_RTT.dir/RTT/SEGGER_RTT.c.obj.d"
-  "C:/Users/niels/Documents/Elektrotechniek/Jaar 3/dspl/software/STM32Basis/Segger/Segger_RTT/RTT/SEGGER_RTT_printf.c" "SeggerRTT/CMakeFiles/Segger_RTT.dir/RTT/SEGGER_RTT_printf.c.obj" "gcc" "SeggerRTT/CMakeFiles/Segger_RTT.dir/RTT/SEGGER_RTT_printf.c.obj.d"
-  "C:/Users/niels/Documents/Elektrotechniek/Jaar 3/dspl/software/STM32Basis/Segger/Segger_RTT/Syscalls/SEGGER_RTT_Syscalls_GCC.c" "SeggerRTT/CMakeFiles/Segger_RTT.dir/Syscalls/SEGGER_RTT_Syscalls_GCC.c.obj" "gcc" "SeggerRTT/CMakeFiles/Segger_RTT.dir/Syscalls/SEGGER_RTT_Syscalls_GCC.c.obj.d"
-  "C:/Users/niels/Documents/Elektrotechniek/Jaar 3/dspl/software/STM32Basis/Segger/Segger_RTT/Syscalls/SEGGER_RTT_Syscalls_IAR.c" "SeggerRTT/CMakeFiles/Segger_RTT.dir/Syscalls/SEGGER_RTT_Syscalls_IAR.c.obj" "gcc" "SeggerRTT/CMakeFiles/Segger_RTT.dir/Syscalls/SEGGER_RTT_Syscalls_IAR.c.obj.d"
-  "C:/Users/niels/Documents/Elektrotechniek/Jaar 3/dspl/software/STM32Basis/Segger/Segger_RTT/Syscalls/SEGGER_RTT_Syscalls_KEIL.c" "SeggerRTT/CMakeFiles/Segger_RTT.dir/Syscalls/SEGGER_RTT_Syscalls_KEIL.c.obj" "gcc" "SeggerRTT/CMakeFiles/Segger_RTT.dir/Syscalls/SEGGER_RTT_Syscalls_KEIL.c.obj.d"
-  "C:/Users/niels/Documents/Elektrotechniek/Jaar 3/dspl/software/STM32Basis/Segger/Segger_RTT/Syscalls/SEGGER_RTT_Syscalls_SES.c" "SeggerRTT/CMakeFiles/Segger_RTT.dir/Syscalls/SEGGER_RTT_Syscalls_SES.c.obj" "gcc" "SeggerRTT/CMakeFiles/Segger_RTT.dir/Syscalls/SEGGER_RTT_Syscalls_SES.c.obj.d"
+  "C:/Users/niels/Documents/GitHub/DSP/software/STM32Basis/Segger/Segger_RTT/RTT/SEGGER_RTT.c" "SeggerRTT/CMakeFiles/Segger_RTT.dir/RTT/SEGGER_RTT.c.obj" "gcc" "SeggerRTT/CMakeFiles/Segger_RTT.dir/RTT/SEGGER_RTT.c.obj.d"
+  "C:/Users/niels/Documents/GitHub/DSP/software/STM32Basis/Segger/Segger_RTT/RTT/SEGGER_RTT_printf.c" "SeggerRTT/CMakeFiles/Segger_RTT.dir/RTT/SEGGER_RTT_printf.c.obj" "gcc" "SeggerRTT/CMakeFiles/Segger_RTT.dir/RTT/SEGGER_RTT_printf.c.obj.d"
+  "C:/Users/niels/Documents/GitHub/DSP/software/STM32Basis/Segger/Segger_RTT/Syscalls/SEGGER_RTT_Syscalls_GCC.c" "SeggerRTT/CMakeFiles/Segger_RTT.dir/Syscalls/SEGGER_RTT_Syscalls_GCC.c.obj" "gcc" "SeggerRTT/CMakeFiles/Segger_RTT.dir/Syscalls/SEGGER_RTT_Syscalls_GCC.c.obj.d"
+  "C:/Users/niels/Documents/GitHub/DSP/software/STM32Basis/Segger/Segger_RTT/Syscalls/SEGGER_RTT_Syscalls_IAR.c" "SeggerRTT/CMakeFiles/Segger_RTT.dir/Syscalls/SEGGER_RTT_Syscalls_IAR.c.obj" "gcc" "SeggerRTT/CMakeFiles/Segger_RTT.dir/Syscalls/SEGGER_RTT_Syscalls_IAR.c.obj.d"
+  "C:/Users/niels/Documents/GitHub/DSP/software/STM32Basis/Segger/Segger_RTT/Syscalls/SEGGER_RTT_Syscalls_KEIL.c" "SeggerRTT/CMakeFiles/Segger_RTT.dir/Syscalls/SEGGER_RTT_Syscalls_KEIL.c.obj" "gcc" "SeggerRTT/CMakeFiles/Segger_RTT.dir/Syscalls/SEGGER_RTT_Syscalls_KEIL.c.obj.d"
+  "C:/Users/niels/Documents/GitHub/DSP/software/STM32Basis/Segger/Segger_RTT/Syscalls/SEGGER_RTT_Syscalls_SES.c" "SeggerRTT/CMakeFiles/Segger_RTT.dir/Syscalls/SEGGER_RTT_Syscalls_SES.c.obj" "gcc" "SeggerRTT/CMakeFiles/Segger_RTT.dir/Syscalls/SEGGER_RTT_Syscalls_SES.c.obj.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

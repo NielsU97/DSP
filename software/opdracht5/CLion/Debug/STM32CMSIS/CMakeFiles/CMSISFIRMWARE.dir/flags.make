@@ -5,7 +5,7 @@
 # compile C with C:/Program Files (x86)/GNU Arm Embedded Toolchain/10 2021.10/bin/arm-none-eabi-g++.exe
 ASM-ATT_DEFINES = -DARMCORTEXM4 -DInterfaceTaalNederlands -DSTM32F412 -DSTM32F412Zx -DSTM32F41x -DUSE_FULL_ASSERT -DUSE_HAL_DRIVER
 
-ASM-ATT_INCLUDES = -IC:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\Basis\h -IC:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\..\STM32B~1\GEMEEN~1\basis\h -IC:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\..\algemeen\h -IC:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Debug\GEGENE~1 -IC:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\config -IC:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\..\STM32B~1\HAL\GEMEEN~1\LIBRAR~1\CMSIS\Include -IC:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\..\STM32B~1\HAL\GEMEEN~1\LIBRAR~1\CMSIS\Device\ST\STM32F~1\Include -IC:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\..\STM32B~1\HAL\GEMEEN~1\LIBRAR~1\STM32F~1\Inc
+ASM-ATT_INCLUDES = -IC:\Users\niels\Documents\GitHub\DSP\software\opdracht5\Basis\h -IC:\Users\niels\Documents\GitHub\DSP\software\opdracht5\..\STM32Basis\gemeenschappelijk\basis\h -IC:\Users\niels\Documents\GitHub\DSP\software\opdracht5\..\algemeen\h -IC:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Debug\gegenereerd -IC:\Users\niels\Documents\GitHub\DSP\software\opdracht5\config -IC:\Users\niels\Documents\GitHub\DSP\software\opdracht5\..\STM32Basis\HAL\gemeenschappelijk\Libraries\CMSIS\Include -IC:\Users\niels\Documents\GitHub\DSP\software\opdracht5\..\STM32Basis\HAL\gemeenschappelijk\Libraries\CMSIS\Device\ST\STM32F4xx\Include -IC:\Users\niels\Documents\GitHub\DSP\software\opdracht5\..\STM32Basis\HAL\gemeenschappelijk\Libraries\STM32F4xx_HAL_Driver\Inc
 
 ASM-ATT_FLAGS = -mcpu=cortex-m4 -c -mthumb -mno-unaligned-access -I. -x assembler-with-cpp    -O0 -g -fno-default-inline
 
@@ -15,7 +15,7 @@ C_INCLUDES = @CMakeFiles/CMSISFIRMWARE.dir/includes_C.rsp
 
 C_FLAGS = -mcpu=cortex-m4 -mfloat-abi=hard -mfpu=fpv4-sp-d16 -fsingle-precision-constant -mfix-cortex-m3-ldrd --std=c++14 -Wall -Wpointer-arith -Wswitch -Wredundant-decls -Wreturn-type -Wshadow -Wunused -Werror -Wno-psabi -mthumb -mno-unaligned-access -mapcs-frame -pipe -funsigned-char -ffunction-sections -fdata-sections  -g -fdiagnostics-color=always   -O0 -g -fno-default-inline
 
-# Custom flags: STM32CMSIS/CMakeFiles/CMSISFIRMWARE.dir/Source/Templates/system_stm32f4xx.c.obj_FLAGS = -Wa,-ahl="C:/Users/niels/Documents/Elektrotechniek/Jaar 3/dspl/software/opdracht5/CLion/Debug/STM32CMSIS/system_stm32f4xx.c.lst"
+# Custom flags: STM32CMSIS/CMakeFiles/CMSISFIRMWARE.dir/Source/Templates/system_stm32f4xx.c.obj_FLAGS = -Wa,-ahl="C:/Users/niels/Documents/GitHub/DSP/software/opdracht5/CLion/Debug/STM32CMSIS/system_stm32f4xx.c.lst"
 
-# Custom flags: STM32CMSIS/CMakeFiles/CMSISFIRMWARE.dir/Source/Templates/gcc/startup_stm32f412zx.s.obj_FLAGS = -Wa,-ahl="C:/Users/niels/Documents/Elektrotechniek/Jaar 3/dspl/software/opdracht5/CLion/Debug/STM32CMSIS/startup_stm32f412zx.s.lst"
+# Custom flags: STM32CMSIS/CMakeFiles/CMSISFIRMWARE.dir/Source/Templates/gcc/startup_stm32f412zx.s.obj_FLAGS = -Wa,-ahl="C:/Users/niels/Documents/GitHub/DSP/software/opdracht5/CLion/Debug/STM32CMSIS/startup_stm32f412zx.s.lst"
 

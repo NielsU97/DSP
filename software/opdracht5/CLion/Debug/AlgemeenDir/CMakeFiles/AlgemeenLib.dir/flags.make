@@ -8,5 +8,5 @@ CXX_INCLUDES = @CMakeFiles/AlgemeenLib.dir/includes_CXX.rsp
 
 CXX_FLAGS = -mcpu=cortex-m4 -mfloat-abi=hard -mfpu=fpv4-sp-d16 -fsingle-precision-constant -mfix-cortex-m3-ldrd --std=c++14 -Wall -Wpointer-arith -Wswitch -Wredundant-decls -Wreturn-type -Wshadow -Wunused -Werror -Wno-psabi -mthumb -mno-unaligned-access -mapcs-frame -pipe -funsigned-char -ffunction-sections -fdata-sections  --std=c++14 -fno-rtti -fno-exceptions --std=gnu++0x -Wctor-dtor-privacy -Wnon-virtual-dtor -finline-limit=20 -g -std=c++14 -fdiagnostics-color=always   -O0 -g -fno-default-inline
 
-# Custom flags: AlgemeenDir/CMakeFiles/AlgemeenLib.dir/algdef.cpp.obj_FLAGS = -Wa,-ahl="C:/Users/niels/Documents/Elektrotechniek/Jaar 3/dspl/software/opdracht5/CLion/Debug/AlgemeenDir/algdef.cpp.lst"
+# Custom flags: AlgemeenDir/CMakeFiles/AlgemeenLib.dir/algdef.cpp.obj_FLAGS = -Wa,-ahl="C:/Users/niels/Documents/GitHub/DSP/software/opdracht5/CLion/Debug/AlgemeenDir/algdef.cpp.lst"
 

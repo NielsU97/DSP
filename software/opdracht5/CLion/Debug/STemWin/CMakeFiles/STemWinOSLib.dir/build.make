@@ -52,10 +52,10 @@ RM = "C:\Program Files\JetBrains\CLion 2024.1.4\bin\cmake\win\x64\bin\cmake.exe"
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\opdracht5"
+CMAKE_SOURCE_DIR = C:\Users\niels\Documents\GitHub\DSP\software\opdracht5
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\opdracht5\CLion\Debug"
+CMAKE_BINARY_DIR = C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Debug
 
 # Include any dependencies generated for this target.
 include STemWin/CMakeFiles/STemWinOSLib.dir/depend.make
@@ -70,18 +70,18 @@ include STemWin/CMakeFiles/STemWinOSLib.dir/flags.make
 
 STemWin/CMakeFiles/STemWinOSLib.dir/OS/GUI_X_OS.c.obj: STemWin/CMakeFiles/STemWinOSLib.dir/flags.make
 STemWin/CMakeFiles/STemWinOSLib.dir/OS/GUI_X_OS.c.obj: STemWin/CMakeFiles/STemWinOSLib.dir/includes_C.rsp
-STemWin/CMakeFiles/STemWinOSLib.dir/OS/GUI_X_OS.c.obj: C:/Users/niels/Documents/Elektrotechniek/Jaar\ 3/dspl/software/STM32Basis/HAL/gemeenschappelijk/Libraries/Middlewares/ST/STemWin/OS/GUI_X_OS.c
+STemWin/CMakeFiles/STemWinOSLib.dir/OS/GUI_X_OS.c.obj: C:/Users/niels/Documents/GitHub/DSP/software/STM32Basis/HAL/gemeenschappelijk/Libraries/Middlewares/ST/STemWin/OS/GUI_X_OS.c
 STemWin/CMakeFiles/STemWinOSLib.dir/OS/GUI_X_OS.c.obj: STemWin/CMakeFiles/STemWinOSLib.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\opdracht5\CLion\Debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building C object STemWin/CMakeFiles/STemWinOSLib.dir/OS/GUI_X_OS.c.obj"
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Debug\STemWin && C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR10B2~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wa,-ahl="C:/Users/niels/Documents/Elektrotechniek/Jaar 3/dspl/software/opdracht5/CLion/Debug/STemWin/GUI_X_OS.c.lst" -MD -MT STemWin/CMakeFiles/STemWinOSLib.dir/OS/GUI_X_OS.c.obj -MF CMakeFiles\STemWinOSLib.dir\OS\GUI_X_OS.c.obj.d -o CMakeFiles\STemWinOSLib.dir\OS\GUI_X_OS.c.obj -c "C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object STemWin/CMakeFiles/STemWinOSLib.dir/OS/GUI_X_OS.c.obj"
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Debug\STemWin && C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR10B2~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wa,-ahl="C:/Users/niels/Documents/GitHub/DSP/software/opdracht5/CLion/Debug/STemWin/GUI_X_OS.c.lst" -MD -MT STemWin/CMakeFiles/STemWinOSLib.dir/OS/GUI_X_OS.c.obj -MF CMakeFiles\STemWinOSLib.dir\OS\GUI_X_OS.c.obj.d -o CMakeFiles\STemWinOSLib.dir\OS\GUI_X_OS.c.obj -c C:\Users\niels\Documents\GitHub\DSP\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c
 
 STemWin/CMakeFiles/STemWinOSLib.dir/OS/GUI_X_OS.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/STemWinOSLib.dir/OS/GUI_X_OS.c.i"
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Debug\STemWin && C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR10B2~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wa,-ahl="C:/Users/niels/Documents/Elektrotechniek/Jaar 3/dspl/software/opdracht5/CLion/Debug/STemWin/GUI_X_OS.c.lst" -E "C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c" > CMakeFiles\STemWinOSLib.dir\OS\GUI_X_OS.c.i
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Debug\STemWin && C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR10B2~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wa,-ahl="C:/Users/niels/Documents/GitHub/DSP/software/opdracht5/CLion/Debug/STemWin/GUI_X_OS.c.lst" -E C:\Users\niels\Documents\GitHub\DSP\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c > CMakeFiles\STemWinOSLib.dir\OS\GUI_X_OS.c.i
 
 STemWin/CMakeFiles/STemWinOSLib.dir/OS/GUI_X_OS.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/STemWinOSLib.dir/OS/GUI_X_OS.c.s"
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Debug\STemWin && C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR10B2~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wa,-ahl="C:/Users/niels/Documents/Elektrotechniek/Jaar 3/dspl/software/opdracht5/CLion/Debug/STemWin/GUI_X_OS.c.lst" -S "C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c" -o CMakeFiles\STemWinOSLib.dir\OS\GUI_X_OS.c.s
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Debug\STemWin && C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR10B2~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wa,-ahl="C:/Users/niels/Documents/GitHub/DSP/software/opdracht5/CLion/Debug/STemWin/GUI_X_OS.c.lst" -S C:\Users\niels\Documents\GitHub\DSP\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c -o CMakeFiles\STemWinOSLib.dir\OS\GUI_X_OS.c.s
 
 # Object files for target STemWinOSLib
 STemWinOSLib_OBJECTS = \
@@ -93,19 +93,19 @@ STemWinOSLib_EXTERNAL_OBJECTS =
 STemWin/libSTemWinOSLib.a: STemWin/CMakeFiles/STemWinOSLib.dir/OS/GUI_X_OS.c.obj
 STemWin/libSTemWinOSLib.a: STemWin/CMakeFiles/STemWinOSLib.dir/build.make
 STemWin/libSTemWinOSLib.a: STemWin/CMakeFiles/STemWinOSLib.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir="C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\opdracht5\CLion\Debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Linking C static library libSTemWinOSLib.a"
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Debug\STemWin && $(CMAKE_COMMAND) -P CMakeFiles\STemWinOSLib.dir\cmake_clean_target.cmake
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Debug\STemWin && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\STemWinOSLib.dir\link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C static library libSTemWinOSLib.a"
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Debug\STemWin && $(CMAKE_COMMAND) -P CMakeFiles\STemWinOSLib.dir\cmake_clean_target.cmake
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Debug\STemWin && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\STemWinOSLib.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 STemWin/CMakeFiles/STemWinOSLib.dir/build: STemWin/libSTemWinOSLib.a
 .PHONY : STemWin/CMakeFiles/STemWinOSLib.dir/build
 
 STemWin/CMakeFiles/STemWinOSLib.dir/clean:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Debug\STemWin && $(CMAKE_COMMAND) -P CMakeFiles\STemWinOSLib.dir\cmake_clean.cmake
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Debug\STemWin && $(CMAKE_COMMAND) -P CMakeFiles\STemWinOSLib.dir\cmake_clean.cmake
 .PHONY : STemWin/CMakeFiles/STemWinOSLib.dir/clean
 
 STemWin/CMakeFiles/STemWinOSLib.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" "C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\opdracht5" "C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin" "C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\opdracht5\CLion\Debug" "C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\opdracht5\CLion\Debug\STemWin" "C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\opdracht5\CLion\Debug\STemWin\CMakeFiles\STemWinOSLib.dir\DependInfo.cmake" "--color=$(COLOR)"
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\niels\Documents\GitHub\DSP\software\opdracht5 C:\Users\niels\Documents\GitHub\DSP\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Debug C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Debug\STemWin C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Debug\STemWin\CMakeFiles\STemWinOSLib.dir\DependInfo.cmake "--color=$(COLOR)"
 .PHONY : STemWin/CMakeFiles/STemWinOSLib.dir/depend
 

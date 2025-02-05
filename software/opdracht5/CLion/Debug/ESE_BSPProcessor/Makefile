@@ -56,10 +56,10 @@ RM = "C:\Program Files\JetBrains\CLion 2024.1.4\bin\cmake\win\x64\bin\cmake.exe"
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\opdracht5"
+CMAKE_SOURCE_DIR = C:\Users\niels\Documents\GitHub\DSP\software\opdracht5
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\opdracht5\CLion\Debug"
+CMAKE_BINARY_DIR = C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -86,14 +86,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Debug && $(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\opdracht5\CLion\Debug\CMakeFiles" "C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\opdracht5\CLion\Debug\ESE_BSPProcessor\\CMakeFiles\progress.marks"
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Debug && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 ESE_BSPProcessor/all
-	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\opdracht5\CLion\Debug\CMakeFiles" 0
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Debug && $(CMAKE_COMMAND) -E cmake_progress_start C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Debug\CMakeFiles C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Debug\ESE_BSPProcessor\\CMakeFiles\progress.marks
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Debug && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 ESE_BSPProcessor/all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Debug\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Debug && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 ESE_BSPProcessor/clean
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Debug && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 ESE_BSPProcessor/clean
 .PHONY : clean
 
 # The main clean target
@@ -102,22 +102,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Debug && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 ESE_BSPProcessor/preinstall
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Debug && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 ESE_BSPProcessor/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Debug && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 ESE_BSPProcessor/preinstall
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Debug && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 ESE_BSPProcessor/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 1
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 ESE_BSPProcessor/CMakeFiles/ESE_RGT+DSBBoardLib.dir/rule:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Debug && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 ESE_BSPProcessor/CMakeFiles/ESE_RGT+DSBBoardLib.dir/rule
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Debug && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 ESE_BSPProcessor/CMakeFiles/ESE_RGT+DSBBoardLib.dir/rule
 .PHONY : ESE_BSPProcessor/CMakeFiles/ESE_RGT+DSBBoardLib.dir/rule
 
 # Convenience name for target.
@@ -126,7 +126,7 @@ ESE_RGT+DSBBoardLib: ESE_BSPProcessor/CMakeFiles/ESE_RGT+DSBBoardLib.dir/rule
 
 # fast build rule for target.
 ESE_RGT+DSBBoardLib/fast:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Debug && $(MAKE) $(MAKESILENT) -f ESE_BSPProcessor\CMakeFiles\ESE_RGT+DSBBoardLib.dir\build.make ESE_BSPProcessor/CMakeFiles/ESE_RGT+DSBBoardLib.dir/build
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Debug && $(MAKE) $(MAKESILENT) -f ESE_BSPProcessor\CMakeFiles\ESE_RGT+DSBBoardLib.dir\build.make ESE_BSPProcessor/CMakeFiles/ESE_RGT+DSBBoardLib.dir/build
 .PHONY : ESE_RGT+DSBBoardLib/fast
 
 ESEBoardComponents.obj: ESEBoardComponents.cpp.obj
@@ -134,7 +134,7 @@ ESEBoardComponents.obj: ESEBoardComponents.cpp.obj
 
 # target to build an object file
 ESEBoardComponents.cpp.obj:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Debug && $(MAKE) $(MAKESILENT) -f ESE_BSPProcessor\CMakeFiles\ESE_RGT+DSBBoardLib.dir\build.make ESE_BSPProcessor/CMakeFiles/ESE_RGT+DSBBoardLib.dir/ESEBoardComponents.cpp.obj
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Debug && $(MAKE) $(MAKESILENT) -f ESE_BSPProcessor\CMakeFiles\ESE_RGT+DSBBoardLib.dir\build.make ESE_BSPProcessor/CMakeFiles/ESE_RGT+DSBBoardLib.dir/ESEBoardComponents.cpp.obj
 .PHONY : ESEBoardComponents.cpp.obj
 
 ESEBoardComponents.i: ESEBoardComponents.cpp.i
@@ -142,7 +142,7 @@ ESEBoardComponents.i: ESEBoardComponents.cpp.i
 
 # target to preprocess a source file
 ESEBoardComponents.cpp.i:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Debug && $(MAKE) $(MAKESILENT) -f ESE_BSPProcessor\CMakeFiles\ESE_RGT+DSBBoardLib.dir\build.make ESE_BSPProcessor/CMakeFiles/ESE_RGT+DSBBoardLib.dir/ESEBoardComponents.cpp.i
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Debug && $(MAKE) $(MAKESILENT) -f ESE_BSPProcessor\CMakeFiles\ESE_RGT+DSBBoardLib.dir\build.make ESE_BSPProcessor/CMakeFiles/ESE_RGT+DSBBoardLib.dir/ESEBoardComponents.cpp.i
 .PHONY : ESEBoardComponents.cpp.i
 
 ESEBoardComponents.s: ESEBoardComponents.cpp.s
@@ -150,7 +150,7 @@ ESEBoardComponents.s: ESEBoardComponents.cpp.s
 
 # target to generate assembly for a file
 ESEBoardComponents.cpp.s:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Debug && $(MAKE) $(MAKESILENT) -f ESE_BSPProcessor\CMakeFiles\ESE_RGT+DSBBoardLib.dir\build.make ESE_BSPProcessor/CMakeFiles/ESE_RGT+DSBBoardLib.dir/ESEBoardComponents.cpp.s
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Debug && $(MAKE) $(MAKESILENT) -f ESE_BSPProcessor\CMakeFiles\ESE_RGT+DSBBoardLib.dir\build.make ESE_BSPProcessor/CMakeFiles/ESE_RGT+DSBBoardLib.dir/ESEBoardComponents.cpp.s
 .PHONY : ESEBoardComponents.cpp.s
 
 ESEBoardController.obj: ESEBoardController.cpp.obj
@@ -158,7 +158,7 @@ ESEBoardController.obj: ESEBoardController.cpp.obj
 
 # target to build an object file
 ESEBoardController.cpp.obj:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Debug && $(MAKE) $(MAKESILENT) -f ESE_BSPProcessor\CMakeFiles\ESE_RGT+DSBBoardLib.dir\build.make ESE_BSPProcessor/CMakeFiles/ESE_RGT+DSBBoardLib.dir/ESEBoardController.cpp.obj
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Debug && $(MAKE) $(MAKESILENT) -f ESE_BSPProcessor\CMakeFiles\ESE_RGT+DSBBoardLib.dir\build.make ESE_BSPProcessor/CMakeFiles/ESE_RGT+DSBBoardLib.dir/ESEBoardController.cpp.obj
 .PHONY : ESEBoardController.cpp.obj
 
 ESEBoardController.i: ESEBoardController.cpp.i
@@ -166,7 +166,7 @@ ESEBoardController.i: ESEBoardController.cpp.i
 
 # target to preprocess a source file
 ESEBoardController.cpp.i:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Debug && $(MAKE) $(MAKESILENT) -f ESE_BSPProcessor\CMakeFiles\ESE_RGT+DSBBoardLib.dir\build.make ESE_BSPProcessor/CMakeFiles/ESE_RGT+DSBBoardLib.dir/ESEBoardController.cpp.i
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Debug && $(MAKE) $(MAKESILENT) -f ESE_BSPProcessor\CMakeFiles\ESE_RGT+DSBBoardLib.dir\build.make ESE_BSPProcessor/CMakeFiles/ESE_RGT+DSBBoardLib.dir/ESEBoardController.cpp.i
 .PHONY : ESEBoardController.cpp.i
 
 ESEBoardController.s: ESEBoardController.cpp.s
@@ -174,7 +174,7 @@ ESEBoardController.s: ESEBoardController.cpp.s
 
 # target to generate assembly for a file
 ESEBoardController.cpp.s:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Debug && $(MAKE) $(MAKESILENT) -f ESE_BSPProcessor\CMakeFiles\ESE_RGT+DSBBoardLib.dir\build.make ESE_BSPProcessor/CMakeFiles/ESE_RGT+DSBBoardLib.dir/ESEBoardController.cpp.s
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Debug && $(MAKE) $(MAKESILENT) -f ESE_BSPProcessor\CMakeFiles\ESE_RGT+DSBBoardLib.dir\build.make ESE_BSPProcessor/CMakeFiles/ESE_RGT+DSBBoardLib.dir/ESEBoardController.cpp.s
 .PHONY : ESEBoardController.cpp.s
 
 # Help Target
@@ -203,6 +203,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 0
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

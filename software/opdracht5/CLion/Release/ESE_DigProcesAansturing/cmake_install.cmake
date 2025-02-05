@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/niels/Documents/Elektrotechniek/Jaar 3/dspl/software/STM32Basis/HAL/gemeenschappelijk/Third_Party/ESE_BSP/DigProcesAansturing
+# Install script for directory: C:/Users/niels/Documents/GitHub/DSP/software/STM32Basis/HAL/gemeenschappelijk/Third_Party/ESE_BSP/DigProcesAansturing
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

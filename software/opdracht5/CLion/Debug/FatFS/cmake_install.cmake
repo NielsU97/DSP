@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/niels/Documents/Elektrotechniek/Jaar 3/dspl/software/STM32Basis/HAL/gemeenschappelijk/Third_Party/FatFs_vR0.13a
+# Install script for directory: C:/Users/niels/Documents/GitHub/DSP/software/STM32Basis/HAL/gemeenschappelijk/Third_Party/FatFs_vR0.13a
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

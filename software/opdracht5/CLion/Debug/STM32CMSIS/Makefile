@@ -56,10 +56,10 @@ RM = "C:\Program Files\JetBrains\CLion 2024.1.4\bin\cmake\win\x64\bin\cmake.exe"
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\opdracht5"
+CMAKE_SOURCE_DIR = C:\Users\niels\Documents\GitHub\DSP\software\opdracht5
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\opdracht5\CLion\Debug"
+CMAKE_BINARY_DIR = C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -86,14 +86,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Debug && $(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\opdracht5\CLion\Debug\CMakeFiles" "C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\opdracht5\CLion\Debug\STM32CMSIS\\CMakeFiles\progress.marks"
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Debug && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 STM32CMSIS/all
-	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\opdracht5\CLion\Debug\CMakeFiles" 0
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Debug && $(CMAKE_COMMAND) -E cmake_progress_start C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Debug\CMakeFiles C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Debug\STM32CMSIS\\CMakeFiles\progress.marks
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Debug && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 STM32CMSIS/all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Debug\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Debug && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 STM32CMSIS/clean
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Debug && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 STM32CMSIS/clean
 .PHONY : clean
 
 # The main clean target
@@ -102,22 +102,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Debug && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 STM32CMSIS/preinstall
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Debug && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 STM32CMSIS/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Debug && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 STM32CMSIS/preinstall
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Debug && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 STM32CMSIS/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 1
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 STM32CMSIS/CMakeFiles/CMSISFIRMWARE.dir/rule:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Debug && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 STM32CMSIS/CMakeFiles/CMSISFIRMWARE.dir/rule
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Debug && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 STM32CMSIS/CMakeFiles/CMSISFIRMWARE.dir/rule
 .PHONY : STM32CMSIS/CMakeFiles/CMSISFIRMWARE.dir/rule
 
 # Convenience name for target.
@@ -126,7 +126,7 @@ CMSISFIRMWARE: STM32CMSIS/CMakeFiles/CMSISFIRMWARE.dir/rule
 
 # fast build rule for target.
 CMSISFIRMWARE/fast:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Debug && $(MAKE) $(MAKESILENT) -f STM32CMSIS\CMakeFiles\CMSISFIRMWARE.dir\build.make STM32CMSIS/CMakeFiles/CMSISFIRMWARE.dir/build
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Debug && $(MAKE) $(MAKESILENT) -f STM32CMSIS\CMakeFiles\CMSISFIRMWARE.dir\build.make STM32CMSIS/CMakeFiles/CMSISFIRMWARE.dir/build
 .PHONY : CMSISFIRMWARE/fast
 
 Source/Templates/gcc/startup_stm32f412zx.obj: Source/Templates/gcc/startup_stm32f412zx.s.obj
@@ -134,7 +134,7 @@ Source/Templates/gcc/startup_stm32f412zx.obj: Source/Templates/gcc/startup_stm32
 
 # target to build an object file
 Source/Templates/gcc/startup_stm32f412zx.s.obj:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Debug && $(MAKE) $(MAKESILENT) -f STM32CMSIS\CMakeFiles\CMSISFIRMWARE.dir\build.make STM32CMSIS/CMakeFiles/CMSISFIRMWARE.dir/Source/Templates/gcc/startup_stm32f412zx.s.obj
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Debug && $(MAKE) $(MAKESILENT) -f STM32CMSIS\CMakeFiles\CMSISFIRMWARE.dir\build.make STM32CMSIS/CMakeFiles/CMSISFIRMWARE.dir/Source/Templates/gcc/startup_stm32f412zx.s.obj
 .PHONY : Source/Templates/gcc/startup_stm32f412zx.s.obj
 
 Source/Templates/system_stm32f4xx.obj: Source/Templates/system_stm32f4xx.c.obj
@@ -142,7 +142,7 @@ Source/Templates/system_stm32f4xx.obj: Source/Templates/system_stm32f4xx.c.obj
 
 # target to build an object file
 Source/Templates/system_stm32f4xx.c.obj:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Debug && $(MAKE) $(MAKESILENT) -f STM32CMSIS\CMakeFiles\CMSISFIRMWARE.dir\build.make STM32CMSIS/CMakeFiles/CMSISFIRMWARE.dir/Source/Templates/system_stm32f4xx.c.obj
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Debug && $(MAKE) $(MAKESILENT) -f STM32CMSIS\CMakeFiles\CMSISFIRMWARE.dir\build.make STM32CMSIS/CMakeFiles/CMSISFIRMWARE.dir/Source/Templates/system_stm32f4xx.c.obj
 .PHONY : Source/Templates/system_stm32f4xx.c.obj
 
 Source/Templates/system_stm32f4xx.i: Source/Templates/system_stm32f4xx.c.i
@@ -150,7 +150,7 @@ Source/Templates/system_stm32f4xx.i: Source/Templates/system_stm32f4xx.c.i
 
 # target to preprocess a source file
 Source/Templates/system_stm32f4xx.c.i:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Debug && $(MAKE) $(MAKESILENT) -f STM32CMSIS\CMakeFiles\CMSISFIRMWARE.dir\build.make STM32CMSIS/CMakeFiles/CMSISFIRMWARE.dir/Source/Templates/system_stm32f4xx.c.i
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Debug && $(MAKE) $(MAKESILENT) -f STM32CMSIS\CMakeFiles\CMSISFIRMWARE.dir\build.make STM32CMSIS/CMakeFiles/CMSISFIRMWARE.dir/Source/Templates/system_stm32f4xx.c.i
 .PHONY : Source/Templates/system_stm32f4xx.c.i
 
 Source/Templates/system_stm32f4xx.s: Source/Templates/system_stm32f4xx.c.s
@@ -158,7 +158,7 @@ Source/Templates/system_stm32f4xx.s: Source/Templates/system_stm32f4xx.c.s
 
 # target to generate assembly for a file
 Source/Templates/system_stm32f4xx.c.s:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Debug && $(MAKE) $(MAKESILENT) -f STM32CMSIS\CMakeFiles\CMSISFIRMWARE.dir\build.make STM32CMSIS/CMakeFiles/CMSISFIRMWARE.dir/Source/Templates/system_stm32f4xx.c.s
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Debug && $(MAKE) $(MAKESILENT) -f STM32CMSIS\CMakeFiles\CMSISFIRMWARE.dir\build.make STM32CMSIS/CMakeFiles/CMSISFIRMWARE.dir/Source/Templates/system_stm32f4xx.c.s
 .PHONY : Source/Templates/system_stm32f4xx.c.s
 
 # Help Target
@@ -185,6 +185,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 0
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

@@ -52,10 +52,10 @@ RM = "C:\Program Files\JetBrains\CLion 2024.1.4\bin\cmake\win\x64\bin\cmake.exe"
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\opdracht5"
+CMAKE_SOURCE_DIR = C:\Users\niels\Documents\GitHub\DSP\software\opdracht5
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\opdracht5\CLion\Release"
+CMAKE_BINARY_DIR = C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release
 
 # Include any dependencies generated for this target.
 include STM32CMSIS/CMakeFiles/CMSISFIRMWARE.dir/depend.make
@@ -70,23 +70,23 @@ include STM32CMSIS/CMakeFiles/CMSISFIRMWARE.dir/flags.make
 
 STM32CMSIS/CMakeFiles/CMSISFIRMWARE.dir/Source/Templates/system_stm32f4xx.c.obj: STM32CMSIS/CMakeFiles/CMSISFIRMWARE.dir/flags.make
 STM32CMSIS/CMakeFiles/CMSISFIRMWARE.dir/Source/Templates/system_stm32f4xx.c.obj: STM32CMSIS/CMakeFiles/CMSISFIRMWARE.dir/includes_C.rsp
-STM32CMSIS/CMakeFiles/CMSISFIRMWARE.dir/Source/Templates/system_stm32f4xx.c.obj: C:/Users/niels/Documents/Elektrotechniek/Jaar\ 3/dspl/software/STM32Basis/HAL/gemeenschappelijk/Libraries/CMSIS/Device/ST/STM32F4xx/Source/Templates/system_stm32f4xx.c
+STM32CMSIS/CMakeFiles/CMSISFIRMWARE.dir/Source/Templates/system_stm32f4xx.c.obj: C:/Users/niels/Documents/GitHub/DSP/software/STM32Basis/HAL/gemeenschappelijk/Libraries/CMSIS/Device/ST/STM32F4xx/Source/Templates/system_stm32f4xx.c
 STM32CMSIS/CMakeFiles/CMSISFIRMWARE.dir/Source/Templates/system_stm32f4xx.c.obj: STM32CMSIS/CMakeFiles/CMSISFIRMWARE.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\opdracht5\CLion\Release\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building C object STM32CMSIS/CMakeFiles/CMSISFIRMWARE.dir/Source/Templates/system_stm32f4xx.c.obj"
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release\STM32C~1 && C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR10B2~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wa,-ahl="C:/Users/niels/Documents/Elektrotechniek/Jaar 3/dspl/software/opdracht5/CLion/Release/STM32CMSIS/system_stm32f4xx.c.lst" -MD -MT STM32CMSIS/CMakeFiles/CMSISFIRMWARE.dir/Source/Templates/system_stm32f4xx.c.obj -MF CMakeFiles\CMSISFIRMWARE.dir\Source\Templates\system_stm32f4xx.c.obj.d -o CMakeFiles\CMSISFIRMWARE.dir\Source\Templates\system_stm32f4xx.c.obj -c "C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\STM32Basis\HAL\gemeenschappelijk\Libraries\CMSIS\Device\ST\STM32F4xx\Source\Templates\system_stm32f4xx.c"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object STM32CMSIS/CMakeFiles/CMSISFIRMWARE.dir/Source/Templates/system_stm32f4xx.c.obj"
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release\STM32CMSIS && C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR10B2~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wa,-ahl="C:/Users/niels/Documents/GitHub/DSP/software/opdracht5/CLion/Release/STM32CMSIS/system_stm32f4xx.c.lst" -MD -MT STM32CMSIS/CMakeFiles/CMSISFIRMWARE.dir/Source/Templates/system_stm32f4xx.c.obj -MF CMakeFiles\CMSISFIRMWARE.dir\Source\Templates\system_stm32f4xx.c.obj.d -o CMakeFiles\CMSISFIRMWARE.dir\Source\Templates\system_stm32f4xx.c.obj -c C:\Users\niels\Documents\GitHub\DSP\software\STM32Basis\HAL\gemeenschappelijk\Libraries\CMSIS\Device\ST\STM32F4xx\Source\Templates\system_stm32f4xx.c
 
 STM32CMSIS/CMakeFiles/CMSISFIRMWARE.dir/Source/Templates/system_stm32f4xx.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/CMSISFIRMWARE.dir/Source/Templates/system_stm32f4xx.c.i"
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release\STM32C~1 && C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR10B2~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wa,-ahl="C:/Users/niels/Documents/Elektrotechniek/Jaar 3/dspl/software/opdracht5/CLion/Release/STM32CMSIS/system_stm32f4xx.c.lst" -E "C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\STM32Basis\HAL\gemeenschappelijk\Libraries\CMSIS\Device\ST\STM32F4xx\Source\Templates\system_stm32f4xx.c" > CMakeFiles\CMSISFIRMWARE.dir\Source\Templates\system_stm32f4xx.c.i
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release\STM32CMSIS && C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR10B2~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wa,-ahl="C:/Users/niels/Documents/GitHub/DSP/software/opdracht5/CLion/Release/STM32CMSIS/system_stm32f4xx.c.lst" -E C:\Users\niels\Documents\GitHub\DSP\software\STM32Basis\HAL\gemeenschappelijk\Libraries\CMSIS\Device\ST\STM32F4xx\Source\Templates\system_stm32f4xx.c > CMakeFiles\CMSISFIRMWARE.dir\Source\Templates\system_stm32f4xx.c.i
 
 STM32CMSIS/CMakeFiles/CMSISFIRMWARE.dir/Source/Templates/system_stm32f4xx.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/CMSISFIRMWARE.dir/Source/Templates/system_stm32f4xx.c.s"
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release\STM32C~1 && C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR10B2~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wa,-ahl="C:/Users/niels/Documents/Elektrotechniek/Jaar 3/dspl/software/opdracht5/CLion/Release/STM32CMSIS/system_stm32f4xx.c.lst" -S "C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\STM32Basis\HAL\gemeenschappelijk\Libraries\CMSIS\Device\ST\STM32F4xx\Source\Templates\system_stm32f4xx.c" -o CMakeFiles\CMSISFIRMWARE.dir\Source\Templates\system_stm32f4xx.c.s
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release\STM32CMSIS && C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR10B2~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wa,-ahl="C:/Users/niels/Documents/GitHub/DSP/software/opdracht5/CLion/Release/STM32CMSIS/system_stm32f4xx.c.lst" -S C:\Users\niels\Documents\GitHub\DSP\software\STM32Basis\HAL\gemeenschappelijk\Libraries\CMSIS\Device\ST\STM32F4xx\Source\Templates\system_stm32f4xx.c -o CMakeFiles\CMSISFIRMWARE.dir\Source\Templates\system_stm32f4xx.c.s
 
 STM32CMSIS/CMakeFiles/CMSISFIRMWARE.dir/Source/Templates/gcc/startup_stm32f412zx.s.obj: STM32CMSIS/CMakeFiles/CMSISFIRMWARE.dir/flags.make
-STM32CMSIS/CMakeFiles/CMSISFIRMWARE.dir/Source/Templates/gcc/startup_stm32f412zx.s.obj: C:/Users/niels/Documents/Elektrotechniek/Jaar\ 3/dspl/software/STM32Basis/HAL/gemeenschappelijk/Libraries/CMSIS/Device/ST/STM32F4xx/Source/Templates/gcc/startup_stm32f412zx.s
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\opdracht5\CLion\Release\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building ASM-ATT object STM32CMSIS/CMakeFiles/CMSISFIRMWARE.dir/Source/Templates/gcc/startup_stm32f412zx.s.obj"
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release\STM32C~1 && C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR10B2~1.EXE $(ASM-ATT_INCLUDES) $(ASM-ATT_FLAGS) -Wa,-ahl="C:/Users/niels/Documents/Elektrotechniek/Jaar 3/dspl/software/opdracht5/CLion/Release/STM32CMSIS/startup_stm32f412zx.s.lst" -o CMakeFiles\CMSISFIRMWARE.dir\Source\Templates\gcc\startup_stm32f412zx.s.obj "C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\STM32Basis\HAL\gemeenschappelijk\Libraries\CMSIS\Device\ST\STM32F4xx\Source\Templates\gcc\startup_stm32f412zx.s"
+STM32CMSIS/CMakeFiles/CMSISFIRMWARE.dir/Source/Templates/gcc/startup_stm32f412zx.s.obj: C:/Users/niels/Documents/GitHub/DSP/software/STM32Basis/HAL/gemeenschappelijk/Libraries/CMSIS/Device/ST/STM32F4xx/Source/Templates/gcc/startup_stm32f412zx.s
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building ASM-ATT object STM32CMSIS/CMakeFiles/CMSISFIRMWARE.dir/Source/Templates/gcc/startup_stm32f412zx.s.obj"
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release\STM32CMSIS && C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR10B2~1.EXE $(ASM-ATT_INCLUDES) $(ASM-ATT_FLAGS) -Wa,-ahl="C:/Users/niels/Documents/GitHub/DSP/software/opdracht5/CLion/Release/STM32CMSIS/startup_stm32f412zx.s.lst" -o CMakeFiles\CMSISFIRMWARE.dir\Source\Templates\gcc\startup_stm32f412zx.s.obj C:\Users\niels\Documents\GitHub\DSP\software\STM32Basis\HAL\gemeenschappelijk\Libraries\CMSIS\Device\ST\STM32F4xx\Source\Templates\gcc\startup_stm32f412zx.s
 
 # Object files for target CMSISFIRMWARE
 CMSISFIRMWARE_OBJECTS = \
@@ -100,19 +100,19 @@ STM32CMSIS/libCMSISFIRMWARE.a: STM32CMSIS/CMakeFiles/CMSISFIRMWARE.dir/Source/Te
 STM32CMSIS/libCMSISFIRMWARE.a: STM32CMSIS/CMakeFiles/CMSISFIRMWARE.dir/Source/Templates/gcc/startup_stm32f412zx.s.obj
 STM32CMSIS/libCMSISFIRMWARE.a: STM32CMSIS/CMakeFiles/CMSISFIRMWARE.dir/build.make
 STM32CMSIS/libCMSISFIRMWARE.a: STM32CMSIS/CMakeFiles/CMSISFIRMWARE.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir="C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\opdracht5\CLion\Release\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Linking C static library libCMSISFIRMWARE.a"
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release\STM32C~1 && $(CMAKE_COMMAND) -P CMakeFiles\CMSISFIRMWARE.dir\cmake_clean_target.cmake
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release\STM32C~1 && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\CMSISFIRMWARE.dir\link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking C static library libCMSISFIRMWARE.a"
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release\STM32CMSIS && $(CMAKE_COMMAND) -P CMakeFiles\CMSISFIRMWARE.dir\cmake_clean_target.cmake
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release\STM32CMSIS && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\CMSISFIRMWARE.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 STM32CMSIS/CMakeFiles/CMSISFIRMWARE.dir/build: STM32CMSIS/libCMSISFIRMWARE.a
 .PHONY : STM32CMSIS/CMakeFiles/CMSISFIRMWARE.dir/build
 
 STM32CMSIS/CMakeFiles/CMSISFIRMWARE.dir/clean:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release\STM32C~1 && $(CMAKE_COMMAND) -P CMakeFiles\CMSISFIRMWARE.dir\cmake_clean.cmake
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release\STM32CMSIS && $(CMAKE_COMMAND) -P CMakeFiles\CMSISFIRMWARE.dir\cmake_clean.cmake
 .PHONY : STM32CMSIS/CMakeFiles/CMSISFIRMWARE.dir/clean
 
 STM32CMSIS/CMakeFiles/CMSISFIRMWARE.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" "C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\opdracht5" "C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\STM32Basis\HAL\gemeenschappelijk\Libraries\CMSIS\Device\ST\STM32F4xx" "C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\opdracht5\CLion\Release" "C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\opdracht5\CLion\Release\STM32CMSIS" "C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\opdracht5\CLion\Release\STM32CMSIS\CMakeFiles\CMSISFIRMWARE.dir\DependInfo.cmake" "--color=$(COLOR)"
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\niels\Documents\GitHub\DSP\software\opdracht5 C:\Users\niels\Documents\GitHub\DSP\software\STM32Basis\HAL\gemeenschappelijk\Libraries\CMSIS\Device\ST\STM32F4xx C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release\STM32CMSIS C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release\STM32CMSIS\CMakeFiles\CMSISFIRMWARE.dir\DependInfo.cmake "--color=$(COLOR)"
 .PHONY : STM32CMSIS/CMakeFiles/CMSISFIRMWARE.dir/depend
 

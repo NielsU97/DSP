@@ -1,4 +1,4 @@
-"C:\Program Files\JetBrains\CLion 2024.1.4\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - MinGW Makefiles" -S "C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\opdracht5" -B "C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\opdracht5\CLion\Debug"
+"C:\Program Files\JetBrains\CLion 2024.1.4\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - MinGW Makefiles" -S C:\Users\niels\Documents\GitHub\DSP\software\opdracht5 -B C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Debug
 CMake Deprecation Warning:
   Support for "Extra Generators" like
 
@@ -37,7 +37,7 @@ Docent: ir drs E.J Boks (ewout.boks@han.nl)
 -- GNU ARM Toolchain gevonden op C:/Program Files (x86)/GNU Arm Embedded Toolchain/10 2021.10
 -- ====> GNU ARM Toolchain op C:/Program Files (x86)/GNU Arm Embedded Toolchain/10 2021.10 wordt gebruikt.
 -- GNU ARM compiler gevonden op : C:/Program Files (x86)/GNU Arm Embedded Toolchain/10 2021.10
--- Build output dir is : C:/Users/niels/Documents/Elektrotechniek/Jaar 3/dspl/software/opdracht5/Executable/Debug
+-- Build output dir is : C:/Users/niels/Documents/GitHub/DSP/software/opdracht5/Executable/Debug
 -- Bouw HAL target voor STM32F412xG met 1 MByte Flash en 256K SRAM
 -- Basis bibliotheek wordt gecompileerd.
 -- ARM CMSIS support voor STM32F4 wordt toegevoegd.
@@ -53,8 +53,8 @@ Docent: ir drs E.J Boks (ewout.boks@han.nl)
 -- ESE BSP Driver (boardversie 11) wordt toegevoegd.
 -- ESE DigProces Aansturing API wordt toegevoegd.
 -- ESE RGT+DSB Board BSP Driver wordt toegevoegd.
--- C:/Users/niels/Documents/Elektrotechniek/Jaar 3/dspl/software/opdracht5/CLion/Debug/gegenereerd/ozoneConfig.jdebug werd gegenereerd.
+-- C:/Users/niels/Documents/GitHub/DSP/software/opdracht5/CLion/Debug/gegenereerd/ozoneConfig.jdebug werd gegenereerd.
 -- Opdracht 1 wordt als DSBKlassen Lib gebouwd.
--- Configuring done (16.2s)
+-- Configuring done (6.4s)
 -- Generating done (1.0s)
--- Build files have been written to: C:/Users/niels/Documents/Elektrotechniek/Jaar 3/dspl/software/opdracht5/CLion/Debug
+-- Build files have been written to: C:/Users/niels/Documents/GitHub/DSP/software/opdracht5/CLion/Debug

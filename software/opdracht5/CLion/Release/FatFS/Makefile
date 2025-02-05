@@ -56,10 +56,10 @@ RM = "C:\Program Files\JetBrains\CLion 2024.1.4\bin\cmake\win\x64\bin\cmake.exe"
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\opdracht5"
+CMAKE_SOURCE_DIR = C:\Users\niels\Documents\GitHub\DSP\software\opdracht5
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\opdracht5\CLion\Release"
+CMAKE_BINARY_DIR = C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -86,14 +86,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\opdracht5\CLion\Release\CMakeFiles" "C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\opdracht5\CLion\Release\FatFS\\CMakeFiles\progress.marks"
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 FatFS/all
-	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\opdracht5\CLion\Release\CMakeFiles" 0
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(CMAKE_COMMAND) -E cmake_progress_start C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release\CMakeFiles C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release\FatFS\\CMakeFiles\progress.marks
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 FatFS/all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 FatFS/clean
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 FatFS/clean
 .PHONY : clean
 
 # The main clean target
@@ -102,22 +102,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 FatFS/preinstall
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 FatFS/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 FatFS/preinstall
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 FatFS/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 1
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 FatFS/CMakeFiles/FatFs_vR0.13a.dir/rule:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 FatFS/CMakeFiles/FatFs_vR0.13a.dir/rule
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 FatFS/CMakeFiles/FatFs_vR0.13a.dir/rule
 .PHONY : FatFS/CMakeFiles/FatFs_vR0.13a.dir/rule
 
 # Convenience name for target.
@@ -126,7 +126,7 @@ FatFs_vR0.13a: FatFS/CMakeFiles/FatFs_vR0.13a.dir/rule
 
 # fast build rule for target.
 FatFs_vR0.13a/fast:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f FatFS\CMakeFiles\FatFs_vR0.13a.dir\build.make FatFS/CMakeFiles/FatFs_vR0.13a.dir/build
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f FatFS\CMakeFiles\FatFs_vR0.13a.dir\build.make FatFS/CMakeFiles/FatFs_vR0.13a.dir/build
 .PHONY : FatFs_vR0.13a/fast
 
 ff.obj: ff.c.obj
@@ -134,7 +134,7 @@ ff.obj: ff.c.obj
 
 # target to build an object file
 ff.c.obj:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f FatFS\CMakeFiles\FatFs_vR0.13a.dir\build.make FatFS/CMakeFiles/FatFs_vR0.13a.dir/ff.c.obj
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f FatFS\CMakeFiles\FatFs_vR0.13a.dir\build.make FatFS/CMakeFiles/FatFs_vR0.13a.dir/ff.c.obj
 .PHONY : ff.c.obj
 
 ff.i: ff.c.i
@@ -142,7 +142,7 @@ ff.i: ff.c.i
 
 # target to preprocess a source file
 ff.c.i:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f FatFS\CMakeFiles\FatFs_vR0.13a.dir\build.make FatFS/CMakeFiles/FatFs_vR0.13a.dir/ff.c.i
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f FatFS\CMakeFiles\FatFs_vR0.13a.dir\build.make FatFS/CMakeFiles/FatFs_vR0.13a.dir/ff.c.i
 .PHONY : ff.c.i
 
 ff.s: ff.c.s
@@ -150,7 +150,7 @@ ff.s: ff.c.s
 
 # target to generate assembly for a file
 ff.c.s:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f FatFS\CMakeFiles\FatFs_vR0.13a.dir\build.make FatFS/CMakeFiles/FatFs_vR0.13a.dir/ff.c.s
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f FatFS\CMakeFiles\FatFs_vR0.13a.dir\build.make FatFS/CMakeFiles/FatFs_vR0.13a.dir/ff.c.s
 .PHONY : ff.c.s
 
 ffsystem.obj: ffsystem.c.obj
@@ -158,7 +158,7 @@ ffsystem.obj: ffsystem.c.obj
 
 # target to build an object file
 ffsystem.c.obj:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f FatFS\CMakeFiles\FatFs_vR0.13a.dir\build.make FatFS/CMakeFiles/FatFs_vR0.13a.dir/ffsystem.c.obj
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f FatFS\CMakeFiles\FatFs_vR0.13a.dir\build.make FatFS/CMakeFiles/FatFs_vR0.13a.dir/ffsystem.c.obj
 .PHONY : ffsystem.c.obj
 
 ffsystem.i: ffsystem.c.i
@@ -166,7 +166,7 @@ ffsystem.i: ffsystem.c.i
 
 # target to preprocess a source file
 ffsystem.c.i:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f FatFS\CMakeFiles\FatFs_vR0.13a.dir\build.make FatFS/CMakeFiles/FatFs_vR0.13a.dir/ffsystem.c.i
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f FatFS\CMakeFiles\FatFs_vR0.13a.dir\build.make FatFS/CMakeFiles/FatFs_vR0.13a.dir/ffsystem.c.i
 .PHONY : ffsystem.c.i
 
 ffsystem.s: ffsystem.c.s
@@ -174,7 +174,7 @@ ffsystem.s: ffsystem.c.s
 
 # target to generate assembly for a file
 ffsystem.c.s:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f FatFS\CMakeFiles\FatFs_vR0.13a.dir\build.make FatFS/CMakeFiles/FatFs_vR0.13a.dir/ffsystem.c.s
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f FatFS\CMakeFiles\FatFs_vR0.13a.dir\build.make FatFS/CMakeFiles/FatFs_vR0.13a.dir/ffsystem.c.s
 .PHONY : ffsystem.c.s
 
 ffunicode.obj: ffunicode.c.obj
@@ -182,7 +182,7 @@ ffunicode.obj: ffunicode.c.obj
 
 # target to build an object file
 ffunicode.c.obj:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f FatFS\CMakeFiles\FatFs_vR0.13a.dir\build.make FatFS/CMakeFiles/FatFs_vR0.13a.dir/ffunicode.c.obj
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f FatFS\CMakeFiles\FatFs_vR0.13a.dir\build.make FatFS/CMakeFiles/FatFs_vR0.13a.dir/ffunicode.c.obj
 .PHONY : ffunicode.c.obj
 
 ffunicode.i: ffunicode.c.i
@@ -190,7 +190,7 @@ ffunicode.i: ffunicode.c.i
 
 # target to preprocess a source file
 ffunicode.c.i:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f FatFS\CMakeFiles\FatFs_vR0.13a.dir\build.make FatFS/CMakeFiles/FatFs_vR0.13a.dir/ffunicode.c.i
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f FatFS\CMakeFiles\FatFs_vR0.13a.dir\build.make FatFS/CMakeFiles/FatFs_vR0.13a.dir/ffunicode.c.i
 .PHONY : ffunicode.c.i
 
 ffunicode.s: ffunicode.c.s
@@ -198,7 +198,7 @@ ffunicode.s: ffunicode.c.s
 
 # target to generate assembly for a file
 ffunicode.c.s:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f FatFS\CMakeFiles\FatFs_vR0.13a.dir\build.make FatFS/CMakeFiles/FatFs_vR0.13a.dir/ffunicode.c.s
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f FatFS\CMakeFiles\FatFs_vR0.13a.dir\build.make FatFS/CMakeFiles/FatFs_vR0.13a.dir/ffunicode.c.s
 .PHONY : ffunicode.c.s
 
 # Help Target
@@ -230,6 +230,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 0
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

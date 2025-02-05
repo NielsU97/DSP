@@ -56,10 +56,10 @@ RM = "C:\Program Files\JetBrains\CLion 2024.1.4\bin\cmake\win\x64\bin\cmake.exe"
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\opdracht5"
+CMAKE_SOURCE_DIR = C:\Users\niels\Documents\GitHub\DSP\software\opdracht5
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\opdracht5\CLion\Release"
+CMAKE_BINARY_DIR = C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -86,14 +86,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\opdracht5\CLion\Release\CMakeFiles" "C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\opdracht5\CLion\Release\F412GDiscoveryLib\\CMakeFiles\progress.marks"
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 F412GDiscoveryLib/all
-	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\opdracht5\CLion\Release\CMakeFiles" 0
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(CMAKE_COMMAND) -E cmake_progress_start C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release\CMakeFiles C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release\F412GDiscoveryLib\\CMakeFiles\progress.marks
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 F412GDiscoveryLib/all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 F412GDiscoveryLib/clean
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 F412GDiscoveryLib/clean
 .PHONY : clean
 
 # The main clean target
@@ -102,22 +102,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 F412GDiscoveryLib/preinstall
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 F412GDiscoveryLib/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 F412GDiscoveryLib/preinstall
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 F412GDiscoveryLib/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 1
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 F412GDiscoveryLib/CMakeFiles/STM32412G-DiscoveryBasis.dir/rule:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 F412GDiscoveryLib/CMakeFiles/STM32412G-DiscoveryBasis.dir/rule
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 F412GDiscoveryLib/CMakeFiles/STM32412G-DiscoveryBasis.dir/rule
 .PHONY : F412GDiscoveryLib/CMakeFiles/STM32412G-DiscoveryBasis.dir/rule
 
 # Convenience name for target.
@@ -126,7 +126,7 @@ STM32412G-DiscoveryBasis: F412GDiscoveryLib/CMakeFiles/STM32412G-DiscoveryBasis.
 
 # fast build rule for target.
 STM32412G-DiscoveryBasis/fast:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f F412GDiscoveryLib\CMakeFiles\STM32412G-DiscoveryBasis.dir\build.make F412GDiscoveryLib/CMakeFiles/STM32412G-DiscoveryBasis.dir/build
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f F412GDiscoveryLib\CMakeFiles\STM32412G-DiscoveryBasis.dir\build.make F412GDiscoveryLib/CMakeFiles/STM32412G-DiscoveryBasis.dir/build
 .PHONY : STM32412G-DiscoveryBasis/fast
 
 STM32412gDiscovery.obj: STM32412gDiscovery.cpp.obj
@@ -134,7 +134,7 @@ STM32412gDiscovery.obj: STM32412gDiscovery.cpp.obj
 
 # target to build an object file
 STM32412gDiscovery.cpp.obj:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f F412GDiscoveryLib\CMakeFiles\STM32412G-DiscoveryBasis.dir\build.make F412GDiscoveryLib/CMakeFiles/STM32412G-DiscoveryBasis.dir/STM32412gDiscovery.cpp.obj
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f F412GDiscoveryLib\CMakeFiles\STM32412G-DiscoveryBasis.dir\build.make F412GDiscoveryLib/CMakeFiles/STM32412G-DiscoveryBasis.dir/STM32412gDiscovery.cpp.obj
 .PHONY : STM32412gDiscovery.cpp.obj
 
 STM32412gDiscovery.i: STM32412gDiscovery.cpp.i
@@ -142,7 +142,7 @@ STM32412gDiscovery.i: STM32412gDiscovery.cpp.i
 
 # target to preprocess a source file
 STM32412gDiscovery.cpp.i:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f F412GDiscoveryLib\CMakeFiles\STM32412G-DiscoveryBasis.dir\build.make F412GDiscoveryLib/CMakeFiles/STM32412G-DiscoveryBasis.dir/STM32412gDiscovery.cpp.i
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f F412GDiscoveryLib\CMakeFiles\STM32412G-DiscoveryBasis.dir\build.make F412GDiscoveryLib/CMakeFiles/STM32412G-DiscoveryBasis.dir/STM32412gDiscovery.cpp.i
 .PHONY : STM32412gDiscovery.cpp.i
 
 STM32412gDiscovery.s: STM32412gDiscovery.cpp.s
@@ -150,7 +150,7 @@ STM32412gDiscovery.s: STM32412gDiscovery.cpp.s
 
 # target to generate assembly for a file
 STM32412gDiscovery.cpp.s:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f F412GDiscoveryLib\CMakeFiles\STM32412G-DiscoveryBasis.dir\build.make F412GDiscoveryLib/CMakeFiles/STM32412G-DiscoveryBasis.dir/STM32412gDiscovery.cpp.s
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f F412GDiscoveryLib\CMakeFiles\STM32412G-DiscoveryBasis.dir\build.make F412GDiscoveryLib/CMakeFiles/STM32412G-DiscoveryBasis.dir/STM32412gDiscovery.cpp.s
 .PHONY : STM32412gDiscovery.cpp.s
 
 STM32412gDiscoveryGUI.obj: STM32412gDiscoveryGUI.cpp.obj
@@ -158,7 +158,7 @@ STM32412gDiscoveryGUI.obj: STM32412gDiscoveryGUI.cpp.obj
 
 # target to build an object file
 STM32412gDiscoveryGUI.cpp.obj:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f F412GDiscoveryLib\CMakeFiles\STM32412G-DiscoveryBasis.dir\build.make F412GDiscoveryLib/CMakeFiles/STM32412G-DiscoveryBasis.dir/STM32412gDiscoveryGUI.cpp.obj
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f F412GDiscoveryLib\CMakeFiles\STM32412G-DiscoveryBasis.dir\build.make F412GDiscoveryLib/CMakeFiles/STM32412G-DiscoveryBasis.dir/STM32412gDiscoveryGUI.cpp.obj
 .PHONY : STM32412gDiscoveryGUI.cpp.obj
 
 STM32412gDiscoveryGUI.i: STM32412gDiscoveryGUI.cpp.i
@@ -166,7 +166,7 @@ STM32412gDiscoveryGUI.i: STM32412gDiscoveryGUI.cpp.i
 
 # target to preprocess a source file
 STM32412gDiscoveryGUI.cpp.i:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f F412GDiscoveryLib\CMakeFiles\STM32412G-DiscoveryBasis.dir\build.make F412GDiscoveryLib/CMakeFiles/STM32412G-DiscoveryBasis.dir/STM32412gDiscoveryGUI.cpp.i
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f F412GDiscoveryLib\CMakeFiles\STM32412G-DiscoveryBasis.dir\build.make F412GDiscoveryLib/CMakeFiles/STM32412G-DiscoveryBasis.dir/STM32412gDiscoveryGUI.cpp.i
 .PHONY : STM32412gDiscoveryGUI.cpp.i
 
 STM32412gDiscoveryGUI.s: STM32412gDiscoveryGUI.cpp.s
@@ -174,7 +174,7 @@ STM32412gDiscoveryGUI.s: STM32412gDiscoveryGUI.cpp.s
 
 # target to generate assembly for a file
 STM32412gDiscoveryGUI.cpp.s:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f F412GDiscoveryLib\CMakeFiles\STM32412G-DiscoveryBasis.dir\build.make F412GDiscoveryLib/CMakeFiles/STM32412G-DiscoveryBasis.dir/STM32412gDiscoveryGUI.cpp.s
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f F412GDiscoveryLib\CMakeFiles\STM32412G-DiscoveryBasis.dir\build.make F412GDiscoveryLib/CMakeFiles/STM32412G-DiscoveryBasis.dir/STM32412gDiscoveryGUI.cpp.s
 .PHONY : STM32412gDiscoveryGUI.cpp.s
 
 stm32412g_discovery.obj: stm32412g_discovery.c.obj
@@ -182,7 +182,7 @@ stm32412g_discovery.obj: stm32412g_discovery.c.obj
 
 # target to build an object file
 stm32412g_discovery.c.obj:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f F412GDiscoveryLib\CMakeFiles\STM32412G-DiscoveryBasis.dir\build.make F412GDiscoveryLib/CMakeFiles/STM32412G-DiscoveryBasis.dir/stm32412g_discovery.c.obj
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f F412GDiscoveryLib\CMakeFiles\STM32412G-DiscoveryBasis.dir\build.make F412GDiscoveryLib/CMakeFiles/STM32412G-DiscoveryBasis.dir/stm32412g_discovery.c.obj
 .PHONY : stm32412g_discovery.c.obj
 
 stm32412g_discovery.i: stm32412g_discovery.c.i
@@ -190,7 +190,7 @@ stm32412g_discovery.i: stm32412g_discovery.c.i
 
 # target to preprocess a source file
 stm32412g_discovery.c.i:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f F412GDiscoveryLib\CMakeFiles\STM32412G-DiscoveryBasis.dir\build.make F412GDiscoveryLib/CMakeFiles/STM32412G-DiscoveryBasis.dir/stm32412g_discovery.c.i
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f F412GDiscoveryLib\CMakeFiles\STM32412G-DiscoveryBasis.dir\build.make F412GDiscoveryLib/CMakeFiles/STM32412G-DiscoveryBasis.dir/stm32412g_discovery.c.i
 .PHONY : stm32412g_discovery.c.i
 
 stm32412g_discovery.s: stm32412g_discovery.c.s
@@ -198,7 +198,7 @@ stm32412g_discovery.s: stm32412g_discovery.c.s
 
 # target to generate assembly for a file
 stm32412g_discovery.c.s:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f F412GDiscoveryLib\CMakeFiles\STM32412G-DiscoveryBasis.dir\build.make F412GDiscoveryLib/CMakeFiles/STM32412G-DiscoveryBasis.dir/stm32412g_discovery.c.s
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f F412GDiscoveryLib\CMakeFiles\STM32412G-DiscoveryBasis.dir\build.make F412GDiscoveryLib/CMakeFiles/STM32412G-DiscoveryBasis.dir/stm32412g_discovery.c.s
 .PHONY : stm32412g_discovery.c.s
 
 stm32412g_discovery_audio.obj: stm32412g_discovery_audio.c.obj
@@ -206,7 +206,7 @@ stm32412g_discovery_audio.obj: stm32412g_discovery_audio.c.obj
 
 # target to build an object file
 stm32412g_discovery_audio.c.obj:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f F412GDiscoveryLib\CMakeFiles\STM32412G-DiscoveryBasis.dir\build.make F412GDiscoveryLib/CMakeFiles/STM32412G-DiscoveryBasis.dir/stm32412g_discovery_audio.c.obj
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f F412GDiscoveryLib\CMakeFiles\STM32412G-DiscoveryBasis.dir\build.make F412GDiscoveryLib/CMakeFiles/STM32412G-DiscoveryBasis.dir/stm32412g_discovery_audio.c.obj
 .PHONY : stm32412g_discovery_audio.c.obj
 
 stm32412g_discovery_audio.i: stm32412g_discovery_audio.c.i
@@ -214,7 +214,7 @@ stm32412g_discovery_audio.i: stm32412g_discovery_audio.c.i
 
 # target to preprocess a source file
 stm32412g_discovery_audio.c.i:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f F412GDiscoveryLib\CMakeFiles\STM32412G-DiscoveryBasis.dir\build.make F412GDiscoveryLib/CMakeFiles/STM32412G-DiscoveryBasis.dir/stm32412g_discovery_audio.c.i
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f F412GDiscoveryLib\CMakeFiles\STM32412G-DiscoveryBasis.dir\build.make F412GDiscoveryLib/CMakeFiles/STM32412G-DiscoveryBasis.dir/stm32412g_discovery_audio.c.i
 .PHONY : stm32412g_discovery_audio.c.i
 
 stm32412g_discovery_audio.s: stm32412g_discovery_audio.c.s
@@ -222,7 +222,7 @@ stm32412g_discovery_audio.s: stm32412g_discovery_audio.c.s
 
 # target to generate assembly for a file
 stm32412g_discovery_audio.c.s:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f F412GDiscoveryLib\CMakeFiles\STM32412G-DiscoveryBasis.dir\build.make F412GDiscoveryLib/CMakeFiles/STM32412G-DiscoveryBasis.dir/stm32412g_discovery_audio.c.s
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f F412GDiscoveryLib\CMakeFiles\STM32412G-DiscoveryBasis.dir\build.make F412GDiscoveryLib/CMakeFiles/STM32412G-DiscoveryBasis.dir/stm32412g_discovery_audio.c.s
 .PHONY : stm32412g_discovery_audio.c.s
 
 stm32412g_discovery_eeprom.obj: stm32412g_discovery_eeprom.c.obj
@@ -230,7 +230,7 @@ stm32412g_discovery_eeprom.obj: stm32412g_discovery_eeprom.c.obj
 
 # target to build an object file
 stm32412g_discovery_eeprom.c.obj:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f F412GDiscoveryLib\CMakeFiles\STM32412G-DiscoveryBasis.dir\build.make F412GDiscoveryLib/CMakeFiles/STM32412G-DiscoveryBasis.dir/stm32412g_discovery_eeprom.c.obj
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f F412GDiscoveryLib\CMakeFiles\STM32412G-DiscoveryBasis.dir\build.make F412GDiscoveryLib/CMakeFiles/STM32412G-DiscoveryBasis.dir/stm32412g_discovery_eeprom.c.obj
 .PHONY : stm32412g_discovery_eeprom.c.obj
 
 stm32412g_discovery_eeprom.i: stm32412g_discovery_eeprom.c.i
@@ -238,7 +238,7 @@ stm32412g_discovery_eeprom.i: stm32412g_discovery_eeprom.c.i
 
 # target to preprocess a source file
 stm32412g_discovery_eeprom.c.i:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f F412GDiscoveryLib\CMakeFiles\STM32412G-DiscoveryBasis.dir\build.make F412GDiscoveryLib/CMakeFiles/STM32412G-DiscoveryBasis.dir/stm32412g_discovery_eeprom.c.i
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f F412GDiscoveryLib\CMakeFiles\STM32412G-DiscoveryBasis.dir\build.make F412GDiscoveryLib/CMakeFiles/STM32412G-DiscoveryBasis.dir/stm32412g_discovery_eeprom.c.i
 .PHONY : stm32412g_discovery_eeprom.c.i
 
 stm32412g_discovery_eeprom.s: stm32412g_discovery_eeprom.c.s
@@ -246,7 +246,7 @@ stm32412g_discovery_eeprom.s: stm32412g_discovery_eeprom.c.s
 
 # target to generate assembly for a file
 stm32412g_discovery_eeprom.c.s:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f F412GDiscoveryLib\CMakeFiles\STM32412G-DiscoveryBasis.dir\build.make F412GDiscoveryLib/CMakeFiles/STM32412G-DiscoveryBasis.dir/stm32412g_discovery_eeprom.c.s
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f F412GDiscoveryLib\CMakeFiles\STM32412G-DiscoveryBasis.dir\build.make F412GDiscoveryLib/CMakeFiles/STM32412G-DiscoveryBasis.dir/stm32412g_discovery_eeprom.c.s
 .PHONY : stm32412g_discovery_eeprom.c.s
 
 stm32412g_discovery_lcd.obj: stm32412g_discovery_lcd.c.obj
@@ -254,7 +254,7 @@ stm32412g_discovery_lcd.obj: stm32412g_discovery_lcd.c.obj
 
 # target to build an object file
 stm32412g_discovery_lcd.c.obj:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f F412GDiscoveryLib\CMakeFiles\STM32412G-DiscoveryBasis.dir\build.make F412GDiscoveryLib/CMakeFiles/STM32412G-DiscoveryBasis.dir/stm32412g_discovery_lcd.c.obj
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f F412GDiscoveryLib\CMakeFiles\STM32412G-DiscoveryBasis.dir\build.make F412GDiscoveryLib/CMakeFiles/STM32412G-DiscoveryBasis.dir/stm32412g_discovery_lcd.c.obj
 .PHONY : stm32412g_discovery_lcd.c.obj
 
 stm32412g_discovery_lcd.i: stm32412g_discovery_lcd.c.i
@@ -262,7 +262,7 @@ stm32412g_discovery_lcd.i: stm32412g_discovery_lcd.c.i
 
 # target to preprocess a source file
 stm32412g_discovery_lcd.c.i:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f F412GDiscoveryLib\CMakeFiles\STM32412G-DiscoveryBasis.dir\build.make F412GDiscoveryLib/CMakeFiles/STM32412G-DiscoveryBasis.dir/stm32412g_discovery_lcd.c.i
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f F412GDiscoveryLib\CMakeFiles\STM32412G-DiscoveryBasis.dir\build.make F412GDiscoveryLib/CMakeFiles/STM32412G-DiscoveryBasis.dir/stm32412g_discovery_lcd.c.i
 .PHONY : stm32412g_discovery_lcd.c.i
 
 stm32412g_discovery_lcd.s: stm32412g_discovery_lcd.c.s
@@ -270,7 +270,7 @@ stm32412g_discovery_lcd.s: stm32412g_discovery_lcd.c.s
 
 # target to generate assembly for a file
 stm32412g_discovery_lcd.c.s:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f F412GDiscoveryLib\CMakeFiles\STM32412G-DiscoveryBasis.dir\build.make F412GDiscoveryLib/CMakeFiles/STM32412G-DiscoveryBasis.dir/stm32412g_discovery_lcd.c.s
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f F412GDiscoveryLib\CMakeFiles\STM32412G-DiscoveryBasis.dir\build.make F412GDiscoveryLib/CMakeFiles/STM32412G-DiscoveryBasis.dir/stm32412g_discovery_lcd.c.s
 .PHONY : stm32412g_discovery_lcd.c.s
 
 stm32412g_discovery_qspi.obj: stm32412g_discovery_qspi.c.obj
@@ -278,7 +278,7 @@ stm32412g_discovery_qspi.obj: stm32412g_discovery_qspi.c.obj
 
 # target to build an object file
 stm32412g_discovery_qspi.c.obj:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f F412GDiscoveryLib\CMakeFiles\STM32412G-DiscoveryBasis.dir\build.make F412GDiscoveryLib/CMakeFiles/STM32412G-DiscoveryBasis.dir/stm32412g_discovery_qspi.c.obj
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f F412GDiscoveryLib\CMakeFiles\STM32412G-DiscoveryBasis.dir\build.make F412GDiscoveryLib/CMakeFiles/STM32412G-DiscoveryBasis.dir/stm32412g_discovery_qspi.c.obj
 .PHONY : stm32412g_discovery_qspi.c.obj
 
 stm32412g_discovery_qspi.i: stm32412g_discovery_qspi.c.i
@@ -286,7 +286,7 @@ stm32412g_discovery_qspi.i: stm32412g_discovery_qspi.c.i
 
 # target to preprocess a source file
 stm32412g_discovery_qspi.c.i:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f F412GDiscoveryLib\CMakeFiles\STM32412G-DiscoveryBasis.dir\build.make F412GDiscoveryLib/CMakeFiles/STM32412G-DiscoveryBasis.dir/stm32412g_discovery_qspi.c.i
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f F412GDiscoveryLib\CMakeFiles\STM32412G-DiscoveryBasis.dir\build.make F412GDiscoveryLib/CMakeFiles/STM32412G-DiscoveryBasis.dir/stm32412g_discovery_qspi.c.i
 .PHONY : stm32412g_discovery_qspi.c.i
 
 stm32412g_discovery_qspi.s: stm32412g_discovery_qspi.c.s
@@ -294,7 +294,7 @@ stm32412g_discovery_qspi.s: stm32412g_discovery_qspi.c.s
 
 # target to generate assembly for a file
 stm32412g_discovery_qspi.c.s:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f F412GDiscoveryLib\CMakeFiles\STM32412G-DiscoveryBasis.dir\build.make F412GDiscoveryLib/CMakeFiles/STM32412G-DiscoveryBasis.dir/stm32412g_discovery_qspi.c.s
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f F412GDiscoveryLib\CMakeFiles\STM32412G-DiscoveryBasis.dir\build.make F412GDiscoveryLib/CMakeFiles/STM32412G-DiscoveryBasis.dir/stm32412g_discovery_qspi.c.s
 .PHONY : stm32412g_discovery_qspi.c.s
 
 stm32412g_discovery_sd.obj: stm32412g_discovery_sd.c.obj
@@ -302,7 +302,7 @@ stm32412g_discovery_sd.obj: stm32412g_discovery_sd.c.obj
 
 # target to build an object file
 stm32412g_discovery_sd.c.obj:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f F412GDiscoveryLib\CMakeFiles\STM32412G-DiscoveryBasis.dir\build.make F412GDiscoveryLib/CMakeFiles/STM32412G-DiscoveryBasis.dir/stm32412g_discovery_sd.c.obj
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f F412GDiscoveryLib\CMakeFiles\STM32412G-DiscoveryBasis.dir\build.make F412GDiscoveryLib/CMakeFiles/STM32412G-DiscoveryBasis.dir/stm32412g_discovery_sd.c.obj
 .PHONY : stm32412g_discovery_sd.c.obj
 
 stm32412g_discovery_sd.i: stm32412g_discovery_sd.c.i
@@ -310,7 +310,7 @@ stm32412g_discovery_sd.i: stm32412g_discovery_sd.c.i
 
 # target to preprocess a source file
 stm32412g_discovery_sd.c.i:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f F412GDiscoveryLib\CMakeFiles\STM32412G-DiscoveryBasis.dir\build.make F412GDiscoveryLib/CMakeFiles/STM32412G-DiscoveryBasis.dir/stm32412g_discovery_sd.c.i
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f F412GDiscoveryLib\CMakeFiles\STM32412G-DiscoveryBasis.dir\build.make F412GDiscoveryLib/CMakeFiles/STM32412G-DiscoveryBasis.dir/stm32412g_discovery_sd.c.i
 .PHONY : stm32412g_discovery_sd.c.i
 
 stm32412g_discovery_sd.s: stm32412g_discovery_sd.c.s
@@ -318,7 +318,7 @@ stm32412g_discovery_sd.s: stm32412g_discovery_sd.c.s
 
 # target to generate assembly for a file
 stm32412g_discovery_sd.c.s:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f F412GDiscoveryLib\CMakeFiles\STM32412G-DiscoveryBasis.dir\build.make F412GDiscoveryLib/CMakeFiles/STM32412G-DiscoveryBasis.dir/stm32412g_discovery_sd.c.s
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f F412GDiscoveryLib\CMakeFiles\STM32412G-DiscoveryBasis.dir\build.make F412GDiscoveryLib/CMakeFiles/STM32412G-DiscoveryBasis.dir/stm32412g_discovery_sd.c.s
 .PHONY : stm32412g_discovery_sd.c.s
 
 stm32412g_discovery_ts.obj: stm32412g_discovery_ts.c.obj
@@ -326,7 +326,7 @@ stm32412g_discovery_ts.obj: stm32412g_discovery_ts.c.obj
 
 # target to build an object file
 stm32412g_discovery_ts.c.obj:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f F412GDiscoveryLib\CMakeFiles\STM32412G-DiscoveryBasis.dir\build.make F412GDiscoveryLib/CMakeFiles/STM32412G-DiscoveryBasis.dir/stm32412g_discovery_ts.c.obj
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f F412GDiscoveryLib\CMakeFiles\STM32412G-DiscoveryBasis.dir\build.make F412GDiscoveryLib/CMakeFiles/STM32412G-DiscoveryBasis.dir/stm32412g_discovery_ts.c.obj
 .PHONY : stm32412g_discovery_ts.c.obj
 
 stm32412g_discovery_ts.i: stm32412g_discovery_ts.c.i
@@ -334,7 +334,7 @@ stm32412g_discovery_ts.i: stm32412g_discovery_ts.c.i
 
 # target to preprocess a source file
 stm32412g_discovery_ts.c.i:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f F412GDiscoveryLib\CMakeFiles\STM32412G-DiscoveryBasis.dir\build.make F412GDiscoveryLib/CMakeFiles/STM32412G-DiscoveryBasis.dir/stm32412g_discovery_ts.c.i
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f F412GDiscoveryLib\CMakeFiles\STM32412G-DiscoveryBasis.dir\build.make F412GDiscoveryLib/CMakeFiles/STM32412G-DiscoveryBasis.dir/stm32412g_discovery_ts.c.i
 .PHONY : stm32412g_discovery_ts.c.i
 
 stm32412g_discovery_ts.s: stm32412g_discovery_ts.c.s
@@ -342,7 +342,7 @@ stm32412g_discovery_ts.s: stm32412g_discovery_ts.c.s
 
 # target to generate assembly for a file
 stm32412g_discovery_ts.c.s:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f F412GDiscoveryLib\CMakeFiles\STM32412G-DiscoveryBasis.dir\build.make F412GDiscoveryLib/CMakeFiles/STM32412G-DiscoveryBasis.dir/stm32412g_discovery_ts.c.s
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f F412GDiscoveryLib\CMakeFiles\STM32412G-DiscoveryBasis.dir\build.make F412GDiscoveryLib/CMakeFiles/STM32412G-DiscoveryBasis.dir/stm32412g_discovery_ts.c.s
 .PHONY : stm32412g_discovery_ts.c.s
 
 # Help Target
@@ -392,6 +392,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 0
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

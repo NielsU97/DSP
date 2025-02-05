@@ -1,0 +1,516 @@
+{
+	"artifacts" : 
+	[
+		{
+			"path" : "Opdracht1/CMakeFiles/DSBKlassen.dir/STUDENT/dsbComplex.cpp.obj"
+		},
+		{
+			"path" : "Opdracht1/CMakeFiles/DSBKlassen.dir/STUDENT/dsbComplexBasis.cpp.obj"
+		}
+	],
+	"backtrace" : 1,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_library",
+			"add_definitions",
+			"include",
+			"add_compile_definitions",
+			"include_directories"
+		],
+		"files" : 
+		[
+			"C:/Users/niels/Documents/GitHub/DSP/software/opdracht1/CMakeLists.txt",
+			"C:/Users/niels/Documents/GitHub/DSP/software/STM32Basis/HAL/buildsystem/STM32F412xG.cmake",
+			"CMakeLists.txt",
+			"C:/Users/niels/Documents/GitHub/DSP/software/STM32Basis/HAL/gemeenschappelijk/Third_Party/ESE_BSP/ESE_BSP.cmake",
+			"C:/Users/niels/Documents/GitHub/DSP/software/STM32Basis/HAL/gemeenschappelijk/Third_Party/FreeRTOS/FreeRTOS.cmake",
+			"C:/Users/niels/Documents/GitHub/DSP/software/DSB.cmake",
+			"C:/Users/niels/Documents/GitHub/DSP/software/STM32Basis/STM32PostSetupDevelopment.cmake",
+			"C:/Users/niels/Documents/GitHub/DSP/software/STM32Basis/HAL/gemeenschappelijk/Libraries/Middlewares/ST/STemWin/StemWin.cmake",
+			"C:/Users/niels/Documents/GitHub/DSP/software/STM32Basis/HAL/buildsystem/DevBoard/STM32F412GDiscovery.cmake",
+			"C:/Users/niels/Documents/GitHub/DSP/software/STM32Basis/BasisSTM32.cmake",
+			"C:/Users/niels/Documents/GitHub/DSP/software/STM32Basis/STM32Development.cmake",
+			"C:/Users/niels/Documents/GitHub/DSP/software/STM32Basis/HAL/gemeenschappelijk/Libraries/Middlewares/ST/STemWin/BSP/STM32F412G-Discovery/STM32F412GDiscoveryEmWin.cmake"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 52,
+				"parent" : 0
+			},
+			{
+				"file" : 2
+			},
+			{
+				"command" : 2,
+				"file" : 2,
+				"line" : 45,
+				"parent" : 2
+			},
+			{
+				"file" : 1,
+				"parent" : 3
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 11,
+				"parent" : 4
+			},
+			{
+				"command" : 2,
+				"file" : 2,
+				"line" : 53,
+				"parent" : 2
+			},
+			{
+				"file" : 3,
+				"parent" : 6
+			},
+			{
+				"command" : 1,
+				"file" : 3,
+				"line" : 11,
+				"parent" : 7
+			},
+			{
+				"command" : 2,
+				"file" : 2,
+				"line" : 46,
+				"parent" : 2
+			},
+			{
+				"file" : 4,
+				"parent" : 9
+			},
+			{
+				"command" : 1,
+				"file" : 4,
+				"line" : 11,
+				"parent" : 10
+			},
+			{
+				"command" : 2,
+				"file" : 2,
+				"line" : 31,
+				"parent" : 2
+			},
+			{
+				"file" : 5,
+				"parent" : 12
+			},
+			{
+				"command" : 3,
+				"file" : 5,
+				"line" : 18,
+				"parent" : 13
+			},
+			{
+				"command" : 2,
+				"file" : 2,
+				"line" : 48,
+				"parent" : 2
+			},
+			{
+				"file" : 6,
+				"parent" : 15
+			},
+			{
+				"command" : 3,
+				"file" : 6,
+				"line" : 26,
+				"parent" : 16
+			},
+			{
+				"command" : 2,
+				"file" : 2,
+				"line" : 47,
+				"parent" : 2
+			},
+			{
+				"file" : 8,
+				"parent" : 18
+			},
+			{
+				"command" : 2,
+				"file" : 8,
+				"line" : 25,
+				"parent" : 19
+			},
+			{
+				"file" : 7,
+				"parent" : 20
+			},
+			{
+				"command" : 1,
+				"file" : 7,
+				"line" : 13,
+				"parent" : 21
+			},
+			{
+				"command" : 2,
+				"file" : 2,
+				"line" : 36,
+				"parent" : 2
+			},
+			{
+				"file" : 10,
+				"parent" : 23
+			},
+			{
+				"command" : 2,
+				"file" : 10,
+				"line" : 16,
+				"parent" : 24
+			},
+			{
+				"file" : 9,
+				"parent" : 25
+			},
+			{
+				"command" : 1,
+				"file" : 9,
+				"line" : 51,
+				"parent" : 26
+			},
+			{
+				"command" : 1,
+				"file" : 10,
+				"line" : 39,
+				"parent" : 24
+			},
+			{
+				"command" : 1,
+				"file" : 8,
+				"line" : 8,
+				"parent" : 19
+			},
+			{
+				"command" : 4,
+				"file" : 2,
+				"line" : 23,
+				"parent" : 2
+			},
+			{
+				"command" : 4,
+				"file" : 10,
+				"line" : 26,
+				"parent" : 24
+			},
+			{
+				"command" : 4,
+				"file" : 10,
+				"line" : 28,
+				"parent" : 24
+			},
+			{
+				"command" : 4,
+				"file" : 2,
+				"line" : 42,
+				"parent" : 2
+			},
+			{
+				"command" : 4,
+				"file" : 1,
+				"line" : 28,
+				"parent" : 4
+			},
+			{
+				"command" : 4,
+				"file" : 4,
+				"line" : 31,
+				"parent" : 10
+			},
+			{
+				"command" : 4,
+				"file" : 4,
+				"line" : 39,
+				"parent" : 10
+			},
+			{
+				"command" : 4,
+				"file" : 4,
+				"line" : 44,
+				"parent" : 10
+			},
+			{
+				"command" : 4,
+				"file" : 8,
+				"line" : 12,
+				"parent" : 19
+			},
+			{
+				"command" : 4,
+				"file" : 7,
+				"line" : 9,
+				"parent" : 21
+			},
+			{
+				"command" : 2,
+				"file" : 8,
+				"line" : 26,
+				"parent" : 19
+			},
+			{
+				"file" : 11,
+				"parent" : 40
+			},
+			{
+				"command" : 4,
+				"file" : 11,
+				"line" : 8,
+				"parent" : 41
+			},
+			{
+				"command" : 4,
+				"file" : 6,
+				"line" : 24,
+				"parent" : 16
+			},
+			{
+				"command" : 4,
+				"file" : 3,
+				"line" : 18,
+				"parent" : 7
+			},
+			{
+				"command" : 4,
+				"file" : 3,
+				"line" : 24,
+				"parent" : 7
+			},
+			{
+				"command" : 4,
+				"file" : 2,
+				"line" : 58,
+				"parent" : 2
+			},
+			{
+				"command" : 4,
+				"file" : 0,
+				"line" : 48,
+				"parent" : 0
+			}
+		]
+	},
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "-mcpu=cortex-m4 -mfloat-abi=hard -mfpu=fpv4-sp-d16 -fsingle-precision-constant -mfix-cortex-m3-ldrd --std=c++14 -Wall -Wpointer-arith -Wswitch -Wredundant-decls -Wreturn-type -Wshadow -Wunused -Werror -Wno-psabi -mthumb -mno-unaligned-access -mapcs-frame -pipe -funsigned-char -ffunction-sections -fdata-sections  --std=c++14 -fno-rtti -fno-exceptions --std=gnu++0x -Wctor-dtor-privacy -Wnon-virtual-dtor -finline-limit=20 -g -std=c++14 -fdiagnostics-color=always   -O0 -g -fno-default-inline"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 5,
+					"define" : "ARMCORTEXM4"
+				},
+				{
+					"backtrace" : 8,
+					"define" : "BoardVersie=11"
+				},
+				{
+					"backtrace" : 11,
+					"define" : "FreeRTOSGebruikt"
+				},
+				{
+					"backtrace" : 14,
+					"define" : "InterfaceTaalNederlands"
+				},
+				{
+					"backtrace" : 5,
+					"define" : "STM32F412"
+				},
+				{
+					"backtrace" : 5,
+					"define" : "STM32F412Zx"
+				},
+				{
+					"backtrace" : 5,
+					"define" : "STM32F41x"
+				},
+				{
+					"backtrace" : 17,
+					"define" : "SeggerRTTAanwezig"
+				},
+				{
+					"backtrace" : 22,
+					"define" : "StemWinAanwezig"
+				},
+				{
+					"backtrace" : 27,
+					"define" : "USE_FULL_ASSERT"
+				},
+				{
+					"backtrace" : 28,
+					"define" : "USE_HAL_DRIVER"
+				},
+				{
+					"backtrace" : 29,
+					"define" : "USE_STM32412G_DISCOVERY"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 30,
+					"path" : "C:/Users/niels/Documents/GitHub/DSP/software/opdracht5/Basis/h"
+				},
+				{
+					"backtrace" : 31,
+					"path" : "C:/Users/niels/Documents/GitHub/DSP/software/opdracht5/../STM32Basis/gemeenschappelijk/basis/h"
+				},
+				{
+					"backtrace" : 31,
+					"path" : "C:/Users/niels/Documents/GitHub/DSP/software/opdracht5/../algemeen/h"
+				},
+				{
+					"backtrace" : 32,
+					"path" : "C:/Users/niels/Documents/GitHub/DSP/software/opdracht5/CLion/Debug/gegenereerd"
+				},
+				{
+					"backtrace" : 33,
+					"path" : "C:/Users/niels/Documents/GitHub/DSP/software/opdracht5/config"
+				},
+				{
+					"backtrace" : 34,
+					"path" : "C:/Users/niels/Documents/GitHub/DSP/software/opdracht5/../STM32Basis/HAL/gemeenschappelijk/Libraries/CMSIS/Include"
+				},
+				{
+					"backtrace" : 34,
+					"path" : "C:/Users/niels/Documents/GitHub/DSP/software/opdracht5/../STM32Basis/HAL/gemeenschappelijk/Libraries/CMSIS/Device/ST/STM32F4xx/Include"
+				},
+				{
+					"backtrace" : 34,
+					"path" : "C:/Users/niels/Documents/GitHub/DSP/software/opdracht5/../STM32Basis/HAL/gemeenschappelijk/Libraries/STM32F4xx_HAL_Driver/Inc"
+				},
+				{
+					"backtrace" : 35,
+					"path" : "C:/Users/niels/Documents/GitHub/DSP/software/opdracht5/../STM32Basis/HAL/gemeenschappelijk/Third_Party/FreeRTOS/Source/include"
+				},
+				{
+					"backtrace" : 35,
+					"path" : "C:/Users/niels/Documents/GitHub/DSP/software/opdracht5/../STM32Basis/HAL/gemeenschappelijk/Third_Party/FreeRTOS/Source/CMSIS_RTOS"
+				},
+				{
+					"backtrace" : 35,
+					"path" : "C:/Users/niels/Documents/GitHub/DSP/software/opdracht5/../STM32Basis/HAL/gemeenschappelijk/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F"
+				},
+				{
+					"backtrace" : 36,
+					"path" : "C:/Users/niels/Documents/GitHub/DSP/software/opdracht5/../STM32Basis/HAL/gemeenschappelijk/Third_Party/freertos-addons-1.1.0/c++/Source/include"
+				},
+				{
+					"backtrace" : 37,
+					"path" : "C:/Users/niels/Documents/GitHub/DSP/software/opdracht5/../STM32Basis/gemeenschappelijk/ESEFreeRTOS/h"
+				},
+				{
+					"backtrace" : 38,
+					"path" : "C:/Users/niels/Documents/GitHub/DSP/software/opdracht5/../STM32Basis/HAL/gemeenschappelijk/Libraries/BSP/STM32412G-Discovery"
+				},
+				{
+					"backtrace" : 38,
+					"path" : "C:/Users/niels/Documents/GitHub/DSP/software/opdracht5/../STM32Basis/HAL/gemeenschappelijk/Libraries/BSP/STM32412G-Discovery/h"
+				},
+				{
+					"backtrace" : 38,
+					"path" : "C:/Users/niels/Documents/GitHub/DSP/software/opdracht5/../STM32Basis/HAL/gemeenschappelijk/Third_Party/FatFs_vR0.13a"
+				},
+				{
+					"backtrace" : 38,
+					"path" : "C:/Users/niels/Documents/GitHub/DSP/software/opdracht5/../STM32Basis/HAL/gemeenschappelijk/Libraries/Utilities"
+				},
+				{
+					"backtrace" : 38,
+					"path" : "C:/Users/niels/Documents/GitHub/DSP/software/opdracht5/../STM32Basis/HAL/gemeenschappelijk/Libraries/BSP/Components"
+				},
+				{
+					"backtrace" : 39,
+					"path" : "C:/Users/niels/Documents/GitHub/DSP/software/opdracht5/../STM32Basis/HAL/gemeenschappelijk/Libraries/Middlewares/ST/STemWin/inc"
+				},
+				{
+					"backtrace" : 42,
+					"path" : "C:/Users/niels/Documents/GitHub/DSP/software/STM32Basis/HAL/gemeenschappelijk/Libraries/Middlewares/ST/STemWin/BSP/STM32F412G-Discovery/."
+				},
+				{
+					"backtrace" : 43,
+					"path" : "C:/Users/niels/Documents/GitHub/DSP/software/opdracht5/../STM32Basis/Segger/Segger_RTT"
+				},
+				{
+					"backtrace" : 44,
+					"path" : "C:/Users/niels/Documents/GitHub/DSP/software/opdracht5/../STM32Basis/HAL/gemeenschappelijk/Third_Party/ESE_BSP/DigProcesAansturing/h"
+				},
+				{
+					"backtrace" : 45,
+					"path" : "C:/Users/niels/Documents/GitHub/DSP/software/opdracht5/../STM32Basis/HAL/gemeenschappelijk/Third_Party/ESE_BSP/ESEPracticumboard_RGT+DSB/h"
+				},
+				{
+					"backtrace" : 46,
+					"path" : "C:/Users/niels/Documents/GitHub/DSP/software/opdracht5/../opdracht1/STUDENT/h"
+				},
+				{
+					"backtrace" : 47,
+					"path" : "C:/Users/niels/Documents/GitHub/DSP/software/opdracht1/STUDENT/h"
+				}
+			],
+			"language" : "CXX",
+			"languageStandard" : 
+			{
+				"backtraces" : 
+				[
+					1
+				],
+				"standard" : "14"
+			},
+			"sourceIndexes" : 
+			[
+				0,
+				1
+			]
+		}
+	],
+	"id" : "DSBKlassen::@7a7322df39b2ab1a1cf6",
+	"name" : "DSBKlassen",
+	"paths" : 
+	{
+		"build" : "Opdracht1",
+		"source" : "C:/Users/niels/Documents/GitHub/DSP/software/opdracht1"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Source Files",
+			"sourceIndexes" : 
+			[
+				0,
+				1
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Users/niels/Documents/GitHub/DSP/software/opdracht1/STUDENT/dsbComplex.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Users/niels/Documents/GitHub/DSP/software/opdracht1/STUDENT/dsbComplexBasis.cpp",
+			"sourceGroupIndex" : 0
+		}
+	],
+	"type" : "OBJECT_LIBRARY"
+}

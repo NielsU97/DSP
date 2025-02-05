@@ -1,7 +1,7 @@
 ESE_BSPProcessor/CMakeFiles/ESE_RGT+DSBBoardLib.dir/ESEBoardController.cpp.obj: \
- C:\Users\niels\Documents\Elektrotechniek\Jaar\ 3\dspl\software\STM32Basis\HAL\gemeenschappelijk\Third_Party\ESE_BSP\ESEPracticumboard_RGT+DSB\ESEBoardController.cpp \
- c:\users\niels\docume~1\elektr~1\jaar3~1\dspl\software\stm32b~1\hal\gemeen~1\third_~1\ese_bsp\esepra~2\h\eseboardcontroller.h \
- c:\users\niels\docume~1\elektr~1\jaar3~1\dspl\software\algemeen\h\algdef.h \
+ C:\Users\niels\Documents\GitHub\DSP\software\STM32Basis\HAL\gemeenschappelijk\Third_Party\ESE_BSP\ESEPracticumboard_RGT+DSB\ESEBoardController.cpp \
+ c:\users\niels\documents\github\dsp\software\stm32basis\hal\gemeenschappelijk\third_party\ese_bsp\esepracticumboard_rgt+dsb\h\eseboardcontroller.h \
+ c:\users\niels\documents\github\dsp\software\algemeen\h\algdef.h \
  c:\progra~2\gnuarm~1\102021~1.10\arm-none-eabi\include\stdio.h \
  c:\progra~2\gnuarm~1\102021~1.10\arm-none-eabi\include\_ansi.h \
  c:\progra~2\gnuarm~1\102021~1.10\arm-none-eabi\include\newlib.h \
@@ -37,57 +37,57 @@ ESE_BSPProcessor/CMakeFiles/ESE_RGT+DSBBoardLib.dir/ESEBoardController.cpp.obj: 
  c:\progra~2\gnuarm~1\102021~1.10\arm-none-eabi\include\c++\10.3.1\bits\std_abs.h \
  c:\progra~2\gnuarm~1\102021~1.10\arm-none-eabi\include\stdlib.h \
  c:\progra~2\gnuarm~1\102021~1.10\arm-none-eabi\include\machine\stdlib.h \
- c:\users\niels\docume~1\elektr~1\jaar3~1\dspl\software\algemeen\h\datapakket.h \
+ c:\users\niels\documents\github\dsp\software\algemeen\h\datapakket.h \
  c:\progra~2\gnuarm~1\102021~1.10\arm-none-eabi\include\string.h \
  c:\progra~2\gnuarm~1\102021~1.10\arm-none-eabi\include\sys\string.h \
  c:\progra~2\gnuarm~1\102021~1.10\arm-none-eabi\include\assert.h \
- c:\users\niels\docume~1\elektr~1\jaar3~1\dspl\software\stm32b~1\hal\gemeen~1\third_~1\ese_bsp\digpro~1\h\digprocesaansturing.h \
- c:\users\niels\docume~1\elektr~1\jaar3~1\dspl\software\stm32b~1\hal\gemeen~1\librar~1\bsp\stm324~1\h\stm32412gdiscovery.h \
- c:\users\niels\docume~1\elektr~1\jaar3~1\dspl\software\stm32b~1\hal\gemeen~1\librar~1\bsp\stm324~1\stm32412g_discovery.h \
- c:\users\niels\docume~1\elektr~1\jaar3~1\dspl\software\stm32b~1\hal\gemeen~1\librar~1\stm32f~1\inc\stm32f4xx_hal.h \
- C:/Users/niels/DOCUME~1/ELEKTR~1/JAAR3~1/dspl/software/OP2A2E~1/Basis/h/stm32f4xx_hal_conf.h \
- c:\users\niels\docume~1\elektr~1\jaar3~1\dspl\software\stm32b~1\hal\gemeen~1\librar~1\stm32f~1\inc\stm32f4xx_hal_rcc.h \
- c:\users\niels\docume~1\elektr~1\jaar3~1\dspl\software\stm32b~1\hal\gemeen~1\librar~1\stm32f~1\inc\stm32f4xx_hal_def.h \
- c:\users\niels\docume~1\elektr~1\jaar3~1\dspl\software\stm32b~1\hal\gemeen~1\librar~1\cmsis\device\st\stm32f~1\include\stm32f4xx.h \
- c:\users\niels\docume~1\elektr~1\jaar3~1\dspl\software\stm32b~1\hal\gemeen~1\librar~1\cmsis\device\st\stm32f~1\include\stm32f412zx.h \
- c:\users\niels\docume~1\elektr~1\jaar3~1\dspl\software\stm32b~1\hal\gemeen~1\librar~1\cmsis\include\core_cm4.h \
- c:\users\niels\docume~1\elektr~1\jaar3~1\dspl\software\stm32b~1\hal\gemeen~1\librar~1\cmsis\include\core_cmInstr.h \
- c:\users\niels\docume~1\elektr~1\jaar3~1\dspl\software\stm32b~1\hal\gemeen~1\librar~1\cmsis\include\cmsis_gcc.h \
- c:\users\niels\docume~1\elektr~1\jaar3~1\dspl\software\stm32b~1\hal\gemeen~1\librar~1\cmsis\include\core_cmFunc.h \
- c:\users\niels\docume~1\elektr~1\jaar3~1\dspl\software\stm32b~1\hal\gemeen~1\librar~1\cmsis\include\core_cmSimd.h \
- c:\users\niels\docume~1\elektr~1\jaar3~1\dspl\software\stm32b~1\hal\gemeen~1\librar~1\cmsis\device\st\stm32f~1\include\system_stm32f4xx.h \
- c:\users\niels\docume~1\elektr~1\jaar3~1\dspl\software\stm32b~1\hal\gemeen~1\librar~1\stm32f~1\inc\Legacy/stm32_hal_legacy.h \
- c:\users\niels\docume~1\elektr~1\jaar3~1\dspl\software\stm32b~1\hal\gemeen~1\librar~1\stm32f~1\inc\stm32f4xx_hal_rcc_ex.h \
- c:\users\niels\docume~1\elektr~1\jaar3~1\dspl\software\stm32b~1\hal\gemeen~1\librar~1\stm32f~1\inc\stm32f4xx_hal_gpio.h \
- c:\users\niels\docume~1\elektr~1\jaar3~1\dspl\software\stm32b~1\hal\gemeen~1\librar~1\stm32f~1\inc\stm32f4xx_hal_gpio_ex.h \
- c:\users\niels\docume~1\elektr~1\jaar3~1\dspl\software\stm32b~1\hal\gemeen~1\librar~1\stm32f~1\inc\stm32f4xx_hal_dma.h \
- c:\users\niels\docume~1\elektr~1\jaar3~1\dspl\software\stm32b~1\hal\gemeen~1\librar~1\stm32f~1\inc\stm32f4xx_hal_dma_ex.h \
- c:\users\niels\docume~1\elektr~1\jaar3~1\dspl\software\stm32b~1\hal\gemeen~1\librar~1\stm32f~1\inc\stm32f4xx_hal_cortex.h \
- c:\users\niels\docume~1\elektr~1\jaar3~1\dspl\software\stm32b~1\hal\gemeen~1\librar~1\stm32f~1\inc\stm32f4xx_hal_adc.h \
- c:\users\niels\docume~1\elektr~1\jaar3~1\dspl\software\stm32b~1\hal\gemeen~1\librar~1\stm32f~1\inc\stm32f4xx_hal_adc_ex.h \
- c:\users\niels\docume~1\elektr~1\jaar3~1\dspl\software\stm32b~1\hal\gemeen~1\librar~1\stm32f~1\inc\stm32f4xx_hal_flash.h \
- c:\users\niels\docume~1\elektr~1\jaar3~1\dspl\software\stm32b~1\hal\gemeen~1\librar~1\stm32f~1\inc\stm32f4xx_hal_flash_ex.h \
- c:\users\niels\docume~1\elektr~1\jaar3~1\dspl\software\stm32b~1\hal\gemeen~1\librar~1\stm32f~1\inc\stm32f4xx_hal_flash_ramfunc.h \
- c:\users\niels\docume~1\elektr~1\jaar3~1\dspl\software\stm32b~1\hal\gemeen~1\librar~1\stm32f~1\inc\stm32f4xx_hal_sram.h \
- c:\users\niels\docume~1\elektr~1\jaar3~1\dspl\software\stm32b~1\hal\gemeen~1\librar~1\stm32f~1\inc\stm32f4xx_ll_fsmc.h \
- c:\users\niels\docume~1\elektr~1\jaar3~1\dspl\software\stm32b~1\hal\gemeen~1\librar~1\stm32f~1\inc\stm32f4xx_hal_i2c.h \
- c:\users\niels\docume~1\elektr~1\jaar3~1\dspl\software\stm32b~1\hal\gemeen~1\librar~1\stm32f~1\inc\stm32f4xx_hal_i2c_ex.h \
- c:\users\niels\docume~1\elektr~1\jaar3~1\dspl\software\stm32b~1\hal\gemeen~1\librar~1\stm32f~1\inc\stm32f4xx_hal_iwdg.h \
- c:\users\niels\docume~1\elektr~1\jaar3~1\dspl\software\stm32b~1\hal\gemeen~1\librar~1\stm32f~1\inc\stm32f4xx_hal_pwr.h \
- c:\users\niels\docume~1\elektr~1\jaar3~1\dspl\software\stm32b~1\hal\gemeen~1\librar~1\stm32f~1\inc\stm32f4xx_hal_pwr_ex.h \
- c:\users\niels\docume~1\elektr~1\jaar3~1\dspl\software\stm32b~1\hal\gemeen~1\librar~1\stm32f~1\inc\stm32f4xx_hal_rng.h \
- c:\users\niels\docume~1\elektr~1\jaar3~1\dspl\software\stm32b~1\hal\gemeen~1\librar~1\stm32f~1\inc\stm32f4xx_hal_rtc.h \
- c:\users\niels\docume~1\elektr~1\jaar3~1\dspl\software\stm32b~1\hal\gemeen~1\librar~1\stm32f~1\inc\stm32f4xx_hal_rtc_ex.h \
- c:\users\niels\docume~1\elektr~1\jaar3~1\dspl\software\stm32b~1\hal\gemeen~1\librar~1\stm32f~1\inc\stm32f4xx_hal_sd.h \
- c:\users\niels\docume~1\elektr~1\jaar3~1\dspl\software\stm32b~1\hal\gemeen~1\librar~1\stm32f~1\inc\stm32f4xx_ll_sdmmc.h \
- c:\users\niels\docume~1\elektr~1\jaar3~1\dspl\software\stm32b~1\hal\gemeen~1\librar~1\stm32f~1\inc\stm32f4xx_hal_spi.h \
- c:\users\niels\docume~1\elektr~1\jaar3~1\dspl\software\stm32b~1\hal\gemeen~1\librar~1\stm32f~1\inc\stm32f4xx_hal_tim.h \
- c:\users\niels\docume~1\elektr~1\jaar3~1\dspl\software\stm32b~1\hal\gemeen~1\librar~1\stm32f~1\inc\stm32f4xx_hal_tim_ex.h \
- c:\users\niels\docume~1\elektr~1\jaar3~1\dspl\software\stm32b~1\hal\gemeen~1\librar~1\stm32f~1\inc\stm32f4xx_hal_uart.h \
- c:\users\niels\docume~1\elektr~1\jaar3~1\dspl\software\stm32b~1\hal\gemeen~1\librar~1\stm32f~1\inc\stm32f4xx_hal_usart.h \
- c:\users\niels\docume~1\elektr~1\jaar3~1\dspl\software\stm32b~1\hal\gemeen~1\librar~1\stm32f~1\inc\stm32f4xx_hal_qspi.h \
- c:\users\niels\docume~1\elektr~1\jaar3~1\dspl\software\stm32b~1\gemeen~1\basis\h\cortexmprocessor.h \
- c:\users\niels\docume~1\elektr~1\jaar3~1\dspl\software\stm32b~1\hal\gemeen~1\third_~1\freert~1.0\c__~1\source\include\semaphore.hpp \
+ c:\users\niels\documents\github\dsp\software\stm32basis\hal\gemeenschappelijk\third_party\ese_bsp\digprocesaansturing\h\digprocesaansturing.h \
+ c:\users\niels\documents\github\dsp\software\stm32basis\hal\gemeenschappelijk\libraries\bsp\stm32412g-discovery\h\stm32412gdiscovery.h \
+ c:\users\niels\documents\github\dsp\software\stm32basis\hal\gemeenschappelijk\libraries\bsp\stm32412g-discovery\stm32412g_discovery.h \
+ c:\users\niels\documents\github\dsp\software\stm32basis\hal\gemeenschappelijk\libraries\stm32f4xx_hal_driver\inc\stm32f4xx_hal.h \
+ C:/Users/niels/Documents/GitHub/DSP/software/opdracht5/Basis/h/stm32f4xx_hal_conf.h \
+ c:\users\niels\documents\github\dsp\software\stm32basis\hal\gemeenschappelijk\libraries\stm32f4xx_hal_driver\inc\stm32f4xx_hal_rcc.h \
+ c:\users\niels\documents\github\dsp\software\stm32basis\hal\gemeenschappelijk\libraries\stm32f4xx_hal_driver\inc\stm32f4xx_hal_def.h \
+ c:\users\niels\documents\github\dsp\software\stm32basis\hal\gemeenschappelijk\libraries\cmsis\device\st\stm32f4xx\include\stm32f4xx.h \
+ c:\users\niels\documents\github\dsp\software\stm32basis\hal\gemeenschappelijk\libraries\cmsis\device\st\stm32f4xx\include\stm32f412zx.h \
+ c:\users\niels\documents\github\dsp\software\stm32basis\hal\gemeenschappelijk\libraries\cmsis\include\core_cm4.h \
+ c:\users\niels\documents\github\dsp\software\stm32basis\hal\gemeenschappelijk\libraries\cmsis\include\core_cmInstr.h \
+ c:\users\niels\documents\github\dsp\software\stm32basis\hal\gemeenschappelijk\libraries\cmsis\include\cmsis_gcc.h \
+ c:\users\niels\documents\github\dsp\software\stm32basis\hal\gemeenschappelijk\libraries\cmsis\include\core_cmFunc.h \
+ c:\users\niels\documents\github\dsp\software\stm32basis\hal\gemeenschappelijk\libraries\cmsis\include\core_cmSimd.h \
+ c:\users\niels\documents\github\dsp\software\stm32basis\hal\gemeenschappelijk\libraries\cmsis\device\st\stm32f4xx\include\system_stm32f4xx.h \
+ c:\users\niels\documents\github\dsp\software\stm32basis\hal\gemeenschappelijk\libraries\stm32f4xx_hal_driver\inc\Legacy/stm32_hal_legacy.h \
+ c:\users\niels\documents\github\dsp\software\stm32basis\hal\gemeenschappelijk\libraries\stm32f4xx_hal_driver\inc\stm32f4xx_hal_rcc_ex.h \
+ c:\users\niels\documents\github\dsp\software\stm32basis\hal\gemeenschappelijk\libraries\stm32f4xx_hal_driver\inc\stm32f4xx_hal_gpio.h \
+ c:\users\niels\documents\github\dsp\software\stm32basis\hal\gemeenschappelijk\libraries\stm32f4xx_hal_driver\inc\stm32f4xx_hal_gpio_ex.h \
+ c:\users\niels\documents\github\dsp\software\stm32basis\hal\gemeenschappelijk\libraries\stm32f4xx_hal_driver\inc\stm32f4xx_hal_dma.h \
+ c:\users\niels\documents\github\dsp\software\stm32basis\hal\gemeenschappelijk\libraries\stm32f4xx_hal_driver\inc\stm32f4xx_hal_dma_ex.h \
+ c:\users\niels\documents\github\dsp\software\stm32basis\hal\gemeenschappelijk\libraries\stm32f4xx_hal_driver\inc\stm32f4xx_hal_cortex.h \
+ c:\users\niels\documents\github\dsp\software\stm32basis\hal\gemeenschappelijk\libraries\stm32f4xx_hal_driver\inc\stm32f4xx_hal_adc.h \
+ c:\users\niels\documents\github\dsp\software\stm32basis\hal\gemeenschappelijk\libraries\stm32f4xx_hal_driver\inc\stm32f4xx_hal_adc_ex.h \
+ c:\users\niels\documents\github\dsp\software\stm32basis\hal\gemeenschappelijk\libraries\stm32f4xx_hal_driver\inc\stm32f4xx_hal_flash.h \
+ c:\users\niels\documents\github\dsp\software\stm32basis\hal\gemeenschappelijk\libraries\stm32f4xx_hal_driver\inc\stm32f4xx_hal_flash_ex.h \
+ c:\users\niels\documents\github\dsp\software\stm32basis\hal\gemeenschappelijk\libraries\stm32f4xx_hal_driver\inc\stm32f4xx_hal_flash_ramfunc.h \
+ c:\users\niels\documents\github\dsp\software\stm32basis\hal\gemeenschappelijk\libraries\stm32f4xx_hal_driver\inc\stm32f4xx_hal_sram.h \
+ c:\users\niels\documents\github\dsp\software\stm32basis\hal\gemeenschappelijk\libraries\stm32f4xx_hal_driver\inc\stm32f4xx_ll_fsmc.h \
+ c:\users\niels\documents\github\dsp\software\stm32basis\hal\gemeenschappelijk\libraries\stm32f4xx_hal_driver\inc\stm32f4xx_hal_i2c.h \
+ c:\users\niels\documents\github\dsp\software\stm32basis\hal\gemeenschappelijk\libraries\stm32f4xx_hal_driver\inc\stm32f4xx_hal_i2c_ex.h \
+ c:\users\niels\documents\github\dsp\software\stm32basis\hal\gemeenschappelijk\libraries\stm32f4xx_hal_driver\inc\stm32f4xx_hal_iwdg.h \
+ c:\users\niels\documents\github\dsp\software\stm32basis\hal\gemeenschappelijk\libraries\stm32f4xx_hal_driver\inc\stm32f4xx_hal_pwr.h \
+ c:\users\niels\documents\github\dsp\software\stm32basis\hal\gemeenschappelijk\libraries\stm32f4xx_hal_driver\inc\stm32f4xx_hal_pwr_ex.h \
+ c:\users\niels\documents\github\dsp\software\stm32basis\hal\gemeenschappelijk\libraries\stm32f4xx_hal_driver\inc\stm32f4xx_hal_rng.h \
+ c:\users\niels\documents\github\dsp\software\stm32basis\hal\gemeenschappelijk\libraries\stm32f4xx_hal_driver\inc\stm32f4xx_hal_rtc.h \
+ c:\users\niels\documents\github\dsp\software\stm32basis\hal\gemeenschappelijk\libraries\stm32f4xx_hal_driver\inc\stm32f4xx_hal_rtc_ex.h \
+ c:\users\niels\documents\github\dsp\software\stm32basis\hal\gemeenschappelijk\libraries\stm32f4xx_hal_driver\inc\stm32f4xx_hal_sd.h \
+ c:\users\niels\documents\github\dsp\software\stm32basis\hal\gemeenschappelijk\libraries\stm32f4xx_hal_driver\inc\stm32f4xx_ll_sdmmc.h \
+ c:\users\niels\documents\github\dsp\software\stm32basis\hal\gemeenschappelijk\libraries\stm32f4xx_hal_driver\inc\stm32f4xx_hal_spi.h \
+ c:\users\niels\documents\github\dsp\software\stm32basis\hal\gemeenschappelijk\libraries\stm32f4xx_hal_driver\inc\stm32f4xx_hal_tim.h \
+ c:\users\niels\documents\github\dsp\software\stm32basis\hal\gemeenschappelijk\libraries\stm32f4xx_hal_driver\inc\stm32f4xx_hal_tim_ex.h \
+ c:\users\niels\documents\github\dsp\software\stm32basis\hal\gemeenschappelijk\libraries\stm32f4xx_hal_driver\inc\stm32f4xx_hal_uart.h \
+ c:\users\niels\documents\github\dsp\software\stm32basis\hal\gemeenschappelijk\libraries\stm32f4xx_hal_driver\inc\stm32f4xx_hal_usart.h \
+ c:\users\niels\documents\github\dsp\software\stm32basis\hal\gemeenschappelijk\libraries\stm32f4xx_hal_driver\inc\stm32f4xx_hal_qspi.h \
+ c:\users\niels\documents\github\dsp\software\stm32basis\gemeenschappelijk\basis\h\cortexmprocessor.h \
+ c:\users\niels\documents\github\dsp\software\stm32basis\hal\gemeenschappelijk\third_party\freertos-addons-1.1.0\c++\source\include\semaphore.hpp \
  c:\progra~2\gnuarm~1\102021~1.10\arm-none-eabi\include\c++\10.3.1\exception \
  c:\progra~2\gnuarm~1\102021~1.10\arm-none-eabi\include\c++\10.3.1\bits\exception.h \
  c:\progra~2\gnuarm~1\102021~1.10\arm-none-eabi\include\c++\10.3.1\bits\exception_ptr.h \
@@ -155,29 +155,29 @@ ESE_BSPProcessor/CMakeFiles/ESE_RGT+DSBBoardLib.dir/ESEBoardController.cpp.obj: 
  c:\progra~2\gnuarm~1\102021~1.10\arm-none-eabi\include\c++\10.3.1\bits\charconv.h \
  c:\progra~2\gnuarm~1\102021~1.10\arm-none-eabi\include\c++\10.3.1\bits\functional_hash.h \
  c:\progra~2\gnuarm~1\102021~1.10\arm-none-eabi\include\c++\10.3.1\bits\basic_string.tcc \
- c:\users\niels\docume~1\elektr~1\jaar3~1\dspl\software\stm32b~1\hal\gemeen~1\third_~1\freertos\source\include\freertos.h \
- C:/Users/niels/DOCUME~1/ELEKTR~1/JAAR3~1/dspl/software/OP2A2E~1/config/FreeRTOSConfig.h \
- c:\users\niels\docume~1\elektr~1\jaar3~1\dspl\software\stm32b~1\hal\gemeen~1\third_~1\freertos\source\include\projdefs.h \
- c:\users\niels\docume~1\elektr~1\jaar3~1\dspl\software\stm32b~1\hal\gemeen~1\third_~1\freertos\source\include\portable.h \
- c:\users\niels\docume~1\elektr~1\jaar3~1\dspl\software\stm32b~1\hal\gemeen~1\third_~1\freertos\source\include\deprecated_definitions.h \
- c:\users\niels\docume~1\elektr~1\jaar3~1\dspl\software\stm32b~1\hal\gemeen~1\third_~1\freertos\source\portable\gcc\arm_cm4f\portmacro.h \
- c:\users\niels\docume~1\elektr~1\jaar3~1\dspl\software\stm32b~1\hal\gemeen~1\third_~1\freertos\source\include\mpu_wrappers.h \
- c:\users\niels\docume~1\elektr~1\jaar3~1\dspl\software\stm32b~1\hal\gemeen~1\third_~1\freertos\source\include\semphr.h \
- c:\users\niels\docume~1\elektr~1\jaar3~1\dspl\software\stm32b~1\hal\gemeen~1\third_~1\freertos\source\include\queue.h \
- c:\users\niels\docume~1\elektr~1\jaar3~1\dspl\software\stm32b~1\hal\gemeen~1\third_~1\ese_bsp\esepra~2\h\ESEBoardComponents.h \
- c:\users\niels\docume~1\elektr~1\jaar3~1\dspl\software\stm32b~1\segger\segger~1\rtt\segger_rtt.h \
- c:\users\niels\docume~1\elektr~1\jaar3~1\dspl\software\stm32b~1\segger\segger~1\rtt\SEGGER_RTT_Conf.h \
+ c:\users\niels\documents\github\dsp\software\stm32basis\hal\gemeenschappelijk\third_party\freertos\source\include\freertos.h \
+ C:/Users/niels/Documents/GitHub/DSP/software/opdracht5/config/FreeRTOSConfig.h \
+ c:\users\niels\documents\github\dsp\software\stm32basis\hal\gemeenschappelijk\third_party\freertos\source\include\projdefs.h \
+ c:\users\niels\documents\github\dsp\software\stm32basis\hal\gemeenschappelijk\third_party\freertos\source\include\portable.h \
+ c:\users\niels\documents\github\dsp\software\stm32basis\hal\gemeenschappelijk\third_party\freertos\source\include\deprecated_definitions.h \
+ c:\users\niels\documents\github\dsp\software\stm32basis\hal\gemeenschappelijk\third_party\freertos\source\portable\gcc\arm_cm4f\portmacro.h \
+ c:\users\niels\documents\github\dsp\software\stm32basis\hal\gemeenschappelijk\third_party\freertos\source\include\mpu_wrappers.h \
+ c:\users\niels\documents\github\dsp\software\stm32basis\hal\gemeenschappelijk\third_party\freertos\source\include\semphr.h \
+ c:\users\niels\documents\github\dsp\software\stm32basis\hal\gemeenschappelijk\third_party\freertos\source\include\queue.h \
+ c:\users\niels\documents\github\dsp\software\stm32basis\hal\gemeenschappelijk\third_party\ese_bsp\esepracticumboard_rgt+dsb\h\ESEBoardComponents.h \
+ c:\users\niels\documents\github\dsp\software\stm32basis\segger\segger_rtt\rtt\segger_rtt.h \
+ c:\users\niels\documents\github\dsp\software\stm32basis\segger\segger_rtt\rtt\SEGGER_RTT_Conf.h \
  c:\progra~2\gnuarm~1\102021~1.10\arm-none-eabi\include\c++\10.3.1\stdlib.h \
- c:\users\niels\docume~1\elektr~1\jaar3~1\dspl\software\stm32b~1\hal\gemeen~1\librar~1\bsp\stm324~1\h\stm32412gdiscoverygui.h \
- c:\users\niels\docume~1\elektr~1\jaar3~1\dspl\software\stm32b~1\hal\gemeen~1\librar~1\bsp\stm324~1\h\STM32412gDiscovery.h \
- c:\users\niels\docume~1\elektr~1\jaar3~1\dspl\software\stm32b~1\hal\gemeen~1\librar~1\bsp\stm324~1\stm32412g_discovery_ts.h \
- c:\users\niels\docume~1\elektr~1\jaar3~1\dspl\software\stm32b~1\hal\gemeen~1\librar~1\bsp\stm324~1\stm32412g_discovery.h \
- c:\users\niels\docume~1\elektr~1\jaar3~1\dspl\software\stm32b~1\hal\gemeen~1\librar~1\bsp\stm324~1\stm32412g_discovery_lcd.h \
- c:\users\niels\docume~1\elektr~1\jaar3~1\dspl\software\stm32b~1\hal\gemeen~1\librar~1\bsp\components\ls016b8uy\ls016b8uy.h \
- c:\users\niels\docume~1\elektr~1\jaar3~1\dspl\software\stm32b~1\hal\gemeen~1\librar~1\bsp\components\common\lcd.h \
- c:\users\niels\docume~1\elektr~1\jaar3~1\dspl\software\stm32b~1\hal\gemeen~1\librar~1\bsp\components\st7789h2\st7789h2.h \
- c:\users\niels\docume~1\elektr~1\jaar3~1\dspl\software\stm32b~1\hal\gemeen~1\librar~1\bsp\components\common\lcd.h \
- c:\users\niels\docume~1\elektr~1\jaar3~1\dspl\software\stm32b~1\hal\gemeen~1\librar~1\utilities\fonts\fonts.h \
- c:\users\niels\docume~1\elektr~1\jaar3~1\dspl\software\stm32b~1\hal\gemeen~1\librar~1\bsp\components\ft6x06\ft6x06.h \
- c:\users\niels\docume~1\elektr~1\jaar3~1\dspl\software\stm32b~1\hal\gemeen~1\librar~1\bsp\components\common\ts.h \
- c:\users\niels\docume~1\elektr~1\jaar3~1\dspl\software\stm32b~1\hal\gemeen~1\librar~1\stm32f~1\inc\stm32f4xx_ll_spi.h
+ c:\users\niels\documents\github\dsp\software\stm32basis\hal\gemeenschappelijk\libraries\bsp\stm32412g-discovery\h\stm32412gdiscoverygui.h \
+ c:\users\niels\documents\github\dsp\software\stm32basis\hal\gemeenschappelijk\libraries\bsp\stm32412g-discovery\h\STM32412gDiscovery.h \
+ c:\users\niels\documents\github\dsp\software\stm32basis\hal\gemeenschappelijk\libraries\bsp\stm32412g-discovery\stm32412g_discovery_ts.h \
+ c:\users\niels\documents\github\dsp\software\stm32basis\hal\gemeenschappelijk\libraries\bsp\stm32412g-discovery\stm32412g_discovery.h \
+ c:\users\niels\documents\github\dsp\software\stm32basis\hal\gemeenschappelijk\libraries\bsp\stm32412g-discovery\stm32412g_discovery_lcd.h \
+ c:\users\niels\documents\github\dsp\software\stm32basis\hal\gemeenschappelijk\libraries\bsp\components\ls016b8uy\ls016b8uy.h \
+ c:\users\niels\documents\github\dsp\software\stm32basis\hal\gemeenschappelijk\libraries\bsp\components\common\lcd.h \
+ c:\users\niels\documents\github\dsp\software\stm32basis\hal\gemeenschappelijk\libraries\bsp\components\st7789h2\st7789h2.h \
+ c:\users\niels\documents\github\dsp\software\stm32basis\hal\gemeenschappelijk\libraries\bsp\components\common\lcd.h \
+ c:\users\niels\documents\github\dsp\software\stm32basis\hal\gemeenschappelijk\libraries\utilities\fonts\fonts.h \
+ c:\users\niels\documents\github\dsp\software\stm32basis\hal\gemeenschappelijk\libraries\bsp\components\ft6x06\ft6x06.h \
+ c:\users\niels\documents\github\dsp\software\stm32basis\hal\gemeenschappelijk\libraries\bsp\components\common\ts.h \
+ c:\users\niels\documents\github\dsp\software\stm32basis\hal\gemeenschappelijk\libraries\stm32f4xx_hal_driver\inc\stm32f4xx_ll_spi.h

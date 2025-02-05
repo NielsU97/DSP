@@ -1,6 +1,6 @@
 AlgemeenDir/CMakeFiles/AlgemeenLib.dir/algdef.cpp.obj: \
- C:\Users\niels\Documents\Elektrotechniek\Jaar\ 3\dspl\software\algemeen\algdef.cpp \
- c:\users\niels\docume~1\elektr~1\jaar3~1\dspl\software\algemeen\h\algdef.h \
+ C:\Users\niels\Documents\GitHub\DSP\software\algemeen\algdef.cpp \
+ c:\users\niels\documents\github\dsp\software\algemeen\h\algdef.h \
  c:\progra~2\gnuarm~1\102021~1.10\arm-none-eabi\include\stdio.h \
  c:\progra~2\gnuarm~1\102021~1.10\arm-none-eabi\include\_ansi.h \
  c:\progra~2\gnuarm~1\102021~1.10\arm-none-eabi\include\newlib.h \

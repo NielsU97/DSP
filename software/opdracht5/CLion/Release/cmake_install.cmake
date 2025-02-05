@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/niels/Documents/Elektrotechniek/Jaar 3/dspl/software/opdracht5
+# Install script for directory: C:/Users/niels/Documents/GitHub/DSP/software/opdracht5
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -39,23 +39,23 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("C:/Users/niels/Documents/Elektrotechniek/Jaar 3/dspl/software/opdracht5/CLion/Release/BasisDir/cmake_install.cmake")
-  include("C:/Users/niels/Documents/Elektrotechniek/Jaar 3/dspl/software/opdracht5/CLion/Release/STM32CMSIS/cmake_install.cmake")
-  include("C:/Users/niels/Documents/Elektrotechniek/Jaar 3/dspl/software/opdracht5/CLion/Release/STM32_HAL_Driver/cmake_install.cmake")
-  include("C:/Users/niels/Documents/Elektrotechniek/Jaar 3/dspl/software/opdracht5/CLion/Release/FreeRTOS/cmake_install.cmake")
-  include("C:/Users/niels/Documents/Elektrotechniek/Jaar 3/dspl/software/opdracht5/CLion/Release/FreeRTOSOOSchil/cmake_install.cmake")
-  include("C:/Users/niels/Documents/Elektrotechniek/Jaar 3/dspl/software/opdracht5/CLion/Release/ESE_FreeRTOS/cmake_install.cmake")
-  include("C:/Users/niels/Documents/Elektrotechniek/Jaar 3/dspl/software/opdracht5/CLion/Release/Utilities/cmake_install.cmake")
-  include("C:/Users/niels/Documents/Elektrotechniek/Jaar 3/dspl/software/opdracht5/CLion/Release/STemWin/cmake_install.cmake")
-  include("C:/Users/niels/Documents/Elektrotechniek/Jaar 3/dspl/software/opdracht5/CLion/Release/Components/cmake_install.cmake")
-  include("C:/Users/niels/Documents/Elektrotechniek/Jaar 3/dspl/software/opdracht5/CLion/Release/F412GDiscoveryLib/cmake_install.cmake")
-  include("C:/Users/niels/Documents/Elektrotechniek/Jaar 3/dspl/software/opdracht5/CLion/Release/FatFS/cmake_install.cmake")
-  include("C:/Users/niels/Documents/Elektrotechniek/Jaar 3/dspl/software/opdracht5/CLion/Release/AlgemeenDir/cmake_install.cmake")
-  include("C:/Users/niels/Documents/Elektrotechniek/Jaar 3/dspl/software/opdracht5/CLion/Release/SeggerRTT/cmake_install.cmake")
-  include("C:/Users/niels/Documents/Elektrotechniek/Jaar 3/dspl/software/opdracht5/CLion/Release/ESE_DigProcesAansturing/cmake_install.cmake")
-  include("C:/Users/niels/Documents/Elektrotechniek/Jaar 3/dspl/software/opdracht5/CLion/Release/ESE_BSPProcessor/cmake_install.cmake")
-  include("C:/Users/niels/Documents/Elektrotechniek/Jaar 3/dspl/software/opdracht5/CLion/Release/Opdracht1/cmake_install.cmake")
-  include("C:/Users/niels/Documents/Elektrotechniek/Jaar 3/dspl/software/opdracht5/CLion/Release/filter/cmake_install.cmake")
+  include("C:/Users/niels/Documents/GitHub/DSP/software/opdracht5/CLion/Release/BasisDir/cmake_install.cmake")
+  include("C:/Users/niels/Documents/GitHub/DSP/software/opdracht5/CLion/Release/STM32CMSIS/cmake_install.cmake")
+  include("C:/Users/niels/Documents/GitHub/DSP/software/opdracht5/CLion/Release/STM32_HAL_Driver/cmake_install.cmake")
+  include("C:/Users/niels/Documents/GitHub/DSP/software/opdracht5/CLion/Release/FreeRTOS/cmake_install.cmake")
+  include("C:/Users/niels/Documents/GitHub/DSP/software/opdracht5/CLion/Release/FreeRTOSOOSchil/cmake_install.cmake")
+  include("C:/Users/niels/Documents/GitHub/DSP/software/opdracht5/CLion/Release/ESE_FreeRTOS/cmake_install.cmake")
+  include("C:/Users/niels/Documents/GitHub/DSP/software/opdracht5/CLion/Release/Utilities/cmake_install.cmake")
+  include("C:/Users/niels/Documents/GitHub/DSP/software/opdracht5/CLion/Release/STemWin/cmake_install.cmake")
+  include("C:/Users/niels/Documents/GitHub/DSP/software/opdracht5/CLion/Release/Components/cmake_install.cmake")
+  include("C:/Users/niels/Documents/GitHub/DSP/software/opdracht5/CLion/Release/F412GDiscoveryLib/cmake_install.cmake")
+  include("C:/Users/niels/Documents/GitHub/DSP/software/opdracht5/CLion/Release/FatFS/cmake_install.cmake")
+  include("C:/Users/niels/Documents/GitHub/DSP/software/opdracht5/CLion/Release/AlgemeenDir/cmake_install.cmake")
+  include("C:/Users/niels/Documents/GitHub/DSP/software/opdracht5/CLion/Release/SeggerRTT/cmake_install.cmake")
+  include("C:/Users/niels/Documents/GitHub/DSP/software/opdracht5/CLion/Release/ESE_DigProcesAansturing/cmake_install.cmake")
+  include("C:/Users/niels/Documents/GitHub/DSP/software/opdracht5/CLion/Release/ESE_BSPProcessor/cmake_install.cmake")
+  include("C:/Users/niels/Documents/GitHub/DSP/software/opdracht5/CLion/Release/Opdracht1/cmake_install.cmake")
+  include("C:/Users/niels/Documents/GitHub/DSP/software/opdracht5/CLion/Release/filter/cmake_install.cmake")
 
 endif()
 
@@ -67,5 +67,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "C:/Users/niels/Documents/Elektrotechniek/Jaar 3/dspl/software/opdracht5/CLion/Release/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "C:/Users/niels/Documents/GitHub/DSP/software/opdracht5/CLion/Release/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

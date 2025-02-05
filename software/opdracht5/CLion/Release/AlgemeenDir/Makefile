@@ -56,10 +56,10 @@ RM = "C:\Program Files\JetBrains\CLion 2024.1.4\bin\cmake\win\x64\bin\cmake.exe"
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\opdracht5"
+CMAKE_SOURCE_DIR = C:\Users\niels\Documents\GitHub\DSP\software\opdracht5
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\opdracht5\CLion\Release"
+CMAKE_BINARY_DIR = C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -86,14 +86,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\opdracht5\CLion\Release\CMakeFiles" "C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\opdracht5\CLion\Release\AlgemeenDir\\CMakeFiles\progress.marks"
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 AlgemeenDir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\opdracht5\CLion\Release\CMakeFiles" 0
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(CMAKE_COMMAND) -E cmake_progress_start C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release\CMakeFiles C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release\AlgemeenDir\\CMakeFiles\progress.marks
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 AlgemeenDir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 AlgemeenDir/clean
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 AlgemeenDir/clean
 .PHONY : clean
 
 # The main clean target
@@ -102,22 +102,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 AlgemeenDir/preinstall
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 AlgemeenDir/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 AlgemeenDir/preinstall
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 AlgemeenDir/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 1
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 AlgemeenDir/CMakeFiles/AlgemeenLib.dir/rule:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 AlgemeenDir/CMakeFiles/AlgemeenLib.dir/rule
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 AlgemeenDir/CMakeFiles/AlgemeenLib.dir/rule
 .PHONY : AlgemeenDir/CMakeFiles/AlgemeenLib.dir/rule
 
 # Convenience name for target.
@@ -126,7 +126,7 @@ AlgemeenLib: AlgemeenDir/CMakeFiles/AlgemeenLib.dir/rule
 
 # fast build rule for target.
 AlgemeenLib/fast:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f AlgemeenDir\CMakeFiles\AlgemeenLib.dir\build.make AlgemeenDir/CMakeFiles/AlgemeenLib.dir/build
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f AlgemeenDir\CMakeFiles\AlgemeenLib.dir\build.make AlgemeenDir/CMakeFiles/AlgemeenLib.dir/build
 .PHONY : AlgemeenLib/fast
 
 algdef.obj: algdef.cpp.obj
@@ -134,7 +134,7 @@ algdef.obj: algdef.cpp.obj
 
 # target to build an object file
 algdef.cpp.obj:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f AlgemeenDir\CMakeFiles\AlgemeenLib.dir\build.make AlgemeenDir/CMakeFiles/AlgemeenLib.dir/algdef.cpp.obj
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f AlgemeenDir\CMakeFiles\AlgemeenLib.dir\build.make AlgemeenDir/CMakeFiles/AlgemeenLib.dir/algdef.cpp.obj
 .PHONY : algdef.cpp.obj
 
 algdef.i: algdef.cpp.i
@@ -142,7 +142,7 @@ algdef.i: algdef.cpp.i
 
 # target to preprocess a source file
 algdef.cpp.i:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f AlgemeenDir\CMakeFiles\AlgemeenLib.dir\build.make AlgemeenDir/CMakeFiles/AlgemeenLib.dir/algdef.cpp.i
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f AlgemeenDir\CMakeFiles\AlgemeenLib.dir\build.make AlgemeenDir/CMakeFiles/AlgemeenLib.dir/algdef.cpp.i
 .PHONY : algdef.cpp.i
 
 algdef.s: algdef.cpp.s
@@ -150,7 +150,7 @@ algdef.s: algdef.cpp.s
 
 # target to generate assembly for a file
 algdef.cpp.s:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f AlgemeenDir\CMakeFiles\AlgemeenLib.dir\build.make AlgemeenDir/CMakeFiles/AlgemeenLib.dir/algdef.cpp.s
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f AlgemeenDir\CMakeFiles\AlgemeenLib.dir\build.make AlgemeenDir/CMakeFiles/AlgemeenLib.dir/algdef.cpp.s
 .PHONY : algdef.cpp.s
 
 # Help Target
@@ -176,6 +176,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 0
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

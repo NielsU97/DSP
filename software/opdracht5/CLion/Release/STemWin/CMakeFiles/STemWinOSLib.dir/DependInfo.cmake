@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "C:/Users/niels/Documents/Elektrotechniek/Jaar 3/dspl/software/STM32Basis/HAL/gemeenschappelijk/Libraries/Middlewares/ST/STemWin/OS/GUI_X_OS.c" "STemWin/CMakeFiles/STemWinOSLib.dir/OS/GUI_X_OS.c.obj" "gcc" "STemWin/CMakeFiles/STemWinOSLib.dir/OS/GUI_X_OS.c.obj.d"
+  "C:/Users/niels/Documents/GitHub/DSP/software/STM32Basis/HAL/gemeenschappelijk/Libraries/Middlewares/ST/STemWin/OS/GUI_X_OS.c" "STemWin/CMakeFiles/STemWinOSLib.dir/OS/GUI_X_OS.c.obj" "gcc" "STemWin/CMakeFiles/STemWinOSLib.dir/OS/GUI_X_OS.c.obj.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

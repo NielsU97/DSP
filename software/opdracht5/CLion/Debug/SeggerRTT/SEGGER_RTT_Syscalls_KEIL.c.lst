@@ -54,7 +54,7 @@ ARM GAS   			page 1
   29      65637469 
   29      6F6E7300 
   30              	.LASF1:
-  31 010f 433A5C55 	 .ascii "C:\\Users\\niels\\Documents\\Elektrotechniek\\Jaar "
+  31 010f 433A5C55 	 .ascii "C:\\Users\\niels\\Documents\\GitHub\\DSP\\software\\"
   31      73657273 
   31      5C6E6965 
   31      6C735C44 
@@ -62,25 +62,25 @@ ARM GAS   			page 1
 
 
   31      6F63756D 
-  32 013d 335C6473 	 .ascii "3\\dspl\\software\\STM32Basis\\Segger\\Segger_RTT\\"
-  32      706C5C73 
-  32      6F667477 
-  32      6172655C 
-  32      53544D33 
-  33 016a 53797363 	 .ascii "Syscalls\\SEGGER_RTT_Syscalls_KEIL.c\000"
-  33      616C6C73 
-  33      5C534547 
-  33      4745525F 
-  33      5254545F 
-  34              	.LASF2:
-  35 018e 433A5C55 	 .ascii "C:\\Users\\niels\\DOCUME~1\\ELEKTR~1\\JAAR3~1\\dspl"
-  35      73657273 
-  35      5C6E6965 
-  35      6C735C44 
-  35      4F43554D 
-  36 01bb 5C736F66 	 .ascii "\\software\\OP2A2E~1\\CLion\\Debug\\SEGGER~1\000"
-  36      74776172 
-  36      655C4F50 
-  36      32413245 
-  36      7E315C43 
+  32 013c 6F706472 	 .ascii "opdracht5\\CLion\\Debug\\SeggerRTT\000"
+  32      61636874 
+  32      355C434C 
+  32      696F6E5C 
+  32      44656275 
+  33              	.LASF2:
+  34 015c 433A5C55 	 .ascii "C:\\Users\\niels\\Documents\\GitHub\\DSP\\software\\"
+  34      73657273 
+  34      5C6E6965 
+  34      6C735C44 
+  34      6F63756D 
+  35 0189 53544D33 	 .ascii "STM32Basis\\Segger\\Segger_RTT\\Syscalls\\SEGGER_RT"
+  35      32426173 
+  35      69735C53 
+  35      65676765 
+  35      725C5365 
+  36 01b8 545F5379 	 .ascii "T_Syscalls_KEIL.c\000"
+  36      7363616C 
+  36      6C735F4B 
+  36      45494C2E 
+  36      6300
   37              	 .ident "GCC: (GNU Arm Embedded Toolchain 10.3-2021.10) 10.3.1 20210824 (release)"

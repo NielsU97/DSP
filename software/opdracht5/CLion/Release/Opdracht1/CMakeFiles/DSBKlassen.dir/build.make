@@ -52,10 +52,10 @@ RM = "C:\Program Files\JetBrains\CLion 2024.1.4\bin\cmake\win\x64\bin\cmake.exe"
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\opdracht5"
+CMAKE_SOURCE_DIR = C:\Users\niels\Documents\GitHub\DSP\software\opdracht5
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\opdracht5\CLion\Release"
+CMAKE_BINARY_DIR = C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release
 
 # Include any dependencies generated for this target.
 include Opdracht1/CMakeFiles/DSBKlassen.dir/depend.make
@@ -70,33 +70,33 @@ include Opdracht1/CMakeFiles/DSBKlassen.dir/flags.make
 
 Opdracht1/CMakeFiles/DSBKlassen.dir/STUDENT/dsbComplex.cpp.obj: Opdracht1/CMakeFiles/DSBKlassen.dir/flags.make
 Opdracht1/CMakeFiles/DSBKlassen.dir/STUDENT/dsbComplex.cpp.obj: Opdracht1/CMakeFiles/DSBKlassen.dir/includes_CXX.rsp
-Opdracht1/CMakeFiles/DSBKlassen.dir/STUDENT/dsbComplex.cpp.obj: C:/Users/niels/Documents/Elektrotechniek/Jaar\ 3/dspl/software/opdracht1/STUDENT/dsbComplex.cpp
+Opdracht1/CMakeFiles/DSBKlassen.dir/STUDENT/dsbComplex.cpp.obj: C:/Users/niels/Documents/GitHub/DSP/software/opdracht1/STUDENT/dsbComplex.cpp
 Opdracht1/CMakeFiles/DSBKlassen.dir/STUDENT/dsbComplex.cpp.obj: Opdracht1/CMakeFiles/DSBKlassen.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\opdracht5\CLion\Release\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object Opdracht1/CMakeFiles/DSBKlassen.dir/STUDENT/dsbComplex.cpp.obj"
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release\OPDRAC~1 && C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR10B2~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT Opdracht1/CMakeFiles/DSBKlassen.dir/STUDENT/dsbComplex.cpp.obj -MF CMakeFiles\DSBKlassen.dir\STUDENT\dsbComplex.cpp.obj.d -o CMakeFiles\DSBKlassen.dir\STUDENT\dsbComplex.cpp.obj -c "C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\opdracht1\STUDENT\dsbComplex.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object Opdracht1/CMakeFiles/DSBKlassen.dir/STUDENT/dsbComplex.cpp.obj"
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release\Opdracht1 && C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR10B2~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT Opdracht1/CMakeFiles/DSBKlassen.dir/STUDENT/dsbComplex.cpp.obj -MF CMakeFiles\DSBKlassen.dir\STUDENT\dsbComplex.cpp.obj.d -o CMakeFiles\DSBKlassen.dir\STUDENT\dsbComplex.cpp.obj -c C:\Users\niels\Documents\GitHub\DSP\software\opdracht1\STUDENT\dsbComplex.cpp
 
 Opdracht1/CMakeFiles/DSBKlassen.dir/STUDENT/dsbComplex.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/DSBKlassen.dir/STUDENT/dsbComplex.cpp.i"
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release\OPDRAC~1 && C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR10B2~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\opdracht1\STUDENT\dsbComplex.cpp" > CMakeFiles\DSBKlassen.dir\STUDENT\dsbComplex.cpp.i
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release\Opdracht1 && C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR10B2~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\niels\Documents\GitHub\DSP\software\opdracht1\STUDENT\dsbComplex.cpp > CMakeFiles\DSBKlassen.dir\STUDENT\dsbComplex.cpp.i
 
 Opdracht1/CMakeFiles/DSBKlassen.dir/STUDENT/dsbComplex.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/DSBKlassen.dir/STUDENT/dsbComplex.cpp.s"
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release\OPDRAC~1 && C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR10B2~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\opdracht1\STUDENT\dsbComplex.cpp" -o CMakeFiles\DSBKlassen.dir\STUDENT\dsbComplex.cpp.s
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release\Opdracht1 && C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR10B2~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\niels\Documents\GitHub\DSP\software\opdracht1\STUDENT\dsbComplex.cpp -o CMakeFiles\DSBKlassen.dir\STUDENT\dsbComplex.cpp.s
 
 Opdracht1/CMakeFiles/DSBKlassen.dir/STUDENT/dsbComplexBasis.cpp.obj: Opdracht1/CMakeFiles/DSBKlassen.dir/flags.make
 Opdracht1/CMakeFiles/DSBKlassen.dir/STUDENT/dsbComplexBasis.cpp.obj: Opdracht1/CMakeFiles/DSBKlassen.dir/includes_CXX.rsp
-Opdracht1/CMakeFiles/DSBKlassen.dir/STUDENT/dsbComplexBasis.cpp.obj: C:/Users/niels/Documents/Elektrotechniek/Jaar\ 3/dspl/software/opdracht1/STUDENT/dsbComplexBasis.cpp
+Opdracht1/CMakeFiles/DSBKlassen.dir/STUDENT/dsbComplexBasis.cpp.obj: C:/Users/niels/Documents/GitHub/DSP/software/opdracht1/STUDENT/dsbComplexBasis.cpp
 Opdracht1/CMakeFiles/DSBKlassen.dir/STUDENT/dsbComplexBasis.cpp.obj: Opdracht1/CMakeFiles/DSBKlassen.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\opdracht5\CLion\Release\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object Opdracht1/CMakeFiles/DSBKlassen.dir/STUDENT/dsbComplexBasis.cpp.obj"
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release\OPDRAC~1 && C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR10B2~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT Opdracht1/CMakeFiles/DSBKlassen.dir/STUDENT/dsbComplexBasis.cpp.obj -MF CMakeFiles\DSBKlassen.dir\STUDENT\dsbComplexBasis.cpp.obj.d -o CMakeFiles\DSBKlassen.dir\STUDENT\dsbComplexBasis.cpp.obj -c "C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\opdracht1\STUDENT\dsbComplexBasis.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object Opdracht1/CMakeFiles/DSBKlassen.dir/STUDENT/dsbComplexBasis.cpp.obj"
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release\Opdracht1 && C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR10B2~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT Opdracht1/CMakeFiles/DSBKlassen.dir/STUDENT/dsbComplexBasis.cpp.obj -MF CMakeFiles\DSBKlassen.dir\STUDENT\dsbComplexBasis.cpp.obj.d -o CMakeFiles\DSBKlassen.dir\STUDENT\dsbComplexBasis.cpp.obj -c C:\Users\niels\Documents\GitHub\DSP\software\opdracht1\STUDENT\dsbComplexBasis.cpp
 
 Opdracht1/CMakeFiles/DSBKlassen.dir/STUDENT/dsbComplexBasis.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/DSBKlassen.dir/STUDENT/dsbComplexBasis.cpp.i"
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release\OPDRAC~1 && C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR10B2~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\opdracht1\STUDENT\dsbComplexBasis.cpp" > CMakeFiles\DSBKlassen.dir\STUDENT\dsbComplexBasis.cpp.i
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release\Opdracht1 && C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR10B2~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\niels\Documents\GitHub\DSP\software\opdracht1\STUDENT\dsbComplexBasis.cpp > CMakeFiles\DSBKlassen.dir\STUDENT\dsbComplexBasis.cpp.i
 
 Opdracht1/CMakeFiles/DSBKlassen.dir/STUDENT/dsbComplexBasis.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/DSBKlassen.dir/STUDENT/dsbComplexBasis.cpp.s"
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release\OPDRAC~1 && C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR10B2~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\opdracht1\STUDENT\dsbComplexBasis.cpp" -o CMakeFiles\DSBKlassen.dir\STUDENT\dsbComplexBasis.cpp.s
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release\Opdracht1 && C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR10B2~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\niels\Documents\GitHub\DSP\software\opdracht1\STUDENT\dsbComplexBasis.cpp -o CMakeFiles\DSBKlassen.dir\STUDENT\dsbComplexBasis.cpp.s
 
 DSBKlassen: Opdracht1/CMakeFiles/DSBKlassen.dir/STUDENT/dsbComplex.cpp.obj
 DSBKlassen: Opdracht1/CMakeFiles/DSBKlassen.dir/STUDENT/dsbComplexBasis.cpp.obj
@@ -108,10 +108,10 @@ Opdracht1/CMakeFiles/DSBKlassen.dir/build: DSBKlassen
 .PHONY : Opdracht1/CMakeFiles/DSBKlassen.dir/build
 
 Opdracht1/CMakeFiles/DSBKlassen.dir/clean:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release\OPDRAC~1 && $(CMAKE_COMMAND) -P CMakeFiles\DSBKlassen.dir\cmake_clean.cmake
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release\Opdracht1 && $(CMAKE_COMMAND) -P CMakeFiles\DSBKlassen.dir\cmake_clean.cmake
 .PHONY : Opdracht1/CMakeFiles/DSBKlassen.dir/clean
 
 Opdracht1/CMakeFiles/DSBKlassen.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" "C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\opdracht5" "C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\opdracht1" "C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\opdracht5\CLion\Release" "C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\opdracht5\CLion\Release\Opdracht1" "C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\opdracht5\CLion\Release\Opdracht1\CMakeFiles\DSBKlassen.dir\DependInfo.cmake" "--color=$(COLOR)"
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\niels\Documents\GitHub\DSP\software\opdracht5 C:\Users\niels\Documents\GitHub\DSP\software\opdracht1 C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release\Opdracht1 C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release\Opdracht1\CMakeFiles\DSBKlassen.dir\DependInfo.cmake "--color=$(COLOR)"
 .PHONY : Opdracht1/CMakeFiles/DSBKlassen.dir/depend
 

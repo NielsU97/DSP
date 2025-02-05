@@ -56,10 +56,10 @@ RM = "C:\Program Files\JetBrains\CLion 2024.1.4\bin\cmake\win\x64\bin\cmake.exe"
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\opdracht5"
+CMAKE_SOURCE_DIR = C:\Users\niels\Documents\GitHub\DSP\software\opdracht5
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\opdracht5\CLion\Debug"
+CMAKE_BINARY_DIR = C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -86,14 +86,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Debug && $(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\opdracht5\CLion\Debug\CMakeFiles" "C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\opdracht5\CLion\Debug\STemWin\\CMakeFiles\progress.marks"
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Debug && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 STemWin/all
-	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\opdracht5\CLion\Debug\CMakeFiles" 0
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Debug && $(CMAKE_COMMAND) -E cmake_progress_start C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Debug\CMakeFiles C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Debug\STemWin\\CMakeFiles\progress.marks
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Debug && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 STemWin/all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Debug\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Debug && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 STemWin/clean
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Debug && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 STemWin/clean
 .PHONY : clean
 
 # The main clean target
@@ -102,22 +102,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Debug && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 STemWin/preinstall
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Debug && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 STemWin/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Debug && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 STemWin/preinstall
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Debug && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 STemWin/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 1
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 STemWin/CMakeFiles/STemWinOSLib.dir/rule:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Debug && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 STemWin/CMakeFiles/STemWinOSLib.dir/rule
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Debug && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 STemWin/CMakeFiles/STemWinOSLib.dir/rule
 .PHONY : STemWin/CMakeFiles/STemWinOSLib.dir/rule
 
 # Convenience name for target.
@@ -126,7 +126,7 @@ STemWinOSLib: STemWin/CMakeFiles/STemWinOSLib.dir/rule
 
 # fast build rule for target.
 STemWinOSLib/fast:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Debug && $(MAKE) $(MAKESILENT) -f STemWin\CMakeFiles\STemWinOSLib.dir\build.make STemWin/CMakeFiles/STemWinOSLib.dir/build
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Debug && $(MAKE) $(MAKESILENT) -f STemWin\CMakeFiles\STemWinOSLib.dir\build.make STemWin/CMakeFiles/STemWinOSLib.dir/build
 .PHONY : STemWinOSLib/fast
 
 OS/GUI_X_OS.obj: OS/GUI_X_OS.c.obj
@@ -134,7 +134,7 @@ OS/GUI_X_OS.obj: OS/GUI_X_OS.c.obj
 
 # target to build an object file
 OS/GUI_X_OS.c.obj:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Debug && $(MAKE) $(MAKESILENT) -f STemWin\CMakeFiles\STemWinOSLib.dir\build.make STemWin/CMakeFiles/STemWinOSLib.dir/OS/GUI_X_OS.c.obj
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Debug && $(MAKE) $(MAKESILENT) -f STemWin\CMakeFiles\STemWinOSLib.dir\build.make STemWin/CMakeFiles/STemWinOSLib.dir/OS/GUI_X_OS.c.obj
 .PHONY : OS/GUI_X_OS.c.obj
 
 OS/GUI_X_OS.i: OS/GUI_X_OS.c.i
@@ -142,7 +142,7 @@ OS/GUI_X_OS.i: OS/GUI_X_OS.c.i
 
 # target to preprocess a source file
 OS/GUI_X_OS.c.i:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Debug && $(MAKE) $(MAKESILENT) -f STemWin\CMakeFiles\STemWinOSLib.dir\build.make STemWin/CMakeFiles/STemWinOSLib.dir/OS/GUI_X_OS.c.i
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Debug && $(MAKE) $(MAKESILENT) -f STemWin\CMakeFiles\STemWinOSLib.dir\build.make STemWin/CMakeFiles/STemWinOSLib.dir/OS/GUI_X_OS.c.i
 .PHONY : OS/GUI_X_OS.c.i
 
 OS/GUI_X_OS.s: OS/GUI_X_OS.c.s
@@ -150,7 +150,7 @@ OS/GUI_X_OS.s: OS/GUI_X_OS.c.s
 
 # target to generate assembly for a file
 OS/GUI_X_OS.c.s:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Debug && $(MAKE) $(MAKESILENT) -f STemWin\CMakeFiles\STemWinOSLib.dir\build.make STemWin/CMakeFiles/STemWinOSLib.dir/OS/GUI_X_OS.c.s
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Debug && $(MAKE) $(MAKESILENT) -f STemWin\CMakeFiles\STemWinOSLib.dir\build.make STemWin/CMakeFiles/STemWinOSLib.dir/OS/GUI_X_OS.c.s
 .PHONY : OS/GUI_X_OS.c.s
 
 # Help Target
@@ -176,6 +176,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 0
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

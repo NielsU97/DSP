@@ -41,92 +41,92 @@ ARM GAS   			page 1
   38              	GUI_X_GetTime:
   39              	 .fnstart
   40              	.LFB29:
-  41              	 .file 1 "C:\\Users\\niels\\Documents\\Elektrotechniek\\Jaar 3\\dspl\\software\\STM32Basis\\HAL\\gemeenschappelijk\\Libraries\\Middlewares\\ST\\STemWin\\OS\\GUI_X_OS.c"
-   1:C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c **** /*********************************************************************
-   2:C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c **** *          Portions COPYRIGHT 2016 STMicroelectronics                *
-   3:C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c **** *          Portions SEGGER Microcontroller GmbH & Co. KG             *
-   4:C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c **** *        Solutions for real time microcontroller applications        *
-   5:C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c **** **********************************************************************
-   6:C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c **** *                                                                    *
-   7:C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c **** *        (c) 1996 - 2015  SEGGER Microcontroller GmbH & Co. KG       *
-   8:C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c **** *                                                                    *
-   9:C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c **** *        Internet: www.segger.com    Support:  support@segger.com    *
-  10:C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c **** *                                                                    *
-  11:C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c **** **********************************************************************
-  12:C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c **** 
-  13:C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c **** ** emWin V5.32 - Graphical user interface for embedded applications **
-  14:C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c **** All  Intellectual Property rights  in the Software belongs to  SEGGER.
-  15:C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c **** emWin is protected by  international copyright laws.  Knowledge of the
-  16:C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c **** source code may not be used to write a similar product.  This file may
+  41              	 .file 1 "C:\\Users\\niels\\Documents\\GitHub\\DSP\\software\\STM32Basis\\HAL\\gemeenschappelijk\\Libraries\\Middlewares\\ST\\STemWin\\OS\\GUI_X_OS.c"
+   1:C:\Users\niels\Documents\GitHub\DSP\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c **** /*********************************************************************
+   2:C:\Users\niels\Documents\GitHub\DSP\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c **** *          Portions COPYRIGHT 2016 STMicroelectronics                *
+   3:C:\Users\niels\Documents\GitHub\DSP\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c **** *          Portions SEGGER Microcontroller GmbH & Co. KG             *
+   4:C:\Users\niels\Documents\GitHub\DSP\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c **** *        Solutions for real time microcontroller applications        *
+   5:C:\Users\niels\Documents\GitHub\DSP\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c **** **********************************************************************
+   6:C:\Users\niels\Documents\GitHub\DSP\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c **** *                                                                    *
+   7:C:\Users\niels\Documents\GitHub\DSP\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c **** *        (c) 1996 - 2015  SEGGER Microcontroller GmbH & Co. KG       *
+   8:C:\Users\niels\Documents\GitHub\DSP\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c **** *                                                                    *
+   9:C:\Users\niels\Documents\GitHub\DSP\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c **** *        Internet: www.segger.com    Support:  support@segger.com    *
+  10:C:\Users\niels\Documents\GitHub\DSP\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c **** *                                                                    *
+  11:C:\Users\niels\Documents\GitHub\DSP\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c **** **********************************************************************
+  12:C:\Users\niels\Documents\GitHub\DSP\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c **** 
+  13:C:\Users\niels\Documents\GitHub\DSP\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c **** ** emWin V5.32 - Graphical user interface for embedded applications **
+  14:C:\Users\niels\Documents\GitHub\DSP\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c **** All  Intellectual Property rights  in the Software belongs to  SEGGER.
+  15:C:\Users\niels\Documents\GitHub\DSP\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c **** emWin is protected by  international copyright laws.  Knowledge of the
+  16:C:\Users\niels\Documents\GitHub\DSP\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c **** source code may not be used to write a similar product.  This file may
 ARM GAS   			page 2
 
 
-  17:C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c **** only be used in accordance with the following terms:
-  18:C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c **** 
-  19:C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c **** The  software has  been licensed  to STMicroelectronics International
-  20:C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c **** N.V. a Dutch company with a Swiss branch and its headquarters in Plan-
-  21:C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c **** les-Ouates, Geneva, 39 Chemin du Champ des Filles, Switzerland for the
-  22:C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c **** purposes of creating libraries for ARM Cortex-M-based 32-bit microcon_
-  23:C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c **** troller products commercialized by Licensee only, sublicensed and dis_
-  24:C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c **** tributed under the terms and conditions of the End User License Agree_
-  25:C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c **** ment supplied by STMicroelectronics International N.V.
-  26:C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c **** Full source code is available at: www.segger.com
-  27:C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c **** 
-  28:C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c **** We appreciate your understanding and fairness.
-  29:C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c **** ----------------------------------------------------------------------
-  30:C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c **** File        : GUI_X.C
-  31:C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c **** Purpose     : This file provides emWin Interface with FreeRTOS
-  32:C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c **** ---------------------------END-OF-HEADER------------------------------
-  33:C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c **** */
-  34:C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c **** 
-  35:C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c **** /**
-  36:C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c ****   ******************************************************************************
-  37:C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c ****   * @attention
-  38:C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c ****   *
-  39:C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c ****   * Licensed under MCD-ST Liberty SW License Agreement V2, (the "License");
-  40:C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c ****   * You may not use this file except in compliance with the License.
-  41:C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c ****   * You may obtain a copy of the License at:
-  42:C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c ****   *
-  43:C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c ****   *        http://www.st.com/software_license_agreement_liberty_v2
-  44:C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c ****   *
-  45:C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c ****   * Unless required by applicable law or agreed to in writing, software 
-  46:C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c ****   * distributed under the License is distributed on an "AS IS" BASIS, 
-  47:C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c ****   * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-  48:C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c ****   * See the License for the specific language governing permissions and
-  49:C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c ****   * limitations under the License.
-  50:C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c ****   *
-  51:C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c ****   ******************************************************************************
-  52:C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c ****   */
-  53:C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c **** 
-  54:C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c **** /* Includes ------------------------------------------------------------------*/
-  55:C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c **** 
-  56:C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c **** #include "GUI.h"
-  57:C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c ****     
-  58:C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c ****     /* FreeRTOS include files */
-  59:C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c **** #include "cmsis_os.h"
-  60:C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c ****     
-  61:C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c **** /*********************************************************************
-  62:C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c **** *
-  63:C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c **** * Global data
-  64:C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c **** */
-  65:C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c **** static osMutexId osMutex;
-  66:C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c **** static osSemaphoreId osSemaphore;
-  67:C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c **** /*********************************************************************
-  68:C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c **** *
-  69:C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c **** * Timing:
-  70:C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c **** * GUI_X_GetTime()
-  71:C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c **** * GUI_X_Delay(int)
-  72:C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c **** 
-  73:C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c **** Some timing dependent routines require a GetTime
+  17:C:\Users\niels\Documents\GitHub\DSP\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c **** only be used in accordance with the following terms:
+  18:C:\Users\niels\Documents\GitHub\DSP\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c **** 
+  19:C:\Users\niels\Documents\GitHub\DSP\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c **** The  software has  been licensed  to STMicroelectronics International
+  20:C:\Users\niels\Documents\GitHub\DSP\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c **** N.V. a Dutch company with a Swiss branch and its headquarters in Plan-
+  21:C:\Users\niels\Documents\GitHub\DSP\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c **** les-Ouates, Geneva, 39 Chemin du Champ des Filles, Switzerland for the
+  22:C:\Users\niels\Documents\GitHub\DSP\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c **** purposes of creating libraries for ARM Cortex-M-based 32-bit microcon_
+  23:C:\Users\niels\Documents\GitHub\DSP\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c **** troller products commercialized by Licensee only, sublicensed and dis_
+  24:C:\Users\niels\Documents\GitHub\DSP\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c **** tributed under the terms and conditions of the End User License Agree_
+  25:C:\Users\niels\Documents\GitHub\DSP\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c **** ment supplied by STMicroelectronics International N.V.
+  26:C:\Users\niels\Documents\GitHub\DSP\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c **** Full source code is available at: www.segger.com
+  27:C:\Users\niels\Documents\GitHub\DSP\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c **** 
+  28:C:\Users\niels\Documents\GitHub\DSP\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c **** We appreciate your understanding and fairness.
+  29:C:\Users\niels\Documents\GitHub\DSP\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c **** ----------------------------------------------------------------------
+  30:C:\Users\niels\Documents\GitHub\DSP\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c **** File        : GUI_X.C
+  31:C:\Users\niels\Documents\GitHub\DSP\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c **** Purpose     : This file provides emWin Interface with FreeRTOS
+  32:C:\Users\niels\Documents\GitHub\DSP\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c **** ---------------------------END-OF-HEADER------------------------------
+  33:C:\Users\niels\Documents\GitHub\DSP\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c **** */
+  34:C:\Users\niels\Documents\GitHub\DSP\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c **** 
+  35:C:\Users\niels\Documents\GitHub\DSP\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c **** /**
+  36:C:\Users\niels\Documents\GitHub\DSP\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c ****   ******************************************************************************
+  37:C:\Users\niels\Documents\GitHub\DSP\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c ****   * @attention
+  38:C:\Users\niels\Documents\GitHub\DSP\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c ****   *
+  39:C:\Users\niels\Documents\GitHub\DSP\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c ****   * Licensed under MCD-ST Liberty SW License Agreement V2, (the "License");
+  40:C:\Users\niels\Documents\GitHub\DSP\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c ****   * You may not use this file except in compliance with the License.
+  41:C:\Users\niels\Documents\GitHub\DSP\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c ****   * You may obtain a copy of the License at:
+  42:C:\Users\niels\Documents\GitHub\DSP\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c ****   *
+  43:C:\Users\niels\Documents\GitHub\DSP\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c ****   *        http://www.st.com/software_license_agreement_liberty_v2
+  44:C:\Users\niels\Documents\GitHub\DSP\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c ****   *
+  45:C:\Users\niels\Documents\GitHub\DSP\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c ****   * Unless required by applicable law or agreed to in writing, software 
+  46:C:\Users\niels\Documents\GitHub\DSP\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c ****   * distributed under the License is distributed on an "AS IS" BASIS, 
+  47:C:\Users\niels\Documents\GitHub\DSP\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c ****   * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  48:C:\Users\niels\Documents\GitHub\DSP\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c ****   * See the License for the specific language governing permissions and
+  49:C:\Users\niels\Documents\GitHub\DSP\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c ****   * limitations under the License.
+  50:C:\Users\niels\Documents\GitHub\DSP\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c ****   *
+  51:C:\Users\niels\Documents\GitHub\DSP\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c ****   ******************************************************************************
+  52:C:\Users\niels\Documents\GitHub\DSP\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c ****   */
+  53:C:\Users\niels\Documents\GitHub\DSP\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c **** 
+  54:C:\Users\niels\Documents\GitHub\DSP\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c **** /* Includes ------------------------------------------------------------------*/
+  55:C:\Users\niels\Documents\GitHub\DSP\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c **** 
+  56:C:\Users\niels\Documents\GitHub\DSP\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c **** #include "GUI.h"
+  57:C:\Users\niels\Documents\GitHub\DSP\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c ****     
+  58:C:\Users\niels\Documents\GitHub\DSP\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c ****     /* FreeRTOS include files */
+  59:C:\Users\niels\Documents\GitHub\DSP\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c **** #include "cmsis_os.h"
+  60:C:\Users\niels\Documents\GitHub\DSP\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c ****     
+  61:C:\Users\niels\Documents\GitHub\DSP\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c **** /*********************************************************************
+  62:C:\Users\niels\Documents\GitHub\DSP\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c **** *
+  63:C:\Users\niels\Documents\GitHub\DSP\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c **** * Global data
+  64:C:\Users\niels\Documents\GitHub\DSP\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c **** */
+  65:C:\Users\niels\Documents\GitHub\DSP\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c **** static osMutexId osMutex;
+  66:C:\Users\niels\Documents\GitHub\DSP\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c **** static osSemaphoreId osSemaphore;
+  67:C:\Users\niels\Documents\GitHub\DSP\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c **** /*********************************************************************
+  68:C:\Users\niels\Documents\GitHub\DSP\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c **** *
+  69:C:\Users\niels\Documents\GitHub\DSP\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c **** * Timing:
+  70:C:\Users\niels\Documents\GitHub\DSP\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c **** * GUI_X_GetTime()
+  71:C:\Users\niels\Documents\GitHub\DSP\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c **** * GUI_X_Delay(int)
+  72:C:\Users\niels\Documents\GitHub\DSP\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c **** 
+  73:C:\Users\niels\Documents\GitHub\DSP\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c **** Some timing dependent routines require a GetTime
 ARM GAS   			page 3
 
 
-  74:C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c **** and delay function. Default time unit (tick), normally is
-  75:C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c **** 1 ms.
-  76:C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c **** */
-  77:C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c **** 
-  78:C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c **** int GUI_X_GetTime(void)
-  79:C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c **** {
+  74:C:\Users\niels\Documents\GitHub\DSP\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c **** and delay function. Default time unit (tick), normally is
+  75:C:\Users\niels\Documents\GitHub\DSP\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c **** 1 ms.
+  76:C:\Users\niels\Documents\GitHub\DSP\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c **** */
+  77:C:\Users\niels\Documents\GitHub\DSP\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c **** 
+  78:C:\Users\niels\Documents\GitHub\DSP\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c **** int GUI_X_GetTime(void)
+  79:C:\Users\niels\Documents\GitHub\DSP\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c **** {
   42              	 .loc 1 79 1
   43              	 .cfi_startproc
   44              	 
@@ -139,11 +139,11 @@ ARM GAS   			page 1
   51              	 .setfp r7,sp,#0
   52 0002 00AF     	 add r7,sp,#0
   53              	 .cfi_def_cfa_register 7
-  80:C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c ****   return ((int) xTaskGetTickCount());
+  80:C:\Users\niels\Documents\GitHub\DSP\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c ****   return ((int) xTaskGetTickCount());
   54              	 .loc 1 80 34
   55 0004 FFF7FEFF 	 bl xTaskGetTickCount
   56 0008 0346     	 mov r3,r0
-  81:C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c **** }
+  81:C:\Users\niels\Documents\GitHub\DSP\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c **** }
   57              	 .loc 1 81 1
   58 000a 1846     	 mov r0,r3
   59 000c 80BD     	 pop {r7,pc}
@@ -161,9 +161,9 @@ ARM GAS   			page 1
   71              	GUI_X_Delay:
   72              	 .fnstart
   73              	.LFB30:
-  82:C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c **** 
-  83:C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c **** void GUI_X_Delay(int ms)
-  84:C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c **** {
+  82:C:\Users\niels\Documents\GitHub\DSP\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c **** 
+  83:C:\Users\niels\Documents\GitHub\DSP\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c **** void GUI_X_Delay(int ms)
+  84:C:\Users\niels\Documents\GitHub\DSP\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c **** {
   74              	 .loc 1 84 1
   75              	 .cfi_startproc
   76              	 
@@ -183,12 +183,12 @@ ARM GAS   			page 1
 
   88              	 .cfi_def_cfa_register 7
   89 0006 7860     	 str r0,[r7,#4]
-  85:C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c ****   vTaskDelay( ms );
+  85:C:\Users\niels\Documents\GitHub\DSP\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c ****   vTaskDelay( ms );
   90              	 .loc 1 85 13
   91 0008 7B68     	 ldr r3,[r7,#4]
   92 000a 1846     	 mov r0,r3
   93 000c FFF7FEFF 	 bl vTaskDelay
-  86:C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c **** }
+  86:C:\Users\niels\Documents\GitHub\DSP\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c **** }
   94              	 .loc 1 86 1
   95 0010 00BF     	 nop
   96 0012 0837     	 adds r7,r7,#8
@@ -211,18 +211,18 @@ ARM GAS   			page 1
  113              	GUI_X_Init:
  114              	 .fnstart
  115              	.LFB31:
-  87:C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c **** 
-  88:C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c **** /*********************************************************************
-  89:C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c **** *
-  90:C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c **** * GUI_X_Init()
-  91:C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c **** *
-  92:C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c **** * Note:
-  93:C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c **** * GUI_X_Init() is called from GUI_Init is a possibility to init
-  94:C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c **** * some hardware which needs to be up and running before the GUI.
-  95:C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c **** * If not required, leave this routine blank.
-  96:C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c **** */
-  97:C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c **** 
-  98:C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c **** void GUI_X_Init(void) {
+  87:C:\Users\niels\Documents\GitHub\DSP\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c **** 
+  88:C:\Users\niels\Documents\GitHub\DSP\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c **** /*********************************************************************
+  89:C:\Users\niels\Documents\GitHub\DSP\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c **** *
+  90:C:\Users\niels\Documents\GitHub\DSP\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c **** * GUI_X_Init()
+  91:C:\Users\niels\Documents\GitHub\DSP\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c **** *
+  92:C:\Users\niels\Documents\GitHub\DSP\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c **** * Note:
+  93:C:\Users\niels\Documents\GitHub\DSP\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c **** * GUI_X_Init() is called from GUI_Init is a possibility to init
+  94:C:\Users\niels\Documents\GitHub\DSP\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c **** * some hardware which needs to be up and running before the GUI.
+  95:C:\Users\niels\Documents\GitHub\DSP\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c **** * If not required, leave this routine blank.
+  96:C:\Users\niels\Documents\GitHub\DSP\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c **** */
+  97:C:\Users\niels\Documents\GitHub\DSP\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c **** 
+  98:C:\Users\niels\Documents\GitHub\DSP\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c **** void GUI_X_Init(void) {
  116              	 .loc 1 98 23
  117              	 .cfi_startproc
  118              	 
@@ -233,7 +233,7 @@ ARM GAS   			page 1
  123              	 .cfi_offset 7,-4
  124 0002 00AF     	 add r7,sp,#0
  125              	 .cfi_def_cfa_register 7
-  99:C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c **** }
+  99:C:\Users\niels\Documents\GitHub\DSP\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c **** }
  126              	 .loc 1 99 1
  127 0004 00BF     	 nop
  128 0006 BD46     	 mov sp,r7
@@ -261,17 +261,17 @@ ARM GAS   			page 1
  147              	GUI_X_ExecIdle:
  148              	 .fnstart
  149              	.LFB32:
- 100:C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c **** 
- 101:C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c **** 
- 102:C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c **** /*********************************************************************
- 103:C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c **** *
- 104:C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c **** * GUI_X_ExecIdle
- 105:C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c **** *
- 106:C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c **** * Note:
- 107:C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c **** * Called if WM is in idle state
- 108:C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c **** */
- 109:C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c **** 
- 110:C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c **** void GUI_X_ExecIdle(void) {}
+ 100:C:\Users\niels\Documents\GitHub\DSP\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c **** 
+ 101:C:\Users\niels\Documents\GitHub\DSP\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c **** 
+ 102:C:\Users\niels\Documents\GitHub\DSP\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c **** /*********************************************************************
+ 103:C:\Users\niels\Documents\GitHub\DSP\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c **** *
+ 104:C:\Users\niels\Documents\GitHub\DSP\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c **** * GUI_X_ExecIdle
+ 105:C:\Users\niels\Documents\GitHub\DSP\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c **** *
+ 106:C:\Users\niels\Documents\GitHub\DSP\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c **** * Note:
+ 107:C:\Users\niels\Documents\GitHub\DSP\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c **** * Called if WM is in idle state
+ 108:C:\Users\niels\Documents\GitHub\DSP\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c **** */
+ 109:C:\Users\niels\Documents\GitHub\DSP\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c **** 
+ 110:C:\Users\niels\Documents\GitHub\DSP\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c **** void GUI_X_ExecIdle(void) {}
  150              	 .loc 1 110 27
  151              	 .cfi_startproc
  152              	 
@@ -309,28 +309,28 @@ ARM GAS   			page 1
  181              	GUI_X_InitOS:
  182              	 .fnstart
  183              	.LFB33:
- 111:C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c **** 
- 112:C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c **** /*********************************************************************
- 113:C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c **** *
- 114:C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c **** * Multitasking:
- 115:C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c **** *
- 116:C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c **** * GUI_X_InitOS()
- 117:C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c **** * GUI_X_GetTaskId()
- 118:C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c **** * GUI_X_Lock()
- 119:C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c **** * GUI_X_Unlock()
- 120:C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c **** *
- 121:C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c **** * Note:
- 122:C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c **** * The following routines are required only if emWin is used in a
- 123:C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c **** * true multi task environment, which means you have more than one
- 124:C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c **** * thread using the emWin API.
- 125:C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c **** * In this case the
- 126:C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c **** * #define GUI_OS 1
- 127:C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c **** * needs to be in GUIConf.h
- 128:C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c **** */
- 129:C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c **** 
- 130:C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c **** /* Init OS */
- 131:C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c **** void GUI_X_InitOS(void)
- 132:C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c **** { 
+ 111:C:\Users\niels\Documents\GitHub\DSP\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c **** 
+ 112:C:\Users\niels\Documents\GitHub\DSP\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c **** /*********************************************************************
+ 113:C:\Users\niels\Documents\GitHub\DSP\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c **** *
+ 114:C:\Users\niels\Documents\GitHub\DSP\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c **** * Multitasking:
+ 115:C:\Users\niels\Documents\GitHub\DSP\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c **** *
+ 116:C:\Users\niels\Documents\GitHub\DSP\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c **** * GUI_X_InitOS()
+ 117:C:\Users\niels\Documents\GitHub\DSP\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c **** * GUI_X_GetTaskId()
+ 118:C:\Users\niels\Documents\GitHub\DSP\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c **** * GUI_X_Lock()
+ 119:C:\Users\niels\Documents\GitHub\DSP\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c **** * GUI_X_Unlock()
+ 120:C:\Users\niels\Documents\GitHub\DSP\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c **** *
+ 121:C:\Users\niels\Documents\GitHub\DSP\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c **** * Note:
+ 122:C:\Users\niels\Documents\GitHub\DSP\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c **** * The following routines are required only if emWin is used in a
+ 123:C:\Users\niels\Documents\GitHub\DSP\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c **** * true multi task environment, which means you have more than one
+ 124:C:\Users\niels\Documents\GitHub\DSP\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c **** * thread using the emWin API.
+ 125:C:\Users\niels\Documents\GitHub\DSP\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c **** * In this case the
+ 126:C:\Users\niels\Documents\GitHub\DSP\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c **** * #define GUI_OS 1
+ 127:C:\Users\niels\Documents\GitHub\DSP\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c **** * needs to be in GUIConf.h
+ 128:C:\Users\niels\Documents\GitHub\DSP\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c **** */
+ 129:C:\Users\niels\Documents\GitHub\DSP\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c **** 
+ 130:C:\Users\niels\Documents\GitHub\DSP\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c **** /* Init OS */
+ 131:C:\Users\niels\Documents\GitHub\DSP\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c **** void GUI_X_InitOS(void)
+ 132:C:\Users\niels\Documents\GitHub\DSP\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c **** { 
  184              	 .loc 1 132 1
  185              	 .cfi_startproc
  186              	 
@@ -346,14 +346,14 @@ ARM GAS   			page 1
  196              	 .setfp r7,sp,#0
  197 0004 00AF     	 add r7,sp,#0
  198              	 .cfi_def_cfa_register 7
- 133:C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c ****   /* Create Mutex lock */
- 134:C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c ****   osMutexDef(MUTEX);
+ 133:C:\Users\niels\Documents\GitHub\DSP\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c ****   /* Create Mutex lock */
+ 134:C:\Users\niels\Documents\GitHub\DSP\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c ****   osMutexDef(MUTEX);
  199              	 .loc 1 134 3
  200 0006 0023     	 movs r3,#0
  201 0008 7B60     	 str r3,[r7,#4]
- 135:C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c ****   
- 136:C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c ****   /* Create the Mutex used by the two threads */
- 137:C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c ****   osMutex = osMutexCreate(osMutex(MUTEX));
+ 135:C:\Users\niels\Documents\GitHub\DSP\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c ****   
+ 136:C:\Users\niels\Documents\GitHub\DSP\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c ****   /* Create the Mutex used by the two threads */
+ 137:C:\Users\niels\Documents\GitHub\DSP\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c ****   osMutex = osMutexCreate(osMutex(MUTEX));
  202              	 .loc 1 137 26
  203 000a 3B1D     	 adds r3,r7,#4
  204 000c 1846     	 mov r0,r3
@@ -365,15 +365,15 @@ ARM GAS   			page 1
  207              	 .loc 1 137 11
  208 0014 074A     	 ldr r2,.L7
  209 0016 1360     	 str r3,[r2]
- 138:C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c ****   
- 139:C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c ****   /* Create Semaphore lock */
- 140:C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c ****   osSemaphoreDef(SEM);
+ 138:C:\Users\niels\Documents\GitHub\DSP\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c ****   
+ 139:C:\Users\niels\Documents\GitHub\DSP\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c ****   /* Create Semaphore lock */
+ 140:C:\Users\niels\Documents\GitHub\DSP\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c ****   osSemaphoreDef(SEM);
  210              	 .loc 1 140 3
  211 0018 0023     	 movs r3,#0
  212 001a 3B60     	 str r3,[r7]
- 141:C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c ****   
- 142:C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c ****   /* Create the Semaphore used by the two threads */
- 143:C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c ****   osSemaphore= osSemaphoreCreate(osSemaphore(SEM), 1);  
+ 141:C:\Users\niels\Documents\GitHub\DSP\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c ****   
+ 142:C:\Users\niels\Documents\GitHub\DSP\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c ****   /* Create the Semaphore used by the two threads */
+ 143:C:\Users\niels\Documents\GitHub\DSP\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c ****   osSemaphore= osSemaphoreCreate(osSemaphore(SEM), 1);  
  213              	 .loc 1 143 33
  214 001c 3B46     	 mov r3,r7
  215 001e 0121     	 movs r1,#1
@@ -383,7 +383,7 @@ ARM GAS   			page 1
  219              	 .loc 1 143 14
  220 0028 034A     	 ldr r2,.L7+4
  221 002a 1360     	 str r3,[r2]
- 144:C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c **** }
+ 144:C:\Users\niels\Documents\GitHub\DSP\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c **** }
  222              	 .loc 1 144 1
  223 002c 00BF     	 nop
  224 002e 0837     	 adds r7,r7,#8
@@ -411,9 +411,9 @@ ARM GAS   			page 1
  246              	GUI_X_Unlock:
  247              	 .fnstart
  248              	.LFB34:
- 145:C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c **** 
- 146:C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c **** void GUI_X_Unlock(void)
- 147:C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c **** { 
+ 145:C:\Users\niels\Documents\GitHub\DSP\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c **** 
+ 146:C:\Users\niels\Documents\GitHub\DSP\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c **** void GUI_X_Unlock(void)
+ 147:C:\Users\niels\Documents\GitHub\DSP\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c **** { 
  249              	 .loc 1 147 1
  250              	 .cfi_startproc
  251              	 
@@ -429,13 +429,13 @@ ARM GAS   			page 1
  258              	 .setfp r7,sp,#0
  259 0002 00AF     	 add r7,sp,#0
  260              	 .cfi_def_cfa_register 7
- 148:C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c ****   osMutexRelease(osMutex);
+ 148:C:\Users\niels\Documents\GitHub\DSP\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c ****   osMutexRelease(osMutex);
  261              	 .loc 1 148 17
  262 0004 034B     	 ldr r3,.L10
  263 0006 1B68     	 ldr r3,[r3]
  264 0008 1846     	 mov r0,r3
  265 000a FFF7FEFF 	 bl osMutexRelease
- 149:C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c **** }
+ 149:C:\Users\niels\Documents\GitHub\DSP\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c **** }
  266              	 .loc 1 149 1
  267 000e 00BF     	 nop
  268 0010 80BD     	 pop {r7,pc}
@@ -457,9 +457,9 @@ ARM GAS   			page 1
  284              	GUI_X_Lock:
  285              	 .fnstart
  286              	.LFB35:
- 150:C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c **** 
- 151:C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c **** void GUI_X_Lock(void)
- 152:C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c **** {
+ 150:C:\Users\niels\Documents\GitHub\DSP\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c **** 
+ 151:C:\Users\niels\Documents\GitHub\DSP\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c **** void GUI_X_Lock(void)
+ 152:C:\Users\niels\Documents\GitHub\DSP\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c **** {
  287              	 .loc 1 152 1
  288              	 .cfi_startproc
  289              	 
@@ -472,7 +472,7 @@ ARM GAS   			page 1
  296              	 .setfp r7,sp,#0
  297 0002 00AF     	 add r7,sp,#0
  298              	 .cfi_def_cfa_register 7
- 153:C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c ****   osMutexWait(osMutex , osWaitForever) ;
+ 153:C:\Users\niels\Documents\GitHub\DSP\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c ****   osMutexWait(osMutex , osWaitForever) ;
  299              	 .loc 1 153 14
  300 0004 044B     	 ldr r3,.L13
  301 0006 1B68     	 ldr r3,[r3]
@@ -482,7 +482,7 @@ ARM GAS   			page 1
 
 
  304 000e FFF7FEFF 	 bl osMutexWait
- 154:C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c **** }
+ 154:C:\Users\niels\Documents\GitHub\DSP\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c **** }
  305              	 .loc 1 154 1
  306 0012 00BF     	 nop
  307 0014 80BD     	 pop {r7,pc}
@@ -504,10 +504,10 @@ ARM GAS   			page 1
  323              	GUI_X_GetTaskId:
  324              	 .fnstart
  325              	.LFB36:
- 155:C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c **** 
- 156:C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c **** /* Get Task handle */
- 157:C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c **** U32 GUI_X_GetTaskId(void) 
- 158:C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c **** { 
+ 155:C:\Users\niels\Documents\GitHub\DSP\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c **** 
+ 156:C:\Users\niels\Documents\GitHub\DSP\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c **** /* Get Task handle */
+ 157:C:\Users\niels\Documents\GitHub\DSP\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c **** U32 GUI_X_GetTaskId(void) 
+ 158:C:\Users\niels\Documents\GitHub\DSP\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c **** { 
  326              	 .loc 1 158 1
  327              	 .cfi_startproc
  328              	 
@@ -520,11 +520,11 @@ ARM GAS   			page 1
  335              	 .setfp r7,sp,#0
  336 0002 00AF     	 add r7,sp,#0
  337              	 .cfi_def_cfa_register 7
- 159:C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c ****   return ((U32) osThreadGetId());
+ 159:C:\Users\niels\Documents\GitHub\DSP\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c ****   return ((U32) osThreadGetId());
  338              	 .loc 1 159 30
  339 0004 FFF7FEFF 	 bl osThreadGetId
  340 0008 0346     	 mov r3,r0
- 160:C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c **** }
+ 160:C:\Users\niels\Documents\GitHub\DSP\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c **** }
  341              	 .loc 1 160 1
  342 000a 1846     	 mov r0,r3
  343 000c 80BD     	 pop {r7,pc}
@@ -545,10 +545,10 @@ ARM GAS   			page 1
  355              	GUI_X_WaitEvent:
  356              	 .fnstart
  357              	.LFB37:
- 161:C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c **** 
- 162:C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c **** 
- 163:C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c **** void GUI_X_WaitEvent (void) 
- 164:C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c **** {
+ 161:C:\Users\niels\Documents\GitHub\DSP\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c **** 
+ 162:C:\Users\niels\Documents\GitHub\DSP\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c **** 
+ 163:C:\Users\niels\Documents\GitHub\DSP\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c **** void GUI_X_WaitEvent (void) 
+ 164:C:\Users\niels\Documents\GitHub\DSP\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c **** {
  358              	 .loc 1 164 1
  359              	 .cfi_startproc
  360              	 
@@ -561,14 +561,14 @@ ARM GAS   			page 1
  367              	 .setfp r7,sp,#0
  368 0002 00AF     	 add r7,sp,#0
  369              	 .cfi_def_cfa_register 7
- 165:C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c ****   osSemaphoreWait(osSemaphore , osWaitForever) ;
+ 165:C:\Users\niels\Documents\GitHub\DSP\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c ****   osSemaphoreWait(osSemaphore , osWaitForever) ;
  370              	 .loc 1 165 18
  371 0004 044B     	 ldr r3,.L18
  372 0006 1B68     	 ldr r3,[r3]
  373 0008 4FF0FF31 	 mov r1,#-1
  374 000c 1846     	 mov r0,r3
  375 000e FFF7FEFF 	 bl osSemaphoreWait
- 166:C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c **** }
+ 166:C:\Users\niels\Documents\GitHub\DSP\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c **** }
  376              	 .loc 1 166 1
  377 0012 00BF     	 nop
  378 0014 80BD     	 pop {r7,pc}
@@ -590,10 +590,10 @@ ARM GAS   			page 1
  394              	GUI_X_SignalEvent:
  395              	 .fnstart
  396              	.LFB38:
- 167:C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c **** 
- 168:C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c **** 
- 169:C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c **** void GUI_X_SignalEvent (void) 
- 170:C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c **** {
+ 167:C:\Users\niels\Documents\GitHub\DSP\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c **** 
+ 168:C:\Users\niels\Documents\GitHub\DSP\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c **** 
+ 169:C:\Users\niels\Documents\GitHub\DSP\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c **** void GUI_X_SignalEvent (void) 
+ 170:C:\Users\niels\Documents\GitHub\DSP\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c **** {
  397              	 .loc 1 170 1
  398              	 .cfi_startproc
  399              	 
@@ -609,13 +609,13 @@ ARM GAS   			page 1
  406              	 .setfp r7,sp,#0
  407 0002 00AF     	 add r7,sp,#0
  408              	 .cfi_def_cfa_register 7
- 171:C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c ****   osMutexRelease(osSemaphore);
+ 171:C:\Users\niels\Documents\GitHub\DSP\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c ****   osMutexRelease(osSemaphore);
  409              	 .loc 1 171 17
  410 0004 034B     	 ldr r3,.L21
  411 0006 1B68     	 ldr r3,[r3]
  412 0008 1846     	 mov r0,r3
  413 000a FFF7FEFF 	 bl osMutexRelease
- 172:C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c **** }
+ 172:C:\Users\niels\Documents\GitHub\DSP\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c **** }
  414              	 .loc 1 172 1
  415 000e 00BF     	 nop
  416 0010 80BD     	 pop {r7,pc}
@@ -637,22 +637,22 @@ ARM GAS   			page 1
  432              	GUI_X_Log:
  433              	 .fnstart
  434              	.LFB39:
- 173:C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c **** 
- 174:C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c **** /*********************************************************************
- 175:C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c **** *
- 176:C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c **** * Logging: OS dependent
- 177:C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c **** 
- 178:C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c **** Note:
- 179:C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c **** Logging is used in higher debug levels only. The typical target
- 180:C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c **** build does not use logging and does therefor not require any of
- 181:C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c **** the logging routines below. For a release build without logging
- 182:C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c **** the routines below may be eliminated to save some space.
- 183:C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c **** (If the linker is not function aware and eliminates unreferenced
- 184:C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c **** functions automatically)
- 185:C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c **** 
- 186:C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c **** */
- 187:C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c **** 
- 188:C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c **** void GUI_X_Log (const char *s) { }
+ 173:C:\Users\niels\Documents\GitHub\DSP\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c **** 
+ 174:C:\Users\niels\Documents\GitHub\DSP\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c **** /*********************************************************************
+ 175:C:\Users\niels\Documents\GitHub\DSP\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c **** *
+ 176:C:\Users\niels\Documents\GitHub\DSP\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c **** * Logging: OS dependent
+ 177:C:\Users\niels\Documents\GitHub\DSP\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c **** 
+ 178:C:\Users\niels\Documents\GitHub\DSP\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c **** Note:
+ 179:C:\Users\niels\Documents\GitHub\DSP\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c **** Logging is used in higher debug levels only. The typical target
+ 180:C:\Users\niels\Documents\GitHub\DSP\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c **** build does not use logging and does therefor not require any of
+ 181:C:\Users\niels\Documents\GitHub\DSP\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c **** the logging routines below. For a release build without logging
+ 182:C:\Users\niels\Documents\GitHub\DSP\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c **** the routines below may be eliminated to save some space.
+ 183:C:\Users\niels\Documents\GitHub\DSP\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c **** (If the linker is not function aware and eliminates unreferenced
+ 184:C:\Users\niels\Documents\GitHub\DSP\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c **** functions automatically)
+ 185:C:\Users\niels\Documents\GitHub\DSP\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c **** 
+ 186:C:\Users\niels\Documents\GitHub\DSP\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c **** */
+ 187:C:\Users\niels\Documents\GitHub\DSP\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c **** 
+ 188:C:\Users\niels\Documents\GitHub\DSP\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c **** void GUI_X_Log (const char *s) { }
  435              	 .loc 1 188 32
  436              	 .cfi_startproc
  437              	 
@@ -695,7 +695,7 @@ ARM GAS   			page 1
  471              	GUI_X_Warn:
  472              	 .fnstart
  473              	.LFB40:
- 189:C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c **** void GUI_X_Warn (const char *s) { }
+ 189:C:\Users\niels\Documents\GitHub\DSP\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c **** void GUI_X_Warn (const char *s) { }
  474              	 .loc 1 189 33
  475              	 .cfi_startproc
  476              	 
@@ -738,7 +738,7 @@ ARM GAS   			page 1
  510              	GUI_X_ErrorOut:
  511              	 .fnstart
  512              	.LFB41:
- 190:C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c **** void GUI_X_ErrorOut(const char *s) { }
+ 190:C:\Users\niels\Documents\GitHub\DSP\software\STM32Basis\HAL\gemeenschappelijk\Libraries\Middlewares\ST\STemWin\OS\GUI_X_OS.c **** void GUI_X_ErrorOut(const char *s) { }
  513              	 .loc 1 190 36
  514              	 .cfi_startproc
  515              	 
@@ -772,9 +772,9 @@ ARM GAS   			page 1
  543              	.Letext0:
  544              	 .file 2 "c:\\progra~2\\gnuarm~1\\102021~1.10\\arm-none-eabi\\include\\machine\\_default_types.h"
  545              	 .file 3 "c:\\progra~2\\gnuarm~1\\102021~1.10\\arm-none-eabi\\include\\sys\\_stdint.h"
- 546              	 .file 4 "c:\\users\\niels\\docume~1\\elektr~1\\jaar3~1\\dspl\\software\\stm32b~1\\hal\\gemeen~1\\third_~1\\freertos\\source\\include\\queue.h"
- 547              	 .file 5 "c:\\users\\niels\\docume~1\\elektr~1\\jaar3~1\\dspl\\software\\stm32b~1\\hal\\gemeen~1\\third_~1\\freertos\\source\\include\\semphr.h"
- 548              	 .file 6 "c:\\users\\niels\\docume~1\\elektr~1\\jaar3~1\\dspl\\software\\stm32b~1\\hal\\gemeen~1\\third_~1\\freertos\\source\\cmsis_~1\\cmsis_os.h"
+ 546              	 .file 4 "c:\\users\\niels\\documents\\github\\dsp\\software\\stm32basis\\hal\\gemeenschappelijk\\third_party\\freertos\\source\\include\\queue.h"
+ 547              	 .file 5 "c:\\users\\niels\\documents\\github\\dsp\\software\\stm32basis\\hal\\gemeenschappelijk\\third_party\\freertos\\source\\include\\semphr.h"
+ 548              	 .file 6 "c:\\users\\niels\\documents\\github\\dsp\\software\\stm32basis\\hal\\gemeenschappelijk\\third_party\\freertos\\source\\cmsis_rtos\\cmsis_os.h"
  549              	 .section .debug_info,"",%progbits
  550              	.Ldebug_info0:
  551 0000 B2020000 	 .4byte 0x2b2
@@ -785,10 +785,10 @@ ARM GAS   			page 1
  553 0006 00000000 	 .4byte .Ldebug_abbrev0
  554 000a 04       	 .byte 0x4
  555 000b 01       	 .uleb128 0x1
- 556 000c A9020000 	 .4byte .LASF39
+ 556 000c 8F020000 	 .4byte .LASF39
  557 0010 04       	 .byte 0x4
- 558 0011 EE000000 	 .4byte .LASF40
- 559 0015 1E000000 	 .4byte .LASF41
+ 558 0011 CB010000 	 .4byte .LASF40
+ 559 0015 7C000000 	 .4byte .LASF41
  560 0019 00000000 	 .4byte .Ldebug_ranges0+0
  561 001d 00000000 	 .4byte 0
  562 0021 00000000 	 .4byte .Ldebug_line0
@@ -799,44 +799,44 @@ ARM GAS   			page 1
  567 002c 03       	 .uleb128 0x3
  568 002d 04       	 .byte 0x4
  569 002e 07       	 .byte 0x7
- 570 002f A9010000 	 .4byte .LASF0
+ 570 002f 12010000 	 .4byte .LASF0
  571 0033 03       	 .uleb128 0x3
  572 0034 02       	 .byte 0x2
  573 0035 05       	 .byte 0x5
- 574 0036 91020000 	 .4byte .LASF1
+ 574 0036 77020000 	 .4byte .LASF1
  575 003a 03       	 .uleb128 0x3
  576 003b 01       	 .byte 0x1
  577 003c 08       	 .byte 0x8
- 578 003d 2E020000 	 .4byte .LASF2
+ 578 003d 97010000 	 .4byte .LASF2
  579 0041 04       	 .uleb128 0x4
  580 0042 3A000000 	 .4byte 0x3a
  581 0046 03       	 .uleb128 0x3
  582 0047 01       	 .byte 0x1
  583 0048 08       	 .byte 0x8
- 584 0049 93010000 	 .4byte .LASF3
+ 584 0049 FC000000 	 .4byte .LASF3
  585 004d 03       	 .uleb128 0x3
  586 004e 04       	 .byte 0x4
  587 004f 07       	 .byte 0x7
- 588 0050 21020000 	 .4byte .LASF4
+ 588 0050 8A010000 	 .4byte .LASF4
  589 0054 05       	 .uleb128 0x5
  590 0055 04       	 .byte 0x4
  591 0056 03       	 .uleb128 0x3
  592 0057 04       	 .byte 0x4
  593 0058 05       	 .byte 0x5
- 594 0059 CC030000 	 .4byte .LASF5
+ 594 0059 B2030000 	 .4byte .LASF5
  595 005d 06       	 .uleb128 0x6
  596 005e 04       	 .byte 0x4
  597 005f 41000000 	 .4byte 0x41
  598 0063 03       	 .uleb128 0x3
  599 0064 02       	 .byte 0x2
  600 0065 07       	 .byte 0x7
- 601 0066 9A000000 	 .4byte .LASF6
+ 601 0066 46000000 	 .4byte .LASF6
  602 006a 03       	 .uleb128 0x3
  603 006b 01       	 .byte 0x1
  604 006c 06       	 .byte 0x6
- 605 006d E1030000 	 .4byte .LASF7
+ 605 006d C7030000 	 .4byte .LASF7
  606 0071 07       	 .uleb128 0x7
- 607 0072 F7010000 	 .4byte .LASF10
+ 607 0072 60010000 	 .4byte .LASF10
  608 0076 02       	 .byte 0x2
 ARM GAS   			page 15
 
@@ -847,13 +847,13 @@ ARM GAS   			page 1
  612 007d 03       	 .uleb128 0x3
  613 007e 08       	 .byte 0x8
  614 007f 05       	 .byte 0x5
- 615 0080 62020000 	 .4byte .LASF8
+ 615 0080 48020000 	 .4byte .LASF8
  616 0084 03       	 .uleb128 0x3
  617 0085 08       	 .byte 0x8
  618 0086 07       	 .byte 0x7
- 619 0087 FA030000 	 .4byte .LASF9
+ 619 0087 E0030000 	 .4byte .LASF9
  620 008b 07       	 .uleb128 0x7
- 621 008c C3030000 	 .4byte .LASF11
+ 621 008c A9030000 	 .4byte .LASF11
  622 0090 03       	 .byte 0x3
  623 0091 30       	 .byte 0x30
  624 0092 14       	 .byte 0x14
@@ -861,42 +861,42 @@ ARM GAS   			page 1
  626 0097 03       	 .uleb128 0x3
  627 0098 08       	 .byte 0x8
  628 0099 04       	 .byte 0x4
- 629 009a D5030000 	 .4byte .LASF12
+ 629 009a BB030000 	 .4byte .LASF12
  630 009e 08       	 .uleb128 0x8
- 631 009f 7F020000 	 .4byte .LASF42
+ 631 009f 65020000 	 .4byte .LASF42
  632 00a3 07       	 .uleb128 0x7
- 633 00a4 AD000000 	 .4byte .LASF13
+ 633 00a4 59000000 	 .4byte .LASF13
  634 00a8 04       	 .byte 0x4
  635 00a9 58       	 .byte 0x58
  636 00aa 10       	 .byte 0x10
  637 00ab 54000000 	 .4byte 0x54
  638 00af 07       	 .uleb128 0x7
- 639 00b0 E5010000 	 .4byte .LASF14
+ 639 00b0 4E010000 	 .4byte .LASF14
  640 00b4 05       	 .byte 0x5
  641 00b5 4F       	 .byte 0x4f
  642 00b6 17       	 .byte 0x17
  643 00b7 A3000000 	 .4byte 0xa3
  644 00bb 09       	 .uleb128 0x9
- 645 00bc DB010000 	 .4byte .LASF15
+ 645 00bc 44010000 	 .4byte .LASF15
  646 00c0 06       	 .byte 0x6
  647 00c1 3501     	 .2byte 0x135
  648 00c3 1B       	 .byte 0x1b
  649 00c4 AF000000 	 .4byte 0xaf
  650 00c8 09       	 .uleb128 0x9
- 651 00c9 CD010000 	 .4byte .LASF16
+ 651 00c9 36010000 	 .4byte .LASF16
  652 00cd 06       	 .byte 0x6
  653 00ce 3901     	 .2byte 0x139
  654 00d0 1B       	 .byte 0x1b
  655 00d1 AF000000 	 .4byte 0xaf
  656 00d5 0A       	 .uleb128 0xa
- 657 00d6 D0000000 	 .4byte .LASF18
+ 657 00d6 C7000000 	 .4byte .LASF18
  658 00da 04       	 .byte 0x4
  659 00db 06       	 .byte 0x6
  660 00dc 5A01     	 .2byte 0x15a
  661 00de 10       	 .byte 0x10
  662 00df F2000000 	 .4byte 0xf2
  663 00e3 0B       	 .uleb128 0xb
- 664 00e4 BB010000 	 .4byte .LASF20
+ 664 00e4 24010000 	 .4byte .LASF20
  665 00e8 06       	 .byte 0x6
 ARM GAS   			page 16
 
@@ -907,7 +907,7 @@ ARM GAS   			page 1
  669 00f0 00       	 .byte 0
  670 00f1 00       	 .byte 0
  671 00f2 09       	 .uleb128 0x9
- 672 00f3 ED030000 	 .4byte .LASF17
+ 672 00f3 D3030000 	 .4byte .LASF17
  673 00f7 06       	 .byte 0x6
  674 00f8 5C01     	 .2byte 0x15c
  675 00fa 03       	 .byte 0x3
@@ -915,14 +915,14 @@ ARM GAS   			page 1
  677 00ff 04       	 .uleb128 0x4
  678 0100 F2000000 	 .4byte 0xf2
  679 0104 0A       	 .uleb128 0xa
- 680 0105 DD000000 	 .4byte .LASF19
+ 680 0105 D4000000 	 .4byte .LASF19
  681 0109 04       	 .byte 0x4
  682 010a 06       	 .byte 0x6
  683 010b 6001     	 .2byte 0x160
  684 010d 10       	 .byte 0x10
  685 010e 21010000 	 .4byte 0x121
  686 0112 0B       	 .uleb128 0xb
- 687 0113 BB010000 	 .4byte .LASF20
+ 687 0113 24010000 	 .4byte .LASF20
  688 0117 06       	 .byte 0x6
  689 0118 6101     	 .2byte 0x161
  690 011a 1E       	 .byte 0x1e
@@ -938,7 +938,7 @@ ARM GAS   			page 1
  700 012e 04       	 .uleb128 0x4
  701 012f 21010000 	 .4byte 0x121
  702 0133 0C       	 .uleb128 0xc
- 703 0134 A1010000 	 .4byte .LASF22
+ 703 0134 0A010000 	 .4byte .LASF22
  704 0138 01       	 .byte 0x1
  705 0139 41       	 .byte 0x41
  706 013a 12       	 .byte 0x12
@@ -947,7 +947,7 @@ ARM GAS   			page 1
  709 0140 03       	 .byte 0x3
  710 0141 00000000 	 .4byte _ZL7osMutex
  711 0145 0C       	 .uleb128 0xc
- 712 0146 87010000 	 .4byte .LASF23
+ 712 0146 F0000000 	 .4byte .LASF23
  713 014a 01       	 .byte 0x1
  714 014b 42       	 .byte 0x42
  715 014c 16       	 .byte 0x16
@@ -956,7 +956,7 @@ ARM GAS   			page 1
  718 0152 03       	 .byte 0x3
  719 0153 00000000 	 .4byte _ZL11osSemaphore
  720 0157 0D       	 .uleb128 0xd
- 721 0158 12020000 	 .4byte .LASF24
+ 721 0158 7B010000 	 .4byte .LASF24
  722 015c 01       	 .byte 0x1
 ARM GAS   			page 17
 
@@ -979,7 +979,7 @@ ARM GAS   			page 1
  738 0179 74       	 .sleb128 -12
  739 017a 00       	 .byte 0
  740 017b 0D       	 .uleb128 0xd
- 741 017c 7C010000 	 .4byte .LASF25
+ 741 017c E5000000 	 .4byte .LASF25
  742 0180 01       	 .byte 0x1
  743 0181 BD       	 .byte 0xbd
  744 0182 06       	 .byte 0x6
@@ -999,7 +999,7 @@ ARM GAS   			page 1
  758 019d 74       	 .sleb128 -12
  759 019e 00       	 .byte 0
  760 019f 0D       	 .uleb128 0xd
- 761 01a0 7D000000 	 .4byte .LASF26
+ 761 01a0 29000000 	 .4byte .LASF26
  762 01a4 01       	 .byte 0x1
  763 01a5 BC       	 .byte 0xbc
  764 01a6 06       	 .byte 0x6
@@ -1022,7 +1022,7 @@ ARM GAS   			page 1
 
 
  780 01c3 0F       	 .uleb128 0xf
- 781 01c4 33020000 	 .4byte .LASF27
+ 781 01c4 9C010000 	 .4byte .LASF27
  782 01c8 01       	 .byte 0x1
  783 01c9 A9       	 .byte 0xa9
  784 01ca 06       	 .byte 0x6
@@ -1031,7 +1031,7 @@ ARM GAS   			page 1
  787 01d3 01       	 .uleb128 0x1
  788 01d4 9C       	 .byte 0x9c
  789 01d5 0F       	 .uleb128 0xf
- 790 01d6 52020000 	 .4byte .LASF28
+ 790 01d6 BB010000 	 .4byte .LASF28
  791 01da 01       	 .byte 0x1
  792 01db A3       	 .byte 0xa3
  793 01dc 06       	 .byte 0x6
@@ -1040,7 +1040,7 @@ ARM GAS   			page 1
  796 01e5 01       	 .uleb128 0x1
  797 01e6 9C       	 .byte 0x9c
  798 01e7 10       	 .uleb128 0x10
- 799 01e8 02020000 	 .4byte .LASF37
+ 799 01e8 6B010000 	 .4byte .LASF37
  800 01ec 01       	 .byte 0x1
  801 01ed 9D       	 .byte 0x9d
  802 01ee 05       	 .byte 0x5
@@ -1050,7 +1050,7 @@ ARM GAS   			page 1
  806 01fb 01       	 .uleb128 0x1
  807 01fc 9C       	 .byte 0x9c
  808 01fd 0F       	 .uleb128 0xf
- 809 01fe B8030000 	 .4byte .LASF29
+ 809 01fe 9E030000 	 .4byte .LASF29
  810 0202 01       	 .byte 0x1
  811 0203 97       	 .byte 0x97
  812 0204 06       	 .byte 0x6
@@ -1068,7 +1068,7 @@ ARM GAS   			page 1
  824 021f 01       	 .uleb128 0x1
  825 0220 9C       	 .byte 0x9c
  826 0221 11       	 .uleb128 0x11
- 827 0222 45020000 	 .4byte .LASF31
+ 827 0222 AE010000 	 .4byte .LASF31
  828 0226 01       	 .byte 0x1
  829 0227 83       	 .byte 0x83
  830 0228 06       	 .byte 0x6
@@ -1081,7 +1081,7 @@ ARM GAS   			page 1
 ARM GAS   			page 19
 
 
- 837 0238 87000000 	 .4byte .LASF32
+ 837 0238 33000000 	 .4byte .LASF32
  838 023c 01       	 .byte 0x1
  839 023d 86       	 .byte 0x86
  840 023e 03       	 .byte 0x3
@@ -1090,7 +1090,7 @@ ARM GAS   			page 1
  843 0244 91       	 .byte 0x91
  844 0245 74       	 .sleb128 -12
  845 0246 0C       	 .uleb128 0xc
- 846 0247 BB000000 	 .4byte .LASF33
+ 846 0247 67000000 	 .4byte .LASF33
  847 024b 01       	 .byte 0x1
  848 024c 8C       	 .byte 0x8c
  849 024d 03       	 .byte 0x3
@@ -1100,7 +1100,7 @@ ARM GAS   			page 1
  853 0254 70       	 .sleb128 -16
  854 0255 00       	 .byte 0
  855 0256 12       	 .uleb128 0x12
- 856 0257 70020000 	 .4byte .LASF34
+ 856 0257 56020000 	 .4byte .LASF34
  857 025b 01       	 .byte 0x1
  858 025c 6E       	 .byte 0x6e
  859 025d 06       	 .byte 0x6
@@ -1109,7 +1109,7 @@ ARM GAS   			page 1
  862 0266 01       	 .uleb128 0x1
  863 0267 9C       	 .byte 0x9c
  864 0268 12       	 .uleb128 0x12
- 865 0269 72000000 	 .4byte .LASF35
+ 865 0269 1E000000 	 .4byte .LASF35
  866 026d 01       	 .byte 0x1
  867 026e 62       	 .byte 0x62
  868 026f 06       	 .byte 0x6
@@ -1118,7 +1118,7 @@ ARM GAS   			page 1
  871 0278 01       	 .uleb128 0x1
  872 0279 9C       	 .byte 0x9c
  873 027a 11       	 .uleb128 0x11
- 874 027b C1010000 	 .4byte .LASF36
+ 874 027b 2A010000 	 .4byte .LASF36
  875 027f 01       	 .byte 0x1
  876 0280 53       	 .byte 0x53
  877 0281 06       	 .byte 0x6
@@ -1141,7 +1141,7 @@ ARM GAS   			page 1
 ARM GAS   			page 20
 
 
- 894 02a0 9B020000 	 .4byte .LASF38
+ 894 02a0 81020000 	 .4byte .LASF38
  895 02a4 01       	 .byte 0x1
  896 02a5 4E       	 .byte 0x4e
  897 02a6 05       	 .byte 0x5
@@ -1530,8 +1530,8 @@ ARM GAS   			page 1
  1262 006c 00000000 	 .4byte 0
  1263              	 .section .debug_line,"",%progbits
  1264              	.Ldebug_line0:
- 1265 0000 7F030000 	 .section .debug_str,"MS",%progbits,1
- 1265      03004102 
+ 1265 0000 78030000 	 .section .debug_str,"MS",%progbits,1
+ 1265      03003A02 
  1265      00000201 
  1265      FB0E0D00 
  1265      01010101 
@@ -1546,258 +1546,253 @@ ARM GAS   			page 1
  1269      585F556E 
  1269      6C6F636B 
  1269      00
- 1270              	.LASF41:
- 1271 001e 433A5C55 	 .ascii "C:\\Users\\niels\\DOCUME~1\\ELEKTR~1\\JAAR3~1\\dspl"
- 1271      73657273 
- 1271      5C6E6965 
- 1271      6C735C44 
- 1271      4F43554D 
- 1272 004b 5C736F66 	 .ascii "\\software\\OP2A2E~1\\CLion\\Debug\\STemWin\000"
- 1272      74776172 
- 1272      655C4F50 
- 1272      32413245 
- 1272      7E315C43 
- 1273              	.LASF35:
+ 1270              	.LASF35:
+ 1271 001e 4755495F 	 .ascii "GUI_X_Init\000"
+ 1271      585F496E 
+ 1271      697400
+ 1272              	.LASF26:
+ 1273 0029 4755495F 	 .ascii "GUI_X_Log\000"
+ 1273      585F4C6F 
+ 1273      6700
+ 1274              	.LASF32:
+ 1275 0033 6F735F6D 	 .ascii "os_mutex_def_MUTEX\000"
+ 1275      75746578 
+ 1275      5F646566 
 ARM GAS   			page 27
 
 
- 1274 0072 4755495F 	 .ascii "GUI_X_Init\000"
- 1274      585F496E 
- 1274      697400
- 1275              	.LASF26:
- 1276 007d 4755495F 	 .ascii "GUI_X_Log\000"
- 1276      585F4C6F 
- 1276      6700
- 1277              	.LASF32:
- 1278 0087 6F735F6D 	 .ascii "os_mutex_def_MUTEX\000"
- 1278      75746578 
- 1278      5F646566 
- 1278      5F4D5554 
- 1278      455800
- 1279              	.LASF6:
- 1280 009a 73686F72 	 .ascii "short unsigned int\000"
- 1280      7420756E 
- 1280      7369676E 
- 1280      65642069 
- 1280      6E7400
- 1281              	.LASF13:
- 1282 00ad 51756575 	 .ascii "QueueHandle_t\000"
- 1282      6548616E 
- 1282      646C655F 
- 1282      7400
- 1283              	.LASF33:
- 1284 00bb 6F735F73 	 .ascii "os_semaphore_def_SEM\000"
- 1284      656D6170 
- 1284      686F7265 
- 1284      5F646566 
- 1284      5F53454D 
+ 1275      5F4D5554 
+ 1275      455800
+ 1276              	.LASF6:
+ 1277 0046 73686F72 	 .ascii "short unsigned int\000"
+ 1277      7420756E 
+ 1277      7369676E 
+ 1277      65642069 
+ 1277      6E7400
+ 1278              	.LASF13:
+ 1279 0059 51756575 	 .ascii "QueueHandle_t\000"
+ 1279      6548616E 
+ 1279      646C655F 
+ 1279      7400
+ 1280              	.LASF33:
+ 1281 0067 6F735F73 	 .ascii "os_semaphore_def_SEM\000"
+ 1281      656D6170 
+ 1281      686F7265 
+ 1281      5F646566 
+ 1281      5F53454D 
+ 1282              	.LASF41:
+ 1283 007c 433A5C55 	 .ascii "C:\\Users\\niels\\Documents\\GitHub\\DSP\\software\\"
+ 1283      73657273 
+ 1283      5C6E6965 
+ 1283      6C735C44 
+ 1283      6F63756D 
+ 1284 00a9 6F706472 	 .ascii "opdracht5\\CLion\\Debug\\STemWin\000"
+ 1284      61636874 
+ 1284      355C434C 
+ 1284      696F6E5C 
+ 1284      44656275 
  1285              	.LASF18:
- 1286 00d0 6F735F6D 	 .ascii "os_mutex_def\000"
+ 1286 00c7 6F735F6D 	 .ascii "os_mutex_def\000"
  1286      75746578 
  1286      5F646566 
  1286      00
  1287              	.LASF19:
- 1288 00dd 6F735F73 	 .ascii "os_semaphore_def\000"
+ 1288 00d4 6F735F73 	 .ascii "os_semaphore_def\000"
  1288      656D6170 
  1288      686F7265 
  1288      5F646566 
  1288      00
- 1289              	.LASF40:
- 1290 00ee 433A5C55 	 .ascii "C:\\Users\\niels\\Documents\\Elektrotechniek\\Jaar "
- 1290      73657273 
- 1290      5C6E6965 
- 1290      6C735C44 
- 1290      6F63756D 
- 1291 011c 335C6473 	 .ascii "3\\dspl\\software\\STM32Basis\\HAL\\gemeenschappeli"
- 1291      706C5C73 
- 1291      6F667477 
- 1291      6172655C 
- 1291      53544D33 
- 1292 014a 6A6B5C4C 	 .ascii "jk\\Libraries\\Middlewares\\ST\\STemWin\\OS\\GUI_X_"
- 1292      69627261 
- 1292      72696573 
- 1292      5C4D6964 
- 1292      646C6577 
+ 1289              	.LASF25:
+ 1290 00e5 4755495F 	 .ascii "GUI_X_Warn\000"
+ 1290      585F5761 
+ 1290      726E00
+ 1291              	.LASF23:
+ 1292 00f0 6F735365 	 .ascii "osSemaphore\000"
+ 1292      6D617068 
+ 1292      6F726500 
+ 1293              	.LASF3:
+ 1294 00fc 756E7369 	 .ascii "unsigned char\000"
+ 1294      676E6564 
+ 1294      20636861 
+ 1294      7200
+ 1295              	.LASF22:
+ 1296 010a 6F734D75 	 .ascii "osMutex\000"
+ 1296      74657800 
 ARM GAS   			page 28
 
 
- 1293 0177 4F532E63 	 .ascii "OS.c\000"
- 1293      00
- 1294              	.LASF25:
- 1295 017c 4755495F 	 .ascii "GUI_X_Warn\000"
- 1295      585F5761 
- 1295      726E00
- 1296              	.LASF23:
- 1297 0187 6F735365 	 .ascii "osSemaphore\000"
- 1297      6D617068 
- 1297      6F726500 
- 1298              	.LASF3:
- 1299 0193 756E7369 	 .ascii "unsigned char\000"
- 1299      676E6564 
- 1299      20636861 
- 1299      7200
- 1300              	.LASF22:
- 1301 01a1 6F734D75 	 .ascii "osMutex\000"
- 1301      74657800 
- 1302              	.LASF0:
- 1303 01a9 6C6F6E67 	 .ascii "long unsigned int\000"
- 1303      20756E73 
- 1303      69676E65 
- 1303      6420696E 
- 1303      7400
- 1304              	.LASF20:
- 1305 01bb 64756D6D 	 .ascii "dummy\000"
- 1305      7900
- 1306              	.LASF36:
- 1307 01c1 4755495F 	 .ascii "GUI_X_Delay\000"
- 1307      585F4465 
- 1307      6C617900 
- 1308              	.LASF16:
- 1309 01cd 6F735365 	 .ascii "osSemaphoreId\000"
- 1309      6D617068 
- 1309      6F726549 
- 1309      6400
- 1310              	.LASF15:
- 1311 01db 6F734D75 	 .ascii "osMutexId\000"
- 1311      74657849 
- 1311      6400
- 1312              	.LASF14:
- 1313 01e5 53656D61 	 .ascii "SemaphoreHandle_t\000"
- 1313      70686F72 
- 1313      6548616E 
- 1313      646C655F 
- 1313      7400
- 1314              	.LASF10:
- 1315 01f7 5F5F7569 	 .ascii "__uint32_t\000"
- 1315      6E743332 
- 1315      5F7400
- 1316              	.LASF37:
- 1317 0202 4755495F 	 .ascii "GUI_X_GetTaskId\000"
- 1317      585F4765 
- 1317      74546173 
- 1317      6B496400 
- 1318              	.LASF24:
- 1319 0212 4755495F 	 .ascii "GUI_X_ErrorOut\000"
+ 1297              	.LASF0:
+ 1298 0112 6C6F6E67 	 .ascii "long unsigned int\000"
+ 1298      20756E73 
+ 1298      69676E65 
+ 1298      6420696E 
+ 1298      7400
+ 1299              	.LASF20:
+ 1300 0124 64756D6D 	 .ascii "dummy\000"
+ 1300      7900
+ 1301              	.LASF36:
+ 1302 012a 4755495F 	 .ascii "GUI_X_Delay\000"
+ 1302      585F4465 
+ 1302      6C617900 
+ 1303              	.LASF16:
+ 1304 0136 6F735365 	 .ascii "osSemaphoreId\000"
+ 1304      6D617068 
+ 1304      6F726549 
+ 1304      6400
+ 1305              	.LASF15:
+ 1306 0144 6F734D75 	 .ascii "osMutexId\000"
+ 1306      74657849 
+ 1306      6400
+ 1307              	.LASF14:
+ 1308 014e 53656D61 	 .ascii "SemaphoreHandle_t\000"
+ 1308      70686F72 
+ 1308      6548616E 
+ 1308      646C655F 
+ 1308      7400
+ 1309              	.LASF10:
+ 1310 0160 5F5F7569 	 .ascii "__uint32_t\000"
+ 1310      6E743332 
+ 1310      5F7400
+ 1311              	.LASF37:
+ 1312 016b 4755495F 	 .ascii "GUI_X_GetTaskId\000"
+ 1312      585F4765 
+ 1312      74546173 
+ 1312      6B496400 
+ 1313              	.LASF24:
+ 1314 017b 4755495F 	 .ascii "GUI_X_ErrorOut\000"
+ 1314      585F4572 
+ 1314      726F724F 
+ 1314      757400
+ 1315              	.LASF4:
+ 1316 018a 756E7369 	 .ascii "unsigned int\000"
+ 1316      676E6564 
+ 1316      20696E74 
+ 1316      00
+ 1317              	.LASF2:
+ 1318 0197 63686172 	 .ascii "char\000"
+ 1318      00
+ 1319              	.LASF27:
+ 1320 019c 4755495F 	 .ascii "GUI_X_SignalEvent\000"
+ 1320      585F5369 
+ 1320      676E616C 
+ 1320      4576656E 
+ 1320      7400
+ 1321              	.LASF31:
 ARM GAS   			page 29
 
 
- 1319      585F4572 
- 1319      726F724F 
- 1319      757400
- 1320              	.LASF4:
- 1321 0221 756E7369 	 .ascii "unsigned int\000"
- 1321      676E6564 
- 1321      20696E74 
- 1321      00
- 1322              	.LASF2:
- 1323 022e 63686172 	 .ascii "char\000"
- 1323      00
- 1324              	.LASF27:
- 1325 0233 4755495F 	 .ascii "GUI_X_SignalEvent\000"
- 1325      585F5369 
- 1325      676E616C 
- 1325      4576656E 
- 1325      7400
- 1326              	.LASF31:
- 1327 0245 4755495F 	 .ascii "GUI_X_InitOS\000"
- 1327      585F496E 
- 1327      69744F53 
- 1327      00
- 1328              	.LASF28:
- 1329 0252 4755495F 	 .ascii "GUI_X_WaitEvent\000"
- 1329      585F5761 
- 1329      69744576 
- 1329      656E7400 
- 1330              	.LASF8:
- 1331 0262 6C6F6E67 	 .ascii "long long int\000"
- 1331      206C6F6E 
- 1331      6720696E 
- 1331      7400
- 1332              	.LASF34:
- 1333 0270 4755495F 	 .ascii "GUI_X_ExecIdle\000"
- 1333      585F4578 
- 1333      65634964 
- 1333      6C6500
- 1334              	.LASF42:
- 1335 027f 6465636C 	 .ascii "decltype(nullptr)\000"
- 1335      74797065 
- 1335      286E756C 
- 1335      6C707472 
- 1335      2900
- 1336              	.LASF1:
- 1337 0291 73686F72 	 .ascii "short int\000"
- 1337      7420696E 
- 1337      7400
- 1338              	.LASF38:
- 1339 029b 4755495F 	 .ascii "GUI_X_GetTime\000"
- 1339      585F4765 
- 1339      7454696D 
- 1339      6500
- 1340              	.LASF39:
- 1341 02a9 474E5520 	 .ascii "GNU C++14 10.3.1 20210824 (release) -mcpu=cortex-m4"
- 1341      432B2B31 
- 1341      34203130 
- 1341      2E332E31 
+ 1322 01ae 4755495F 	 .ascii "GUI_X_InitOS\000"
+ 1322      585F496E 
+ 1322      69744F53 
+ 1322      00
+ 1323              	.LASF28:
+ 1324 01bb 4755495F 	 .ascii "GUI_X_WaitEvent\000"
+ 1324      585F5761 
+ 1324      69744576 
+ 1324      656E7400 
+ 1325              	.LASF40:
+ 1326 01cb 433A5C55 	 .ascii "C:\\Users\\niels\\Documents\\GitHub\\DSP\\software\\"
+ 1326      73657273 
+ 1326      5C6E6965 
+ 1326      6C735C44 
+ 1326      6F63756D 
+ 1327 01f8 53544D33 	 .ascii "STM32Basis\\HAL\\gemeenschappelijk\\Libraries\\Midd"
+ 1327      32426173 
+ 1327      69735C48 
+ 1327      414C5C67 
+ 1327      656D6565 
+ 1328 0227 6C657761 	 .ascii "lewares\\ST\\STemWin\\OS\\GUI_X_OS.c\000"
+ 1328      7265735C 
+ 1328      53545C53 
+ 1328      54656D57 
+ 1328      696E5C4F 
+ 1329              	.LASF8:
+ 1330 0248 6C6F6E67 	 .ascii "long long int\000"
+ 1330      206C6F6E 
+ 1330      6720696E 
+ 1330      7400
+ 1331              	.LASF34:
+ 1332 0256 4755495F 	 .ascii "GUI_X_ExecIdle\000"
+ 1332      585F4578 
+ 1332      65634964 
+ 1332      6C6500
+ 1333              	.LASF42:
+ 1334 0265 6465636C 	 .ascii "decltype(nullptr)\000"
+ 1334      74797065 
+ 1334      286E756C 
+ 1334      6C707472 
+ 1334      2900
+ 1335              	.LASF1:
+ 1336 0277 73686F72 	 .ascii "short int\000"
+ 1336      7420696E 
+ 1336      7400
+ 1337              	.LASF38:
+ 1338 0281 4755495F 	 .ascii "GUI_X_GetTime\000"
+ 1338      585F4765 
+ 1338      7454696D 
+ 1338      6500
+ 1339              	.LASF39:
+ 1340 028f 474E5520 	 .ascii "GNU C++14 10.3.1 20210824 (release) -mcpu=cortex-m4"
+ 1340      432B2B31 
+ 1340      34203130 
+ 1340      2E332E31 
+ 1340      20323032 
+ 1341 02c2 202D6D66 	 .ascii " -mfloat-abi=hard -mfpu=fpv4-sp-d16 -mfix-cortex-m3"
 ARM GAS   			page 30
 
 
- 1341      20323032 
- 1342 02dc 202D6D66 	 .ascii " -mfloat-abi=hard -mfpu=fpv4-sp-d16 -mfix-cortex-m3"
- 1342      6C6F6174 
- 1342      2D616269 
- 1342      3D686172 
+ 1341      6C6F6174 
+ 1341      2D616269 
+ 1341      3D686172 
+ 1341      64202D6D 
+ 1342 02f5 2D6C6472 	 .ascii "-ldrd -mthumb -mno-unaligned-access -mapcs-frame -m"
  1342      64202D6D 
- 1343 030f 2D6C6472 	 .ascii "-ldrd -mthumb -mno-unaligned-access -mapcs-frame -m"
- 1343      64202D6D 
- 1343      7468756D 
- 1343      62202D6D 
- 1343      6E6F2D75 
- 1344 0342 61726368 	 .ascii "arch=armv7e-m+fp -g -g -O0 -std=c++14 -fsingle-prec"
- 1344      3D61726D 
- 1344      7637652D 
- 1344      6D2B6670 
- 1344      202D6720 
- 1345 0375 6973696F 	 .ascii "ision-constant -funsigned-char -ffunction-sections "
- 1345      6E2D636F 
- 1345      6E737461 
- 1345      6E74202D 
- 1345      66756E73 
- 1346 03a8 2D666461 	 .ascii "-fdata-sections\000"
- 1346      74612D73 
- 1346      65637469 
- 1346      6F6E7300 
- 1347              	.LASF29:
- 1348 03b8 4755495F 	 .ascii "GUI_X_Lock\000"
- 1348      585F4C6F 
- 1348      636B00
- 1349              	.LASF11:
- 1350 03c3 75696E74 	 .ascii "uint32_t\000"
- 1350      33325F74 
- 1350      00
- 1351              	.LASF5:
- 1352 03cc 6C6F6E67 	 .ascii "long int\000"
- 1352      20696E74 
- 1352      00
- 1353              	.LASF12:
- 1354 03d5 6C6F6E67 	 .ascii "long double\000"
- 1354      20646F75 
- 1354      626C6500 
- 1355              	.LASF7:
- 1356 03e1 7369676E 	 .ascii "signed char\000"
- 1356      65642063 
- 1356      68617200 
- 1357              	.LASF17:
- 1358 03ed 6F734D75 	 .ascii "osMutexDef_t\000"
- 1358      74657844 
- 1358      65665F74 
- 1358      00
- 1359              	.LASF9:
- 1360 03fa 6C6F6E67 	 .ascii "long long unsigned int\000"
- 1360      206C6F6E 
- 1360      6720756E 
- 1360      7369676E 
- 1360      65642069 
- 1361              	 .ident "GCC: (GNU Arm Embedded Toolchain 10.3-2021.10) 10.3.1 20210824 (release)"
-ARM GAS   			page 31
-
-
+ 1342      7468756D 
+ 1342      62202D6D 
+ 1342      6E6F2D75 
+ 1343 0328 61726368 	 .ascii "arch=armv7e-m+fp -g -g -O0 -std=c++14 -fsingle-prec"
+ 1343      3D61726D 
+ 1343      7637652D 
+ 1343      6D2B6670 
+ 1343      202D6720 
+ 1344 035b 6973696F 	 .ascii "ision-constant -funsigned-char -ffunction-sections "
+ 1344      6E2D636F 
+ 1344      6E737461 
+ 1344      6E74202D 
+ 1344      66756E73 
+ 1345 038e 2D666461 	 .ascii "-fdata-sections\000"
+ 1345      74612D73 
+ 1345      65637469 
+ 1345      6F6E7300 
+ 1346              	.LASF29:
+ 1347 039e 4755495F 	 .ascii "GUI_X_Lock\000"
+ 1347      585F4C6F 
+ 1347      636B00
+ 1348              	.LASF11:
+ 1349 03a9 75696E74 	 .ascii "uint32_t\000"
+ 1349      33325F74 
+ 1349      00
+ 1350              	.LASF5:
+ 1351 03b2 6C6F6E67 	 .ascii "long int\000"
+ 1351      20696E74 
+ 1351      00
+ 1352              	.LASF12:
+ 1353 03bb 6C6F6E67 	 .ascii "long double\000"
+ 1353      20646F75 
+ 1353      626C6500 
+ 1354              	.LASF7:
+ 1355 03c7 7369676E 	 .ascii "signed char\000"
+ 1355      65642063 
+ 1355      68617200 
+ 1356              	.LASF17:
+ 1357 03d3 6F734D75 	 .ascii "osMutexDef_t\000"
+ 1357      74657844 
+ 1357      65665F74 
+ 1357      00
+ 1358              	.LASF9:
+ 1359 03e0 6C6F6E67 	 .ascii "long long unsigned int\000"
+ 1359      206C6F6E 
+ 1359      6720756E 
+ 1359      7369676E 
+ 1359      65642069 
+ 1360              	 .ident "GCC: (GNU Arm Embedded Toolchain 10.3-2021.10) 10.3.1 20210824 (release)"

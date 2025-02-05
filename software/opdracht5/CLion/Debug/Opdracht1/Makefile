@@ -56,10 +56,10 @@ RM = "C:\Program Files\JetBrains\CLion 2024.1.4\bin\cmake\win\x64\bin\cmake.exe"
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\opdracht5"
+CMAKE_SOURCE_DIR = C:\Users\niels\Documents\GitHub\DSP\software\opdracht5
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\opdracht5\CLion\Debug"
+CMAKE_BINARY_DIR = C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -86,14 +86,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Debug && $(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\opdracht5\CLion\Debug\CMakeFiles" "C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\opdracht5\CLion\Debug\Opdracht1\\CMakeFiles\progress.marks"
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Debug && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Opdracht1/all
-	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\opdracht5\CLion\Debug\CMakeFiles" 0
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Debug && $(CMAKE_COMMAND) -E cmake_progress_start C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Debug\CMakeFiles C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Debug\Opdracht1\\CMakeFiles\progress.marks
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Debug && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Opdracht1/all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Debug\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Debug && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Opdracht1/clean
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Debug && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Opdracht1/clean
 .PHONY : clean
 
 # The main clean target
@@ -102,22 +102,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Debug && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Opdracht1/preinstall
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Debug && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Opdracht1/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Debug && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Opdracht1/preinstall
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Debug && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Opdracht1/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 1
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 Opdracht1/CMakeFiles/DSBKlassen.dir/rule:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Debug && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Opdracht1/CMakeFiles/DSBKlassen.dir/rule
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Debug && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Opdracht1/CMakeFiles/DSBKlassen.dir/rule
 .PHONY : Opdracht1/CMakeFiles/DSBKlassen.dir/rule
 
 # Convenience name for target.
@@ -126,7 +126,7 @@ DSBKlassen: Opdracht1/CMakeFiles/DSBKlassen.dir/rule
 
 # fast build rule for target.
 DSBKlassen/fast:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Debug && $(MAKE) $(MAKESILENT) -f Opdracht1\CMakeFiles\DSBKlassen.dir\build.make Opdracht1/CMakeFiles/DSBKlassen.dir/build
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Debug && $(MAKE) $(MAKESILENT) -f Opdracht1\CMakeFiles\DSBKlassen.dir\build.make Opdracht1/CMakeFiles/DSBKlassen.dir/build
 .PHONY : DSBKlassen/fast
 
 STUDENT/dsbComplex.obj: STUDENT/dsbComplex.cpp.obj
@@ -134,7 +134,7 @@ STUDENT/dsbComplex.obj: STUDENT/dsbComplex.cpp.obj
 
 # target to build an object file
 STUDENT/dsbComplex.cpp.obj:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Debug && $(MAKE) $(MAKESILENT) -f Opdracht1\CMakeFiles\DSBKlassen.dir\build.make Opdracht1/CMakeFiles/DSBKlassen.dir/STUDENT/dsbComplex.cpp.obj
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Debug && $(MAKE) $(MAKESILENT) -f Opdracht1\CMakeFiles\DSBKlassen.dir\build.make Opdracht1/CMakeFiles/DSBKlassen.dir/STUDENT/dsbComplex.cpp.obj
 .PHONY : STUDENT/dsbComplex.cpp.obj
 
 STUDENT/dsbComplex.i: STUDENT/dsbComplex.cpp.i
@@ -142,7 +142,7 @@ STUDENT/dsbComplex.i: STUDENT/dsbComplex.cpp.i
 
 # target to preprocess a source file
 STUDENT/dsbComplex.cpp.i:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Debug && $(MAKE) $(MAKESILENT) -f Opdracht1\CMakeFiles\DSBKlassen.dir\build.make Opdracht1/CMakeFiles/DSBKlassen.dir/STUDENT/dsbComplex.cpp.i
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Debug && $(MAKE) $(MAKESILENT) -f Opdracht1\CMakeFiles\DSBKlassen.dir\build.make Opdracht1/CMakeFiles/DSBKlassen.dir/STUDENT/dsbComplex.cpp.i
 .PHONY : STUDENT/dsbComplex.cpp.i
 
 STUDENT/dsbComplex.s: STUDENT/dsbComplex.cpp.s
@@ -150,7 +150,7 @@ STUDENT/dsbComplex.s: STUDENT/dsbComplex.cpp.s
 
 # target to generate assembly for a file
 STUDENT/dsbComplex.cpp.s:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Debug && $(MAKE) $(MAKESILENT) -f Opdracht1\CMakeFiles\DSBKlassen.dir\build.make Opdracht1/CMakeFiles/DSBKlassen.dir/STUDENT/dsbComplex.cpp.s
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Debug && $(MAKE) $(MAKESILENT) -f Opdracht1\CMakeFiles\DSBKlassen.dir\build.make Opdracht1/CMakeFiles/DSBKlassen.dir/STUDENT/dsbComplex.cpp.s
 .PHONY : STUDENT/dsbComplex.cpp.s
 
 STUDENT/dsbComplexBasis.obj: STUDENT/dsbComplexBasis.cpp.obj
@@ -158,7 +158,7 @@ STUDENT/dsbComplexBasis.obj: STUDENT/dsbComplexBasis.cpp.obj
 
 # target to build an object file
 STUDENT/dsbComplexBasis.cpp.obj:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Debug && $(MAKE) $(MAKESILENT) -f Opdracht1\CMakeFiles\DSBKlassen.dir\build.make Opdracht1/CMakeFiles/DSBKlassen.dir/STUDENT/dsbComplexBasis.cpp.obj
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Debug && $(MAKE) $(MAKESILENT) -f Opdracht1\CMakeFiles\DSBKlassen.dir\build.make Opdracht1/CMakeFiles/DSBKlassen.dir/STUDENT/dsbComplexBasis.cpp.obj
 .PHONY : STUDENT/dsbComplexBasis.cpp.obj
 
 STUDENT/dsbComplexBasis.i: STUDENT/dsbComplexBasis.cpp.i
@@ -166,7 +166,7 @@ STUDENT/dsbComplexBasis.i: STUDENT/dsbComplexBasis.cpp.i
 
 # target to preprocess a source file
 STUDENT/dsbComplexBasis.cpp.i:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Debug && $(MAKE) $(MAKESILENT) -f Opdracht1\CMakeFiles\DSBKlassen.dir\build.make Opdracht1/CMakeFiles/DSBKlassen.dir/STUDENT/dsbComplexBasis.cpp.i
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Debug && $(MAKE) $(MAKESILENT) -f Opdracht1\CMakeFiles\DSBKlassen.dir\build.make Opdracht1/CMakeFiles/DSBKlassen.dir/STUDENT/dsbComplexBasis.cpp.i
 .PHONY : STUDENT/dsbComplexBasis.cpp.i
 
 STUDENT/dsbComplexBasis.s: STUDENT/dsbComplexBasis.cpp.s
@@ -174,7 +174,7 @@ STUDENT/dsbComplexBasis.s: STUDENT/dsbComplexBasis.cpp.s
 
 # target to generate assembly for a file
 STUDENT/dsbComplexBasis.cpp.s:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Debug && $(MAKE) $(MAKESILENT) -f Opdracht1\CMakeFiles\DSBKlassen.dir\build.make Opdracht1/CMakeFiles/DSBKlassen.dir/STUDENT/dsbComplexBasis.cpp.s
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Debug && $(MAKE) $(MAKESILENT) -f Opdracht1\CMakeFiles\DSBKlassen.dir\build.make Opdracht1/CMakeFiles/DSBKlassen.dir/STUDENT/dsbComplexBasis.cpp.s
 .PHONY : STUDENT/dsbComplexBasis.cpp.s
 
 # Help Target
@@ -203,6 +203,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 0
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

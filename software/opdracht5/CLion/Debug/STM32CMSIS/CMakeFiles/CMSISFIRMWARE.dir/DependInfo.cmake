@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_ASM-ATT
-  "C:/Users/niels/Documents/Elektrotechniek/Jaar 3/dspl/software/STM32Basis/HAL/gemeenschappelijk/Libraries/CMSIS/Device/ST/STM32F4xx/Source/Templates/gcc/startup_stm32f412zx.s" "C:/Users/niels/Documents/Elektrotechniek/Jaar 3/dspl/software/opdracht5/CLion/Debug/STM32CMSIS/CMakeFiles/CMSISFIRMWARE.dir/Source/Templates/gcc/startup_stm32f412zx.s.obj"
+  "C:/Users/niels/Documents/GitHub/DSP/software/STM32Basis/HAL/gemeenschappelijk/Libraries/CMSIS/Device/ST/STM32F4xx/Source/Templates/gcc/startup_stm32f412zx.s" "C:/Users/niels/Documents/GitHub/DSP/software/opdracht5/CLion/Debug/STM32CMSIS/CMakeFiles/CMSISFIRMWARE.dir/Source/Templates/gcc/startup_stm32f412zx.s.obj"
   )
 set(CMAKE_ASM-ATT_COMPILER_ID "GNU")
 
@@ -25,19 +25,19 @@ set(CMAKE_TARGET_DEFINITIONS_ASM-ATT
 
 # The include file search paths:
 set(CMAKE_ASM-ATT_TARGET_INCLUDE_PATH
-  "C:/Users/niels/Documents/Elektrotechniek/Jaar 3/dspl/software/opdracht5/Basis/h"
-  "C:/Users/niels/Documents/Elektrotechniek/Jaar 3/dspl/software/opdracht5/../STM32Basis/gemeenschappelijk/basis/h"
-  "C:/Users/niels/Documents/Elektrotechniek/Jaar 3/dspl/software/opdracht5/../algemeen/h"
+  "C:/Users/niels/Documents/GitHub/DSP/software/opdracht5/Basis/h"
+  "C:/Users/niels/Documents/GitHub/DSP/software/opdracht5/../STM32Basis/gemeenschappelijk/basis/h"
+  "C:/Users/niels/Documents/GitHub/DSP/software/opdracht5/../algemeen/h"
   "gegenereerd"
-  "C:/Users/niels/Documents/Elektrotechniek/Jaar 3/dspl/software/opdracht5/config"
-  "C:/Users/niels/Documents/Elektrotechniek/Jaar 3/dspl/software/opdracht5/../STM32Basis/HAL/gemeenschappelijk/Libraries/CMSIS/Include"
-  "C:/Users/niels/Documents/Elektrotechniek/Jaar 3/dspl/software/opdracht5/../STM32Basis/HAL/gemeenschappelijk/Libraries/CMSIS/Device/ST/STM32F4xx/Include"
-  "C:/Users/niels/Documents/Elektrotechniek/Jaar 3/dspl/software/opdracht5/../STM32Basis/HAL/gemeenschappelijk/Libraries/STM32F4xx_HAL_Driver/Inc"
+  "C:/Users/niels/Documents/GitHub/DSP/software/opdracht5/config"
+  "C:/Users/niels/Documents/GitHub/DSP/software/opdracht5/../STM32Basis/HAL/gemeenschappelijk/Libraries/CMSIS/Include"
+  "C:/Users/niels/Documents/GitHub/DSP/software/opdracht5/../STM32Basis/HAL/gemeenschappelijk/Libraries/CMSIS/Device/ST/STM32F4xx/Include"
+  "C:/Users/niels/Documents/GitHub/DSP/software/opdracht5/../STM32Basis/HAL/gemeenschappelijk/Libraries/STM32F4xx_HAL_Driver/Inc"
   )
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "C:/Users/niels/Documents/Elektrotechniek/Jaar 3/dspl/software/STM32Basis/HAL/gemeenschappelijk/Libraries/CMSIS/Device/ST/STM32F4xx/Source/Templates/system_stm32f4xx.c" "STM32CMSIS/CMakeFiles/CMSISFIRMWARE.dir/Source/Templates/system_stm32f4xx.c.obj" "gcc" "STM32CMSIS/CMakeFiles/CMSISFIRMWARE.dir/Source/Templates/system_stm32f4xx.c.obj.d"
+  "C:/Users/niels/Documents/GitHub/DSP/software/STM32Basis/HAL/gemeenschappelijk/Libraries/CMSIS/Device/ST/STM32F4xx/Source/Templates/system_stm32f4xx.c" "STM32CMSIS/CMakeFiles/CMSISFIRMWARE.dir/Source/Templates/system_stm32f4xx.c.obj" "gcc" "STM32CMSIS/CMakeFiles/CMSISFIRMWARE.dir/Source/Templates/system_stm32f4xx.c.obj.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

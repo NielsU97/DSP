@@ -15,21 +15,21 @@ CXX_INCLUDES = @CMakeFiles/FreeRTOSLib.dir/includes_CXX.rsp
 
 CXX_FLAGS = -mcpu=cortex-m4 -mfloat-abi=hard -mfpu=fpv4-sp-d16 -fsingle-precision-constant -mfix-cortex-m3-ldrd --std=c++14 -Wall -Wpointer-arith -Wswitch -Wredundant-decls -Wreturn-type -Wshadow -Wunused -Werror -Wno-psabi -mthumb -mno-unaligned-access -mapcs-frame -pipe -funsigned-char -ffunction-sections -fdata-sections  --std=c++14 -fno-rtti -fno-exceptions --std=gnu++0x -Wctor-dtor-privacy -Wnon-virtual-dtor -finline-limit=20 -g -std=c++14 -fdiagnostics-color=always   -O0 -g -fno-default-inline
 
-# Custom flags: FreeRTOS/CMakeFiles/FreeRTOSLib.dir/Source/CMSIS_RTOS/cmsis_os.c.obj_FLAGS = -Wa,-ahl="C:/Users/niels/Documents/Elektrotechniek/Jaar 3/dspl/software/opdracht5/CLion/Debug/FreeRTOS/cmsis_os.c.lst"
+# Custom flags: FreeRTOS/CMakeFiles/FreeRTOSLib.dir/Source/CMSIS_RTOS/cmsis_os.c.obj_FLAGS = -Wa,-ahl="C:/Users/niels/Documents/GitHub/DSP/software/opdracht5/CLion/Debug/FreeRTOS/cmsis_os.c.lst"
 
-# Custom flags: FreeRTOS/CMakeFiles/FreeRTOSLib.dir/Source/croutine.c.obj_FLAGS = -Wa,-ahl="C:/Users/niels/Documents/Elektrotechniek/Jaar 3/dspl/software/opdracht5/CLion/Debug/FreeRTOS/croutine.c.lst"
+# Custom flags: FreeRTOS/CMakeFiles/FreeRTOSLib.dir/Source/croutine.c.obj_FLAGS = -Wa,-ahl="C:/Users/niels/Documents/GitHub/DSP/software/opdracht5/CLion/Debug/FreeRTOS/croutine.c.lst"
 
-# Custom flags: FreeRTOS/CMakeFiles/FreeRTOSLib.dir/Source/event_groups.c.obj_FLAGS = -Wa,-ahl="C:/Users/niels/Documents/Elektrotechniek/Jaar 3/dspl/software/opdracht5/CLion/Debug/FreeRTOS/event_groups.c.lst"
+# Custom flags: FreeRTOS/CMakeFiles/FreeRTOSLib.dir/Source/event_groups.c.obj_FLAGS = -Wa,-ahl="C:/Users/niels/Documents/GitHub/DSP/software/opdracht5/CLion/Debug/FreeRTOS/event_groups.c.lst"
 
-# Custom flags: FreeRTOS/CMakeFiles/FreeRTOSLib.dir/Source/list.c.obj_FLAGS = -Wa,-ahl="C:/Users/niels/Documents/Elektrotechniek/Jaar 3/dspl/software/opdracht5/CLion/Debug/FreeRTOS/list.c.lst"
+# Custom flags: FreeRTOS/CMakeFiles/FreeRTOSLib.dir/Source/list.c.obj_FLAGS = -Wa,-ahl="C:/Users/niels/Documents/GitHub/DSP/software/opdracht5/CLion/Debug/FreeRTOS/list.c.lst"
 
-# Custom flags: FreeRTOS/CMakeFiles/FreeRTOSLib.dir/Source/portable/GCC/ARM_CM4F/port.cpp.obj_FLAGS = -Wa,-ahl="C:/Users/niels/Documents/Elektrotechniek/Jaar 3/dspl/software/opdracht5/CLion/Debug/FreeRTOS/port.cpp.lst"
+# Custom flags: FreeRTOS/CMakeFiles/FreeRTOSLib.dir/Source/portable/GCC/ARM_CM4F/port.cpp.obj_FLAGS = -Wa,-ahl="C:/Users/niels/Documents/GitHub/DSP/software/opdracht5/CLion/Debug/FreeRTOS/port.cpp.lst"
 
-# Custom flags: FreeRTOS/CMakeFiles/FreeRTOSLib.dir/Source/portable/MemMang/heap_4.c.obj_FLAGS = -Wa,-ahl="C:/Users/niels/Documents/Elektrotechniek/Jaar 3/dspl/software/opdracht5/CLion/Debug/FreeRTOS/heap_4.c.lst"
+# Custom flags: FreeRTOS/CMakeFiles/FreeRTOSLib.dir/Source/portable/MemMang/heap_4.c.obj_FLAGS = -Wa,-ahl="C:/Users/niels/Documents/GitHub/DSP/software/opdracht5/CLion/Debug/FreeRTOS/heap_4.c.lst"
 
-# Custom flags: FreeRTOS/CMakeFiles/FreeRTOSLib.dir/Source/queue.c.obj_FLAGS = -Wa,-ahl="C:/Users/niels/Documents/Elektrotechniek/Jaar 3/dspl/software/opdracht5/CLion/Debug/FreeRTOS/queue.c.lst"
+# Custom flags: FreeRTOS/CMakeFiles/FreeRTOSLib.dir/Source/queue.c.obj_FLAGS = -Wa,-ahl="C:/Users/niels/Documents/GitHub/DSP/software/opdracht5/CLion/Debug/FreeRTOS/queue.c.lst"
 
-# Custom flags: FreeRTOS/CMakeFiles/FreeRTOSLib.dir/Source/tasks.c.obj_FLAGS = -Wa,-ahl="C:/Users/niels/Documents/Elektrotechniek/Jaar 3/dspl/software/opdracht5/CLion/Debug/FreeRTOS/tasks.c.lst"
+# Custom flags: FreeRTOS/CMakeFiles/FreeRTOSLib.dir/Source/tasks.c.obj_FLAGS = -Wa,-ahl="C:/Users/niels/Documents/GitHub/DSP/software/opdracht5/CLion/Debug/FreeRTOS/tasks.c.lst"
 
-# Custom flags: FreeRTOS/CMakeFiles/FreeRTOSLib.dir/Source/timers.c.obj_FLAGS = -Wa,-ahl="C:/Users/niels/Documents/Elektrotechniek/Jaar 3/dspl/software/opdracht5/CLion/Debug/FreeRTOS/timers.c.lst"
+# Custom flags: FreeRTOS/CMakeFiles/FreeRTOSLib.dir/Source/timers.c.obj_FLAGS = -Wa,-ahl="C:/Users/niels/Documents/GitHub/DSP/software/opdracht5/CLion/Debug/FreeRTOS/timers.c.lst"
 

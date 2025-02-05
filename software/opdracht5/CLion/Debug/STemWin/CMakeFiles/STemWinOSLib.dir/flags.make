@@ -8,5 +8,5 @@ C_INCLUDES = @CMakeFiles/STemWinOSLib.dir/includes_C.rsp
 
 C_FLAGS = -mcpu=cortex-m4 -mfloat-abi=hard -mfpu=fpv4-sp-d16 -fsingle-precision-constant -mfix-cortex-m3-ldrd --std=c++14 -Wall -Wpointer-arith -Wswitch -Wredundant-decls -Wreturn-type -Wshadow -Wunused -Werror -Wno-psabi -mthumb -mno-unaligned-access -mapcs-frame -pipe -funsigned-char -ffunction-sections -fdata-sections  -g -fdiagnostics-color=always   -O0 -g -fno-default-inline
 
-# Custom flags: STemWin/CMakeFiles/STemWinOSLib.dir/OS/GUI_X_OS.c.obj_FLAGS = -Wa,-ahl="C:/Users/niels/Documents/Elektrotechniek/Jaar 3/dspl/software/opdracht5/CLion/Debug/STemWin/GUI_X_OS.c.lst"
+# Custom flags: STemWin/CMakeFiles/STemWinOSLib.dir/OS/GUI_X_OS.c.obj_FLAGS = -Wa,-ahl="C:/Users/niels/Documents/GitHub/DSP/software/opdracht5/CLion/Debug/STemWin/GUI_X_OS.c.lst"
 

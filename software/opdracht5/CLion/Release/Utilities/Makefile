@@ -56,10 +56,10 @@ RM = "C:\Program Files\JetBrains\CLion 2024.1.4\bin\cmake\win\x64\bin\cmake.exe"
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\opdracht5"
+CMAKE_SOURCE_DIR = C:\Users\niels\Documents\GitHub\DSP\software\opdracht5
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\opdracht5\CLion\Release"
+CMAKE_BINARY_DIR = C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -86,14 +86,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\opdracht5\CLion\Release\CMakeFiles" "C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\opdracht5\CLion\Release\Utilities\\CMakeFiles\progress.marks"
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Utilities/all
-	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\opdracht5\CLion\Release\CMakeFiles" 0
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(CMAKE_COMMAND) -E cmake_progress_start C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release\CMakeFiles C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release\Utilities\\CMakeFiles\progress.marks
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Utilities/all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Utilities/clean
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Utilities/clean
 .PHONY : clean
 
 # The main clean target
@@ -102,22 +102,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Utilities/preinstall
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Utilities/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Utilities/preinstall
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Utilities/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 1
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 Utilities/CMakeFiles/UtilitiesLib.dir/rule:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Utilities/CMakeFiles/UtilitiesLib.dir/rule
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Utilities/CMakeFiles/UtilitiesLib.dir/rule
 .PHONY : Utilities/CMakeFiles/UtilitiesLib.dir/rule
 
 # Convenience name for target.
@@ -126,7 +126,7 @@ UtilitiesLib: Utilities/CMakeFiles/UtilitiesLib.dir/rule
 
 # fast build rule for target.
 UtilitiesLib/fast:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f Utilities\CMakeFiles\UtilitiesLib.dir\build.make Utilities/CMakeFiles/UtilitiesLib.dir/build
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f Utilities\CMakeFiles\UtilitiesLib.dir\build.make Utilities/CMakeFiles/UtilitiesLib.dir/build
 .PHONY : UtilitiesLib/fast
 
 CPU/cpu_utils.obj: CPU/cpu_utils.c.obj
@@ -134,7 +134,7 @@ CPU/cpu_utils.obj: CPU/cpu_utils.c.obj
 
 # target to build an object file
 CPU/cpu_utils.c.obj:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f Utilities\CMakeFiles\UtilitiesLib.dir\build.make Utilities/CMakeFiles/UtilitiesLib.dir/CPU/cpu_utils.c.obj
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f Utilities\CMakeFiles\UtilitiesLib.dir\build.make Utilities/CMakeFiles/UtilitiesLib.dir/CPU/cpu_utils.c.obj
 .PHONY : CPU/cpu_utils.c.obj
 
 CPU/cpu_utils.i: CPU/cpu_utils.c.i
@@ -142,7 +142,7 @@ CPU/cpu_utils.i: CPU/cpu_utils.c.i
 
 # target to preprocess a source file
 CPU/cpu_utils.c.i:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f Utilities\CMakeFiles\UtilitiesLib.dir\build.make Utilities/CMakeFiles/UtilitiesLib.dir/CPU/cpu_utils.c.i
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f Utilities\CMakeFiles\UtilitiesLib.dir\build.make Utilities/CMakeFiles/UtilitiesLib.dir/CPU/cpu_utils.c.i
 .PHONY : CPU/cpu_utils.c.i
 
 CPU/cpu_utils.s: CPU/cpu_utils.c.s
@@ -150,7 +150,7 @@ CPU/cpu_utils.s: CPU/cpu_utils.c.s
 
 # target to generate assembly for a file
 CPU/cpu_utils.c.s:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f Utilities\CMakeFiles\UtilitiesLib.dir\build.make Utilities/CMakeFiles/UtilitiesLib.dir/CPU/cpu_utils.c.s
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f Utilities\CMakeFiles\UtilitiesLib.dir\build.make Utilities/CMakeFiles/UtilitiesLib.dir/CPU/cpu_utils.c.s
 .PHONY : CPU/cpu_utils.c.s
 
 Fonts/font12.obj: Fonts/font12.c.obj
@@ -158,7 +158,7 @@ Fonts/font12.obj: Fonts/font12.c.obj
 
 # target to build an object file
 Fonts/font12.c.obj:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f Utilities\CMakeFiles\UtilitiesLib.dir\build.make Utilities/CMakeFiles/UtilitiesLib.dir/Fonts/font12.c.obj
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f Utilities\CMakeFiles\UtilitiesLib.dir\build.make Utilities/CMakeFiles/UtilitiesLib.dir/Fonts/font12.c.obj
 .PHONY : Fonts/font12.c.obj
 
 Fonts/font12.i: Fonts/font12.c.i
@@ -166,7 +166,7 @@ Fonts/font12.i: Fonts/font12.c.i
 
 # target to preprocess a source file
 Fonts/font12.c.i:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f Utilities\CMakeFiles\UtilitiesLib.dir\build.make Utilities/CMakeFiles/UtilitiesLib.dir/Fonts/font12.c.i
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f Utilities\CMakeFiles\UtilitiesLib.dir\build.make Utilities/CMakeFiles/UtilitiesLib.dir/Fonts/font12.c.i
 .PHONY : Fonts/font12.c.i
 
 Fonts/font12.s: Fonts/font12.c.s
@@ -174,7 +174,7 @@ Fonts/font12.s: Fonts/font12.c.s
 
 # target to generate assembly for a file
 Fonts/font12.c.s:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f Utilities\CMakeFiles\UtilitiesLib.dir\build.make Utilities/CMakeFiles/UtilitiesLib.dir/Fonts/font12.c.s
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f Utilities\CMakeFiles\UtilitiesLib.dir\build.make Utilities/CMakeFiles/UtilitiesLib.dir/Fonts/font12.c.s
 .PHONY : Fonts/font12.c.s
 
 Fonts/font16.obj: Fonts/font16.c.obj
@@ -182,7 +182,7 @@ Fonts/font16.obj: Fonts/font16.c.obj
 
 # target to build an object file
 Fonts/font16.c.obj:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f Utilities\CMakeFiles\UtilitiesLib.dir\build.make Utilities/CMakeFiles/UtilitiesLib.dir/Fonts/font16.c.obj
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f Utilities\CMakeFiles\UtilitiesLib.dir\build.make Utilities/CMakeFiles/UtilitiesLib.dir/Fonts/font16.c.obj
 .PHONY : Fonts/font16.c.obj
 
 Fonts/font16.i: Fonts/font16.c.i
@@ -190,7 +190,7 @@ Fonts/font16.i: Fonts/font16.c.i
 
 # target to preprocess a source file
 Fonts/font16.c.i:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f Utilities\CMakeFiles\UtilitiesLib.dir\build.make Utilities/CMakeFiles/UtilitiesLib.dir/Fonts/font16.c.i
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f Utilities\CMakeFiles\UtilitiesLib.dir\build.make Utilities/CMakeFiles/UtilitiesLib.dir/Fonts/font16.c.i
 .PHONY : Fonts/font16.c.i
 
 Fonts/font16.s: Fonts/font16.c.s
@@ -198,7 +198,7 @@ Fonts/font16.s: Fonts/font16.c.s
 
 # target to generate assembly for a file
 Fonts/font16.c.s:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f Utilities\CMakeFiles\UtilitiesLib.dir\build.make Utilities/CMakeFiles/UtilitiesLib.dir/Fonts/font16.c.s
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f Utilities\CMakeFiles\UtilitiesLib.dir\build.make Utilities/CMakeFiles/UtilitiesLib.dir/Fonts/font16.c.s
 .PHONY : Fonts/font16.c.s
 
 Fonts/font20.obj: Fonts/font20.c.obj
@@ -206,7 +206,7 @@ Fonts/font20.obj: Fonts/font20.c.obj
 
 # target to build an object file
 Fonts/font20.c.obj:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f Utilities\CMakeFiles\UtilitiesLib.dir\build.make Utilities/CMakeFiles/UtilitiesLib.dir/Fonts/font20.c.obj
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f Utilities\CMakeFiles\UtilitiesLib.dir\build.make Utilities/CMakeFiles/UtilitiesLib.dir/Fonts/font20.c.obj
 .PHONY : Fonts/font20.c.obj
 
 Fonts/font20.i: Fonts/font20.c.i
@@ -214,7 +214,7 @@ Fonts/font20.i: Fonts/font20.c.i
 
 # target to preprocess a source file
 Fonts/font20.c.i:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f Utilities\CMakeFiles\UtilitiesLib.dir\build.make Utilities/CMakeFiles/UtilitiesLib.dir/Fonts/font20.c.i
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f Utilities\CMakeFiles\UtilitiesLib.dir\build.make Utilities/CMakeFiles/UtilitiesLib.dir/Fonts/font20.c.i
 .PHONY : Fonts/font20.c.i
 
 Fonts/font20.s: Fonts/font20.c.s
@@ -222,7 +222,7 @@ Fonts/font20.s: Fonts/font20.c.s
 
 # target to generate assembly for a file
 Fonts/font20.c.s:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f Utilities\CMakeFiles\UtilitiesLib.dir\build.make Utilities/CMakeFiles/UtilitiesLib.dir/Fonts/font20.c.s
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f Utilities\CMakeFiles\UtilitiesLib.dir\build.make Utilities/CMakeFiles/UtilitiesLib.dir/Fonts/font20.c.s
 .PHONY : Fonts/font20.c.s
 
 Fonts/font24.obj: Fonts/font24.c.obj
@@ -230,7 +230,7 @@ Fonts/font24.obj: Fonts/font24.c.obj
 
 # target to build an object file
 Fonts/font24.c.obj:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f Utilities\CMakeFiles\UtilitiesLib.dir\build.make Utilities/CMakeFiles/UtilitiesLib.dir/Fonts/font24.c.obj
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f Utilities\CMakeFiles\UtilitiesLib.dir\build.make Utilities/CMakeFiles/UtilitiesLib.dir/Fonts/font24.c.obj
 .PHONY : Fonts/font24.c.obj
 
 Fonts/font24.i: Fonts/font24.c.i
@@ -238,7 +238,7 @@ Fonts/font24.i: Fonts/font24.c.i
 
 # target to preprocess a source file
 Fonts/font24.c.i:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f Utilities\CMakeFiles\UtilitiesLib.dir\build.make Utilities/CMakeFiles/UtilitiesLib.dir/Fonts/font24.c.i
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f Utilities\CMakeFiles\UtilitiesLib.dir\build.make Utilities/CMakeFiles/UtilitiesLib.dir/Fonts/font24.c.i
 .PHONY : Fonts/font24.c.i
 
 Fonts/font24.s: Fonts/font24.c.s
@@ -246,7 +246,7 @@ Fonts/font24.s: Fonts/font24.c.s
 
 # target to generate assembly for a file
 Fonts/font24.c.s:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f Utilities\CMakeFiles\UtilitiesLib.dir\build.make Utilities/CMakeFiles/UtilitiesLib.dir/Fonts/font24.c.s
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f Utilities\CMakeFiles\UtilitiesLib.dir\build.make Utilities/CMakeFiles/UtilitiesLib.dir/Fonts/font24.c.s
 .PHONY : Fonts/font24.c.s
 
 Fonts/font8.obj: Fonts/font8.c.obj
@@ -254,7 +254,7 @@ Fonts/font8.obj: Fonts/font8.c.obj
 
 # target to build an object file
 Fonts/font8.c.obj:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f Utilities\CMakeFiles\UtilitiesLib.dir\build.make Utilities/CMakeFiles/UtilitiesLib.dir/Fonts/font8.c.obj
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f Utilities\CMakeFiles\UtilitiesLib.dir\build.make Utilities/CMakeFiles/UtilitiesLib.dir/Fonts/font8.c.obj
 .PHONY : Fonts/font8.c.obj
 
 Fonts/font8.i: Fonts/font8.c.i
@@ -262,7 +262,7 @@ Fonts/font8.i: Fonts/font8.c.i
 
 # target to preprocess a source file
 Fonts/font8.c.i:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f Utilities\CMakeFiles\UtilitiesLib.dir\build.make Utilities/CMakeFiles/UtilitiesLib.dir/Fonts/font8.c.i
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f Utilities\CMakeFiles\UtilitiesLib.dir\build.make Utilities/CMakeFiles/UtilitiesLib.dir/Fonts/font8.c.i
 .PHONY : Fonts/font8.c.i
 
 Fonts/font8.s: Fonts/font8.c.s
@@ -270,7 +270,7 @@ Fonts/font8.s: Fonts/font8.c.s
 
 # target to generate assembly for a file
 Fonts/font8.c.s:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f Utilities\CMakeFiles\UtilitiesLib.dir\build.make Utilities/CMakeFiles/UtilitiesLib.dir/Fonts/font8.c.s
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f Utilities\CMakeFiles\UtilitiesLib.dir\build.make Utilities/CMakeFiles/UtilitiesLib.dir/Fonts/font8.c.s
 .PHONY : Fonts/font8.c.s
 
 Log/lcd_log.obj: Log/lcd_log.c.obj
@@ -278,7 +278,7 @@ Log/lcd_log.obj: Log/lcd_log.c.obj
 
 # target to build an object file
 Log/lcd_log.c.obj:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f Utilities\CMakeFiles\UtilitiesLib.dir\build.make Utilities/CMakeFiles/UtilitiesLib.dir/Log/lcd_log.c.obj
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f Utilities\CMakeFiles\UtilitiesLib.dir\build.make Utilities/CMakeFiles/UtilitiesLib.dir/Log/lcd_log.c.obj
 .PHONY : Log/lcd_log.c.obj
 
 Log/lcd_log.i: Log/lcd_log.c.i
@@ -286,7 +286,7 @@ Log/lcd_log.i: Log/lcd_log.c.i
 
 # target to preprocess a source file
 Log/lcd_log.c.i:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f Utilities\CMakeFiles\UtilitiesLib.dir\build.make Utilities/CMakeFiles/UtilitiesLib.dir/Log/lcd_log.c.i
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f Utilities\CMakeFiles\UtilitiesLib.dir\build.make Utilities/CMakeFiles/UtilitiesLib.dir/Log/lcd_log.c.i
 .PHONY : Log/lcd_log.c.i
 
 Log/lcd_log.s: Log/lcd_log.c.s
@@ -294,7 +294,7 @@ Log/lcd_log.s: Log/lcd_log.c.s
 
 # target to generate assembly for a file
 Log/lcd_log.c.s:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f Utilities\CMakeFiles\UtilitiesLib.dir\build.make Utilities/CMakeFiles/UtilitiesLib.dir/Log/lcd_log.c.s
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f Utilities\CMakeFiles\UtilitiesLib.dir\build.make Utilities/CMakeFiles/UtilitiesLib.dir/Log/lcd_log.c.s
 .PHONY : Log/lcd_log.c.s
 
 # Help Target
@@ -338,6 +338,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 0
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

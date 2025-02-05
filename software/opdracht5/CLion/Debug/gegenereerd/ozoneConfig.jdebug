@@ -31,11 +31,11 @@ void OnProjectLoad (void) {
   Project.SetTargetIF ("SWD");
   Project.SetTIFSpeed ("auto");
   Project.AddSvdFile ("Cortex-M4F.svd");
-  Project.AddSvdFile ("C:/Users/niels/Documents/Elektrotechniek/Jaar 3/dspl/software/opdracht5/../STM32Basis/gemeenschappelijk/peripherals_svd/STM32F412xG.svd");
+  Project.AddSvdFile ("C:/Users/niels/Documents/GitHub/DSP/software/opdracht5/../STM32Basis/gemeenschappelijk/peripherals_svd/STM32F412xG.svd");
   Project.SetOSPlugin("FreeRTOSPlugin_CM4.js");
  /* Voor gebruik Segger embOS : Project.SetOSPlugin("embosPlugin.js");
   */
-  File.Open ("C:/Users/niels/Documents/Elektrotechniek/Jaar 3/dspl/software/opdracht5/Executable/Debug/DSPESEL5.elf");
+  File.Open ("C:/Users/niels/Documents/GitHub/DSP/software/opdracht5/Executable/Debug/DSPESEL5.elf");
 }
 
 /*********************************************************************

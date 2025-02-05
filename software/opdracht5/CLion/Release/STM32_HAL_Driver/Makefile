@@ -56,10 +56,10 @@ RM = "C:\Program Files\JetBrains\CLion 2024.1.4\bin\cmake\win\x64\bin\cmake.exe"
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\opdracht5"
+CMAKE_SOURCE_DIR = C:\Users\niels\Documents\GitHub\DSP\software\opdracht5
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\opdracht5\CLion\Release"
+CMAKE_BINARY_DIR = C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -86,14 +86,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\opdracht5\CLion\Release\CMakeFiles" "C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\opdracht5\CLion\Release\STM32_HAL_Driver\\CMakeFiles\progress.marks"
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 STM32_HAL_Driver/all
-	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\opdracht5\CLion\Release\CMakeFiles" 0
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(CMAKE_COMMAND) -E cmake_progress_start C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release\CMakeFiles C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release\STM32_HAL_Driver\\CMakeFiles\progress.marks
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 STM32_HAL_Driver/all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 STM32_HAL_Driver/clean
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 STM32_HAL_Driver/clean
 .PHONY : clean
 
 # The main clean target
@@ -102,22 +102,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 STM32_HAL_Driver/preinstall
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 STM32_HAL_Driver/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 STM32_HAL_Driver/preinstall
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 STM32_HAL_Driver/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 1
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/rule:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/rule
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/rule
 .PHONY : STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/rule
 
 # Convenience name for target.
@@ -126,7 +126,7 @@ STM32F4xx_HAL_Driver: STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/rule
 
 # fast build rule for target.
 STM32F4xx_HAL_Driver/fast:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/build
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/build
 .PHONY : STM32F4xx_HAL_Driver/fast
 
 Src/Legacy/stm32f4xx_hal_can.obj: Src/Legacy/stm32f4xx_hal_can.c.obj
@@ -134,7 +134,7 @@ Src/Legacy/stm32f4xx_hal_can.obj: Src/Legacy/stm32f4xx_hal_can.c.obj
 
 # target to build an object file
 Src/Legacy/stm32f4xx_hal_can.c.obj:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/Legacy/stm32f4xx_hal_can.c.obj
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/Legacy/stm32f4xx_hal_can.c.obj
 .PHONY : Src/Legacy/stm32f4xx_hal_can.c.obj
 
 Src/Legacy/stm32f4xx_hal_can.i: Src/Legacy/stm32f4xx_hal_can.c.i
@@ -142,7 +142,7 @@ Src/Legacy/stm32f4xx_hal_can.i: Src/Legacy/stm32f4xx_hal_can.c.i
 
 # target to preprocess a source file
 Src/Legacy/stm32f4xx_hal_can.c.i:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/Legacy/stm32f4xx_hal_can.c.i
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/Legacy/stm32f4xx_hal_can.c.i
 .PHONY : Src/Legacy/stm32f4xx_hal_can.c.i
 
 Src/Legacy/stm32f4xx_hal_can.s: Src/Legacy/stm32f4xx_hal_can.c.s
@@ -150,7 +150,7 @@ Src/Legacy/stm32f4xx_hal_can.s: Src/Legacy/stm32f4xx_hal_can.c.s
 
 # target to generate assembly for a file
 Src/Legacy/stm32f4xx_hal_can.c.s:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/Legacy/stm32f4xx_hal_can.c.s
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/Legacy/stm32f4xx_hal_can.c.s
 .PHONY : Src/Legacy/stm32f4xx_hal_can.c.s
 
 Src/stm32f4xx_hal.obj: Src/stm32f4xx_hal.c.obj
@@ -158,7 +158,7 @@ Src/stm32f4xx_hal.obj: Src/stm32f4xx_hal.c.obj
 
 # target to build an object file
 Src/stm32f4xx_hal.c.obj:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal.c.obj
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal.c.obj
 .PHONY : Src/stm32f4xx_hal.c.obj
 
 Src/stm32f4xx_hal.i: Src/stm32f4xx_hal.c.i
@@ -166,7 +166,7 @@ Src/stm32f4xx_hal.i: Src/stm32f4xx_hal.c.i
 
 # target to preprocess a source file
 Src/stm32f4xx_hal.c.i:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal.c.i
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal.c.i
 .PHONY : Src/stm32f4xx_hal.c.i
 
 Src/stm32f4xx_hal.s: Src/stm32f4xx_hal.c.s
@@ -174,7 +174,7 @@ Src/stm32f4xx_hal.s: Src/stm32f4xx_hal.c.s
 
 # target to generate assembly for a file
 Src/stm32f4xx_hal.c.s:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal.c.s
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal.c.s
 .PHONY : Src/stm32f4xx_hal.c.s
 
 Src/stm32f4xx_hal_adc.obj: Src/stm32f4xx_hal_adc.c.obj
@@ -182,7 +182,7 @@ Src/stm32f4xx_hal_adc.obj: Src/stm32f4xx_hal_adc.c.obj
 
 # target to build an object file
 Src/stm32f4xx_hal_adc.c.obj:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_adc.c.obj
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_adc.c.obj
 .PHONY : Src/stm32f4xx_hal_adc.c.obj
 
 Src/stm32f4xx_hal_adc.i: Src/stm32f4xx_hal_adc.c.i
@@ -190,7 +190,7 @@ Src/stm32f4xx_hal_adc.i: Src/stm32f4xx_hal_adc.c.i
 
 # target to preprocess a source file
 Src/stm32f4xx_hal_adc.c.i:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_adc.c.i
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_adc.c.i
 .PHONY : Src/stm32f4xx_hal_adc.c.i
 
 Src/stm32f4xx_hal_adc.s: Src/stm32f4xx_hal_adc.c.s
@@ -198,7 +198,7 @@ Src/stm32f4xx_hal_adc.s: Src/stm32f4xx_hal_adc.c.s
 
 # target to generate assembly for a file
 Src/stm32f4xx_hal_adc.c.s:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_adc.c.s
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_adc.c.s
 .PHONY : Src/stm32f4xx_hal_adc.c.s
 
 Src/stm32f4xx_hal_adc_ex.obj: Src/stm32f4xx_hal_adc_ex.c.obj
@@ -206,7 +206,7 @@ Src/stm32f4xx_hal_adc_ex.obj: Src/stm32f4xx_hal_adc_ex.c.obj
 
 # target to build an object file
 Src/stm32f4xx_hal_adc_ex.c.obj:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_adc_ex.c.obj
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_adc_ex.c.obj
 .PHONY : Src/stm32f4xx_hal_adc_ex.c.obj
 
 Src/stm32f4xx_hal_adc_ex.i: Src/stm32f4xx_hal_adc_ex.c.i
@@ -214,7 +214,7 @@ Src/stm32f4xx_hal_adc_ex.i: Src/stm32f4xx_hal_adc_ex.c.i
 
 # target to preprocess a source file
 Src/stm32f4xx_hal_adc_ex.c.i:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_adc_ex.c.i
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_adc_ex.c.i
 .PHONY : Src/stm32f4xx_hal_adc_ex.c.i
 
 Src/stm32f4xx_hal_adc_ex.s: Src/stm32f4xx_hal_adc_ex.c.s
@@ -222,7 +222,7 @@ Src/stm32f4xx_hal_adc_ex.s: Src/stm32f4xx_hal_adc_ex.c.s
 
 # target to generate assembly for a file
 Src/stm32f4xx_hal_adc_ex.c.s:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_adc_ex.c.s
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_adc_ex.c.s
 .PHONY : Src/stm32f4xx_hal_adc_ex.c.s
 
 Src/stm32f4xx_hal_can.obj: Src/stm32f4xx_hal_can.c.obj
@@ -230,7 +230,7 @@ Src/stm32f4xx_hal_can.obj: Src/stm32f4xx_hal_can.c.obj
 
 # target to build an object file
 Src/stm32f4xx_hal_can.c.obj:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_can.c.obj
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_can.c.obj
 .PHONY : Src/stm32f4xx_hal_can.c.obj
 
 Src/stm32f4xx_hal_can.i: Src/stm32f4xx_hal_can.c.i
@@ -238,7 +238,7 @@ Src/stm32f4xx_hal_can.i: Src/stm32f4xx_hal_can.c.i
 
 # target to preprocess a source file
 Src/stm32f4xx_hal_can.c.i:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_can.c.i
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_can.c.i
 .PHONY : Src/stm32f4xx_hal_can.c.i
 
 Src/stm32f4xx_hal_can.s: Src/stm32f4xx_hal_can.c.s
@@ -246,7 +246,7 @@ Src/stm32f4xx_hal_can.s: Src/stm32f4xx_hal_can.c.s
 
 # target to generate assembly for a file
 Src/stm32f4xx_hal_can.c.s:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_can.c.s
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_can.c.s
 .PHONY : Src/stm32f4xx_hal_can.c.s
 
 Src/stm32f4xx_hal_cec.obj: Src/stm32f4xx_hal_cec.c.obj
@@ -254,7 +254,7 @@ Src/stm32f4xx_hal_cec.obj: Src/stm32f4xx_hal_cec.c.obj
 
 # target to build an object file
 Src/stm32f4xx_hal_cec.c.obj:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_cec.c.obj
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_cec.c.obj
 .PHONY : Src/stm32f4xx_hal_cec.c.obj
 
 Src/stm32f4xx_hal_cec.i: Src/stm32f4xx_hal_cec.c.i
@@ -262,7 +262,7 @@ Src/stm32f4xx_hal_cec.i: Src/stm32f4xx_hal_cec.c.i
 
 # target to preprocess a source file
 Src/stm32f4xx_hal_cec.c.i:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_cec.c.i
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_cec.c.i
 .PHONY : Src/stm32f4xx_hal_cec.c.i
 
 Src/stm32f4xx_hal_cec.s: Src/stm32f4xx_hal_cec.c.s
@@ -270,7 +270,7 @@ Src/stm32f4xx_hal_cec.s: Src/stm32f4xx_hal_cec.c.s
 
 # target to generate assembly for a file
 Src/stm32f4xx_hal_cec.c.s:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_cec.c.s
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_cec.c.s
 .PHONY : Src/stm32f4xx_hal_cec.c.s
 
 Src/stm32f4xx_hal_cortex.obj: Src/stm32f4xx_hal_cortex.c.obj
@@ -278,7 +278,7 @@ Src/stm32f4xx_hal_cortex.obj: Src/stm32f4xx_hal_cortex.c.obj
 
 # target to build an object file
 Src/stm32f4xx_hal_cortex.c.obj:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_cortex.c.obj
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_cortex.c.obj
 .PHONY : Src/stm32f4xx_hal_cortex.c.obj
 
 Src/stm32f4xx_hal_cortex.i: Src/stm32f4xx_hal_cortex.c.i
@@ -286,7 +286,7 @@ Src/stm32f4xx_hal_cortex.i: Src/stm32f4xx_hal_cortex.c.i
 
 # target to preprocess a source file
 Src/stm32f4xx_hal_cortex.c.i:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_cortex.c.i
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_cortex.c.i
 .PHONY : Src/stm32f4xx_hal_cortex.c.i
 
 Src/stm32f4xx_hal_cortex.s: Src/stm32f4xx_hal_cortex.c.s
@@ -294,7 +294,7 @@ Src/stm32f4xx_hal_cortex.s: Src/stm32f4xx_hal_cortex.c.s
 
 # target to generate assembly for a file
 Src/stm32f4xx_hal_cortex.c.s:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_cortex.c.s
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_cortex.c.s
 .PHONY : Src/stm32f4xx_hal_cortex.c.s
 
 Src/stm32f4xx_hal_crc.obj: Src/stm32f4xx_hal_crc.c.obj
@@ -302,7 +302,7 @@ Src/stm32f4xx_hal_crc.obj: Src/stm32f4xx_hal_crc.c.obj
 
 # target to build an object file
 Src/stm32f4xx_hal_crc.c.obj:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_crc.c.obj
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_crc.c.obj
 .PHONY : Src/stm32f4xx_hal_crc.c.obj
 
 Src/stm32f4xx_hal_crc.i: Src/stm32f4xx_hal_crc.c.i
@@ -310,7 +310,7 @@ Src/stm32f4xx_hal_crc.i: Src/stm32f4xx_hal_crc.c.i
 
 # target to preprocess a source file
 Src/stm32f4xx_hal_crc.c.i:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_crc.c.i
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_crc.c.i
 .PHONY : Src/stm32f4xx_hal_crc.c.i
 
 Src/stm32f4xx_hal_crc.s: Src/stm32f4xx_hal_crc.c.s
@@ -318,7 +318,7 @@ Src/stm32f4xx_hal_crc.s: Src/stm32f4xx_hal_crc.c.s
 
 # target to generate assembly for a file
 Src/stm32f4xx_hal_crc.c.s:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_crc.c.s
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_crc.c.s
 .PHONY : Src/stm32f4xx_hal_crc.c.s
 
 Src/stm32f4xx_hal_cryp.obj: Src/stm32f4xx_hal_cryp.c.obj
@@ -326,7 +326,7 @@ Src/stm32f4xx_hal_cryp.obj: Src/stm32f4xx_hal_cryp.c.obj
 
 # target to build an object file
 Src/stm32f4xx_hal_cryp.c.obj:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_cryp.c.obj
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_cryp.c.obj
 .PHONY : Src/stm32f4xx_hal_cryp.c.obj
 
 Src/stm32f4xx_hal_cryp.i: Src/stm32f4xx_hal_cryp.c.i
@@ -334,7 +334,7 @@ Src/stm32f4xx_hal_cryp.i: Src/stm32f4xx_hal_cryp.c.i
 
 # target to preprocess a source file
 Src/stm32f4xx_hal_cryp.c.i:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_cryp.c.i
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_cryp.c.i
 .PHONY : Src/stm32f4xx_hal_cryp.c.i
 
 Src/stm32f4xx_hal_cryp.s: Src/stm32f4xx_hal_cryp.c.s
@@ -342,7 +342,7 @@ Src/stm32f4xx_hal_cryp.s: Src/stm32f4xx_hal_cryp.c.s
 
 # target to generate assembly for a file
 Src/stm32f4xx_hal_cryp.c.s:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_cryp.c.s
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_cryp.c.s
 .PHONY : Src/stm32f4xx_hal_cryp.c.s
 
 Src/stm32f4xx_hal_cryp_ex.obj: Src/stm32f4xx_hal_cryp_ex.c.obj
@@ -350,7 +350,7 @@ Src/stm32f4xx_hal_cryp_ex.obj: Src/stm32f4xx_hal_cryp_ex.c.obj
 
 # target to build an object file
 Src/stm32f4xx_hal_cryp_ex.c.obj:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_cryp_ex.c.obj
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_cryp_ex.c.obj
 .PHONY : Src/stm32f4xx_hal_cryp_ex.c.obj
 
 Src/stm32f4xx_hal_cryp_ex.i: Src/stm32f4xx_hal_cryp_ex.c.i
@@ -358,7 +358,7 @@ Src/stm32f4xx_hal_cryp_ex.i: Src/stm32f4xx_hal_cryp_ex.c.i
 
 # target to preprocess a source file
 Src/stm32f4xx_hal_cryp_ex.c.i:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_cryp_ex.c.i
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_cryp_ex.c.i
 .PHONY : Src/stm32f4xx_hal_cryp_ex.c.i
 
 Src/stm32f4xx_hal_cryp_ex.s: Src/stm32f4xx_hal_cryp_ex.c.s
@@ -366,7 +366,7 @@ Src/stm32f4xx_hal_cryp_ex.s: Src/stm32f4xx_hal_cryp_ex.c.s
 
 # target to generate assembly for a file
 Src/stm32f4xx_hal_cryp_ex.c.s:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_cryp_ex.c.s
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_cryp_ex.c.s
 .PHONY : Src/stm32f4xx_hal_cryp_ex.c.s
 
 Src/stm32f4xx_hal_dac.obj: Src/stm32f4xx_hal_dac.c.obj
@@ -374,7 +374,7 @@ Src/stm32f4xx_hal_dac.obj: Src/stm32f4xx_hal_dac.c.obj
 
 # target to build an object file
 Src/stm32f4xx_hal_dac.c.obj:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_dac.c.obj
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_dac.c.obj
 .PHONY : Src/stm32f4xx_hal_dac.c.obj
 
 Src/stm32f4xx_hal_dac.i: Src/stm32f4xx_hal_dac.c.i
@@ -382,7 +382,7 @@ Src/stm32f4xx_hal_dac.i: Src/stm32f4xx_hal_dac.c.i
 
 # target to preprocess a source file
 Src/stm32f4xx_hal_dac.c.i:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_dac.c.i
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_dac.c.i
 .PHONY : Src/stm32f4xx_hal_dac.c.i
 
 Src/stm32f4xx_hal_dac.s: Src/stm32f4xx_hal_dac.c.s
@@ -390,7 +390,7 @@ Src/stm32f4xx_hal_dac.s: Src/stm32f4xx_hal_dac.c.s
 
 # target to generate assembly for a file
 Src/stm32f4xx_hal_dac.c.s:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_dac.c.s
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_dac.c.s
 .PHONY : Src/stm32f4xx_hal_dac.c.s
 
 Src/stm32f4xx_hal_dac_ex.obj: Src/stm32f4xx_hal_dac_ex.c.obj
@@ -398,7 +398,7 @@ Src/stm32f4xx_hal_dac_ex.obj: Src/stm32f4xx_hal_dac_ex.c.obj
 
 # target to build an object file
 Src/stm32f4xx_hal_dac_ex.c.obj:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_dac_ex.c.obj
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_dac_ex.c.obj
 .PHONY : Src/stm32f4xx_hal_dac_ex.c.obj
 
 Src/stm32f4xx_hal_dac_ex.i: Src/stm32f4xx_hal_dac_ex.c.i
@@ -406,7 +406,7 @@ Src/stm32f4xx_hal_dac_ex.i: Src/stm32f4xx_hal_dac_ex.c.i
 
 # target to preprocess a source file
 Src/stm32f4xx_hal_dac_ex.c.i:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_dac_ex.c.i
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_dac_ex.c.i
 .PHONY : Src/stm32f4xx_hal_dac_ex.c.i
 
 Src/stm32f4xx_hal_dac_ex.s: Src/stm32f4xx_hal_dac_ex.c.s
@@ -414,7 +414,7 @@ Src/stm32f4xx_hal_dac_ex.s: Src/stm32f4xx_hal_dac_ex.c.s
 
 # target to generate assembly for a file
 Src/stm32f4xx_hal_dac_ex.c.s:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_dac_ex.c.s
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_dac_ex.c.s
 .PHONY : Src/stm32f4xx_hal_dac_ex.c.s
 
 Src/stm32f4xx_hal_dcmi.obj: Src/stm32f4xx_hal_dcmi.c.obj
@@ -422,7 +422,7 @@ Src/stm32f4xx_hal_dcmi.obj: Src/stm32f4xx_hal_dcmi.c.obj
 
 # target to build an object file
 Src/stm32f4xx_hal_dcmi.c.obj:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_dcmi.c.obj
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_dcmi.c.obj
 .PHONY : Src/stm32f4xx_hal_dcmi.c.obj
 
 Src/stm32f4xx_hal_dcmi.i: Src/stm32f4xx_hal_dcmi.c.i
@@ -430,7 +430,7 @@ Src/stm32f4xx_hal_dcmi.i: Src/stm32f4xx_hal_dcmi.c.i
 
 # target to preprocess a source file
 Src/stm32f4xx_hal_dcmi.c.i:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_dcmi.c.i
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_dcmi.c.i
 .PHONY : Src/stm32f4xx_hal_dcmi.c.i
 
 Src/stm32f4xx_hal_dcmi.s: Src/stm32f4xx_hal_dcmi.c.s
@@ -438,7 +438,7 @@ Src/stm32f4xx_hal_dcmi.s: Src/stm32f4xx_hal_dcmi.c.s
 
 # target to generate assembly for a file
 Src/stm32f4xx_hal_dcmi.c.s:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_dcmi.c.s
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_dcmi.c.s
 .PHONY : Src/stm32f4xx_hal_dcmi.c.s
 
 Src/stm32f4xx_hal_dcmi_ex.obj: Src/stm32f4xx_hal_dcmi_ex.c.obj
@@ -446,7 +446,7 @@ Src/stm32f4xx_hal_dcmi_ex.obj: Src/stm32f4xx_hal_dcmi_ex.c.obj
 
 # target to build an object file
 Src/stm32f4xx_hal_dcmi_ex.c.obj:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_dcmi_ex.c.obj
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_dcmi_ex.c.obj
 .PHONY : Src/stm32f4xx_hal_dcmi_ex.c.obj
 
 Src/stm32f4xx_hal_dcmi_ex.i: Src/stm32f4xx_hal_dcmi_ex.c.i
@@ -454,7 +454,7 @@ Src/stm32f4xx_hal_dcmi_ex.i: Src/stm32f4xx_hal_dcmi_ex.c.i
 
 # target to preprocess a source file
 Src/stm32f4xx_hal_dcmi_ex.c.i:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_dcmi_ex.c.i
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_dcmi_ex.c.i
 .PHONY : Src/stm32f4xx_hal_dcmi_ex.c.i
 
 Src/stm32f4xx_hal_dcmi_ex.s: Src/stm32f4xx_hal_dcmi_ex.c.s
@@ -462,7 +462,7 @@ Src/stm32f4xx_hal_dcmi_ex.s: Src/stm32f4xx_hal_dcmi_ex.c.s
 
 # target to generate assembly for a file
 Src/stm32f4xx_hal_dcmi_ex.c.s:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_dcmi_ex.c.s
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_dcmi_ex.c.s
 .PHONY : Src/stm32f4xx_hal_dcmi_ex.c.s
 
 Src/stm32f4xx_hal_dfsdm.obj: Src/stm32f4xx_hal_dfsdm.c.obj
@@ -470,7 +470,7 @@ Src/stm32f4xx_hal_dfsdm.obj: Src/stm32f4xx_hal_dfsdm.c.obj
 
 # target to build an object file
 Src/stm32f4xx_hal_dfsdm.c.obj:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_dfsdm.c.obj
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_dfsdm.c.obj
 .PHONY : Src/stm32f4xx_hal_dfsdm.c.obj
 
 Src/stm32f4xx_hal_dfsdm.i: Src/stm32f4xx_hal_dfsdm.c.i
@@ -478,7 +478,7 @@ Src/stm32f4xx_hal_dfsdm.i: Src/stm32f4xx_hal_dfsdm.c.i
 
 # target to preprocess a source file
 Src/stm32f4xx_hal_dfsdm.c.i:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_dfsdm.c.i
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_dfsdm.c.i
 .PHONY : Src/stm32f4xx_hal_dfsdm.c.i
 
 Src/stm32f4xx_hal_dfsdm.s: Src/stm32f4xx_hal_dfsdm.c.s
@@ -486,7 +486,7 @@ Src/stm32f4xx_hal_dfsdm.s: Src/stm32f4xx_hal_dfsdm.c.s
 
 # target to generate assembly for a file
 Src/stm32f4xx_hal_dfsdm.c.s:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_dfsdm.c.s
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_dfsdm.c.s
 .PHONY : Src/stm32f4xx_hal_dfsdm.c.s
 
 Src/stm32f4xx_hal_dma.obj: Src/stm32f4xx_hal_dma.c.obj
@@ -494,7 +494,7 @@ Src/stm32f4xx_hal_dma.obj: Src/stm32f4xx_hal_dma.c.obj
 
 # target to build an object file
 Src/stm32f4xx_hal_dma.c.obj:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_dma.c.obj
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_dma.c.obj
 .PHONY : Src/stm32f4xx_hal_dma.c.obj
 
 Src/stm32f4xx_hal_dma.i: Src/stm32f4xx_hal_dma.c.i
@@ -502,7 +502,7 @@ Src/stm32f4xx_hal_dma.i: Src/stm32f4xx_hal_dma.c.i
 
 # target to preprocess a source file
 Src/stm32f4xx_hal_dma.c.i:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_dma.c.i
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_dma.c.i
 .PHONY : Src/stm32f4xx_hal_dma.c.i
 
 Src/stm32f4xx_hal_dma.s: Src/stm32f4xx_hal_dma.c.s
@@ -510,7 +510,7 @@ Src/stm32f4xx_hal_dma.s: Src/stm32f4xx_hal_dma.c.s
 
 # target to generate assembly for a file
 Src/stm32f4xx_hal_dma.c.s:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_dma.c.s
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_dma.c.s
 .PHONY : Src/stm32f4xx_hal_dma.c.s
 
 Src/stm32f4xx_hal_dma2d.obj: Src/stm32f4xx_hal_dma2d.c.obj
@@ -518,7 +518,7 @@ Src/stm32f4xx_hal_dma2d.obj: Src/stm32f4xx_hal_dma2d.c.obj
 
 # target to build an object file
 Src/stm32f4xx_hal_dma2d.c.obj:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_dma2d.c.obj
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_dma2d.c.obj
 .PHONY : Src/stm32f4xx_hal_dma2d.c.obj
 
 Src/stm32f4xx_hal_dma2d.i: Src/stm32f4xx_hal_dma2d.c.i
@@ -526,7 +526,7 @@ Src/stm32f4xx_hal_dma2d.i: Src/stm32f4xx_hal_dma2d.c.i
 
 # target to preprocess a source file
 Src/stm32f4xx_hal_dma2d.c.i:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_dma2d.c.i
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_dma2d.c.i
 .PHONY : Src/stm32f4xx_hal_dma2d.c.i
 
 Src/stm32f4xx_hal_dma2d.s: Src/stm32f4xx_hal_dma2d.c.s
@@ -534,7 +534,7 @@ Src/stm32f4xx_hal_dma2d.s: Src/stm32f4xx_hal_dma2d.c.s
 
 # target to generate assembly for a file
 Src/stm32f4xx_hal_dma2d.c.s:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_dma2d.c.s
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_dma2d.c.s
 .PHONY : Src/stm32f4xx_hal_dma2d.c.s
 
 Src/stm32f4xx_hal_dma_ex.obj: Src/stm32f4xx_hal_dma_ex.c.obj
@@ -542,7 +542,7 @@ Src/stm32f4xx_hal_dma_ex.obj: Src/stm32f4xx_hal_dma_ex.c.obj
 
 # target to build an object file
 Src/stm32f4xx_hal_dma_ex.c.obj:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_dma_ex.c.obj
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_dma_ex.c.obj
 .PHONY : Src/stm32f4xx_hal_dma_ex.c.obj
 
 Src/stm32f4xx_hal_dma_ex.i: Src/stm32f4xx_hal_dma_ex.c.i
@@ -550,7 +550,7 @@ Src/stm32f4xx_hal_dma_ex.i: Src/stm32f4xx_hal_dma_ex.c.i
 
 # target to preprocess a source file
 Src/stm32f4xx_hal_dma_ex.c.i:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_dma_ex.c.i
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_dma_ex.c.i
 .PHONY : Src/stm32f4xx_hal_dma_ex.c.i
 
 Src/stm32f4xx_hal_dma_ex.s: Src/stm32f4xx_hal_dma_ex.c.s
@@ -558,7 +558,7 @@ Src/stm32f4xx_hal_dma_ex.s: Src/stm32f4xx_hal_dma_ex.c.s
 
 # target to generate assembly for a file
 Src/stm32f4xx_hal_dma_ex.c.s:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_dma_ex.c.s
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_dma_ex.c.s
 .PHONY : Src/stm32f4xx_hal_dma_ex.c.s
 
 Src/stm32f4xx_hal_dsi.obj: Src/stm32f4xx_hal_dsi.c.obj
@@ -566,7 +566,7 @@ Src/stm32f4xx_hal_dsi.obj: Src/stm32f4xx_hal_dsi.c.obj
 
 # target to build an object file
 Src/stm32f4xx_hal_dsi.c.obj:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_dsi.c.obj
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_dsi.c.obj
 .PHONY : Src/stm32f4xx_hal_dsi.c.obj
 
 Src/stm32f4xx_hal_dsi.i: Src/stm32f4xx_hal_dsi.c.i
@@ -574,7 +574,7 @@ Src/stm32f4xx_hal_dsi.i: Src/stm32f4xx_hal_dsi.c.i
 
 # target to preprocess a source file
 Src/stm32f4xx_hal_dsi.c.i:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_dsi.c.i
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_dsi.c.i
 .PHONY : Src/stm32f4xx_hal_dsi.c.i
 
 Src/stm32f4xx_hal_dsi.s: Src/stm32f4xx_hal_dsi.c.s
@@ -582,7 +582,7 @@ Src/stm32f4xx_hal_dsi.s: Src/stm32f4xx_hal_dsi.c.s
 
 # target to generate assembly for a file
 Src/stm32f4xx_hal_dsi.c.s:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_dsi.c.s
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_dsi.c.s
 .PHONY : Src/stm32f4xx_hal_dsi.c.s
 
 Src/stm32f4xx_hal_eth.obj: Src/stm32f4xx_hal_eth.c.obj
@@ -590,7 +590,7 @@ Src/stm32f4xx_hal_eth.obj: Src/stm32f4xx_hal_eth.c.obj
 
 # target to build an object file
 Src/stm32f4xx_hal_eth.c.obj:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_eth.c.obj
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_eth.c.obj
 .PHONY : Src/stm32f4xx_hal_eth.c.obj
 
 Src/stm32f4xx_hal_eth.i: Src/stm32f4xx_hal_eth.c.i
@@ -598,7 +598,7 @@ Src/stm32f4xx_hal_eth.i: Src/stm32f4xx_hal_eth.c.i
 
 # target to preprocess a source file
 Src/stm32f4xx_hal_eth.c.i:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_eth.c.i
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_eth.c.i
 .PHONY : Src/stm32f4xx_hal_eth.c.i
 
 Src/stm32f4xx_hal_eth.s: Src/stm32f4xx_hal_eth.c.s
@@ -606,7 +606,7 @@ Src/stm32f4xx_hal_eth.s: Src/stm32f4xx_hal_eth.c.s
 
 # target to generate assembly for a file
 Src/stm32f4xx_hal_eth.c.s:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_eth.c.s
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_eth.c.s
 .PHONY : Src/stm32f4xx_hal_eth.c.s
 
 Src/stm32f4xx_hal_exti.obj: Src/stm32f4xx_hal_exti.c.obj
@@ -614,7 +614,7 @@ Src/stm32f4xx_hal_exti.obj: Src/stm32f4xx_hal_exti.c.obj
 
 # target to build an object file
 Src/stm32f4xx_hal_exti.c.obj:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_exti.c.obj
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_exti.c.obj
 .PHONY : Src/stm32f4xx_hal_exti.c.obj
 
 Src/stm32f4xx_hal_exti.i: Src/stm32f4xx_hal_exti.c.i
@@ -622,7 +622,7 @@ Src/stm32f4xx_hal_exti.i: Src/stm32f4xx_hal_exti.c.i
 
 # target to preprocess a source file
 Src/stm32f4xx_hal_exti.c.i:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_exti.c.i
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_exti.c.i
 .PHONY : Src/stm32f4xx_hal_exti.c.i
 
 Src/stm32f4xx_hal_exti.s: Src/stm32f4xx_hal_exti.c.s
@@ -630,7 +630,7 @@ Src/stm32f4xx_hal_exti.s: Src/stm32f4xx_hal_exti.c.s
 
 # target to generate assembly for a file
 Src/stm32f4xx_hal_exti.c.s:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_exti.c.s
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_exti.c.s
 .PHONY : Src/stm32f4xx_hal_exti.c.s
 
 Src/stm32f4xx_hal_flash.obj: Src/stm32f4xx_hal_flash.c.obj
@@ -638,7 +638,7 @@ Src/stm32f4xx_hal_flash.obj: Src/stm32f4xx_hal_flash.c.obj
 
 # target to build an object file
 Src/stm32f4xx_hal_flash.c.obj:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_flash.c.obj
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_flash.c.obj
 .PHONY : Src/stm32f4xx_hal_flash.c.obj
 
 Src/stm32f4xx_hal_flash.i: Src/stm32f4xx_hal_flash.c.i
@@ -646,7 +646,7 @@ Src/stm32f4xx_hal_flash.i: Src/stm32f4xx_hal_flash.c.i
 
 # target to preprocess a source file
 Src/stm32f4xx_hal_flash.c.i:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_flash.c.i
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_flash.c.i
 .PHONY : Src/stm32f4xx_hal_flash.c.i
 
 Src/stm32f4xx_hal_flash.s: Src/stm32f4xx_hal_flash.c.s
@@ -654,7 +654,7 @@ Src/stm32f4xx_hal_flash.s: Src/stm32f4xx_hal_flash.c.s
 
 # target to generate assembly for a file
 Src/stm32f4xx_hal_flash.c.s:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_flash.c.s
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_flash.c.s
 .PHONY : Src/stm32f4xx_hal_flash.c.s
 
 Src/stm32f4xx_hal_flash_ex.obj: Src/stm32f4xx_hal_flash_ex.c.obj
@@ -662,7 +662,7 @@ Src/stm32f4xx_hal_flash_ex.obj: Src/stm32f4xx_hal_flash_ex.c.obj
 
 # target to build an object file
 Src/stm32f4xx_hal_flash_ex.c.obj:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_flash_ex.c.obj
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_flash_ex.c.obj
 .PHONY : Src/stm32f4xx_hal_flash_ex.c.obj
 
 Src/stm32f4xx_hal_flash_ex.i: Src/stm32f4xx_hal_flash_ex.c.i
@@ -670,7 +670,7 @@ Src/stm32f4xx_hal_flash_ex.i: Src/stm32f4xx_hal_flash_ex.c.i
 
 # target to preprocess a source file
 Src/stm32f4xx_hal_flash_ex.c.i:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_flash_ex.c.i
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_flash_ex.c.i
 .PHONY : Src/stm32f4xx_hal_flash_ex.c.i
 
 Src/stm32f4xx_hal_flash_ex.s: Src/stm32f4xx_hal_flash_ex.c.s
@@ -678,7 +678,7 @@ Src/stm32f4xx_hal_flash_ex.s: Src/stm32f4xx_hal_flash_ex.c.s
 
 # target to generate assembly for a file
 Src/stm32f4xx_hal_flash_ex.c.s:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_flash_ex.c.s
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_flash_ex.c.s
 .PHONY : Src/stm32f4xx_hal_flash_ex.c.s
 
 Src/stm32f4xx_hal_flash_ramfunc.obj: Src/stm32f4xx_hal_flash_ramfunc.c.obj
@@ -686,7 +686,7 @@ Src/stm32f4xx_hal_flash_ramfunc.obj: Src/stm32f4xx_hal_flash_ramfunc.c.obj
 
 # target to build an object file
 Src/stm32f4xx_hal_flash_ramfunc.c.obj:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_flash_ramfunc.c.obj
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_flash_ramfunc.c.obj
 .PHONY : Src/stm32f4xx_hal_flash_ramfunc.c.obj
 
 Src/stm32f4xx_hal_flash_ramfunc.i: Src/stm32f4xx_hal_flash_ramfunc.c.i
@@ -694,7 +694,7 @@ Src/stm32f4xx_hal_flash_ramfunc.i: Src/stm32f4xx_hal_flash_ramfunc.c.i
 
 # target to preprocess a source file
 Src/stm32f4xx_hal_flash_ramfunc.c.i:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_flash_ramfunc.c.i
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_flash_ramfunc.c.i
 .PHONY : Src/stm32f4xx_hal_flash_ramfunc.c.i
 
 Src/stm32f4xx_hal_flash_ramfunc.s: Src/stm32f4xx_hal_flash_ramfunc.c.s
@@ -702,7 +702,7 @@ Src/stm32f4xx_hal_flash_ramfunc.s: Src/stm32f4xx_hal_flash_ramfunc.c.s
 
 # target to generate assembly for a file
 Src/stm32f4xx_hal_flash_ramfunc.c.s:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_flash_ramfunc.c.s
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_flash_ramfunc.c.s
 .PHONY : Src/stm32f4xx_hal_flash_ramfunc.c.s
 
 Src/stm32f4xx_hal_fmpi2c.obj: Src/stm32f4xx_hal_fmpi2c.c.obj
@@ -710,7 +710,7 @@ Src/stm32f4xx_hal_fmpi2c.obj: Src/stm32f4xx_hal_fmpi2c.c.obj
 
 # target to build an object file
 Src/stm32f4xx_hal_fmpi2c.c.obj:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_fmpi2c.c.obj
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_fmpi2c.c.obj
 .PHONY : Src/stm32f4xx_hal_fmpi2c.c.obj
 
 Src/stm32f4xx_hal_fmpi2c.i: Src/stm32f4xx_hal_fmpi2c.c.i
@@ -718,7 +718,7 @@ Src/stm32f4xx_hal_fmpi2c.i: Src/stm32f4xx_hal_fmpi2c.c.i
 
 # target to preprocess a source file
 Src/stm32f4xx_hal_fmpi2c.c.i:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_fmpi2c.c.i
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_fmpi2c.c.i
 .PHONY : Src/stm32f4xx_hal_fmpi2c.c.i
 
 Src/stm32f4xx_hal_fmpi2c.s: Src/stm32f4xx_hal_fmpi2c.c.s
@@ -726,7 +726,7 @@ Src/stm32f4xx_hal_fmpi2c.s: Src/stm32f4xx_hal_fmpi2c.c.s
 
 # target to generate assembly for a file
 Src/stm32f4xx_hal_fmpi2c.c.s:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_fmpi2c.c.s
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_fmpi2c.c.s
 .PHONY : Src/stm32f4xx_hal_fmpi2c.c.s
 
 Src/stm32f4xx_hal_fmpi2c_ex.obj: Src/stm32f4xx_hal_fmpi2c_ex.c.obj
@@ -734,7 +734,7 @@ Src/stm32f4xx_hal_fmpi2c_ex.obj: Src/stm32f4xx_hal_fmpi2c_ex.c.obj
 
 # target to build an object file
 Src/stm32f4xx_hal_fmpi2c_ex.c.obj:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_fmpi2c_ex.c.obj
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_fmpi2c_ex.c.obj
 .PHONY : Src/stm32f4xx_hal_fmpi2c_ex.c.obj
 
 Src/stm32f4xx_hal_fmpi2c_ex.i: Src/stm32f4xx_hal_fmpi2c_ex.c.i
@@ -742,7 +742,7 @@ Src/stm32f4xx_hal_fmpi2c_ex.i: Src/stm32f4xx_hal_fmpi2c_ex.c.i
 
 # target to preprocess a source file
 Src/stm32f4xx_hal_fmpi2c_ex.c.i:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_fmpi2c_ex.c.i
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_fmpi2c_ex.c.i
 .PHONY : Src/stm32f4xx_hal_fmpi2c_ex.c.i
 
 Src/stm32f4xx_hal_fmpi2c_ex.s: Src/stm32f4xx_hal_fmpi2c_ex.c.s
@@ -750,7 +750,7 @@ Src/stm32f4xx_hal_fmpi2c_ex.s: Src/stm32f4xx_hal_fmpi2c_ex.c.s
 
 # target to generate assembly for a file
 Src/stm32f4xx_hal_fmpi2c_ex.c.s:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_fmpi2c_ex.c.s
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_fmpi2c_ex.c.s
 .PHONY : Src/stm32f4xx_hal_fmpi2c_ex.c.s
 
 Src/stm32f4xx_hal_fmpsmbus.obj: Src/stm32f4xx_hal_fmpsmbus.c.obj
@@ -758,7 +758,7 @@ Src/stm32f4xx_hal_fmpsmbus.obj: Src/stm32f4xx_hal_fmpsmbus.c.obj
 
 # target to build an object file
 Src/stm32f4xx_hal_fmpsmbus.c.obj:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_fmpsmbus.c.obj
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_fmpsmbus.c.obj
 .PHONY : Src/stm32f4xx_hal_fmpsmbus.c.obj
 
 Src/stm32f4xx_hal_fmpsmbus.i: Src/stm32f4xx_hal_fmpsmbus.c.i
@@ -766,7 +766,7 @@ Src/stm32f4xx_hal_fmpsmbus.i: Src/stm32f4xx_hal_fmpsmbus.c.i
 
 # target to preprocess a source file
 Src/stm32f4xx_hal_fmpsmbus.c.i:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_fmpsmbus.c.i
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_fmpsmbus.c.i
 .PHONY : Src/stm32f4xx_hal_fmpsmbus.c.i
 
 Src/stm32f4xx_hal_fmpsmbus.s: Src/stm32f4xx_hal_fmpsmbus.c.s
@@ -774,7 +774,7 @@ Src/stm32f4xx_hal_fmpsmbus.s: Src/stm32f4xx_hal_fmpsmbus.c.s
 
 # target to generate assembly for a file
 Src/stm32f4xx_hal_fmpsmbus.c.s:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_fmpsmbus.c.s
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_fmpsmbus.c.s
 .PHONY : Src/stm32f4xx_hal_fmpsmbus.c.s
 
 Src/stm32f4xx_hal_gpio.obj: Src/stm32f4xx_hal_gpio.c.obj
@@ -782,7 +782,7 @@ Src/stm32f4xx_hal_gpio.obj: Src/stm32f4xx_hal_gpio.c.obj
 
 # target to build an object file
 Src/stm32f4xx_hal_gpio.c.obj:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_gpio.c.obj
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_gpio.c.obj
 .PHONY : Src/stm32f4xx_hal_gpio.c.obj
 
 Src/stm32f4xx_hal_gpio.i: Src/stm32f4xx_hal_gpio.c.i
@@ -790,7 +790,7 @@ Src/stm32f4xx_hal_gpio.i: Src/stm32f4xx_hal_gpio.c.i
 
 # target to preprocess a source file
 Src/stm32f4xx_hal_gpio.c.i:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_gpio.c.i
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_gpio.c.i
 .PHONY : Src/stm32f4xx_hal_gpio.c.i
 
 Src/stm32f4xx_hal_gpio.s: Src/stm32f4xx_hal_gpio.c.s
@@ -798,7 +798,7 @@ Src/stm32f4xx_hal_gpio.s: Src/stm32f4xx_hal_gpio.c.s
 
 # target to generate assembly for a file
 Src/stm32f4xx_hal_gpio.c.s:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_gpio.c.s
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_gpio.c.s
 .PHONY : Src/stm32f4xx_hal_gpio.c.s
 
 Src/stm32f4xx_hal_hash.obj: Src/stm32f4xx_hal_hash.c.obj
@@ -806,7 +806,7 @@ Src/stm32f4xx_hal_hash.obj: Src/stm32f4xx_hal_hash.c.obj
 
 # target to build an object file
 Src/stm32f4xx_hal_hash.c.obj:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_hash.c.obj
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_hash.c.obj
 .PHONY : Src/stm32f4xx_hal_hash.c.obj
 
 Src/stm32f4xx_hal_hash.i: Src/stm32f4xx_hal_hash.c.i
@@ -814,7 +814,7 @@ Src/stm32f4xx_hal_hash.i: Src/stm32f4xx_hal_hash.c.i
 
 # target to preprocess a source file
 Src/stm32f4xx_hal_hash.c.i:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_hash.c.i
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_hash.c.i
 .PHONY : Src/stm32f4xx_hal_hash.c.i
 
 Src/stm32f4xx_hal_hash.s: Src/stm32f4xx_hal_hash.c.s
@@ -822,7 +822,7 @@ Src/stm32f4xx_hal_hash.s: Src/stm32f4xx_hal_hash.c.s
 
 # target to generate assembly for a file
 Src/stm32f4xx_hal_hash.c.s:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_hash.c.s
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_hash.c.s
 .PHONY : Src/stm32f4xx_hal_hash.c.s
 
 Src/stm32f4xx_hal_hash_ex.obj: Src/stm32f4xx_hal_hash_ex.c.obj
@@ -830,7 +830,7 @@ Src/stm32f4xx_hal_hash_ex.obj: Src/stm32f4xx_hal_hash_ex.c.obj
 
 # target to build an object file
 Src/stm32f4xx_hal_hash_ex.c.obj:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_hash_ex.c.obj
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_hash_ex.c.obj
 .PHONY : Src/stm32f4xx_hal_hash_ex.c.obj
 
 Src/stm32f4xx_hal_hash_ex.i: Src/stm32f4xx_hal_hash_ex.c.i
@@ -838,7 +838,7 @@ Src/stm32f4xx_hal_hash_ex.i: Src/stm32f4xx_hal_hash_ex.c.i
 
 # target to preprocess a source file
 Src/stm32f4xx_hal_hash_ex.c.i:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_hash_ex.c.i
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_hash_ex.c.i
 .PHONY : Src/stm32f4xx_hal_hash_ex.c.i
 
 Src/stm32f4xx_hal_hash_ex.s: Src/stm32f4xx_hal_hash_ex.c.s
@@ -846,7 +846,7 @@ Src/stm32f4xx_hal_hash_ex.s: Src/stm32f4xx_hal_hash_ex.c.s
 
 # target to generate assembly for a file
 Src/stm32f4xx_hal_hash_ex.c.s:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_hash_ex.c.s
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_hash_ex.c.s
 .PHONY : Src/stm32f4xx_hal_hash_ex.c.s
 
 Src/stm32f4xx_hal_hcd.obj: Src/stm32f4xx_hal_hcd.c.obj
@@ -854,7 +854,7 @@ Src/stm32f4xx_hal_hcd.obj: Src/stm32f4xx_hal_hcd.c.obj
 
 # target to build an object file
 Src/stm32f4xx_hal_hcd.c.obj:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_hcd.c.obj
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_hcd.c.obj
 .PHONY : Src/stm32f4xx_hal_hcd.c.obj
 
 Src/stm32f4xx_hal_hcd.i: Src/stm32f4xx_hal_hcd.c.i
@@ -862,7 +862,7 @@ Src/stm32f4xx_hal_hcd.i: Src/stm32f4xx_hal_hcd.c.i
 
 # target to preprocess a source file
 Src/stm32f4xx_hal_hcd.c.i:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_hcd.c.i
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_hcd.c.i
 .PHONY : Src/stm32f4xx_hal_hcd.c.i
 
 Src/stm32f4xx_hal_hcd.s: Src/stm32f4xx_hal_hcd.c.s
@@ -870,7 +870,7 @@ Src/stm32f4xx_hal_hcd.s: Src/stm32f4xx_hal_hcd.c.s
 
 # target to generate assembly for a file
 Src/stm32f4xx_hal_hcd.c.s:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_hcd.c.s
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_hcd.c.s
 .PHONY : Src/stm32f4xx_hal_hcd.c.s
 
 Src/stm32f4xx_hal_i2c.obj: Src/stm32f4xx_hal_i2c.c.obj
@@ -878,7 +878,7 @@ Src/stm32f4xx_hal_i2c.obj: Src/stm32f4xx_hal_i2c.c.obj
 
 # target to build an object file
 Src/stm32f4xx_hal_i2c.c.obj:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_i2c.c.obj
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_i2c.c.obj
 .PHONY : Src/stm32f4xx_hal_i2c.c.obj
 
 Src/stm32f4xx_hal_i2c.i: Src/stm32f4xx_hal_i2c.c.i
@@ -886,7 +886,7 @@ Src/stm32f4xx_hal_i2c.i: Src/stm32f4xx_hal_i2c.c.i
 
 # target to preprocess a source file
 Src/stm32f4xx_hal_i2c.c.i:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_i2c.c.i
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_i2c.c.i
 .PHONY : Src/stm32f4xx_hal_i2c.c.i
 
 Src/stm32f4xx_hal_i2c.s: Src/stm32f4xx_hal_i2c.c.s
@@ -894,7 +894,7 @@ Src/stm32f4xx_hal_i2c.s: Src/stm32f4xx_hal_i2c.c.s
 
 # target to generate assembly for a file
 Src/stm32f4xx_hal_i2c.c.s:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_i2c.c.s
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_i2c.c.s
 .PHONY : Src/stm32f4xx_hal_i2c.c.s
 
 Src/stm32f4xx_hal_i2c_ex.obj: Src/stm32f4xx_hal_i2c_ex.c.obj
@@ -902,7 +902,7 @@ Src/stm32f4xx_hal_i2c_ex.obj: Src/stm32f4xx_hal_i2c_ex.c.obj
 
 # target to build an object file
 Src/stm32f4xx_hal_i2c_ex.c.obj:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_i2c_ex.c.obj
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_i2c_ex.c.obj
 .PHONY : Src/stm32f4xx_hal_i2c_ex.c.obj
 
 Src/stm32f4xx_hal_i2c_ex.i: Src/stm32f4xx_hal_i2c_ex.c.i
@@ -910,7 +910,7 @@ Src/stm32f4xx_hal_i2c_ex.i: Src/stm32f4xx_hal_i2c_ex.c.i
 
 # target to preprocess a source file
 Src/stm32f4xx_hal_i2c_ex.c.i:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_i2c_ex.c.i
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_i2c_ex.c.i
 .PHONY : Src/stm32f4xx_hal_i2c_ex.c.i
 
 Src/stm32f4xx_hal_i2c_ex.s: Src/stm32f4xx_hal_i2c_ex.c.s
@@ -918,7 +918,7 @@ Src/stm32f4xx_hal_i2c_ex.s: Src/stm32f4xx_hal_i2c_ex.c.s
 
 # target to generate assembly for a file
 Src/stm32f4xx_hal_i2c_ex.c.s:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_i2c_ex.c.s
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_i2c_ex.c.s
 .PHONY : Src/stm32f4xx_hal_i2c_ex.c.s
 
 Src/stm32f4xx_hal_i2s.obj: Src/stm32f4xx_hal_i2s.c.obj
@@ -926,7 +926,7 @@ Src/stm32f4xx_hal_i2s.obj: Src/stm32f4xx_hal_i2s.c.obj
 
 # target to build an object file
 Src/stm32f4xx_hal_i2s.c.obj:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_i2s.c.obj
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_i2s.c.obj
 .PHONY : Src/stm32f4xx_hal_i2s.c.obj
 
 Src/stm32f4xx_hal_i2s.i: Src/stm32f4xx_hal_i2s.c.i
@@ -934,7 +934,7 @@ Src/stm32f4xx_hal_i2s.i: Src/stm32f4xx_hal_i2s.c.i
 
 # target to preprocess a source file
 Src/stm32f4xx_hal_i2s.c.i:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_i2s.c.i
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_i2s.c.i
 .PHONY : Src/stm32f4xx_hal_i2s.c.i
 
 Src/stm32f4xx_hal_i2s.s: Src/stm32f4xx_hal_i2s.c.s
@@ -942,7 +942,7 @@ Src/stm32f4xx_hal_i2s.s: Src/stm32f4xx_hal_i2s.c.s
 
 # target to generate assembly for a file
 Src/stm32f4xx_hal_i2s.c.s:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_i2s.c.s
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_i2s.c.s
 .PHONY : Src/stm32f4xx_hal_i2s.c.s
 
 Src/stm32f4xx_hal_i2s_ex.obj: Src/stm32f4xx_hal_i2s_ex.c.obj
@@ -950,7 +950,7 @@ Src/stm32f4xx_hal_i2s_ex.obj: Src/stm32f4xx_hal_i2s_ex.c.obj
 
 # target to build an object file
 Src/stm32f4xx_hal_i2s_ex.c.obj:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_i2s_ex.c.obj
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_i2s_ex.c.obj
 .PHONY : Src/stm32f4xx_hal_i2s_ex.c.obj
 
 Src/stm32f4xx_hal_i2s_ex.i: Src/stm32f4xx_hal_i2s_ex.c.i
@@ -958,7 +958,7 @@ Src/stm32f4xx_hal_i2s_ex.i: Src/stm32f4xx_hal_i2s_ex.c.i
 
 # target to preprocess a source file
 Src/stm32f4xx_hal_i2s_ex.c.i:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_i2s_ex.c.i
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_i2s_ex.c.i
 .PHONY : Src/stm32f4xx_hal_i2s_ex.c.i
 
 Src/stm32f4xx_hal_i2s_ex.s: Src/stm32f4xx_hal_i2s_ex.c.s
@@ -966,7 +966,7 @@ Src/stm32f4xx_hal_i2s_ex.s: Src/stm32f4xx_hal_i2s_ex.c.s
 
 # target to generate assembly for a file
 Src/stm32f4xx_hal_i2s_ex.c.s:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_i2s_ex.c.s
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_i2s_ex.c.s
 .PHONY : Src/stm32f4xx_hal_i2s_ex.c.s
 
 Src/stm32f4xx_hal_irda.obj: Src/stm32f4xx_hal_irda.c.obj
@@ -974,7 +974,7 @@ Src/stm32f4xx_hal_irda.obj: Src/stm32f4xx_hal_irda.c.obj
 
 # target to build an object file
 Src/stm32f4xx_hal_irda.c.obj:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_irda.c.obj
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_irda.c.obj
 .PHONY : Src/stm32f4xx_hal_irda.c.obj
 
 Src/stm32f4xx_hal_irda.i: Src/stm32f4xx_hal_irda.c.i
@@ -982,7 +982,7 @@ Src/stm32f4xx_hal_irda.i: Src/stm32f4xx_hal_irda.c.i
 
 # target to preprocess a source file
 Src/stm32f4xx_hal_irda.c.i:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_irda.c.i
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_irda.c.i
 .PHONY : Src/stm32f4xx_hal_irda.c.i
 
 Src/stm32f4xx_hal_irda.s: Src/stm32f4xx_hal_irda.c.s
@@ -990,7 +990,7 @@ Src/stm32f4xx_hal_irda.s: Src/stm32f4xx_hal_irda.c.s
 
 # target to generate assembly for a file
 Src/stm32f4xx_hal_irda.c.s:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_irda.c.s
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_irda.c.s
 .PHONY : Src/stm32f4xx_hal_irda.c.s
 
 Src/stm32f4xx_hal_iwdg.obj: Src/stm32f4xx_hal_iwdg.c.obj
@@ -998,7 +998,7 @@ Src/stm32f4xx_hal_iwdg.obj: Src/stm32f4xx_hal_iwdg.c.obj
 
 # target to build an object file
 Src/stm32f4xx_hal_iwdg.c.obj:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_iwdg.c.obj
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_iwdg.c.obj
 .PHONY : Src/stm32f4xx_hal_iwdg.c.obj
 
 Src/stm32f4xx_hal_iwdg.i: Src/stm32f4xx_hal_iwdg.c.i
@@ -1006,7 +1006,7 @@ Src/stm32f4xx_hal_iwdg.i: Src/stm32f4xx_hal_iwdg.c.i
 
 # target to preprocess a source file
 Src/stm32f4xx_hal_iwdg.c.i:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_iwdg.c.i
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_iwdg.c.i
 .PHONY : Src/stm32f4xx_hal_iwdg.c.i
 
 Src/stm32f4xx_hal_iwdg.s: Src/stm32f4xx_hal_iwdg.c.s
@@ -1014,7 +1014,7 @@ Src/stm32f4xx_hal_iwdg.s: Src/stm32f4xx_hal_iwdg.c.s
 
 # target to generate assembly for a file
 Src/stm32f4xx_hal_iwdg.c.s:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_iwdg.c.s
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_iwdg.c.s
 .PHONY : Src/stm32f4xx_hal_iwdg.c.s
 
 Src/stm32f4xx_hal_lptim.obj: Src/stm32f4xx_hal_lptim.c.obj
@@ -1022,7 +1022,7 @@ Src/stm32f4xx_hal_lptim.obj: Src/stm32f4xx_hal_lptim.c.obj
 
 # target to build an object file
 Src/stm32f4xx_hal_lptim.c.obj:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_lptim.c.obj
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_lptim.c.obj
 .PHONY : Src/stm32f4xx_hal_lptim.c.obj
 
 Src/stm32f4xx_hal_lptim.i: Src/stm32f4xx_hal_lptim.c.i
@@ -1030,7 +1030,7 @@ Src/stm32f4xx_hal_lptim.i: Src/stm32f4xx_hal_lptim.c.i
 
 # target to preprocess a source file
 Src/stm32f4xx_hal_lptim.c.i:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_lptim.c.i
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_lptim.c.i
 .PHONY : Src/stm32f4xx_hal_lptim.c.i
 
 Src/stm32f4xx_hal_lptim.s: Src/stm32f4xx_hal_lptim.c.s
@@ -1038,7 +1038,7 @@ Src/stm32f4xx_hal_lptim.s: Src/stm32f4xx_hal_lptim.c.s
 
 # target to generate assembly for a file
 Src/stm32f4xx_hal_lptim.c.s:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_lptim.c.s
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_lptim.c.s
 .PHONY : Src/stm32f4xx_hal_lptim.c.s
 
 Src/stm32f4xx_hal_ltdc.obj: Src/stm32f4xx_hal_ltdc.c.obj
@@ -1046,7 +1046,7 @@ Src/stm32f4xx_hal_ltdc.obj: Src/stm32f4xx_hal_ltdc.c.obj
 
 # target to build an object file
 Src/stm32f4xx_hal_ltdc.c.obj:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_ltdc.c.obj
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_ltdc.c.obj
 .PHONY : Src/stm32f4xx_hal_ltdc.c.obj
 
 Src/stm32f4xx_hal_ltdc.i: Src/stm32f4xx_hal_ltdc.c.i
@@ -1054,7 +1054,7 @@ Src/stm32f4xx_hal_ltdc.i: Src/stm32f4xx_hal_ltdc.c.i
 
 # target to preprocess a source file
 Src/stm32f4xx_hal_ltdc.c.i:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_ltdc.c.i
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_ltdc.c.i
 .PHONY : Src/stm32f4xx_hal_ltdc.c.i
 
 Src/stm32f4xx_hal_ltdc.s: Src/stm32f4xx_hal_ltdc.c.s
@@ -1062,7 +1062,7 @@ Src/stm32f4xx_hal_ltdc.s: Src/stm32f4xx_hal_ltdc.c.s
 
 # target to generate assembly for a file
 Src/stm32f4xx_hal_ltdc.c.s:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_ltdc.c.s
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_ltdc.c.s
 .PHONY : Src/stm32f4xx_hal_ltdc.c.s
 
 Src/stm32f4xx_hal_ltdc_ex.obj: Src/stm32f4xx_hal_ltdc_ex.c.obj
@@ -1070,7 +1070,7 @@ Src/stm32f4xx_hal_ltdc_ex.obj: Src/stm32f4xx_hal_ltdc_ex.c.obj
 
 # target to build an object file
 Src/stm32f4xx_hal_ltdc_ex.c.obj:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_ltdc_ex.c.obj
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_ltdc_ex.c.obj
 .PHONY : Src/stm32f4xx_hal_ltdc_ex.c.obj
 
 Src/stm32f4xx_hal_ltdc_ex.i: Src/stm32f4xx_hal_ltdc_ex.c.i
@@ -1078,7 +1078,7 @@ Src/stm32f4xx_hal_ltdc_ex.i: Src/stm32f4xx_hal_ltdc_ex.c.i
 
 # target to preprocess a source file
 Src/stm32f4xx_hal_ltdc_ex.c.i:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_ltdc_ex.c.i
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_ltdc_ex.c.i
 .PHONY : Src/stm32f4xx_hal_ltdc_ex.c.i
 
 Src/stm32f4xx_hal_ltdc_ex.s: Src/stm32f4xx_hal_ltdc_ex.c.s
@@ -1086,7 +1086,7 @@ Src/stm32f4xx_hal_ltdc_ex.s: Src/stm32f4xx_hal_ltdc_ex.c.s
 
 # target to generate assembly for a file
 Src/stm32f4xx_hal_ltdc_ex.c.s:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_ltdc_ex.c.s
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_ltdc_ex.c.s
 .PHONY : Src/stm32f4xx_hal_ltdc_ex.c.s
 
 Src/stm32f4xx_hal_mmc.obj: Src/stm32f4xx_hal_mmc.c.obj
@@ -1094,7 +1094,7 @@ Src/stm32f4xx_hal_mmc.obj: Src/stm32f4xx_hal_mmc.c.obj
 
 # target to build an object file
 Src/stm32f4xx_hal_mmc.c.obj:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_mmc.c.obj
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_mmc.c.obj
 .PHONY : Src/stm32f4xx_hal_mmc.c.obj
 
 Src/stm32f4xx_hal_mmc.i: Src/stm32f4xx_hal_mmc.c.i
@@ -1102,7 +1102,7 @@ Src/stm32f4xx_hal_mmc.i: Src/stm32f4xx_hal_mmc.c.i
 
 # target to preprocess a source file
 Src/stm32f4xx_hal_mmc.c.i:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_mmc.c.i
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_mmc.c.i
 .PHONY : Src/stm32f4xx_hal_mmc.c.i
 
 Src/stm32f4xx_hal_mmc.s: Src/stm32f4xx_hal_mmc.c.s
@@ -1110,7 +1110,7 @@ Src/stm32f4xx_hal_mmc.s: Src/stm32f4xx_hal_mmc.c.s
 
 # target to generate assembly for a file
 Src/stm32f4xx_hal_mmc.c.s:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_mmc.c.s
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_mmc.c.s
 .PHONY : Src/stm32f4xx_hal_mmc.c.s
 
 Src/stm32f4xx_hal_nand.obj: Src/stm32f4xx_hal_nand.c.obj
@@ -1118,7 +1118,7 @@ Src/stm32f4xx_hal_nand.obj: Src/stm32f4xx_hal_nand.c.obj
 
 # target to build an object file
 Src/stm32f4xx_hal_nand.c.obj:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_nand.c.obj
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_nand.c.obj
 .PHONY : Src/stm32f4xx_hal_nand.c.obj
 
 Src/stm32f4xx_hal_nand.i: Src/stm32f4xx_hal_nand.c.i
@@ -1126,7 +1126,7 @@ Src/stm32f4xx_hal_nand.i: Src/stm32f4xx_hal_nand.c.i
 
 # target to preprocess a source file
 Src/stm32f4xx_hal_nand.c.i:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_nand.c.i
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_nand.c.i
 .PHONY : Src/stm32f4xx_hal_nand.c.i
 
 Src/stm32f4xx_hal_nand.s: Src/stm32f4xx_hal_nand.c.s
@@ -1134,7 +1134,7 @@ Src/stm32f4xx_hal_nand.s: Src/stm32f4xx_hal_nand.c.s
 
 # target to generate assembly for a file
 Src/stm32f4xx_hal_nand.c.s:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_nand.c.s
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_nand.c.s
 .PHONY : Src/stm32f4xx_hal_nand.c.s
 
 Src/stm32f4xx_hal_nor.obj: Src/stm32f4xx_hal_nor.c.obj
@@ -1142,7 +1142,7 @@ Src/stm32f4xx_hal_nor.obj: Src/stm32f4xx_hal_nor.c.obj
 
 # target to build an object file
 Src/stm32f4xx_hal_nor.c.obj:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_nor.c.obj
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_nor.c.obj
 .PHONY : Src/stm32f4xx_hal_nor.c.obj
 
 Src/stm32f4xx_hal_nor.i: Src/stm32f4xx_hal_nor.c.i
@@ -1150,7 +1150,7 @@ Src/stm32f4xx_hal_nor.i: Src/stm32f4xx_hal_nor.c.i
 
 # target to preprocess a source file
 Src/stm32f4xx_hal_nor.c.i:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_nor.c.i
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_nor.c.i
 .PHONY : Src/stm32f4xx_hal_nor.c.i
 
 Src/stm32f4xx_hal_nor.s: Src/stm32f4xx_hal_nor.c.s
@@ -1158,7 +1158,7 @@ Src/stm32f4xx_hal_nor.s: Src/stm32f4xx_hal_nor.c.s
 
 # target to generate assembly for a file
 Src/stm32f4xx_hal_nor.c.s:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_nor.c.s
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_nor.c.s
 .PHONY : Src/stm32f4xx_hal_nor.c.s
 
 Src/stm32f4xx_hal_pccard.obj: Src/stm32f4xx_hal_pccard.c.obj
@@ -1166,7 +1166,7 @@ Src/stm32f4xx_hal_pccard.obj: Src/stm32f4xx_hal_pccard.c.obj
 
 # target to build an object file
 Src/stm32f4xx_hal_pccard.c.obj:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_pccard.c.obj
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_pccard.c.obj
 .PHONY : Src/stm32f4xx_hal_pccard.c.obj
 
 Src/stm32f4xx_hal_pccard.i: Src/stm32f4xx_hal_pccard.c.i
@@ -1174,7 +1174,7 @@ Src/stm32f4xx_hal_pccard.i: Src/stm32f4xx_hal_pccard.c.i
 
 # target to preprocess a source file
 Src/stm32f4xx_hal_pccard.c.i:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_pccard.c.i
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_pccard.c.i
 .PHONY : Src/stm32f4xx_hal_pccard.c.i
 
 Src/stm32f4xx_hal_pccard.s: Src/stm32f4xx_hal_pccard.c.s
@@ -1182,7 +1182,7 @@ Src/stm32f4xx_hal_pccard.s: Src/stm32f4xx_hal_pccard.c.s
 
 # target to generate assembly for a file
 Src/stm32f4xx_hal_pccard.c.s:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_pccard.c.s
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_pccard.c.s
 .PHONY : Src/stm32f4xx_hal_pccard.c.s
 
 Src/stm32f4xx_hal_pcd.obj: Src/stm32f4xx_hal_pcd.c.obj
@@ -1190,7 +1190,7 @@ Src/stm32f4xx_hal_pcd.obj: Src/stm32f4xx_hal_pcd.c.obj
 
 # target to build an object file
 Src/stm32f4xx_hal_pcd.c.obj:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_pcd.c.obj
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_pcd.c.obj
 .PHONY : Src/stm32f4xx_hal_pcd.c.obj
 
 Src/stm32f4xx_hal_pcd.i: Src/stm32f4xx_hal_pcd.c.i
@@ -1198,7 +1198,7 @@ Src/stm32f4xx_hal_pcd.i: Src/stm32f4xx_hal_pcd.c.i
 
 # target to preprocess a source file
 Src/stm32f4xx_hal_pcd.c.i:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_pcd.c.i
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_pcd.c.i
 .PHONY : Src/stm32f4xx_hal_pcd.c.i
 
 Src/stm32f4xx_hal_pcd.s: Src/stm32f4xx_hal_pcd.c.s
@@ -1206,7 +1206,7 @@ Src/stm32f4xx_hal_pcd.s: Src/stm32f4xx_hal_pcd.c.s
 
 # target to generate assembly for a file
 Src/stm32f4xx_hal_pcd.c.s:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_pcd.c.s
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_pcd.c.s
 .PHONY : Src/stm32f4xx_hal_pcd.c.s
 
 Src/stm32f4xx_hal_pcd_ex.obj: Src/stm32f4xx_hal_pcd_ex.c.obj
@@ -1214,7 +1214,7 @@ Src/stm32f4xx_hal_pcd_ex.obj: Src/stm32f4xx_hal_pcd_ex.c.obj
 
 # target to build an object file
 Src/stm32f4xx_hal_pcd_ex.c.obj:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_pcd_ex.c.obj
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_pcd_ex.c.obj
 .PHONY : Src/stm32f4xx_hal_pcd_ex.c.obj
 
 Src/stm32f4xx_hal_pcd_ex.i: Src/stm32f4xx_hal_pcd_ex.c.i
@@ -1222,7 +1222,7 @@ Src/stm32f4xx_hal_pcd_ex.i: Src/stm32f4xx_hal_pcd_ex.c.i
 
 # target to preprocess a source file
 Src/stm32f4xx_hal_pcd_ex.c.i:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_pcd_ex.c.i
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_pcd_ex.c.i
 .PHONY : Src/stm32f4xx_hal_pcd_ex.c.i
 
 Src/stm32f4xx_hal_pcd_ex.s: Src/stm32f4xx_hal_pcd_ex.c.s
@@ -1230,7 +1230,7 @@ Src/stm32f4xx_hal_pcd_ex.s: Src/stm32f4xx_hal_pcd_ex.c.s
 
 # target to generate assembly for a file
 Src/stm32f4xx_hal_pcd_ex.c.s:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_pcd_ex.c.s
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_pcd_ex.c.s
 .PHONY : Src/stm32f4xx_hal_pcd_ex.c.s
 
 Src/stm32f4xx_hal_pwr.obj: Src/stm32f4xx_hal_pwr.c.obj
@@ -1238,7 +1238,7 @@ Src/stm32f4xx_hal_pwr.obj: Src/stm32f4xx_hal_pwr.c.obj
 
 # target to build an object file
 Src/stm32f4xx_hal_pwr.c.obj:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_pwr.c.obj
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_pwr.c.obj
 .PHONY : Src/stm32f4xx_hal_pwr.c.obj
 
 Src/stm32f4xx_hal_pwr.i: Src/stm32f4xx_hal_pwr.c.i
@@ -1246,7 +1246,7 @@ Src/stm32f4xx_hal_pwr.i: Src/stm32f4xx_hal_pwr.c.i
 
 # target to preprocess a source file
 Src/stm32f4xx_hal_pwr.c.i:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_pwr.c.i
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_pwr.c.i
 .PHONY : Src/stm32f4xx_hal_pwr.c.i
 
 Src/stm32f4xx_hal_pwr.s: Src/stm32f4xx_hal_pwr.c.s
@@ -1254,7 +1254,7 @@ Src/stm32f4xx_hal_pwr.s: Src/stm32f4xx_hal_pwr.c.s
 
 # target to generate assembly for a file
 Src/stm32f4xx_hal_pwr.c.s:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_pwr.c.s
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_pwr.c.s
 .PHONY : Src/stm32f4xx_hal_pwr.c.s
 
 Src/stm32f4xx_hal_pwr_ex.obj: Src/stm32f4xx_hal_pwr_ex.c.obj
@@ -1262,7 +1262,7 @@ Src/stm32f4xx_hal_pwr_ex.obj: Src/stm32f4xx_hal_pwr_ex.c.obj
 
 # target to build an object file
 Src/stm32f4xx_hal_pwr_ex.c.obj:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_pwr_ex.c.obj
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_pwr_ex.c.obj
 .PHONY : Src/stm32f4xx_hal_pwr_ex.c.obj
 
 Src/stm32f4xx_hal_pwr_ex.i: Src/stm32f4xx_hal_pwr_ex.c.i
@@ -1270,7 +1270,7 @@ Src/stm32f4xx_hal_pwr_ex.i: Src/stm32f4xx_hal_pwr_ex.c.i
 
 # target to preprocess a source file
 Src/stm32f4xx_hal_pwr_ex.c.i:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_pwr_ex.c.i
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_pwr_ex.c.i
 .PHONY : Src/stm32f4xx_hal_pwr_ex.c.i
 
 Src/stm32f4xx_hal_pwr_ex.s: Src/stm32f4xx_hal_pwr_ex.c.s
@@ -1278,7 +1278,7 @@ Src/stm32f4xx_hal_pwr_ex.s: Src/stm32f4xx_hal_pwr_ex.c.s
 
 # target to generate assembly for a file
 Src/stm32f4xx_hal_pwr_ex.c.s:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_pwr_ex.c.s
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_pwr_ex.c.s
 .PHONY : Src/stm32f4xx_hal_pwr_ex.c.s
 
 Src/stm32f4xx_hal_qspi.obj: Src/stm32f4xx_hal_qspi.c.obj
@@ -1286,7 +1286,7 @@ Src/stm32f4xx_hal_qspi.obj: Src/stm32f4xx_hal_qspi.c.obj
 
 # target to build an object file
 Src/stm32f4xx_hal_qspi.c.obj:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_qspi.c.obj
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_qspi.c.obj
 .PHONY : Src/stm32f4xx_hal_qspi.c.obj
 
 Src/stm32f4xx_hal_qspi.i: Src/stm32f4xx_hal_qspi.c.i
@@ -1294,7 +1294,7 @@ Src/stm32f4xx_hal_qspi.i: Src/stm32f4xx_hal_qspi.c.i
 
 # target to preprocess a source file
 Src/stm32f4xx_hal_qspi.c.i:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_qspi.c.i
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_qspi.c.i
 .PHONY : Src/stm32f4xx_hal_qspi.c.i
 
 Src/stm32f4xx_hal_qspi.s: Src/stm32f4xx_hal_qspi.c.s
@@ -1302,7 +1302,7 @@ Src/stm32f4xx_hal_qspi.s: Src/stm32f4xx_hal_qspi.c.s
 
 # target to generate assembly for a file
 Src/stm32f4xx_hal_qspi.c.s:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_qspi.c.s
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_qspi.c.s
 .PHONY : Src/stm32f4xx_hal_qspi.c.s
 
 Src/stm32f4xx_hal_rcc.obj: Src/stm32f4xx_hal_rcc.c.obj
@@ -1310,7 +1310,7 @@ Src/stm32f4xx_hal_rcc.obj: Src/stm32f4xx_hal_rcc.c.obj
 
 # target to build an object file
 Src/stm32f4xx_hal_rcc.c.obj:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_rcc.c.obj
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_rcc.c.obj
 .PHONY : Src/stm32f4xx_hal_rcc.c.obj
 
 Src/stm32f4xx_hal_rcc.i: Src/stm32f4xx_hal_rcc.c.i
@@ -1318,7 +1318,7 @@ Src/stm32f4xx_hal_rcc.i: Src/stm32f4xx_hal_rcc.c.i
 
 # target to preprocess a source file
 Src/stm32f4xx_hal_rcc.c.i:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_rcc.c.i
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_rcc.c.i
 .PHONY : Src/stm32f4xx_hal_rcc.c.i
 
 Src/stm32f4xx_hal_rcc.s: Src/stm32f4xx_hal_rcc.c.s
@@ -1326,7 +1326,7 @@ Src/stm32f4xx_hal_rcc.s: Src/stm32f4xx_hal_rcc.c.s
 
 # target to generate assembly for a file
 Src/stm32f4xx_hal_rcc.c.s:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_rcc.c.s
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_rcc.c.s
 .PHONY : Src/stm32f4xx_hal_rcc.c.s
 
 Src/stm32f4xx_hal_rcc_ex.obj: Src/stm32f4xx_hal_rcc_ex.c.obj
@@ -1334,7 +1334,7 @@ Src/stm32f4xx_hal_rcc_ex.obj: Src/stm32f4xx_hal_rcc_ex.c.obj
 
 # target to build an object file
 Src/stm32f4xx_hal_rcc_ex.c.obj:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_rcc_ex.c.obj
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_rcc_ex.c.obj
 .PHONY : Src/stm32f4xx_hal_rcc_ex.c.obj
 
 Src/stm32f4xx_hal_rcc_ex.i: Src/stm32f4xx_hal_rcc_ex.c.i
@@ -1342,7 +1342,7 @@ Src/stm32f4xx_hal_rcc_ex.i: Src/stm32f4xx_hal_rcc_ex.c.i
 
 # target to preprocess a source file
 Src/stm32f4xx_hal_rcc_ex.c.i:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_rcc_ex.c.i
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_rcc_ex.c.i
 .PHONY : Src/stm32f4xx_hal_rcc_ex.c.i
 
 Src/stm32f4xx_hal_rcc_ex.s: Src/stm32f4xx_hal_rcc_ex.c.s
@@ -1350,7 +1350,7 @@ Src/stm32f4xx_hal_rcc_ex.s: Src/stm32f4xx_hal_rcc_ex.c.s
 
 # target to generate assembly for a file
 Src/stm32f4xx_hal_rcc_ex.c.s:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_rcc_ex.c.s
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_rcc_ex.c.s
 .PHONY : Src/stm32f4xx_hal_rcc_ex.c.s
 
 Src/stm32f4xx_hal_rng.obj: Src/stm32f4xx_hal_rng.c.obj
@@ -1358,7 +1358,7 @@ Src/stm32f4xx_hal_rng.obj: Src/stm32f4xx_hal_rng.c.obj
 
 # target to build an object file
 Src/stm32f4xx_hal_rng.c.obj:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_rng.c.obj
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_rng.c.obj
 .PHONY : Src/stm32f4xx_hal_rng.c.obj
 
 Src/stm32f4xx_hal_rng.i: Src/stm32f4xx_hal_rng.c.i
@@ -1366,7 +1366,7 @@ Src/stm32f4xx_hal_rng.i: Src/stm32f4xx_hal_rng.c.i
 
 # target to preprocess a source file
 Src/stm32f4xx_hal_rng.c.i:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_rng.c.i
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_rng.c.i
 .PHONY : Src/stm32f4xx_hal_rng.c.i
 
 Src/stm32f4xx_hal_rng.s: Src/stm32f4xx_hal_rng.c.s
@@ -1374,7 +1374,7 @@ Src/stm32f4xx_hal_rng.s: Src/stm32f4xx_hal_rng.c.s
 
 # target to generate assembly for a file
 Src/stm32f4xx_hal_rng.c.s:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_rng.c.s
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_rng.c.s
 .PHONY : Src/stm32f4xx_hal_rng.c.s
 
 Src/stm32f4xx_hal_rtc.obj: Src/stm32f4xx_hal_rtc.c.obj
@@ -1382,7 +1382,7 @@ Src/stm32f4xx_hal_rtc.obj: Src/stm32f4xx_hal_rtc.c.obj
 
 # target to build an object file
 Src/stm32f4xx_hal_rtc.c.obj:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_rtc.c.obj
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_rtc.c.obj
 .PHONY : Src/stm32f4xx_hal_rtc.c.obj
 
 Src/stm32f4xx_hal_rtc.i: Src/stm32f4xx_hal_rtc.c.i
@@ -1390,7 +1390,7 @@ Src/stm32f4xx_hal_rtc.i: Src/stm32f4xx_hal_rtc.c.i
 
 # target to preprocess a source file
 Src/stm32f4xx_hal_rtc.c.i:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_rtc.c.i
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_rtc.c.i
 .PHONY : Src/stm32f4xx_hal_rtc.c.i
 
 Src/stm32f4xx_hal_rtc.s: Src/stm32f4xx_hal_rtc.c.s
@@ -1398,7 +1398,7 @@ Src/stm32f4xx_hal_rtc.s: Src/stm32f4xx_hal_rtc.c.s
 
 # target to generate assembly for a file
 Src/stm32f4xx_hal_rtc.c.s:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_rtc.c.s
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_rtc.c.s
 .PHONY : Src/stm32f4xx_hal_rtc.c.s
 
 Src/stm32f4xx_hal_rtc_ex.obj: Src/stm32f4xx_hal_rtc_ex.c.obj
@@ -1406,7 +1406,7 @@ Src/stm32f4xx_hal_rtc_ex.obj: Src/stm32f4xx_hal_rtc_ex.c.obj
 
 # target to build an object file
 Src/stm32f4xx_hal_rtc_ex.c.obj:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_rtc_ex.c.obj
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_rtc_ex.c.obj
 .PHONY : Src/stm32f4xx_hal_rtc_ex.c.obj
 
 Src/stm32f4xx_hal_rtc_ex.i: Src/stm32f4xx_hal_rtc_ex.c.i
@@ -1414,7 +1414,7 @@ Src/stm32f4xx_hal_rtc_ex.i: Src/stm32f4xx_hal_rtc_ex.c.i
 
 # target to preprocess a source file
 Src/stm32f4xx_hal_rtc_ex.c.i:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_rtc_ex.c.i
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_rtc_ex.c.i
 .PHONY : Src/stm32f4xx_hal_rtc_ex.c.i
 
 Src/stm32f4xx_hal_rtc_ex.s: Src/stm32f4xx_hal_rtc_ex.c.s
@@ -1422,7 +1422,7 @@ Src/stm32f4xx_hal_rtc_ex.s: Src/stm32f4xx_hal_rtc_ex.c.s
 
 # target to generate assembly for a file
 Src/stm32f4xx_hal_rtc_ex.c.s:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_rtc_ex.c.s
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_rtc_ex.c.s
 .PHONY : Src/stm32f4xx_hal_rtc_ex.c.s
 
 Src/stm32f4xx_hal_sai.obj: Src/stm32f4xx_hal_sai.c.obj
@@ -1430,7 +1430,7 @@ Src/stm32f4xx_hal_sai.obj: Src/stm32f4xx_hal_sai.c.obj
 
 # target to build an object file
 Src/stm32f4xx_hal_sai.c.obj:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_sai.c.obj
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_sai.c.obj
 .PHONY : Src/stm32f4xx_hal_sai.c.obj
 
 Src/stm32f4xx_hal_sai.i: Src/stm32f4xx_hal_sai.c.i
@@ -1438,7 +1438,7 @@ Src/stm32f4xx_hal_sai.i: Src/stm32f4xx_hal_sai.c.i
 
 # target to preprocess a source file
 Src/stm32f4xx_hal_sai.c.i:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_sai.c.i
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_sai.c.i
 .PHONY : Src/stm32f4xx_hal_sai.c.i
 
 Src/stm32f4xx_hal_sai.s: Src/stm32f4xx_hal_sai.c.s
@@ -1446,7 +1446,7 @@ Src/stm32f4xx_hal_sai.s: Src/stm32f4xx_hal_sai.c.s
 
 # target to generate assembly for a file
 Src/stm32f4xx_hal_sai.c.s:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_sai.c.s
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_sai.c.s
 .PHONY : Src/stm32f4xx_hal_sai.c.s
 
 Src/stm32f4xx_hal_sai_ex.obj: Src/stm32f4xx_hal_sai_ex.c.obj
@@ -1454,7 +1454,7 @@ Src/stm32f4xx_hal_sai_ex.obj: Src/stm32f4xx_hal_sai_ex.c.obj
 
 # target to build an object file
 Src/stm32f4xx_hal_sai_ex.c.obj:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_sai_ex.c.obj
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_sai_ex.c.obj
 .PHONY : Src/stm32f4xx_hal_sai_ex.c.obj
 
 Src/stm32f4xx_hal_sai_ex.i: Src/stm32f4xx_hal_sai_ex.c.i
@@ -1462,7 +1462,7 @@ Src/stm32f4xx_hal_sai_ex.i: Src/stm32f4xx_hal_sai_ex.c.i
 
 # target to preprocess a source file
 Src/stm32f4xx_hal_sai_ex.c.i:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_sai_ex.c.i
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_sai_ex.c.i
 .PHONY : Src/stm32f4xx_hal_sai_ex.c.i
 
 Src/stm32f4xx_hal_sai_ex.s: Src/stm32f4xx_hal_sai_ex.c.s
@@ -1470,7 +1470,7 @@ Src/stm32f4xx_hal_sai_ex.s: Src/stm32f4xx_hal_sai_ex.c.s
 
 # target to generate assembly for a file
 Src/stm32f4xx_hal_sai_ex.c.s:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_sai_ex.c.s
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_sai_ex.c.s
 .PHONY : Src/stm32f4xx_hal_sai_ex.c.s
 
 Src/stm32f4xx_hal_sd.obj: Src/stm32f4xx_hal_sd.c.obj
@@ -1478,7 +1478,7 @@ Src/stm32f4xx_hal_sd.obj: Src/stm32f4xx_hal_sd.c.obj
 
 # target to build an object file
 Src/stm32f4xx_hal_sd.c.obj:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_sd.c.obj
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_sd.c.obj
 .PHONY : Src/stm32f4xx_hal_sd.c.obj
 
 Src/stm32f4xx_hal_sd.i: Src/stm32f4xx_hal_sd.c.i
@@ -1486,7 +1486,7 @@ Src/stm32f4xx_hal_sd.i: Src/stm32f4xx_hal_sd.c.i
 
 # target to preprocess a source file
 Src/stm32f4xx_hal_sd.c.i:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_sd.c.i
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_sd.c.i
 .PHONY : Src/stm32f4xx_hal_sd.c.i
 
 Src/stm32f4xx_hal_sd.s: Src/stm32f4xx_hal_sd.c.s
@@ -1494,7 +1494,7 @@ Src/stm32f4xx_hal_sd.s: Src/stm32f4xx_hal_sd.c.s
 
 # target to generate assembly for a file
 Src/stm32f4xx_hal_sd.c.s:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_sd.c.s
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_sd.c.s
 .PHONY : Src/stm32f4xx_hal_sd.c.s
 
 Src/stm32f4xx_hal_sdram.obj: Src/stm32f4xx_hal_sdram.c.obj
@@ -1502,7 +1502,7 @@ Src/stm32f4xx_hal_sdram.obj: Src/stm32f4xx_hal_sdram.c.obj
 
 # target to build an object file
 Src/stm32f4xx_hal_sdram.c.obj:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_sdram.c.obj
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_sdram.c.obj
 .PHONY : Src/stm32f4xx_hal_sdram.c.obj
 
 Src/stm32f4xx_hal_sdram.i: Src/stm32f4xx_hal_sdram.c.i
@@ -1510,7 +1510,7 @@ Src/stm32f4xx_hal_sdram.i: Src/stm32f4xx_hal_sdram.c.i
 
 # target to preprocess a source file
 Src/stm32f4xx_hal_sdram.c.i:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_sdram.c.i
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_sdram.c.i
 .PHONY : Src/stm32f4xx_hal_sdram.c.i
 
 Src/stm32f4xx_hal_sdram.s: Src/stm32f4xx_hal_sdram.c.s
@@ -1518,7 +1518,7 @@ Src/stm32f4xx_hal_sdram.s: Src/stm32f4xx_hal_sdram.c.s
 
 # target to generate assembly for a file
 Src/stm32f4xx_hal_sdram.c.s:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_sdram.c.s
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_sdram.c.s
 .PHONY : Src/stm32f4xx_hal_sdram.c.s
 
 Src/stm32f4xx_hal_smartcard.obj: Src/stm32f4xx_hal_smartcard.c.obj
@@ -1526,7 +1526,7 @@ Src/stm32f4xx_hal_smartcard.obj: Src/stm32f4xx_hal_smartcard.c.obj
 
 # target to build an object file
 Src/stm32f4xx_hal_smartcard.c.obj:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_smartcard.c.obj
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_smartcard.c.obj
 .PHONY : Src/stm32f4xx_hal_smartcard.c.obj
 
 Src/stm32f4xx_hal_smartcard.i: Src/stm32f4xx_hal_smartcard.c.i
@@ -1534,7 +1534,7 @@ Src/stm32f4xx_hal_smartcard.i: Src/stm32f4xx_hal_smartcard.c.i
 
 # target to preprocess a source file
 Src/stm32f4xx_hal_smartcard.c.i:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_smartcard.c.i
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_smartcard.c.i
 .PHONY : Src/stm32f4xx_hal_smartcard.c.i
 
 Src/stm32f4xx_hal_smartcard.s: Src/stm32f4xx_hal_smartcard.c.s
@@ -1542,7 +1542,7 @@ Src/stm32f4xx_hal_smartcard.s: Src/stm32f4xx_hal_smartcard.c.s
 
 # target to generate assembly for a file
 Src/stm32f4xx_hal_smartcard.c.s:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_smartcard.c.s
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_smartcard.c.s
 .PHONY : Src/stm32f4xx_hal_smartcard.c.s
 
 Src/stm32f4xx_hal_smbus.obj: Src/stm32f4xx_hal_smbus.c.obj
@@ -1550,7 +1550,7 @@ Src/stm32f4xx_hal_smbus.obj: Src/stm32f4xx_hal_smbus.c.obj
 
 # target to build an object file
 Src/stm32f4xx_hal_smbus.c.obj:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_smbus.c.obj
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_smbus.c.obj
 .PHONY : Src/stm32f4xx_hal_smbus.c.obj
 
 Src/stm32f4xx_hal_smbus.i: Src/stm32f4xx_hal_smbus.c.i
@@ -1558,7 +1558,7 @@ Src/stm32f4xx_hal_smbus.i: Src/stm32f4xx_hal_smbus.c.i
 
 # target to preprocess a source file
 Src/stm32f4xx_hal_smbus.c.i:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_smbus.c.i
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_smbus.c.i
 .PHONY : Src/stm32f4xx_hal_smbus.c.i
 
 Src/stm32f4xx_hal_smbus.s: Src/stm32f4xx_hal_smbus.c.s
@@ -1566,7 +1566,7 @@ Src/stm32f4xx_hal_smbus.s: Src/stm32f4xx_hal_smbus.c.s
 
 # target to generate assembly for a file
 Src/stm32f4xx_hal_smbus.c.s:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_smbus.c.s
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_smbus.c.s
 .PHONY : Src/stm32f4xx_hal_smbus.c.s
 
 Src/stm32f4xx_hal_spdifrx.obj: Src/stm32f4xx_hal_spdifrx.c.obj
@@ -1574,7 +1574,7 @@ Src/stm32f4xx_hal_spdifrx.obj: Src/stm32f4xx_hal_spdifrx.c.obj
 
 # target to build an object file
 Src/stm32f4xx_hal_spdifrx.c.obj:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_spdifrx.c.obj
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_spdifrx.c.obj
 .PHONY : Src/stm32f4xx_hal_spdifrx.c.obj
 
 Src/stm32f4xx_hal_spdifrx.i: Src/stm32f4xx_hal_spdifrx.c.i
@@ -1582,7 +1582,7 @@ Src/stm32f4xx_hal_spdifrx.i: Src/stm32f4xx_hal_spdifrx.c.i
 
 # target to preprocess a source file
 Src/stm32f4xx_hal_spdifrx.c.i:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_spdifrx.c.i
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_spdifrx.c.i
 .PHONY : Src/stm32f4xx_hal_spdifrx.c.i
 
 Src/stm32f4xx_hal_spdifrx.s: Src/stm32f4xx_hal_spdifrx.c.s
@@ -1590,7 +1590,7 @@ Src/stm32f4xx_hal_spdifrx.s: Src/stm32f4xx_hal_spdifrx.c.s
 
 # target to generate assembly for a file
 Src/stm32f4xx_hal_spdifrx.c.s:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_spdifrx.c.s
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_spdifrx.c.s
 .PHONY : Src/stm32f4xx_hal_spdifrx.c.s
 
 Src/stm32f4xx_hal_spi.obj: Src/stm32f4xx_hal_spi.c.obj
@@ -1598,7 +1598,7 @@ Src/stm32f4xx_hal_spi.obj: Src/stm32f4xx_hal_spi.c.obj
 
 # target to build an object file
 Src/stm32f4xx_hal_spi.c.obj:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_spi.c.obj
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_spi.c.obj
 .PHONY : Src/stm32f4xx_hal_spi.c.obj
 
 Src/stm32f4xx_hal_spi.i: Src/stm32f4xx_hal_spi.c.i
@@ -1606,7 +1606,7 @@ Src/stm32f4xx_hal_spi.i: Src/stm32f4xx_hal_spi.c.i
 
 # target to preprocess a source file
 Src/stm32f4xx_hal_spi.c.i:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_spi.c.i
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_spi.c.i
 .PHONY : Src/stm32f4xx_hal_spi.c.i
 
 Src/stm32f4xx_hal_spi.s: Src/stm32f4xx_hal_spi.c.s
@@ -1614,7 +1614,7 @@ Src/stm32f4xx_hal_spi.s: Src/stm32f4xx_hal_spi.c.s
 
 # target to generate assembly for a file
 Src/stm32f4xx_hal_spi.c.s:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_spi.c.s
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_spi.c.s
 .PHONY : Src/stm32f4xx_hal_spi.c.s
 
 Src/stm32f4xx_hal_sram.obj: Src/stm32f4xx_hal_sram.c.obj
@@ -1622,7 +1622,7 @@ Src/stm32f4xx_hal_sram.obj: Src/stm32f4xx_hal_sram.c.obj
 
 # target to build an object file
 Src/stm32f4xx_hal_sram.c.obj:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_sram.c.obj
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_sram.c.obj
 .PHONY : Src/stm32f4xx_hal_sram.c.obj
 
 Src/stm32f4xx_hal_sram.i: Src/stm32f4xx_hal_sram.c.i
@@ -1630,7 +1630,7 @@ Src/stm32f4xx_hal_sram.i: Src/stm32f4xx_hal_sram.c.i
 
 # target to preprocess a source file
 Src/stm32f4xx_hal_sram.c.i:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_sram.c.i
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_sram.c.i
 .PHONY : Src/stm32f4xx_hal_sram.c.i
 
 Src/stm32f4xx_hal_sram.s: Src/stm32f4xx_hal_sram.c.s
@@ -1638,7 +1638,7 @@ Src/stm32f4xx_hal_sram.s: Src/stm32f4xx_hal_sram.c.s
 
 # target to generate assembly for a file
 Src/stm32f4xx_hal_sram.c.s:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_sram.c.s
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_sram.c.s
 .PHONY : Src/stm32f4xx_hal_sram.c.s
 
 Src/stm32f4xx_hal_tim.obj: Src/stm32f4xx_hal_tim.c.obj
@@ -1646,7 +1646,7 @@ Src/stm32f4xx_hal_tim.obj: Src/stm32f4xx_hal_tim.c.obj
 
 # target to build an object file
 Src/stm32f4xx_hal_tim.c.obj:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_tim.c.obj
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_tim.c.obj
 .PHONY : Src/stm32f4xx_hal_tim.c.obj
 
 Src/stm32f4xx_hal_tim.i: Src/stm32f4xx_hal_tim.c.i
@@ -1654,7 +1654,7 @@ Src/stm32f4xx_hal_tim.i: Src/stm32f4xx_hal_tim.c.i
 
 # target to preprocess a source file
 Src/stm32f4xx_hal_tim.c.i:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_tim.c.i
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_tim.c.i
 .PHONY : Src/stm32f4xx_hal_tim.c.i
 
 Src/stm32f4xx_hal_tim.s: Src/stm32f4xx_hal_tim.c.s
@@ -1662,7 +1662,7 @@ Src/stm32f4xx_hal_tim.s: Src/stm32f4xx_hal_tim.c.s
 
 # target to generate assembly for a file
 Src/stm32f4xx_hal_tim.c.s:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_tim.c.s
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_tim.c.s
 .PHONY : Src/stm32f4xx_hal_tim.c.s
 
 Src/stm32f4xx_hal_tim_ex.obj: Src/stm32f4xx_hal_tim_ex.c.obj
@@ -1670,7 +1670,7 @@ Src/stm32f4xx_hal_tim_ex.obj: Src/stm32f4xx_hal_tim_ex.c.obj
 
 # target to build an object file
 Src/stm32f4xx_hal_tim_ex.c.obj:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_tim_ex.c.obj
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_tim_ex.c.obj
 .PHONY : Src/stm32f4xx_hal_tim_ex.c.obj
 
 Src/stm32f4xx_hal_tim_ex.i: Src/stm32f4xx_hal_tim_ex.c.i
@@ -1678,7 +1678,7 @@ Src/stm32f4xx_hal_tim_ex.i: Src/stm32f4xx_hal_tim_ex.c.i
 
 # target to preprocess a source file
 Src/stm32f4xx_hal_tim_ex.c.i:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_tim_ex.c.i
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_tim_ex.c.i
 .PHONY : Src/stm32f4xx_hal_tim_ex.c.i
 
 Src/stm32f4xx_hal_tim_ex.s: Src/stm32f4xx_hal_tim_ex.c.s
@@ -1686,7 +1686,7 @@ Src/stm32f4xx_hal_tim_ex.s: Src/stm32f4xx_hal_tim_ex.c.s
 
 # target to generate assembly for a file
 Src/stm32f4xx_hal_tim_ex.c.s:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_tim_ex.c.s
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_tim_ex.c.s
 .PHONY : Src/stm32f4xx_hal_tim_ex.c.s
 
 Src/stm32f4xx_hal_uart.obj: Src/stm32f4xx_hal_uart.c.obj
@@ -1694,7 +1694,7 @@ Src/stm32f4xx_hal_uart.obj: Src/stm32f4xx_hal_uart.c.obj
 
 # target to build an object file
 Src/stm32f4xx_hal_uart.c.obj:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_uart.c.obj
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_uart.c.obj
 .PHONY : Src/stm32f4xx_hal_uart.c.obj
 
 Src/stm32f4xx_hal_uart.i: Src/stm32f4xx_hal_uart.c.i
@@ -1702,7 +1702,7 @@ Src/stm32f4xx_hal_uart.i: Src/stm32f4xx_hal_uart.c.i
 
 # target to preprocess a source file
 Src/stm32f4xx_hal_uart.c.i:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_uart.c.i
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_uart.c.i
 .PHONY : Src/stm32f4xx_hal_uart.c.i
 
 Src/stm32f4xx_hal_uart.s: Src/stm32f4xx_hal_uart.c.s
@@ -1710,7 +1710,7 @@ Src/stm32f4xx_hal_uart.s: Src/stm32f4xx_hal_uart.c.s
 
 # target to generate assembly for a file
 Src/stm32f4xx_hal_uart.c.s:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_uart.c.s
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_uart.c.s
 .PHONY : Src/stm32f4xx_hal_uart.c.s
 
 Src/stm32f4xx_hal_usart.obj: Src/stm32f4xx_hal_usart.c.obj
@@ -1718,7 +1718,7 @@ Src/stm32f4xx_hal_usart.obj: Src/stm32f4xx_hal_usart.c.obj
 
 # target to build an object file
 Src/stm32f4xx_hal_usart.c.obj:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_usart.c.obj
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_usart.c.obj
 .PHONY : Src/stm32f4xx_hal_usart.c.obj
 
 Src/stm32f4xx_hal_usart.i: Src/stm32f4xx_hal_usart.c.i
@@ -1726,7 +1726,7 @@ Src/stm32f4xx_hal_usart.i: Src/stm32f4xx_hal_usart.c.i
 
 # target to preprocess a source file
 Src/stm32f4xx_hal_usart.c.i:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_usart.c.i
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_usart.c.i
 .PHONY : Src/stm32f4xx_hal_usart.c.i
 
 Src/stm32f4xx_hal_usart.s: Src/stm32f4xx_hal_usart.c.s
@@ -1734,7 +1734,7 @@ Src/stm32f4xx_hal_usart.s: Src/stm32f4xx_hal_usart.c.s
 
 # target to generate assembly for a file
 Src/stm32f4xx_hal_usart.c.s:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_usart.c.s
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_usart.c.s
 .PHONY : Src/stm32f4xx_hal_usart.c.s
 
 Src/stm32f4xx_hal_wwdg.obj: Src/stm32f4xx_hal_wwdg.c.obj
@@ -1742,7 +1742,7 @@ Src/stm32f4xx_hal_wwdg.obj: Src/stm32f4xx_hal_wwdg.c.obj
 
 # target to build an object file
 Src/stm32f4xx_hal_wwdg.c.obj:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_wwdg.c.obj
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_wwdg.c.obj
 .PHONY : Src/stm32f4xx_hal_wwdg.c.obj
 
 Src/stm32f4xx_hal_wwdg.i: Src/stm32f4xx_hal_wwdg.c.i
@@ -1750,7 +1750,7 @@ Src/stm32f4xx_hal_wwdg.i: Src/stm32f4xx_hal_wwdg.c.i
 
 # target to preprocess a source file
 Src/stm32f4xx_hal_wwdg.c.i:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_wwdg.c.i
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_wwdg.c.i
 .PHONY : Src/stm32f4xx_hal_wwdg.c.i
 
 Src/stm32f4xx_hal_wwdg.s: Src/stm32f4xx_hal_wwdg.c.s
@@ -1758,7 +1758,7 @@ Src/stm32f4xx_hal_wwdg.s: Src/stm32f4xx_hal_wwdg.c.s
 
 # target to generate assembly for a file
 Src/stm32f4xx_hal_wwdg.c.s:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_wwdg.c.s
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_hal_wwdg.c.s
 .PHONY : Src/stm32f4xx_hal_wwdg.c.s
 
 Src/stm32f4xx_ll_adc.obj: Src/stm32f4xx_ll_adc.c.obj
@@ -1766,7 +1766,7 @@ Src/stm32f4xx_ll_adc.obj: Src/stm32f4xx_ll_adc.c.obj
 
 # target to build an object file
 Src/stm32f4xx_ll_adc.c.obj:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_ll_adc.c.obj
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_ll_adc.c.obj
 .PHONY : Src/stm32f4xx_ll_adc.c.obj
 
 Src/stm32f4xx_ll_adc.i: Src/stm32f4xx_ll_adc.c.i
@@ -1774,7 +1774,7 @@ Src/stm32f4xx_ll_adc.i: Src/stm32f4xx_ll_adc.c.i
 
 # target to preprocess a source file
 Src/stm32f4xx_ll_adc.c.i:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_ll_adc.c.i
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_ll_adc.c.i
 .PHONY : Src/stm32f4xx_ll_adc.c.i
 
 Src/stm32f4xx_ll_adc.s: Src/stm32f4xx_ll_adc.c.s
@@ -1782,7 +1782,7 @@ Src/stm32f4xx_ll_adc.s: Src/stm32f4xx_ll_adc.c.s
 
 # target to generate assembly for a file
 Src/stm32f4xx_ll_adc.c.s:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_ll_adc.c.s
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_ll_adc.c.s
 .PHONY : Src/stm32f4xx_ll_adc.c.s
 
 Src/stm32f4xx_ll_crc.obj: Src/stm32f4xx_ll_crc.c.obj
@@ -1790,7 +1790,7 @@ Src/stm32f4xx_ll_crc.obj: Src/stm32f4xx_ll_crc.c.obj
 
 # target to build an object file
 Src/stm32f4xx_ll_crc.c.obj:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_ll_crc.c.obj
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_ll_crc.c.obj
 .PHONY : Src/stm32f4xx_ll_crc.c.obj
 
 Src/stm32f4xx_ll_crc.i: Src/stm32f4xx_ll_crc.c.i
@@ -1798,7 +1798,7 @@ Src/stm32f4xx_ll_crc.i: Src/stm32f4xx_ll_crc.c.i
 
 # target to preprocess a source file
 Src/stm32f4xx_ll_crc.c.i:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_ll_crc.c.i
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_ll_crc.c.i
 .PHONY : Src/stm32f4xx_ll_crc.c.i
 
 Src/stm32f4xx_ll_crc.s: Src/stm32f4xx_ll_crc.c.s
@@ -1806,7 +1806,7 @@ Src/stm32f4xx_ll_crc.s: Src/stm32f4xx_ll_crc.c.s
 
 # target to generate assembly for a file
 Src/stm32f4xx_ll_crc.c.s:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_ll_crc.c.s
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_ll_crc.c.s
 .PHONY : Src/stm32f4xx_ll_crc.c.s
 
 Src/stm32f4xx_ll_dac.obj: Src/stm32f4xx_ll_dac.c.obj
@@ -1814,7 +1814,7 @@ Src/stm32f4xx_ll_dac.obj: Src/stm32f4xx_ll_dac.c.obj
 
 # target to build an object file
 Src/stm32f4xx_ll_dac.c.obj:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_ll_dac.c.obj
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_ll_dac.c.obj
 .PHONY : Src/stm32f4xx_ll_dac.c.obj
 
 Src/stm32f4xx_ll_dac.i: Src/stm32f4xx_ll_dac.c.i
@@ -1822,7 +1822,7 @@ Src/stm32f4xx_ll_dac.i: Src/stm32f4xx_ll_dac.c.i
 
 # target to preprocess a source file
 Src/stm32f4xx_ll_dac.c.i:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_ll_dac.c.i
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_ll_dac.c.i
 .PHONY : Src/stm32f4xx_ll_dac.c.i
 
 Src/stm32f4xx_ll_dac.s: Src/stm32f4xx_ll_dac.c.s
@@ -1830,7 +1830,7 @@ Src/stm32f4xx_ll_dac.s: Src/stm32f4xx_ll_dac.c.s
 
 # target to generate assembly for a file
 Src/stm32f4xx_ll_dac.c.s:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_ll_dac.c.s
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_ll_dac.c.s
 .PHONY : Src/stm32f4xx_ll_dac.c.s
 
 Src/stm32f4xx_ll_dma.obj: Src/stm32f4xx_ll_dma.c.obj
@@ -1838,7 +1838,7 @@ Src/stm32f4xx_ll_dma.obj: Src/stm32f4xx_ll_dma.c.obj
 
 # target to build an object file
 Src/stm32f4xx_ll_dma.c.obj:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_ll_dma.c.obj
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_ll_dma.c.obj
 .PHONY : Src/stm32f4xx_ll_dma.c.obj
 
 Src/stm32f4xx_ll_dma.i: Src/stm32f4xx_ll_dma.c.i
@@ -1846,7 +1846,7 @@ Src/stm32f4xx_ll_dma.i: Src/stm32f4xx_ll_dma.c.i
 
 # target to preprocess a source file
 Src/stm32f4xx_ll_dma.c.i:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_ll_dma.c.i
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_ll_dma.c.i
 .PHONY : Src/stm32f4xx_ll_dma.c.i
 
 Src/stm32f4xx_ll_dma.s: Src/stm32f4xx_ll_dma.c.s
@@ -1854,7 +1854,7 @@ Src/stm32f4xx_ll_dma.s: Src/stm32f4xx_ll_dma.c.s
 
 # target to generate assembly for a file
 Src/stm32f4xx_ll_dma.c.s:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_ll_dma.c.s
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_ll_dma.c.s
 .PHONY : Src/stm32f4xx_ll_dma.c.s
 
 Src/stm32f4xx_ll_dma2d.obj: Src/stm32f4xx_ll_dma2d.c.obj
@@ -1862,7 +1862,7 @@ Src/stm32f4xx_ll_dma2d.obj: Src/stm32f4xx_ll_dma2d.c.obj
 
 # target to build an object file
 Src/stm32f4xx_ll_dma2d.c.obj:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_ll_dma2d.c.obj
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_ll_dma2d.c.obj
 .PHONY : Src/stm32f4xx_ll_dma2d.c.obj
 
 Src/stm32f4xx_ll_dma2d.i: Src/stm32f4xx_ll_dma2d.c.i
@@ -1870,7 +1870,7 @@ Src/stm32f4xx_ll_dma2d.i: Src/stm32f4xx_ll_dma2d.c.i
 
 # target to preprocess a source file
 Src/stm32f4xx_ll_dma2d.c.i:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_ll_dma2d.c.i
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_ll_dma2d.c.i
 .PHONY : Src/stm32f4xx_ll_dma2d.c.i
 
 Src/stm32f4xx_ll_dma2d.s: Src/stm32f4xx_ll_dma2d.c.s
@@ -1878,7 +1878,7 @@ Src/stm32f4xx_ll_dma2d.s: Src/stm32f4xx_ll_dma2d.c.s
 
 # target to generate assembly for a file
 Src/stm32f4xx_ll_dma2d.c.s:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_ll_dma2d.c.s
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_ll_dma2d.c.s
 .PHONY : Src/stm32f4xx_ll_dma2d.c.s
 
 Src/stm32f4xx_ll_exti.obj: Src/stm32f4xx_ll_exti.c.obj
@@ -1886,7 +1886,7 @@ Src/stm32f4xx_ll_exti.obj: Src/stm32f4xx_ll_exti.c.obj
 
 # target to build an object file
 Src/stm32f4xx_ll_exti.c.obj:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_ll_exti.c.obj
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_ll_exti.c.obj
 .PHONY : Src/stm32f4xx_ll_exti.c.obj
 
 Src/stm32f4xx_ll_exti.i: Src/stm32f4xx_ll_exti.c.i
@@ -1894,7 +1894,7 @@ Src/stm32f4xx_ll_exti.i: Src/stm32f4xx_ll_exti.c.i
 
 # target to preprocess a source file
 Src/stm32f4xx_ll_exti.c.i:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_ll_exti.c.i
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_ll_exti.c.i
 .PHONY : Src/stm32f4xx_ll_exti.c.i
 
 Src/stm32f4xx_ll_exti.s: Src/stm32f4xx_ll_exti.c.s
@@ -1902,7 +1902,7 @@ Src/stm32f4xx_ll_exti.s: Src/stm32f4xx_ll_exti.c.s
 
 # target to generate assembly for a file
 Src/stm32f4xx_ll_exti.c.s:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_ll_exti.c.s
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_ll_exti.c.s
 .PHONY : Src/stm32f4xx_ll_exti.c.s
 
 Src/stm32f4xx_ll_fmc.obj: Src/stm32f4xx_ll_fmc.c.obj
@@ -1910,7 +1910,7 @@ Src/stm32f4xx_ll_fmc.obj: Src/stm32f4xx_ll_fmc.c.obj
 
 # target to build an object file
 Src/stm32f4xx_ll_fmc.c.obj:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_ll_fmc.c.obj
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_ll_fmc.c.obj
 .PHONY : Src/stm32f4xx_ll_fmc.c.obj
 
 Src/stm32f4xx_ll_fmc.i: Src/stm32f4xx_ll_fmc.c.i
@@ -1918,7 +1918,7 @@ Src/stm32f4xx_ll_fmc.i: Src/stm32f4xx_ll_fmc.c.i
 
 # target to preprocess a source file
 Src/stm32f4xx_ll_fmc.c.i:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_ll_fmc.c.i
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_ll_fmc.c.i
 .PHONY : Src/stm32f4xx_ll_fmc.c.i
 
 Src/stm32f4xx_ll_fmc.s: Src/stm32f4xx_ll_fmc.c.s
@@ -1926,7 +1926,7 @@ Src/stm32f4xx_ll_fmc.s: Src/stm32f4xx_ll_fmc.c.s
 
 # target to generate assembly for a file
 Src/stm32f4xx_ll_fmc.c.s:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_ll_fmc.c.s
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_ll_fmc.c.s
 .PHONY : Src/stm32f4xx_ll_fmc.c.s
 
 Src/stm32f4xx_ll_fmpi2c.obj: Src/stm32f4xx_ll_fmpi2c.c.obj
@@ -1934,7 +1934,7 @@ Src/stm32f4xx_ll_fmpi2c.obj: Src/stm32f4xx_ll_fmpi2c.c.obj
 
 # target to build an object file
 Src/stm32f4xx_ll_fmpi2c.c.obj:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_ll_fmpi2c.c.obj
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_ll_fmpi2c.c.obj
 .PHONY : Src/stm32f4xx_ll_fmpi2c.c.obj
 
 Src/stm32f4xx_ll_fmpi2c.i: Src/stm32f4xx_ll_fmpi2c.c.i
@@ -1942,7 +1942,7 @@ Src/stm32f4xx_ll_fmpi2c.i: Src/stm32f4xx_ll_fmpi2c.c.i
 
 # target to preprocess a source file
 Src/stm32f4xx_ll_fmpi2c.c.i:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_ll_fmpi2c.c.i
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_ll_fmpi2c.c.i
 .PHONY : Src/stm32f4xx_ll_fmpi2c.c.i
 
 Src/stm32f4xx_ll_fmpi2c.s: Src/stm32f4xx_ll_fmpi2c.c.s
@@ -1950,7 +1950,7 @@ Src/stm32f4xx_ll_fmpi2c.s: Src/stm32f4xx_ll_fmpi2c.c.s
 
 # target to generate assembly for a file
 Src/stm32f4xx_ll_fmpi2c.c.s:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_ll_fmpi2c.c.s
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_ll_fmpi2c.c.s
 .PHONY : Src/stm32f4xx_ll_fmpi2c.c.s
 
 Src/stm32f4xx_ll_fsmc.obj: Src/stm32f4xx_ll_fsmc.c.obj
@@ -1958,7 +1958,7 @@ Src/stm32f4xx_ll_fsmc.obj: Src/stm32f4xx_ll_fsmc.c.obj
 
 # target to build an object file
 Src/stm32f4xx_ll_fsmc.c.obj:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_ll_fsmc.c.obj
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_ll_fsmc.c.obj
 .PHONY : Src/stm32f4xx_ll_fsmc.c.obj
 
 Src/stm32f4xx_ll_fsmc.i: Src/stm32f4xx_ll_fsmc.c.i
@@ -1966,7 +1966,7 @@ Src/stm32f4xx_ll_fsmc.i: Src/stm32f4xx_ll_fsmc.c.i
 
 # target to preprocess a source file
 Src/stm32f4xx_ll_fsmc.c.i:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_ll_fsmc.c.i
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_ll_fsmc.c.i
 .PHONY : Src/stm32f4xx_ll_fsmc.c.i
 
 Src/stm32f4xx_ll_fsmc.s: Src/stm32f4xx_ll_fsmc.c.s
@@ -1974,7 +1974,7 @@ Src/stm32f4xx_ll_fsmc.s: Src/stm32f4xx_ll_fsmc.c.s
 
 # target to generate assembly for a file
 Src/stm32f4xx_ll_fsmc.c.s:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_ll_fsmc.c.s
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_ll_fsmc.c.s
 .PHONY : Src/stm32f4xx_ll_fsmc.c.s
 
 Src/stm32f4xx_ll_gpio.obj: Src/stm32f4xx_ll_gpio.c.obj
@@ -1982,7 +1982,7 @@ Src/stm32f4xx_ll_gpio.obj: Src/stm32f4xx_ll_gpio.c.obj
 
 # target to build an object file
 Src/stm32f4xx_ll_gpio.c.obj:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_ll_gpio.c.obj
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_ll_gpio.c.obj
 .PHONY : Src/stm32f4xx_ll_gpio.c.obj
 
 Src/stm32f4xx_ll_gpio.i: Src/stm32f4xx_ll_gpio.c.i
@@ -1990,7 +1990,7 @@ Src/stm32f4xx_ll_gpio.i: Src/stm32f4xx_ll_gpio.c.i
 
 # target to preprocess a source file
 Src/stm32f4xx_ll_gpio.c.i:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_ll_gpio.c.i
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_ll_gpio.c.i
 .PHONY : Src/stm32f4xx_ll_gpio.c.i
 
 Src/stm32f4xx_ll_gpio.s: Src/stm32f4xx_ll_gpio.c.s
@@ -1998,7 +1998,7 @@ Src/stm32f4xx_ll_gpio.s: Src/stm32f4xx_ll_gpio.c.s
 
 # target to generate assembly for a file
 Src/stm32f4xx_ll_gpio.c.s:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_ll_gpio.c.s
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_ll_gpio.c.s
 .PHONY : Src/stm32f4xx_ll_gpio.c.s
 
 Src/stm32f4xx_ll_i2c.obj: Src/stm32f4xx_ll_i2c.c.obj
@@ -2006,7 +2006,7 @@ Src/stm32f4xx_ll_i2c.obj: Src/stm32f4xx_ll_i2c.c.obj
 
 # target to build an object file
 Src/stm32f4xx_ll_i2c.c.obj:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_ll_i2c.c.obj
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_ll_i2c.c.obj
 .PHONY : Src/stm32f4xx_ll_i2c.c.obj
 
 Src/stm32f4xx_ll_i2c.i: Src/stm32f4xx_ll_i2c.c.i
@@ -2014,7 +2014,7 @@ Src/stm32f4xx_ll_i2c.i: Src/stm32f4xx_ll_i2c.c.i
 
 # target to preprocess a source file
 Src/stm32f4xx_ll_i2c.c.i:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_ll_i2c.c.i
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_ll_i2c.c.i
 .PHONY : Src/stm32f4xx_ll_i2c.c.i
 
 Src/stm32f4xx_ll_i2c.s: Src/stm32f4xx_ll_i2c.c.s
@@ -2022,7 +2022,7 @@ Src/stm32f4xx_ll_i2c.s: Src/stm32f4xx_ll_i2c.c.s
 
 # target to generate assembly for a file
 Src/stm32f4xx_ll_i2c.c.s:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_ll_i2c.c.s
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_ll_i2c.c.s
 .PHONY : Src/stm32f4xx_ll_i2c.c.s
 
 Src/stm32f4xx_ll_lptim.obj: Src/stm32f4xx_ll_lptim.c.obj
@@ -2030,7 +2030,7 @@ Src/stm32f4xx_ll_lptim.obj: Src/stm32f4xx_ll_lptim.c.obj
 
 # target to build an object file
 Src/stm32f4xx_ll_lptim.c.obj:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_ll_lptim.c.obj
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_ll_lptim.c.obj
 .PHONY : Src/stm32f4xx_ll_lptim.c.obj
 
 Src/stm32f4xx_ll_lptim.i: Src/stm32f4xx_ll_lptim.c.i
@@ -2038,7 +2038,7 @@ Src/stm32f4xx_ll_lptim.i: Src/stm32f4xx_ll_lptim.c.i
 
 # target to preprocess a source file
 Src/stm32f4xx_ll_lptim.c.i:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_ll_lptim.c.i
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_ll_lptim.c.i
 .PHONY : Src/stm32f4xx_ll_lptim.c.i
 
 Src/stm32f4xx_ll_lptim.s: Src/stm32f4xx_ll_lptim.c.s
@@ -2046,7 +2046,7 @@ Src/stm32f4xx_ll_lptim.s: Src/stm32f4xx_ll_lptim.c.s
 
 # target to generate assembly for a file
 Src/stm32f4xx_ll_lptim.c.s:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_ll_lptim.c.s
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_ll_lptim.c.s
 .PHONY : Src/stm32f4xx_ll_lptim.c.s
 
 Src/stm32f4xx_ll_pwr.obj: Src/stm32f4xx_ll_pwr.c.obj
@@ -2054,7 +2054,7 @@ Src/stm32f4xx_ll_pwr.obj: Src/stm32f4xx_ll_pwr.c.obj
 
 # target to build an object file
 Src/stm32f4xx_ll_pwr.c.obj:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_ll_pwr.c.obj
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_ll_pwr.c.obj
 .PHONY : Src/stm32f4xx_ll_pwr.c.obj
 
 Src/stm32f4xx_ll_pwr.i: Src/stm32f4xx_ll_pwr.c.i
@@ -2062,7 +2062,7 @@ Src/stm32f4xx_ll_pwr.i: Src/stm32f4xx_ll_pwr.c.i
 
 # target to preprocess a source file
 Src/stm32f4xx_ll_pwr.c.i:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_ll_pwr.c.i
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_ll_pwr.c.i
 .PHONY : Src/stm32f4xx_ll_pwr.c.i
 
 Src/stm32f4xx_ll_pwr.s: Src/stm32f4xx_ll_pwr.c.s
@@ -2070,7 +2070,7 @@ Src/stm32f4xx_ll_pwr.s: Src/stm32f4xx_ll_pwr.c.s
 
 # target to generate assembly for a file
 Src/stm32f4xx_ll_pwr.c.s:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_ll_pwr.c.s
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_ll_pwr.c.s
 .PHONY : Src/stm32f4xx_ll_pwr.c.s
 
 Src/stm32f4xx_ll_rcc.obj: Src/stm32f4xx_ll_rcc.c.obj
@@ -2078,7 +2078,7 @@ Src/stm32f4xx_ll_rcc.obj: Src/stm32f4xx_ll_rcc.c.obj
 
 # target to build an object file
 Src/stm32f4xx_ll_rcc.c.obj:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_ll_rcc.c.obj
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_ll_rcc.c.obj
 .PHONY : Src/stm32f4xx_ll_rcc.c.obj
 
 Src/stm32f4xx_ll_rcc.i: Src/stm32f4xx_ll_rcc.c.i
@@ -2086,7 +2086,7 @@ Src/stm32f4xx_ll_rcc.i: Src/stm32f4xx_ll_rcc.c.i
 
 # target to preprocess a source file
 Src/stm32f4xx_ll_rcc.c.i:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_ll_rcc.c.i
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_ll_rcc.c.i
 .PHONY : Src/stm32f4xx_ll_rcc.c.i
 
 Src/stm32f4xx_ll_rcc.s: Src/stm32f4xx_ll_rcc.c.s
@@ -2094,7 +2094,7 @@ Src/stm32f4xx_ll_rcc.s: Src/stm32f4xx_ll_rcc.c.s
 
 # target to generate assembly for a file
 Src/stm32f4xx_ll_rcc.c.s:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_ll_rcc.c.s
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_ll_rcc.c.s
 .PHONY : Src/stm32f4xx_ll_rcc.c.s
 
 Src/stm32f4xx_ll_rng.obj: Src/stm32f4xx_ll_rng.c.obj
@@ -2102,7 +2102,7 @@ Src/stm32f4xx_ll_rng.obj: Src/stm32f4xx_ll_rng.c.obj
 
 # target to build an object file
 Src/stm32f4xx_ll_rng.c.obj:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_ll_rng.c.obj
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_ll_rng.c.obj
 .PHONY : Src/stm32f4xx_ll_rng.c.obj
 
 Src/stm32f4xx_ll_rng.i: Src/stm32f4xx_ll_rng.c.i
@@ -2110,7 +2110,7 @@ Src/stm32f4xx_ll_rng.i: Src/stm32f4xx_ll_rng.c.i
 
 # target to preprocess a source file
 Src/stm32f4xx_ll_rng.c.i:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_ll_rng.c.i
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_ll_rng.c.i
 .PHONY : Src/stm32f4xx_ll_rng.c.i
 
 Src/stm32f4xx_ll_rng.s: Src/stm32f4xx_ll_rng.c.s
@@ -2118,7 +2118,7 @@ Src/stm32f4xx_ll_rng.s: Src/stm32f4xx_ll_rng.c.s
 
 # target to generate assembly for a file
 Src/stm32f4xx_ll_rng.c.s:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_ll_rng.c.s
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_ll_rng.c.s
 .PHONY : Src/stm32f4xx_ll_rng.c.s
 
 Src/stm32f4xx_ll_rtc.obj: Src/stm32f4xx_ll_rtc.c.obj
@@ -2126,7 +2126,7 @@ Src/stm32f4xx_ll_rtc.obj: Src/stm32f4xx_ll_rtc.c.obj
 
 # target to build an object file
 Src/stm32f4xx_ll_rtc.c.obj:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_ll_rtc.c.obj
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_ll_rtc.c.obj
 .PHONY : Src/stm32f4xx_ll_rtc.c.obj
 
 Src/stm32f4xx_ll_rtc.i: Src/stm32f4xx_ll_rtc.c.i
@@ -2134,7 +2134,7 @@ Src/stm32f4xx_ll_rtc.i: Src/stm32f4xx_ll_rtc.c.i
 
 # target to preprocess a source file
 Src/stm32f4xx_ll_rtc.c.i:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_ll_rtc.c.i
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_ll_rtc.c.i
 .PHONY : Src/stm32f4xx_ll_rtc.c.i
 
 Src/stm32f4xx_ll_rtc.s: Src/stm32f4xx_ll_rtc.c.s
@@ -2142,7 +2142,7 @@ Src/stm32f4xx_ll_rtc.s: Src/stm32f4xx_ll_rtc.c.s
 
 # target to generate assembly for a file
 Src/stm32f4xx_ll_rtc.c.s:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_ll_rtc.c.s
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_ll_rtc.c.s
 .PHONY : Src/stm32f4xx_ll_rtc.c.s
 
 Src/stm32f4xx_ll_sdmmc.obj: Src/stm32f4xx_ll_sdmmc.c.obj
@@ -2150,7 +2150,7 @@ Src/stm32f4xx_ll_sdmmc.obj: Src/stm32f4xx_ll_sdmmc.c.obj
 
 # target to build an object file
 Src/stm32f4xx_ll_sdmmc.c.obj:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_ll_sdmmc.c.obj
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_ll_sdmmc.c.obj
 .PHONY : Src/stm32f4xx_ll_sdmmc.c.obj
 
 Src/stm32f4xx_ll_sdmmc.i: Src/stm32f4xx_ll_sdmmc.c.i
@@ -2158,7 +2158,7 @@ Src/stm32f4xx_ll_sdmmc.i: Src/stm32f4xx_ll_sdmmc.c.i
 
 # target to preprocess a source file
 Src/stm32f4xx_ll_sdmmc.c.i:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_ll_sdmmc.c.i
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_ll_sdmmc.c.i
 .PHONY : Src/stm32f4xx_ll_sdmmc.c.i
 
 Src/stm32f4xx_ll_sdmmc.s: Src/stm32f4xx_ll_sdmmc.c.s
@@ -2166,7 +2166,7 @@ Src/stm32f4xx_ll_sdmmc.s: Src/stm32f4xx_ll_sdmmc.c.s
 
 # target to generate assembly for a file
 Src/stm32f4xx_ll_sdmmc.c.s:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_ll_sdmmc.c.s
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_ll_sdmmc.c.s
 .PHONY : Src/stm32f4xx_ll_sdmmc.c.s
 
 Src/stm32f4xx_ll_spi.obj: Src/stm32f4xx_ll_spi.c.obj
@@ -2174,7 +2174,7 @@ Src/stm32f4xx_ll_spi.obj: Src/stm32f4xx_ll_spi.c.obj
 
 # target to build an object file
 Src/stm32f4xx_ll_spi.c.obj:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_ll_spi.c.obj
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_ll_spi.c.obj
 .PHONY : Src/stm32f4xx_ll_spi.c.obj
 
 Src/stm32f4xx_ll_spi.i: Src/stm32f4xx_ll_spi.c.i
@@ -2182,7 +2182,7 @@ Src/stm32f4xx_ll_spi.i: Src/stm32f4xx_ll_spi.c.i
 
 # target to preprocess a source file
 Src/stm32f4xx_ll_spi.c.i:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_ll_spi.c.i
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_ll_spi.c.i
 .PHONY : Src/stm32f4xx_ll_spi.c.i
 
 Src/stm32f4xx_ll_spi.s: Src/stm32f4xx_ll_spi.c.s
@@ -2190,7 +2190,7 @@ Src/stm32f4xx_ll_spi.s: Src/stm32f4xx_ll_spi.c.s
 
 # target to generate assembly for a file
 Src/stm32f4xx_ll_spi.c.s:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_ll_spi.c.s
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_ll_spi.c.s
 .PHONY : Src/stm32f4xx_ll_spi.c.s
 
 Src/stm32f4xx_ll_tim.obj: Src/stm32f4xx_ll_tim.c.obj
@@ -2198,7 +2198,7 @@ Src/stm32f4xx_ll_tim.obj: Src/stm32f4xx_ll_tim.c.obj
 
 # target to build an object file
 Src/stm32f4xx_ll_tim.c.obj:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_ll_tim.c.obj
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_ll_tim.c.obj
 .PHONY : Src/stm32f4xx_ll_tim.c.obj
 
 Src/stm32f4xx_ll_tim.i: Src/stm32f4xx_ll_tim.c.i
@@ -2206,7 +2206,7 @@ Src/stm32f4xx_ll_tim.i: Src/stm32f4xx_ll_tim.c.i
 
 # target to preprocess a source file
 Src/stm32f4xx_ll_tim.c.i:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_ll_tim.c.i
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_ll_tim.c.i
 .PHONY : Src/stm32f4xx_ll_tim.c.i
 
 Src/stm32f4xx_ll_tim.s: Src/stm32f4xx_ll_tim.c.s
@@ -2214,7 +2214,7 @@ Src/stm32f4xx_ll_tim.s: Src/stm32f4xx_ll_tim.c.s
 
 # target to generate assembly for a file
 Src/stm32f4xx_ll_tim.c.s:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_ll_tim.c.s
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_ll_tim.c.s
 .PHONY : Src/stm32f4xx_ll_tim.c.s
 
 Src/stm32f4xx_ll_usart.obj: Src/stm32f4xx_ll_usart.c.obj
@@ -2222,7 +2222,7 @@ Src/stm32f4xx_ll_usart.obj: Src/stm32f4xx_ll_usart.c.obj
 
 # target to build an object file
 Src/stm32f4xx_ll_usart.c.obj:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_ll_usart.c.obj
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_ll_usart.c.obj
 .PHONY : Src/stm32f4xx_ll_usart.c.obj
 
 Src/stm32f4xx_ll_usart.i: Src/stm32f4xx_ll_usart.c.i
@@ -2230,7 +2230,7 @@ Src/stm32f4xx_ll_usart.i: Src/stm32f4xx_ll_usart.c.i
 
 # target to preprocess a source file
 Src/stm32f4xx_ll_usart.c.i:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_ll_usart.c.i
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_ll_usart.c.i
 .PHONY : Src/stm32f4xx_ll_usart.c.i
 
 Src/stm32f4xx_ll_usart.s: Src/stm32f4xx_ll_usart.c.s
@@ -2238,7 +2238,7 @@ Src/stm32f4xx_ll_usart.s: Src/stm32f4xx_ll_usart.c.s
 
 # target to generate assembly for a file
 Src/stm32f4xx_ll_usart.c.s:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_ll_usart.c.s
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_ll_usart.c.s
 .PHONY : Src/stm32f4xx_ll_usart.c.s
 
 Src/stm32f4xx_ll_usb.obj: Src/stm32f4xx_ll_usb.c.obj
@@ -2246,7 +2246,7 @@ Src/stm32f4xx_ll_usb.obj: Src/stm32f4xx_ll_usb.c.obj
 
 # target to build an object file
 Src/stm32f4xx_ll_usb.c.obj:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_ll_usb.c.obj
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_ll_usb.c.obj
 .PHONY : Src/stm32f4xx_ll_usb.c.obj
 
 Src/stm32f4xx_ll_usb.i: Src/stm32f4xx_ll_usb.c.i
@@ -2254,7 +2254,7 @@ Src/stm32f4xx_ll_usb.i: Src/stm32f4xx_ll_usb.c.i
 
 # target to preprocess a source file
 Src/stm32f4xx_ll_usb.c.i:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_ll_usb.c.i
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_ll_usb.c.i
 .PHONY : Src/stm32f4xx_ll_usb.c.i
 
 Src/stm32f4xx_ll_usb.s: Src/stm32f4xx_ll_usb.c.s
@@ -2262,7 +2262,7 @@ Src/stm32f4xx_ll_usb.s: Src/stm32f4xx_ll_usb.c.s
 
 # target to generate assembly for a file
 Src/stm32f4xx_ll_usb.c.s:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_ll_usb.c.s
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_ll_usb.c.s
 .PHONY : Src/stm32f4xx_ll_usb.c.s
 
 Src/stm32f4xx_ll_utils.obj: Src/stm32f4xx_ll_utils.c.obj
@@ -2270,7 +2270,7 @@ Src/stm32f4xx_ll_utils.obj: Src/stm32f4xx_ll_utils.c.obj
 
 # target to build an object file
 Src/stm32f4xx_ll_utils.c.obj:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_ll_utils.c.obj
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_ll_utils.c.obj
 .PHONY : Src/stm32f4xx_ll_utils.c.obj
 
 Src/stm32f4xx_ll_utils.i: Src/stm32f4xx_ll_utils.c.i
@@ -2278,7 +2278,7 @@ Src/stm32f4xx_ll_utils.i: Src/stm32f4xx_ll_utils.c.i
 
 # target to preprocess a source file
 Src/stm32f4xx_ll_utils.c.i:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_ll_utils.c.i
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_ll_utils.c.i
 .PHONY : Src/stm32f4xx_ll_utils.c.i
 
 Src/stm32f4xx_ll_utils.s: Src/stm32f4xx_ll_utils.c.s
@@ -2286,7 +2286,7 @@ Src/stm32f4xx_ll_utils.s: Src/stm32f4xx_ll_utils.c.s
 
 # target to generate assembly for a file
 Src/stm32f4xx_ll_utils.c.s:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_ll_utils.c.s
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(MAKE) $(MAKESILENT) -f STM32_HAL_Driver\CMakeFiles\STM32F4xx_HAL_Driver.dir\build.make STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/Src/stm32f4xx_ll_utils.c.s
 .PHONY : Src/stm32f4xx_ll_utils.c.s
 
 # Help Target
@@ -2579,6 +2579,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /d C:\Users\niels\DOCUME~1\ELEKTR~1\JAAR3~1\dspl\software\OP2A2E~1\CLion\Release && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 0
+	cd /d C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Release && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

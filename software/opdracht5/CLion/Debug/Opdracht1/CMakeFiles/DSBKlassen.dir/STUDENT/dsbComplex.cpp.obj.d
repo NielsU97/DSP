@@ -1,5 +1,5 @@
 Opdracht1/CMakeFiles/DSBKlassen.dir/STUDENT/dsbComplex.cpp.obj: \
- C:\Users\niels\Documents\Elektrotechniek\Jaar\ 3\dspl\software\opdracht1\STUDENT\dsbComplex.cpp \
+ C:\Users\niels\Documents\GitHub\DSP\software\opdracht1\STUDENT\dsbComplex.cpp \
  c:\progra~2\gnuarm~1\102021~1.10\arm-none-eabi\include\c++\10.3.1\cmath \
  c:\progra~2\gnuarm~1\102021~1.10\arm-none-eabi\include\c++\10.3.1\arm-none-eabi\thumb\v7e-m+fp\hard\bits\c++config.h \
  c:\progra~2\gnuarm~1\102021~1.10\arm-none-eabi\include\c++\10.3.1\arm-none-eabi\thumb\v7e-m+fp\hard\bits\os_defines.h \
@@ -26,8 +26,8 @@ Opdracht1/CMakeFiles/DSBKlassen.dir/STUDENT/dsbComplex.cpp.obj: \
  c:\progra~2\gnuarm~1\102021~1.10\arm-none-eabi\include\machine\stdlib.h \
  c:\progra~2\gnuarm~1\102021~1.10\arm-none-eabi\include\c++\10.3.1\cassert \
  c:\progra~2\gnuarm~1\102021~1.10\arm-none-eabi\include\assert.h \
- c:\users\niels\docume~1\elektr~1\jaar3~1\dspl\software\opdrac~1\student\h\dsbcomplex.h \
- c:\users\niels\docume~1\elektr~1\jaar3~1\dspl\software\algemeen\h\algdef.h \
+ c:\users\niels\documents\github\dsp\software\opdracht1\student\h\dsbcomplex.h \
+ c:\users\niels\documents\github\dsp\software\algemeen\h\algdef.h \
  c:\progra~2\gnuarm~1\102021~1.10\arm-none-eabi\include\stdio.h \
  c:\progra~2\gnuarm~1\102021~1.10\lib\gcc\arm-none-eabi\10.3.1\include\stdarg.h \
  c:\progra~2\gnuarm~1\102021~1.10\arm-none-eabi\include\sys\types.h \
@@ -41,4 +41,4 @@ Opdracht1/CMakeFiles/DSBKlassen.dir/STUDENT/dsbComplex.cpp.obj: \
  c:\progra~2\gnuarm~1\102021~1.10\arm-none-eabi\include\c++\10.3.1\math.h \
  c:\progra~2\gnuarm~1\102021~1.10\arm-none-eabi\include\string.h \
  c:\progra~2\gnuarm~1\102021~1.10\arm-none-eabi\include\sys\string.h \
- C:/Users/niels/DOCUME~1/ELEKTR~1/JAAR3~1/dspl/software/OP2A2E~1/CLion/Debug/GEGENE~1/DSBConfig.h
+ C:/Users/niels/Documents/GitHub/DSP/software/opdracht5/CLion/Debug/gegenereerd/DSBConfig.h

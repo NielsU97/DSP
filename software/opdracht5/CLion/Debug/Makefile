@@ -56,10 +56,10 @@ RM = "C:\Program Files\JetBrains\CLion 2024.1.4\bin\cmake\win\x64\bin\cmake.exe"
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\opdracht5"
+CMAKE_SOURCE_DIR = C:\Users\niels\Documents\GitHub\DSP\software\opdracht5
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\opdracht5\CLion\Debug"
+CMAKE_BINARY_DIR = C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -86,9 +86,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\opdracht5\CLion\Debug\CMakeFiles" "C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\opdracht5\CLion\Debug\\CMakeFiles\progress.marks"
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Debug\CMakeFiles C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Debug\\CMakeFiles\progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\opdracht5\CLion\Debug\CMakeFiles" 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Debug\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -362,6 +362,30 @@ FirFilterLib/fast:
 	$(MAKE) $(MAKESILENT) -f filter\CMakeFiles\FirFilterLib.dir\build.make filter/CMakeFiles/FirFilterLib.dir/build
 .PHONY : FirFilterLib/fast
 
+2a23e6f7284e02fec3bfbb3657e76c4a/STM32Basis/HAL/gemeenschappelijk/Libraries/Middlewares/ST/STemWin/BSP/STM32F412G-Discovery/standaardGrafiekVenster.obj: 2a23e6f7284e02fec3bfbb3657e76c4a/STM32Basis/HAL/gemeenschappelijk/Libraries/Middlewares/ST/STemWin/BSP/STM32F412G-Discovery/standaardGrafiekVenster.cpp.obj
+.PHONY : 2a23e6f7284e02fec3bfbb3657e76c4a/STM32Basis/HAL/gemeenschappelijk/Libraries/Middlewares/ST/STemWin/BSP/STM32F412G-Discovery/standaardGrafiekVenster.obj
+
+# target to build an object file
+2a23e6f7284e02fec3bfbb3657e76c4a/STM32Basis/HAL/gemeenschappelijk/Libraries/Middlewares/ST/STemWin/BSP/STM32F412G-Discovery/standaardGrafiekVenster.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DSPESEL5.elf.dir\build.make CMakeFiles/DSPESEL5.elf.dir/2a23e6f7284e02fec3bfbb3657e76c4a/STM32Basis/HAL/gemeenschappelijk/Libraries/Middlewares/ST/STemWin/BSP/STM32F412G-Discovery/standaardGrafiekVenster.cpp.obj
+.PHONY : 2a23e6f7284e02fec3bfbb3657e76c4a/STM32Basis/HAL/gemeenschappelijk/Libraries/Middlewares/ST/STemWin/BSP/STM32F412G-Discovery/standaardGrafiekVenster.cpp.obj
+
+2a23e6f7284e02fec3bfbb3657e76c4a/STM32Basis/HAL/gemeenschappelijk/Libraries/Middlewares/ST/STemWin/BSP/STM32F412G-Discovery/standaardGrafiekVenster.i: 2a23e6f7284e02fec3bfbb3657e76c4a/STM32Basis/HAL/gemeenschappelijk/Libraries/Middlewares/ST/STemWin/BSP/STM32F412G-Discovery/standaardGrafiekVenster.cpp.i
+.PHONY : 2a23e6f7284e02fec3bfbb3657e76c4a/STM32Basis/HAL/gemeenschappelijk/Libraries/Middlewares/ST/STemWin/BSP/STM32F412G-Discovery/standaardGrafiekVenster.i
+
+# target to preprocess a source file
+2a23e6f7284e02fec3bfbb3657e76c4a/STM32Basis/HAL/gemeenschappelijk/Libraries/Middlewares/ST/STemWin/BSP/STM32F412G-Discovery/standaardGrafiekVenster.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DSPESEL5.elf.dir\build.make CMakeFiles/DSPESEL5.elf.dir/2a23e6f7284e02fec3bfbb3657e76c4a/STM32Basis/HAL/gemeenschappelijk/Libraries/Middlewares/ST/STemWin/BSP/STM32F412G-Discovery/standaardGrafiekVenster.cpp.i
+.PHONY : 2a23e6f7284e02fec3bfbb3657e76c4a/STM32Basis/HAL/gemeenschappelijk/Libraries/Middlewares/ST/STemWin/BSP/STM32F412G-Discovery/standaardGrafiekVenster.cpp.i
+
+2a23e6f7284e02fec3bfbb3657e76c4a/STM32Basis/HAL/gemeenschappelijk/Libraries/Middlewares/ST/STemWin/BSP/STM32F412G-Discovery/standaardGrafiekVenster.s: 2a23e6f7284e02fec3bfbb3657e76c4a/STM32Basis/HAL/gemeenschappelijk/Libraries/Middlewares/ST/STemWin/BSP/STM32F412G-Discovery/standaardGrafiekVenster.cpp.s
+.PHONY : 2a23e6f7284e02fec3bfbb3657e76c4a/STM32Basis/HAL/gemeenschappelijk/Libraries/Middlewares/ST/STemWin/BSP/STM32F412G-Discovery/standaardGrafiekVenster.s
+
+# target to generate assembly for a file
+2a23e6f7284e02fec3bfbb3657e76c4a/STM32Basis/HAL/gemeenschappelijk/Libraries/Middlewares/ST/STemWin/BSP/STM32F412G-Discovery/standaardGrafiekVenster.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DSPESEL5.elf.dir\build.make CMakeFiles/DSPESEL5.elf.dir/2a23e6f7284e02fec3bfbb3657e76c4a/STM32Basis/HAL/gemeenschappelijk/Libraries/Middlewares/ST/STemWin/BSP/STM32F412G-Discovery/standaardGrafiekVenster.cpp.s
+.PHONY : 2a23e6f7284e02fec3bfbb3657e76c4a/STM32Basis/HAL/gemeenschappelijk/Libraries/Middlewares/ST/STemWin/BSP/STM32F412G-Discovery/standaardGrafiekVenster.cpp.s
+
 Basis/main.obj: Basis/main.cpp.obj
 .PHONY : Basis/main.obj
 
@@ -410,29 +434,29 @@ Basis/rtosTaak.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\DSPESEL5.elf.dir\build.make CMakeFiles/DSPESEL5.elf.dir/Basis/rtosTaak.cpp.s
 .PHONY : Basis/rtosTaak.cpp.s
 
-C_/Users/niels/Documents/Elektrotechniek/Jaar_3/dspl/software/STM32Basis/gemeenschappelijk/basis/syscalls.obj: C_/Users/niels/Documents/Elektrotechniek/Jaar_3/dspl/software/STM32Basis/gemeenschappelijk/basis/syscalls.cpp.obj
-.PHONY : C_/Users/niels/Documents/Elektrotechniek/Jaar_3/dspl/software/STM32Basis/gemeenschappelijk/basis/syscalls.obj
+C_/Users/niels/Documents/GitHub/DSP/software/STM32Basis/gemeenschappelijk/basis/syscalls.obj: C_/Users/niels/Documents/GitHub/DSP/software/STM32Basis/gemeenschappelijk/basis/syscalls.cpp.obj
+.PHONY : C_/Users/niels/Documents/GitHub/DSP/software/STM32Basis/gemeenschappelijk/basis/syscalls.obj
 
 # target to build an object file
-C_/Users/niels/Documents/Elektrotechniek/Jaar_3/dspl/software/STM32Basis/gemeenschappelijk/basis/syscalls.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\DSPESEL5.elf.dir\build.make CMakeFiles/DSPESEL5.elf.dir/C_/Users/niels/Documents/Elektrotechniek/Jaar_3/dspl/software/STM32Basis/gemeenschappelijk/basis/syscalls.cpp.obj
-.PHONY : C_/Users/niels/Documents/Elektrotechniek/Jaar_3/dspl/software/STM32Basis/gemeenschappelijk/basis/syscalls.cpp.obj
+C_/Users/niels/Documents/GitHub/DSP/software/STM32Basis/gemeenschappelijk/basis/syscalls.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DSPESEL5.elf.dir\build.make CMakeFiles/DSPESEL5.elf.dir/C_/Users/niels/Documents/GitHub/DSP/software/STM32Basis/gemeenschappelijk/basis/syscalls.cpp.obj
+.PHONY : C_/Users/niels/Documents/GitHub/DSP/software/STM32Basis/gemeenschappelijk/basis/syscalls.cpp.obj
 
-C_/Users/niels/Documents/Elektrotechniek/Jaar_3/dspl/software/STM32Basis/gemeenschappelijk/basis/syscalls.i: C_/Users/niels/Documents/Elektrotechniek/Jaar_3/dspl/software/STM32Basis/gemeenschappelijk/basis/syscalls.cpp.i
-.PHONY : C_/Users/niels/Documents/Elektrotechniek/Jaar_3/dspl/software/STM32Basis/gemeenschappelijk/basis/syscalls.i
+C_/Users/niels/Documents/GitHub/DSP/software/STM32Basis/gemeenschappelijk/basis/syscalls.i: C_/Users/niels/Documents/GitHub/DSP/software/STM32Basis/gemeenschappelijk/basis/syscalls.cpp.i
+.PHONY : C_/Users/niels/Documents/GitHub/DSP/software/STM32Basis/gemeenschappelijk/basis/syscalls.i
 
 # target to preprocess a source file
-C_/Users/niels/Documents/Elektrotechniek/Jaar_3/dspl/software/STM32Basis/gemeenschappelijk/basis/syscalls.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\DSPESEL5.elf.dir\build.make CMakeFiles/DSPESEL5.elf.dir/C_/Users/niels/Documents/Elektrotechniek/Jaar_3/dspl/software/STM32Basis/gemeenschappelijk/basis/syscalls.cpp.i
-.PHONY : C_/Users/niels/Documents/Elektrotechniek/Jaar_3/dspl/software/STM32Basis/gemeenschappelijk/basis/syscalls.cpp.i
+C_/Users/niels/Documents/GitHub/DSP/software/STM32Basis/gemeenschappelijk/basis/syscalls.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DSPESEL5.elf.dir\build.make CMakeFiles/DSPESEL5.elf.dir/C_/Users/niels/Documents/GitHub/DSP/software/STM32Basis/gemeenschappelijk/basis/syscalls.cpp.i
+.PHONY : C_/Users/niels/Documents/GitHub/DSP/software/STM32Basis/gemeenschappelijk/basis/syscalls.cpp.i
 
-C_/Users/niels/Documents/Elektrotechniek/Jaar_3/dspl/software/STM32Basis/gemeenschappelijk/basis/syscalls.s: C_/Users/niels/Documents/Elektrotechniek/Jaar_3/dspl/software/STM32Basis/gemeenschappelijk/basis/syscalls.cpp.s
-.PHONY : C_/Users/niels/Documents/Elektrotechniek/Jaar_3/dspl/software/STM32Basis/gemeenschappelijk/basis/syscalls.s
+C_/Users/niels/Documents/GitHub/DSP/software/STM32Basis/gemeenschappelijk/basis/syscalls.s: C_/Users/niels/Documents/GitHub/DSP/software/STM32Basis/gemeenschappelijk/basis/syscalls.cpp.s
+.PHONY : C_/Users/niels/Documents/GitHub/DSP/software/STM32Basis/gemeenschappelijk/basis/syscalls.s
 
 # target to generate assembly for a file
-C_/Users/niels/Documents/Elektrotechniek/Jaar_3/dspl/software/STM32Basis/gemeenschappelijk/basis/syscalls.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\DSPESEL5.elf.dir\build.make CMakeFiles/DSPESEL5.elf.dir/C_/Users/niels/Documents/Elektrotechniek/Jaar_3/dspl/software/STM32Basis/gemeenschappelijk/basis/syscalls.cpp.s
-.PHONY : C_/Users/niels/Documents/Elektrotechniek/Jaar_3/dspl/software/STM32Basis/gemeenschappelijk/basis/syscalls.cpp.s
+C_/Users/niels/Documents/GitHub/DSP/software/STM32Basis/gemeenschappelijk/basis/syscalls.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DSPESEL5.elf.dir\build.make CMakeFiles/DSPESEL5.elf.dir/C_/Users/niels/Documents/GitHub/DSP/software/STM32Basis/gemeenschappelijk/basis/syscalls.cpp.s
+.PHONY : C_/Users/niels/Documents/GitHub/DSP/software/STM32Basis/gemeenschappelijk/basis/syscalls.cpp.s
 
 STUDENT/student.obj: STUDENT/student.cpp.obj
 .PHONY : STUDENT/student.obj
@@ -458,77 +482,53 @@ STUDENT/student.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\DSPESEL5.elf.dir\build.make CMakeFiles/DSPESEL5.elf.dir/STUDENT/student.cpp.s
 .PHONY : STUDENT/student.cpp.s
 
-f6ee48ef34f76da495da4d5a6d281dd0/Libraries/Middlewares/ST/STemWin/BSP/STM32F412G-Discovery/GUIConf_stm32412g_discovery.obj: f6ee48ef34f76da495da4d5a6d281dd0/Libraries/Middlewares/ST/STemWin/BSP/STM32F412G-Discovery/GUIConf_stm32412g_discovery.c.obj
-.PHONY : f6ee48ef34f76da495da4d5a6d281dd0/Libraries/Middlewares/ST/STemWin/BSP/STM32F412G-Discovery/GUIConf_stm32412g_discovery.obj
+fcda59fb751c784e5d424650ec26fd5e/HAL/gemeenschappelijk/Libraries/Middlewares/ST/STemWin/BSP/STM32F412G-Discovery/GUIConf_stm32412g_discovery.obj: fcda59fb751c784e5d424650ec26fd5e/HAL/gemeenschappelijk/Libraries/Middlewares/ST/STemWin/BSP/STM32F412G-Discovery/GUIConf_stm32412g_discovery.c.obj
+.PHONY : fcda59fb751c784e5d424650ec26fd5e/HAL/gemeenschappelijk/Libraries/Middlewares/ST/STemWin/BSP/STM32F412G-Discovery/GUIConf_stm32412g_discovery.obj
 
 # target to build an object file
-f6ee48ef34f76da495da4d5a6d281dd0/Libraries/Middlewares/ST/STemWin/BSP/STM32F412G-Discovery/GUIConf_stm32412g_discovery.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\DSPESEL5.elf.dir\build.make CMakeFiles/DSPESEL5.elf.dir/f6ee48ef34f76da495da4d5a6d281dd0/Libraries/Middlewares/ST/STemWin/BSP/STM32F412G-Discovery/GUIConf_stm32412g_discovery.c.obj
-.PHONY : f6ee48ef34f76da495da4d5a6d281dd0/Libraries/Middlewares/ST/STemWin/BSP/STM32F412G-Discovery/GUIConf_stm32412g_discovery.c.obj
+fcda59fb751c784e5d424650ec26fd5e/HAL/gemeenschappelijk/Libraries/Middlewares/ST/STemWin/BSP/STM32F412G-Discovery/GUIConf_stm32412g_discovery.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DSPESEL5.elf.dir\build.make CMakeFiles/DSPESEL5.elf.dir/fcda59fb751c784e5d424650ec26fd5e/HAL/gemeenschappelijk/Libraries/Middlewares/ST/STemWin/BSP/STM32F412G-Discovery/GUIConf_stm32412g_discovery.c.obj
+.PHONY : fcda59fb751c784e5d424650ec26fd5e/HAL/gemeenschappelijk/Libraries/Middlewares/ST/STemWin/BSP/STM32F412G-Discovery/GUIConf_stm32412g_discovery.c.obj
 
-f6ee48ef34f76da495da4d5a6d281dd0/Libraries/Middlewares/ST/STemWin/BSP/STM32F412G-Discovery/GUIConf_stm32412g_discovery.i: f6ee48ef34f76da495da4d5a6d281dd0/Libraries/Middlewares/ST/STemWin/BSP/STM32F412G-Discovery/GUIConf_stm32412g_discovery.c.i
-.PHONY : f6ee48ef34f76da495da4d5a6d281dd0/Libraries/Middlewares/ST/STemWin/BSP/STM32F412G-Discovery/GUIConf_stm32412g_discovery.i
+fcda59fb751c784e5d424650ec26fd5e/HAL/gemeenschappelijk/Libraries/Middlewares/ST/STemWin/BSP/STM32F412G-Discovery/GUIConf_stm32412g_discovery.i: fcda59fb751c784e5d424650ec26fd5e/HAL/gemeenschappelijk/Libraries/Middlewares/ST/STemWin/BSP/STM32F412G-Discovery/GUIConf_stm32412g_discovery.c.i
+.PHONY : fcda59fb751c784e5d424650ec26fd5e/HAL/gemeenschappelijk/Libraries/Middlewares/ST/STemWin/BSP/STM32F412G-Discovery/GUIConf_stm32412g_discovery.i
 
 # target to preprocess a source file
-f6ee48ef34f76da495da4d5a6d281dd0/Libraries/Middlewares/ST/STemWin/BSP/STM32F412G-Discovery/GUIConf_stm32412g_discovery.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\DSPESEL5.elf.dir\build.make CMakeFiles/DSPESEL5.elf.dir/f6ee48ef34f76da495da4d5a6d281dd0/Libraries/Middlewares/ST/STemWin/BSP/STM32F412G-Discovery/GUIConf_stm32412g_discovery.c.i
-.PHONY : f6ee48ef34f76da495da4d5a6d281dd0/Libraries/Middlewares/ST/STemWin/BSP/STM32F412G-Discovery/GUIConf_stm32412g_discovery.c.i
+fcda59fb751c784e5d424650ec26fd5e/HAL/gemeenschappelijk/Libraries/Middlewares/ST/STemWin/BSP/STM32F412G-Discovery/GUIConf_stm32412g_discovery.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DSPESEL5.elf.dir\build.make CMakeFiles/DSPESEL5.elf.dir/fcda59fb751c784e5d424650ec26fd5e/HAL/gemeenschappelijk/Libraries/Middlewares/ST/STemWin/BSP/STM32F412G-Discovery/GUIConf_stm32412g_discovery.c.i
+.PHONY : fcda59fb751c784e5d424650ec26fd5e/HAL/gemeenschappelijk/Libraries/Middlewares/ST/STemWin/BSP/STM32F412G-Discovery/GUIConf_stm32412g_discovery.c.i
 
-f6ee48ef34f76da495da4d5a6d281dd0/Libraries/Middlewares/ST/STemWin/BSP/STM32F412G-Discovery/GUIConf_stm32412g_discovery.s: f6ee48ef34f76da495da4d5a6d281dd0/Libraries/Middlewares/ST/STemWin/BSP/STM32F412G-Discovery/GUIConf_stm32412g_discovery.c.s
-.PHONY : f6ee48ef34f76da495da4d5a6d281dd0/Libraries/Middlewares/ST/STemWin/BSP/STM32F412G-Discovery/GUIConf_stm32412g_discovery.s
+fcda59fb751c784e5d424650ec26fd5e/HAL/gemeenschappelijk/Libraries/Middlewares/ST/STemWin/BSP/STM32F412G-Discovery/GUIConf_stm32412g_discovery.s: fcda59fb751c784e5d424650ec26fd5e/HAL/gemeenschappelijk/Libraries/Middlewares/ST/STemWin/BSP/STM32F412G-Discovery/GUIConf_stm32412g_discovery.c.s
+.PHONY : fcda59fb751c784e5d424650ec26fd5e/HAL/gemeenschappelijk/Libraries/Middlewares/ST/STemWin/BSP/STM32F412G-Discovery/GUIConf_stm32412g_discovery.s
 
 # target to generate assembly for a file
-f6ee48ef34f76da495da4d5a6d281dd0/Libraries/Middlewares/ST/STemWin/BSP/STM32F412G-Discovery/GUIConf_stm32412g_discovery.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\DSPESEL5.elf.dir\build.make CMakeFiles/DSPESEL5.elf.dir/f6ee48ef34f76da495da4d5a6d281dd0/Libraries/Middlewares/ST/STemWin/BSP/STM32F412G-Discovery/GUIConf_stm32412g_discovery.c.s
-.PHONY : f6ee48ef34f76da495da4d5a6d281dd0/Libraries/Middlewares/ST/STemWin/BSP/STM32F412G-Discovery/GUIConf_stm32412g_discovery.c.s
+fcda59fb751c784e5d424650ec26fd5e/HAL/gemeenschappelijk/Libraries/Middlewares/ST/STemWin/BSP/STM32F412G-Discovery/GUIConf_stm32412g_discovery.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DSPESEL5.elf.dir\build.make CMakeFiles/DSPESEL5.elf.dir/fcda59fb751c784e5d424650ec26fd5e/HAL/gemeenschappelijk/Libraries/Middlewares/ST/STemWin/BSP/STM32F412G-Discovery/GUIConf_stm32412g_discovery.c.s
+.PHONY : fcda59fb751c784e5d424650ec26fd5e/HAL/gemeenschappelijk/Libraries/Middlewares/ST/STemWin/BSP/STM32F412G-Discovery/GUIConf_stm32412g_discovery.c.s
 
-f6ee48ef34f76da495da4d5a6d281dd0/Libraries/Middlewares/ST/STemWin/BSP/STM32F412G-Discovery/LCDConf_stm32412g_discovery.obj: f6ee48ef34f76da495da4d5a6d281dd0/Libraries/Middlewares/ST/STemWin/BSP/STM32F412G-Discovery/LCDConf_stm32412g_discovery.c.obj
-.PHONY : f6ee48ef34f76da495da4d5a6d281dd0/Libraries/Middlewares/ST/STemWin/BSP/STM32F412G-Discovery/LCDConf_stm32412g_discovery.obj
+fcda59fb751c784e5d424650ec26fd5e/HAL/gemeenschappelijk/Libraries/Middlewares/ST/STemWin/BSP/STM32F412G-Discovery/LCDConf_stm32412g_discovery.obj: fcda59fb751c784e5d424650ec26fd5e/HAL/gemeenschappelijk/Libraries/Middlewares/ST/STemWin/BSP/STM32F412G-Discovery/LCDConf_stm32412g_discovery.c.obj
+.PHONY : fcda59fb751c784e5d424650ec26fd5e/HAL/gemeenschappelijk/Libraries/Middlewares/ST/STemWin/BSP/STM32F412G-Discovery/LCDConf_stm32412g_discovery.obj
 
 # target to build an object file
-f6ee48ef34f76da495da4d5a6d281dd0/Libraries/Middlewares/ST/STemWin/BSP/STM32F412G-Discovery/LCDConf_stm32412g_discovery.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\DSPESEL5.elf.dir\build.make CMakeFiles/DSPESEL5.elf.dir/f6ee48ef34f76da495da4d5a6d281dd0/Libraries/Middlewares/ST/STemWin/BSP/STM32F412G-Discovery/LCDConf_stm32412g_discovery.c.obj
-.PHONY : f6ee48ef34f76da495da4d5a6d281dd0/Libraries/Middlewares/ST/STemWin/BSP/STM32F412G-Discovery/LCDConf_stm32412g_discovery.c.obj
+fcda59fb751c784e5d424650ec26fd5e/HAL/gemeenschappelijk/Libraries/Middlewares/ST/STemWin/BSP/STM32F412G-Discovery/LCDConf_stm32412g_discovery.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DSPESEL5.elf.dir\build.make CMakeFiles/DSPESEL5.elf.dir/fcda59fb751c784e5d424650ec26fd5e/HAL/gemeenschappelijk/Libraries/Middlewares/ST/STemWin/BSP/STM32F412G-Discovery/LCDConf_stm32412g_discovery.c.obj
+.PHONY : fcda59fb751c784e5d424650ec26fd5e/HAL/gemeenschappelijk/Libraries/Middlewares/ST/STemWin/BSP/STM32F412G-Discovery/LCDConf_stm32412g_discovery.c.obj
 
-f6ee48ef34f76da495da4d5a6d281dd0/Libraries/Middlewares/ST/STemWin/BSP/STM32F412G-Discovery/LCDConf_stm32412g_discovery.i: f6ee48ef34f76da495da4d5a6d281dd0/Libraries/Middlewares/ST/STemWin/BSP/STM32F412G-Discovery/LCDConf_stm32412g_discovery.c.i
-.PHONY : f6ee48ef34f76da495da4d5a6d281dd0/Libraries/Middlewares/ST/STemWin/BSP/STM32F412G-Discovery/LCDConf_stm32412g_discovery.i
-
-# target to preprocess a source file
-f6ee48ef34f76da495da4d5a6d281dd0/Libraries/Middlewares/ST/STemWin/BSP/STM32F412G-Discovery/LCDConf_stm32412g_discovery.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\DSPESEL5.elf.dir\build.make CMakeFiles/DSPESEL5.elf.dir/f6ee48ef34f76da495da4d5a6d281dd0/Libraries/Middlewares/ST/STemWin/BSP/STM32F412G-Discovery/LCDConf_stm32412g_discovery.c.i
-.PHONY : f6ee48ef34f76da495da4d5a6d281dd0/Libraries/Middlewares/ST/STemWin/BSP/STM32F412G-Discovery/LCDConf_stm32412g_discovery.c.i
-
-f6ee48ef34f76da495da4d5a6d281dd0/Libraries/Middlewares/ST/STemWin/BSP/STM32F412G-Discovery/LCDConf_stm32412g_discovery.s: f6ee48ef34f76da495da4d5a6d281dd0/Libraries/Middlewares/ST/STemWin/BSP/STM32F412G-Discovery/LCDConf_stm32412g_discovery.c.s
-.PHONY : f6ee48ef34f76da495da4d5a6d281dd0/Libraries/Middlewares/ST/STemWin/BSP/STM32F412G-Discovery/LCDConf_stm32412g_discovery.s
-
-# target to generate assembly for a file
-f6ee48ef34f76da495da4d5a6d281dd0/Libraries/Middlewares/ST/STemWin/BSP/STM32F412G-Discovery/LCDConf_stm32412g_discovery.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\DSPESEL5.elf.dir\build.make CMakeFiles/DSPESEL5.elf.dir/f6ee48ef34f76da495da4d5a6d281dd0/Libraries/Middlewares/ST/STemWin/BSP/STM32F412G-Discovery/LCDConf_stm32412g_discovery.c.s
-.PHONY : f6ee48ef34f76da495da4d5a6d281dd0/Libraries/Middlewares/ST/STemWin/BSP/STM32F412G-Discovery/LCDConf_stm32412g_discovery.c.s
-
-f6ee48ef34f76da495da4d5a6d281dd0/Libraries/Middlewares/ST/STemWin/BSP/STM32F412G-Discovery/standaardGrafiekVenster.obj: f6ee48ef34f76da495da4d5a6d281dd0/Libraries/Middlewares/ST/STemWin/BSP/STM32F412G-Discovery/standaardGrafiekVenster.cpp.obj
-.PHONY : f6ee48ef34f76da495da4d5a6d281dd0/Libraries/Middlewares/ST/STemWin/BSP/STM32F412G-Discovery/standaardGrafiekVenster.obj
-
-# target to build an object file
-f6ee48ef34f76da495da4d5a6d281dd0/Libraries/Middlewares/ST/STemWin/BSP/STM32F412G-Discovery/standaardGrafiekVenster.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\DSPESEL5.elf.dir\build.make CMakeFiles/DSPESEL5.elf.dir/f6ee48ef34f76da495da4d5a6d281dd0/Libraries/Middlewares/ST/STemWin/BSP/STM32F412G-Discovery/standaardGrafiekVenster.cpp.obj
-.PHONY : f6ee48ef34f76da495da4d5a6d281dd0/Libraries/Middlewares/ST/STemWin/BSP/STM32F412G-Discovery/standaardGrafiekVenster.cpp.obj
-
-f6ee48ef34f76da495da4d5a6d281dd0/Libraries/Middlewares/ST/STemWin/BSP/STM32F412G-Discovery/standaardGrafiekVenster.i: f6ee48ef34f76da495da4d5a6d281dd0/Libraries/Middlewares/ST/STemWin/BSP/STM32F412G-Discovery/standaardGrafiekVenster.cpp.i
-.PHONY : f6ee48ef34f76da495da4d5a6d281dd0/Libraries/Middlewares/ST/STemWin/BSP/STM32F412G-Discovery/standaardGrafiekVenster.i
+fcda59fb751c784e5d424650ec26fd5e/HAL/gemeenschappelijk/Libraries/Middlewares/ST/STemWin/BSP/STM32F412G-Discovery/LCDConf_stm32412g_discovery.i: fcda59fb751c784e5d424650ec26fd5e/HAL/gemeenschappelijk/Libraries/Middlewares/ST/STemWin/BSP/STM32F412G-Discovery/LCDConf_stm32412g_discovery.c.i
+.PHONY : fcda59fb751c784e5d424650ec26fd5e/HAL/gemeenschappelijk/Libraries/Middlewares/ST/STemWin/BSP/STM32F412G-Discovery/LCDConf_stm32412g_discovery.i
 
 # target to preprocess a source file
-f6ee48ef34f76da495da4d5a6d281dd0/Libraries/Middlewares/ST/STemWin/BSP/STM32F412G-Discovery/standaardGrafiekVenster.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\DSPESEL5.elf.dir\build.make CMakeFiles/DSPESEL5.elf.dir/f6ee48ef34f76da495da4d5a6d281dd0/Libraries/Middlewares/ST/STemWin/BSP/STM32F412G-Discovery/standaardGrafiekVenster.cpp.i
-.PHONY : f6ee48ef34f76da495da4d5a6d281dd0/Libraries/Middlewares/ST/STemWin/BSP/STM32F412G-Discovery/standaardGrafiekVenster.cpp.i
+fcda59fb751c784e5d424650ec26fd5e/HAL/gemeenschappelijk/Libraries/Middlewares/ST/STemWin/BSP/STM32F412G-Discovery/LCDConf_stm32412g_discovery.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DSPESEL5.elf.dir\build.make CMakeFiles/DSPESEL5.elf.dir/fcda59fb751c784e5d424650ec26fd5e/HAL/gemeenschappelijk/Libraries/Middlewares/ST/STemWin/BSP/STM32F412G-Discovery/LCDConf_stm32412g_discovery.c.i
+.PHONY : fcda59fb751c784e5d424650ec26fd5e/HAL/gemeenschappelijk/Libraries/Middlewares/ST/STemWin/BSP/STM32F412G-Discovery/LCDConf_stm32412g_discovery.c.i
 
-f6ee48ef34f76da495da4d5a6d281dd0/Libraries/Middlewares/ST/STemWin/BSP/STM32F412G-Discovery/standaardGrafiekVenster.s: f6ee48ef34f76da495da4d5a6d281dd0/Libraries/Middlewares/ST/STemWin/BSP/STM32F412G-Discovery/standaardGrafiekVenster.cpp.s
-.PHONY : f6ee48ef34f76da495da4d5a6d281dd0/Libraries/Middlewares/ST/STemWin/BSP/STM32F412G-Discovery/standaardGrafiekVenster.s
+fcda59fb751c784e5d424650ec26fd5e/HAL/gemeenschappelijk/Libraries/Middlewares/ST/STemWin/BSP/STM32F412G-Discovery/LCDConf_stm32412g_discovery.s: fcda59fb751c784e5d424650ec26fd5e/HAL/gemeenschappelijk/Libraries/Middlewares/ST/STemWin/BSP/STM32F412G-Discovery/LCDConf_stm32412g_discovery.c.s
+.PHONY : fcda59fb751c784e5d424650ec26fd5e/HAL/gemeenschappelijk/Libraries/Middlewares/ST/STemWin/BSP/STM32F412G-Discovery/LCDConf_stm32412g_discovery.s
 
 # target to generate assembly for a file
-f6ee48ef34f76da495da4d5a6d281dd0/Libraries/Middlewares/ST/STemWin/BSP/STM32F412G-Discovery/standaardGrafiekVenster.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\DSPESEL5.elf.dir\build.make CMakeFiles/DSPESEL5.elf.dir/f6ee48ef34f76da495da4d5a6d281dd0/Libraries/Middlewares/ST/STemWin/BSP/STM32F412G-Discovery/standaardGrafiekVenster.cpp.s
-.PHONY : f6ee48ef34f76da495da4d5a6d281dd0/Libraries/Middlewares/ST/STemWin/BSP/STM32F412G-Discovery/standaardGrafiekVenster.cpp.s
+fcda59fb751c784e5d424650ec26fd5e/HAL/gemeenschappelijk/Libraries/Middlewares/ST/STemWin/BSP/STM32F412G-Discovery/LCDConf_stm32412g_discovery.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DSPESEL5.elf.dir\build.make CMakeFiles/DSPESEL5.elf.dir/fcda59fb751c784e5d424650ec26fd5e/HAL/gemeenschappelijk/Libraries/Middlewares/ST/STemWin/BSP/STM32F412G-Discovery/LCDConf_stm32412g_discovery.c.s
+.PHONY : fcda59fb751c784e5d424650ec26fd5e/HAL/gemeenschappelijk/Libraries/Middlewares/ST/STemWin/BSP/STM32F412G-Discovery/LCDConf_stm32412g_discovery.c.s
 
 # Help Target
 help:
@@ -557,27 +557,27 @@ help:
 	@echo ... STemWinOSLib
 	@echo ... Segger_RTT
 	@echo ... UtilitiesLib
+	@echo ... 2a23e6f7284e02fec3bfbb3657e76c4a/STM32Basis/HAL/gemeenschappelijk/Libraries/Middlewares/ST/STemWin/BSP/STM32F412G-Discovery/standaardGrafiekVenster.obj
+	@echo ... 2a23e6f7284e02fec3bfbb3657e76c4a/STM32Basis/HAL/gemeenschappelijk/Libraries/Middlewares/ST/STemWin/BSP/STM32F412G-Discovery/standaardGrafiekVenster.i
+	@echo ... 2a23e6f7284e02fec3bfbb3657e76c4a/STM32Basis/HAL/gemeenschappelijk/Libraries/Middlewares/ST/STemWin/BSP/STM32F412G-Discovery/standaardGrafiekVenster.s
 	@echo ... Basis/main.obj
 	@echo ... Basis/main.i
 	@echo ... Basis/main.s
 	@echo ... Basis/rtosTaak.obj
 	@echo ... Basis/rtosTaak.i
 	@echo ... Basis/rtosTaak.s
-	@echo ... C_/Users/niels/Documents/Elektrotechniek/Jaar_3/dspl/software/STM32Basis/gemeenschappelijk/basis/syscalls.obj
-	@echo ... C_/Users/niels/Documents/Elektrotechniek/Jaar_3/dspl/software/STM32Basis/gemeenschappelijk/basis/syscalls.i
-	@echo ... C_/Users/niels/Documents/Elektrotechniek/Jaar_3/dspl/software/STM32Basis/gemeenschappelijk/basis/syscalls.s
+	@echo ... C_/Users/niels/Documents/GitHub/DSP/software/STM32Basis/gemeenschappelijk/basis/syscalls.obj
+	@echo ... C_/Users/niels/Documents/GitHub/DSP/software/STM32Basis/gemeenschappelijk/basis/syscalls.i
+	@echo ... C_/Users/niels/Documents/GitHub/DSP/software/STM32Basis/gemeenschappelijk/basis/syscalls.s
 	@echo ... STUDENT/student.obj
 	@echo ... STUDENT/student.i
 	@echo ... STUDENT/student.s
-	@echo ... f6ee48ef34f76da495da4d5a6d281dd0/Libraries/Middlewares/ST/STemWin/BSP/STM32F412G-Discovery/GUIConf_stm32412g_discovery.obj
-	@echo ... f6ee48ef34f76da495da4d5a6d281dd0/Libraries/Middlewares/ST/STemWin/BSP/STM32F412G-Discovery/GUIConf_stm32412g_discovery.i
-	@echo ... f6ee48ef34f76da495da4d5a6d281dd0/Libraries/Middlewares/ST/STemWin/BSP/STM32F412G-Discovery/GUIConf_stm32412g_discovery.s
-	@echo ... f6ee48ef34f76da495da4d5a6d281dd0/Libraries/Middlewares/ST/STemWin/BSP/STM32F412G-Discovery/LCDConf_stm32412g_discovery.obj
-	@echo ... f6ee48ef34f76da495da4d5a6d281dd0/Libraries/Middlewares/ST/STemWin/BSP/STM32F412G-Discovery/LCDConf_stm32412g_discovery.i
-	@echo ... f6ee48ef34f76da495da4d5a6d281dd0/Libraries/Middlewares/ST/STemWin/BSP/STM32F412G-Discovery/LCDConf_stm32412g_discovery.s
-	@echo ... f6ee48ef34f76da495da4d5a6d281dd0/Libraries/Middlewares/ST/STemWin/BSP/STM32F412G-Discovery/standaardGrafiekVenster.obj
-	@echo ... f6ee48ef34f76da495da4d5a6d281dd0/Libraries/Middlewares/ST/STemWin/BSP/STM32F412G-Discovery/standaardGrafiekVenster.i
-	@echo ... f6ee48ef34f76da495da4d5a6d281dd0/Libraries/Middlewares/ST/STemWin/BSP/STM32F412G-Discovery/standaardGrafiekVenster.s
+	@echo ... fcda59fb751c784e5d424650ec26fd5e/HAL/gemeenschappelijk/Libraries/Middlewares/ST/STemWin/BSP/STM32F412G-Discovery/GUIConf_stm32412g_discovery.obj
+	@echo ... fcda59fb751c784e5d424650ec26fd5e/HAL/gemeenschappelijk/Libraries/Middlewares/ST/STemWin/BSP/STM32F412G-Discovery/GUIConf_stm32412g_discovery.i
+	@echo ... fcda59fb751c784e5d424650ec26fd5e/HAL/gemeenschappelijk/Libraries/Middlewares/ST/STemWin/BSP/STM32F412G-Discovery/GUIConf_stm32412g_discovery.s
+	@echo ... fcda59fb751c784e5d424650ec26fd5e/HAL/gemeenschappelijk/Libraries/Middlewares/ST/STemWin/BSP/STM32F412G-Discovery/LCDConf_stm32412g_discovery.obj
+	@echo ... fcda59fb751c784e5d424650ec26fd5e/HAL/gemeenschappelijk/Libraries/Middlewares/ST/STemWin/BSP/STM32F412G-Discovery/LCDConf_stm32412g_discovery.i
+	@echo ... fcda59fb751c784e5d424650ec26fd5e/HAL/gemeenschappelijk/Libraries/Middlewares/ST/STemWin/BSP/STM32F412G-Discovery/LCDConf_stm32412g_discovery.s
 .PHONY : help
 
 

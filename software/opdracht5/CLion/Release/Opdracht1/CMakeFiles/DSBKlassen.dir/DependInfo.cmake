@@ -8,8 +8,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "C:/Users/niels/Documents/Elektrotechniek/Jaar 3/dspl/software/opdracht1/STUDENT/dsbComplex.cpp" "Opdracht1/CMakeFiles/DSBKlassen.dir/STUDENT/dsbComplex.cpp.obj" "gcc" "Opdracht1/CMakeFiles/DSBKlassen.dir/STUDENT/dsbComplex.cpp.obj.d"
-  "C:/Users/niels/Documents/Elektrotechniek/Jaar 3/dspl/software/opdracht1/STUDENT/dsbComplexBasis.cpp" "Opdracht1/CMakeFiles/DSBKlassen.dir/STUDENT/dsbComplexBasis.cpp.obj" "gcc" "Opdracht1/CMakeFiles/DSBKlassen.dir/STUDENT/dsbComplexBasis.cpp.obj.d"
+  "C:/Users/niels/Documents/GitHub/DSP/software/opdracht1/STUDENT/dsbComplex.cpp" "Opdracht1/CMakeFiles/DSBKlassen.dir/STUDENT/dsbComplex.cpp.obj" "gcc" "Opdracht1/CMakeFiles/DSBKlassen.dir/STUDENT/dsbComplex.cpp.obj.d"
+  "C:/Users/niels/Documents/GitHub/DSP/software/opdracht1/STUDENT/dsbComplexBasis.cpp" "Opdracht1/CMakeFiles/DSBKlassen.dir/STUDENT/dsbComplexBasis.cpp.obj" "gcc" "Opdracht1/CMakeFiles/DSBKlassen.dir/STUDENT/dsbComplexBasis.cpp.obj.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

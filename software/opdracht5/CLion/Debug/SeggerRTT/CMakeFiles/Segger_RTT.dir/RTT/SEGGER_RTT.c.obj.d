@@ -1,7 +1,7 @@
 SeggerRTT/CMakeFiles/Segger_RTT.dir/RTT/SEGGER_RTT.c.obj: \
- C:\Users\niels\Documents\Elektrotechniek\Jaar\ 3\dspl\software\STM32Basis\Segger\Segger_RTT\RTT\SEGGER_RTT.c \
- C:\Users\niels\Documents\Elektrotechniek\Jaar\ 3\dspl\software\STM32Basis\Segger\Segger_RTT\RTT\SEGGER_RTT.h \
- C:\Users\niels\Documents\Elektrotechniek\Jaar\ 3\dspl\software\STM32Basis\Segger\Segger_RTT\RTT\SEGGER_RTT_Conf.h \
+ C:\Users\niels\Documents\GitHub\DSP\software\STM32Basis\Segger\Segger_RTT\RTT\SEGGER_RTT.c \
+ C:\Users\niels\Documents\GitHub\DSP\software\STM32Basis\Segger\Segger_RTT\RTT\SEGGER_RTT.h \
+ C:\Users\niels\Documents\GitHub\DSP\software\STM32Basis\Segger\Segger_RTT\RTT\SEGGER_RTT_Conf.h \
  c:\progra~2\gnuarm~1\102021~1.10\arm-none-eabi\include\c++\10.3.1\stdlib.h \
  c:\progra~2\gnuarm~1\102021~1.10\arm-none-eabi\include\c++\10.3.1\cstdlib \
  c:\progra~2\gnuarm~1\102021~1.10\arm-none-eabi\include\c++\10.3.1\arm-none-eabi\thumb\v7e-m+fp\hard\bits\c++config.h \

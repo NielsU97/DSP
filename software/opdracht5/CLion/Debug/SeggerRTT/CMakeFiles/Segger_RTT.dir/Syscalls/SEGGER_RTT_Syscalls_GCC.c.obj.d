@@ -1,5 +1,5 @@
 SeggerRTT/CMakeFiles/Segger_RTT.dir/Syscalls/SEGGER_RTT_Syscalls_GCC.c.obj: \
- C:\Users\niels\Documents\Elektrotechniek\Jaar\ 3\dspl\software\STM32Basis\Segger\Segger_RTT\Syscalls\SEGGER_RTT_Syscalls_GCC.c \
+ C:\Users\niels\Documents\GitHub\DSP\software\STM32Basis\Segger\Segger_RTT\Syscalls\SEGGER_RTT_Syscalls_GCC.c \
  c:\progra~2\gnuarm~1\102021~1.10\arm-none-eabi\include\reent.h \
  c:\progra~2\gnuarm~1\102021~1.10\arm-none-eabi\include\sys\reent.h \
  c:\progra~2\gnuarm~1\102021~1.10\arm-none-eabi\include\_ansi.h \
@@ -13,8 +13,8 @@ SeggerRTT/CMakeFiles/Segger_RTT.dir/Syscalls/SEGGER_RTT_Syscalls_GCC.c.obj: \
  c:\progra~2\gnuarm~1\102021~1.10\arm-none-eabi\include\machine\_types.h \
  c:\progra~2\gnuarm~1\102021~1.10\arm-none-eabi\include\machine\_default_types.h \
  c:\progra~2\gnuarm~1\102021~1.10\arm-none-eabi\include\sys\lock.h \
- C:/Users/niels/DOCUME~1/ELEKTR~1/JAAR3~1/dspl/software/STM32B~1/Segger/SEGGER~1/RTT/SEGGER_RTT.h \
- C:/Users/niels/DOCUME~1/ELEKTR~1/JAAR3~1/dspl/software/STM32B~1/Segger/SEGGER~1/RTT/SEGGER_RTT_Conf.h \
+ C:/Users/niels/Documents/GitHub/DSP/software/STM32Basis/Segger/Segger_RTT/RTT/SEGGER_RTT.h \
+ C:/Users/niels/Documents/GitHub/DSP/software/STM32Basis/Segger/Segger_RTT/RTT/SEGGER_RTT_Conf.h \
  c:\progra~2\gnuarm~1\102021~1.10\arm-none-eabi\include\c++\10.3.1\stdlib.h \
  c:\progra~2\gnuarm~1\102021~1.10\arm-none-eabi\include\c++\10.3.1\cstdlib \
  c:\progra~2\gnuarm~1\102021~1.10\arm-none-eabi\include\c++\10.3.1\arm-none-eabi\thumb\v7e-m+fp\hard\bits\c++config.h \
