@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "ESE_BSPProcessor",
+		"source" : "C:/Users/niels/Documents/Elektrotechniek/Jaar 3/dspl/software/STM32Basis/HAL/gemeenschappelijk/Third_Party/ESE_BSP/ESEPracticumboard_RGT+DSB"
+	}
+}

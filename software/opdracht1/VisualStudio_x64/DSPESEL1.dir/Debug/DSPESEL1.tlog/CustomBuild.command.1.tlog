@@ -1,0 +1,10 @@
+^C:\USERS\NIELS\DOCUMENTS\ELEKTROTECHNIEK\JAAR 3\DSPL\SOFTWARE\OPDRACHT1\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Users/niels/Documents/Elektrotechniek/Jaar 3/dspl/software/opdracht1" "-BC:/Users/niels/Documents/Elektrotechniek/Jaar 3/dspl/software/opdracht1/VisualStudio_x64" --check-stamp-file "C:/Users/niels/Documents/Elektrotechniek/Jaar 3/dspl/software/opdracht1/VisualStudio_x64/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "FreeRTOS",
+		"source" : "C:/Users/niels/Documents/Elektrotechniek/Jaar 3/dspl/software/STM32Basis/HAL/gemeenschappelijk/Third_Party/FreeRTOS"
+	}
+}

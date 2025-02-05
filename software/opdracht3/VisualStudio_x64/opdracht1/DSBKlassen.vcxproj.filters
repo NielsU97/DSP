@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\opdracht1\STUDENT\dsbComplex.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\opdracht1\STUDENT\dsbComplexBasis.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\opdracht1\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{845F55D7-8859-382E-B97D-A8E4E9D3A818}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

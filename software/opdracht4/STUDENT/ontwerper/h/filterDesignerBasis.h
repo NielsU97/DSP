@@ -7,7 +7,7 @@ Opdracht 4+6 DSB practicum (applikatie API gedeelte).
 
 @copyright Copyright 2006-2020 ir drs E.J Boks, Hogeschool van Arnhem en Nijmegen. https://ese.han.nl
 
-$URL: https://ese.han.nl/svn/dsbpracticum/trunk/2022/software/opdracht4/STUDENT/ontwerper/h/filterDesignerBasis.h $
+$URL: https://ese.han.nl/svn/dsbpracticum/branches/2022/software/opdracht4/STUDENT/ontwerper/h/filterDesignerBasis.h $
 $Id: filterDesignerBasis.h 298 2022-02-24 14:43:35Z ewout $
 ************************************************************************/
 

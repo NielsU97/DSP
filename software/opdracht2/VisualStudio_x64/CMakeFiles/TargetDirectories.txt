@@ -1,0 +1,14 @@
+C:/Users/niels/Documents/Elektrotechniek/Jaar 3/dspl/software/opdracht2/VisualStudio_x64/CMakeFiles/DSPESEL2.dir
+C:/Users/niels/Documents/Elektrotechniek/Jaar 3/dspl/software/opdracht2/VisualStudio_x64/CMakeFiles/PACKAGE.dir
+C:/Users/niels/Documents/Elektrotechniek/Jaar 3/dspl/software/opdracht2/VisualStudio_x64/CMakeFiles/INSTALL.dir
+C:/Users/niels/Documents/Elektrotechniek/Jaar 3/dspl/software/opdracht2/VisualStudio_x64/CMakeFiles/ALL_BUILD.dir
+C:/Users/niels/Documents/Elektrotechniek/Jaar 3/dspl/software/opdracht2/VisualStudio_x64/CMakeFiles/ZERO_CHECK.dir
+C:/Users/niels/Documents/Elektrotechniek/Jaar 3/dspl/software/opdracht2/VisualStudio_x64/wxBasis/CMakeFiles/wxBasis.dir
+C:/Users/niels/Documents/Elektrotechniek/Jaar 3/dspl/software/opdracht2/VisualStudio_x64/wxBasis/CMakeFiles/PACKAGE.dir
+C:/Users/niels/Documents/Elektrotechniek/Jaar 3/dspl/software/opdracht2/VisualStudio_x64/wxBasis/CMakeFiles/INSTALL.dir
+C:/Users/niels/Documents/Elektrotechniek/Jaar 3/dspl/software/opdracht2/VisualStudio_x64/STUDENT/expAverage/CMakeFiles/ExpAverageLib.dir
+C:/Users/niels/Documents/Elektrotechniek/Jaar 3/dspl/software/opdracht2/VisualStudio_x64/STUDENT/expAverage/CMakeFiles/PACKAGE.dir
+C:/Users/niels/Documents/Elektrotechniek/Jaar 3/dspl/software/opdracht2/VisualStudio_x64/STUDENT/expAverage/CMakeFiles/INSTALL.dir
+C:/Users/niels/Documents/Elektrotechniek/Jaar 3/dspl/software/opdracht2/VisualStudio_x64/Opdracht1/CMakeFiles/DSBKlassen.dir
+C:/Users/niels/Documents/Elektrotechniek/Jaar 3/dspl/software/opdracht2/VisualStudio_x64/Opdracht1/CMakeFiles/PACKAGE.dir
+C:/Users/niels/Documents/Elektrotechniek/Jaar 3/dspl/software/opdracht2/VisualStudio_x64/Opdracht1/CMakeFiles/INSTALL.dir

@@ -6,14 +6,13 @@ Opdracht 5 DSB practicum. Werk deze opdracht verder uit aan de hand van het komm
 
 @copyright Copyright 2006-2020 ir drs E.J Boks, Hogeschool van Arnhem en Nijmegen. https://ese.han.nl/~ewout
 
-$URL: https://ese.han.nl/svn/dsbpracticum/trunk/2022/software/opdracht5/STUDENT/student.cpp $
+$URL: https://ese.han.nl/svn/dsbpracticum/branches/2022/software/opdracht5/STUDENT/student.cpp $
 $Id: student.cpp 313 2023-01-30 13:54:35Z ewout $
 ************************************************************************/
 
 #ifndef OnderwijsOntwikkeling
 #if defined(InterfaceTaalNederlands)
 /* Verwijder dit directief na het invullen van de naam en het studentnummer hieronder. */
-//#error  "Student naam en nummer moeten beneden in de velden worden ingevuld."
 #elif defined (InterfaceTaalEnglish)
 /* Remove this directive after filling out name and student number below. */
 #error  "Student name and number must be entered into the fields below."
@@ -21,7 +20,7 @@ $Id: student.cpp 313 2023-01-30 13:54:35Z ewout $
 #endif
 
 /********  Naam/name     :   Niels Urgert            ******/
-/********  Studentnummer :   1654746            ******/
+/********  Studentnummer :   1654746	             ******/
 
 #include <student.h>
 #include <firfilterexport.h>   /* Dit MOET aanwezig zijn in de map / this MUST be present in the directory.  */
@@ -30,49 +29,43 @@ $Id: student.cpp 313 2023-01-30 13:54:35Z ewout $
 
 void STM32FilterApp::runFilter()
 {
-    //ADCData sampleData;
+	/* Werk deze funktie verder uit om er voor te zorgen dat :
+		- De bemonstering frequentie van de ADC zodanig ingesteld wordt dat aan de opdrachteisen is voldaan.
+		- De ADC start en dat de DA converter ook opgestart is.
+	    - Gewacht wordt tot een sample ingelezen is.
+	    - Het sample uit de ADC wordt opgehaald en wordt ingeladen in het filter.
+	    - Het filter een waarde teruggeeft, welke vervolgens in de DA converter wordt ingeladen.
+	 */
 
-    /* Werk deze funktie verder uit om er voor te zorgen dat :
-        - De bemonstering frequentie van de ADC zodanig ingesteld wordt dat aan de opdrachteisen is voldaan.
-        - De ADC start en dat de DA converter ook opgestart is.
-        - Gewacht wordt tot een sample ingelezen is.
-        - Het sample uit de ADC wordt opgehaald en wordt ingeladen in het filter.
-        - Het filter een waarde teruggeeft, welke vervolgens in de DA converter wordt ingeladen.*/
+	ads131a02.zetSampFreq(ADS131A02::ICLK::ICLK8, ADS131A02::FMOD::FMOD8, ADS131A02::ODR::ODR64); 	// Zet de sample frequentie OP 4 kHz
+    ads131a02.start(DSB_ADC_Channel);  																// Start de ADC kanalen
+    max5136.start(DSB_DAC_Channel); 																// Start de DAC kanalen
 
-    // Set the sampling frequency of the ADC 16,38MHz / 2 / 4 / 521 = 4KHz
-    //ads131a02.start(ADS131A02::ICLK::ICLK4, ADS131A02::FMOD::FMOD2, ADS131A02::ODR::ODR512);
-    ads131a02.zetSampFreq(ADS131A02::ICLK::ICLK8, ADS131A02::FMOD::FMOD8, ADS131A02::ODR::ODR64); // zet sample frequentie
-    ads131a02.start();
+    while(1) {
+        ads131a02.wachtOpDataReady(); 	// Wacht op data van de ADC
+        ads131a02.laadConversieData(); 	// Laad data in ADCdata
 
-    // Start the ADC and DAC
-    max5136.start(DSB_DAC_Channel);
+		// Bitgrootte is 16 bits. Invoer is 24 bits, verwijder 8 bits.
+        Int16 ADCspanning =  static_cast<Int16>(ads131a02[DSB_ADC_Channel] >> 8); 
 
-    while (true) {
-        // Wait until a sample is read
-        ads131a02.wachtOpDataReady();
+		// Voer het signaal door de FIR-filter
+        Int16 filterwaarde = filter.filter(ADCspanning);
 
-        // Read the sample from the ADC
-        ads131a02.laadConversieData();
-
-        // Load the sample into the filter
-        auto filterInvoer = (ads131a02[DSB_ADC_Channel] >>8); //Invoer is 24 bits, alleen 16 bits gebruiken. 8 bits verwijderen.
-        auto spanningshift = static_cast<Int16>(filterInvoer);
-        auto filterWaarde = filter.filter(spanningshift); // laad spanning door firfilter
-        //const auto filterWaarde = filter.filter(filterInvoer) + 0x7FFF;
-
-        if(filterWaarde < minWaarde){
-            minWaarde = filterWaarde;
+		// Normaliseer filterwaarde om negatieve output te voorkomen
+        if(filterwaarde < minWaarde){
+            minWaarde = filterwaarde;
         }
-        filterWaarde -= minWaarde;
+        filterwaarde -= minWaarde;
 
-        auto DACspanning= max5136.dacSpanning(filterWaarde);
+		// Converteer filterwaarde naar een bruikbare DAC-spanning
+        UInt16 DACspanning = max5136.dacSpanning(filterwaarde); 
 
-        // Load the filtered sample into the DAC
-        max5136.zetKanaal(DSB_DAC_Channel, DACspanning);
+		// Stuur de spanning naar de DAC
+        max5136.zetSpanning(DSB_DAC_Channel, DACspanning); 
     }
 
-    /* Hier mag de uitvoering niet komen! / execution should not reach this point! */
-    StopHier();
+	/* Hier mag de uitvoering niet komen! / execution should not reach this point! */
+	StopHier();
 }
 
 void STM32FilterApp::runGUITest()

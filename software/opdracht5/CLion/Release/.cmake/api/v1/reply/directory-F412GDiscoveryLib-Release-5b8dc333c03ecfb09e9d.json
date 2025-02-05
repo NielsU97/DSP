@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "F412GDiscoveryLib",
+		"source" : "C:/Users/niels/Documents/Elektrotechniek/Jaar 3/dspl/software/STM32Basis/HAL/gemeenschappelijk/Libraries/BSP/STM32412G-Discovery"
+	}
+}

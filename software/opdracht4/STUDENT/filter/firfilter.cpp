@@ -9,7 +9,7 @@ Assignment 4 DSB practical (filter part). Elaborate this assignment on the basis
 
 @copyright Copyright 2006-2020 ir drs E.J Boks, Hogeschool van Arnhem en Nijmegen. https://ese.han.nl
 
-$URL: https://ese.han.nl/svn/dsbpracticum/trunk/2022/software/opdracht4/STUDENT/filter/firfilter.cpp $
+$URL: https://ese.han.nl/svn/dsbpracticum/branches/2022/software/opdracht4/STUDENT/filter/firfilter.cpp $
 $Id: firfilter.cpp 313 2023-01-30 13:54:35Z ewout $
 ************************************************************************/
 
@@ -72,6 +72,8 @@ FilterFirInt16::FilterFirInt16(const FilterRingBuffer &coeffs,
 
 #endif
 
+/* STUDENT CODE*/
+/////////////////
 void FilterFirInt16::reset()
 {
     //for (size_t i = 0; i < filterMemory.geefAantal(); ++i) {
@@ -87,26 +89,10 @@ void FilterFirInt16::reset()
 }
 
 /* Implementatie van het filter */
-Int16 FilterFirInt16::filter(const Int16 input) {
-   /* filterMemory.schrijf(input);
-    Int64 som = 0;
-
-    size_t aantalCoeffs = filterCoeffs.geefAantal();
-
-    for (size_t i = 0; i < aantalCoeffs; i++) {
-        const int16_t coeff = filterCoeffs[i];
-        const int16_t current_value = filterMemory.lees();
-        som += static_cast<Int64>(coeff) * current_value;
-    }
-
-    Int64 metScale = som / scaleFactor;
-    Int16 result = static_cast<Int16>(metScale);
-
-    return result;*/
-
+Int16 FilterFirInt16::filter(const Int16 input)
+{
     filterMemory.schrijf(input);
     Int64 som = 0;
-    /* Start of student code */
     for (size_t i = 0; i < filterCoeffs.geefAantal(); i++)
     {
         const float coeff = filterCoeffs[i];
@@ -119,3 +105,7 @@ Int16 FilterFirInt16::filter(const Int16 input) {
 
     return result;
 }
+/* END STUDENT CODE*/
+/////////////////////
+
+

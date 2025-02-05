@@ -1,0 +1,61 @@
+﻿  Checking Build System
+  CMake is re-running because C:/Users/niels/Documents/Elektrotechniek/Jaar 3/dspl/software/opdracht4/VisualStudio_x64/STUDENT/filter/CMakeFiles/generate.stamp is out-of-date.
+    the file 'C:/Users/niels/Documents/Elektrotechniek/Jaar 3/dspl/software/opdracht4/STUDENT/filter/CMakeLists.txt'
+    is newer than 'C:/Users/niels/Documents/Elektrotechniek/Jaar 3/dspl/software/opdracht4/VisualStudio_x64/STUDENT/filter/CMakeFiles/generate.stamp.depend'
+    result='-1'
+  HAN Embedded Systems Engineering DSPESEL/DSBPr practicum.
+  Docent: ir drs E.J Boks (ewout.boks@han.nl)
+  (c)2006-2024 ir drs E.J Boks
+  -- Versiesubondernummer niet gezet. Versiesubondernummer is nu 0
+  Opleiding Embedded Systems Engineering
+  Hogeschool van Arnhem en Nijmegen
+  
+  Systeeminspektie : pointer grootte is : 8 bytes.
+  -- 64 bit architectuur gedetecteerd.
+  -- Uitvoer dir is : C:/Users/niels/Documents/Elektrotechniek/Jaar 3/dspl/software/opdracht4/Executable/x86_64
+  -- Installatie dir is : C:/Users/niels/Documents/Elektrotechniek/Jaar 3/dspl/software/opdracht4/Executable/x86_64/Debug/
+  -- Microsoft Windows wordt gebouwd.
+  -- Naam van de ontwikkelaar : niels
+  HAN ESE wxWidgets software.
+  -- wxWidgets wordt gebouwd met debugging opties
+  -- wxWidgets (Static Debug) wordt gebruikt.
+  -- wxWidgets gevonden op : C:/wxWidgets-3.2.1
+  -- Desktop bouw met Microsoft Visual Studio omgeving.
+  -- wxWidgets versie   : 3.2.1
+  -- wxWidgets Root Dir : C:/wxWidgets-3.2.1
+  -- wxWidgets statisch : OFF
+  -- wxWidgets debug    : ON
+  -- wxWidgets werd gevonden in (C:/wxWidgets-3.2.1).
+  -- wxWidgets gevonden. wxWidgets auto config wordt uitgevoerd.
+  -- InterfaceTaal : Nederlands
+  -- Opdracht 1 wordt als DSBKlassen Lib gebouwd.
+  CMake Warning at C:/Program Files/CMake/share/cmake-3.25/Modules/InstallRequiredSystemLibraries.cmake:625 (message):
+    system runtime library file does not exist: 'C:/Program Files/Microsoft
+    Visual
+    Studio/2022/Community/VC/Redist/MSVC/14.34.31931/x64/Microsoft.VC143.CRT/msvcp140.dll'
+  Call Stack (most recent call first):
+    C:/Users/niels/Documents/Elektrotechniek/Jaar 3/dspl/software/DesktopBasis/buildsystem/FixBundle.cmake:93 (include)
+    STUDENT/ontwerper/CMakeLists.txt:46 (include)
+  
+  
+  CMake Warning at C:/Program Files/CMake/share/cmake-3.25/Modules/InstallRequiredSystemLibraries.cmake:625 (message):
+    system runtime library file does not exist: 'C:/Program Files/Microsoft
+    Visual
+    Studio/2022/Community/VC/Redist/MSVC/14.34.31931/x64/Microsoft.VC143.CRT/vcruntime140.dll'
+  Call Stack (most recent call first):
+    C:/Users/niels/Documents/Elektrotechniek/Jaar 3/dspl/software/DesktopBasis/buildsystem/FixBundle.cmake:93 (include)
+    STUDENT/ontwerper/CMakeLists.txt:46 (include)
+  
+  
+  CMake Warning at C:/Program Files/CMake/share/cmake-3.25/Modules/InstallRequiredSystemLibraries.cmake:625 (message):
+    system runtime library file does not exist: 'C:/Program Files/Microsoft
+    Visual
+    Studio/2022/Community/VC/Redist/MSVC/14.34.31931/x64/Microsoft.VC143.CRT/concrt140.dll'
+  Call Stack (most recent call first):
+    C:/Users/niels/Documents/Elektrotechniek/Jaar 3/dspl/software/DesktopBasis/buildsystem/FixBundle.cmake:93 (include)
+    STUDENT/ontwerper/CMakeLists.txt:46 (include)
+  
+  
+  -- Configuring done
+  -- Generating done
+  -- Build files have been written to: C:/Users/niels/Documents/Elektrotechniek/Jaar 3/dspl/software/opdracht4/VisualStudio_x64

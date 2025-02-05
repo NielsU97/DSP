@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "SeggerRTT",
+		"source" : "C:/Users/niels/Documents/Elektrotechniek/Jaar 3/dspl/software/STM32Basis/Segger/Segger_RTT"
+	}
+}

@@ -16,10 +16,17 @@ ExponentialAverageFilter::ExponentialAverageFilter(const float wf) : alfa(wf),mi
 	assert((alfa > 0.0f) && (alfa <= 1.0f));
 }
 
+/* STUDENT CODE*/
+/////////////////
+
 float ExponentialAverageFilter::filter(const float input)
 {
-	static float filteredValue = input; // initialize filteredValue to input on the first call
-	filteredValue = alfa * input + minalfa * filteredValue; // compute the filtered value
-	return filteredValue; // return the filtered value
+	static float filteredValue = input; 
+	filteredValue = alfa * input + minalfa * filteredValue; // y[n] = α x[n] + (1−α) y[n-1]
+	return filteredValue; 
 }
+
+/* END STUDENT CODE*/
+/////////////////////
+
 

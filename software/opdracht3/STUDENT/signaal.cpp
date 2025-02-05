@@ -9,7 +9,7 @@ Assignment 3 DSB practical. Elaborate this assignment on the basis of the commen
 
 @copyright Copyright 2006-2022 ir drs E.J Boks, Hogeschool van Arnhem en Nijmegen. https://ese.han.nl
 
-$URL: https://ese.han.nl/svn/dsbpracticum/trunk/2022/software/opdracht3/STUDENT/signaal.cpp $
+$URL: https://ese.han.nl/svn/dsbpracticum/branches/2022/software/opdracht3/STUDENT/signaal.cpp $
 $Id: signaal.cpp 322 2023-03-17 09:32:30Z ewout $
 ************************************************************************/
 
@@ -30,7 +30,7 @@ $Id: signaal.cpp 322 2023-03-17 09:32:30Z ewout $
 
 #ifndef OnderwijsOntwikkeling
 #if defined(InterfaceTaalNederlands)
-
+/* Verwijder dit directief na het invullen van de naam en het studentnummer hieronder. */
 #elif defined (InterfaceTaalEnglish)
 /* Remove this directive after filling out name and student number below. */
 #error  "Student name and number must be entered into the fields below."
@@ -55,20 +55,16 @@ void SignaalVenster::tekenReeksHandler(wxCommandEvent &event)
 	{
 		PuntLijst punten; /* wxArray van wxPoints */
 
-		if (SignaalType::DataBestand != signalChoice) //sigKeuze
+		if (SignaalType::DataBestand != signalChoice)
 		{
 			/* amplitude of the signal that must be generated, please use this value. */
-			const wxCoord amplitude = 1024; //32768;   /* amplitude = 80% van scherm */
-			//const auto hoekFreq = (2.0 * Pi * sigFreq) / sampFreq;
-			const double hoekFreq = 2 * Pi * sigFreq / sampFreq;
+			static constexpr auto amplitude = StandaardSignaalAmplitude;
 			auto normHoek = 0.0;
-
 			UInt32 stap = 0;
-
 			signaal.Clear();
 
 #if defined(InterfaceTaalNederlands)
-
+			const auto hoekFreq = 2.0 * Pi*sigFreq / sampFreq;
 			for (auto hoek = 0.0; hoek< 2 *Pi* aantalPerioden; hoek += hoekFreq)
 #else
 			const auto angularFreq = 2.0 * Pi*sigFreq / sampFreq;
@@ -76,35 +72,26 @@ void SignaalVenster::tekenReeksHandler(wxCommandEvent &event)
 #endif
 			{
 				/* English speakers : use this translation */
+		
 				auto signalValue = 0.0f;
 
 				/* Evalueer het signaaltype en vul het juiste signaalformulier in.  Gebruik amplitude */
 				/* Evaluate the signal type and fill in the appropriate signal form */
 				switch (signalChoice)
 				{
-					/* Vul hier alle vereiste case velden van de switch in. */
-					/* Complete all required switch case statements here. */
-					case SignaalType::Cosinus:
-							//signalValue = amplitude * std::cos(normHoek);
-							signalValue = static_cast<double>(amplitude) * cos(hoek);
+					/* STUDENT CODE*/
+					/////////////////
+					case SignaalType::Cosinus: 
+						signalValue = amplitude * cos(hoek);
 						break;
-
 					case SignaalType::Driehoek:
-							signalValue = static_cast<double>(amplitude) * (((2 / Pi) * asin(sin(hoek))));
-							//signalValue = (2.0 / Pi) * asinf(sinf(hoek)); //* amplitude
+						signalValue = amplitude * (2.0 / Pi) * asin(sin(hoek));			// Formule klopt voor het genereren van een triangle wave
 						break;
-
-					case SignaalType::Blokgolf: //std::sin(normHoek) >= 0
-							signalValue = static_cast<double>(amplitude) * ((sin(hoek) >= 0.0) ? 1.0 : -1.0);
-						/*
-						if (stap % aantalSampPerPeriod < aantalSampPerPeriod / 2)
-							signalValue = 1.0; //amplitude
-						else
-							signalValue = -1.0; //-amplitude */
+					case SignaalType::Blokgolf: 
+						signalValue = amplitude * ((sin(hoek) >= 0.0) ? 1.0 : -1.0);	// Formule klopt voor het genereren van een square wave
 						break;
-
-						/* De overgebleven case statements staan vanaf hier. Deze hoeven niet te worden ingevuld.
-						* The remaining case statements are listed from here. These need not be completed. */
+					/* END STUDENT CODE*/
+					/////////////////////
 					case SignaalType::DataBestand:
 						signalValue = -1.234f;
 						wxFAIL_MSG(_("Not allowed."));
@@ -117,7 +104,8 @@ void SignaalVenster::tekenReeksHandler(wxCommandEvent &event)
 						break;
 				}
 				signaal.Add(signalValue);
-				punten.Add(wxPoint(stap++, static_cast<int>(signalValue))); //* 100 ?
+				punten.Add(wxPoint(stap++, static_cast<int>(signalValue)));
+
 			}
 			signaal.Shrink();
 		}
@@ -145,86 +133,66 @@ void SignaalVenster::tekenReeksHandler(wxCommandEvent &event)
 		 * draw the time domain image using auto scaling. */
 		signaalGrafiek->tekenStaven(punten, true);
 
-		/* Nederlands :  Voeg hier de code toe om de FFT uit te rekenen en het frequentiebeeld in fftwGrafiek te tekenen.
-		* tips :
-		* 1) gebruik het r2c plan en de FFTW_PRESERVE_INPUT+FFTW_ESTIMATE vlaggen bij de berekening.
-		* 2) gebruik de Complex en Polair klassen uit opdracht 1.
-		* 3) Bij de faseberekening, forceer de fase naar nul als de grootte van het complexe getal < faseToonGrens (zie de constructor van deze klasse) .
-		* 4) voor info over de uitlezing van de checkboxes voor amplitude en fase , zie http://docs.wxwidgets.org/3.0/classwx_check_box.html */
+		/* STUDENT CODE*/
+		/////////////////
+		/* FFT berekenen */
+		// Memory allocation
+		double* input = (double*)fftw_malloc(signaal.GetCount() * sizeof(double));
+		fftw_complex* output = (fftw_complex*)fftw_malloc((signaal.GetCount() * sizeof(fftw_complex)) / 2 + 1);
 
-		/* English : Add the code here to calculate the FFT and to draw the frequency image in fftw Graph.
-		* tips:
-		* 1) use the r2c plan and the FFTW_PRESERVE_INPUT + FFTW_ESTIMATE flags in the calculation.
-		* 2) use the Complex and Polar classes from assignment 1.
-		* 3) In the phase calculation, force the phase to zero as the size of the complex number <phaseTone Border(see the constructor of this class).
-		* 4) for info about the readout of the amplitude and phase checkboxes, see http ://docs.wxwidgets.org/3.0/classwx_check_box.html */
-
-		/* Calculate FFT */
-		Complex SigComplex;
-		PolairGetal SigPolair;
-		PuntLijst AmplitudePunten;
-		PuntLijst FasePunten;
-
-		double* input;
-		fftw_complex* output;
-		fftw_plan p;
-
-		input = (double*)fftw_malloc(signaal.GetCount() * sizeof(double));
-		output = (fftw_complex*)fftw_malloc((signaal.GetCount() * sizeof(fftw_complex)) / 2 + 1);
-
-		for (auto i = 0; i < signaal.GetCount(); i++) {
+		// Input kopiëren naar FFTW array
+		for (int i = 0; i < signaal.GetCount(); i++) {
 			input[i] = signaal.Item(i);
 		}
 
-		p = fftw_plan_dft_r2c_1d(signaal.GetCount(), input, output, FFTW_PRESERVE_INPUT + FFTW_ESTIMATE);
-		//assert(p == nullptr);
+		// FFTW plan uitvoeren
+		fftw_plan p = fftw_plan_dft_r2c_1d(signaal.GetCount(), input, output, FFTW_PRESERVE_INPUT + FFTW_ESTIMATE);
 		fftw_execute(p);
 
-		for (auto i = 0, minI = 0; i < (signaal.GetCount() / 2 + 1); i++) {
-			//fftw_execute(p);
-			auto real = output[i][0];
-			auto imaginair = output[i][1];
+		// Puntlijsten voor amplitude en fase
+		PuntLijst AmplitudePunten, FasePunten;
+		for (int i = 0, minI = 0; i < (signaal.GetCount() / 2 + 1); i++) {
+			Complex SigComplex(output[i][0], output[i][1]);
+			PolairGetal SigPolair(SigComplex);
+			int magnitude = SigPolair.Mag() * 100;		// Amplitude
+			double argument = SigPolair.Arg() * 100;	// Fase
 
-			SigComplex = Complex(real, imaginair);
-			SigPolair = PolairGetal(SigComplex);
-			AmplitudePunten.Add(wxPoint(i, SigPolair.Mag() * 100));
-			AmplitudePunten.Add(wxPoint(minI, SigPolair.Mag() * 100));
+			// Voeg de positieve en negatieve frequenties toe
+			AmplitudePunten.Add(wxPoint(i, magnitude));
+			AmplitudePunten.Add(wxPoint(minI, magnitude));
 
-			if (SigPolair.Mag() < faseToonGrens) {
-				FasePunten.Add(wxPoint(i, 0));
-				FasePunten.Add(wxPoint(minI, 0));
-			}
-			else {
-				FasePunten.Add(wxPoint(i, SigPolair.Arg() * 100));
-				FasePunten.Add(wxPoint(minI, SigPolair.Arg() * 100));
-			}
+			// Voeg fase toe als amplitude groter dan grens, anders zet fase op 0
+			FasePunten.Add(wxPoint(i, SigPolair.Mag() < faseToonGrens ? 0 : argument));
+			FasePunten.Add(wxPoint(minI, SigPolair.Mag() < faseToonGrens ? 0 : argument));
 
-			minI--;
-			wxLogDebug(_("FFT[%d] = |%lf|/_%lf"), i, SigPolair.Mag(), SigPolair.Arg());
+			wxLogDebug(_("FFT[%d] = |%lf| /_%lf"), i, SigPolair.Mag(), SigPolair.Arg());
+
+			minI--; // Negatieve frequenties
 		}
 
+		// Grafiek instellingen
 		fftwGrafiek->maakSchoon();
 		fftwGrafiek->zetTekenPen(wxPen(wxColour(wxT("BLACK")), 2, wxSOLID));
 		fftwGrafiek->tekenAssenstelsel();
 
-		if (ampCheckBox->GetValue() && faseCheckBox->GetValue()) {
-			fftwGrafiek->zetTekenPen(wxPen(wxColour(wxT("GREEN")), 2, wxSOLID));
-			fftwGrafiek->tekenStaven(AmplitudePunten, true);
-			fftwGrafiek->zetTekenPen(wxPen(wxColour(wxT("RED")), 2, wxSOLID));
-			fftwGrafiek->tekenStaven(FasePunten, true);
-		}
-		else if (ampCheckBox->GetValue()) {
+		// Conditie voor tekenen van amplitude en fase
+		if (ampCheckBox->GetValue()) {
 			fftwGrafiek->zetTekenPen(wxPen(wxColour(wxT("GREEN")), 2, wxSOLID));
 			fftwGrafiek->tekenStaven(AmplitudePunten, true);
 		}
-		else if (faseCheckBox->GetValue()) {
+
+		if (faseCheckBox->GetValue()) {
 			fftwGrafiek->zetTekenPen(wxPen(wxColour(wxT("RED")), 2, wxSOLID));
 			fftwGrafiek->tekenStaven(FasePunten, true);
 		}
 
+		// Opruimen
 		fftw_destroy_plan(p);
 		fftw_free(input);
 		fftw_free(output);
+
+		/* END STUDENT CODE*/
+		/////////////////////
 
 		venster_statusbar->SetStatusText(_("Frequency image was constructed."));
 	}
@@ -254,7 +222,7 @@ SignaalVenster::SignaalVenster(DesktopApp &appRef,
 #else
 		                                             _("Demo version")),
 #endif
-											 signaalPen(wxPen(wxColour(wxT("BLUE")), 2, wxPENSTYLE_SOLID)),
+											  signaalPen(wxPen(wxColour(wxT("BLUE")), 2, wxPENSTYLE_SOLID)),
                                              ampPen(wxPen(wxColour(wxT("GREEN")), 2, wxPENSTYLE_SOLID)),
                                              fasePen(wxPen(wxColour(wxT("RED")), 2, wxPENSTYLE_SOLID)),
                                              assenPen(wxPen(wxColour(wxT("BLACK")), 1, wxPENSTYLE_DOT_DASH))

@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\opdracht3\STUDENT\signaal.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\opdracht3\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Object Include="C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\opdracht3\VisualStudio_x64\opdracht1\DSBKlassen.dir\$(Configuration)\dsbComplex.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\opdracht3\VisualStudio_x64\opdracht1\DSBKlassen.dir\$(Configuration)\dsbComplexBasis.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Object Libraries">
+      <UniqueIdentifier>{CBB72F00-0084-3788-91E7-563B0157FB84}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{845F55D7-8859-382E-B97D-A8E4E9D3A818}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

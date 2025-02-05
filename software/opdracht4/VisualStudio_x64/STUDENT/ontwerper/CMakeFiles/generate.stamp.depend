@@ -1,0 +1,7 @@
+# CMake generation dependency list for this directory.
+C:/Program Files/CMake/share/cmake-3.25/Modules/CPack.cmake
+C:/Program Files/CMake/share/cmake-3.25/Modules/CPackComponent.cmake
+C:/Program Files/CMake/share/cmake-3.25/Modules/InstallRequiredSystemLibraries.cmake
+C:/Program Files/CMake/share/cmake-3.25/Templates/CPackConfig.cmake.in
+C:/Users/niels/Documents/Elektrotechniek/Jaar 3/dspl/software/DesktopBasis/buildsystem/FixBundle.cmake
+C:/Users/niels/Documents/Elektrotechniek/Jaar 3/dspl/software/opdracht4/STUDENT/ontwerper/CMakeLists.txt

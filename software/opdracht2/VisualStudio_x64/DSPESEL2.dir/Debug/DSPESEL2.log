@@ -1,0 +1,5 @@
+﻿  gemwaarde.cpp
+C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\opdracht2\STUDENT\gemwaarde.cpp(92,35): warning C4996: 'wxPen::wxPen': use wxPENSTYLE_XXX constants
+C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\opdracht2\STUDENT\gemwaarde.cpp(59,31): warning C4996: 'wxPen::wxPen': use wxPENSTYLE_XXX constants
+C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\opdracht2\STUDENT\gemwaarde.cpp(67,31): warning C4996: 'wxPen::wxPen': use wxPENSTYLE_XXX constants
+  DSPESEL2.vcxproj -> C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\opdracht2\Executable\x86_64\Debug\bin\DSPESEL2.exe

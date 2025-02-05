@@ -1,0 +1,12 @@
+﻿  algemeen.cpp
+  desktopApp.cpp
+  grafiekVenster.cpp
+  Generating Code...
+  tinyexpr.c
+C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\DesktopBasis\gemeenschappelijk\wxBasis\tinyexpr.c(260,72): warning C4244: 'function': conversion from '__int64' to 'int', possible loss of data
+C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\DesktopBasis\gemeenschappelijk\wxBasis\tinyexpr.c(261,61): warning C4244: 'function': conversion from '__int64' to 'int', possible loss of data
+C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\DesktopBasis\gemeenschappelijk\wxBasis\tinyexpr.c(509,17): warning C4090: 'initializing': different 'const' qualifiers
+C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\DesktopBasis\gemeenschappelijk\wxBasis\tinyexpr.c(533,17): warning C4090: 'initializing': different 'const' qualifiers
+C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\DesktopBasis\gemeenschappelijk\wxBasis\tinyexpr.c(555,17): warning C4090: 'initializing': different 'const' qualifiers
+C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\DesktopBasis\gemeenschappelijk\wxBasis\tinyexpr.c(681,30): warning C4244: '=': conversion from '__int64' to 'int', possible loss of data
+  wxBasis.vcxproj -> C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\opdracht1\VisualStudio_x64\wxBasis\Debug\wxBasis.lib

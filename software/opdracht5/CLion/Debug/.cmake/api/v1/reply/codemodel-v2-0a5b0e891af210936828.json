@@ -1,0 +1,497 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17
+					],
+					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.10.4"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						4,
+						13
+					]
+				},
+				{
+					"build" : "BasisDir",
+					"jsonFile" : "directory-BasisDir-Debug-2365ff9ec3dbdb2abc68.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.10.4"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "C:/Users/niels/Documents/Elektrotechniek/Jaar 3/dspl/software/STM32Basis/gemeenschappelijk/basis",
+					"targetIndexes" : 
+					[
+						5
+					]
+				},
+				{
+					"build" : "STM32CMSIS",
+					"jsonFile" : "directory-STM32CMSIS-Debug-1a535e28d85a5cdee2d1.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.10.4"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "C:/Users/niels/Documents/Elektrotechniek/Jaar 3/dspl/software/STM32Basis/HAL/gemeenschappelijk/Libraries/CMSIS/Device/ST/STM32F4xx",
+					"targetIndexes" : 
+					[
+						1
+					]
+				},
+				{
+					"build" : "STM32_HAL_Driver",
+					"jsonFile" : "directory-STM32_HAL_Driver-Debug-0bee76839618183b4671.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.10.4"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "C:/Users/niels/Documents/Elektrotechniek/Jaar 3/dspl/software/STM32Basis/HAL/gemeenschappelijk/Libraries/STM32F4xx_HAL_Driver",
+					"targetIndexes" : 
+					[
+						15
+					]
+				},
+				{
+					"build" : "FreeRTOS",
+					"jsonFile" : "directory-FreeRTOS-Debug-c3c1d67da5026b3bce7d.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.10.4"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "C:/Users/niels/Documents/Elektrotechniek/Jaar 3/dspl/software/STM32Basis/HAL/gemeenschappelijk/Third_Party/FreeRTOS",
+					"targetIndexes" : 
+					[
+						11
+					]
+				},
+				{
+					"build" : "FreeRTOSOOSchil",
+					"jsonFile" : "directory-FreeRTOSOOSchil-Debug-a9e8c1f1e4f9a779deda.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.10.4"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "C:/Users/niels/Documents/Elektrotechniek/Jaar 3/dspl/software/STM32Basis/HAL/gemeenschappelijk/Third_Party/freertos-addons-1.1.0",
+					"targetIndexes" : 
+					[
+						12
+					]
+				},
+				{
+					"build" : "ESE_FreeRTOS",
+					"jsonFile" : "directory-ESE_FreeRTOS-Debug-7a8403d091198f0b2e89.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.10.4"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "C:/Users/niels/Documents/Elektrotechniek/Jaar 3/dspl/software/STM32Basis/gemeenschappelijk/ESEFreeRTOS",
+					"targetIndexes" : 
+					[
+						6
+					]
+				},
+				{
+					"build" : "Utilities",
+					"jsonFile" : "directory-Utilities-Debug-e17ee883420390b930a7.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.10.4"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "C:/Users/niels/Documents/Elektrotechniek/Jaar 3/dspl/software/STM32Basis/HAL/gemeenschappelijk/Libraries/Utilities",
+					"targetIndexes" : 
+					[
+						18
+					]
+				},
+				{
+					"build" : "STemWin",
+					"jsonFile" : "directory-STemWin-Debug-c87e2fd6f85ff7f2919c.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.10.4"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "C:/Users/niels/Documents/Elektrotechniek/Jaar 3/dspl/software/STM32Basis/HAL/gemeenschappelijk/Libraries/Middlewares/ST/STemWin",
+					"targetIndexes" : 
+					[
+						16
+					]
+				},
+				{
+					"build" : "Components",
+					"jsonFile" : "directory-Components-Debug-676bc54a01279360ed50.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.10.4"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "C:/Users/niels/Documents/Elektrotechniek/Jaar 3/dspl/software/STM32Basis/HAL/gemeenschappelijk/Libraries/BSP/Components",
+					"targetIndexes" : 
+					[
+						2
+					]
+				},
+				{
+					"build" : "F412GDiscoveryLib",
+					"jsonFile" : "directory-F412GDiscoveryLib-Debug-5b8dc333c03ecfb09e9d.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.10.4"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "C:/Users/niels/Documents/Elektrotechniek/Jaar 3/dspl/software/STM32Basis/HAL/gemeenschappelijk/Libraries/BSP/STM32412G-Discovery",
+					"targetIndexes" : 
+					[
+						14
+					]
+				},
+				{
+					"build" : "FatFS",
+					"jsonFile" : "directory-FatFS-Debug-f8676778b9de290cc02f.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.10.4"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "C:/Users/niels/Documents/Elektrotechniek/Jaar 3/dspl/software/STM32Basis/HAL/gemeenschappelijk/Third_Party/FatFs_vR0.13a",
+					"targetIndexes" : 
+					[
+						9
+					]
+				},
+				{
+					"build" : "AlgemeenDir",
+					"jsonFile" : "directory-AlgemeenDir-Debug-14fbf4f4f3dc55d957a1.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.10.4"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "C:/Users/niels/Documents/Elektrotechniek/Jaar 3/dspl/software/algemeen",
+					"targetIndexes" : 
+					[
+						0
+					]
+				},
+				{
+					"build" : "SeggerRTT",
+					"jsonFile" : "directory-SeggerRTT-Debug-fd5be4a749a3a3c67c56.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.10.4"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "C:/Users/niels/Documents/Elektrotechniek/Jaar 3/dspl/software/STM32Basis/Segger/Segger_RTT",
+					"targetIndexes" : 
+					[
+						17
+					]
+				},
+				{
+					"build" : "ESE_DigProcesAansturing",
+					"jsonFile" : "directory-ESE_DigProcesAansturing-Debug-9133ab23967b368d9107.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.10.4"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "C:/Users/niels/Documents/Elektrotechniek/Jaar 3/dspl/software/STM32Basis/HAL/gemeenschappelijk/Third_Party/ESE_BSP/DigProcesAansturing",
+					"targetIndexes" : 
+					[
+						7
+					]
+				},
+				{
+					"build" : "ESE_BSPProcessor",
+					"jsonFile" : "directory-ESE_BSPProcessor-Debug-a7cecb088a72990493fa.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.10.4"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "C:/Users/niels/Documents/Elektrotechniek/Jaar 3/dspl/software/STM32Basis/HAL/gemeenschappelijk/Third_Party/ESE_BSP/ESEPracticumboard_RGT+DSB",
+					"targetIndexes" : 
+					[
+						8
+					]
+				},
+				{
+					"build" : "Opdracht1",
+					"jsonFile" : "directory-Opdracht1-Debug-222666d862ea6af0fe09.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.10.4"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "C:/Users/niels/Documents/Elektrotechniek/Jaar 3/dspl/software/opdracht1",
+					"targetIndexes" : 
+					[
+						3
+					]
+				},
+				{
+					"build" : "filter",
+					"jsonFile" : "directory-filter-Debug-6dc6c4bf2a693274e33c.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.10.4"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "C:/Users/niels/Documents/Elektrotechniek/Jaar 3/dspl/software/opdracht4/STUDENT/filter",
+					"targetIndexes" : 
+					[
+						10
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17
+					],
+					"name" : "DSPESEL5",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17,
+						18
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 12,
+					"id" : "AlgemeenLib::@c9ea90e27d2aaaa1e8d8",
+					"jsonFile" : "target-AlgemeenLib-Debug-80d7b2dd8d8521006eef.json",
+					"name" : "AlgemeenLib",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "CMSISFIRMWARE::@fa0f56eb44f75fca1f95",
+					"jsonFile" : "target-CMSISFIRMWARE-Debug-1d8f628cd3c9c6490374.json",
+					"name" : "CMSISFIRMWARE",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 9,
+					"id" : "ComponentsLib::@cfa59656ef7ed4991838",
+					"jsonFile" : "target-ComponentsLib-Debug-81f28c2b1abcdb5b96a4.json",
+					"name" : "ComponentsLib",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 16,
+					"id" : "DSBKlassen::@7a7322df39b2ab1a1cf6",
+					"jsonFile" : "target-DSBKlassen-Debug-8b4040e6e9b1bbc28720.json",
+					"name" : "DSBKlassen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "DSPESEL5.elf::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-DSPESEL5.elf-Debug-293868d4af047ab11096.json",
+					"name" : "DSPESEL5.elf",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "ESEBasisLib::@e1c818371b133fa2d0d3",
+					"jsonFile" : "target-ESEBasisLib-Debug-381f4a6540b0f6ca0197.json",
+					"name" : "ESEBasisLib",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 6,
+					"id" : "ESEFreeRTOSLib::@50b25c803eff576c3a7f",
+					"jsonFile" : "target-ESEFreeRTOSLib-Debug-3aeb575d3e9ee40e963c.json",
+					"name" : "ESEFreeRTOSLib",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 14,
+					"id" : "ESE_DigProcesAansturingLib::@5998b6de997c94bbc718",
+					"jsonFile" : "target-ESE_DigProcesAansturingLib-Debug-9a0a87eb2c44753cb556.json",
+					"name" : "ESE_DigProcesAansturingLib",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 15,
+					"id" : "ESE_RGT+DSBBoardLib::@e57fa9933ad7964f816e",
+					"jsonFile" : "target-ESE_RGT+DSBBoardLib-Debug-64aecc53bf63fba329c7.json",
+					"name" : "ESE_RGT+DSBBoardLib",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 11,
+					"id" : "FatFs_vR0.13a::@11a175409014e487695e",
+					"jsonFile" : "target-FatFs_vR0.13a-Debug-47c65e00ac6c37cc1c36.json",
+					"name" : "FatFs_vR0.13a",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 17,
+					"id" : "FirFilterLib::@1b82a0487573be3d2cb2",
+					"jsonFile" : "target-FirFilterLib-Debug-c7b6b365918397e32eeb.json",
+					"name" : "FirFilterLib",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 4,
+					"id" : "FreeRTOSLib::@008c63fbeb607cc9a262",
+					"jsonFile" : "target-FreeRTOSLib-Debug-e99d05ab6ac7157c5aac.json",
+					"name" : "FreeRTOSLib",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 5,
+					"id" : "FreeRTOSOOSchilLib::@a57877fec116cec0a057",
+					"jsonFile" : "target-FreeRTOSOOSchilLib-Debug-68da8f3bac28cf014fc8.json",
+					"name" : "FreeRTOSOOSchilLib",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "STM32412G-Discovery::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-STM32412G-Discovery-Debug-a02effdd914567b76f4a.json",
+					"name" : "STM32412G-Discovery",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 10,
+					"id" : "STM32412G-DiscoveryBasis::@5b9f2531aadd3a71560b",
+					"jsonFile" : "target-STM32412G-DiscoveryBasis-Debug-7f31c4f43ff4a2764ecd.json",
+					"name" : "STM32412G-DiscoveryBasis",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "STM32F4xx_HAL_Driver::@bc61cd90d9176ab00a05",
+					"jsonFile" : "target-STM32F4xx_HAL_Driver-Debug-1bf6efedfb757c7a187e.json",
+					"name" : "STM32F4xx_HAL_Driver",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 8,
+					"id" : "STemWinOSLib::@b7298585692cd43acb99",
+					"jsonFile" : "target-STemWinOSLib-Debug-db925424de702099ec48.json",
+					"name" : "STemWinOSLib",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 13,
+					"id" : "Segger_RTT::@696acb003d75e2752808",
+					"jsonFile" : "target-Segger_RTT-Debug-fbad58b10e7152c77c03.json",
+					"name" : "Segger_RTT",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 7,
+					"id" : "UtilitiesLib::@e5cfef13bd836c54df78",
+					"jsonFile" : "target-UtilitiesLib-Debug-518b56719fad84b72b92.json",
+					"name" : "UtilitiesLib",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "C:/Users/niels/Documents/Elektrotechniek/Jaar 3/dspl/software/opdracht5/CLion/Debug",
+		"source" : "C:/Users/niels/Documents/Elektrotechniek/Jaar 3/dspl/software/opdracht5"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 6
+	}
+}

@@ -9,7 +9,7 @@ Assignment 2 DSB practical work. Elaborate this assignment on the basis of the c
 
 @copyright Copyright 2006-2022 ir drs E.J Boks, Hogeschool van Arnhem en Nijmegen. https://ese.han.nl
 
-$URL: https://ese.han.nl/svn/dsbpracticum/trunk/2022/software/opdracht2/STUDENT/gemwaarde.cpp $
+$URL: https://ese.han.nl/svn/dsbpracticum/branches/2022/software/opdracht2/STUDENT/gemwaarde.cpp $
 $Id: gemwaarde.cpp 323 2023-03-17 10:03:47Z ewout $
 ************************************************************************/
 
@@ -24,7 +24,7 @@ $Id: gemwaarde.cpp 323 2023-03-17 10:03:47Z ewout $
 
 #ifndef OnderwijsOntwikkeling
 #if defined(InterfaceTaalNederlands)
-
+/* Verwijder dit directief na het invullen van de naam en het studentnummer hieronder. */
 #elif defined (InterfaceTaalEnglish)
 /* Remove this directive after filling out name and student number below. */
 #error  "Student name and number must be entered into the fields below."
@@ -34,71 +34,40 @@ $Id: gemwaarde.cpp 323 2023-03-17 10:03:47Z ewout $
 /********  Naam/name     : Niels Urgert              ******/
 /********  Studentnummer : 1654746              ******/
 
-void GemWaardeVenster::drawDataHandler(wxCommandEvent& event)
+/* STUDENT CODE*/
+/////////////////
+
+void GemWaardeVenster::drawDataHandler(wxCommandEvent &event)
 {
-    const auto filterType = filterSelectionRadioBox->GetSelection();
-   
-    //fix
-    auto regelparameter = avgValueSlider->GetValue();
-    int u = 0;
-    for (int x = 1; x <= regelparameter; ++x) {
-        u = 101 - x;
-    }
-    regelparameter = u;
-    
-    
-    ExponentialAverageFilter expFilter(1.0f / (static_cast<float>(regelparameter) + 1.0f));
-
-    RingBuffer<double> ringBuffer(static_cast<unsigned short>(avgValueSlider->GetValue()));
-
+    // Definieer lijsten voor de grafiekpunten
     LijnLijst lineList;
     PuntLijst originalSignalPoints;
     PuntLijst averageSignalPoints;
     PuntLijst expSignalPoints;
+
+    auto scaleFactor = (1800.0f - 2.0f) / (1.0f - 0.0f) + 2.0f;
     auto iterator = data.begin();
 
+    /* Grafiek initialiseren */
     grafiek->maakSchoon();
     grafiek->zetOffset(wxPoint(2, 2));
 
-    // Add horizontal lines to the graph
+    // Voeg de originele grafiek toe
+    for (double xAs = 0.0f; iterator < data.end(); iterator++, xAs++) {
+        originalSignalPoints.Add(wxPoint(xAs, *iterator * scaleFactor));
+    }
+    grafiek->zetTekenPen(wxPen(wxColour(wxT("RED")), 2, wxSOLID));
+    grafiek->tekenStaven(originalSignalPoints, false, false);
+
+    // Voeg de horizontale lijnen toe aan de grafiek
     for (int yAs = 10, val = 70; yAs < grafiek->GetMaxHeight() / 5; yAs += 20, val += 5) {
         for (int spatie = 10, xAs = 0; xAs < grafiek->GetMaxWidth(); xAs += 30)
             lineList.Add(LijnStuk(wxPoint(xAs + spatie, yAs), wxPoint(xAs + 20, yAs)));
     }
-
-    // Add original signal points to variable originalSignalPoints
-    for (double xAs = 0.0f; iterator < data.end(); iterator++, xAs++) {
-        const auto yAs = ((*iterator - 0.0f) * (1800.0f - 2.0f) / (1.0f - 0.0f) + 2.0f);
-        originalSignalPoints.Add(wxPoint(xAs, yAs));
-    }
-
-    grafiek->zetTekenPen(wxPen(wxColour(wxT("RED")), 2, wxSOLID));
-    grafiek->tekenStaven(originalSignalPoints, false, false);
-
-    if (filterType == 0) {
-        // Add average signal points to variable averageSignalPoints using ringBuffer
-        for (unsigned short i = 0; i < data.GetCount(); i++) {
-            const auto yAs = ((ringBuffer.gemiddelde(data.Item(i)) - 0.0f) * (1800.0f - 2.0f) / (1.0f - 0.0f) + 2.0f);
-            averageSignalPoints.Add(wxPoint(static_cast<double>(i), yAs));
-        }
-        grafiek->zetTekenPen(wxPen(wxColour(wxT("BLUE")), 2, wxSOLID));
-        grafiek->tekenSpline(averageSignalPoints);
-    }
-    else { 
-        iterator = data.begin();
-        // Add exponential signal points to variable expSignalPoints using expFilter
-        for (double xAs = 0.0f; iterator < data.end(); iterator++, xAs++) {
-            const auto yAs = ((expFilter.filter(*iterator) - 0.0f) * (1800.0f - 2.0f) / (1.0f - 0.0f) + 2.0f);
-            expSignalPoints.Add(wxPoint(xAs, yAs));
-        }
-        grafiek->zetTekenPen(wxPen(wxColour(wxT("BLUE")), 2, wxSOLID));
-        grafiek->tekenSpline(expSignalPoints);
-    }
-
     grafiek->zetTekenPen(wxPen(wxColour(wxT("BLACK")), 2, wxSOLID));
     grafiek->tekenLijnen(lineList, true);
 
-    // Add labels to the graph
+    // Voeg de labels to aan de horizontale lijnen
     grafiek->zetKleineTekst(wxString(wxT("Euro 0.65")), wxPoint(5, 72));
     grafiek->zetKleineTekst(wxString(wxT("Euro 0.70")), wxPoint(5, 177));
     grafiek->zetKleineTekst(wxString(wxT("Euro 0.75")), wxPoint(5, 282));
@@ -106,10 +75,42 @@ void GemWaardeVenster::drawDataHandler(wxCommandEvent& event)
     grafiek->zetKleineTekst(wxString(wxT("Euro 0.85")), wxPoint(5, 492));
     grafiek->zetKleineTekst(wxString(wxT("Euro 0.90")), wxPoint(5, 597));
     grafiek->zetKleineTekst(wxString(wxT("Euro 0.95")), wxPoint(5, 702));
+     
+    /* Filters verwerken */
+    const auto filterType = filterSelectionRadioBox->GetSelection();
+    int regelparameter = 101 - avgValueSlider->GetValue();
 
-	/* laat dit hieronder staan. / Leave this statement in place. */
+    RingBuffer<double> ringBuffer(static_cast<unsigned short>(avgValueSlider->GetValue()));
+    ExponentialAverageFilter expFilter(1.0f / (static_cast<float>(regelparameter) + 1.0f));
+
+    // Tekengrafiek functie
+    auto tekenGrafiek = [&](auto& grafiekPunten, auto dataPunten) {
+        for (unsigned short i = 0; i < data.GetCount(); i++) {
+            const auto yAs = dataPunten(data.Item(i)) * scaleFactor;
+            grafiekPunten.Add(wxPoint(static_cast<double>(i), yAs));
+        }
+        grafiek->zetTekenPen(wxPen(wxColour(wxT("BLUE")), 2, wxSOLID));
+        grafiek->tekenSpline(grafiekPunten);
+        };
+
+    // Selecteer type filter en teken: lopend gemiddelde filter of expontieel lopend gemiddelde filter
+    if (filterType == 0) {
+        tekenGrafiek(averageSignalPoints, [&](double waarde) {
+            return ringBuffer.gemiddelde(waarde);
+            });
+    }
+    else {
+        tekenGrafiek(expSignalPoints, [&](double waarde) {
+            return expFilter.filter(waarde);
+            });
+    }
+
+   	/* laat dit hieronder staan. / Leave this statement in place. */
 	gemVeranderd = false;
 }
+
+/* END STUDENT CODE*/
+/////////////////////
 
 /*********** Geachte studenten , hieronder NIETS veranderen.              ******/
 /*********** Honoured students, do NOT alter anything below this line.  ******/

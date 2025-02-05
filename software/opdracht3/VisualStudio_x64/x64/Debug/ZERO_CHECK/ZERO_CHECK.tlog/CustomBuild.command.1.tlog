@@ -1,0 +1,10 @@
+^C:\USERS\NIELS\DOCUMENTS\ELEKTROTECHNIEK\JAAR 3\DSPL\SOFTWARE\OPDRACHT3\VISUALSTUDIO_X64\CMAKEFILES\120C3960D3D1F5E7A5A1D3D7B121C827\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Users/niels/Documents/Elektrotechniek/Jaar 3/dspl/software/opdracht3" "-BC:/Users/niels/Documents/Elektrotechniek/Jaar 3/dspl/software/opdracht3/VisualStudio_x64" --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file "C:/Users/niels/Documents/Elektrotechniek/Jaar 3/dspl/software/opdracht3/VisualStudio_x64/DSPESEL3.sln"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

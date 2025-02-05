@@ -1,0 +1,5 @@
+﻿  signaal.cpp
+C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\opdracht3\STUDENT\signaal.cpp(172,33): warning C4996: 'wxPen::wxPen': use wxPENSTYLE_XXX constants
+C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\opdracht3\STUDENT\signaal.cpp(176,34): warning C4996: 'wxPen::wxPen': use wxPENSTYLE_XXX constants
+C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\opdracht3\STUDENT\signaal.cpp(181,34): warning C4996: 'wxPen::wxPen': use wxPENSTYLE_XXX constants
+  DSPESEL3.vcxproj -> C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\opdracht3\Executable\x86_64\Debug\bin\DSPESEL3.exe

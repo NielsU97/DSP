@@ -1,0 +1,11 @@
+software/opdracht1/VisualStudio_x64/.vs/DSPESEL1/v17/ipch/AutoPCH/e52315f279dc67c6/APPLIKATIE1.ipch filter=lfs diff=lfs merge=lfs -text
+software/opdracht2/VisualStudio_x64/.vs/DSPESEL2/v17/ipch/AutoPCH/4d4bfb20db33f461/GRAFIEKVENSTER.ipch filter=lfs diff=lfs merge=lfs -text
+software/opdracht1/VisualStudio_x64/DSPESEL1.dir/Debug/DSPESEL1.ilk filter=lfs diff=lfs merge=lfs -text
+software/opdracht2/VisualStudio_x64/.vs/DSPESEL2/v17/ipch/AutoPCH/b3aa590c04c299fa/GEMWAARDE.ipch filter=lfs diff=lfs merge=lfs -text
+software/opdracht3/VisualStudio_x64/DSPESEL3.dir/Debug/DSPESEL3.ilk filter=lfs diff=lfs merge=lfs -text
+software/opdracht4/VisualStudio_x64/.vs/DSPESEL4/v17/ipch/AutoPCH/d661c554b47086ff/FILTERDESIGNER.ipch filter=lfs diff=lfs merge=lfs -text
+software/opdracht4/VisualStudio_x64/.vs/DSPESEL4/v17/ipch/AutoPCH/beaccbe7f1de93ed/FILTERDESIGNERBASIS.ipch filter=lfs diff=lfs merge=lfs -text
+software/opdracht3/VisualStudio_x64/.vs/DSPESEL3/v17/ipch/AutoPCH/e073070704bd31cf/SIGNAAL.ipch filter=lfs diff=lfs merge=lfs -text
+software/opdracht2/VisualStudio_x64/DSPESEL2.dir/Debug/DSPESEL2.ilk filter=lfs diff=lfs merge=lfs -text
+software/opdracht4/Executable/x86_64/Debug/bin/DSPESEL4.pdb filter=lfs diff=lfs merge=lfs -text
+software/opdracht4/VisualStudio_x64/STUDENT/ontwerper/DSPESEL4.dir/Debug/DSPESEL4.ilk filter=lfs diff=lfs merge=lfs -text

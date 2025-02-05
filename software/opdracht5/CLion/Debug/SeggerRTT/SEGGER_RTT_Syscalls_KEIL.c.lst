@@ -1,0 +1,86 @@
+ARM GAS   			page 1
+
+
+   1              	 .cpu cortex-m4
+   2              	 .arch armv7e-m
+   3              	 .fpu fpv4-sp-d16
+   4              	 .eabi_attribute 27,1
+   5              	 .eabi_attribute 28,1
+   6              	 .eabi_attribute 20,1
+   7              	 .eabi_attribute 21,1
+   8              	 .eabi_attribute 23,3
+   9              	 .eabi_attribute 24,1
+  10              	 .eabi_attribute 25,1
+  11              	 .eabi_attribute 26,1
+  12              	 .eabi_attribute 30,6
+  13              	 .eabi_attribute 34,0
+  14              	 .eabi_attribute 18,4
+  15              	 .file "SEGGER_RTT_Syscalls_KEIL.c"
+  16              	 .text
+  17              	.Ltext0:
+  18              	 .cfi_sections .debug_frame
+  19              	.Letext0:
+  20              	 .section .debug_line,"",%progbits
+  21              	.Ldebug_line0:
+  22              	 .section .debug_str,"MS",%progbits,1
+  23              	.LASF0:
+  24 0000 474E5520 	 .ascii "GNU C++14 10.3.1 20210824 (release) -mcpu=cortex-m4"
+  24      432B2B31 
+  24      34203130 
+  24      2E332E31 
+  24      20323032 
+  25 0033 202D6D66 	 .ascii " -mfloat-abi=hard -mfpu=fpv4-sp-d16 -mfix-cortex-m3"
+  25      6C6F6174 
+  25      2D616269 
+  25      3D686172 
+  25      64202D6D 
+  26 0066 2D6C6472 	 .ascii "-ldrd -mthumb -mno-unaligned-access -mapcs-frame -m"
+  26      64202D6D 
+  26      7468756D 
+  26      62202D6D 
+  26      6E6F2D75 
+  27 0099 61726368 	 .ascii "arch=armv7e-m+fp -g -g -O0 -std=c++14 -fsingle-prec"
+  27      3D61726D 
+  27      7637652D 
+  27      6D2B6670 
+  27      202D6720 
+  28 00cc 6973696F 	 .ascii "ision-constant -funsigned-char -ffunction-sections "
+  28      6E2D636F 
+  28      6E737461 
+  28      6E74202D 
+  28      66756E73 
+  29 00ff 2D666461 	 .ascii "-fdata-sections\000"
+  29      74612D73 
+  29      65637469 
+  29      6F6E7300 
+  30              	.LASF1:
+  31 010f 433A5C55 	 .ascii "C:\\Users\\niels\\Documents\\Elektrotechniek\\Jaar "
+  31      73657273 
+  31      5C6E6965 
+  31      6C735C44 
+ARM GAS   			page 2
+
+
+  31      6F63756D 
+  32 013d 335C6473 	 .ascii "3\\dspl\\software\\STM32Basis\\Segger\\Segger_RTT\\"
+  32      706C5C73 
+  32      6F667477 
+  32      6172655C 
+  32      53544D33 
+  33 016a 53797363 	 .ascii "Syscalls\\SEGGER_RTT_Syscalls_KEIL.c\000"
+  33      616C6C73 
+  33      5C534547 
+  33      4745525F 
+  33      5254545F 
+  34              	.LASF2:
+  35 018e 433A5C55 	 .ascii "C:\\Users\\niels\\DOCUME~1\\ELEKTR~1\\JAAR3~1\\dspl"
+  35      73657273 
+  35      5C6E6965 
+  35      6C735C44 
+  35      4F43554D 
+  36 01bb 5C736F66 	 .ascii "\\software\\OP2A2E~1\\CLion\\Debug\\SEGGER~1\000"
+  36      74776172 
+  36      655C4F50 
+  36      32413245 
+  36      7E315C43 
+  37              	 .ident "GCC: (GNU Arm Embedded Toolchain 10.3-2021.10) 10.3.1 20210824 (release)"

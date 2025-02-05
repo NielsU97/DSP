@@ -1,0 +1,351 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{62FECF0F-09F3-3CDA-90F1-AB4832DB7882}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.22621.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>DSPESEL4</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\opdracht4\Executable\x86_64\Debug\bin\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">DSPESEL4.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">DSPESEL4</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\opdracht4\Executable\x86_64\Release\bin\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">DSPESEL4.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">DSPESEL4</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\opdracht4\Executable\x86_64\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">DSPESEL4.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">DSPESEL4</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\opdracht4\Executable\x86_64\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">DSPESEL4.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">DSPESEL4</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\DesktopBasis\gemeenschappelijk\h;C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\DesktopBasis\gemeenschappelijk\logos;C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\opdracht4\VisualStudio_x64\gegenereerd;C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\DesktopBasis\gemeenschappelijk\wxBasis\h;C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\opdracht4\..\opdracht1;C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\opdracht4\..\opdracht1\STUDENT\h;C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\opdracht4\Basis\h;C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\opdracht4\STUDENT\filter;C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\opdracht4\STUDENT\filter\h;C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\opdracht4\STUDENT\ontwerper;C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\opdracht4\STUDENT\ontwerper\h;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "C:/wxWidgets-3.2.1/lib/vc_x64_lib/mswud" /external:I "C:/wxWidgets-3.2.1/include"</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;InterfaceTaalNederlands;BouwDesktopApp;_CRT_SECURE_NO_WARNINGS;MSWindows;wxDEBUG_LEVEL=1;wxUSE_DPI_AWARE_MANIFEST=2;UNICODE;_UNICODE;ExtraOpties;DitJaar=2024;CMAKE_INTDIR="Debug"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;InterfaceTaalNederlands;BouwDesktopApp;_CRT_SECURE_NO_WARNINGS;MSWindows;wxDEBUG_LEVEL=1;wxUSE_DPI_AWARE_MANIFEST=2;UNICODE;_UNICODE;ExtraOpties;DitJaar=2024;CMAKE_INTDIR=\"Debug\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\DesktopBasis\gemeenschappelijk\h;C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\DesktopBasis\gemeenschappelijk\logos;C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\opdracht4\VisualStudio_x64\gegenereerd;C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\DesktopBasis\gemeenschappelijk\wxBasis\h;C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\opdracht4\..\opdracht1;C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\opdracht4\..\opdracht1\STUDENT\h;C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\opdracht4\Basis\h;C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\opdracht4\STUDENT\filter;C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\opdracht4\STUDENT\filter\h;C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\opdracht4\STUDENT\ontwerper;C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\opdracht4\STUDENT\ontwerper\h;C:\wxWidgets-3.2.1\lib\vc_x64_lib\mswud;C:\wxWidgets-3.2.1\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\DesktopBasis\gemeenschappelijk\h;C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\DesktopBasis\gemeenschappelijk\logos;C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\opdracht4\VisualStudio_x64\gegenereerd;C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\DesktopBasis\gemeenschappelijk\wxBasis\h;C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\opdracht4\..\opdracht1;C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\opdracht4\..\opdracht1\STUDENT\h;C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\opdracht4\Basis\h;C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\opdracht4\STUDENT\filter;C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\opdracht4\STUDENT\filter\h;C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\opdracht4\STUDENT\ontwerper;C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\opdracht4\STUDENT\ontwerper\h;C:\wxWidgets-3.2.1\lib\vc_x64_lib\mswud;C:\wxWidgets-3.2.1\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>..\..\Basis\Debug\ApplikatieLib.lib;..\filter\Debug\FirFilterLib.lib;..\..\wxBasis\Debug\wxBasis.lib;C:\wxWidgets-3.2.1\lib\vc_x64_lib\wxmsw32ud_core.lib;C:\wxWidgets-3.2.1\lib\vc_x64_lib\wxbase32ud.lib;C:\wxWidgets-3.2.1\lib\vc_x64_lib\wxmsw32ud_adv.lib;C:\wxWidgets-3.2.1\lib\vc_x64_lib\wxpngd.lib;C:\wxWidgets-3.2.1\lib\vc_x64_lib\wxtiffd.lib;C:\wxWidgets-3.2.1\lib\vc_x64_lib\wxjpegd.lib;C:\wxWidgets-3.2.1\lib\vc_x64_lib\wxzlibd.lib;C:\wxWidgets-3.2.1\lib\vc_x64_lib\wxregexud.lib;C:\wxWidgets-3.2.1\lib\vc_x64_lib\wxexpatd.lib;winmm.lib;comctl32.lib;uuid.lib;oleacc.lib;uxtheme.lib;rpcrt4.lib;shlwapi.lib;version.lib;wsock32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/niels/Documents/Elektrotechniek/Jaar 3/dspl/software/opdracht4/VisualStudio_x64/STUDENT/ontwerper/Debug/DSPESEL4.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/niels/Documents/Elektrotechniek/Jaar 3/dspl/software/opdracht4/Executable/x86_64/Debug/bin/DSPESEL4.pdb</ProgramDataBaseFile>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\DesktopBasis\gemeenschappelijk\h;C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\DesktopBasis\gemeenschappelijk\logos;C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\opdracht4\VisualStudio_x64\gegenereerd;C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\DesktopBasis\gemeenschappelijk\wxBasis\h;C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\opdracht4\..\opdracht1;C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\opdracht4\..\opdracht1\STUDENT\h;C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\opdracht4\Basis\h;C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\opdracht4\STUDENT\filter;C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\opdracht4\STUDENT\filter\h;C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\opdracht4\STUDENT\ontwerper;C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\opdracht4\STUDENT\ontwerper\h;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "C:/wxWidgets-3.2.1/lib/vc_x64_lib/mswud" /external:I "C:/wxWidgets-3.2.1/include"</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;InterfaceTaalNederlands;BouwDesktopApp;_CRT_SECURE_NO_WARNINGS;MSWindows;wxDEBUG_LEVEL=1;wxUSE_DPI_AWARE_MANIFEST=2;UNICODE;_UNICODE;ExtraOpties;DitJaar=2024;CMAKE_INTDIR="Release"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;InterfaceTaalNederlands;BouwDesktopApp;_CRT_SECURE_NO_WARNINGS;MSWindows;wxDEBUG_LEVEL=1;wxUSE_DPI_AWARE_MANIFEST=2;UNICODE;_UNICODE;ExtraOpties;DitJaar=2024;CMAKE_INTDIR=\"Release\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\DesktopBasis\gemeenschappelijk\h;C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\DesktopBasis\gemeenschappelijk\logos;C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\opdracht4\VisualStudio_x64\gegenereerd;C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\DesktopBasis\gemeenschappelijk\wxBasis\h;C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\opdracht4\..\opdracht1;C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\opdracht4\..\opdracht1\STUDENT\h;C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\opdracht4\Basis\h;C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\opdracht4\STUDENT\filter;C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\opdracht4\STUDENT\filter\h;C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\opdracht4\STUDENT\ontwerper;C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\opdracht4\STUDENT\ontwerper\h;C:\wxWidgets-3.2.1\lib\vc_x64_lib\mswud;C:\wxWidgets-3.2.1\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\DesktopBasis\gemeenschappelijk\h;C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\DesktopBasis\gemeenschappelijk\logos;C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\opdracht4\VisualStudio_x64\gegenereerd;C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\DesktopBasis\gemeenschappelijk\wxBasis\h;C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\opdracht4\..\opdracht1;C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\opdracht4\..\opdracht1\STUDENT\h;C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\opdracht4\Basis\h;C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\opdracht4\STUDENT\filter;C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\opdracht4\STUDENT\filter\h;C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\opdracht4\STUDENT\ontwerper;C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\opdracht4\STUDENT\ontwerper\h;C:\wxWidgets-3.2.1\lib\vc_x64_lib\mswud;C:\wxWidgets-3.2.1\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>..\..\Basis\Release\ApplikatieLib.lib;..\filter\Release\FirFilterLib.lib;..\..\wxBasis\Release\wxBasis.lib;C:\wxWidgets-3.2.1\lib\vc_x64_lib\wxmsw32ud_core.lib;C:\wxWidgets-3.2.1\lib\vc_x64_lib\wxbase32ud.lib;C:\wxWidgets-3.2.1\lib\vc_x64_lib\wxmsw32ud_adv.lib;C:\wxWidgets-3.2.1\lib\vc_x64_lib\wxpngd.lib;C:\wxWidgets-3.2.1\lib\vc_x64_lib\wxtiffd.lib;C:\wxWidgets-3.2.1\lib\vc_x64_lib\wxjpegd.lib;C:\wxWidgets-3.2.1\lib\vc_x64_lib\wxzlibd.lib;C:\wxWidgets-3.2.1\lib\vc_x64_lib\wxregexud.lib;C:\wxWidgets-3.2.1\lib\vc_x64_lib\wxexpatd.lib;winmm.lib;comctl32.lib;uuid.lib;oleacc.lib;uxtheme.lib;rpcrt4.lib;shlwapi.lib;version.lib;wsock32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/niels/Documents/Elektrotechniek/Jaar 3/dspl/software/opdracht4/VisualStudio_x64/STUDENT/ontwerper/Release/DSPESEL4.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/niels/Documents/Elektrotechniek/Jaar 3/dspl/software/opdracht4/Executable/x86_64/Release/bin/DSPESEL4.pdb</ProgramDataBaseFile>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\DesktopBasis\gemeenschappelijk\h;C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\DesktopBasis\gemeenschappelijk\logos;C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\opdracht4\VisualStudio_x64\gegenereerd;C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\DesktopBasis\gemeenschappelijk\wxBasis\h;C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\opdracht4\..\opdracht1;C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\opdracht4\..\opdracht1\STUDENT\h;C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\opdracht4\Basis\h;C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\opdracht4\STUDENT\filter;C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\opdracht4\STUDENT\filter\h;C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\opdracht4\STUDENT\ontwerper;C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\opdracht4\STUDENT\ontwerper\h;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "C:/wxWidgets-3.2.1/lib/vc_x64_lib/mswud" /external:I "C:/wxWidgets-3.2.1/include"</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;InterfaceTaalNederlands;BouwDesktopApp;_CRT_SECURE_NO_WARNINGS;MSWindows;wxDEBUG_LEVEL=1;wxUSE_DPI_AWARE_MANIFEST=2;UNICODE;_UNICODE;ExtraOpties;DitJaar=2024;CMAKE_INTDIR="MinSizeRel"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;InterfaceTaalNederlands;BouwDesktopApp;_CRT_SECURE_NO_WARNINGS;MSWindows;wxDEBUG_LEVEL=1;wxUSE_DPI_AWARE_MANIFEST=2;UNICODE;_UNICODE;ExtraOpties;DitJaar=2024;CMAKE_INTDIR=\"MinSizeRel\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\DesktopBasis\gemeenschappelijk\h;C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\DesktopBasis\gemeenschappelijk\logos;C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\opdracht4\VisualStudio_x64\gegenereerd;C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\DesktopBasis\gemeenschappelijk\wxBasis\h;C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\opdracht4\..\opdracht1;C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\opdracht4\..\opdracht1\STUDENT\h;C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\opdracht4\Basis\h;C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\opdracht4\STUDENT\filter;C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\opdracht4\STUDENT\filter\h;C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\opdracht4\STUDENT\ontwerper;C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\opdracht4\STUDENT\ontwerper\h;C:\wxWidgets-3.2.1\lib\vc_x64_lib\mswud;C:\wxWidgets-3.2.1\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\DesktopBasis\gemeenschappelijk\h;C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\DesktopBasis\gemeenschappelijk\logos;C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\opdracht4\VisualStudio_x64\gegenereerd;C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\DesktopBasis\gemeenschappelijk\wxBasis\h;C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\opdracht4\..\opdracht1;C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\opdracht4\..\opdracht1\STUDENT\h;C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\opdracht4\Basis\h;C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\opdracht4\STUDENT\filter;C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\opdracht4\STUDENT\filter\h;C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\opdracht4\STUDENT\ontwerper;C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\opdracht4\STUDENT\ontwerper\h;C:\wxWidgets-3.2.1\lib\vc_x64_lib\mswud;C:\wxWidgets-3.2.1\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>..\..\Basis\MinSizeRel\ApplikatieLib.lib;..\filter\MinSizeRel\FirFilterLib.lib;..\..\wxBasis\MinSizeRel\wxBasis.lib;C:\wxWidgets-3.2.1\lib\vc_x64_lib\wxmsw32ud_core.lib;C:\wxWidgets-3.2.1\lib\vc_x64_lib\wxbase32ud.lib;C:\wxWidgets-3.2.1\lib\vc_x64_lib\wxmsw32ud_adv.lib;C:\wxWidgets-3.2.1\lib\vc_x64_lib\wxpngd.lib;C:\wxWidgets-3.2.1\lib\vc_x64_lib\wxtiffd.lib;C:\wxWidgets-3.2.1\lib\vc_x64_lib\wxjpegd.lib;C:\wxWidgets-3.2.1\lib\vc_x64_lib\wxzlibd.lib;C:\wxWidgets-3.2.1\lib\vc_x64_lib\wxregexud.lib;C:\wxWidgets-3.2.1\lib\vc_x64_lib\wxexpatd.lib;winmm.lib;comctl32.lib;uuid.lib;oleacc.lib;uxtheme.lib;rpcrt4.lib;shlwapi.lib;version.lib;wsock32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/niels/Documents/Elektrotechniek/Jaar 3/dspl/software/opdracht4/VisualStudio_x64/STUDENT/ontwerper/MinSizeRel/DSPESEL4.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/niels/Documents/Elektrotechniek/Jaar 3/dspl/software/opdracht4/Executable/x86_64/MinSizeRel/DSPESEL4.pdb</ProgramDataBaseFile>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\DesktopBasis\gemeenschappelijk\h;C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\DesktopBasis\gemeenschappelijk\logos;C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\opdracht4\VisualStudio_x64\gegenereerd;C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\DesktopBasis\gemeenschappelijk\wxBasis\h;C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\opdracht4\..\opdracht1;C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\opdracht4\..\opdracht1\STUDENT\h;C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\opdracht4\Basis\h;C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\opdracht4\STUDENT\filter;C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\opdracht4\STUDENT\filter\h;C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\opdracht4\STUDENT\ontwerper;C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\opdracht4\STUDENT\ontwerper\h;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "C:/wxWidgets-3.2.1/lib/vc_x64_lib/mswud" /external:I "C:/wxWidgets-3.2.1/include"</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;InterfaceTaalNederlands;BouwDesktopApp;_CRT_SECURE_NO_WARNINGS;MSWindows;wxDEBUG_LEVEL=1;wxUSE_DPI_AWARE_MANIFEST=2;UNICODE;_UNICODE;ExtraOpties;DitJaar=2024;CMAKE_INTDIR="RelWithDebInfo"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;InterfaceTaalNederlands;BouwDesktopApp;_CRT_SECURE_NO_WARNINGS;MSWindows;wxDEBUG_LEVEL=1;wxUSE_DPI_AWARE_MANIFEST=2;UNICODE;_UNICODE;ExtraOpties;DitJaar=2024;CMAKE_INTDIR=\"RelWithDebInfo\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\DesktopBasis\gemeenschappelijk\h;C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\DesktopBasis\gemeenschappelijk\logos;C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\opdracht4\VisualStudio_x64\gegenereerd;C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\DesktopBasis\gemeenschappelijk\wxBasis\h;C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\opdracht4\..\opdracht1;C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\opdracht4\..\opdracht1\STUDENT\h;C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\opdracht4\Basis\h;C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\opdracht4\STUDENT\filter;C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\opdracht4\STUDENT\filter\h;C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\opdracht4\STUDENT\ontwerper;C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\opdracht4\STUDENT\ontwerper\h;C:\wxWidgets-3.2.1\lib\vc_x64_lib\mswud;C:\wxWidgets-3.2.1\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\DesktopBasis\gemeenschappelijk\h;C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\DesktopBasis\gemeenschappelijk\logos;C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\opdracht4\VisualStudio_x64\gegenereerd;C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\DesktopBasis\gemeenschappelijk\wxBasis\h;C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\opdracht4\..\opdracht1;C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\opdracht4\..\opdracht1\STUDENT\h;C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\opdracht4\Basis\h;C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\opdracht4\STUDENT\filter;C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\opdracht4\STUDENT\filter\h;C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\opdracht4\STUDENT\ontwerper;C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\opdracht4\STUDENT\ontwerper\h;C:\wxWidgets-3.2.1\lib\vc_x64_lib\mswud;C:\wxWidgets-3.2.1\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>..\..\Basis\RelWithDebInfo\ApplikatieLib.lib;..\filter\RelWithDebInfo\FirFilterLib.lib;..\..\wxBasis\RelWithDebInfo\wxBasis.lib;C:\wxWidgets-3.2.1\lib\vc_x64_lib\wxmsw32ud_core.lib;C:\wxWidgets-3.2.1\lib\vc_x64_lib\wxbase32ud.lib;C:\wxWidgets-3.2.1\lib\vc_x64_lib\wxmsw32ud_adv.lib;C:\wxWidgets-3.2.1\lib\vc_x64_lib\wxpngd.lib;C:\wxWidgets-3.2.1\lib\vc_x64_lib\wxtiffd.lib;C:\wxWidgets-3.2.1\lib\vc_x64_lib\wxjpegd.lib;C:\wxWidgets-3.2.1\lib\vc_x64_lib\wxzlibd.lib;C:\wxWidgets-3.2.1\lib\vc_x64_lib\wxregexud.lib;C:\wxWidgets-3.2.1\lib\vc_x64_lib\wxexpatd.lib;winmm.lib;comctl32.lib;uuid.lib;oleacc.lib;uxtheme.lib;rpcrt4.lib;shlwapi.lib;version.lib;wsock32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/niels/Documents/Elektrotechniek/Jaar 3/dspl/software/opdracht4/VisualStudio_x64/STUDENT/ontwerper/RelWithDebInfo/DSPESEL4.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/niels/Documents/Elektrotechniek/Jaar 3/dspl/software/opdracht4/Executable/x86_64/RelWithDebInfo/DSPESEL4.pdb</ProgramDataBaseFile>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\opdracht4\STUDENT\ontwerper\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Users/niels/Documents/Elektrotechniek/Jaar 3/dspl/software/opdracht4/STUDENT/ontwerper/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Users/niels/Documents/Elektrotechniek/Jaar 3/dspl/software/opdracht4" "-BC:/Users/niels/Documents/Elektrotechniek/Jaar 3/dspl/software/opdracht4/VisualStudio_x64" --check-stamp-file "C:/Users/niels/Documents/Elektrotechniek/Jaar 3/dspl/software/opdracht4/VisualStudio_x64/STUDENT/ontwerper/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Program Files\CMake\share\cmake-3.25\Modules\CPack.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CPackComponent.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\InstallRequiredSystemLibraries.cmake;C:\Program Files\CMake\share\cmake-3.25\Templates\CPackConfig.cmake.in;C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\DesktopBasis\buildsystem\FixBundle.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\opdracht4\VisualStudio_x64\STUDENT\ontwerper\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Users/niels/Documents/Elektrotechniek/Jaar 3/dspl/software/opdracht4/STUDENT/ontwerper/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Users/niels/Documents/Elektrotechniek/Jaar 3/dspl/software/opdracht4" "-BC:/Users/niels/Documents/Elektrotechniek/Jaar 3/dspl/software/opdracht4/VisualStudio_x64" --check-stamp-file "C:/Users/niels/Documents/Elektrotechniek/Jaar 3/dspl/software/opdracht4/VisualStudio_x64/STUDENT/ontwerper/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Program Files\CMake\share\cmake-3.25\Modules\CPack.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CPackComponent.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\InstallRequiredSystemLibraries.cmake;C:\Program Files\CMake\share\cmake-3.25\Templates\CPackConfig.cmake.in;C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\DesktopBasis\buildsystem\FixBundle.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\opdracht4\VisualStudio_x64\STUDENT\ontwerper\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/Users/niels/Documents/Elektrotechniek/Jaar 3/dspl/software/opdracht4/STUDENT/ontwerper/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Users/niels/Documents/Elektrotechniek/Jaar 3/dspl/software/opdracht4" "-BC:/Users/niels/Documents/Elektrotechniek/Jaar 3/dspl/software/opdracht4/VisualStudio_x64" --check-stamp-file "C:/Users/niels/Documents/Elektrotechniek/Jaar 3/dspl/software/opdracht4/VisualStudio_x64/STUDENT/ontwerper/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Program Files\CMake\share\cmake-3.25\Modules\CPack.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CPackComponent.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\InstallRequiredSystemLibraries.cmake;C:\Program Files\CMake\share\cmake-3.25\Templates\CPackConfig.cmake.in;C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\DesktopBasis\buildsystem\FixBundle.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\opdracht4\VisualStudio_x64\STUDENT\ontwerper\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/Users/niels/Documents/Elektrotechniek/Jaar 3/dspl/software/opdracht4/STUDENT/ontwerper/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Users/niels/Documents/Elektrotechniek/Jaar 3/dspl/software/opdracht4" "-BC:/Users/niels/Documents/Elektrotechniek/Jaar 3/dspl/software/opdracht4/VisualStudio_x64" --check-stamp-file "C:/Users/niels/Documents/Elektrotechniek/Jaar 3/dspl/software/opdracht4/VisualStudio_x64/STUDENT/ontwerper/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Program Files\CMake\share\cmake-3.25\Modules\CPack.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CPackComponent.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\InstallRequiredSystemLibraries.cmake;C:\Program Files\CMake\share\cmake-3.25\Templates\CPackConfig.cmake.in;C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\DesktopBasis\buildsystem\FixBundle.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\opdracht4\VisualStudio_x64\STUDENT\ontwerper\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\opdracht4\STUDENT\ontwerper\filterDesigner.cpp" />
+    <ClCompile Include="C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\opdracht4\STUDENT\ontwerper\filterDesignerBasis.cpp" />
+    <ResourceCompile Include="C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\opdracht4\platforms\windows\DSPESEL4.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\opdracht4\VisualStudio_x64\ZERO_CHECK.vcxproj">
+      <Project>{B168E3D9-C1F6-3FAF-8AE6-9CD617E136D3}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\opdracht4\VisualStudio_x64\Basis\ApplikatieLib.vcxproj">
+      <Project>{11A2267A-63EB-3C1A-9A1F-1569EE42426C}</Project>
+      <Name>ApplikatieLib</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\opdracht4\VisualStudio_x64\STUDENT\filter\FirFilterLib.vcxproj">
+      <Project>{DB1F8889-2C18-389D-BB19-E0CDDDC5ABD8}</Project>
+      <Name>FirFilterLib</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\opdracht4\VisualStudio_x64\wxBasis\wxBasis.vcxproj">
+      <Project>{CF197CC1-0D06-3A9D-B6C5-2A6A104B3D2A}</Project>
+      <Name>wxBasis</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -20,7 +20,7 @@ Assignment 4 DSB practical (designer part). Elaborate this assignment on the bas
 
 @copyright Copyright 2006-2022 ir drs E.J Boks, Hogeschool van Arnhem en Nijmegen. https://ese.han.nl/~ewout
 
-$URL: https://ese.han.nl/svn/dsbpracticum/trunk/2022/software/opdracht4/STUDENT/ontwerper/filterDesigner.cpp $
+$URL: https://ese.han.nl/svn/dsbpracticum/branches/2022/software/opdracht4/STUDENT/ontwerper/filterDesigner.cpp $
 $Id: filterDesigner.cpp 313 2023-01-30 13:54:35Z ewout $
 ************************************************************************/
 
@@ -33,8 +33,8 @@ $Id: filterDesigner.cpp 313 2023-01-30 13:54:35Z ewout $
 #endif
 #endif
 
-/********  Naam/name     :  Niels Urgert             ******/
-/********  Studentnummer :  1654746             ******/
+/********  Naam/name     :   Niels Urgert            ******/
+/********  Studentnummer :   1654746            ******/
 
 // For compilers that support precompilation, includes "wx/wx.h".
 
@@ -63,121 +63,113 @@ $Id: filterDesigner.cpp 313 2023-01-30 13:54:35Z ewout $
 #include <wx/txtstrm.h>
 #include <wx/numdlg.h>
 #include <wx/filename.h>
-#include <cmath>
 
 #ifdef InterfaceTaalNederlands
-double FilterVenster::driehoek(const Int32 n ) const
-{
-	// Implementatie van de driehoek functie (N = taps/orde, L = N + 1 or N + 2)
 
-	//barlett
-	double denominator = (orde + 1) * (orde + 1);
-	return ((orde + 1) - fabs(n)) / denominator;
+/* STUDENT CODE*/
+/////////////////
 
-	/*assert(-taps <= n <= taps);
-	double out = 1.0f - fabs((n - (taps / 2.0f)) / (taps / 2.0f));
-	return out;*/
+// Formule in Lynn & Fürst is wel goed, zie blz. 148 (5.19)!!!
+// Barlett functie w[n] = ((M + 1) - |n|) / (M + 1)^2
+double FilterVenster::driehoek(const Int32 n ) const {
+	return ((orde + 1) - fabs(n)) / ((orde + 1) * (orde + 1));
 }
 
-
-double FilterVenster::hamming(const Int32 n ) const
-{
-	// Implementatie van de Hamming functie
-	return 0.54 + 0.46 * cos((n * Pi) / orde); //orde or taps
-
-	/* assert(-taps <= n <= taps);
-    double out;
-    out = 0.54f + 0.46f * cos((2.0f * PI * n) / (taps));
-    return out;*/
+// Formule in Lynn & Fürst, zie blz. 150 (5.22)
+// Hamming functie w[n] = 0.54 + 0.46 cos (nπ / M)
+double FilterVenster::hamming(const Int32 n ) const {
+	return 0.54 + 0.46 * cos((n * Pi) / orde);
 }
 
+/* END STUDENT CODE*/
+/////////////////////
 
-double FilterVenster::sinc(const double hoek )
-{
-	// Implementatie van de sinc functie
-	if (hoek == 0.0) {
-		return 1.0;
-	}
-	return sin(hoek * Pi) / (hoek * Pi);
-}
-void FilterVenster::berekenFilter(wxCommandEvent& event)
+void FilterVenster::berekenFilter(wxCommandEvent &event)
 {
 	/*! @note Nederlands : schrijf in deze funktie de code om de tijddomeincoefficienten
 	 * van het filter te bereken.
-	  * Maak hier voor gebruik van de Fourier ontwerp methode (Lynn & Fürst §5.3)
-	  * voor een bandfilter:
-	  * h[n] = (Omega1/pi)*sinc(Omega1*n) : Dit is een laagdoorlaatfilter
-	  * vermenigvuldig dit in tijddomein met cos(Omega0*n) -->
-	  * in frequentiedomein convolueer met delta(Omega0) -->
-	  * verschuiving van begin LDF van 0 naar Omega0 */
-
-	  /* filter maakt gebruik van Hamming Venster :
-	   * Zie boek Andriessen / Lynn & Fürst, blz 156
-	   * of Lynn & Fürst, blz 150.
-	   */
-
-	   /* een array van wxPoints die je kunt gebruiken om de impulsresponsie te tekenen. */
+     * Maak hier voor gebruik van de Fourier ontwerp methode (Lynn & Fürst §5.3)
+     * voor een bandfilter:
+     * h[n] = (Omega1/pi)*sinc(Omega1*n) : Dit is een laagdoorlaatfilter
+     * vermenigvuldig dit in tijddomein met cos(Omega0*n) -->
+     * in frequentiedomein convolueer met delta(Omega0) -->
+     * verschuiving van begin LDF van 0 naar Omega0 */
+	
+	/* filter maakt gebruik van Hamming Venster :
+	 * Zie boek Andriessen / Lynn & Fürst, blz 156
+	 * of Lynn & Fürst, blz 150.
+	 */
+	
+	/* een array van wxPoints die je kunt gebruiken om de impulsresponsie te tekenen. */
 	PuntLijst impulsResponsie;
-
+	
 	/* Verwijder oude filter coefficienten voor de berekening begint. */
 	filterCoeffs.Clear();
-	impulsResponsie.Clear();
-
+	
 	wxLogDebug(_("filter berekening start."));
 	wxBusyCursor bezig;
+
+	/* STUDENT CODE*/
+	/////////////////
 
 	// Bereken de filtercoëfficiënten
 	const float omega0 = ((bandBeginSlider->GetValue() + bandEindeSlider->GetValue()) / 2.0) / sampFreq * 2.0 * Pi;
 	const float omega1 = ((bandEindeSlider->GetValue() - bandBeginSlider->GetValue()) / 2.0) / sampFreq * 2.0 * Pi;
 
+	// Bewaar ruimte voor coëfficiënten
 	filterCoeffs.reserve(taps);
 	filterCoeffs.resize(taps);
 
+	// Selecteer window type
 	auto choice = vensterChoice->GetString(vensterChoice->GetSelection());
 
+	// Loop door the filter taps voor het berekenen van elk coëfficiënt
 	for (int n = -orde; n <= orde; n++) {
-		
+
 		float result = 0.0f;
-		
+
 		if (n == 0) {
 			result = omega1 / Pi;
 		}
-		else {
-			result = (1 / (n * Pi)) * sin(omega1 * n) * cos(n * omega0);
-			//result = (omega1 / Pi) * sinc(omega1 * n) * cos(omega0 * n);
+		else { // Algemene formule voor laag doorlaat filter
+			result = (1 / (n * Pi)) * sin(omega1 * n) * cos(omega0 * n);
 		}
 
 		if (choice == "Rechthoek") {
-			// Geen extra bewerking
-			result *= 1.0;
+			result *= 1.0; // Geen extra bewerking
 		}
 		else if (choice == "Driehoek") {
-			result *= (driehoek(n) * 8.7);
+			result *= (driehoek(n)); // * 8,7
 		}
 		else if (choice == "Hamming") {
 			result *= hamming(n);
 		}
 
-		filterCoeffs[orde + n] = berekenFixedPoint(result * 2.0); // * 2.0?
+		filterCoeffs[orde + n] = berekenFixedPoint(result * 2.0);
 		filterCoeffs[orde - n] = berekenFixedPoint(result * 2.0);
 
 		impulsResponsie.Add(wxPoint(n, filterCoeffs[orde + n]));
 		impulsResponsie.Add(wxPoint(-n, filterCoeffs[orde + n]));
 
 		if (toonfilterCoeffsCB->IsChecked()) {
-			//wxLogMessage(std::to_string(n) + wxT(" ") + std::to_string(filterCoeffs[orde + n]));
+			wxLogMessage(std::to_string(n) + wxT(" ") + std::to_string(filterCoeffs[orde + n]));
 		}
 	}
-
+	// Plot de impulse response in het tijdsdomein
 	tijdDomeinGrafiek->maakSchoon();
 	tijdDomeinGrafiek->tekenAssenstelsel();
 	tijdDomeinGrafiek->zetTekenPen(wxPen(wxColour("RED"), 1));
 	tijdDomeinGrafiek->tekenStaven(impulsResponsie, true);
 
-	/* test button */
-	berekeningKlaar = true;
+	// Bereken en plot de freqentie response
 	berekenFreqResponsie();
 	tekenFreqSpectrum();
+
+	/* END STUDENT CODE*/
+	/////////////////////
+
+	/* schakel ook de test knop nu in */
+	berekeningKlaar = true;
 }
 
 
@@ -185,23 +177,24 @@ void FilterVenster::berekenFreqResponsie()
 {
 	/*! @note schrijf in deze funktie de code om het  frequentiebeeld te bereken op
 	 * basis van de tijddomeincoefficienten. */
-
+	
 	H_Omega.Clear();
-
-	//omega 1 wordt weer in de formule gebruikt formule(5.14)
+	
+	/* STUDENT CODE*/
+	/////////////////
+	//omega 1 wordt weer in de formule gebruikt formule (5.14)
 	const auto omega1 = 2.0 * ((bandEindeSlider->GetValue() - bandBeginSlider->GetValue()) / 2.0) / sampFreq * 2.0 * Pi;
 
 	const auto freqSpectrumGrootte = FreqSpectrumPunten(taps);
 	const auto stapGrootte = Pi / freqSpectrumGrootte;
 
 	H_Omega.reserve(freqSpectrumGrootte);
-	//H_Omega.resize(freqSpectrumGrootte);
 
 	//Formula from the book
-	for (auto i = 0; i < freqSpectrumGrootte; i++) { //voor elk punt in het spectrum
+	for (auto i = 0; i < freqSpectrumGrootte; i++) { // voor elk punt in het spectrum
 		const auto omega = i * stapGrootte;
-		double somFunction = 0.0; // berekenFloatingPoint(filterCoeffs[orde]);
-		for (auto k = 1; k <= orde; k++) { //Somfunction
+		double somFunction = 0.0;					// berekenFloatingPoint(filterCoeffs[orde]);
+		for (auto k = 1; k <= orde; k++) {			// Somfunction
 			const auto flp = berekenFloatingPoint(filterCoeffs[orde + static_cast<wxVector<short>::size_type>(k)]);
 			somFunction += (flp * cos(k * omega));
 		}
@@ -209,16 +202,15 @@ void FilterVenster::berekenFreqResponsie()
 
 		if (somFunction == 0.0) {
 			wxLogDebug(wxT("hallo"));
-		}
-		const auto somFunctieDB = ((somFunction == 0.0) ? -100.0 : compute_dB(somFunction)) + maxVersterkingSpinCtrl->GetValue(); //zet waarde om naar db's omdat dat de waarde op de y as is
+		} // zet waarde om naar db's omdat dat de waarde op de y as is
+		const auto somFunctieDB = ((somFunction == 0.0) ? -100.0 : compute_dB(somFunction)) + maxVersterkingSpinCtrl->GetValue(); 
 		wxLogDebug(wxT("h[%lf] = %lf dB"), omega, somFunctieDB);
 		H_Omega.Add(somFunctieDB);
-
-
 	}
 	H_Omega_min = *(std::min_element(H_Omega.begin(), H_Omega.end()));
-
 	H_Omega_max = *(std::max_element(H_Omega.begin(), H_Omega.end()));
+	/* END STUDENT CODE*/
+	/////////////////////
 }
 
 void FilterVenster::tekenFreqSpectrum() const
@@ -230,9 +222,10 @@ void FilterVenster::tekenFreqSpectrum() const
 	const auto stapGrootte = (Pi/aantalPunten);
 	
 	/* teken de lijnen van het freqdomein filter */
+	
 	/* toon het berekende venster in het frequentiedomein */
-
 	freqDomeinGrafiek->maakSchoon();
+	
 	freqDomeinGrafiek->tekenAssenstelsel();
 	
 	const wxCoord veldEinde(-3*veld.GetHeight()/4);
@@ -250,6 +243,7 @@ void FilterVenster::tekenFreqSpectrum() const
 		const wxPoint begin(xcoord,veldEinde);
 		const wxPoint einde(xcoord,(wxCoord)(schaaly*H_Omega[index]));
 		const LijnStuk lijn(begin, einde);
+//		wxLogDebug(wxT("H(%.2lf) = %lf"),omega,schaaly*(*(H_Omega+index)));
 		freqDomeinGrafiek->tekenLijn(lijn);
 		omega+=stapGrootte;
 	}
@@ -267,7 +261,6 @@ void FilterVenster::tekenFreqSpectrum() const
 	}
 	
 	freqDomeinGrafiek->zetTekenPen(wxPen( wxColour(wxT("GREY")), 3, wxPENSTYLE_SOLID));
-
 	/* teken horizontale lijnen op -10 db afstand */
 	for (auto dblijn=0;dblijn>H_Omega_min;dblijn-=10)
 	{
@@ -277,35 +270,39 @@ void FilterVenster::tekenFreqSpectrum() const
 		freqDomeinGrafiek->zetKleineTekst(wxString::Format(wxT("%d dB"),
 		                                                   static_cast<Int32>(dblijn)), tekstpunt);
 	}
-
-	/* Band */
+	/* teken beginband en stopband */
 	freqDomeinGrafiek->zetTekenPen(wxPen( wxColour(wxT("PINK")), 3, wxPENSTYLE_SHORT_DASH));
 	
-	/* Start Band */
+	/* begin vd band */
 	omega = 2*Pi*filterBegin/sampFreq;
 	freqDomeinGrafiek->tekenVerticaleLijn((wxCoord)(omega*schaalx));
-
-	/* Stop band*/
+	/* eind vd band */
 	omega = 2*Pi*filterEind/sampFreq;
 	freqDomeinGrafiek->tekenVerticaleLijn((wxCoord)(omega*schaalx));
 	
 	const auto freqGrootte(freqDomeinGrafiek->GetClientSize());
 	freqDomeinGrafiek->zetNormaleTekst(DemoTekst,wxPoint(freqGrootte.GetWidth()/16, -20));
+	
+	
 }
+
+/* STUDENT CODE*/
+/////////////////
 
 Int16 FilterVenster::berekenFixedPoint(const float flp) const
 {
-	// Perform fixed-point calculation based on the given floating-point value and convert the floating-point value to fixed-point
 	const Int16 fixp = static_cast<int16_t>(flp * (1 << (fipBitsSpinCtrl->GetValue() - 1)));
 	return fixp;
 }
 
 float FilterVenster::berekenFloatingPoint(const Int16 fixp) const
 {
-	// Perform floating-point calculation based on the given fixed-point value and convert the fixed-point value to floating-point 
 	const float flp = static_cast<float>(fixp) / (1 << (fipBitsSpinCtrl->GetValue() - 1));
 	return flp;
 }
+
+/* END STUDENT CODE*/
+/////////////////////
 
 
 #elif defined(InterfaceTaalEnglish)
@@ -484,8 +481,8 @@ float FilterVenster::computeFloatingPoint(const Int16 fixp) const
 #endif
 
 
-
-
+/* STUDENT CODE BONUS POINTS ASSIGNMENT */
+//////////////////////////////////////////
 void FilterVenster::tijdViewMuisBewegingHandler(wxMouseEvent &event)
 {
 #ifndef ExtraOpties
@@ -493,21 +490,26 @@ void FilterVenster::tijdViewMuisBewegingHandler(wxMouseEvent &event)
 #else
 	if (true == tijdDomeinCoords->IsEnabled())
 	{
-		// Get the mouse coordinates
-		const wxPoint mouseCoord(tijdDomeinGrafiek->converteerMuisPositie(const_cast<wxMouseEvent &>(event)));
-		
-		// Calculate the filter effect at a certain frequency
-		int n = mouseCoord.x;
+		const wxPoint mouseCoord(tijdDomeinGrafiek->converteerMuisPositie(const_cast<wxMouseEvent&>(event)));
 
-		// Calculate the value of an impulse response sample
+		int width = tijdDomeinGrafiek->GetClientSize().GetWidth();
+
+		int n = std::round(((mouseCoord.x - (width / 2.0)) / (width / 2.0)) * orde);
+
 		if (n >= -orde && n <= orde)
 		{
-			// Calculate the value of the impulse response sample
-			float sampleValue = berekenFloatingPoint(filterCoeffs[orde + n]);
+			size_t coeffIndex = static_cast<size_t>(orde + n);
+			if (coeffIndex < filterCoeffs.size()) 
+			{
+				float sampleValue = berekenFloatingPoint(filterCoeffs[orde + n]);
 
-			// Display the information
-			wxString info = wxString::Format("Coefficient h[%d] = %.4f", n, sampleValue);
-			tijdDomeinCoords->SetLabel(info);
+				wxString info = wxString::Format("Coefficient h[%d] = %.4f", n, sampleValue);
+				tijdDomeinCoords->SetLabel(info);
+			}
+			else
+			{
+				tijdDomeinCoords->SetLabel("Invalid coefficient index");
+			}
 		}
 		else
 		{
@@ -524,26 +526,21 @@ void FilterVenster::freqViewMuisBewegingHandler(wxMouseEvent &event)
 #else
 	if (true == freqDomeinCoords->IsEnabled())
 	{
-		// Get the mouse coordinates
+		
 		const wxPoint muiscoord(freqDomeinGrafiek->converteerMuisPositie(const_cast<wxMouseEvent &>(event)));
-		 
-		// Calculate the filter effect at a certain frequency
+
 		double omega = muiscoord.x * (Pi / freqDomeinGrafiek->GetClientSize().GetWidth());
 
 		double dB = muiscoord.y * (H_Omega_max - H_Omega_min) / freqDomeinGrafiek->GetClientSize().GetHeight();
 
-		if(omega >= 0 && omega <= Pi)
+		if (omega >= 0 && omega <= Pi)
 		{
-			// Calculate the index in the frequency response array
 			int index = static_cast<int>((omega / Pi) * FreqSpectrumPunten(taps));
 
-			// Ensure the index is within bounds
 			if (index >= 0 && index < H_Omega.size())
 			{
-				// Calculate the filter effect at the given frequency
 				double filterEffect = H_Omega[index];
 
-				// Display the information
 				wxString info = wxString::Format("|H(%.4f*pi)| = %.2f dB at [%.4f*pi, %.2f dB]", omega / Pi, filterEffect, omega / Pi, dB);
 				freqDomeinCoords->SetLabel(info);
 			}
@@ -559,6 +556,8 @@ void FilterVenster::freqViewMuisBewegingHandler(wxMouseEvent &event)
 	}
 #endif
 }
+/* END STUDENT CODE BONUS POINTS ASSIGNMENT */
+//////////////////////////////////////////////
 
 
 void FilterVenster::tijdViewBinnenkomstHandler(wxMouseEvent &event)
@@ -1579,7 +1578,7 @@ void FilterVenster::klokVerlopenHandler(wxTimerEvent &event)
 	
 	testTekenIndex+=8;
 	
-	if (static_cast<int>(testTekenIndex) > testGrootte.GetWidth())
+	if (testTekenIndex>testGrootte.GetWidth())
 	{
 		if ((testSpline==false) && (testSignaalChoice->GetSelection() < 2))
 			testTekenIndex=0;  /* bij cosinus en blokgolf, keer om */

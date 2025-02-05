@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CMakePythonSetting">
+    <option name="pythonIntegrationState" value="YES" />
+  </component>
+  <component name="CMakeWorkspace" PROJECT_DIR="$PROJECT_DIR$" />
+  <component name="CidrRootsConfiguration">
+    <sourceRoots>
+      <file path="$PROJECT_DIR$/../STM32Basis/HAL/gemeenschappelijk/Libraries/BSP/Components" />
+      <file path="$PROJECT_DIR$/../STM32Basis/HAL/gemeenschappelijk/Libraries/BSP/STM32412G-Discovery" />
+      <file path="$PROJECT_DIR$/../STM32Basis/HAL/gemeenschappelijk/Libraries/CMSIS/Device/ST/STM32F4xx" />
+      <file path="$PROJECT_DIR$/../STM32Basis/HAL/gemeenschappelijk/Libraries/Middlewares/ST/STemWin" />
+      <file path="$PROJECT_DIR$/../STM32Basis/HAL/gemeenschappelijk/Libraries/STM32F4xx_HAL_Driver" />
+      <file path="$PROJECT_DIR$/../STM32Basis/HAL/gemeenschappelijk/Libraries/Utilities" />
+      <file path="$PROJECT_DIR$/../STM32Basis/HAL/gemeenschappelijk/Third_Party/ESE_BSP/DigProcesAansturing" />
+      <file path="$PROJECT_DIR$/../STM32Basis/HAL/gemeenschappelijk/Third_Party/ESE_BSP/ESEPracticumboard_RGT+DSB" />
+      <file path="$PROJECT_DIR$/../STM32Basis/HAL/gemeenschappelijk/Third_Party/FatFs_vR0.13a" />
+      <file path="$PROJECT_DIR$/../STM32Basis/HAL/gemeenschappelijk/Third_Party/FreeRTOS" />
+      <file path="$PROJECT_DIR$/../STM32Basis/HAL/gemeenschappelijk/Third_Party/freertos-addons-1.1.0" />
+      <file path="$PROJECT_DIR$/../STM32Basis/Segger/Segger_RTT" />
+      <file path="$PROJECT_DIR$/../STM32Basis/Segger/Segger_Sysview" />
+      <file path="$PROJECT_DIR$/../STM32Basis/gemeenschappelijk/ESEFreeRTOS" />
+      <file path="$PROJECT_DIR$/../STM32Basis/gemeenschappelijk/basis" />
+      <file path="$PROJECT_DIR$/../algemeen" />
+      <file path="$PROJECT_DIR$/../opdracht1" />
+      <file path="$PROJECT_DIR$/../opdracht4/STUDENT/filter" />
+      <file path="$PROJECT_DIR$" />
+    </sourceRoots>
+  </component>
+</project>

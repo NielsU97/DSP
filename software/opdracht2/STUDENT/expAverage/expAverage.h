@@ -27,8 +27,6 @@ public:
 
 private:
 
-	/* Some code */
-
 	/* The weighing factor and its counterpart (1-alfa)  */
 	const float alfa;
 	const float minalfa;

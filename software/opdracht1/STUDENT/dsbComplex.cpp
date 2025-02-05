@@ -20,8 +20,8 @@ $Id: dsbComplex.cpp 313 2023-01-30 13:54:35Z ewout $
 #endif
 #endif
 
-/********  Naam/name     : Niels Urgert              ******/
-/********  Studentnummer : 1654746              ******/
+/********  Naam/name     :  Niels Urgert              ******/
+/********  Studentnummer :  1654746             ******/
 
 #include <cmath>
 #include <cassert>
@@ -39,30 +39,137 @@ WX_DEFINE_OBJARRAY(ComplexArray);
 using namespace std;
 #endif
 
+
+
 #if defined(InterfaceTaalNederlands)
 PolairGetal::PolairGetal(const Complex &z) : grootte(z.Mag()), fase(z.Arg())
 {
-	
+
 }
+
+/* STUDENT CODE*/
+/////////////////
 
 float PolairGetal::Mag() const
 {
-	//auto real = grootte * cos(fase);
-	//auto imag = grootte * sin(fase);
-	//return sqrt(real * real + imag * imag);
-
-	return grootte;
+	return grootte;						// Retourneert de magnitude (grootte) van het polaire getal.
 }
 
 float PolairGetal::Arg() const
 {
-	//auto real = grootte * cos(fase);
-	//auto imag = grootte * sin(fase);
-	//return atan2(imag, real);
-
-	return fase;
+	return fase;						// Retourneert de argument (fasehoek) van het polaire getal.
 }
 
+/* Berekening van de grootte(magnitude) van een complex getal. */
+float Complex::Mag() const
+{
+	float xSeq = x * this->x;			// Kwadrateren van het reële deel.
+	float ySeq = y * this->y;			// Kwadrateren van het imaginaire deel.
+
+	return sqrtf(xSeq + ySeq);			// Vierkantswortel van de som geeft de magnitude.
+}
+
+/* Berekening van de hoek (fase/argument) van een complex getal. */
+float Complex::Arg() const
+{
+	return atan2(y, x);					// Geeft de inverse tangens van (y/x).
+}
+
+PolairGetal Complex::polair() const
+{
+	return PolairGetal();
+}
+
+Complex Complex::conj() const
+{
+	return Complex(Re(), -Im());		// De geconjugeerde ontstaat door het imaginaire deel negatief te maken.
+}
+
+/* Constructor: maakt een complex getal vanuit een PolairGetal. */
+Complex::Complex(const PolairGetal& polar)
+{
+	x = polar.Mag() * cosf(polar.Arg());	// Reëel deel: r * cos(θ)
+	y = polar.Mag() * sinf(polar.Arg());	// Imaginair deel: r * sin(θ)
+}
+
+/* Toewijzingsoperator voor een PolairGetal naar Complex. */
+Complex& Complex::operator=(const PolairGetal& rhs)
+{
+	Complex retVal(rhs);	// Maak een tijdelijk Complex object van rhs.
+	x = retVal.x;			// Kopieer het reële deel.
+	y = retVal.y;			// Kopieer het imaginaire deel.
+	return *this;
+}
+
+/* Vergelijkingsoperator: controleert of twee complexe getallen gelijk zijn. */
+bool Complex::operator==(const Complex& rhs) const
+{
+ 	return (x == rhs.x && y == rhs.y) ? true : false;
+}
+
+/* Optelling van twee complexe getallen. */
+Complex Complex::operator+(const Complex& rhs) const
+{
+	Complex retVal;
+	retVal.x = x + rhs.x;
+	retVal.y = y + rhs.y;
+	return retVal;
+}
+
+/* Aftrekking van twee complexe getallen. */
+Complex Complex::operator-(const Complex& rhs) const
+{
+	Complex retVal;
+	retVal.x = x - rhs.x;
+	retVal.y = y - rhs.y;
+	return retVal;
+}
+
+/* Vermenigvuldiging van twee complexe getallen. */
+Complex Complex::operator*(const Complex& rhs) const
+{
+	Complex retVal;
+	retVal.x = ((x * rhs.x) - (y * rhs.y));
+	retVal.y = ((x * rhs.y) + (rhs.x * y));
+	return retVal;
+}
+
+/* Vermenigvuldiging van één complex getal met een schaalfactor (float). */
+Complex Complex::operator*(const float rhs) const
+{
+	Complex retVal;
+	retVal.x = x * rhs;
+	retVal.y = y * rhs;
+	return retVal;
+}
+
+/* Deling van twee complexe getallen. */
+Complex Complex::operator/(const Complex& rhs) const
+{
+	Complex retVal;
+	retVal.x = ((x * rhs.x) + (y * rhs.y)) / ((rhs.x * rhs.x) + (rhs.y * rhs.y));
+	retVal.y = ((y * rhs.x) - (x * rhs.y)) / ((rhs.x * rhs.x) + (rhs.y * rhs.y));
+	return retVal;
+}
+
+/* Optellingstoewijzing: tel rhs op bij het huidige complex getal. */
+Complex& Complex::operator+=(const Complex& rhs)
+{
+	x += rhs.x;
+	y += rhs.y;
+	return *this;
+}
+
+/* Aftrekkingstoewijzing: trek rhs af van het huidige complex getal. */
+Complex& Complex::operator-=(const Complex& rhs)
+{
+	x -= rhs.x;
+	y -= rhs.y;
+	return *this;
+}
+
+/* END STUDENT CODE*/
+/////////////////////
 
 #elif defined (InterfaceTaalEnglish)
 
@@ -73,6 +180,10 @@ PolarNumber::PolarNumber(const Complex &z) : magnitude(z.Mag()),
 
 }
 
+#error “Dit deel van de software ontbreekt — this part of the software is missing.”
+/* Beste leerling, dit deel van de software ontbreekt. Vul dit deel aan volgens de opdracht.  
+   Dear student, this part of the software is missing. Complete this part accoording to the assignment.
+*/
 
 #endif  /* Nederlands/Engels */
 
@@ -98,127 +209,3 @@ Complex Complex::sqrt() const
 	return(wortelgetal);
 }
 
-float Complex::Mag() const
-{
-	float xSeq = x * this->x;
-	float ySeq = y * this->y;
-
-	return sqrtf(xSeq + ySeq);
-}
-
-float Complex::Arg() const
-{
-	return atan2(y, x);
-}
-
-PolairGetal Complex::polair() const
-{
-	return PolairGetal();
-}
-
-Complex Complex::conj() const
-{
-	return Complex(Re(), -Im());
-}
-
-Complex::Complex(const PolairGetal& polar)
-{
-	//*this = PolairGetal(Complex(x, y));
-	//PolairGetal(Mag(), Arg());
-
-	// Initialize the Complex object using the magnitude and argument of the PolairGetal object
-	x = polar.Mag() * cosf(polar.Arg());
-	y = polar.Mag() * sinf(polar.Arg());
-}
-
-Complex& Complex::operator=(const PolairGetal& rhs)
-{
-	//x = rhs.Mag() * (cos(rhs.Arg()));
-	//y = rhs.Mag() * (sin(rhs.Arg()));
-	Complex retVal(rhs);
-	x = retVal.x;
-	y = retVal.y;
-	return *this;
-}
-
-bool Complex::operator==(const Complex& rhs) const
-{
-  /*if (x == rhs.Re() && y == rhs.Im())
-	{
-		return true;
-	}
-	else
-	{
-		return false;
-	}*/
-
-	return (x == rhs.x && y == rhs.y) ? true : false;
-}
-
-Complex Complex::operator+(const Complex& rhs) const
-{
-	Complex retVal;
-	retVal.x = x + rhs.x;
-	retVal.y = y + rhs.y;
-	return retVal;
-	
-	//return Complex(x + rhs.Re(), y + rhs.Im());
-}
-
-Complex Complex::operator-(const Complex& rhs) const
-{
-	Complex retVal;
-	retVal.x = x - rhs.x;
-	retVal.y = y - rhs.y;
-	return retVal;
-
-	//return Complex(x - rhs.Re(), y - rhs.Im());
-}
-
-Complex Complex::operator*(const Complex& rhs) const
-{
-	Complex retVal;
-	retVal.x = ((x * rhs.x) - (y * rhs.y));
-	retVal.y = ((x * rhs.y) + (rhs.x * y));
-	return retVal;
-
-	//return Complex(x * rhs.Re() - y * rhs.Im(), x * rhs.Im() + y * rhs.Re());
-}
-
-Complex Complex::operator*(const float rhs) const
-{
-	Complex retVal;
-	retVal.x = x * rhs;
-	retVal.y = y * rhs;
-	return retVal;
-
-	//return Complex(x * rhs, y * rhs);
-}
-
-Complex Complex::operator/(const Complex& rhs) const
-{
-	/*auto a = x;
-	auto b = y;
-	auto c = rhs.Re();
-	auto d = rhs.Im();
-	return Complex((a * c + b * d) / (c * c + d * d), (b * c - a * d) / (c * c + d * d));*/
-
-	Complex retVal;
-	retVal.x = ((x * rhs.x) + (y * rhs.y)) / ((rhs.x * rhs.x) + (rhs.y * rhs.y));
-	retVal.y = ((y * rhs.x) - (x * rhs.y)) / ((rhs.x * rhs.x) + (rhs.y * rhs.y));
-	return retVal;
-}
-
-Complex& Complex::operator+=(const Complex& rhs)
-{
-	x += rhs.x;
-	y += rhs.y;
-	return *this;
-}
-
-Complex& Complex::operator-=(const Complex& rhs)
-{
-	x -= rhs.x;
-	y -= rhs.y;
-	return *this;
-}

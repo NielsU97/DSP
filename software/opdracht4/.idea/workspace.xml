@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
+    <generated>
+      <config projectName="DSPESEL4" targetName="FirFilterLib" />
+      <config projectName="DSPESEL4" targetName="wxBasis" />
+      <config projectName="DSPESEL4" targetName="MaakPackage" />
+      <config projectName="DSPESEL4" targetName="DSBKlassen" />
+      <config projectName="DSPESEL4" targetName="ApplikatieLib" />
+      <config projectName="DSPESEL4" targetName="MaakProdukt" />
+      <config projectName="DSPESEL4" targetName="DSPESEL4" />
+    </generated>
+  </component>
+  <component name="CMakeSettings" AUTO_RELOAD="true">
+    <configurations>
+      <configuration PROFILE_NAME="Debug" CONFIG_NAME="Debug" ENABLED="true" />
+    </configurations>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="251a8454-735e-4ebe-9ca6-cfe190dc86e2" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../opdracht1/Basis/CMakeLists.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../opdracht1/STUDENT/dsbComplexBasis.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../opdracht1/STUDENT/h/dsbComplexBasis.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DesktopBasis/gemeenschappelijk/wxBasis/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../DesktopBasis/gemeenschappelijk/wxBasis/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DesktopBasis/gemeenschappelijk/wxBasis/desktopApp.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../DesktopBasis/gemeenschappelijk/wxBasis/desktopApp.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DesktopBasis/gemeenschappelijk/wxBasis/h/desktopAppVersie.h.in" beforeDir="false" afterPath="$PROJECT_DIR$/../DesktopBasis/gemeenschappelijk/wxBasis/h/desktopAppVersie.h.in" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../opdracht1/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../opdracht1/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../opdracht1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../opdracht1/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../opdracht1/Basis/applikatie1.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../opdracht1/Basis/applikatie1.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../opdracht1/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../opdracht1/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../opdracht1/STUDENT/dsbComplex.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../opdracht1/STUDENT/dsbComplex.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../opdracht1/STUDENT/h/dsbComplex.h" beforeDir="false" afterPath="$PROJECT_DIR$/../opdracht1/STUDENT/h/dsbComplex.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Basis/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Basis/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/STUDENT/ontwerper/filterDesigner.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/STUDENT/ontwerper/filterDesigner.cpp" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
+  <component name="ProjectId" id="1jYbbPueINWP7ZZXR7aYMF8n2Cf" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="cf.first.check.clang-format" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/CMakeLists.txt" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Basis" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/STUDENT/ontwerper/oud" />
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
+  <component name="RunManager" selected="CMake Application.DSPESEL4">
+    <configuration name="ApplikatieLib" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="DSPESEL4" TARGET_NAME="ApplikatieLib" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DSBKlassen" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="DSPESEL4" TARGET_NAME="DSBKlassen" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DSPESEL4" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="DSPESEL4" TARGET_NAME="DSPESEL4" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="DSPESEL4" RUN_TARGET_NAME="DSPESEL4">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FirFilterLib" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="DSPESEL4" TARGET_NAME="FirFilterLib" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MaakPackage" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="DSPESEL4" TARGET_NAME="MaakPackage" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MaakProdukt" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="DSPESEL4" TARGET_NAME="MaakProdukt" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" PASS_PARENT_ENVS_2="true">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="wxBasis" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="DSPESEL4" TARGET_NAME="wxBasis" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="GradleAppRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" PASS_PARENT_ENVS_2="true">
+      <method v="2">
+        <option name="com.jetbrains.cidr.cpp.gradle.execution.GradleNativeBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="CMake Application.ApplikatieLib" />
+      <item itemvalue="CMake Application.DSBKlassen" />
+      <item itemvalue="CMake Application.DSPESEL4" />
+      <item itemvalue="CMake Application.FirFilterLib" />
+      <item itemvalue="CMake Application.MaakPackage" />
+      <item itemvalue="CMake Application.MaakProdukt" />
+      <item itemvalue="CMake Application.wxBasis" />
+    </list>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SvnConfiguration" cleanupOnStartRun="true">
+    <configuration>$USER_HOME$/.subversion</configuration>
+    <supportedVersion>125</supportedVersion>
+  </component>
+  <component name="SvnFileUrlMappingImpl">
+    <option name="myMappingRoots">
+      <list>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$PROJECT_DIR$/../DesktopBasis/gemeenschappelijk/wxBasis" />
+          <option name="myCopyRoot" value="$PROJECT_DIR$/../DesktopBasis/gemeenschappelijk/wxBasis" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$PROJECT_DIR$/../opdracht1" />
+          <option name="myCopyRoot" value="$PROJECT_DIR$/../opdracht1" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$PROJECT_DIR$" />
+          <option name="myCopyRoot" value="$PROJECT_DIR$" />
+        </SvnCopyRootSimple>
+      </list>
+    </option>
+    <option name="myMoreRealMappingRoots">
+      <list>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$PROJECT_DIR$/../DesktopBasis/gemeenschappelijk/wxBasis" />
+          <option name="myCopyRoot" value="$PROJECT_DIR$/../DesktopBasis/gemeenschappelijk/wxBasis" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$PROJECT_DIR$/../opdracht1" />
+          <option name="myCopyRoot" value="$PROJECT_DIR$/../opdracht1" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$PROJECT_DIR$" />
+          <option name="myCopyRoot" value="$PROJECT_DIR$" />
+        </SvnCopyRootSimple>
+      </list>
+    </option>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="251a8454-735e-4ebe-9ca6-cfe190dc86e2" name="Default Changelist" comment="" />
+      <created>1625819074836</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1625819074836</updated>
+      <workItem from="1645696737306" duration="3697000" />
+    </task>
+    <task id="LOCAL-00001">
+      <created>1645644535031</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1645644535032</updated>
+    </task>
+    <task id="LOCAL-00002">
+      <created>1645644774024</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1645644774024</updated>
+    </task>
+    <task id="LOCAL-00003">
+      <created>1645645872024</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1645645872024</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="LAST_COMMIT_MESSAGE" value="" />
+  </component>
+</project>

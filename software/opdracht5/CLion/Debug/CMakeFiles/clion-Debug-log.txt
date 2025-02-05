@@ -1,0 +1,60 @@
+"C:\Program Files\JetBrains\CLion 2024.1.4\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - MinGW Makefiles" -S "C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\opdracht5" -B "C:\Users\niels\Documents\Elektrotechniek\Jaar 3\dspl\software\opdracht5\CLion\Debug"
+CMake Deprecation Warning:
+  Support for "Extra Generators" like
+
+    CodeBlocks
+
+  is deprecated and will be removed from a future version of CMake.  IDEs may
+  use the cmake-file-api(7) to view CMake-generated project build trees.
+
+
+-- ARM Cortex M architectuur toolchain selektie.
+-- Windows platform gedetekteerd.
+-- The C compiler identification is GNU 13.1.0
+-- The CXX compiler identification is GNU 13.1.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: C:/Program Files/JetBrains/CLion 2024.1.4/bin/mingw/bin/gcc.exe - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: C:/Program Files/JetBrains/CLion 2024.1.4/bin/mingw/bin/g++.exe - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+HAN Embedded Systems Engineering DSPESEL/DSBPr practicum.
+Docent: ir drs E.J Boks (ewout.boks@han.nl)
+-- InterfaceTaal : Nederlands
+-- HAN ESE DSB Practicum opdracht 5
+-- STM32F112G-Discovery FIR Filter applikatie.
+-- Software wordt gebouwd met debugging opties
+-- The ASM-ATT compiler identification is GNU
+-- Found assembler: C:/Program Files/JetBrains/CLion 2024.1.4/bin/mingw/bin/as.exe
+-- StdPeriph/HAL bibliotheek USE_FULL_ASSERT staat AAN
+-- ARM Cortex M architectuur toolchain initialisatie.
+-- Microsoft Windows omgeving gedetecteerd.
+-- MingGW gevonden op : C:/MinGW/lib/gcc/mingw32/6.3.0
+-- GNU ARM Toolchain gevonden op C:/Program Files (x86)/GNU Arm Embedded Toolchain/10 2021.10
+-- ====> GNU ARM Toolchain op C:/Program Files (x86)/GNU Arm Embedded Toolchain/10 2021.10 wordt gebruikt.
+-- GNU ARM compiler gevonden op : C:/Program Files (x86)/GNU Arm Embedded Toolchain/10 2021.10
+-- Build output dir is : C:/Users/niels/Documents/Elektrotechniek/Jaar 3/dspl/software/opdracht5/Executable/Debug
+-- Bouw HAL target voor STM32F412xG met 1 MByte Flash en 256K SRAM
+-- Basis bibliotheek wordt gecompileerd.
+-- ARM CMSIS support voor STM32F4 wordt toegevoegd.
+-- FreeRTOS ARM Cortex M4F Port gekozen.
+-- FreeRTOS bibliotheek wordt gecompileerd.
+-- FreeRTOS C++ Schil bibliotheek wordt gecompileerd.
+-- ESE FreeRTOS ondersteuning wordt toegevoegd.
+-- Bouw target voor STM32F412G-Discovery met LCD Scherm+Segger EmWin GUI support.
+-- STM32F4xx Utilities Driver wordt toegevoegd.
+-- ST emWin GUI toolkit wordt toegevoegd.
+-- ST (Segger) EmWin Bibliotheek (STemWin) toegevoegd.
+-- Algemeen bibliotheek wordt gecompileerd.
+-- ESE BSP Driver (boardversie 11) wordt toegevoegd.
+-- ESE DigProces Aansturing API wordt toegevoegd.
+-- ESE RGT+DSB Board BSP Driver wordt toegevoegd.
+-- C:/Users/niels/Documents/Elektrotechniek/Jaar 3/dspl/software/opdracht5/CLion/Debug/gegenereerd/ozoneConfig.jdebug werd gegenereerd.
+-- Opdracht 1 wordt als DSBKlassen Lib gebouwd.
+-- Configuring done (16.2s)
+-- Generating done (1.0s)
+-- Build files have been written to: C:/Users/niels/Documents/Elektrotechniek/Jaar 3/dspl/software/opdracht5/CLion/Debug

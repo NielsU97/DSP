@@ -309,11 +309,6 @@ private:
 	 * @return : DE vensterwaarde voor (n,M) */
 	double hamming(const Int32 n) const;
 
-	/*! @brief De funktie die sinc(hoek) uitvoert.
-	 * @param[in] n : de hoek.
-	 * @return : De sinc waar voor (hoek) */
-	static double sinc(double hoek ) ;
-
 	void berekenFilter(wxCommandEvent &);  /* bereken de filter coefficienten. */
 	void berekenFreqResponsie();  /* bereken de freq responsie  */
 	void tekenFreqSpectrum() const;
