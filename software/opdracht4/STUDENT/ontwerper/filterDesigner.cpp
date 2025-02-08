@@ -69,17 +69,17 @@ $Id: filterDesigner.cpp 313 2023-01-30 13:54:35Z ewout $
 /* STUDENT CODE*/
 /////////////////
 
-// Formule in Lynn & Fürst is wel goed, zie blz. 148 (5.19)!!!
-// Barlett functie w[n] = ((M + 1) - |n|) / (M + 1)^2
+// Barlett functie w[n] =  1 - (|n| / M)
 double FilterVenster::driehoek(const Int32 n ) const {
-	return ((orde + 1) - fabs(n)) / ((orde + 1) * (orde + 1));
+	return std::max(0.0, (orde - fabs(n)) / orde);
 }
 
-// Formule in Lynn & Fürst, zie blz. 150 (5.22)
 // Hamming functie w[n] = 0.54 + 0.46 cos (nπ / M)
 double FilterVenster::hamming(const Int32 n ) const {
 	return 0.54 + 0.46 * cos((n * Pi) / orde);
 }
+
+// Sinc Functie verwijdert omdat deze onnodig is
 
 /* END STUDENT CODE*/
 /////////////////////
@@ -131,15 +131,15 @@ void FilterVenster::berekenFilter(wxCommandEvent &event)
 		if (n == 0) {
 			result = omega1 / Pi;
 		}
-		else { // Algemene formule voor laag doorlaat filter
+		else { // Algemene formule voor een laagdoorlaat filter. In de omschrijving omschreven laagdoorlaat filter is fout!!!
 			result = (1 / (n * Pi)) * sin(omega1 * n) * cos(omega0 * n);
 		}
 
 		if (choice == "Rechthoek") {
-			result *= 1.0; // Geen extra bewerking
+			result *= 1.0; // Geen extra bewerking nodig
 		}
 		else if (choice == "Driehoek") {
-			result *= (driehoek(n)); // * 8,7
+			result *= (driehoek(n));
 		}
 		else if (choice == "Hamming") {
 			result *= hamming(n);
@@ -190,11 +190,11 @@ void FilterVenster::berekenFreqResponsie()
 
 	H_Omega.reserve(freqSpectrumGrootte);
 
-	//Formula from the book
-	for (auto i = 0; i < freqSpectrumGrootte; i++) { // voor elk punt in het spectrum
+	//Formule/code uit het boek
+	for (auto i = 0; i < freqSpectrumGrootte; i++) { // Voor elk punt in het spectrum
 		const auto omega = i * stapGrootte;
-		double somFunction = 0.0;					// berekenFloatingPoint(filterCoeffs[orde]);
-		for (auto k = 1; k <= orde; k++) {			// Somfunction
+		double somFunction = 0.0;		;
+		for (auto k = 1; k <= orde; k++) {		
 			const auto flp = berekenFloatingPoint(filterCoeffs[orde + static_cast<wxVector<short>::size_type>(k)]);
 			somFunction += (flp * cos(k * omega));
 		}
@@ -202,7 +202,7 @@ void FilterVenster::berekenFreqResponsie()
 
 		if (somFunction == 0.0) {
 			wxLogDebug(wxT("hallo"));
-		} // zet waarde om naar db's omdat dat de waarde op de y as is
+		} 
 		const auto somFunctieDB = ((somFunction == 0.0) ? -100.0 : compute_dB(somFunction)) + maxVersterkingSpinCtrl->GetValue(); 
 		wxLogDebug(wxT("h[%lf] = %lf dB"), omega, somFunctieDB);
 		H_Omega.Add(somFunctieDB);
