@@ -112,7 +112,7 @@ void FilterVenster::berekenFilter(wxCommandEvent &event)
 	/* STUDENT CODE*/
 	/////////////////
 
-	// Bereken de filtercoëfficiënten
+	// Bereken de filtercoëfficiënten Formule (5.14)
 	const float omega0 = ((bandBeginSlider->GetValue() + bandEindeSlider->GetValue()) / 2.0) / sampFreq * 2.0 * Pi;
 	const float omega1 = ((bandEindeSlider->GetValue() - bandBeginSlider->GetValue()) / 2.0) / sampFreq * 2.0 * Pi;
 
@@ -120,28 +120,22 @@ void FilterVenster::berekenFilter(wxCommandEvent &event)
 	filterCoeffs.reserve(taps);
 	filterCoeffs.resize(taps);
 
-	// Selecteer window type
-	auto choice = vensterChoice->GetString(vensterChoice->GetSelection());
+	// Selecteer het window type
+	auto windowType = vensterChoice->GetString(vensterChoice->GetSelection());
+	float result = 0.0f;
 
-	// Loop door the filter taps voor het berekenen van elk coëfficiënt
+	// Loop door de filter taps voor het berekenen van elk coëfficiënt
 	for (int n = -orde; n <= orde; n++) {
+		// Als n = 0 omega1 / Pi, anders laagdoorlaat filter (5.12). In de omschrijving omschreven laagdoorlaat filter is fout!!!
+		float result = (n == 0) ? omega1 / Pi : (sin(omega1 * n) * cos(omega0 * n)) / (n * Pi);
 
-		float result = 0.0f;
-
-		if (n == 0) {
-			result = omega1 / Pi;
+		if (windowType == "Rechthoek") {
+			result *= 1.0;
 		}
-		else { // Algemene formule voor een laagdoorlaat filter. In de omschrijving omschreven laagdoorlaat filter is fout!!!
-			result = (1 / (n * Pi)) * sin(omega1 * n) * cos(omega0 * n);
-		}
-
-		if (choice == "Rechthoek") {
-			result *= 1.0; // Geen extra bewerking nodig
-		}
-		else if (choice == "Driehoek") {
+		else if (windowType == "Driehoek") {
 			result *= (driehoek(n));
 		}
-		else if (choice == "Hamming") {
+		else if (windowType == "Hamming") {
 			result *= hamming(n);
 		}
 
@@ -150,18 +144,15 @@ void FilterVenster::berekenFilter(wxCommandEvent &event)
 
 		impulsResponsie.Add(wxPoint(n, filterCoeffs[orde + n]));
 		impulsResponsie.Add(wxPoint(-n, filterCoeffs[orde + n]));
-
-		if (toonfilterCoeffsCB->IsChecked()) {
-			wxLogMessage(std::to_string(n) + wxT(" ") + std::to_string(filterCoeffs[orde + n]));
-		}
 	}
-	// Plot de impulse response in het tijdsdomein
+
+	// Plot de impuls responsie in het tijdsdomein
 	tijdDomeinGrafiek->maakSchoon();
 	tijdDomeinGrafiek->tekenAssenstelsel();
 	tijdDomeinGrafiek->zetTekenPen(wxPen(wxColour("RED"), 1));
 	tijdDomeinGrafiek->tekenStaven(impulsResponsie, true);
 
-	// Bereken en plot de freqentie response
+	// Bereken en plot de freqentie responsie
 	berekenFreqResponsie();
 	tekenFreqSpectrum();
 
@@ -182,29 +173,23 @@ void FilterVenster::berekenFreqResponsie()
 	
 	/* STUDENT CODE*/
 	/////////////////
-	//omega 1 wordt weer in de formule gebruikt formule (5.14)
 	const auto omega1 = 2.0 * ((bandEindeSlider->GetValue() - bandBeginSlider->GetValue()) / 2.0) / sampFreq * 2.0 * Pi;
-
 	const auto freqSpectrumGrootte = FreqSpectrumPunten(taps);
 	const auto stapGrootte = Pi / freqSpectrumGrootte;
 
 	H_Omega.reserve(freqSpectrumGrootte);
 
-	//Formule/code uit het boek
+	// Code uit het boek Lynn & Fürst
 	for (auto i = 0; i < freqSpectrumGrootte; i++) { // Voor elk punt in het spectrum
 		const auto omega = i * stapGrootte;
-		double somFunction = 0.0;		;
+		double somFunctie = 0.0;		;
 		for (auto k = 1; k <= orde; k++) {		
 			const auto flp = berekenFloatingPoint(filterCoeffs[orde + static_cast<wxVector<short>::size_type>(k)]);
-			somFunction += (flp * cos(k * omega));
+			somFunctie += (flp * cos(k * omega));
 		}
-		somFunction = ((somFunction * 2.0) + (omega1 / Pi));
+		somFunctie = ((somFunctie * 2.0) + (omega1 / Pi));
 
-		if (somFunction == 0.0) {
-			wxLogDebug(wxT("hallo"));
-		} 
-		const auto somFunctieDB = ((somFunction == 0.0) ? -100.0 : compute_dB(somFunction)) + maxVersterkingSpinCtrl->GetValue(); 
-		wxLogDebug(wxT("h[%lf] = %lf dB"), omega, somFunctieDB);
+		const auto somFunctieDB = ((somFunctie == 0.0) ? -100.0 : compute_dB(somFunctie)) + maxVersterkingSpinCtrl->GetValue(); 
 		H_Omega.Add(somFunctieDB);
 	}
 	H_Omega_min = *(std::min_element(H_Omega.begin(), H_Omega.end()));
@@ -488,31 +473,24 @@ void FilterVenster::tijdViewMuisBewegingHandler(wxMouseEvent &event)
 #ifndef ExtraOpties
 	event.Skip();
 #else
-	if (true == tijdDomeinCoords->IsEnabled())
-	{
+	if (true == tijdDomeinCoords->IsEnabled()) {
 		const wxPoint mouseCoord(tijdDomeinGrafiek->converteerMuisPositie(const_cast<wxMouseEvent&>(event)));
-
 		int width = tijdDomeinGrafiek->GetClientSize().GetWidth();
-
 		int n = std::round(((mouseCoord.x - (width / 2.0)) / (width / 2.0)) * orde);
 
-		if (n >= -orde && n <= orde)
-		{
+		if (n >= -orde && n <= orde) {
 			size_t coeffIndex = static_cast<size_t>(orde + n);
-			if (coeffIndex < filterCoeffs.size()) 
-			{
+			
+			if (coeffIndex < filterCoeffs.size()) {
 				float sampleValue = berekenFloatingPoint(filterCoeffs[orde + n]);
-
 				wxString info = wxString::Format("Coefficient h[%d] = %.4f", n, sampleValue);
 				tijdDomeinCoords->SetLabel(info);
 			}
-			else
-			{
+			else {
 				tijdDomeinCoords->SetLabel("Invalid coefficient index");
 			}
 		}
-		else
-		{
+		else {
 			tijdDomeinCoords->SetLabel("Outside range");
 		}
 	}
@@ -524,33 +502,24 @@ void FilterVenster::freqViewMuisBewegingHandler(wxMouseEvent &event)
 #ifndef ExtraOpties
 	event.Skip();
 #else
-	if (true == freqDomeinCoords->IsEnabled())
-	{
-		
+	if (true == freqDomeinCoords->IsEnabled()) {
 		const wxPoint muiscoord(freqDomeinGrafiek->converteerMuisPositie(const_cast<wxMouseEvent &>(event)));
-
 		double omega = muiscoord.x * (Pi / freqDomeinGrafiek->GetClientSize().GetWidth());
-
 		double dB = muiscoord.y * (H_Omega_max - H_Omega_min) / freqDomeinGrafiek->GetClientSize().GetHeight();
 
-		if (omega >= 0 && omega <= Pi)
-		{
+		if (omega >= 0 && omega <= Pi) {
 			int index = static_cast<int>((omega / Pi) * FreqSpectrumPunten(taps));
 
-			if (index >= 0 && index < H_Omega.size())
-			{
+			if (index >= 0 && index < H_Omega.size()) {
 				double filterEffect = H_Omega[index];
-
 				wxString info = wxString::Format("|H(%.4f*pi)| = %.2f dB at [%.4f*pi, %.2f dB]", omega / Pi, filterEffect, omega / Pi, dB);
 				freqDomeinCoords->SetLabel(info);
 			}
-			else
-			{
+			else {
 				freqDomeinCoords->SetLabel("Outside range");
 			}
 		}
-		else
-		{
+		else {
 			freqDomeinCoords->SetLabel("Outside range");
 		}
 	}

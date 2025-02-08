@@ -76,16 +76,7 @@ FilterFirInt16::FilterFirInt16(const FilterRingBuffer &coeffs,
 /////////////////
 void FilterFirInt16::reset()
 {
-    //for (size_t i = 0; i < filterMemory.geefAantal(); ++i) {
-    //    filterMemory.schrijf(0);
-    //}
-
-    int i = scaleFactor;
-    if (i > 1)
-        return;
-
     filterMemory.reset();
-    filterCoeffs.reset();
 }
 
 /* Implementatie van het filter */
