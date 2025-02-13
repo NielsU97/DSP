@@ -77,6 +77,7 @@ void SignaalVenster::tekenReeksHandler(wxCommandEvent &event)
 
 				/* Evalueer het signaaltype en vul het juiste signaalformulier in.  Gebruik amplitude */
 				/* Evaluate the signal type and fill in the appropriate signal form */
+
 				switch (signalChoice)
 				{
 					/* STUDENT CODE*/
@@ -85,7 +86,8 @@ void SignaalVenster::tekenReeksHandler(wxCommandEvent &event)
 						signalValue = amplitude * cos(hoek);
 						break;
 					case SignaalType::Driehoek:
-						signalValue = amplitude * (2.0 / Pi) * asin(sin(hoek));			// Formule klopt voor het genereren van een triangle wave
+						//signalValue = amplitude * (2.0 / Pi) * asin(sin(hoek));			// Formule klopt voor het genereren van een triangle wave
+						signalValue = amplitude * (1.0 - fabs(1.0 - fmod(hoek, Pi * 2.0) / Pi)) * 2.0 - amplitude;
 						break;
 					case SignaalType::Blokgolf: 
 						signalValue = amplitude * ((sin(hoek) >= 0.0) ? 1.0 : -1.0);	// Formule klopt voor het genereren van een square wave
@@ -161,8 +163,8 @@ void SignaalVenster::tekenReeksHandler(wxCommandEvent &event)
 		for (int i = 0; i < signaal.GetCount() / 2 + 1; i++) {
 			Complex SigComplex(output[i][0], output[i][1]);
 			PolairGetal SigPolair(SigComplex);
-			double magnitude = SigPolair.Mag() * 100;	// Amplitude
-			double argument = SigPolair.Arg() * 100;	// Fase
+			double magnitude = SigPolair.Mag();	// Amplitude
+			double argument = SigPolair.Arg() * (180.0 / M_PI);	// Fase (graden naar radialen)
 
 			AmplitudePunten.Add(wxPoint(i, magnitude));
 			if (magnitude > faseToonGrens) {

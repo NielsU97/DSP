@@ -476,22 +476,16 @@ void FilterVenster::tijdViewMuisBewegingHandler(wxMouseEvent &event)
 	if (true == tijdDomeinCoords->IsEnabled()) {
 		const wxPoint mouseCoord(tijdDomeinGrafiek->converteerMuisPositie(const_cast<wxMouseEvent&>(event)));
 		int width = tijdDomeinGrafiek->GetClientSize().GetWidth();
-		int n = std::round(((mouseCoord.x - (width / 2.0)) / (width / 2.0)) * orde);
+		int n = std::round(((mouseCoord.x / static_cast<double>(width)) * 2.0) * orde);
 
 		if (n >= -orde && n <= orde) {
 			size_t coeffIndex = static_cast<size_t>(orde + n);
-			
+
 			if (coeffIndex < filterCoeffs.size()) {
 				float sampleValue = berekenFloatingPoint(filterCoeffs[orde + n]);
 				wxString info = wxString::Format("Coefficient h[%d] = %.4f", n, sampleValue);
 				tijdDomeinCoords->SetLabel(info);
 			}
-			else {
-				tijdDomeinCoords->SetLabel("Invalid coefficient index");
-			}
-		}
-		else {
-			tijdDomeinCoords->SetLabel("Outside range");
 		}
 	}
 #endif
@@ -515,12 +509,6 @@ void FilterVenster::freqViewMuisBewegingHandler(wxMouseEvent &event)
 				wxString info = wxString::Format("|H(%.4f*pi)| = %.2f dB at [%.4f*pi, %.2f dB]", omega / Pi, filterEffect, omega / Pi, dB);
 				freqDomeinCoords->SetLabel(info);
 			}
-			else {
-				freqDomeinCoords->SetLabel("Outside range");
-			}
-		}
-		else {
-			freqDomeinCoords->SetLabel("Outside range");
 		}
 	}
 #endif
