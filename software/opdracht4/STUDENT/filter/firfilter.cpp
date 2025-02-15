@@ -82,19 +82,21 @@ void FilterFirInt16::reset()
 /* Implementatie van het filter */
 Int16 FilterFirInt16::filter(const Int16 input)
 {
+    // Schrijf nieuw input-signaal in buffer
     filterMemory.schrijf(input);
     Int64 som = 0;
+
+    // Convolutie van input met filtercoëfficiënten
     for (size_t i = 0; i < filterCoeffs.geefAantal(); i++)
     {
         const float coeff = filterCoeffs[i];
         const int16_t current_value = filterMemory.lees();
         som = som + coeff * current_value;
     }
+
+    // Schaling naar de juiste amplitude
     som /= scaleFactor;
-
-    const Int16 result = static_cast<Int16>(som);
-
-    return result;
+    return static_cast<Int16>(som);
 }
 /* END STUDENT CODE*/
 /////////////////////

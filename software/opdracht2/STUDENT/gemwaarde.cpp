@@ -46,15 +46,15 @@ void GemWaardeVenster::drawDataHandler(wxCommandEvent &event)
     PuntLijst expSignalPoints;
 
     auto scaleFactor = (1800.0f - 2.0f) / (1.0f - 0.0f) + 2.0f;
-    auto iterator = data.begin();
+    auto index = data.begin();
 
     /* Grafiek initialiseren */
-    grafiek->maakSchoon();
-    grafiek->zetOffset(wxPoint(2, 2));
+    grafiek->maakSchoon();                  // Wis de vorige inhoud van de grafiek
+    grafiek->zetOffset(wxPoint(2, 2));      // Zet een offset zodat de assen correct gepositioneerd zijn
 
     // Voeg de originele grafiek toe
-    for (double xAs = 0.0f; iterator < data.end(); iterator++, xAs++) {
-        originalSignalPoints.Add(wxPoint(xAs, *iterator * scaleFactor));
+    for (double xAs = 0.0f; index < data.end(); index++, xAs++) {
+        originalSignalPoints.Add(wxPoint(xAs, * index * scaleFactor));
     }
     grafiek->zetTekenPen(wxPen(wxColour(wxT("RED")), 2, wxSOLID));
     grafiek->tekenStaven(originalSignalPoints, false, false);
@@ -77,11 +77,11 @@ void GemWaardeVenster::drawDataHandler(wxCommandEvent &event)
     grafiek->zetKleineTekst(wxString(wxT("Euro 0.95")), wxPoint(5, 702));
      
     /* Filters verwerken */
-    const auto filterType = filterSelectionRadioBox->GetSelection();
-    int regelparameter = 101 - avgValueSlider->GetValue();
+    const auto filterType = filterSelectionRadioBox->GetSelection();                        // Haal de geselecteerde filtermethode op
+    int regelparameter = 101 - avgValueSlider->GetValue();                                  // Instellen van de regelparameter
 
-    RingBuffer<double> ringBuffer(static_cast<unsigned short>(avgValueSlider->GetValue()));
-    ExponentialAverageFilter expFilter(1.0f / (static_cast<float>(regelparameter) + 1.0f));
+    RingBuffer<double> ringBuffer(static_cast<unsigned short>(avgValueSlider->GetValue())); // Lopend gemiddelde buffer
+    ExponentialAverageFilter expFilter(1.0f / (static_cast<float>(regelparameter) + 1.0f)); // Exponentieel filter
 
     // Tekengrafiek functie
     auto tekenGrafiek = [&](auto& grafiekPunten, auto dataPunten) {

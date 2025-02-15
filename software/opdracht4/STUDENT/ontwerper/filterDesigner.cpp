@@ -69,12 +69,16 @@ $Id: filterDesigner.cpp 313 2023-01-30 13:54:35Z ewout $
 /* STUDENT CODE*/
 /////////////////
 
-// Barlett functie w[n] =  1 - (|n| / M)
+// Bartlett (Driehoek) vensterfunctie
+// w[n] = 1 - (|n| / M), wat zorgt voor een geleidelijke afname van de coëfficiënten
+// Dit vermindert de ruis in de frequentieresponsie.
 double FilterVenster::driehoek(const Int32 n ) const {
 	return std::max(0.0, (orde - fabs(n)) / orde);
 }
 
-// Hamming functie w[n] = 0.54 + 0.46 cos (nπ / M)
+// Hamming vensterfunctie
+// w[n] = 0.54 + 0.46 * cos(n * Pi / M)
+// Dit vermindert het Gibbs-effect en geeft een betere frequentieresponsie
 double FilterVenster::hamming(const Int32 n ) const {
 	return 0.54 + 0.46 * cos((n * Pi) / orde);
 }
@@ -112,7 +116,7 @@ void FilterVenster::berekenFilter(wxCommandEvent &event)
 	/* STUDENT CODE*/
 	/////////////////
 
-	// Bereken de filtercoëfficiënten Formule (5.14)
+	// Bereken de filtercoëfficiënten op basis van sliders (Formule 5.14)
 	const float omega0 = ((bandBeginSlider->GetValue() + bandEindeSlider->GetValue()) / 2.0) / sampFreq * 2.0 * Pi;
 	const float omega1 = ((bandEindeSlider->GetValue() - bandBeginSlider->GetValue()) / 2.0) / sampFreq * 2.0 * Pi;
 
@@ -122,13 +126,13 @@ void FilterVenster::berekenFilter(wxCommandEvent &event)
 
 	// Selecteer het window type
 	auto windowType = vensterChoice->GetString(vensterChoice->GetSelection());
-	float result = 0.0f;
 
 	// Loop door de filter taps voor het berekenen van elk coëfficiënt
 	for (int n = -orde; n <= orde; n++) {
-		// Als n = 0 omega1 / Pi, anders laagdoorlaat filter (5.12). In de omschrijving omschreven laagdoorlaat filter is fout!!!
+		// Laagdoorlaat filter (5.12), verschuiving met cos() zorgt voor een banddoorlaat
 		float result = (n == 0) ? omega1 / Pi : (sin(omega1 * n) * cos(omega0 * n)) / (n * Pi);
 
+		// Pas het venster toe
 		if (windowType == "Rechthoek") {
 			result *= 1.0;
 		}
@@ -139,9 +143,11 @@ void FilterVenster::berekenFilter(wxCommandEvent &event)
 			result *= hamming(n);
 		}
 
+		// Zet de berekende waarde om naar fixed-point en sla op
 		filterCoeffs[orde + n] = berekenFixedPoint(result * 2.0);
 		filterCoeffs[orde - n] = berekenFixedPoint(result * 2.0);
 
+		// Voeg toe aan impulsresponsie-plot
 		impulsResponsie.Add(wxPoint(n, filterCoeffs[orde + n]));
 		impulsResponsie.Add(wxPoint(-n, filterCoeffs[orde + n]));
 	}
@@ -182,13 +188,16 @@ void FilterVenster::berekenFreqResponsie()
 	// Code uit het boek Lynn & Fürst
 	for (auto i = 0; i < freqSpectrumGrootte; i++) { // Voor elk punt in het spectrum
 		const auto omega = i * stapGrootte;
-		double somFunctie = 0.0;		;
+		double somFunctie = 0.0;		
+
+		// Fourier-analyse voor frequentieresponsie
 		for (auto k = 1; k <= orde; k++) {		
 			const auto flp = berekenFloatingPoint(filterCoeffs[orde + static_cast<wxVector<short>::size_type>(k)]);
 			somFunctie += (flp * cos(k * omega));
 		}
 		somFunctie = ((somFunctie * 2.0) + (omega1 / Pi));
 
+		// Zet om naar dB en sla op
 		const auto somFunctieDB = ((somFunctie == 0.0) ? -100.0 : compute_dB(somFunctie)) + maxVersterkingSpinCtrl->GetValue(); 
 		H_Omega.Add(somFunctieDB);
 	}

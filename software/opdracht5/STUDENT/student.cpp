@@ -27,6 +27,8 @@ $Id: student.cpp 313 2023-01-30 13:54:35Z ewout $
 #include <RTT/SEGGER_RTT.h>
 #include <stdTaak.h>
 
+/* STUDENT CODE*/
+/////////////////
 void STM32FilterApp::runFilter()
 {
 	/* Werk deze funktie verder uit om er voor te zorgen dat :
@@ -37,7 +39,7 @@ void STM32FilterApp::runFilter()
 	    - Het filter een waarde teruggeeft, welke vervolgens in de DA converter wordt ingeladen.
 	 */
 
-	ads131a02.zetSampFreq(ADS131A02::ICLK::ICLK8, ADS131A02::FMOD::FMOD8, ADS131A02::ODR::ODR64); 	// Zet de sample frequentie OP 4 kHz
+	ads131a02.zetSampFreq(ADS131A02::ICLK::ICLK8, ADS131A02::FMOD::FMOD8, ADS131A02::ODR::ODR64); 	// Zet de sample frequentie op 4 kHz
     ads131a02.start(DSB_ADC_Channel);  																// Start de ADC kanalen
     max5136.start(DSB_DAC_Channel); 																// Start de DAC kanalen
 
@@ -45,28 +47,30 @@ void STM32FilterApp::runFilter()
         ads131a02.wachtOpDataReady(); 	// Wacht op data van de ADC
         ads131a02.laadConversieData(); 	// Laad data in ADCdata
 
-		// Bitgrootte is 16 bits. Invoer is 24 bits, verwijder 8 bits.
+		// Bitgrootte is 16 bits. Invoer is 24 bits, vandaar 8 bits verwijderen.
         Int16 ADCspanning =  static_cast<Int16>(ads131a02[DSB_ADC_Channel] >> 8); 
 
-		// Voer het signaal door de FIR-filter
+		// Voer het ingangssignaal door de FIR-filter.
         Int16 filterwaarde = filter.filter(ADCspanning);
 
-		// Normaliseer filterwaarde om negatieve output te voorkomen
+		// Normaliseer de filterwaarde om negatieve output te voorkomen.
         if(filterwaarde < minWaarde){
             minWaarde = filterwaarde;
         }
         filterwaarde -= minWaarde;
 
-		// Converteer filterwaarde naar een bruikbare DAC-spanning
+		// Converteer de filterwaarde naar een bruikbare DAC-spanning.
         UInt16 DACspanning = max5136.dacSpanning(filterwaarde); 
 
-		// Stuur de spanning naar de DAC
+		// Stuur de spanning naar de DAC.
         max5136.zetSpanning(DSB_DAC_Channel, DACspanning); 
     }
 
 	/* Hier mag de uitvoering niet komen! / execution should not reach this point! */
 	StopHier();
 }
+/* END STUDENT CODE*/
+/////////////////////
 
 void STM32FilterApp::runGUITest()
 {

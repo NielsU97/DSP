@@ -163,7 +163,7 @@ void SignaalVenster::tekenReeksHandler(wxCommandEvent &event)
 		for (int i = 0; i < signaal.GetCount() / 2 + 1; i++) {
 			Complex SigComplex(output[i][0], output[i][1]);
 			PolairGetal SigPolair(SigComplex);
-			double magnitude = SigPolair.Mag();	// Amplitude
+			double magnitude = SigPolair.Mag();					// Amplitude
 			double argument = SigPolair.Arg() * (180.0 / M_PI);	// Fase (graden naar radialen)
 
 			AmplitudePunten.Add(wxPoint(i, magnitude));
