@@ -40,8 +40,9 @@ void STM32FilterApp::runFilter()
 	 */
 
 	ads131a02.zetSampFreq(ADS131A02::ICLK::ICLK8, ADS131A02::FMOD::FMOD8, ADS131A02::ODR::ODR64); 	// Zet de sample frequentie op 4 kHz
-    ads131a02.start(DSB_ADC_Channel);  																// Start de ADC kanalen
+    ads131a02.start();                  															// Start de ADC kanalen
     max5136.start(DSB_DAC_Channel); 																// Start de DAC kanalen
+    Int16 minWaarde = INT16_MAX;
 
     while(1) {
         ads131a02.wachtOpDataReady(); 	// Wacht op data van de ADC
