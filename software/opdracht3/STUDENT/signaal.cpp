@@ -1,4 +1,4 @@
- /*!
+﻿ /*!
 @file
 
 Opdracht 3 DSB practicum. Werk deze opdracht verder uit aan de hand van het kommentaar.
@@ -63,6 +63,7 @@ void SignaalVenster::tekenReeksHandler(wxCommandEvent &event)
 			UInt32 stap = 0;
 			signaal.Clear();
 
+
 #if defined(InterfaceTaalNederlands)
 			const auto hoekFreq = 2.0 * Pi*sigFreq / sampFreq;
 			for (auto hoek = 0.0; hoek< 2 *Pi* aantalPerioden; hoek += hoekFreq)
@@ -86,8 +87,20 @@ void SignaalVenster::tekenReeksHandler(wxCommandEvent &event)
 						signalValue = amplitude * cos(hoek);
 						break;
 					case SignaalType::Driehoek:
-						//signalValue = amplitude * (2.0 / Pi) * asin(sin(hoek));			// Formule klopt voor het genereren van een triangle wave
-						signalValue = amplitude * (1.0 - fabs(1.0 - fmod(hoek, Pi * 2.0) / Pi)) * 2.0 - amplitude;
+						normHoek = fmod(hoek, 2 * Pi); //  fase = hoek / (2.0 * M_PI) 
+						//signalValue = amplitude * (2.0 / Pi) * asin(sin(hoek));			
+						signalValue = amplitude * (1.0 - fabs(1.0 - normHoek / Pi)) * 2.0 - amplitude;
+						
+						/*
+						if (normHoek < M_PI / 2) {
+						signalValue = ((fmod(hoek, 2 * Pi)) / (M_PI / 2)) * amplitude;  // Stijgend van 0 → 1
+						}
+						else if (normHoek < 3 * M_PI / 2) {
+							signalValue = (2.0 - (normHoek / (M_PI / 2))) * amplitude;  // Dalend van 1 → -1
+						}
+						else {
+							signalValue = ((normHoek - 2 * M_PI) / (M_PI / 2)) * amplitude;  // Stijgend van -1 → 0
+						}*/
 						break;
 					case SignaalType::Blokgolf: 
 						signalValue = amplitude * ((sin(hoek) >= 0.0) ? 1.0 : -1.0);	// Formule klopt voor het genereren van een square wave
