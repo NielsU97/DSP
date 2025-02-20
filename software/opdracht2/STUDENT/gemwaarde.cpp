@@ -52,7 +52,7 @@ void GemWaardeVenster::drawDataHandler(wxCommandEvent &event)
     grafiek->maakSchoon();                  // Wis de vorige inhoud van de grafiek
     grafiek->zetOffset(wxPoint(2, 2));      // Zet een offset zodat de assen correct gepositioneerd zijn
 
-    // Voeg de originele grafiek toe
+    // Teken de originele grafiek
     for (double xAs = 0.0f; index < data.end(); index++, xAs++) {
         originalSignalPoints.Add(wxPoint(xAs, * index * scaleFactor));
     }
@@ -67,7 +67,7 @@ void GemWaardeVenster::drawDataHandler(wxCommandEvent &event)
     grafiek->zetTekenPen(wxPen(wxColour(wxT("BLACK")), 2, wxSOLID));
     grafiek->tekenLijnen(lineList, true);
 
-    // Voeg de labels to aan de horizontale lijnen
+    // Voeg de labels toe aan de horizontale lijnen
     grafiek->zetKleineTekst(wxString(wxT("Euro 0.65")), wxPoint(5, 72));
     grafiek->zetKleineTekst(wxString(wxT("Euro 0.70")), wxPoint(5, 177));
     grafiek->zetKleineTekst(wxString(wxT("Euro 0.75")), wxPoint(5, 282));
@@ -75,13 +75,6 @@ void GemWaardeVenster::drawDataHandler(wxCommandEvent &event)
     grafiek->zetKleineTekst(wxString(wxT("Euro 0.85")), wxPoint(5, 492));
     grafiek->zetKleineTekst(wxString(wxT("Euro 0.90")), wxPoint(5, 597));
     grafiek->zetKleineTekst(wxString(wxT("Euro 0.95")), wxPoint(5, 702));
-     
-    /* Filters verwerken */
-    const auto filterType = filterSelectionRadioBox->GetSelection();                        // Haal de geselecteerde filtermethode op
-    int regelparameter = 101 - avgValueSlider->GetValue();                                  // Instellen van de regelparameter
-
-    RingBuffer<double> ringBuffer(static_cast<unsigned short>(avgValueSlider->GetValue())); // Lopend gemiddelde buffer
-    ExponentialAverageFilter expFilter(1.0f / (static_cast<float>(regelparameter) + 1.0f)); // Exponentieel filter
 
     // Tekengrafiek functie
     auto tekenGrafiek = [&](auto& grafiekPunten, auto dataPunten) {
@@ -91,20 +84,27 @@ void GemWaardeVenster::drawDataHandler(wxCommandEvent &event)
         }
         grafiek->zetTekenPen(wxPen(wxColour(wxT("BLUE")), 2, wxSOLID));
         grafiek->tekenSpline(grafiekPunten);
-        };
+    };
+     
+    /* Filters verwerken */
+    const auto filterType = filterSelectionRadioBox->GetSelection();                        // Haal de geselecteerde filtermethode op
+    int regelparameter = 101 - avgValueSlider->GetValue();                                  // Instellen van de regelparameter
 
-    // Selecteer type filter en teken: lopend gemiddelde filter of expontieel lopend gemiddelde filter
-    if (filterType == 0) {
-        tekenGrafiek(averageSignalPoints, [&](double waarde) {
-            return ringBuffer.gemiddelde(waarde);
-            });
-    }
-    else {
-        tekenGrafiek(expSignalPoints, [&](double waarde) {
-            return expFilter.filter(waarde);
-            });
-    }
+    RingBuffer<double> ringBuffer(static_cast<unsigned short>(avgValueSlider->GetValue())); // Lopend gemiddelde buffer
+    ExponentialAverageFilter expFilter(1.0f / (static_cast<float>(regelparameter) + 1.0f)); // Exponentieel filter
 
+    // Selecteer type filter en teken: lopend gemiddelde filter of expontieel lopend gemiddelde filter (grafiekpunten, datapunten)
+    switch (filterType) {
+        case 0:
+            tekenGrafiek(averageSignalPoints, [&](double waarde) {
+            return ringBuffer.gemiddelde(waarde);});
+        break;
+    default:
+            tekenGrafiek(expSignalPoints, [&](double waarde) {
+            return expFilter.filter(waarde);});
+        break;
+    }
+    
    	/* laat dit hieronder staan. / Leave this statement in place. */
 	gemVeranderd = false;
 }

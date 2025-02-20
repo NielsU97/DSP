@@ -87,23 +87,11 @@ void SignaalVenster::tekenReeksHandler(wxCommandEvent &event)
 						signalValue = amplitude * cos(hoek);
 						break;
 					case SignaalType::Driehoek:
-						normHoek = fmod(hoek, 2 * Pi); //  fase = hoek / (2.0 * M_PI) 
-						//signalValue = amplitude * (2.0 / Pi) * asin(sin(hoek));			
+						normHoek = fmod(hoek, 2.0 * Pi);
 						signalValue = amplitude * (1.0 - fabs(1.0 - normHoek / Pi)) * 2.0 - amplitude;
-						
-						/*
-						if (normHoek < M_PI / 2) {
-						signalValue = ((fmod(hoek, 2 * Pi)) / (M_PI / 2)) * amplitude;  // Stijgend van 0 → 1
-						}
-						else if (normHoek < 3 * M_PI / 2) {
-							signalValue = (2.0 - (normHoek / (M_PI / 2))) * amplitude;  // Dalend van 1 → -1
-						}
-						else {
-							signalValue = ((normHoek - 2 * M_PI) / (M_PI / 2)) * amplitude;  // Stijgend van -1 → 0
-						}*/
 						break;
 					case SignaalType::Blokgolf: 
-						signalValue = amplitude * ((sin(hoek) >= 0.0) ? 1.0 : -1.0);	// Formule klopt voor het genereren van een square wave
+						signalValue = amplitude * ((cos(hoek + (Pi / 4)) >= 0.0) ? 1.0 : -1.0);	
 						break;
 					/* END STUDENT CODE*/
 					/////////////////////
@@ -147,44 +135,45 @@ void SignaalVenster::tekenReeksHandler(wxCommandEvent &event)
 		 * draw the time domain image using auto scaling. */
 		signaalGrafiek->tekenStaven(punten, true);
 
-		/* Nederlands :  Voeg hier de code toe om de FFT uit te rekenen en het frequentiebeeld in fftwGrafiek te tekenen.
-		 * tips :
-		 * 1) gebruik het r2c plan en de FFTW_PRESERVE_INPUT+FFTW_ESTIMATE vlaggen bij de berekening.
-		 * 2) gebruik de Complex en Polair klassen uit opdracht 1.
-		 * 3) Bij de faseberekening, forceer de fase naar nul als de grootte van het complexe getal < faseToonGrens (zie de constructor van deze klasse) .
-		 * 4) voor info over de uitlezing van de checkboxes voor amplitude en fase , zie http://docs.wxwidgets.org/3.0/classwx_check_box.html */
-
 		/* STUDENT CODE*/
 		/////////////////
-		// Memory allocation
+
+		// Reserveer geheugen voor de invoer van FFTW
 		double* input = (double*)fftw_malloc(signaal.GetCount() * sizeof(double));
+
+		// Reserveer geheugen voor de uitvoer van FFTW (complexe getallen)
+		// Bij een real-to-complex (r2c) FFT is de output ongeveer de helft van de inputgrootte + 1
 		fftw_complex* output = (fftw_complex*)fftw_malloc((signaal.GetCount() * sizeof(fftw_complex)) / 2 + 1);
 
-		// Input kopieren naar FFTW array
+		// Kopieer de inputgegevens uit het signaal naar de FFTW array
 		for (int i = 0; i < signaal.GetCount(); i++) {
 			input[i] = signaal.Item(i);
 		}
 
-		// FFTW plan uitvoeren
-		fftw_plan p = fftw_plan_dft_r2c_1d(signaal.GetCount(), input, output, FFTW_ESTIMATE);
+		// Maak een FFTW-plan voor een real-to-complex FFT
+		// FFTW_PRESERVE_INPUT zorgt ervoor dat de inputarray niet wordt overschreven
+		// FFTW_ESTIMATE kiest een snelle FFT-methode zonder uitgebreide analyse
+		fftw_plan p = fftw_plan_dft_r2c_1d(signaal.GetCount(), input, output, FFTW_PRESERVE_INPUT + FFTW_ESTIMATE);
+		
+		// Voer de FFT uit: zet het tijddomeinsignaal om naar het frequentiedomein
 		fftw_execute(p);
 				
-		// Amplitude en fase punten
+		// Lijsten om de amplitude- en fasewaarden op te slaan
 		PuntLijst AmplitudePunten, FasePunten;
 
 		// Voeg de positieve frequentie punten toe
 		for (int i = 0; i < signaal.GetCount() / 2 + 1; i++) {
-			Complex SigComplex(output[i][0], output[i][1]);
-			PolairGetal SigPolair(SigComplex);
-			double magnitude = SigPolair.Mag();					// Amplitude
-			double argument = SigPolair.Arg() * (180.0 / M_PI);	// Fase (graden naar radialen)
+			Complex SigComplex(output[i][0], output[i][1]);     // Zet de FFT-uitvoer om in een complex getal
+			PolairGetal SigPolair(SigComplex);					// Converteer het complexe getal naar poolcoördinaten (magnitude en fase)
+			double magnitude = SigPolair.Mag();					// Bereken de amplitude (magnitude van het complexe getal)
+			double argument = SigPolair.Arg() * (180.0 / M_PI);	// Bereken de fasehoek en zet deze om van radialen naar graden
 
-			AmplitudePunten.Add(wxPoint(i, magnitude));
-			if (magnitude > faseToonGrens) {
+			AmplitudePunten.Add(wxPoint(i, magnitude));			// Voeg de amplitude toe aan de lijst met amplitude-waarden
+			if (magnitude > faseToonGrens) {					// Voeg de fase toe aan de lijst, maar forceer naar 0 als de amplitude te klein is
 				FasePunten.Add(wxPoint(i, argument));
 			}
 			else {
-				FasePunten.Add(wxPoint(i, 0));
+				FasePunten.Add(wxPoint(i, 0));					// Forceer de fase naar nul bij lage amplitude
 			}
 		}
 
@@ -194,7 +183,7 @@ void SignaalVenster::tekenReeksHandler(wxCommandEvent &event)
 			FasePunten.Add(wxPoint(-i, FasePunten[i].y));
 		}
 
-		// Opruimen
+		// Opruimen van het FFTW-plan en vrijgeven van het gereserveerde geheugen
 		fftw_destroy_plan(p);
 		fftw_free(input);
 		fftw_free(output);

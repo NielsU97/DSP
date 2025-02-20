@@ -83,7 +83,7 @@ double FilterVenster::hamming(const Int32 n ) const {
 	return 0.54 + 0.46 * cos((n * Pi) / orde);
 }
 
-// Sinc Functie verwijdert omdat deze onnodig is
+// Sinc Functie verwijdert omdat deze onnodig is, ondanks proberen meerdere vormen.
 
 /* END STUDENT CODE*/
 /////////////////////
@@ -129,7 +129,7 @@ void FilterVenster::berekenFilter(wxCommandEvent &event)
 
 	// Loop door de filter taps voor het berekenen van elk coëfficiënt
 	for (int n = -orde; n <= orde; n++) {
-		// Laagdoorlaat filter (5.12), verschuiving met cos() zorgt voor een banddoorlaat
+		// Laagdoorlaat filter (5.12), verschuiving met cos() zorgt voor een banddoorlaat (bij n≠0)
 		float result = (n == 0) ? omega1 / Pi : (sin(omega1 * n) * cos(omega0 * n)) / (n * Pi);
 
 		// Pas het venster toe

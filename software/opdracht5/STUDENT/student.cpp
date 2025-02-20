@@ -42,7 +42,8 @@ void STM32FilterApp::runFilter()
 	ads131a02.zetSampFreq(ADS131A02::ICLK::ICLK8, ADS131A02::FMOD::FMOD8, ADS131A02::ODR::ODR64); 	// Zet de sample frequentie op 4 kHz
     ads131a02.start();                  															// Start de ADC kanalen
     max5136.start(DSB_DAC_Channel); 																// Start de DAC kanalen
-    Int16 minWaarde = INT16_MAX;
+    //Int16 minWaarde = INT16_MAX;
+    const Int16 midPoint = INT16_MAX / 2;
 
     while(1) {
         ads131a02.wachtOpDataReady(); 	// Wacht op data van de ADC
@@ -55,16 +56,28 @@ void STM32FilterApp::runFilter()
         Int16 filterwaarde = filter.filter(ADCspanning);
 
 		// Normaliseer de filterwaarde om negatieve output te voorkomen.
-        if(filterwaarde < minWaarde){
+        /*if(filterwaarde < minWaarde){
             minWaarde = filterwaarde;
         }
-        filterwaarde -= minWaarde;
+        filterwaarde -= minWaarde;*/
+
+        Int32 normalizedValue = filterwaarde + midPoint;
+
+        if (normalizedValue < 0) {
+            normalizedValue = 0;
+        }
+        if (normalizedValue > UINT16_MAX) {
+            normalizedValue = UINT16_MAX;
+        }
+
+        UInt16 DACspanning = max5136.dacSpanning(static_cast<UInt16>(normalizedValue));
+        max5136.zetSpanning(DSB_DAC_Channel, DACspanning);
 
 		// Converteer de filterwaarde naar een bruikbare DAC-spanning.
-        UInt16 DACspanning = max5136.dacSpanning(filterwaarde); 
+        //UInt16 DACspanning = max5136.dacSpanning(filterwaarde);
 
 		// Stuur de spanning naar de DAC.
-        max5136.zetSpanning(DSB_DAC_Channel, DACspanning); 
+        //max5136.zetSpanning(DSB_DAC_Channel, DACspanning);
     }
 
 	/* Hier mag de uitvoering niet komen! / execution should not reach this point! */
