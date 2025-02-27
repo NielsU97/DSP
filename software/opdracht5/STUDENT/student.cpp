@@ -29,59 +29,39 @@ $Id: student.cpp 313 2023-01-30 13:54:35Z ewout $
 
 /* STUDENT CODE*/
 /////////////////
-void STM32FilterApp::runFilter()
-{
-	/* Werk deze funktie verder uit om er voor te zorgen dat :
-		- De bemonstering frequentie van de ADC zodanig ingesteld wordt dat aan de opdrachteisen is voldaan.
-		- De ADC start en dat de DA converter ook opgestart is.
-	    - Gewacht wordt tot een sample ingelezen is.
-	    - Het sample uit de ADC wordt opgehaald en wordt ingeladen in het filter.
-	    - Het filter een waarde teruggeeft, welke vervolgens in de DA converter wordt ingeladen.
-	 */
-
-	ads131a02.zetSampFreq(ADS131A02::ICLK::ICLK8, ADS131A02::FMOD::FMOD8, ADS131A02::ODR::ODR64); 	// Zet de sample frequentie op 4 kHz
-    ads131a02.start();                  															// Start de ADC kanalen
-    max5136.start(DSB_DAC_Channel); 																// Start de DAC kanalen
-    //Int16 minWaarde = INT16_MAX;
-    const Int16 midPoint = INT16_MAX / 2;
+void STM32FilterApp::runFilter() {
+    ads131a02.zetSampFreq(ADS131A02::ICLK::ICLK8, ADS131A02::FMOD::FMOD8, ADS131A02::ODR::ODR64);
+    ads131a02.start();
+    max5136.start(DSB_DAC_Channel);
 
     while(1) {
-        ads131a02.wachtOpDataReady(); 	// Wacht op data van de ADC
-        ads131a02.laadConversieData(); 	// Laad data in ADCdata
+        ads131a02.wachtOpDataReady();
+        ads131a02.laadConversieData();
 
-		// Bitgrootte is 16 bits. Invoer is 24 bits, vandaar 8 bits verwijderen.
-        Int16 ADCspanning =  static_cast<Int16>(ads131a02[DSB_ADC_Channel] >> 8); 
+        // Haal ADC-waarde op en converteer correct van 24-bit naar 16-bit
+        int32_t raw_adc_value = ads131a02[DSB_ADC_Channel];
+        int16_t ADCspanning = static_cast<int16_t>(raw_adc_value >> 8);
 
-		// Voer het ingangssignaal door de FIR-filter.
-        Int16 filterwaarde = filter.filter(ADCspanning);
+        // Voer signaal door de FIR-filter
+        int16_t filterwaarde = filter.filter(ADCspanning);
 
-		// Normaliseer de filterwaarde om negatieve output te voorkomen.
-        /*if(filterwaarde < minWaarde){
-            minWaarde = filterwaarde;
-        }
-        filterwaarde -= minWaarde;*/
+        // Voeg offset toe om negatieve waarden te voorkomen
+        const int16_t offset = 32768;  // 2^15, nodig om signed naar unsigned te converteren
+        uint16_t positieveWaarde = static_cast<uint16_t>(filterwaarde + offset);
 
-        Int32 normalizedValue = filterwaarde + midPoint;
+        // Converteer naar DAC-waarde
+        uint16_t DACspanning = max5136.dacSpanning(positieveWaarde);
 
-        if (normalizedValue < 0) {
-            normalizedValue = 0;
-        }
-        if (normalizedValue > UINT16_MAX) {
-            normalizedValue = UINT16_MAX;
+        // Clamp de waarde om binnen 16-bit DAC-bereik te blijven
+        if (DACspanning > 65535) {
+            DACspanning = 65535;
         }
 
-        UInt16 DACspanning = max5136.dacSpanning(static_cast<UInt16>(normalizedValue));
+        // Stuur de spanning naar de DAC
         max5136.zetSpanning(DSB_DAC_Channel, DACspanning);
-
-		// Converteer de filterwaarde naar een bruikbare DAC-spanning.
-        //UInt16 DACspanning = max5136.dacSpanning(filterwaarde);
-
-		// Stuur de spanning naar de DAC.
-        //max5136.zetSpanning(DSB_DAC_Channel, DACspanning);
     }
-
-	/* Hier mag de uitvoering niet komen! / execution should not reach this point! */
-	StopHier();
+    /* Hier mag de uitvoering niet komen! */
+    StopHier();
 }
 /* END STUDENT CODE*/
 /////////////////////
