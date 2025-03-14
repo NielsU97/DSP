@@ -31,7 +31,8 @@ $Id: student.cpp 313 2023-01-30 13:54:35Z ewout $
 /////////////////
 void STM32FilterApp::runFilter()
 {
-    // Fs = 16 mHz / (8 * 8 * 64) = 16.000.000 Hz / 4096 = 3,906.25 Hz
+    // sampleFreq = 16,384 mHz / 4096 = 4 Hz
+    // ICLK8 × FMOD8 × ODR64 = 8 × 8 × 64 = 4096
     ads131a02.zetSampFreq(ADS131A02::ICLK::ICLK8, ADS131A02::FMOD::FMOD8, ADS131A02::ODR::ODR64);
     ads131a02.start();
     max5136.start(DSB_DAC_Channel);
@@ -47,7 +48,7 @@ void STM32FilterApp::runFilter()
         auto ADCspanning  = static_cast<int16_t>(raw_adc_value);
 
 		// Voer signaal door de FIR-filter
-        auto filterwaarde = filter.filter( ADCspanning);
+        auto filterwaarde = filter.filter(ADCspanning);
 
 		// Voeg minWaarde toe om negatieve waarden te voorkomen
         // Update minWaarde geleidelijk
