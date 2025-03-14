@@ -3,10 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\niels\\Documents\\GitHub\\DSP\\software\\opdracht4\\VisualStudio_x64\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D6811790-F959-3D61-89C1-9229D4F56BE4}|STUDENT\\filter\\FirFilterLib.vcxproj|C:\\Users\\niels\\Documents\\GitHub\\DSP\\software\\opdracht4\\STUDENT\\filter\\firfilter.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{A34D6044-5BC7-3F90-A51B-773E803830B5}|STUDENT\\ontwerper\\DSPESEL4.vcxproj|C:\\Users\\niels\\Documents\\GitHub\\DSP\\software\\opdracht4\\STUDENT\\ontwerper\\filterDesigner.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A34D6044-5BC7-3F90-A51B-773E803830B5}|STUDENT\\ontwerper\\DSPESEL4.vcxproj|C:\\Users\\niels\\Documents\\GitHub\\DSP\\software\\opdracht4\\STUDENT\\ontwerper\\filterDesigner.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{D6811790-F959-3D61-89C1-9229D4F56BE4}|STUDENT\\filter\\FirFilterLib.vcxproj|C:\\Users\\niels\\Documents\\GitHub\\DSP\\software\\opdracht4\\STUDENT\\filter\\firfilter.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -16,17 +16,17 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "filterDesigner.cpp",
               "DocumentMoniker": "C:\\Users\\niels\\Documents\\GitHub\\DSP\\software\\opdracht4\\STUDENT\\ontwerper\\filterDesigner.cpp",
               "RelativeDocumentMoniker": "..\\STUDENT\\ontwerper\\filterDesigner.cpp",
               "ToolTip": "C:\\Users\\niels\\Documents\\GitHub\\DSP\\software\\opdracht4\\STUDENT\\ontwerper\\filterDesigner.cpp",
               "RelativeToolTip": "..\\STUDENT\\ontwerper\\filterDesigner.cpp",
-              "ViewState": "AQIAAM4AAAAAAAAAAAAAAIQAAABZAAAA",
+              "ViewState": "AQIAAK4AAAAAAAAAAAAAALsAAAAiAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-02-05T21:09:12.099Z",
               "IsPinned": true,
@@ -34,17 +34,16 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "firfilter.cpp",
               "DocumentMoniker": "C:\\Users\\niels\\Documents\\GitHub\\DSP\\software\\opdracht4\\STUDENT\\filter\\firfilter.cpp",
               "RelativeDocumentMoniker": "..\\STUDENT\\filter\\firfilter.cpp",
               "ToolTip": "C:\\Users\\niels\\Documents\\GitHub\\DSP\\software\\opdracht4\\STUDENT\\filter\\firfilter.cpp",
               "RelativeToolTip": "..\\STUDENT\\filter\\firfilter.cpp",
-              "ViewState": "AQIAAE4AAAAAAAAAAAAAAFoAAAAFAAAA",
+              "ViewState": "AQIAAEgAAAAAAAAAAAAAAF0AAAAqAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-02-05T21:09:42.981Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             }
           ]
         }

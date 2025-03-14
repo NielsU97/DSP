@@ -384,8 +384,8 @@ filter/clean: filter/CMakeFiles/FirFilterLib.dir/clean
 # Target rules for target CMakeFiles/STM32412G-Discovery.dir
 
 # All Build rule for target.
-CMakeFiles/STM32412G-Discovery.dir/all: F412GDiscoveryLib/CMakeFiles/STM32412G-DiscoveryBasis.dir/all
 CMakeFiles/STM32412G-Discovery.dir/all: Components/CMakeFiles/ComponentsLib.dir/all
+CMakeFiles/STM32412G-Discovery.dir/all: F412GDiscoveryLib/CMakeFiles/STM32412G-DiscoveryBasis.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\STM32412G-Discovery.dir\build.make CMakeFiles/STM32412G-Discovery.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\STM32412G-Discovery.dir\build.make CMakeFiles/STM32412G-Discovery.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\niels\Documents\GitHub\DSP\software\opdracht5\CLion\Debug\CMakeFiles --progress-num= "Built target STM32412G-Discovery"
@@ -411,20 +411,20 @@ CMakeFiles/STM32412G-Discovery.dir/clean:
 # Target rules for target CMakeFiles/DSPESEL5.elf.dir
 
 # All Build rule for target.
-CMakeFiles/DSPESEL5.elf.dir/all: BasisDir/CMakeFiles/ESEBasisLib.dir/all
-CMakeFiles/DSPESEL5.elf.dir/all: STM32CMSIS/CMakeFiles/CMSISFIRMWARE.dir/all
-CMakeFiles/DSPESEL5.elf.dir/all: STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/all
 CMakeFiles/DSPESEL5.elf.dir/all: CMakeFiles/STM32412G-Discovery.dir/all
+CMakeFiles/DSPESEL5.elf.dir/all: STM32CMSIS/CMakeFiles/CMSISFIRMWARE.dir/all
 CMakeFiles/DSPESEL5.elf.dir/all: FreeRTOS/CMakeFiles/FreeRTOSLib.dir/all
-CMakeFiles/DSPESEL5.elf.dir/all: STemWin/CMakeFiles/STemWinOSLib.dir/all
-CMakeFiles/DSPESEL5.elf.dir/all: ESE_FreeRTOS/CMakeFiles/ESEFreeRTOSLib.dir/all
-CMakeFiles/DSPESEL5.elf.dir/all: FreeRTOSOOSchil/CMakeFiles/FreeRTOSOOSchilLib.dir/all
+CMakeFiles/DSPESEL5.elf.dir/all: BasisDir/CMakeFiles/ESEBasisLib.dir/all
+CMakeFiles/DSPESEL5.elf.dir/all: STM32_HAL_Driver/CMakeFiles/STM32F4xx_HAL_Driver.dir/all
 CMakeFiles/DSPESEL5.elf.dir/all: Utilities/CMakeFiles/UtilitiesLib.dir/all
-CMakeFiles/DSPESEL5.elf.dir/all: FatFS/CMakeFiles/FatFs_vR0.13a.dir/all
+CMakeFiles/DSPESEL5.elf.dir/all: STemWin/CMakeFiles/STemWinOSLib.dir/all
+CMakeFiles/DSPESEL5.elf.dir/all: FreeRTOSOOSchil/CMakeFiles/FreeRTOSOOSchilLib.dir/all
+CMakeFiles/DSPESEL5.elf.dir/all: ESE_FreeRTOS/CMakeFiles/ESEFreeRTOSLib.dir/all
 CMakeFiles/DSPESEL5.elf.dir/all: AlgemeenDir/CMakeFiles/AlgemeenLib.dir/all
+CMakeFiles/DSPESEL5.elf.dir/all: FatFS/CMakeFiles/FatFs_vR0.13a.dir/all
 CMakeFiles/DSPESEL5.elf.dir/all: SeggerRTT/CMakeFiles/Segger_RTT.dir/all
-CMakeFiles/DSPESEL5.elf.dir/all: ESE_DigProcesAansturing/CMakeFiles/ESE_DigProcesAansturingLib.dir/all
 CMakeFiles/DSPESEL5.elf.dir/all: ESE_BSPProcessor/CMakeFiles/ESE_RGT+DSBBoardLib.dir/all
+CMakeFiles/DSPESEL5.elf.dir/all: ESE_DigProcesAansturing/CMakeFiles/ESE_DigProcesAansturingLib.dir/all
 CMakeFiles/DSPESEL5.elf.dir/all: filter/CMakeFiles/FirFilterLib.dir/all
 CMakeFiles/DSPESEL5.elf.dir/all: Opdracht1/CMakeFiles/DSBKlassen.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\DSPESEL5.elf.dir\build.make CMakeFiles/DSPESEL5.elf.dir/depend

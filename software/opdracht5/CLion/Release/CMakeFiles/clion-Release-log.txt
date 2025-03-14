@@ -55,6 +55,6 @@ Docent: ir drs E.J Boks (ewout.boks@han.nl)
 -- ESE RGT+DSB Board BSP Driver wordt toegevoegd.
 -- Geen debug mode derhalve geen JLink Ozone config bestand gemaakt.
 -- Opdracht 1 wordt als DSBKlassen Lib gebouwd.
--- Configuring done (6.4s)
--- Generating done (1.0s)
+-- Configuring done (5.4s)
+-- Generating done (0.7s)
 -- Build files have been written to: C:/Users/niels/Documents/GitHub/DSP/software/opdracht5/CLion/Release

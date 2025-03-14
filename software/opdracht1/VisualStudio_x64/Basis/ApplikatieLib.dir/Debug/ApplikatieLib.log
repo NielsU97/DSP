@@ -1,4 +1,3 @@
-﻿  Building Custom Rule C:/Users/niels/Documents/GitHub/DSP/software/opdracht1/Basis/CMakeLists.txt
-  applikatie1.cpp
+﻿  applikatie1.cpp
 C:\Users\niels\Documents\GitHub\DSP\software\opdracht1\STUDENT\h\dsbRingBuffer.h(129,29): warning C4146: unary minus operator applied to unsigned type, result still unsigned
   ApplikatieLib.vcxproj -> C:\Users\niels\Documents\GitHub\DSP\software\opdracht1\VisualStudio_x64\Basis\Debug\ApplikatieLib.lib

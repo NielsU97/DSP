@@ -150,9 +150,8 @@ CMAKE_FIND_PACKAGE_REDIRECTS_DIR:STATIC=C:/Users/niels/Documents/GitHub/DSP/soft
 //Convert GNU import libraries to MS format (requires Visual Studio)
 CMAKE_GNUtoMS:BOOL=OFF
 
-CMAKE_INSTALL_PREFIX:STRING=C:/Users/niels/Documents/GitHub/DSP/software/opdracht5/Executable/x86_64/Debug/
-
-CMAKE_LIBRARY_OUTPUT_DIRECTORY:STRING=C:/Users/niels/Documents/GitHub/DSP/software/opdracht5/Executable/x86_64
+//Install path prefix, prepended onto install directories.
+CMAKE_INSTALL_PREFIX:PATH=C:/Program Files (x86)/DSPESEL5
 
 //Path to a program.
 CMAKE_LINKER:FILEPATH=C:/Program Files/JetBrains/CLion 2024.1.4/bin/mingw/bin/ld.exe
@@ -222,12 +221,6 @@ CMAKE_RC_FLAGS_RELWITHDEBINFO:STRING=
 //Path to a program.
 CMAKE_READELF:FILEPATH=C:/Program Files/JetBrains/CLion 2024.1.4/bin/mingw/bin/readelf.exe
 
-CMAKE_RUNTIME_OUTPUT_DIRECTORY:STRING=C:/Users/niels/Documents/GitHub/DSP/software/opdracht5/Executable/x86_64
-
-CMAKE_RUNTIME_OUTPUT_DIRECTORY_DEBUG:STRING=C:/Users/niels/Documents/GitHub/DSP/software/opdracht5/Executable/x86_64/Debug/bin
-
-CMAKE_RUNTIME_OUTPUT_DIRECTORY_RELEASE:STRING=C:/Users/niels/Documents/GitHub/DSP/software/opdracht5/Executable/x86_64/Release/bin
-
 CMAKE_SHARED_LIBRARY_LINK_C_FLAGS:STRING=
 
 CMAKE_SHARED_LINKER_FLAGS:STRING=
@@ -292,9 +285,6 @@ CMAKE_VERBOSE_MAKEFILE:BOOL=FALSE
 //Gebruik CPP Check
 CPPCHECKAAN:BOOL=OFF
 
-//Zet aangepaste pakketbeschrijving aan
-CUSTOMPAKKETBESCHRIJVING:BOOL=ON
-
 //Value Computed by CMake
 DSPESEL5_BINARY_DIR:STATIC=C:/Users/niels/Documents/GitHub/DSP/software/opdracht5/CLion/Debug
 
@@ -340,7 +330,7 @@ ONTVLOOI:BOOL=ON
 //Schakel Onderwijsontwikkeling mogelijkheden
 OnderwijsOntwikkeling:BOOL=OFF
 
-//Gebruik C++ voor C
+//G++ override
 OverrideGCC_G++:BOOL=ON
 
 //Gebruik Segger GUI Driver
@@ -480,7 +470,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=1
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=18
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP

@@ -29,38 +29,38 @@ $Id: student.cpp 313 2023-01-30 13:54:35Z ewout $
 
 /* STUDENT CODE*/
 /////////////////
-void STM32FilterApp::runFilter() {
+void STM32FilterApp::runFilter()
+{
+    // Fs = 16,000,000 / (8 × 8 × 64) = 16,000,000 / 4096 = 3,906.25 Hz
     ads131a02.zetSampFreq(ADS131A02::ICLK::ICLK8, ADS131A02::FMOD::FMOD8, ADS131A02::ODR::ODR64);
     ads131a02.start();
     max5136.start(DSB_DAC_Channel);
+
+    static int16_t minWaarde = 0;
 
     while(1) {
         ads131a02.wachtOpDataReady();
         ads131a02.laadConversieData();
 
-        // Haal ADC-waarde op en converteer correct van 24-bit naar 16-bit
-        int32_t raw_adc_value = ads131a02[DSB_ADC_Channel];
-        int16_t ADCspanning = static_cast<int16_t>(raw_adc_value >> 8);
+        auto spanningdirect = (ads131a02[DSB_ADC_Channel] >> 8);
+        auto spanningshift = static_cast<int16_t>(spanningdirect);
+        auto filterwaarde = filter.filter(spanningshift);
 
-        // Voer signaal door de FIR-filter
-        int16_t filterwaarde = filter.filter(ADCspanning);
-
-        // Voeg offset toe om negatieve waarden te voorkomen
-        const int16_t offset = 32768;  // 2^15, nodig om signed naar unsigned te converteren
-        uint16_t positieveWaarde = static_cast<uint16_t>(filterwaarde + offset);
-
-        // Converteer naar DAC-waarde
-        uint16_t DACspanning = max5136.dacSpanning(positieveWaarde);
-
-        // Clamp de waarde om binnen 16-bit DAC-bereik te blijven
-        if (DACspanning > 65535) {
-            DACspanning = 65535;
+        // Update minWaarde geleidelijk
+        if (filterwaarde < minWaarde) {
+            minWaarde = (minWaarde + filterwaarde) / 2;
         }
 
-        // Stuur de spanning naar de DAC
+        // Zorg dat de waarde niet negatief wordt
+        filterwaarde -= minWaarde;
+        if (filterwaarde < 0) {
+            filterwaarde = 0;
+        }
+
+        auto DACspanning = max5136.dacSpanning(filterwaarde);
         max5136.zetSpanning(DSB_DAC_Channel, DACspanning);
     }
-    /* Hier mag de uitvoering niet komen! */
+
     StopHier();
 }
 /* END STUDENT CODE*/
