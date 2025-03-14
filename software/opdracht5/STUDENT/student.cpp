@@ -31,7 +31,7 @@ $Id: student.cpp 313 2023-01-30 13:54:35Z ewout $
 /////////////////
 void STM32FilterApp::runFilter()
 {
-    // Fs = 16,000,000 / (8 × 8 × 64) = 16,000,000 / 4096 = 3,906.25 Hz
+    // Fs = 16 mHz / (8 * 8 * 64) = 16.000.000 Hz / 4096 = 3,906.25 Hz
     ads131a02.zetSampFreq(ADS131A02::ICLK::ICLK8, ADS131A02::FMOD::FMOD8, ADS131A02::ODR::ODR64);
     ads131a02.start();
     max5136.start(DSB_DAC_Channel);
@@ -42,10 +42,14 @@ void STM32FilterApp::runFilter()
         ads131a02.wachtOpDataReady();
         ads131a02.laadConversieData();
 
-        auto spanningdirect = (ads131a02[DSB_ADC_Channel] >> 8);
-        auto spanningshift = static_cast<int16_t>(spanningdirect);
-        auto filterwaarde = filter.filter(spanningshift);
+		// Haal ADC-waarde op en converteer correct van 24-bit naar 16-bit
+        auto raw_adc_value  = (ads131a02[DSB_ADC_Channel] >> 8);
+        auto ADCspanning  = static_cast<int16_t>(raw_adc_value);
 
+		// Voer signaal door de FIR-filter
+        auto filterwaarde = filter.filter( ADCspanning);
+
+		// Voeg minWaarde toe om negatieve waarden te voorkomen
         // Update minWaarde geleidelijk
         if (filterwaarde < minWaarde) {
             minWaarde = (minWaarde + filterwaarde) / 2;
@@ -57,7 +61,10 @@ void STM32FilterApp::runFilter()
             filterwaarde = 0;
         }
 
+		// Converteer naar DAC-waarde
         auto DACspanning = max5136.dacSpanning(filterwaarde);
+
+		// Stuur de spanning naar de DAC
         max5136.zetSpanning(DSB_DAC_Channel, DACspanning);
     }
 
